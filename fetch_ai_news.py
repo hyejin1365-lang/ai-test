@@ -703,120 +703,154 @@ def make_stats(items):
     return ordered_cat, sorted_src
 
 # ─────────────────────────────────────────────────────
-# ★ 핵심 포인트 — 원문 인사이트 서술문 (v7 개선)
+# ★ 핵심 포인트 — 구체적·실용적 인사이트 서술문 (v9)
 # ─────────────────────────────────────────────────────
-# 한국어 제목 → 서술문 변환 패턴
-# "A, B 공개" → "A는 B를 공개했다."
-_KO_VERB_MAP = [
-    (r"공개$|출시$|선보여$|선보인다$", "공개했다"),
-    (r"발표$|발표했다$",              "발표했다"),
-    (r"출시$|출시됐다$",              "출시됐다"),
-    (r"강화$|업데이트$",              "업데이트됐다"),
-    (r"도입$|도입했다$",              "도입됐다"),
-    (r"협력$|파트너십$",              "협력 계약을 체결했다"),
-    (r"투자$|유치$",                  "투자를 유치했다"),
-    (r"개최$",                        "행사를 개최했다"),
-]
 
-def _ko_title_to_insight(title: str) -> str:
-    """한국어 제목을 자연스러운 서술문으로 변환"""
-    # 콤마/쉼표로 주어·술어 분리
-    for sep in ['，', ', ', ',']:
-        if sep in title:
-            parts = title.split(sep, 1)
-            subject = parts[0].strip()
-            predicate = parts[1].strip() if len(parts) > 1 else title
-            # 술어 끝 변환
-            for pattern, verb in _KO_VERB_MAP:
-                if re.search(pattern, predicate):
-                    # "공개"만 있는 경우 → 서술어 추가
-                    pred_clean = re.sub(pattern, '', predicate).strip().rstrip('를을이가은는')
-                    if pred_clean:
-                        return f"{subject}는 {pred_clean}을(를) {verb}."
-                    else:
-                        return f"{subject}가 {predicate} 예정이다."
-            # 패턴 없음: 그냥 이어서 서술
-            return f"{subject}는 '{predicate}'."
+# 출처 태그 제거 패턴: [디지털투데이 AI리포터], [연합뉴스] 등
+_SOURCE_TAG_RE = re.compile(r'^\[[^\]]{1,40}\]\s*')
 
-    # 콤마 없음: 원문 그대로 (~이다 형식)
-    # 마지막 단어가 명사면 "~을 발표했다", 동사면 그대로
-    if title.endswith(('공개', '발표', '출시', '선보여')):
-        return title + "됐다."
-    if title.endswith(('예정', '계획')):
-        return title + "이다."
-    return title + "."
+def _strip_source_tag(text: str) -> str:
+    """[출처명] 형태 태그 제거"""
+    return _SOURCE_TAG_RE.sub('', text).strip()
+
+def _extract_first_sentence(text: str, max_len: int = 130) -> str:
+    """
+    텍스트에서 첫 완결 서술 문장 추출 (v10).
+    - 출처 태그 제거
+    - 서술형 완결 문장 우선 (발표했다, 공개했다 등)
+    - 짧은 의문문은 건너뛰고 더 구체적인 문장 찾기
+    """
+    text = _strip_source_tag(text)
+    if not text:
+        return ""
+
+    # ① 서술형 완결 문장 우선 탐색
+    stmt_endings = ['발표했다.', '공개했다.', '밝혔다.', '출시했다.', '나섰다.',
+                    '됩니다.', '했습니다.', '됐다.', '체결했다.', '선보였다.',
+                    '이다.', '었다.', '였다.']
+    for ending in stmt_endings:
+        idx = text.find(ending)
+        if 12 < idx <= max_len:
+            return text[:idx + len(ending)].strip()
+
+    # ② 마침표 + 공백
+    m = re.search(r'.{12,}?[.。]\s', text)
+    if m and m.end() <= max_len + 5:
+        candidate = text[:m.end()].strip()
+        # 너무 짧은 문장(의문문)이면 다음 서술문 찾기
+        if len(candidate) < 22:
+            m2 = re.search(r'.{20,}?[.。]\s', text[m.end():])
+            if m2 and (m.end() + m2.end()) <= max_len + 20:
+                return text[:m.end() + m2.end()].strip()
+        return candidate
+
+    # ③ 단순 마침표
+    idx = text.find('.')
+    if 15 < idx <= max_len:
+        return text[:idx + 1].strip()
+
+    # ④ 길이 제한 (완결 문장 우선)
+    if len(text) > max_len:
+        for sep in ['다.', '습니다.', '이다.', '했다.']:
+            ridx = text[:max_len].rfind(sep)
+            if ridx > 15:
+                return text[:ridx + len(sep)].strip()
+        return text[:max_len].rstrip() + '.'
+
+    return text.rstrip()
 
 
-def _clean_insight(text: str) -> str:
-    """인사이트 문장 후처리: 불완전한 문장 정리"""
-    if not text: return ""
-    text = text.strip()
-    # "…"로 끝나는 불완전 문장 처리
+def _finalize(text: str) -> str:
+    """
+    최종 후처리:
+    - 말줄임표 → 완결 문장으로 정리
+    - 문장 끝 마침표 보장
+    - 출처 태그 재차 제거
+    """
+    if not text:
+        return ""
+    text = _strip_source_tag(text.strip())
+
+    # 말줄임으로 끝나는 경우 → 마지막 완결 문장 찾기
     if text.endswith('…') or text.endswith('...'):
-        # 마지막 완성된 문장까지만 사용
-        for sep in ['다.', '습니다.', '겠다.', '이다.', '했다.', '됩니다.', '했습니다.']:
+        for sep in ['다.', '했다.', '됩니다.', '습니다.', '이다.', '었다.', '였다.']:
             idx = text.rfind(sep)
-            if idx > 10:
-                return text[:idx + len(sep)]
-        # 줄임표 제거
-        return text.rstrip('…').rstrip('.').strip() + '.'
-    # 문장이 완결되지 않은 경우
-    if not text.endswith(('.', '!', '?', '다', '요')):
+            if idx > 15:
+                return text[:idx + len(sep)].strip()
+        text = re.sub(r'[…\.]+$', '', text).strip() + '.'
+
+    # 문장 미완결 보정
+    if text and not text[-1] in ('.', '!', '?', '다', '요', '됨', '음'):
         text = text + '.'
+
     return text
 
 
 def make_key_point(item) -> str:
     """
-    뉴스 아이템 → 원문 인사이트 한 줄 서술문 (v7)
-    우선순위: ① summary 첫 문장 ② title 서술문 변환
+    뉴스 아이템 → 구체적·실용적 인사이트 한 줄 서술문 (v10)
+
+    원칙:
+    1. 수치·기업명·기능명 등 구체적 팩트 포함
+    2. summary에서 핵심 첫 문장 추출 + 출처태그 완전 제거
+    3. 영어 기사는 one_line_kr → title 한국어화 순서로
+    4. 말줄임 없는 완결 문장
+    5. "~는 방법", "~할 수 있습니다" 등 번역 어체 보정
     """
     title   = item.get("title", "").strip()
     summary = item.get("summary", "").strip()
     lang    = item.get("lang", "en")
 
-    # ArXiv 논문 제목 정리 (arXiv:XXXX 형식 제거)
-    if item.get("category") == "논문":
-        title = re.sub(r'^arXiv:\S+\s*', '', title).strip()
-        title = re.sub(r'Announce Type:\s*\w+\s*Abstract:\s*', '', title).strip()
-        if title:
-            title = title[:80]
-
     if lang == "ko":
-        # ① 한국어 summary가 있으면 첫 문장 사용
+        # ① summary에서 구체적 첫 문장 추출 (출처 태그 이중 제거)
         if summary and len(summary) > 20:
-            for sep in ['다. ', '다.\n', '습니다. ', '습니다.\n']:
-                idx = summary.find(sep)
-                if 10 < idx < 120:
-                    return _clean_insight(summary[:idx + len(sep)].strip())
-            if len(summary) <= 100:
-                return _clean_insight(summary)
-            return _clean_insight(summary[:80].rstrip() + "…")
+            clean_sum = _strip_source_tag(summary)
+            sent = _extract_first_sentence(clean_sum, max_len=130)
+            if sent and len(sent) > 15:
+                return _finalize(_strip_source_tag(sent))
 
-        # ② 제목을 서술문으로 변환
-        return _clean_insight(_ko_title_to_insight(title))
+        # ② summary가 짧거나 없으면 title 사용
+        title_clean = _strip_source_tag(title)
+        return _finalize(title_clean)
 
     else:
-        # 영어: one_line_kr(번역) 우선
-        kr = item.get("one_line_kr", "")
+        # ① 번역된 one_line_kr (출처 태그 제거)
+        kr = _strip_source_tag(item.get("one_line_kr", "").strip())
+        # 번역 어체 자연스럽게 보정
         if kr and len(kr) > 10:
-            return _clean_insight(kr)
+            # "~는 방법" 형태 → "~을 설명한다" 형태
+            kr = re.sub(r'하는 방법\.$', '하는 방법을 공개했다.', kr)
+            kr = re.sub(r'을 사용할 수 있습니다\.$', '을 API로 제공한다.', kr)
+            kr = re.sub(r'할 수 있습니다\.$', '한다.', kr)
+            return _finalize(kr)
 
-        # summary 앞부분 번역
+        # ② summary 앞부분 추출 후 번역
         if summary and len(summary) > 20:
-            snippet = one_line_summary(summary, max_len=120)
-            translated = translate_to_ko(snippet)
-            if translated and translated != snippet:
-                return _clean_insight(translated)
+            # arxiv 헤더 제거
+            clean_sum = re.sub(r'^arXiv:\S+\s+Announce Type:[^\n]*\n?', '', summary)
+            clean_sum = re.sub(r'^Abstract:\s*', '', clean_sum).strip()
+            snippet = clean_sum[:150].split(". ")[0].strip()
+            if snippet and len(snippet) > 20:
+                translated = translate_to_ko(snippet[:130])
+                if translated and len(translated) > 10 and translated != snippet:
+                    return _finalize(translated)
 
-        # 제목 번역
-        title_kr = translate_to_ko(title[:80])
-        return _clean_insight(title_kr) if title_kr and title_kr != title else _clean_insight(title)
+        # ③ title 번역 (구체 키워드 보존)
+        title_kr = translate_to_ko(title[:90])
+        return _finalize(title_kr) if title_kr and title_kr != title else _finalize(title)
 
 
 def build_daily_summary(items, keywords):
-    kr   = sum(1 for i in items if i.get("lang")=="ko")
-    cats = {c: sum(1 for i in items if i["category"]==c) for c in CATEGORY_ORDER}
+    # ★ 오늘 날짜 기사만 인사이트/요약에 사용
+    today_items = [i for i in items if (i.get("date") or "").startswith(TODAY)]
+    # 오늘 기사가 너무 적으면 collect_date 기준 fallback
+    if len(today_items) < 3:
+        today_items = [i for i in items if (i.get("collect_date") or "") == TODAY]
+    if len(today_items) == 0:
+        today_items = items  # 최후 fallback
+
+    kr   = sum(1 for i in today_items if i.get("lang")=="ko")
+    cats = {c: sum(1 for i in today_items if i["category"]==c) for c in CATEGORY_ORDER}
     top_cat = max((c for c in CATEGORY_ORDER if cats.get(c,0)>0),
                   key=lambda c: cats[c], default="-")
     top_kws = [k["keyword"] for k in keywords[:7]]
@@ -824,49 +858,51 @@ def build_daily_summary(items, keywords):
     cat_lines = [f"{c} {cats[c]}건" for c in CATEGORY_ORDER if cats.get(c,0)>0]
     kw_str    = " · ".join(top_kws[:5]) if top_kws else "-"
 
-    hot   = [i for i in items if i["importance"]["class"]=="hot"]
-    star  = [i for i in items if i["importance"]["class"]=="star"]
+    hot   = [i for i in today_items if i["importance"]["class"]=="hot"]
+    star  = [i for i in today_items if i["importance"]["class"]=="star"]
     hot_items  = hot[:3]
     hot_titles = ""
     if hot_items:
         hot_titles = " 특히 " + "、".join(f"'{h['title'][:30]}'" for h in hot_items[:2]) + " 등이 주목받았습니다."
 
     prose = (
-        f"오늘({NOW_KST.strftime('%m월 %d일')}) 총 {len(items)}건의 AI 자료가 수집됐습니다. "
-        f"국내 기사 {kr}건, 해외 기사 {len(items)-kr}건이며 "
-        f"분야별로는 {', '.join(cat_lines)}이 수집됐습니다. "
+        f"오늘({NOW_KST.strftime('%m월 %d일')}) {len(today_items)}건의 AI 뉴스가 업데이트됐습니다. "
+        f"국내 기사 {kr}건, 해외 기사 {len(today_items)-kr}건이며 "
         f"오늘의 핵심 키워드는 {kw_str}로, {top_cat} 분야에서 가장 많은 활동이 관측됐습니다."
         f"{hot_titles}"
     )
 
-    # ★ 핵심 포인트 5개: 논문·비즈니스 제외 + 다양한 소스 + 중요도 우선
+    # ★ 핵심 포인트 5개: 한국어 우선 + 중요도 정렬 + 소스 중복 제외
     NON_INSIGHT_CATS = {"논문", "비즈니스"}
-    main_hot  = [i for i in hot  if i["category"] not in NON_INSIGHT_CATS]
-    main_star = [i for i in star if i["category"] not in NON_INSIGHT_CATS]
-    main_new  = [i for i in items
-                 if i["importance"]["class"] == "new"
-                 and i["category"] not in NON_INSIGHT_CATS]
-    priority_items = main_hot + main_star + main_new
-    seen_sources, key_point_items = set(), []
-    for it in priority_items:
-        if it["source"] not in seen_sources:
-            seen_sources.add(it["source"])
-            key_point_items.append(it)
+    IMP_ORDER = {"hot": 0, "star": 1, "new": 2}
+
+    def kp_priority_key(x):
+        imp = IMP_ORDER.get(x["importance"]["class"], 2)
+        is_ko = 0 if x.get("lang") == "ko" else 1
+        return (imp, is_ko)
+
+    kp_candidates = sorted(
+        [i for i in today_items if i["category"] not in NON_INSIGHT_CATS],
+        key=kp_priority_key
+    )
+    seen_kp_src = set()
+    key_point_items = []
+    for it in kp_candidates:
         if len(key_point_items) >= 5:
             break
-    # 부족하면 논문·비즈니스 제외하고 채우기
-    for it in items:
-        if len(key_point_items) >= 5: break
-        if it not in key_point_items and it["category"] not in NON_INSIGHT_CATS:
-            key_point_items.append(it)
+        src = it["source"]
+        if src in seen_kp_src:
+            continue
+        seen_kp_src.add(src)
+        key_point_items.append(it)
 
     key_points = [make_key_point(it) for it in key_point_items[:5]]
 
     return {
         "date":            NOW_KST.strftime("%Y년 %m월 %d일"),
-        "total":           len(items),
+        "total":           len(today_items),
         "kr_count":        kr,
-        "en_count":        len(items)-kr,
+        "en_count":        len(today_items)-kr,
         "top_keywords":    top_kws,
         "top_category":    top_cat,
         "category_counts": cats,

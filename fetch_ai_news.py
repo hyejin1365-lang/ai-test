@@ -1,20 +1,13 @@
 #!/usr/bin/env python3
 """
-AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v6
+AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v7
 
-변경 사항:
-  - RSS 없는 플랫폼(Anthropic, Runway, Stability AI, ElevenLabs 등)
-    공식 블로그 직접 크롤링 추가
-  - 시간 파싱 개선: 원문 timezone 정보를 최우선으로 사용
-  - 핵심 포인트 5개 자동 생성 (daily_summary.key_points)
-  - 카테고리 개편: 이미지AI + 디자인AI → 이미지·디자인AI
-
-저장 구조:
-  data/
-  ├── ai_news.json          ← 오늘 데이터
-  ├── history/YYYY-MM-DD.json
-  ├── weekly.json
-  └── monthly.json
+변경 사항 (v7):
+  1. 핵심 포인트: 헤드라인 카피 → 원문 인사이트 서술문
+  2. 해외 기사 one_line_kr: 영어 one_line 한국어 번역 (배치)
+  3. 이미지·디자인AI 소스 추가 (Leonardo AI, Canva AI, DALL-E News 등)
+  4. 블로그 크롤링 날짜 추출 개선 (상위 컨테이너 time 태그 탐색)
+  5. 주간/월간 집계에 content_highlights, cat_highlights 추가
 """
 
 import json, feedparser, requests, re, os, glob
@@ -38,13 +31,13 @@ SCRAPE_HEADERS = {
 
 # ── 카테고리 순서 ──────────────────────────────────────
 CATEGORY_ORDER = [
-    "콘텐츠",        # 한국 미디어
-    "영상AI",        # 영상 생성 AI
+    "콘텐츠",         # 한국 미디어
+    "영상AI",         # 영상 생성 AI
     "이미지·디자인AI", # 이미지/디자인 통합
-    "LLM",           # 거대언어모델
-    "개발AI",        # 개발 도구·프레임워크
-    "논문",          # ArXiv / 학술 (수집은 하되 필터 탭 없음)
-    "비즈니스",      # 뉴스·인사이트 (수집은 하되 필터 탭 없음)
+    "LLM",            # 거대언어모델
+    "개발AI",         # 개발 도구·프레임워크
+    "논문",           # ArXiv / 학술 (수집은 하되 필터 탭 없음)
+    "비즈니스",       # 뉴스·인사이트 (수집은 하되 필터 탭 없음)
 ]
 
 # ── Google News RSS 헬퍼 ──────────────────────────────
@@ -102,24 +95,36 @@ RSS_FEEDS = [
      "category":"영상AI","badge":"news","lang":"en","limit":5},
 
     # ══════════════════════════════════════════════════
-    # 🖼️  이미지·디자인AI — Midjourney · Flux · Stability
+    # 🖼️  이미지·디자인AI — Midjourney · Flux · Stability · Leonardo · Canva
     # ══════════════════════════════════════════════════
     # Midjourney 공식 업데이트 피드
     {"name":"Midjourney Updates",
      "url":"https://updates.midjourney.com/feed",
      "category":"이미지·디자인AI","badge":"official","lang":"en","limit":6},
     # Midjourney 뉴스
-    {**gnews("Midjourney AI image generation", 5),
+    {**gnews("Midjourney AI image generation new features", 5),
      "name":"Midjourney News","category":"이미지·디자인AI"},
     # Flux (Black Forest Labs)
     {**gnews("Flux AI image generation Black Forest Labs", 4),
      "name":"Flux AI News","category":"이미지·디자인AI"},
     # Ideogram
-    {**gnews("Ideogram AI image generator", 4),
+    {**gnews("Ideogram AI image generator update", 4),
      "name":"Ideogram News","category":"이미지·디자인AI"},
     # Adobe Firefly
-    {**gnews("Adobe Firefly AI generative image", 4),
+    {**gnews("Adobe Firefly AI generative image update", 4),
      "name":"Adobe Firefly News","category":"이미지·디자인AI"},
+    # Leonardo AI ★ 신규 추가
+    {**gnews("Leonardo AI image generation art", 4),
+     "name":"Leonardo AI News","category":"이미지·디자인AI"},
+    # DALL-E / OpenAI 이미지 ★ 신규 추가
+    {**gnews("DALL-E OpenAI image generation API", 3),
+     "name":"DALL-E News","category":"이미지·디자인AI"},
+    # Canva AI ★ 신규 추가
+    {**gnews("Canva AI Magic Studio design tool", 3),
+     "name":"Canva AI News","category":"이미지·디자인AI"},
+    # ComfyUI / Stable Diffusion 커뮤니티 ★ 신규 추가
+    {**gnews("ComfyUI Stable Diffusion image generation", 3),
+     "name":"ComfyUI News","category":"이미지·디자인AI"},
     # HuggingFace 공식 블로그
     {"name":"HuggingFace Blog",
      "url":"https://huggingface.co/blog/feed.xml",
@@ -132,33 +137,24 @@ RSS_FEEDS = [
     # ══════════════════════════════════════════════════
     # 🧠  LLM — Anthropic · Mistral · Perplexity · DeepSeek · Meta · Gemini · Grok
     # ══════════════════════════════════════════════════
-    # Mistral AI
-    {**gnews("Mistral AI LLM open source", 5),
+    {**gnews("Mistral AI LLM open source model", 5),
      "name":"Mistral AI News","category":"LLM"},
-    # Perplexity
-    {**gnews("Perplexity AI search LLM", 4),
+    {**gnews("Perplexity AI search LLM update", 4),
      "name":"Perplexity News","category":"LLM"},
-    # DeepSeek
-    {**gnews("DeepSeek AI model open source", 5),
+    {**gnews("DeepSeek AI model open source release", 5),
      "name":"DeepSeek News","category":"LLM"},
-    # Meta AI / Llama
     {**gnews("Meta AI Llama model open source", 5),
      "name":"Meta AI News","category":"LLM"},
-    # Google Gemini
-    {**gnews("Google Gemini AI model", 5),
+    {**gnews("Google Gemini AI model update", 5),
      "name":"Google Gemini News","category":"LLM"},
-    # xAI / Grok
     {**gnews("Grok xAI Elon Musk language model", 4),
      "name":"xAI Grok News","category":"LLM"},
-    # OpenAI GPT 블로그
     {"name":"OpenAI Blog",
      "url":"https://openai.com/blog/rss.xml",
      "category":"LLM","badge":"official","lang":"en","limit":5},
-    # Simon Willison
     {"name":"Simon Willison",
      "url":"https://simonwillison.net/atom/entries/",
      "category":"LLM","badge":"official","lang":"en","limit":5},
-    # Import AI 뉴스레터
     {"name":"Import AI",
      "url":"https://importai.substack.com/feed",
      "category":"LLM","badge":"news","lang":"en","limit":4},
@@ -241,13 +237,13 @@ HOT_KEYWORDS = [
     "benchmark","open source","오픈소스","인공지능","딥러닝","chatgpt",
     "sora","runway","midjourney","stable diffusion","flux","pika","luma","kling",
     "grok","mistral","phi","qwen","deepseek","딥시크","elevenlabs","perplexity",
-    "anthropic","ideogram","adobe firefly",
+    "anthropic","ideogram","adobe firefly","leonardo","dall-e","canva",
 ]
 KR_AI_KEYWORDS = [
     "인공지능","AI","머신러닝","딥러닝","챗봇","생성형","자연어",
     "이미지 생성","영상 생성","클로드","제미나이","챗GPT","라마",
     "LLM","에이전트","파운데이션 모델","딥시크","미드저니",
-    "runway","sora","pika","플럭스",
+    "runway","sora","pika","플럭스","레오나르도",
 ]
 
 BADGE_LABEL_MAP = {
@@ -277,7 +273,6 @@ def one_line_summary(text, max_len=90):
     """본문/제목에서 한 줄 요약 추출"""
     if not text:
         return ""
-    # 첫 문장 or 첫 max_len 글자
     text = clean_html(text)
     for sep in ['. ', '.\n', '. \n', '。']:
         idx = text.find(sep)
@@ -298,7 +293,7 @@ def get_importance(title, summary=""):
     return       {"label":"🆕 신규","class":"new"}
 
 # ─────────────────────────────────────────────────────
-# ★ 핵심 수정: 시간 파싱 (원문 timezone 우선)
+# ★ 시간 파싱 (원문 timezone 우선)
 # ─────────────────────────────────────────────────────
 def parse_date_kst(entry, lang='en'):
     """
@@ -307,7 +302,6 @@ def parse_date_kst(entry, lang='en'):
     ② timezone 없으면 한국어 피드(lang=ko)는 이미 KST로 간주
     ③ 영어 피드 timezone 없으면 UTC 가정 후 KST 변환
     """
-    # 1순위: raw 문자열 파싱 (timezone 정보 포함 가능성 높음)
     for attr in ('published', 'updated'):
         raw = getattr(entry, attr, None)
         if not raw:
@@ -315,37 +309,32 @@ def parse_date_kst(entry, lang='en'):
         # RFC 2822 형식 (e.g., "Mon, 17 Mar 2026 04:01:00 +0000")
         try:
             dt = parsedate_to_datetime(raw)
-            # parsedate_to_datetime은 timezone-aware datetime 반환
             return dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
         except Exception:
             pass
-        # ISO 8601 형식 (e.g., "2026-03-17T04:01:00+00:00" or "2026-03-17T04:01:00Z")
+        # ISO 8601 형식
         try:
             dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
             if dt.tzinfo is None:
-                # timezone 없음: 언어에 따라 판단
                 tz = KST if lang == 'ko' else timezone.utc
                 dt = dt.replace(tzinfo=tz)
             return dt.astimezone(KST).strftime("%Y-%m-%d %H:%M")
         except Exception:
             pass
 
-    # 2순위: feedparser parsed struct (timezone 정보 손실 가능)
+    # feedparser parsed struct
     for attr in ('published_parsed', 'updated_parsed'):
         t = getattr(entry, attr, None)
         if t:
             try:
                 if lang == 'ko':
-                    # 한국 피드: timezone 없으면 KST로 간주
                     dt = datetime(*t[:6], tzinfo=KST)
                 else:
-                    # 영어 피드: UTC 가정
                     dt = datetime(*t[:6], tzinfo=timezone.utc).astimezone(KST)
                 return dt.strftime("%Y-%m-%d %H:%M")
             except Exception:
                 pass
 
-    # 폴백: 현재 KST
     return NOW_KST.strftime("%Y-%m-%d %H:%M")
 
 def get_thumbnail(entry):
@@ -356,9 +345,76 @@ def get_thumbnail(entry):
             return enc.get('url', '')
     body = (getattr(entry, 'summary', '') or
             (entry.content[0].get('value', '') if getattr(entry, 'content', None) else ''))
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', body)
-    if m and m.group(1).startswith('http'): return m.group(1)
+    m = re.search(r'<img[^>]+src=["\'](https?:[^"\']+)["\']', body)
+    if m: return m.group(1)
     return ""
+
+# ─────────────────────────────────────────────────────
+# ★ 번역 기능 (해외 기사 → 한국어)
+# ─────────────────────────────────────────────────────
+_translator = None
+
+def get_translator():
+    global _translator
+    if _translator is None:
+        try:
+            from deep_translator import GoogleTranslator
+            _translator = GoogleTranslator(source='auto', target='ko')
+        except ImportError:
+            _translator = False
+    return _translator if _translator else None
+
+def translate_to_ko(text, max_len=180):
+    """영어 텍스트 → 한국어 번역. 실패 시 원문 반환."""
+    if not text: return ""
+    translator = get_translator()
+    if not translator: return text
+    try:
+        return translator.translate(text[:max_len]) or text
+    except Exception:
+        return text
+
+def batch_translate_items(items):
+    """
+    영어 기사의 one_line_kr 필드 채우기 (배치 번역).
+    속도 최적화: hot/star 우선 + 최대 80개 제한
+    """
+    translator = get_translator()
+    if not translator:
+        print("  ⚠️ deep-translator 미설치, 번역 생략")
+        for it in items:
+            it["one_line_kr"] = it.get("one_line", "")
+        return
+
+    # 번역 대상: 영어 기사 (중요도 순)
+    en_items = [i for i in items if i.get("lang") == "en"]
+    priority = (
+        [i for i in en_items if i["importance"]["class"] == "hot"] +
+        [i for i in en_items if i["importance"]["class"] == "star"] +
+        [i for i in en_items if i["importance"]["class"] == "new"]
+    )
+    # 중복 제거 (id 기준)
+    seen, ordered = set(), []
+    for it in priority:
+        if it["id"] not in seen:
+            seen.add(it["id"]); ordered.append(it)
+
+    translate_targets = ordered[:80]  # 최대 80개
+    translate_ids = {it["id"] for it in translate_targets}
+
+    print(f"  🌐 번역 대상: {len(translate_targets)}건 (영어 기사 중 상위)")
+    ok_count = 0
+    for it in items:
+        if it["id"] in translate_ids:
+            src = it.get("one_line", "") or it.get("title", "")
+            it["one_line_kr"] = translate_to_ko(src)
+            ok_count += 1
+        elif it.get("lang") == "en":
+            it["one_line_kr"] = ""  # 나머지 영어: 빈 문자열 (JS에서 원문 one_line 사용)
+        else:
+            it["one_line_kr"] = ""  # 한국어: 이미 KR
+
+    print(f"  ✅ 번역 완료: {ok_count}건")
 
 # ─────────────────────────────────────────────────────
 # ★ 블로그 크롤러 (RSS 없는 공식 플랫폼)
@@ -426,6 +482,20 @@ BLOG_CONFIGS = [
     },
 ]
 
+def _find_time_in_container(element, depth=5):
+    """링크 태그로부터 상위 컨테이너를 탐색하며 <time> 태그 검색"""
+    # 1) 링크 내부 먼저
+    t = element.find("time")
+    if t: return t
+    # 2) 상위 컨테이너 탐색
+    node = element.parent
+    for _ in range(depth):
+        if not node: break
+        t = node.find("time")
+        if t: return t
+        node = node.parent
+    return None
+
 def scrape_blog(cfg):
     """공식 블로그 크롤링 → 아이템 리스트 반환"""
     items = []
@@ -440,7 +510,6 @@ def scrape_blog(cfg):
             if count >= cfg["limit"]:
                 break
             href = a.get("href", "").strip()
-            # 패턴 매칭
             if not re.match(cfg["link_pattern"], href):
                 continue
             # 절대 URL로 변환
@@ -455,29 +524,29 @@ def scrape_blog(cfg):
                 continue
             seen_hrefs.add(full_url)
 
-            # 제목 추출: h1~h5 우선 → 다이렉트 텍스트 노드 → 첫 번째 텍스트
+            # 제목 추출
             title_el = a.find(["h1","h2","h3","h4","h5"])
             if title_el:
                 title = title_el.get_text(strip=True)
             else:
-                # 다이렉트 텍스트 노드만 (중첩된 span/div 제외)
                 direct_texts = [t.strip() for t in a.find_all(string=True, recursive=False) if t.strip()]
                 title = direct_texts[0] if direct_texts else ''
                 if not title:
                     first = a.find(string=True)
                     title = first.strip() if first else ''
             title = re.sub(r'\s+', ' ', title)[:120].strip()
-            # 네비게이션 아이템 필터: 너무 짧거나 단일단어(Company, Affiliates 등) 제외
+            # 네비게이션 필터
             if len(title) < 15 or (len(title.split()) == 1 and title[0].isupper()):
                 continue
 
-            # 날짜 추출: <time> 태그 또는 텍스트에서 날짜 패턴
+            # ★ 날짜 추출 개선: 상위 컨테이너에서 <time> 탐색
             date_str = ""
-            time_el = a.find("time")
+            time_el = _find_time_in_container(a, depth=6)
             if time_el:
+                # datetime 속성 우선, 없으면 텍스트
                 date_str = time_el.get("datetime", "") or time_el.get_text(strip=True)
             if not date_str:
-                # 텍스트에서 날짜 패턴 검색 (예: "March 11, 2026" 또는 "Mar 11, 2026")
+                # 텍스트에서 날짜 패턴 검색
                 text_block = a.get_text(" ", strip=True)
                 m = re.search(
                     r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2},? \d{4}',
@@ -486,10 +555,9 @@ def scrape_blog(cfg):
                 if m:
                     date_str = m.group(0)
 
-            # 날짜 파싱
             kst_date = _parse_scraped_date(date_str)
 
-            # 요약: 링크 주변 <p> 태그 or 상위 div의 <p>
+            # 요약
             summary = ""
             parent = a.parent
             if parent:
@@ -502,6 +570,7 @@ def scrape_blog(cfg):
                 "title":        title,
                 "summary":      summary,
                 "one_line":     one_line_summary(summary or title),
+                "one_line_kr":  "",   # 이후 배치 번역에서 채움
                 "url":          full_url,
                 "source":       cfg["name"],
                 "category":     cfg["category"],
@@ -524,7 +593,7 @@ def _parse_scraped_date(raw: str) -> str:
     """크롤링으로 얻은 날짜 문자열을 KST 형식으로 변환"""
     if not raw:
         return NOW_KST.strftime("%Y-%m-%d %H:%M")
-    # ISO 8601
+    # ISO 8601 (시간 포함)
     try:
         dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
         if dt.tzinfo is None:
@@ -579,12 +648,13 @@ def fetch_feed(feed_info):
                 "title":        title,
                 "summary":      summary,
                 "one_line":     one_line_summary(summary or title),
+                "one_line_kr":  "",  # 이후 배치 번역
                 "url":          link,
                 "source":       feed_info["name"],
                 "category":     feed_info["category"],
                 "badge":        feed_info["badge"],
                 "lang":         lang,
-                "date":         parse_date_kst(entry, lang),   # ★ lang 전달
+                "date":         parse_date_kst(entry, lang),
                 "collect_date": TODAY,
                 "thumbnail":    get_thumbnail(entry),
                 "importance":   get_importance(title, summary),
@@ -608,7 +678,8 @@ EXTRACT_KEYWORDS = [
     "Video AI","Image Generation","이미지 생성","생성형 AI","DeepSeek","딥시크",
     "Sora","Runway","Midjourney","Stable Diffusion","Flux","Pika","Luma","Kling",
     "인공지능","ChatGPT","Grok","Mistral","Phi","Qwen","ElevenLabs",
-    "Anthropic","Perplexity","Ideogram","Adobe Firefly","Together AI",
+    "Anthropic","Perplexity","Ideogram","Adobe Firefly","Leonardo","DALL-E","Canva AI",
+    "Together AI","ComfyUI",
 ]
 
 def extract_keywords(items):
@@ -632,36 +703,115 @@ def make_stats(items):
     return ordered_cat, sorted_src
 
 # ─────────────────────────────────────────────────────
-# ★ 핵심 포인트 5개 생성
+# ★ 핵심 포인트 — 원문 인사이트 서술문 (v7 개선)
 # ─────────────────────────────────────────────────────
-def make_key_point(item):
-    """뉴스 아이템 → 한 줄 핵심 포인트 문장"""
-    source = item.get("source", "")
-    title  = item.get("title", "")
-    lang   = item.get("lang", "en")
-    cat    = item.get("category", "")
+# 한국어 제목 → 서술문 변환 패턴
+# "A, B 공개" → "A는 B를 공개했다."
+_KO_VERB_MAP = [
+    (r"공개$|출시$|선보여$|선보인다$", "공개했다"),
+    (r"발표$|발표했다$",              "발표했다"),
+    (r"출시$|출시됐다$",              "출시됐다"),
+    (r"강화$|업데이트$",              "업데이트됐다"),
+    (r"도입$|도입했다$",              "도입됐다"),
+    (r"협력$|파트너십$",              "협력 계약을 체결했다"),
+    (r"투자$|유치$",                  "투자를 유치했다"),
+    (r"개최$",                        "행사를 개최했다"),
+]
 
-    # 카테고리별 동사 템플릿
-    if "영상AI" in cat:
-        action = "새로운 영상 AI 기능을 공개했다"
-    elif "이미지" in cat or "디자인" in cat:
-        action = "새로운 이미지 생성 기술을 선보였다"
-    elif "LLM" in cat:
-        action = "새 모델 또는 AI 서비스를 발표했다"
-    elif "개발AI" in cat:
-        action = "새로운 개발 도구·기술을 공개했다"
-    elif "콘텐츠" in cat:
-        action = "국내 AI 관련 주요 소식을 전했다"
-    else:
-        action = "AI 관련 새 소식을 발표했다"
+def _ko_title_to_insight(title: str) -> str:
+    """한국어 제목을 자연스러운 서술문으로 변환"""
+    # 콤마/쉼표로 주어·술어 분리
+    for sep in ['，', ', ', ',']:
+        if sep in title:
+            parts = title.split(sep, 1)
+            subject = parts[0].strip()
+            predicate = parts[1].strip() if len(parts) > 1 else title
+            # 술어 끝 변환
+            for pattern, verb in _KO_VERB_MAP:
+                if re.search(pattern, predicate):
+                    # "공개"만 있는 경우 → 서술어 추가
+                    pred_clean = re.sub(pattern, '', predicate).strip().rstrip('를을이가은는')
+                    if pred_clean:
+                        return f"{subject}는 {pred_clean}을(를) {verb}."
+                    else:
+                        return f"{subject}가 {predicate} 예정이다."
+            # 패턴 없음: 그냥 이어서 서술
+            return f"{subject}는 '{predicate}'."
+
+    # 콤마 없음: 원문 그대로 (~이다 형식)
+    # 마지막 단어가 명사면 "~을 발표했다", 동사면 그대로
+    if title.endswith(('공개', '발표', '출시', '선보여')):
+        return title + "됐다."
+    if title.endswith(('예정', '계획')):
+        return title + "이다."
+    return title + "."
+
+
+def _clean_insight(text: str) -> str:
+    """인사이트 문장 후처리: 불완전한 문장 정리"""
+    if not text: return ""
+    text = text.strip()
+    # "…"로 끝나는 불완전 문장 처리
+    if text.endswith('…') or text.endswith('...'):
+        # 마지막 완성된 문장까지만 사용
+        for sep in ['다.', '습니다.', '겠다.', '이다.', '했다.', '됩니다.', '했습니다.']:
+            idx = text.rfind(sep)
+            if idx > 10:
+                return text[:idx + len(sep)]
+        # 줄임표 제거
+        return text.rstrip('…').rstrip('.').strip() + '.'
+    # 문장이 완결되지 않은 경우
+    if not text.endswith(('.', '!', '?', '다', '요')):
+        text = text + '.'
+    return text
+
+
+def make_key_point(item) -> str:
+    """
+    뉴스 아이템 → 원문 인사이트 한 줄 서술문 (v7)
+    우선순위: ① summary 첫 문장 ② title 서술문 변환
+    """
+    title   = item.get("title", "").strip()
+    summary = item.get("summary", "").strip()
+    lang    = item.get("lang", "en")
+
+    # ArXiv 논문 제목 정리 (arXiv:XXXX 형식 제거)
+    if item.get("category") == "논문":
+        title = re.sub(r'^arXiv:\S+\s*', '', title).strip()
+        title = re.sub(r'Announce Type:\s*\w+\s*Abstract:\s*', '', title).strip()
+        if title:
+            title = title[:80]
 
     if lang == "ko":
-        # 한국어: 제목 그대로 사용
-        short = title[:55] + ("…" if len(title) > 55 else "")
-        return f'{source}에 따르면 "{short}".'
+        # ① 한국어 summary가 있으면 첫 문장 사용
+        if summary and len(summary) > 20:
+            for sep in ['다. ', '다.\n', '습니다. ', '습니다.\n']:
+                idx = summary.find(sep)
+                if 10 < idx < 120:
+                    return _clean_insight(summary[:idx + len(sep)].strip())
+            if len(summary) <= 100:
+                return _clean_insight(summary)
+            return _clean_insight(summary[:80].rstrip() + "…")
+
+        # ② 제목을 서술문으로 변환
+        return _clean_insight(_ko_title_to_insight(title))
+
     else:
-        short = title[:60] + ("\u2026" if len(title) > 60 else "")
-        return f"{source}는 '{short}'을 다루며 {action}."
+        # 영어: one_line_kr(번역) 우선
+        kr = item.get("one_line_kr", "")
+        if kr and len(kr) > 10:
+            return _clean_insight(kr)
+
+        # summary 앞부분 번역
+        if summary and len(summary) > 20:
+            snippet = one_line_summary(summary, max_len=120)
+            translated = translate_to_ko(snippet)
+            if translated and translated != snippet:
+                return _clean_insight(translated)
+
+        # 제목 번역
+        title_kr = translate_to_ko(title[:80])
+        return _clean_insight(title_kr) if title_kr and title_kr != title else _clean_insight(title)
 
 
 def build_daily_summary(items, keywords):
@@ -674,8 +824,8 @@ def build_daily_summary(items, keywords):
     cat_lines = [f"{c} {cats[c]}건" for c in CATEGORY_ORDER if cats.get(c,0)>0]
     kw_str    = " · ".join(top_kws[:5]) if top_kws else "-"
 
-    hot  = [i for i in items if i["importance"]["class"]=="hot"]
-    star = [i for i in items if i["importance"]["class"]=="star"]
+    hot   = [i for i in items if i["importance"]["class"]=="hot"]
+    star  = [i for i in items if i["importance"]["class"]=="star"]
     hot_items  = hot[:3]
     hot_titles = ""
     if hot_items:
@@ -689,8 +839,14 @@ def build_daily_summary(items, keywords):
         f"{hot_titles}"
     )
 
-    # ★ 핵심 포인트 5개: 중요도 높은 기사 + 다양한 소스
-    priority_items = hot + star + [i for i in items if i["importance"]["class"] == "new"]
+    # ★ 핵심 포인트 5개: 논문·비즈니스 제외 + 다양한 소스 + 중요도 우선
+    NON_INSIGHT_CATS = {"논문", "비즈니스"}
+    main_hot  = [i for i in hot  if i["category"] not in NON_INSIGHT_CATS]
+    main_star = [i for i in star if i["category"] not in NON_INSIGHT_CATS]
+    main_new  = [i for i in items
+                 if i["importance"]["class"] == "new"
+                 and i["category"] not in NON_INSIGHT_CATS]
+    priority_items = main_hot + main_star + main_new
     seen_sources, key_point_items = set(), []
     for it in priority_items:
         if it["source"] not in seen_sources:
@@ -698,11 +854,10 @@ def build_daily_summary(items, keywords):
             key_point_items.append(it)
         if len(key_point_items) >= 5:
             break
-    # 부족하면 그냥 채우기
+    # 부족하면 논문·비즈니스 제외하고 채우기
     for it in items:
-        if len(key_point_items) >= 5:
-            break
-        if it not in key_point_items:
+        if len(key_point_items) >= 5: break
+        if it not in key_point_items and it["category"] not in NON_INSIGHT_CATS:
             key_point_items.append(it)
 
     key_points = [make_key_point(it) for it in key_point_items[:5]]
@@ -716,13 +871,13 @@ def build_daily_summary(items, keywords):
         "top_category":    top_cat,
         "category_counts": cats,
         "hot_picks":       [{"title":i["title"],"source":i["source"],"url":i["url"]} for i in hot_items],
-        "key_points":      key_points,                # ★ 새 필드
+        "key_points":      key_points,
         "one_line":        f"오늘 {len(items)}건 | 국내 {kr} · 해외 {len(items)-kr} | 핫 키워드: {', '.join(top_kws[:3])}",
         "prose":           prose,
     }
 
 # ─────────────────────────────────────────────────────
-# 누적 집계 (B방식)
+# 누적 집계 (주간·월간)
 # ─────────────────────────────────────────────────────
 def load_history_items(days: int) -> list:
     history_dir = "data/history"
@@ -742,33 +897,87 @@ def load_history_items(days: int) -> list:
     return all_items
 
 def build_period_json(items, period_label, days):
+    """
+    ★ v7: content_highlights, cat_highlights, rising_keywords 추가
+    수집량 중심 → 내용 중심 데이터 제공
+    """
     cat_stats, src_stats = make_stats(items)
     keywords = extract_keywords(items)
     kr = sum(1 for i in items if i.get("lang")=="ko")
+
     daily_counts = {}
     for it in items:
         d = it.get("collect_date","")
         if d: daily_counts[d] = daily_counts.get(d,0)+1
     daily_timeline = [{"date":k,"count":v} for k,v in sorted(daily_counts.items())]
+
     cat_daily = {}
     for it in items:
         d, cat = it.get("collect_date",""), it.get("category","")
         if d and cat:
             cat_daily.setdefault(d,{})
             cat_daily[d][cat] = cat_daily[d].get(cat,0)+1
+
+    # ★ 핵심 하이라이트: hot/star 기사 상위 10개
+    hot   = [i for i in items if i.get("importance",{}).get("class")=="hot"]
+    star  = [i for i in items if i.get("importance",{}).get("class")=="star"]
+    priority = hot + star
+    seen_u, highlights = set(), []
+    for it in priority:
+        url = it.get("url","")
+        if url and url not in seen_u:
+            seen_u.add(url); highlights.append(it)
+        if len(highlights) >= 10: break
+
+    # ★ 카테고리별 대표 소식 (hot/star 우선, 논문·비즈니스 제외)
+    MAIN_CATS = ["콘텐츠","영상AI","이미지·디자인AI","LLM","개발AI"]
+    cat_highlights = {}
+    for cat in MAIN_CATS:
+        cat_items = [i for i in priority if i.get("category")==cat]
+        if not cat_items:
+            cat_items = [i for i in items if i.get("category")==cat]
+        if cat_items:
+            cat_highlights[cat] = {
+                "title":  cat_items[0]["title"],
+                "source": cat_items[0]["source"],
+                "url":    cat_items[0].get("url",""),
+                "one_line": cat_items[0].get("one_line_kr") or cat_items[0].get("one_line",""),
+                "date":   cat_items[0].get("date",""),
+            }
+
+    # ★ 이번 기간 핵심 5포인트 생성
+    key_points_items = highlights[:5] if highlights else items[:5]
+    period_key_points = [make_key_point(it) for it in key_points_items]
+
+    # ★ 주간/월간 요약 문장
+    top_kws = [k["keyword"] for k in keywords[:5]]
+    kw_str = ", ".join(top_kws) if top_kws else "-"
+    top_cat = max(cat_stats.items(), key=lambda x:x[1])[0] if cat_stats else "-"
+    period_name = "주간" if period_label == "weekly" else "월간"
+    period_prose = (
+        f"이번 {period_name} 총 {len(items)}건의 AI 자료가 수집됐습니다. "
+        f"국내 {kr}건, 해외 {len(items)-kr}건이며 "
+        f"{top_cat} 분야에서 가장 활발한 활동이 관측됐습니다. "
+        f"주요 키워드는 {kw_str}입니다."
+    )
+
     return {
-        "period":          period_label,
-        "days":            days,
-        "generated_at":    NOW_KST.strftime("%Y-%m-%d %H:%M"),
-        "total":           len(items),
-        "kr_count":        kr,
-        "en_count":        len(items)-kr,
-        "category_stats":  cat_stats,
-        "source_stats":    src_stats,
-        "keywords":        keywords,
-        "daily_timeline":  daily_timeline,
-        "cat_daily":       cat_daily,
-        "items":           items,
+        "period":             period_label,
+        "days":               days,
+        "generated_at":       NOW_KST.strftime("%Y-%m-%d %H:%M"),
+        "total":              len(items),
+        "kr_count":           kr,
+        "en_count":           len(items)-kr,
+        "category_stats":     cat_stats,
+        "source_stats":       src_stats,
+        "keywords":           keywords,
+        "daily_timeline":     daily_timeline,
+        "cat_daily":          cat_daily,
+        "content_highlights": highlights,          # ★ 핵심 기사 목록
+        "cat_highlights":     cat_highlights,       # ★ 카테고리별 대표
+        "period_key_points":  period_key_points,    # ★ 기간 핵심 포인트
+        "period_prose":       period_prose,          # ★ 기간 요약 문장
+        "items":              items,
     }
 
 # ─────────────────────────────────────────────────────
@@ -776,7 +985,7 @@ def build_period_json(items, period_label, days):
 # ─────────────────────────────────────────────────────
 def main():
     print(f"\n{'='*60}")
-    print(f"  AI 트렌드 뉴스 수집 v6 — {TODAY}")
+    print(f"  AI 트렌드 뉴스 수집 v7 — {TODAY}")
     print(f"  실행 시각: {NOW_KST.strftime('%Y-%m-%d %H:%M')} KST")
     print(f"  RSS 소스: {len(RSS_FEEDS)}개 / 블로그 크롤러: {len(BLOG_CONFIGS)}개")
     print(f"{'='*60}\n")
@@ -810,9 +1019,16 @@ def main():
     )
     for i, item in enumerate(today_items):
         item["id"] = f"{TODAY}_{i:04d}"
-        # one_line 없으면 생성
         if not item.get("one_line"):
             item["one_line"] = one_line_summary(item.get("summary","") or item.get("title",""))
+
+    # 5) ★ 해외 기사 한국어 번역
+    print("\n── 해외 기사 번역 ────────────────────────────")
+    batch_translate_items(today_items)
+    # 한국어 기사는 one_line_kr = one_line 복사
+    for it in today_items:
+        if it.get("lang") == "ko":
+            it["one_line_kr"] = it.get("one_line", "")
 
     kr_cnt = sum(1 for i in today_items if i.get("lang")=="ko")
     print(f"\n오늘 수집: {len(today_items)}건 (국내 {kr_cnt} / 해외 {len(today_items)-kr_cnt})")
@@ -821,7 +1037,7 @@ def main():
     cat_stats, src_stats = make_stats(today_items)
     daily_summary        = build_daily_summary(today_items, keywords)
 
-    # 5) 저장
+    # 6) 저장
     os.makedirs("data/history", exist_ok=True)
     today_output = {
         "generated_at":   NOW_KST.strftime("%Y-%m-%d %H:%M"),
@@ -843,7 +1059,7 @@ def main():
         json.dump(today_output, f, ensure_ascii=False, indent=2)
     print(f"✅ {hist_path} 저장")
 
-    # 6) 주간·월간 집계
+    # 7) 주간·월간 집계
     print("\n📊 주간 집계 생성 중...")
     weekly_items = load_history_items(7)
     with open("data/weekly.json", "w", encoding="utf-8") as f:
@@ -856,12 +1072,12 @@ def main():
         json.dump(build_period_json(monthly_items, "monthly", 30), f, ensure_ascii=False, indent=2)
     print(f"✅ data/monthly.json 저장 ({len(monthly_items)}건)")
 
-    # 7) 결과 요약
+    # 8) 결과 요약
     print(f"\n{'='*60}")
     print(f"✅ 완료!")
     print(f"   카테고리: {list(cat_stats.keys())}")
     print(f"   핫 키워드: {[k['keyword'] for k in keywords[:7]]}")
-    print(f"   핵심 포인트:")
+    print(f"   핵심 포인트 (인사이트 서술문):")
     for pt in daily_summary.get("key_points", []):
         print(f"     • {pt}")
     print(f"   카테고리별 분포:")

@@ -1,103 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 트렌드 대시보드</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 트렌드 대시보드</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════════
-     헤더
-══════════════════════════════════════════════════════ -->
+<!-- ══ 헤더 ══════════════════════════════════════════════ -->
 <header class="site-header">
-  <div class="header-top">
-    <div class="header-brand">
-      <span class="brand-icon">✦</span>
-      <h1 class="brand-title">AI 트렌드</h1>
-      <span class="brand-sub">인공지능 일간·주간·월간 동향</span>
+  <div class="top-bar">
+    <div class="brand">
+      <i class="fa-solid fa-robot brand-icon"></i>
+      <div>
+        <div class="brand-title">AI 트렌드</div>
+        <div class="brand-sub">Daily Intelligence Feed</div>
+      </div>
     </div>
     <div class="header-actions">
-      <span id="updateTime" class="update-time">로딩 중...</span>
-      <button id="themeBtn" class="icon-btn" title="테마 전환">
+      <span class="update-time" id="updateTime">데이터 로딩 중…</span>
+      <button class="icon-btn" id="themeBtn" title="테마 전환">
         <i class="fa-solid fa-moon"></i>
       </button>
     </div>
   </div>
 
   <nav class="tab-nav">
-    <button class="nav-btn active" data-tab="today">
-      <i class="fa-solid fa-newspaper"></i>
-      <span>오늘의 AI</span>
-    </button>
-    <button class="nav-btn" data-tab="weekly">
-      <i class="fa-solid fa-chart-bar"></i>
-      <span>주간 리포트</span>
-    </button>
-    <button class="nav-btn" data-tab="monthly">
-      <i class="fa-solid fa-chart-line"></i>
-      <span>월간 인사이트</span>
-    </button>
+    <button class="nav-btn active" data-tab="today">🔥 오늘의 AI</button>
+    <button class="nav-btn" data-tab="weekly">📊 주간 리포트</button>
+    <button class="nav-btn" data-tab="monthly">📈 월간 인사이트</button>
   </nav>
 </header>
 
-<main class="main-wrap">
+<!-- ══ 오늘의 AI 탭 ════════════════════════════════════════ -->
+<main class="tab-section active" id="tab-today">
 
-<!-- ══════════════════════════════════════════════════════
-     TAB: 오늘의 AI
-══════════════════════════════════════════════════════ -->
-<section id="tab-today" class="tab-section active">
-
-  <!-- ① 오늘의 주요 요약 (최상단) -->
-  <div id="dailySummarySection" class="summary-panel" style="display:none">
+  <!-- 일간 요약 패널 -->
+  <section class="summary-panel" id="dailySummarySection" style="display:none">
     <div class="summary-header">
-      <div class="summary-title-row">
-        <span class="summary-icon">📋</span>
-        <h2 class="summary-title">오늘의 주요 요약</h2>
-        <span id="summaryDate" class="summary-date-badge"></span>
-      </div>
-      <div id="summaryStats" class="summary-stat-row"></div>
+      <h2 class="summary-title">📋 오늘의 AI 요약</h2>
+      <span class="summary-date-badge" id="summaryDate"></span>
     </div>
+    <div class="summary-stats" id="summaryStats"></div>
 
     <!-- 줄글 요약 -->
-    <div class="summary-prose-block">
-      <div class="prose-label">📝 오늘의 브리핑</div>
-      <p id="summaryProse" class="summary-prose"></p>
+    <p class="summary-prose" id="summaryProse"></p>
+
+    <!-- 핵심 키워드 -->
+    <div class="kw-chip-wrap" id="summaryKeywords"></div>
+
+    <!-- ★ 핵심 포인트 5개 (인사이트 서술문) -->
+    <div class="key-points-section">
+      <h3 class="kp-title">💡 오늘의 핵심 인사이트</h3>
+      <ol class="key-points-list" id="summaryKeyPoints"></ol>
     </div>
 
-    <div class="summary-body">
-      <!-- 핵심 키워드 -->
-      <div class="summary-sub-block">
-        <div class="sub-block-label">🔥 핵심 키워드</div>
-        <div id="summaryKeywords" class="kw-chips"></div>
-
-        <!-- ★ 핵심 포인트 5개 (키워드 아래) -->
-        <div class="sub-block-label" style="margin-top:14px">📌 오늘의 핵심 포인트</div>
-        <ul id="summaryKeyPoints" class="key-points-list"></ul>
-      </div>
-
-      <!-- 추천 픽 -->
-      <div class="summary-sub-block">
-        <div class="sub-block-label">⭐ 오늘의 추천 픽</div>
-        <div id="summaryPicks" class="picks-list"></div>
-      </div>
+    <!-- 추천 픽 -->
+    <div class="picks-section">
+      <h3 class="picks-label">🏆 오늘의 추천 픽</h3>
+      <div class="picks-list" id="summaryPicks"></div>
     </div>
-  </div>
+  </section>
 
-  <!-- ② 메인 레이아웃 (피드 + 사이드바) -->
+  <!-- 필터 + 리스트 + 사이드바 -->
   <div class="content-layout">
-
-    <!-- 뉴스 피드 -->
-    <div class="feed-col">
-
-      <!-- 필터 바 -->
+    <div class="news-feed">
+      <!-- 필터바 -->
       <div class="filter-bar">
-        <!-- 카테고리 버튼은 JS에서 동적 생성 (논문·비즈니스 제외) -->
-        <div id="filterCats" class="filter-cats"></div>
+        <div class="filter-cats" id="filterCats"></div>
         <div class="filter-right">
           <div class="lang-toggle">
             <button class="lang-btn active" data-lang="all">전체</button>
@@ -106,166 +79,152 @@
           </div>
           <div class="search-wrap">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input id="searchInput" type="text" placeholder="키워드 검색...">
-            <span id="resultCount" class="result-count"></span>
+            <input type="text" id="searchInput" class="search-input" placeholder="제목·소스 검색…">
           </div>
+          <span class="result-count" id="resultCount"></span>
         </div>
       </div>
 
-      <!-- ★ 리스트 형식 뉴스 피드 -->
-      <div id="newsList" class="news-list">
-        <div id="loadingSkeleton" class="skeleton-wrap">
-          <div class="list-skeleton"></div>
-          <div class="list-skeleton"></div>
-          <div class="list-skeleton"></div>
-          <div class="list-skeleton"></div>
-          <div class="list-skeleton"></div>
-        </div>
+      <!-- 로딩 스켈레톤 -->
+      <div id="loadingSkeleton" class="skeleton-wrap">
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
+        <div class="skeleton-item"></div>
       </div>
 
-      <div id="errorBox" class="error-box" style="display:none">
+      <!-- 뉴스 리스트 -->
+      <div class="news-list" id="newsList"></div>
+
+      <!-- 에러 박스 -->
+      <div class="error-box" id="errorBox" style="display:none">
         <i class="fa-solid fa-triangle-exclamation"></i>
-        <pre id="errorMsg"></pre>
-        <p>GitHub Actions 탭 → Run workflow 버튼을 눌러 데이터를 생성해 주세요.</p>
+        <pre class="error-msg" id="errorMsg"></pre>
       </div>
     </div>
 
     <!-- 사이드바 -->
-    <aside class="sidebar-col">
-      <div class="sb-card">
-        <h3 class="sb-title"><i class="fa-solid fa-fire"></i> 소스별 현황</h3>
-        <ul id="sourceList" class="source-list"></ul>
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">📡 소스 현황</h3>
+        <ul class="source-list" id="sourceList"></ul>
       </div>
-      <div class="sb-card">
-        <h3 class="sb-title"><i class="fa-solid fa-tags"></i> 핫 키워드</h3>
-        <div id="keywordsWrap" class="kw-bars"></div>
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">🔑 핫 키워드</h3>
+        <div id="keywordsWrap"></div>
       </div>
-      <div class="sb-card">
-        <h3 class="sb-title"><i class="fa-solid fa-chart-pie"></i> 카테고리</h3>
-        <div class="chart-wrap" style="height:180px">
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">🗂 카테고리</h3>
+        <div class="chart-wrap" style="height:200px">
           <canvas id="catChart"></canvas>
         </div>
       </div>
     </aside>
   </div>
-</section>
+</main>
 
-<!-- ══════════════════════════════════════════════════════
-     TAB: 주간 리포트
-══════════════════════════════════════════════════════ -->
-<section id="tab-weekly" class="tab-section">
-  <div class="page-header">
-    <div class="page-header-left">
-      <h2 class="page-title"><i class="fa-solid fa-calendar-week"></i> 주간 리포트</h2>
-      <span id="weekRange" class="range-badge"></span>
+<!-- ══ 주간 리포트 탭 ═════════════════════════════════════ -->
+<main class="tab-section" id="tab-weekly">
+  <div class="report-header">
+    <div>
+      <h2 class="report-title">📊 주간 AI 트렌드 리포트</h2>
+      <span class="report-range" id="weekRange"></span>
     </div>
-    <button id="dlBtn" class="dl-btn">
-      <i class="fa-solid fa-download"></i> TXT 다운로드
+    <button class="dl-btn" id="dlBtn">
+      <i class="fa-solid fa-download"></i> 리포트 다운로드
     </button>
   </div>
 
-  <div id="wAccumInfo" class="accum-info"></div>
+  <!-- 누적 정보 -->
+  <div class="accum-info" id="wAccumInfo"></div>
 
-  <div class="stat-grid">
-    <div class="stat-card">
-      <div class="stat-icon red"><i class="fa-solid fa-newspaper"></i></div>
-      <div class="stat-num" id="wTotalItems">-</div>
-      <div class="stat-label">총 수집</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-icon blue"><i class="fa-solid fa-flag"></i></div>
-      <div class="stat-num" id="wKrItems">-</div>
-      <div class="stat-label">국내 기사</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-icon purple"><i class="fa-solid fa-file-alt"></i></div>
-      <div class="stat-num" id="wPapers">-</div>
-      <div class="stat-label">논문</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-icon green"><i class="fa-solid fa-tools"></i></div>
-      <div class="stat-num" id="wTools">-</div>
-      <div class="stat-label">도구/공식</div>
-    </div>
+  <!-- ★ 이번 주 핵심 요약 문장 -->
+  <div class="period-prose-wrap">
+    <p class="period-prose" id="weeklyProse"></p>
   </div>
 
-  <div class="chart-row">
-    <div class="chart-box">
-      <h3 class="chart-title">📅 일별 수집량 타임라인</h3>
-      <div class="chart-wrap" style="height:220px">
-        <canvas id="weeklyTimelineChart"></canvas>
-      </div>
-    </div>
-    <div class="chart-box">
-      <h3 class="chart-title">📂 카테고리별 분포</h3>
-      <div class="chart-wrap" style="height:220px">
-        <canvas id="weeklyBarChart"></canvas>
-      </div>
-    </div>
-  </div>
-
+  <!-- ★ 이번 주 핵심 인사이트 포인트 -->
   <div class="report-block">
-    <h3 class="block-title">🔥 이번 주 핵심 키워드</h3>
-    <div id="weeklyKeywords" class="kw-chips"></div>
+    <h3 class="report-block-title">💡 이번 주 핵심 인사이트</h3>
+    <ol class="key-points-list" id="weeklyKeyPoints"></ol>
   </div>
 
-  <div class="top-row">
-    <div class="top-box">
-      <h3 class="block-title">📄 주목할 논문 TOP 5</h3>
-      <div id="topPapers"></div>
-    </div>
-    <div class="top-box">
-      <h3 class="block-title">🇰🇷 국내 추천 기사 TOP 5</h3>
-      <div id="topKrNews"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════
-     TAB: 월간 인사이트
-══════════════════════════════════════════════════════ -->
-<section id="tab-monthly" class="tab-section">
-  <div class="page-header">
-    <div class="page-header-left">
-      <h2 class="page-title"><i class="fa-solid fa-chart-line"></i> 월간 인사이트</h2>
-      <span id="monthRange" class="range-badge"></span>
-    </div>
-  </div>
-
-  <div id="mAccumInfo" class="accum-info"></div>
-  <div id="monthlySummary" class="monthly-summary-text"></div>
-
-  <div class="chart-row">
-    <div class="chart-box chart-full">
-      <h3 class="chart-title">📈 카테고리별 누적 트렌드</h3>
-      <div class="chart-wrap" style="height:280px">
-        <canvas id="monthlyLineChart"></canvas>
-      </div>
-    </div>
-  </div>
-  <div class="chart-row">
-    <div class="chart-box chart-full">
-      <h3 class="chart-title">🏆 소스별 누적 수집량 TOP 12</h3>
-      <div class="chart-wrap" style="height:320px">
-        <canvas id="monthlyBarChart"></canvas>
-      </div>
-    </div>
-  </div>
-
+  <!-- ★ 이번 주 핵심 뉴스 -->
   <div class="report-block">
-    <h3 class="block-title">🔥 이달의 핵심 키워드</h3>
-    <div id="monthlyKeywords" class="kw-chips"></div>
+    <h3 class="report-block-title">🔥 이번 주 주목 뉴스</h3>
+    <div class="highlight-list" id="weeklyHighlights"></div>
   </div>
-  <div class="report-block">
-    <h3 class="block-title">⭐ 이달의 추천 콘텐츠 TOP 10</h3>
-    <div id="monthlyTopItems"></div>
-  </div>
-</section>
 
+  <!-- ★ 카테고리별 대표 소식 -->
+  <div class="report-block">
+    <h3 class="report-block-title">🗂 분야별 대표 소식</h3>
+    <div class="cat-highlight-grid" id="weeklyCatHighlights"></div>
+  </div>
+
+  <!-- ★ 키워드 트렌드 -->
+  <div class="report-block">
+    <h3 class="report-block-title">📈 분야별 수집 추이</h3>
+    <div class="chart-wrap" style="height:240px">
+      <canvas id="weeklyKeyTrendChart"></canvas>
+    </div>
+  </div>
+
+  <!-- 키워드 히트맵 -->
+  <div class="report-block">
+    <h3 class="report-block-title">🏷️ 이번 주 핵심 키워드</h3>
+    <div class="kw-chip-wrap" id="weeklyKeywords"></div>
+  </div>
+</main>
+
+<!-- ══ 월간 인사이트 탭 ════════════════════════════════════ -->
+<main class="tab-section" id="tab-monthly">
+  <div class="report-header">
+    <div>
+      <h2 class="report-title">📈 월간 AI 인사이트</h2>
+      <span class="report-range" id="monthRange"></span>
+    </div>
+  </div>
+
+  <!-- 누적 정보 -->
+  <div class="accum-info" id="mAccumInfo"></div>
+
+  <!-- ★ 월간 핵심 요약 -->
+  <div class="monthly-summary" id="monthlySummary"></div>
+
+  <!-- ★ 이달의 핵심 인사이트 포인트 -->
+  <div class="report-block">
+    <h3 class="report-block-title">💡 이달의 핵심 인사이트</h3>
+    <ol class="key-points-list" id="monthlyKeyPoints"></ol>
+  </div>
+
+  <!-- ★ 이달의 핵심 뉴스 TOP 10 -->
+  <div class="report-block">
+    <h3 class="report-block-title">🔥 이달의 주목 뉴스 TOP 10</h3>
+    <div class="highlight-list" id="monthlyHighlights"></div>
+  </div>
+
+  <!-- ★ 카테고리별 대표 소식 -->
+  <div class="report-block">
+    <h3 class="report-block-title">🗂 분야별 대표 소식</h3>
+    <div class="cat-highlight-grid" id="monthlyCatHighlights"></div>
+  </div>
+
+  <!-- 카테고리 트렌드 -->
+  <div class="report-block">
+    <h3 class="report-block-title">📊 분야별 트렌드</h3>
+    <div class="chart-wrap" style="height:280px">
+      <canvas id="monthlyLineChart"></canvas>
+    </div>
+  </div>
+
+  <!-- 키워드 히트맵 -->
+  <div class="report-block">
+    <h3 class="report-block-title">🏷️ 이달의 핵심 키워드</h3>
+    <div class="kw-chip-wrap" id="monthlyKeywords"></div>
+  </div>
 </main>
 
 <footer class="site-footer">
-  <p>AI 트렌드 대시보드 · 매일 07:00 KST 자동 수집 · 50개+ 소스 (ArXiv, HuggingFace, OpenAI, Anthropic, Runway, AI타임스 등)</p>
+  <p>AI 트렌드 대시보드 · 매일 자동 수집 · 50+ 소스 (RSS + 공식 블로그)</p>
 </footer>
 
 <script src="app.js"></script>

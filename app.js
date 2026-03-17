@@ -1,16 +1,16 @@
 'use strict';
 
 /* ═══════════════════════════════════════════════════════════
-   AI 트렌드 대시보드 — app.js v6
+   AI 트렌드 대시보드 — app.js v7
    ─ 일간: data/ai_news.json
    ─ 주간: data/weekly.json
    ─ 월간: data/monthly.json
 
-   v6 변경:
-   - 카드 → 리스트 레이아웃
-   - 카테고리 재편: 이미지·디자인AI 통합 / 논문·비즈니스 필터 제거
-   - 주요 요약에 핵심 포인트 5개 표시
-   - 썸네일에서 원문 한 줄 요약만 표시
+   v7 변경:
+   - 핵심 포인트: 헤드라인 카피 → 원문 인사이트 서술문
+   - 해외 기사 썸네일: one_line_kr (번역된 한 줄 요약) 표시
+   - 주간/월간 리포트: 수집량 중심 → 내용/키워드/트렌드 중심
+   - 이미지·디자인AI 소스 추가 반영
 ═══════════════════════════════════════════════════════════ */
 
 let TODAY_DATA   = null;
@@ -27,13 +27,10 @@ let currentCat    = '전체';
 let currentLang   = 'all';
 let currentSearch = '';
 
-let catChartInst, weeklyTimelineInst, weeklyCatInst,
-    monthlyLineInst, monthlyBarInst;
+let catChartInst, weeklyKeyTrendInst, monthlyCatTrendInst;
 
-// ★ 카테고리 재편: 논문·비즈니스는 데이터만 유지, 필터 탭 없음
-const CAT_ORDER = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','논문','비즈니스'];
-
-// 필터에 표시할 카테고리 (논문·비즈니스 제외)
+// ★ 카테고리
+const CAT_ORDER  = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','논문','비즈니스'];
 const CAT_FILTER = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI'];
 
 const CAT_COLORS = {
@@ -100,8 +97,8 @@ async function loadData() {
 // ═══ 2. 전체 렌더링 ══════════════════════════════════════
 function renderAll() {
   showSkeleton(false);
-  renderDailySummary();   // 요약 먼저
-  renderNewsList();       // 리스트 렌더링
+  renderDailySummary();
+  renderNewsList();
   renderSidebar();
   renderWeekly();
   renderMonthly();
@@ -158,8 +155,13 @@ function buildListItem(item) {
   const emoji  = CAT_EMOJI[item.category] || '📰';
   const isKr   = item.lang === 'ko';
 
-  // ★ 한 줄 요약: one_line 필드 우선, 없으면 summary 앞부분
-  const oneLine = esc(item.one_line || firstSentence(item.summary) || item.title || '');
+  // ★ 한 줄 요약: 한국어 기사는 one_line / 해외 기사는 one_line_kr(번역) 우선
+  let displayLine = '';
+  if (isKr) {
+    displayLine = item.one_line || firstSentence(item.summary) || '';
+  } else {
+    displayLine = item.one_line_kr || item.one_line || firstSentence(item.summary) || '';
+  }
 
   const thumbHTML = item.thumbnail
     ? `<img class="list-thumb" src="${esc(item.thumbnail)}" alt="" loading="lazy"
@@ -181,7 +183,7 @@ function buildListItem(item) {
         <span class="list-cat">${emoji} ${esc(item.category)}</span>
       </div>
       <div class="list-title">${esc(item.title)}</div>
-      <div class="list-oneline">${oneLine}</div>
+      <div class="list-oneline">${esc(displayLine)}</div>
     </div>
     <div class="list-right">
       <span class="list-date">${formatDateShort(item.date)}</span>
@@ -199,7 +201,6 @@ function firstSentence(text) {
 
 function formatDateShort(dateStr) {
   if (!dateStr) return '';
-  // "2026-03-17 13:01" → "03-17 13:01"
   const m = dateStr.match(/\d{4}-(\d{2}-\d{2} \d{2}:\d{2})/);
   return m ? m[1] : dateStr;
 }
@@ -255,7 +256,7 @@ function renderCatChart() {
   });
 }
 
-// ═══ 5. 오늘의 요약 (최상단) ══════════════════════════════
+// ═══ 5. 오늘의 요약 ══════════════════════════════════════
 function renderDailySummary() {
   const section = document.getElementById('dailySummarySection');
   if (!section) return;
@@ -271,7 +272,6 @@ function renderDailySummary() {
     <span class="stat-badge">🌐 해외 <strong>${ALL_ITEMS.length - krCount}건</strong></span>
     <span class="stat-badge">소스 <strong>${SOURCE_STATS.length}개</strong></span>`;
 
-  // 줄글 요약
   const proseEl = document.getElementById('summaryProse');
   if (proseEl) {
     proseEl.textContent = d?.prose || d?.one_line ||
@@ -289,7 +289,7 @@ function renderDailySummary() {
       kwEl.appendChild(chip);
     });
 
-  // ★ 핵심 포인트 5개 (키워드 아래)
+  // ★ 핵심 포인트 5개 (인사이트 서술문)
   const pointsEl = document.getElementById('summaryKeyPoints');
   if (pointsEl) {
     pointsEl.innerHTML = '';
@@ -302,13 +302,12 @@ function renderDailySummary() {
         pointsEl.appendChild(li);
       });
     } else {
-      // 폴백: hot/star 아이템에서 생성
       const fallback = ALL_ITEMS.filter(i => i.importance?.class !== 'new').slice(0, 5);
       fallback.forEach((it, i) => {
         const li = document.createElement('li');
         li.className = 'key-point-item';
         li.innerHTML = `<span class="kp-num">${i+1}</span>
-          <span class="kp-text">${esc(it.source)}에서 "${esc(it.title.slice(0,55))}" 소식을 전했다.</span>`;
+          <span class="kp-text">${esc((it.one_line_kr || it.one_line || it.title).slice(0,80))}</span>`;
         pointsEl.appendChild(li);
       });
     }
@@ -340,10 +339,11 @@ function buildPickItem(num, title, source, url) {
   return a;
 }
 
-// ═══ 6. 주간 리포트 ══════════════════════════════════════
+// ═══ 6. 주간 리포트 (내용 중심 v7) ══════════════════════
 function renderWeekly() {
   const W = WEEKLY_DATA;
 
+  // 날짜 범위
   const rangeEl = document.getElementById('weekRange');
   if (W?.daily_timeline?.length) {
     const dates = W.daily_timeline.map(d => d.date);
@@ -357,86 +357,147 @@ function renderWeekly() {
 
   const wItems = W?.items || ALL_ITEMS;
   const wKw    = W?.keywords || KEYWORDS;
-  const wCat   = W?.category_stats || CAT_STATS;
-  const krItems = wItems.filter(i => i.lang === 'ko');
-  const papers  = wItems.filter(i => i.badge === 'paper');
-  const tools   = wItems.filter(i => i.badge === 'tool' || i.badge === 'official' || i.badge === 'crawled');
 
-  document.getElementById('wTotalItems').textContent = W?.total || wItems.length;
-  document.getElementById('wKrItems').textContent    = W?.kr_count ?? krItems.length;
-  document.getElementById('wPapers').textContent     = papers.length;
-  document.getElementById('wTools').textContent      = tools.length;
-
-  const wDayCount = W?.daily_timeline?.length || 1;
+  // 누적 정보
   document.getElementById('wAccumInfo').innerHTML =
-    `<span class="acc-badge">📅 누적 ${wDayCount}일치 데이터</span>` +
-    `<span class="acc-badge">📰 총 ${W?.total || wItems.length}건</span>` +
-    (W ? `` : `<span class="acc-badge warn">⚠️ 누적 데이터 없음</span>`);
+    `<span class="acc-badge">📅 ${W?.daily_timeline?.length || 1}일치 데이터</span>` +
+    `<span class="acc-badge">📰 총 ${W?.total || wItems.length}건 수집</span>` +
+    `<span class="acc-badge">🔥 핫이슈 ${(W?.content_highlights||[]).filter(i=>i.importance?.class==='hot').length}건</span>`;
 
-  renderWeeklyTimeline(W?.daily_timeline || []);
-  renderWeeklyCatChart(wCat);
-  renderKeywordHeatmap('weeklyKeywords', wKw.slice(0, 14));
-  renderTopList('topPapers',  papers.slice(0, 5));
-  renderTopList('topKrNews',  krItems.slice(0, 5));
+  // ★ 이번 주 핵심 뉴스 (content_highlights)
+  renderWeeklyHighlights(W?.content_highlights || wItems.filter(i=>i.importance?.class!=='new').slice(0,8));
 
+  // ★ 카테고리별 대표 소식
+  renderCatHighlights('weeklyCatHighlights', W?.cat_highlights || {});
+
+  // ★ 이번 주 핵심 포인트
+  renderPeriodKeyPoints('weeklyKeyPoints', W?.period_key_points || []);
+
+  // ★ 이번 주 핵심 요약 문장
+  const proseEl = document.getElementById('weeklyProse');
+  if (proseEl) proseEl.textContent = W?.period_prose || '';
+
+  // 키워드 히트맵
+  renderKeywordHeatmap('weeklyKeywords', wKw.slice(0, 16));
+
+  // ★ 키워드 트렌드 차트 (상위 5개 키워드 선 그래프)
+  renderKeywordTrendChart('weeklyKeyTrendChart', W);
+
+  // 리포트 다운로드
   document.getElementById('dlBtn').onclick = () => downloadReport(W || TODAY_DATA);
 }
 
-function renderWeeklyTimeline(timeline) {
-  const ctx = document.getElementById('weeklyTimelineChart');
-  if (!ctx) return;
-  if (weeklyTimelineInst) weeklyTimelineInst.destroy();
+function renderWeeklyHighlights(items) {
+  const el = document.getElementById('weeklyHighlights');
+  if (!el) return;
+  el.innerHTML = '';
+  if (!items || !items.length) {
+    el.innerHTML = '<p class="no-data-msg">데이터 누적 중입니다.</p>';
+    return;
+  }
+  items.slice(0, 8).forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'highlight-item';
+    const impCls = item.importance?.class === 'hot' ? 'imp-hot'
+                 : item.importance?.class === 'star' ? 'imp-star' : 'imp-new';
+    const impLbl = item.importance?.label || '🆕';
+    const emoji  = CAT_EMOJI[item.category] || '📰';
+    const isKr   = item.lang === 'ko';
+    const summary = isKr
+      ? (item.one_line || '')
+      : (item.one_line_kr || item.one_line || '');
 
+    div.innerHTML = `
+      <a href="${esc(item.url||'#')}" target="_blank" rel="noopener" class="highlight-link">
+        <div class="hl-meta">
+          <span class="imp-tag ${impCls}">${impLbl}</span>
+          <span class="hl-cat">${emoji} ${esc(item.category)}</span>
+          <span class="hl-source">${esc(item.source)}</span>
+          <span class="hl-date">${formatDateShort(item.date)}</span>
+        </div>
+        <div class="hl-title">${esc(item.title)}</div>
+        ${summary ? `<div class="hl-summary">${esc(summary)}</div>` : ''}
+      </a>`;
+    el.appendChild(div);
+  });
+}
+
+function renderCatHighlights(elId, catHighlights) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  el.innerHTML = '';
+  const MAIN_CATS = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI'];
+  MAIN_CATS.forEach(cat => {
+    const h = catHighlights[cat];
+    if (!h) return;
+    const emoji = CAT_EMOJI[cat] || '📰';
+    const div = document.createElement('div');
+    div.className = 'cat-highlight-card';
+    div.style.borderLeftColor = CAT_COLORS[cat] || '#888';
+    div.innerHTML = `
+      <div class="ch-header">
+        <span class="ch-cat-label">${emoji} ${esc(cat)}</span>
+      </div>
+      <a href="${esc(h.url||'#')}" target="_blank" rel="noopener" class="ch-link">
+        <div class="ch-title">${esc(h.title)}</div>
+        ${h.one_line ? `<div class="ch-oneline">${esc(h.one_line)}</div>` : ''}
+        <div class="ch-meta">${esc(h.source)} · ${formatDateShort(h.date)}</div>
+      </a>`;
+    el.appendChild(div);
+  });
+  if (!el.children.length) {
+    el.innerHTML = '<p class="no-data-msg">데이터 누적 중입니다.</p>';
+  }
+}
+
+function renderPeriodKeyPoints(elId, points) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  el.innerHTML = '';
+  if (!points || !points.length) return;
+  points.forEach((pt, i) => {
+    const li = document.createElement('li');
+    li.className = 'key-point-item';
+    li.innerHTML = `<span class="kp-num">${i+1}</span><span class="kp-text">${esc(pt)}</span>`;
+    el.appendChild(li);
+  });
+}
+
+function renderKeywordTrendChart(elId, periodData) {
+  const ctx = document.getElementById(elId);
+  if (!ctx) return;
+  if (weeklyKeyTrendInst) weeklyKeyTrendInst.destroy();
+
+  const timeline = periodData?.daily_timeline || [];
+  const catDaily = periodData?.cat_daily || {};
   if (!timeline.length) {
     ctx.parentElement.innerHTML = '<p class="no-data-msg">📅 데이터 누적 중 (2일차부터 표시)</p>';
     return;
   }
 
-  weeklyTimelineInst = new Chart(ctx, {
+  const dates     = timeline.map(d => d.date.slice(5));
+  const datesFull = timeline.map(d => d.date);
+  const datasets  = CAT_FILTER
+    .filter(cat => datesFull.some(d => catDaily[d]?.[cat]))
+    .map(cat => ({
+      label: cat,
+      data: datesFull.map(d => catDaily[d]?.[cat] || 0),
+      borderColor: CAT_COLORS[cat],
+      backgroundColor: (CAT_COLORS[cat] || '#888') + '22',
+      borderWidth: 2.5,
+      tension: 0.35,
+      fill: false,
+      pointRadius: 4,
+    }));
+
+  weeklyKeyTrendInst = new Chart(ctx, {
     type: 'line',
-    data: {
-      labels: timeline.map(d => d.date.slice(5)),
-      datasets: [{
-        label: '일별 수집 건수',
-        data: timeline.map(d => d.count),
-        borderColor: '#5b5ef4',
-        backgroundColor: 'rgba(91,94,244,0.12)',
-        borderWidth: 2.5,
-        pointBackgroundColor: '#5b5ef4',
-        pointRadius: 5,
-        tension: 0.35,
-        fill: true,
-      }]
-    },
+    data: { labels: dates, datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { ticks:{ color: getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' } },
-        y: { ticks:{ color: getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' }, beginAtZero:true }
-      }
-    }
-  });
-}
-
-function renderWeeklyCatChart(catStats) {
-  const ctx = document.getElementById('weeklyBarChart');
-  if (!ctx) return;
-  if (weeklyCatInst) weeklyCatInst.destroy();
-
-  const labels = CAT_ORDER.filter(c => catStats[c]);
-  const values = labels.map(c => catStats[c] || 0);
-  const colors = labels.map(c => CAT_COLORS[c] || '#888');
-
-  weeklyCatInst = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{ label:'기사 수', data:values, backgroundColor:colors, borderRadius:5, borderSkipped:false }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend:{ display:false } },
+      plugins: {
+        legend: { position:'bottom', labels:{ color:getColor('--text2'), font:{size:10} } }
+      },
       scales: {
         x: { ticks:{ color:getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' } },
         y: { ticks:{ color:getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' }, beginAtZero:true }
@@ -445,7 +506,7 @@ function renderWeeklyCatChart(catStats) {
   });
 }
 
-// ═══ 7. 월간 인사이트 ════════════════════════════════════
+// ═══ 7. 월간 인사이트 (내용 중심 v7) ════════════════════
 function renderMonthly() {
   const M = MONTHLY_DATA;
 
@@ -460,36 +521,78 @@ function renderMonthly() {
 
   const mItems = M?.items || ALL_ITEMS;
   const mKw    = M?.keywords || KEYWORDS;
-  const mSrc   = M?.source_stats || SOURCE_STATS;
-  const mCat   = M?.category_stats || CAT_STATS;
+
+  // 누적 정보
   const krCount = M?.kr_count ?? mItems.filter(i => i.lang === 'ko').length;
-  const sortedCats = Object.entries(mCat).sort((a, b) => b[1]-a[1]);
-  const topCat     = sortedCats[0]?.[0] || '-';
-  const topKws     = mKw.slice(0, 5).map(k => k.keyword).join(', ');
-
-  document.getElementById('monthlySummary').innerHTML =
-    `총 <strong>${M?.total || mItems.length}건</strong>의 AI 자료가 수집됐습니다 ` +
-    `(국내 <strong>${krCount}건</strong> / 해외 <strong>${(M?.en_count ?? (mItems.length - krCount))}건</strong>).<br>` +
-    `가장 활발한 분야: <strong>${topCat}</strong> &nbsp;|&nbsp; ` +
-    `핵심 키워드: <strong>${topKws}</strong><br>` +
-    `총 <strong>${mSrc.length}개</strong> 소스에서 수집된 누적 데이터` +
-    (M ? ` (${M.days}일치)` : ' (오늘 데이터만)') + `.`;
-
   document.getElementById('mAccumInfo').innerHTML =
-    `<span class="acc-badge">📅 누적 ${M?.daily_timeline?.length || 1}일치</span>` +
-    `<span class="acc-badge">📰 총 ${M?.total || mItems.length}건</span>` +
+    `<span class="acc-badge">📅 ${M?.daily_timeline?.length || 1}일치</span>` +
+    `<span class="acc-badge">📰 ${M?.total || mItems.length}건 수집</span>` +
+    `<span class="acc-badge">🇰🇷 국내 ${krCount}건</span>` +
     (M ? `` : `<span class="acc-badge warn">⚠️ 누적 데이터 없음</span>`);
 
+  // ★ 월간 핵심 요약
+  const proseEl = document.getElementById('monthlySummary');
+  if (proseEl) {
+    proseEl.innerHTML = M?.period_prose
+      ? `<p>${M.period_prose}</p>`
+      : `<p>총 <strong>${M?.total || mItems.length}건</strong>의 AI 자료가 수집됐습니다.</p>`;
+  }
+
+  // ★ 이달의 핵심 뉴스
+  renderWeeklyHighlights_monthly(M?.content_highlights || mItems.filter(i=>i.importance?.class!=='new').slice(0,10));
+
+  // ★ 카테고리별 대표 소식
+  renderCatHighlights('monthlyCatHighlights', M?.cat_highlights || {});
+
+  // ★ 월간 핵심 포인트
+  renderPeriodKeyPoints('monthlyKeyPoints', M?.period_key_points || []);
+
+  // 키워드 히트맵
+  renderKeywordHeatmap('monthlyKeywords', mKw.slice(0, 20));
+
+  // ★ 월간 카테고리 트렌드 (선 그래프)
   renderMonthlyCatTrend(M?.cat_daily || {}, M?.daily_timeline || []);
-  renderMonthlySourceChart(mSrc);
-  renderKeywordHeatmap('monthlyKeywords', mKw);
-  renderTopList('monthlyTopItems', mItems.slice(0, 10));
+}
+
+function renderWeeklyHighlights_monthly(items) {
+  const el = document.getElementById('monthlyHighlights');
+  if (!el) return;
+  el.innerHTML = '';
+  if (!items || !items.length) {
+    el.innerHTML = '<p class="no-data-msg">데이터 누적 중입니다.</p>';
+    return;
+  }
+  items.slice(0, 10).forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'highlight-item';
+    const impCls = item.importance?.class === 'hot' ? 'imp-hot'
+                 : item.importance?.class === 'star' ? 'imp-star' : 'imp-new';
+    const impLbl = item.importance?.label || '🆕';
+    const emoji  = CAT_EMOJI[item.category] || '📰';
+    const isKr   = item.lang === 'ko';
+    const summary = isKr
+      ? (item.one_line || '')
+      : (item.one_line_kr || item.one_line || '');
+
+    div.innerHTML = `
+      <a href="${esc(item.url||'#')}" target="_blank" rel="noopener" class="highlight-link">
+        <div class="hl-meta">
+          <span class="imp-tag ${impCls}">${impLbl}</span>
+          <span class="hl-cat">${emoji} ${esc(item.category)}</span>
+          <span class="hl-source">${esc(item.source)}</span>
+          <span class="hl-date">${formatDateShort(item.date)}</span>
+        </div>
+        <div class="hl-title">${esc(item.title)}</div>
+        ${summary ? `<div class="hl-summary">${esc(summary)}</div>` : ''}
+      </a>`;
+    el.appendChild(div);
+  });
 }
 
 function renderMonthlyCatTrend(catDaily, timeline) {
   const ctx = document.getElementById('monthlyLineChart');
   if (!ctx) return;
-  if (monthlyLineInst) monthlyLineInst.destroy();
+  if (monthlyCatTrendInst) monthlyCatTrendInst.destroy();
 
   if (!timeline.length) {
     ctx.parentElement.innerHTML = '<p class="no-data-msg">📅 데이터 누적 중 (2일차부터 표시)</p>';
@@ -498,7 +601,7 @@ function renderMonthlyCatTrend(catDaily, timeline) {
 
   const dates     = timeline.map(d => d.date.slice(5));
   const datesFull = timeline.map(d => d.date);
-  const datasets  = CAT_ORDER
+  const datasets  = CAT_FILTER
     .filter(cat => datesFull.some(d => catDaily[d]?.[cat]))
     .map(cat => ({
       label: cat,
@@ -511,7 +614,7 @@ function renderMonthlyCatTrend(catDaily, timeline) {
       pointRadius: 3,
     }));
 
-  monthlyLineInst = new Chart(ctx, {
+  monthlyCatTrendInst = new Chart(ctx, {
     type: 'line',
     data: { labels: dates, datasets },
     options: {
@@ -522,38 +625,6 @@ function renderMonthlyCatTrend(catDaily, timeline) {
       scales: {
         x: { ticks:{ color:getColor('--text2'), maxRotation:45 }, grid:{ color:'rgba(128,128,128,0.08)' } },
         y: { ticks:{ color:getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.08)' }, beginAtZero:true }
-      }
-    }
-  });
-}
-
-function renderMonthlySourceChart(srcStats) {
-  const ctx = document.getElementById('monthlyBarChart');
-  if (!ctx) return;
-  if (monthlyBarInst) monthlyBarInst.destroy();
-
-  const top12  = srcStats.slice(0, 12);
-  const labels = top12.map(s => s.source);
-  const values = top12.map(s => s.count);
-
-  monthlyBarInst = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{
-        label: '수집 건수', data: values,
-        backgroundColor: 'rgba(91,94,244,0.55)',
-        borderColor: 'rgba(91,94,244,0.85)',
-        borderWidth:1, borderRadius:5, borderSkipped:false,
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend:{ display:false } },
-      scales: {
-        x: { ticks:{ color:getColor('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' }, beginAtZero:true },
-        y: { ticks:{ color:getColor('--text2'), font:{size:11} }, grid:{ display:false } }
       }
     }
   });
@@ -575,24 +646,6 @@ function renderKeywordHeatmap(elId, keywords) {
   });
 }
 
-function renderTopList(elId, items) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  el.innerHTML = '';
-  items.forEach((item, idx) => {
-    const div = document.createElement('div');
-    div.className = 'top-item';
-    div.innerHTML = `
-      <div class="top-rank">#${idx+1}</div>
-      <div>
-        <div class="top-title">${esc(item.title)}</div>
-        <div class="top-sub">${esc(item.source)} · ${formatDateShort(item.date)}</div>
-        <a class="top-link" href="${esc(item.url||'#')}" target="_blank" rel="noopener">원문 보기 →</a>
-      </div>`;
-    el.appendChild(div);
-  });
-}
-
 // ═══ 9. 리포트 다운로드 ══════════════════════════════════
 function downloadReport(data) {
   const now     = new Date();
@@ -603,24 +656,31 @@ function downloadReport(data) {
   const krCount = data?.kr_count ?? items.filter(i=>i.lang==='ko').length;
   const period  = data?.period === 'weekly' ? '주간' : data?.period === 'monthly' ? '월간' : '일간';
 
+  const highlights = data?.content_highlights || items.filter(i=>i.importance?.class!=='new').slice(0,10);
+
   const lines = [
     `AI 트렌드 — ${period} 리포트`,
     `생성: ${now.toLocaleString('ko-KR')}`,
     `총 수집: ${items.length}건 (국내 ${krCount}건 / 해외 ${items.length-krCount}건)`,
     `${'='.repeat(56)}`,
     '',
-    '■ 카테고리별 분포',
-    ...CAT_ORDER.filter(c=>catSt[c]).map(c=>`  ${c}: ${catSt[c]}건`),
+    '■ 핵심 요약',
+    data?.period_prose || data?.daily_summary?.prose || '-',
+    '',
+    '■ 이번 기간 핵심 뉴스 TOP 10',
+    ...highlights.slice(0,10).map((it,i) => {
+      const s = it.lang==='ko' ? (it.one_line||'') : (it.one_line_kr||it.one_line||'');
+      return `  ${i+1}. [${it.category}] ${it.title}\n     ${s}\n     ${it.url}`;
+    }),
     '',
     '■ 핵심 키워드 TOP 10',
     ...kws.slice(0,10).map((k,i)=>`  ${i+1}. ${k.keyword} (${k.count}회)`),
     '',
+    '■ 카테고리별 분포',
+    ...CAT_ORDER.filter(c=>catSt[c]).map(c=>`  ${c}: ${catSt[c]}건`),
+    '',
     '■ 소스 현황 TOP 10',
     ...srcSt.slice(0,10).map(s=>`  ${s.source}: ${s.count}건`),
-    '',
-    '■ 국내 추천 기사 TOP 5',
-    ...items.filter(i=>i.lang==='ko').slice(0,5)
-       .map((it,i)=>`  ${i+1}. ${it.title}\n     ${it.url}`),
     '',
     `${'='.repeat(56)}`,
     'AI 트렌드 대시보드',
@@ -644,16 +704,14 @@ function bindEvents() {
       btn.classList.add('active');
       document.getElementById(`tab-${btn.dataset.tab}`).classList.add('active');
       setTimeout(() => {
-        [catChartInst, weeklyTimelineInst, weeklyCatInst, monthlyLineInst, monthlyBarInst]
+        [catChartInst, weeklyKeyTrendInst, monthlyCatTrendInst]
           .forEach(c => c?.resize());
       }, 50);
     });
   });
 
-  // 카테고리 필터 (동적으로 생성)
   buildFilterButtons();
 
-  // 국내/해외 토글
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
@@ -663,13 +721,11 @@ function bindEvents() {
     });
   });
 
-  // 검색
   document.getElementById('searchInput').addEventListener('input', e => {
     currentSearch = e.target.value.trim();
     renderNewsList();
   });
 
-  // 테마
   const saved = localStorage.getItem('ai-trend-theme') || 'light';
   applyTheme(saved);
   document.getElementById('themeBtn').addEventListener('click', () => {
@@ -706,7 +762,7 @@ function applyTheme(theme) {
   const icon = document.querySelector('#themeBtn i');
   if (icon) icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
   setTimeout(() => {
-    [catChartInst, weeklyTimelineInst, weeklyCatInst, monthlyLineInst, monthlyBarInst]
+    [catChartInst, weeklyKeyTrendInst, monthlyCatTrendInst]
       .forEach(c => c?.update());
   }, 80);
 }

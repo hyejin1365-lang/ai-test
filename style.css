@@ -428,6 +428,17 @@ input  { font: inherit; }
 .news-item:last-child { border-bottom: none; }
 .news-item:hover { background: var(--accent-lt); }
 .news-item:hover .ni-title { color: var(--accent); }
+/* 해외 기사 원문 제목 (번역 제목 아래 소자로 표시) */
+.ni-title-orig {
+  font-size: .7rem;
+  color: var(--text3, #aaa);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 
 .ni-thumb-wrap {
   position: relative;

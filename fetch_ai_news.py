@@ -321,25 +321,68 @@ def clean_html(text):
     t = re.sub(r'\s+', ' ', t).strip()
     return t[:280] + "…" if len(t) > 280 else t
 
-def one_line_summary(text, max_len=90):
-    """본문/제목에서 한 줄 요약 추출"""
+def one_line_summary(text, max_len=120):
+    """
+    본문 전체를 한 줄로 압축 요약 (extractive).
+    - 수치·기업명·기능명이 포함된 문장 우선
+    - 여러 문장이면 핵심 문장 1개 선택 후 max_len 내로 압축
+    """
     if not text:
         return ""
     text = clean_html(text)
-    for sep in ['. ', '.\n', '. \n', '。']:
-        idx = text.find(sep)
-        if 10 < idx < max_len:
-            return text[:idx + 1].strip()
-    return (text[:max_len].rstrip() + "…") if len(text) > max_len else text
+    # 문장 분리 (한/영 공통)
+    sents = re.split(r'(?<=[.!?다요됨음])\s+', text)
+    sents = [s.strip() for s in sents if len(s.strip()) > 12]
+    if not sents:
+        return (text[:max_len].rstrip() + "…") if len(text) > max_len else text
+
+    # 핵심 문장 점수: 수치·기업명·기능명 포함 여부
+    SIGNAL_PATS = [
+        r'\d+[%억만원달러]',          # 수치
+        r'(?:출시|출범|공개|발표|도입|업데이트|업그레이드|런칭|launch|release|introduce|announc)',
+        r'(?:신규|새로운|처음|최초|first|new feature|now available)',
+        r'(?:AI|LLM|GPT|Claude|Gemini|Sora|Runway|Midjourney|Figma|CapCut)',
+    ]
+    def score(s):
+        sc = 0
+        for p in SIGNAL_PATS:
+            if re.search(p, s, re.IGNORECASE):
+                sc += 1
+        # 너무 짧거나 너무 긴 문장 페널티
+        if len(s) < 20: sc -= 1
+        if len(s) > 200: sc -= 1
+        return sc
+
+    best = max(sents, key=score)
+    if len(best) <= max_len:
+        return best
+    # max_len 초과 시 자연스럽게 자르기
+    truncated = best[:max_len].rsplit(' ', 1)[0]
+    return truncated + "…"
 
 def is_ai_related(title, summary, lang):
     if lang != "ko": return True
     text = (title + " " + summary).lower()
     return any(kw.lower() in text for kw in KR_AI_KEYWORDS)
 
+# 신규 기능/플랫폼 출시 감지 패턴
+LAUNCH_PATTERNS = [
+    r'(?:출시|출범|런칭|공개|선보|새롭게|새로운 기능|신규 기능|업데이트)',
+    r'(?:launch(?:es|ed)?|release[sd]?|introduc(?:es|ed|ing)|announc(?:es|ed|ing))',
+    r'(?:now available|just released|new feature|new model|new tool)',
+    r'(?:unveil[s]?|debut[s]?|roll[s]? out|ship[s]?)',
+]
+
 def get_importance(title, summary=""):
     text = (title + " " + summary).lower()
     n = sum(1 for kw in HOT_KEYWORDS if kw in text)
+
+    # ★ 신규 기능/플랫폼 출시 → hot 우선 승격
+    is_launch = any(re.search(p, title + " " + summary, re.IGNORECASE)
+                    for p in LAUNCH_PATTERNS)
+    if is_launch and n >= 1:
+        return {"label":"🔥 핫",  "class":"hot"}
+
     if n >= 3: return {"label":"🔥 핫",  "class":"hot"}
     if n >= 1: return {"label":"⭐ 추천","class":"star"}
     return       {"label":"🆕 신규","class":"new"}
@@ -454,19 +497,24 @@ def batch_translate_items(items):
     translate_targets = ordered[:80]  # 최대 80개
     translate_ids = {it["id"] for it in translate_targets}
 
-    print(f"  🌐 번역 대상: {len(translate_targets)}건 (영어 기사 중 상위)")
+    print(f"  🌐 번역 대상: {len(translate_targets)}건 (영어 기사 중 상위, 제목+요약 번역)")
     ok_count = 0
     for it in items:
         if it["id"] in translate_ids:
-            src = it.get("one_line", "") or it.get("title", "")
-            it["one_line_kr"] = translate_to_ko(src)
+            # ① 한 줄 요약 번역 (one_line_kr)
+            src_line = it.get("one_line", "") or it.get("title", "")
+            it["one_line_kr"] = translate_to_ko(src_line)
+            # ② 제목 번역 (title_kr) — 영어 기사만
+            it["title_kr"] = translate_to_ko(it.get("title", "")[:120])
             ok_count += 1
         elif it.get("lang") == "en":
-            it["one_line_kr"] = ""  # 나머지 영어: 빈 문자열 (JS에서 원문 one_line 사용)
+            it["one_line_kr"] = ""
+            it["title_kr"] = ""
         else:
-            it["one_line_kr"] = ""  # 한국어: 이미 KR
+            it["one_line_kr"] = ""
+            it["title_kr"] = ""   # 한국어 기사는 title 그대로 사용
 
-    print(f"  ✅ 번역 완료: {ok_count}건")
+    print(f"  ✅ 번역 완료: {ok_count}건 (제목+요약)")
 
 # ─────────────────────────────────────────────────────
 # ★ 블로그 크롤러 (RSS 없는 공식 플랫폼)
@@ -1175,10 +1223,11 @@ def main():
     # 5) ★ 해외 기사 한국어 번역
     print("\n── 해외 기사 번역 ────────────────────────────")
     batch_translate_items(today_items)
-    # 한국어 기사는 one_line_kr = one_line 복사
+    # 한국어 기사는 one_line_kr = one_line 복사, title_kr = title 복사
     for it in today_items:
         if it.get("lang") == "ko":
             it["one_line_kr"] = it.get("one_line", "")
+            it["title_kr"] = it.get("title", "")
 
     kr_cnt = sum(1 for i in today_items if i.get("lang")=="ko")
     print(f"\n오늘 수집: {len(today_items)}건 (국내 {kr_cnt} / 해외 {len(today_items)-kr_cnt})")

@@ -267,7 +267,8 @@ function buildNewsItem(item) {
         <span class="ni-src">${esc(item.source)}</span>
         <span class="ni-cat">${emoji} ${esc(item.category)}</span>
       </div>
-      <div class="ni-title">${esc(item.title)}</div>
+      <div class="ni-title">${esc(isKr ? item.title : (item.title_kr || item.title))}</div>
+      ${(!isKr && item.title_kr) ? `<div class="ni-title-orig">${esc(item.title)}</div>` : ''}
       ${oneLine ? `<div class="ni-line">${esc(oneLine)}</div>` : ''}
     </div>
     <div class="ni-right">
@@ -307,29 +308,10 @@ function renderSidebar() {
     kwEl.appendChild(row);
   });
 
-  renderCatChart();
+  // 카테고리 도넛차트 제거됨
 }
 
-function renderCatChart() {
-  const ctx = document.getElementById('catChart');
-  if (!ctx) return;
-  if (chartCat) chartCat.destroy();
-
-  const labels = CAT_ORDER.filter(c => CAT_STATS[c]);
-  const values = labels.map(c => CAT_STATS[c] || 0);
-  const colors = labels.map(c => CAT_COLOR[c] || '#888');
-
-  chartCat = new Chart(ctx, {
-    type: 'doughnut',
-    data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 0 }] },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { position: 'bottom', labels: { color: cssVar('--text2'), font: { size: 10 }, padding: 6 } }
-      }
-    }
-  });
-}
+function renderCatChart() { /* 카테고리 도넛차트 제거됨 */ }
 
 /* ════════════════════════════════════════════════════════
    6. 주간 리포트

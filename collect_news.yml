@@ -1,0 +1,50 @@
+name: 🤖 AI PULSE — 일간 뉴스 자동 수집
+
+on:
+  # ── 매일 오전 7시 KST (= UTC 22:00 전날) ──
+  schedule:
+    - cron: '0 22 * * *'
+
+  # ── 수동 실행 (테스트용) ──
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # 1. 저장소 체크아웃
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Python 설정
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 3. 의존성 설치
+      - name: 📦 Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. 뉴스 수집 실행
+      - name: 📡 Collect AI news
+        run: python fetch_ai_news.py
+
+      # 5. data/ 폴더 변경사항 커밋 & 푸시
+      - name: 💾 Commit & push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ai_news.json
+          git diff --cached --quiet || git commit -m "🤖 [Auto] AI 뉴스 업데이트 $(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')"
+          git push

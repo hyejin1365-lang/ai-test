@@ -879,6 +879,34 @@ def build_daily_summary(items, keywords):
 # ─────────────────────────────────────────────────────
 # 누적 집계 (주간·월간)
 # ─────────────────────────────────────────────────────
+
+# ─────────────────────────────────────────────────────
+# ★ 이전 수집 URL 로딩 (중복 제거용)
+# ─────────────────────────────────────────────────────
+def load_seen_urls_from_history(exclude_today=True) -> set:
+    """
+    data/history/*.json에서 이미 수집된 URL 집합을 반환.
+    오늘 파일은 제외 (exclude_today=True).
+    """
+    history_dir = "data/history"
+    seen_urls = set()
+    if not os.path.isdir(history_dir):
+        return seen_urls
+    for fpath in glob.glob(f"{history_dir}/*.json"):
+        # 오늘 파일 제외
+        if exclude_today and os.path.basename(fpath) == f"{TODAY}.json":
+            continue
+        try:
+            with open(fpath, encoding="utf-8") as f:
+                data = json.load(f)
+            for item in data.get("items", []):
+                url = item.get("url", "")
+                if url:
+                    seen_urls.add(url)
+        except Exception:
+            pass
+    return seen_urls
+
 def load_history_items(days: int) -> list:
     history_dir = "data/history"
     all_items, seen_ids = [], set()
@@ -1004,13 +1032,23 @@ def main():
         print(f"🌐 [{cfg['category']}] {cfg['name']} 크롤링 중...")
         today_items.extend(scrape_blog(cfg))
 
-    # 3) URL 중복 제거
+    # 3) URL 중복 제거 (동일 실행 내 + 이전 히스토리)
+    print("\n── 중복 제거 ────────────────────────────────────")
+    prev_urls = load_seen_urls_from_history(exclude_today=True)
+    print(f"  이전 수집 URL: {len(prev_urls)}건")
     seen, deduped = set(), []
+    skip_old = 0
     for it in today_items:
-        if it["url"] not in seen:
-            seen.add(it["url"])
-            deduped.append(it)
+        url = it["url"]
+        if url in seen:
+            continue
+        seen.add(url)
+        if url in prev_urls:
+            skip_old += 1
+            continue   # 이전 히스토리에 이미 있는 기사 제외
+        deduped.append(it)
     today_items = deduped
+    print(f"  ✅ 이전 중복 제거: {skip_old}건 | 최종 신규: {len(today_items)}건")
 
     # 4) 카테고리 순서 정렬
     today_items.sort(

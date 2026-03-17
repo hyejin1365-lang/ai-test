@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI PULSE — 실시간 AI 트렌드 대시보드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-text">AI <span class="logo-accent">PULSE</span></span>
+      <span class="logo-badge">LIVE</span>
+    </div>
+    <nav class="nav-tabs">
+      <button class="nav-btn active" data-tab="daily">
+        <i class="fa-solid fa-bolt"></i> 오늘의 AI
+      </button>
+      <button class="nav-btn" data-tab="weekly">
+        <i class="fa-solid fa-chart-bar"></i> 주간 리포트
+      </button>
+      <button class="nav-btn" data-tab="monthly">
+        <i class="fa-solid fa-lightbulb"></i> 월간 인사이트
+      </button>
+    </nav>
+    <div class="header-right">
+      <span class="update-time" id="updateTime">로딩 중...</span>
+      <button class="theme-btn" id="themeBtn" title="테마 전환">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ── MAIN ─────────────────────────────────────────────── -->
+<main class="main-wrap">
+
+  <!-- ═══════════ 오늘의 AI ═══════════ -->
+  <section id="tab-daily" class="tab-section active">
+    <div class="content-grid">
+
+      <!-- 왼쪽: 피드 -->
+      <div class="feed-col">
+        <!-- 필터 바 -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-cat="전체">전체</button>
+          <button class="filter-btn" data-cat="논문">🟣 논문</button>
+          <button class="filter-btn" data-cat="개발AI">🔵 개발AI</button>
+          <button class="filter-btn" data-cat="영상AI">🔴 영상AI</button>
+          <button class="filter-btn" data-cat="디자인AI">🎨 디자인AI</button>
+          <button class="filter-btn" data-cat="비즈니스">🟢 비즈니스</button>
+        </div>
+
+        <!-- 검색 -->
+        <div class="search-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="기사 검색..." class="search-input">
+          <span class="result-count" id="resultCount"></span>
+        </div>
+
+        <!-- 뉴스 카드 그리드 -->
+        <div class="cards-grid" id="cardsGrid">
+          <div class="loading-skeleton" id="loadingSkeleton">
+            <div class="skel-card"></div><div class="skel-card"></div>
+            <div class="skel-card"></div><div class="skel-card"></div>
+            <div class="skel-card"></div><div class="skel-card"></div>
+          </div>
+        </div>
+
+        <!-- 에러 메시지 -->
+        <div class="error-box" id="errorBox" style="display:none">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p id="errorMsg"></p>
+          <button onclick="loadData()">다시 시도</button>
+        </div>
+      </div>
+
+      <!-- 오른쪽: 사이드바 -->
+      <aside class="sidebar">
+        <!-- 소스 현황 -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-title"><i class="fa-solid fa-signal"></i> 소스 업데이트 현황</h3>
+          <ul class="source-list" id="sourceList">
+            <li class="skel-line"></li><li class="skel-line"></li><li class="skel-line"></li>
+          </ul>
+        </div>
+        <!-- 핫 키워드 -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-title"><i class="fa-solid fa-fire"></i> 오늘의 핫 키워드</h3>
+          <div class="keywords-wrap" id="keywordsWrap">
+            <div class="skel-line"></div><div class="skel-line"></div><div class="skel-line"></div>
+          </div>
+        </div>
+        <!-- 카테고리 통계 -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-title"><i class="fa-solid fa-chart-pie"></i> 카테고리 분포</h3>
+          <div class="chart-wrap-sm">
+            <canvas id="catChart"></canvas>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════ 주간 리포트 ═══════════ -->
+  <section id="tab-weekly" class="tab-section">
+    <div class="weekly-wrap">
+      <div class="section-header">
+        <h2>📊 주간 AI 트렌드 리포트</h2>
+        <span class="week-range" id="weekRange"></span>
+      </div>
+
+      <!-- 요약 카드 4개 -->
+      <div class="stat-cards" id="weeklyStats">
+        <div class="stat-card"><div class="stat-num" id="wTotalItems">-</div><div class="stat-label">수집된 기사</div></div>
+        <div class="stat-card accent"><div class="stat-num" id="wPapers">-</div><div class="stat-label">논문</div></div>
+        <div class="stat-card green"><div class="stat-num" id="wTools">-</div><div class="stat-label">도구/릴리즈</div></div>
+        <div class="stat-card cyan"><div class="stat-num" id="wNews">-</div><div class="stat-label">뉴스/분석</div></div>
+      </div>
+
+      <div class="weekly-grid">
+        <!-- 분야별 차트 -->
+        <div class="glass-card chart-card">
+          <h3>분야별 기사 분포</h3>
+          <div class="chart-wrap"><canvas id="weeklyBarChart"></canvas></div>
+        </div>
+        <!-- 키워드 히트맵 -->
+        <div class="glass-card">
+          <h3>🔥 이번 주 핵심 키워드</h3>
+          <div class="keyword-heatmap" id="weeklyKeywords"></div>
+        </div>
+      </div>
+
+      <!-- TOP 기사 -->
+      <div class="weekly-grid">
+        <div class="glass-card">
+          <h3>📄 주목할 논문 TOP 5</h3>
+          <div class="top-list" id="topPapers"></div>
+        </div>
+        <div class="glass-card">
+          <h3>🛠️ 신규 AI 도구 TOP 5</h3>
+          <div class="top-list" id="topTools"></div>
+        </div>
+      </div>
+
+      <!-- 다운로드 버튼 -->
+      <div class="center-row">
+        <button class="dl-btn" id="dlBtn">
+          <i class="fa-solid fa-download"></i> 주간 리포트 다운로드 (.txt)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 월간 인사이트 ═══════════ -->
+  <section id="tab-monthly" class="tab-section">
+    <div class="monthly-wrap">
+      <div class="section-header">
+        <h2>💡 월간 AI 인사이트</h2>
+        <span class="week-range" id="monthRange"></span>
+      </div>
+
+      <!-- 요약 -->
+      <div class="glass-card insight-summary">
+        <h3>📋 이달의 AI 요약</h3>
+        <p id="monthlySummary">데이터를 불러오는 중입니다...</p>
+      </div>
+
+      <!-- 소스별 월간 수집 현황 -->
+      <div class="glass-card chart-card-lg">
+        <h3>소스별 콘텐츠 분포 (누적)</h3>
+        <div class="chart-wrap-lg"><canvas id="monthlyBarChart"></canvas></div>
+      </div>
+
+      <!-- 상위 키워드 -->
+      <div class="glass-card">
+        <h3>🔍 이달의 핵심 키워드 TOP 20</h3>
+        <div class="keyword-heatmap large" id="monthlyKeywords"></div>
+      </div>
+
+      <!-- 이달의 추천 기사 -->
+      <div class="glass-card">
+        <h3>⭐ 이달의 추천 기사 TOP 10</h3>
+        <div class="top-list-lg" id="monthlyTopItems"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer">
+  <p>
+    ⚡ AI PULSE — 실제 RSS 기반 자동 수집 대시보드
+    &nbsp;|&nbsp; 데이터 출처: ArXiv · HuggingFace · OpenAI · Google AI · VentureBeat · MIT TR 외
+    &nbsp;|&nbsp; 매일 오전 7시 KST 자동 갱신
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -25,10 +25,11 @@ let currentSearch = '';
 let catChartInst, weeklyTimelineInst, weeklyCatInst,
     monthlyLineInst, monthlyBarInst;
 
-const CAT_ORDER = ['콘텐츠','영상AI','디자인AI','논문','개발AI','비즈니스'];
+const CAT_ORDER = ['콘텐츠','영상AI','이미지AI','LLM','디자인AI','논문','개발AI','비즈니스'];
 const CAT_COLORS = {
-  '콘텐츠':'#e53e3e','영상AI':'#f97316','디자인AI':'#a855f7',
-  '논문':'#7c3aed','개발AI':'#2563eb','비즈니스':'#16a34a'
+  '콘텐츠':'#e53e3e','영상AI':'#f97316','이미지AI':'#ec4899',
+  'LLM':'#8b5cf6','디자인AI':'#a855f7','논문':'#7c3aed',
+  '개발AI':'#2563eb','비즈니스':'#16a34a'
 };
 const BADGE_CLASS = {
   paper:'badge-paper', official:'badge-official',
@@ -229,28 +230,33 @@ function renderDailySummary() {
   const d = DAILY_SUMMARY;
   document.getElementById('summaryDate').textContent = d?.date || NOW_KST_STR();
 
-  document.getElementById('summaryOneLine').innerHTML =
-    d?.one_line
-      ? esc(d.one_line)
-      : `오늘 총 <strong>${ALL_ITEMS.length}건</strong>의 AI 자료가 수집됐습니다.`;
-
+  // 통계 뱃지
   const krCount = ALL_ITEMS.filter(i => i.lang === 'ko').length;
   document.getElementById('summaryStats').innerHTML = `
-    <div class="stat-badge">총 <strong>${ALL_ITEMS.length}건</strong></div>
-    <div class="stat-badge">🇰🇷 국내 <strong>${krCount}건</strong></div>
-    <div class="stat-badge">🌐 해외 <strong>${ALL_ITEMS.length - krCount}건</strong></div>
-    <div class="stat-badge">소스 <strong>${SOURCE_STATS.length}개</strong></div>`;
+    <span class="stat-badge">총 <strong>${ALL_ITEMS.length}건</strong></span>
+    <span class="stat-badge">🇰🇷 국내 <strong>${krCount}건</strong></span>
+    <span class="stat-badge">🌐 해외 <strong>${ALL_ITEMS.length - krCount}건</strong></span>
+    <span class="stat-badge">소스 <strong>${SOURCE_STATS.length}개</strong></span>`;
 
+  // ★ 줄글 요약 표시
+  const proseEl = document.getElementById('summaryProse');
+  if (proseEl) {
+    proseEl.textContent = d?.prose || d?.one_line ||
+      `오늘 총 ${ALL_ITEMS.length}건의 AI 자료가 수집됐습니다. 국내 ${krCount}건, 해외 ${ALL_ITEMS.length - krCount}건입니다.`;
+  }
+
+  // 핵심 키워드
   const kwEl = document.getElementById('summaryKeywords');
   kwEl.innerHTML = '';
   (d?.top_keywords?.length ? d.top_keywords : KEYWORDS.slice(0,7).map(k=>k.keyword))
     .forEach(kw => {
       const chip = document.createElement('span');
-      chip.className = 'sum-kw';
+      chip.className = 'kw-chip kw-size-3';
       chip.textContent = kw;
       kwEl.appendChild(chip);
     });
 
+  // 추천 픽
   const picksEl = document.getElementById('summaryPicks');
   picksEl.innerHTML = '';
   const hotPicks = d?.hot_picks?.length

@@ -25,17 +25,17 @@ let curSearch = '';
 let chartCat, chartWeekly, chartMonthly;
 
 /* ── 상수 ─────────────────────────────────────────────── */
-const CAT_ORDER  = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','논문','비즈니스'];
-const CAT_FILTER = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI'];
+const CAT_ORDER  = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','AI법률','논문','비즈니스'];
+const CAT_FILTER = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','AI법률'];
 
 const CAT_COLOR = {
   '콘텐츠':'#e53e3e', '영상AI':'#f97316',
   '이미지·디자인AI':'#ec4899', 'LLM':'#8b5cf6',
-  '개발AI':'#2563eb', '논문':'#7c3aed', '비즈니스':'#16a34a',
+  '개발AI':'#2563eb', 'AI법률':'#0d9488', '논문':'#7c3aed', '비즈니스':'#16a34a',
 };
 const CAT_EMOJI = {
   '콘텐츠':'📰','영상AI':'🎬','이미지·디자인AI':'🖼️',
-  'LLM':'🧠','개발AI':'💻','논문':'📄','비즈니스':'📊',
+  'LLM':'🧠','개발AI':'💻','AI법률':'⚖️','논문':'📄','비즈니스':'📊',
 };
 
 /* badge → CSS class + label */
@@ -241,17 +241,24 @@ function buildNewsItem(item) {
     ? (item.one_line || '')
     : (item.one_line_kr || item.one_line || '');
 
-  /* 썸네일 */
-  const thumbHTML = item.thumbnail
-    ? `<img src="${esc(item.thumbnail)}" alt="" loading="lazy"
-          onerror="this.parentElement.textContent='${emoji}'">`
-    : '';
+  /* 썸네일 — 해외 기사는 번역 배지 오버레이 표시 */
+  let thumbHTML = '';
+  if (item.thumbnail) {
+    const transOverlay = (!isKr && item.one_line_kr)
+      ? `<span class="ni-thumb-badge">🇰🇷 번역</span>`
+      : '';
+    thumbHTML = `<div class="ni-thumb-wrap">
+        <img src="${esc(item.thumbnail)}" alt="" loading="lazy"
+             onerror="this.parentElement.innerHTML='${emoji}'">
+        ${transOverlay}
+      </div>`;
+  }
 
   /* 날짜: MM-DD HH:mm 형식 */
   const dateShort = fmtDateShort(item.date);
 
   a.innerHTML = `
-    <div class="ni-thumb">${thumbHTML || emoji}</div>
+    <div class="ni-thumb">${thumbHTML || `<span class="ni-thumb-emoji">${emoji}</span>`}</div>
     <div class="ni-body">
       <div class="ni-meta">
         <span class="ni-badge ${b.cls}">${b.lbl}</span>

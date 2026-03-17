@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v7
+AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v11
 
-변경 사항 (v7):
+변경 사항 (v11):
   1. 핵심 포인트: 헤드라인 카피 → 원문 인사이트 서술문
   2. 해외 기사 one_line_kr: 영어 one_line 한국어 번역 (배치)
   3. 이미지·디자인AI 소스 추가 (Leonardo AI, Canva AI, DALL-E News 등)
@@ -36,6 +36,7 @@ CATEGORY_ORDER = [
     "이미지·디자인AI", # 이미지/디자인 통합
     "LLM",            # 거대언어모델
     "개발AI",         # 개발 도구·프레임워크
+    "AI법률",         # AI 법률·규제·정책
     "논문",           # ArXiv / 학술 (수집은 하되 필터 탭 없음)
     "비즈니스",       # 뉴스·인사이트 (수집은 하되 필터 탭 없음)
 ]
@@ -94,6 +95,28 @@ RSS_FEEDS = [
      "url":"https://techcrunch.com/category/artificial-intelligence/feed/",
      "category":"영상AI","badge":"news","lang":"en","limit":5},
 
+    # ★ Adobe Premiere / After Effects AI 기능
+    {**gnews("Adobe Premiere Pro After Effects AI feature update", 4),
+     "name":"Adobe Video AI News","category":"영상AI"},
+    # ★ DaVinci Resolve AI (Blackmagic)
+    {**gnews("DaVinci Resolve AI feature Blackmagic update", 4),
+     "name":"DaVinci Resolve AI","category":"영상AI"},
+    # ★ CapCut AI 영상 편집
+    {**gnews("CapCut AI video editing feature new", 4),
+     "name":"CapCut AI News","category":"영상AI"},
+    # ★ YouTube Creator AI 도구
+    {**gnews("YouTube AI creator tools auto dubbing captions feature", 4),
+     "name":"YouTube Creator AI","category":"영상AI"},
+    # ★ Descript (팟캐스트/영상 편집 AI)
+    {**gnews("Descript AI video podcast editing update", 3),
+     "name":"Descript AI News","category":"영상AI"},
+    # ★ HeyGen (AI 아바타 영상)
+    {**gnews("HeyGen AI avatar video generation update", 4),
+     "name":"HeyGen AI News","category":"영상AI"},
+    # ★ Synthesia (AI 기업 영상)
+    {**gnews("Synthesia AI video avatar presenter", 3),
+     "name":"Synthesia AI News","category":"영상AI"},
+
     # ══════════════════════════════════════════════════
     # 🖼️  이미지·디자인AI — Midjourney · Flux · Stability · Leonardo · Canva
     # ══════════════════════════════════════════════════
@@ -125,6 +148,10 @@ RSS_FEEDS = [
     # ComfyUI / Stable Diffusion 커뮤니티 ★ 신규 추가
     {**gnews("ComfyUI Stable Diffusion image generation", 3),
      "name":"ComfyUI News","category":"이미지·디자인AI"},
+
+    # ★ Figma AI (디자인 AI 기능 공식 업데이트)
+    {**gnews("Figma AI design features update new", 5),
+     "name":"Figma AI News","category":"이미지·디자인AI"},
     # HuggingFace 공식 블로그
     {"name":"HuggingFace Blog",
      "url":"https://huggingface.co/blog/feed.xml",
@@ -158,6 +185,14 @@ RSS_FEEDS = [
     {"name":"Import AI",
      "url":"https://importai.substack.com/feed",
      "category":"LLM","badge":"news","lang":"en","limit":4},
+
+    # Claude 공식 릴리스 노트 (Anthropic 블로그 RSS)
+    {"name":"Anthropic News",
+     "url":"https://www.anthropic.com/rss.xml",
+     "category":"LLM","badge":"official","lang":"en","limit":5},
+    # Claude 관련 Google News
+    {**gnews("Claude AI Anthropic new feature release update", 5),
+     "name":"Claude AI News","category":"LLM"},
 
     # ══════════════════════════════════════════════════
     # 💻  개발AI — 개발 도구·프레임워크
@@ -207,6 +242,19 @@ RSS_FEEDS = [
      "category":"논문","badge":"paper","lang":"en","limit":5},
 
     # ══════════════════════════════════════════════════
+    # ⚖️  AI법률 — AI 법률·규제·정책 (수집 O / 필터탭 O)
+    # ══════════════════════════════════════════════════
+    {"name":"AI법률 뉴스(국내)",
+     "url":"https://news.google.com/rss/search?q=AI+%EB%B2%95%EB%A5%A0+%EA%B7%9C%EC%A0%9C+%EC%A0%95%EC%B1%85&hl=ko&gl=KR&ceid=KR:ko",
+     "category":"AI법률","badge":"gnews","lang":"ko","limit":6},
+    {**gnews("AI regulation law policy EU act 2025 2026", 5),
+     "name":"AI Regulation News","category":"AI법률"},
+    {**gnews("artificial intelligence copyright law lawsuit ruling", 4),
+     "name":"AI Copyright Law","category":"AI법률"},
+    {**gnews("AI ethics governance policy government", 4),
+     "name":"AI Policy News","category":"AI법률"},
+
+    # ══════════════════════════════════════════════════
     # 📊  비즈니스 — 뉴스·인사이트 (수집 O / 필터탭 X)
     # ══════════════════════════════════════════════════
     {"name":"VentureBeat AI",
@@ -238,12 +286,16 @@ HOT_KEYWORDS = [
     "sora","runway","midjourney","stable diffusion","flux","pika","luma","kling",
     "grok","mistral","phi","qwen","deepseek","딥시크","elevenlabs","perplexity",
     "anthropic","ideogram","adobe firefly","leonardo","dall-e","canva",
+    "claude","figma","capcut","heygen","synthesia","descript",
+    "AI법률","AI규제","저작권","규제","정책","davinci resolve","premiere",
+    "content creator","video editing","영상편집","콘텐츠 제작","youtube ai",
 ]
 KR_AI_KEYWORDS = [
     "인공지능","AI","머신러닝","딥러닝","챗봇","생성형","자연어",
     "이미지 생성","영상 생성","클로드","제미나이","챗GPT","라마",
     "LLM","에이전트","파운데이션 모델","딥시크","미드저니",
     "runway","sora","pika","플럭스","레오나르도",
+    "클로드","피그마","캡컷","AI규제","AI법률","저작권","영상편집",
 ]
 
 BADGE_LABEL_MAP = {
@@ -479,6 +531,30 @@ BLOG_CONFIGS = [
         "limit":    5,
         "link_pattern": r"^/blog/[a-z]",
         "link_base": "https://pika.art",
+    },
+    # ── Figma 공식 블로그 (AI 기능 업데이트) ★ 신규 ──
+    {
+        "name":     "Figma Blog",
+        "base_url": "https://www.figma.com",
+        "list_url": "https://www.figma.com/blog/",
+        "category": "이미지·디자인AI",
+        "badge":    "crawled",
+        "lang":     "en",
+        "limit":    5,
+        "link_pattern": r"^/blog/[a-z0-9]",
+        "link_base": "https://www.figma.com",
+    },
+    # ── HeyGen 공식 블로그 ★ 신규 ─────────────────────
+    {
+        "name":     "HeyGen Blog",
+        "base_url": "https://www.heygen.com",
+        "list_url": "https://www.heygen.com/blog",
+        "category": "영상AI",
+        "badge":    "crawled",
+        "lang":     "en",
+        "limit":    5,
+        "link_pattern": r"^/blog/[a-z0-9]",
+        "link_base": "https://www.heygen.com",
     },
 ]
 

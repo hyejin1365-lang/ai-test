@@ -74,7 +74,12 @@
       <div class="summary-sub-block">
         <div class="sub-block-label">🔥 핵심 키워드</div>
         <div id="summaryKeywords" class="kw-chips"></div>
+
+        <!-- ★ 핵심 포인트 5개 (키워드 아래) -->
+        <div class="sub-block-label" style="margin-top:14px">📌 오늘의 핵심 포인트</div>
+        <ul id="summaryKeyPoints" class="key-points-list"></ul>
       </div>
+
       <!-- 추천 픽 -->
       <div class="summary-sub-block">
         <div class="sub-block-label">⭐ 오늘의 추천 픽</div>
@@ -91,17 +96,8 @@
 
       <!-- 필터 바 -->
       <div class="filter-bar">
-        <div class="filter-cats">
-          <button class="filter-btn active" data-cat="전체">전체</button>
-          <button class="filter-btn" data-cat="콘텐츠">📰 콘텐츠</button>
-          <button class="filter-btn" data-cat="영상AI">🎬 영상AI</button>
-          <button class="filter-btn" data-cat="이미지AI">🖼️ 이미지AI</button>
-          <button class="filter-btn" data-cat="LLM">🧠 LLM</button>
-          <button class="filter-btn" data-cat="디자인AI">🎨 디자인AI</button>
-          <button class="filter-btn" data-cat="논문">📄 논문</button>
-          <button class="filter-btn" data-cat="개발AI">💻 개발AI</button>
-          <button class="filter-btn" data-cat="비즈니스">📊 비즈니스</button>
-        </div>
+        <!-- 카테고리 버튼은 JS에서 동적 생성 (논문·비즈니스 제외) -->
+        <div id="filterCats" class="filter-cats"></div>
         <div class="filter-right">
           <div class="lang-toggle">
             <button class="lang-btn active" data-lang="all">전체</button>
@@ -116,15 +112,14 @@
         </div>
       </div>
 
-      <!-- 카드 그리드 -->
-      <div id="cardsGrid" class="cards-grid">
-        <div id="loadingSkeleton" style="display:contents">
-          <div class="card-skeleton"></div>
-          <div class="card-skeleton"></div>
-          <div class="card-skeleton"></div>
-          <div class="card-skeleton"></div>
-          <div class="card-skeleton"></div>
-          <div class="card-skeleton"></div>
+      <!-- ★ 리스트 형식 뉴스 피드 -->
+      <div id="newsList" class="news-list">
+        <div id="loadingSkeleton" class="skeleton-wrap">
+          <div class="list-skeleton"></div>
+          <div class="list-skeleton"></div>
+          <div class="list-skeleton"></div>
+          <div class="list-skeleton"></div>
+          <div class="list-skeleton"></div>
         </div>
       </div>
 
@@ -270,7 +265,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>AI 트렌드 대시보드 · 매일 07:00 KST 자동 수집 · 30개 소스 (ArXiv, HuggingFace, OpenAI, AI타임스 등)</p>
+  <p>AI 트렌드 대시보드 · 매일 07:00 KST 자동 수집 · 50개+ 소스 (ArXiv, HuggingFace, OpenAI, Anthropic, Runway, AI타임스 등)</p>
 </footer>
 
 <script src="app.js"></script>

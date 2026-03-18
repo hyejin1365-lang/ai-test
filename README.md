@@ -1,96 +1,58 @@
-# ⚡ AI PULSE — 실시간 AI 트렌드 대시보드
+# AI 트렌드 대시보드
 
-> 실제 RSS 기반 자동 수집 | GitHub Pages + Actions | 매일 오전 7시 KST 자동 갱신
+실제 RSS 피드를 자동 수집하는 AI 트렌드 대시보드입니다.
 
----
-
-## 📁 프로젝트 구조
+## 📁 저장 구조 (B방식)
 
 ```
-ai-pulse/
-├── index.html              # 메인 대시보드 (HTML)
-├── style.css               # 스타일 (다크/라이트, 반응형)
-├── app.js                  # 프론트엔드 로직 (렌더링, 차트)
-├── fetch_ai_news.py        # RSS 수집 스크립트 (Python)
-├── requirements.txt        # Python 의존성
-├── data/
-│   └── ai_news.json        # 수집된 뉴스 데이터 (자동 생성)
-└── .github/
-    └── workflows/
-        └── collect_news.yml  # GitHub Actions (매일 오전 7시 KST)
+data/
+├── ai_news.json           ← 오늘 데이터 (대시보드 기본)
+├── history/
+│   ├── 2026-03-17.json    ← 날짜별 스냅샷 (무한 누적)
+│   ├── 2026-03-18.json
+│   └── ...
+├── weekly.json            ← 최근 7일 집계 (매일 자동 갱신)
+└── monthly.json           ← 최근 30일 집계 (매일 자동 갱신)
 ```
 
----
+## 🚀 GitHub 배포 방법
 
-## 🚀 배포 방법 (5단계)
+1. GitHub에서 `ai-pulse` 퍼블릭 저장소 생성
+2. 이 폴더 파일을 모두 push
+3. **Settings → Actions → General → Read and write permissions** 설정
+4. **Actions 탭 → Run workflow** 클릭 (첫 데이터 생성)
+5. **Settings → Pages → Branch: main / root** 설정
 
-### 1단계 — GitHub 저장소 생성
-```
-저장소 이름: ai-pulse
-공개(Public) 설정
-```
+## 📡 수집 소스 (20개)
 
-### 2단계 — 파일 업로드
-```bash
-git init
-git add .
-git commit -m "🚀 Initial commit — AI PULSE"
-git remote add origin https://github.com/YOUR_USERNAME/ai-pulse.git
-git push -u origin main
-```
+### 🇰🇷 국내
+- AI타임스, 바이라인네트워크, 디지털투데이, 전자신문, 더에이아이
 
-### 3단계 — 첫 번째 수집 실행 (수동)
-```
-GitHub 저장소 → Actions 탭
-→ "AI PULSE — 일간 뉴스 자동 수집"
-→ "Run workflow" 클릭
-```
-→ `data/ai_news.json` 파일이 자동 생성됩니다.
+### 🎬 영상AI
+- Replicate Blog, NVIDIA Dev Blog
 
-### 4단계 — GitHub Pages 활성화
-```
-Settings → Pages
-→ Source: Deploy from a branch
-→ Branch: main / (root)
-→ Save
-```
-→ `https://YOUR_USERNAME.github.io/ai-pulse` 로 접속 가능!
+### 🎨 디자인AI
+- HuggingFace Blog
 
-### 5단계 — 자동화 확인
-```
-매일 오전 7시 KST에 자동 실행됩니다.
-Actions 탭에서 실행 기록 확인 가능.
-```
+### 📄 논문
+- ArXiv AI (cs.AI), ArXiv ML (cs.LG), ArXiv CV (cs.CV), ArXiv CL (cs.CL)
 
----
+### 💻 개발AI
+- OpenAI, Google AI Blog, DeepMind, LangChain Blog, MarkTechPost
 
-## 📡 수집 소스 목록
+### 📊 비즈니스
+- VentureBeat AI, MIT Tech Review, AI Business
 
-| 분류 | 소스 | RSS URL |
-|------|------|---------|
-| 🟣 논문 | ArXiv AI | `https://rss.arxiv.org/rss/cs.AI` |
-| 🟣 논문 | ArXiv ML | `https://rss.arxiv.org/rss/cs.LG` |
-| 🟣 논문 | ArXiv CV | `https://rss.arxiv.org/rss/cs.CV` |
-| 🟣 논문 | ArXiv CL | `https://rss.arxiv.org/rss/cs.CL` |
-| 🔵 공식 | OpenAI | `https://openai.com/news/rss.xml` |
-| 🔵 공식 | HuggingFace | `https://huggingface.co/blog/feed.xml` |
-| 🔵 공식 | Google AI | `http://googleaiblog.blogspot.com/atom.xml` |
-| 🔵 공식 | DeepMind | `https://deepmind.google/blog/rss.xml` |
-| 🔵 공식 | LangChain | `https://blog.langchain.dev/rss/` |
-| 🟢 뉴스 | VentureBeat AI | `https://venturebeat.com/category/ai/feed/` |
-| 🟢 뉴스 | MIT Tech Review | `https://www.technologyreview.com/feed/` |
-| 🟢 뉴스 | MarkTechPost | `https://www.marktechpost.com/feed/` |
-| 🟢 뉴스 | KDnuggets | `https://www.kdnuggets.com/feed` |
-| 🟢 뉴스 | AI Business | `https://aibusiness.com/rss.xml` |
-| 🔴 도구 | Replicate | `https://replicate.com/blog/rss` |
-| 🟡 도구 | NVIDIA Dev | `https://developer.nvidia.com/blog/feed` |
+## ⏰ 자동 스케줄
 
----
+- **일간 수집**: 매일 07:00 KST → `data/history/YYYY-MM-DD.json` + `data/ai_news.json`
+- **주간 집계**: 자동 생성 → `data/weekly.json` (최근 7일)
+- **월간 집계**: 자동 생성 → `data/monthly.json` (최근 30일)
 
-## 🖥️ 대시보드 기능
+## 📊 탭 구성
 
-- **오늘의 AI**: 카테고리 필터, 실시간 검색, 중요도 태그
-- **주간 리포트**: 분야별 차트, 핵심 키워드 히트맵, TOP 5 논문/도구, TXT 다운로드
-- **월간 인사이트**: 소스별 누적 차트, 키워드 TOP 20, 추천 기사 TOP 10
-- **다크/라이트 모드** 토글
-- **완전 반응형** (모바일/태블릿/데스크탑)
+| 탭 | 데이터 소스 | 주요 기능 |
+|---|---|---|
+| 오늘의 AI | `ai_news.json` | 뉴스 카드, 필터, 검색, 오늘 요약 |
+| 주간 리포트 | `weekly.json` | 일별 타임라인, 카테고리 바차트, TOP5 목록 |
+| 월간 인사이트 | `monthly.json` | 누적 트렌드 라인차트, 소스 순위, 키워드 히트맵 |

@@ -520,8 +520,8 @@ def ai_summarize_batch(items: list, client) -> int:
     Gemini API로 기사 목록을 일괄 요약.
     - 영어 기사: title_kr(번역) + one_line_kr(AI 요약) 생성
     - 국문 기사: one_line_kr(AI 요약)만 생성, title_kr 불필요
-    - 전체 기사(hot/star/new) 원문 크롤링 시도, 실패 시 RSS summary fallback
-    - RPM 초과 방지: 건당 7초 간격, 429 시 최대 3회 재시도(지수 백오프)
+    - 전체 기사 원문 크롤링 시도, 실패 시 RSS summary fallback
+    - RPM 초과 방지: 건당 3초 간격(RPM 여유 충분), 429 시 최대 3회 재시도
     반환값: 성공 건수
     """
     import time as _time
@@ -530,7 +530,7 @@ def ai_summarize_batch(items: list, client) -> int:
     if not client:
         return 0
 
-    SLEEP_INTERVAL = 7     # 건당 대기(초) — RPM=10 기준 안전 마진
+    SLEEP_INTERVAL = 3     # 건당 대기(초) — RPM=10, 74건×3초=222초 여유
     MAX_RETRY      = 3     # 429 시 최대 재시도 횟수
     RETRY_BASE     = 15    # 재시도 초기 대기(초), 지수 백오프
 
@@ -645,9 +645,12 @@ def batch_translate_items(items):
 
     all_targets = sorted(items, key=_priority_key)
 
-    # 오늘 기사 우선
+    # 오늘 기사 우선 + 이미 요약된 기사 제외 (재처리 방지 → 실행시간 단축)
     today_first = [i for i in all_targets if i.get("date", "")[:10] == TODAY]
-    rest        = [i for i in all_targets if i not in today_first]
+    rest        = [
+        i for i in all_targets
+        if i not in today_first and not i.get("one_line_kr", "").strip()
+    ]
     targets     = (today_first + rest)[:200]  # 최대 200건 (한도 250 여유분 확보)
     target_ids  = {it.get("id", it.get("url")) for it in targets}
 

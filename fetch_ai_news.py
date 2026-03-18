@@ -950,11 +950,12 @@ async def _fetch_feed_async(session, feed_info):
         async with session.get(
             feed_info["url"],
             headers=SCRAPE_HEADERS,
-            timeout=aiohttp.ClientTimeout(total=5),
+            timeout=aiohttp.ClientTimeout(total=20),
             ssl=False,
         ) as resp:
             text = await resp.text()
-    except Exception:
+    except Exception as e:
+        print(f"  ⚠️  RSS 피드 오류 [{feed_info['name']}]: {type(e).__name__}: {e}")
         return []
     import feedparser as _fp
     feed  = _fp.parse(text)
@@ -1037,14 +1038,23 @@ async def fetch_all_rss_async(feeds):
     sem = asyncio.Semaphore(10)
     async def _bounded(session, feed):
         async with sem:
-            return await _fetch_feed_async(session, feed)
+            items = await _fetch_feed_async(session, feed)
+            if items:
+                print(f"  📰 {feed['name']}: {len(items)}건")
+            return items
     async with _aio.ClientSession() as session:
         tasks = [_bounded(session, f) for f in feeds]
         results = await asyncio.gather(*tasks, return_exceptions=True)
     all_items = []
-    for r in results:
+    err_count = 0
+    for i, r in enumerate(results):
         if isinstance(r, list):
             all_items.extend(r)
+        elif isinstance(r, Exception):
+            err_count += 1
+            print(f"  ❌ RSS gather 오류 [{feeds[i]['name']}]: {type(r).__name__}: {r}")
+    if err_count:
+        print(f"  ⚠️  gather 수준 오류 합계: {err_count}건")
     return all_items
 
 

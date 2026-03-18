@@ -10,7 +10,7 @@ AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v13
   5. 주간/월간 집계에 content_highlights, cat_highlights 추가
 """
 
-import json, feedparser, requests, re, os, glob
+import json, feedparser, requests, re, os, glob, asyncio
 try:
     from google import genai as _genai_mod
     _GENAI_AVAILABLE = True
@@ -487,7 +487,7 @@ def fetch_article_body(url: str, max_chars: int = 2000) -> str:
     """
     try:
         r = requests.get(
-            url, timeout=8,
+            url, timeout=4,
             headers={"User-Agent": "Mozilla/5.0 (compatible; AIPulseBot/1.0)"},
             allow_redirects=True
         )
@@ -540,8 +540,8 @@ def ai_summarize_batch(items: list, client) -> int:
         title = it.get("title", "")
         summ  = clean_html(it.get("summary", "") or "")
 
-        # ── 원문 크롤링: 전체 기사 시도, 실패 시 RSS summary fallback ──
-        body = fetch_article_body(it.get("url", ""))
+        # ── 원문: 병렬 사전 크롤링 캐시 우선, 없으면 RSS summary fallback ──
+        body = it.get("_body", "")
         source_text = body if len(body) > 200 else summ
         if not source_text:
             source_text = title
@@ -935,13 +935,126 @@ def _parse_scraped_date(raw: str) -> str:
 # ─────────────────────────────────────────────────────
 # RSS 수집
 # ─────────────────────────────────────────────────────
+
+async def _fetch_feed_async(session, feed_info):
+    """단일 RSS 피드 비동기 fetch."""
+    try:
+        async with session.get(
+            feed_info["url"],
+            headers=SCRAPE_HEADERS,
+            timeout=aiohttp.ClientTimeout(total=5),
+            ssl=False,
+        ) as resp:
+            text = await resp.text()
+    except Exception:
+        return []
+    import feedparser as _fp
+    feed  = _fp.parse(text)
+    count = 0
+    lang  = feed_info.get("lang", "en")
+    items = []
+    for entry in feed.entries:
+        if count >= feed_info["limit"]: break
+        title   = clean_html(entry.get("title", "제목 없음"))
+        link    = entry.get("link", "#")
+        raw_summary = (
+            entry.get("summary", "") or
+            (entry.content[0].get("value", "") if getattr(entry, "content", None) else "")
+        )
+        summary = clean_html(raw_summary)
+        if not is_ai_related(title, summary, lang): continue
+        items.append({
+            "id":           f"{abs(hash(title+link))%999999:06d}",
+            "title":        title,
+            "summary":      summary,
+            "one_line":     one_line_summary(summary or title),
+            "one_line_kr":  "",
+            "url":          link,
+            "source":       feed_info["name"],
+            "category":     feed_info["category"],
+            "badge":        feed_info["badge"],
+            "lang":         lang,
+            "date":         parse_date_kst(entry, lang),
+            "collect_date": TODAY,
+            "thumbnail":    get_thumbnail(entry),
+            "importance":   get_importance(title, summary),
+        })
+        count += 1
+    return items
+
+
+async def _fetch_article_async(session, item):
+    """단일 기사 본문 비동기 fetch."""
+    url = item.get("url", "")
+    if not url:
+        return
+    try:
+        async with session.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; AIPulseBot/1.0)"},
+            timeout=aiohttp.ClientTimeout(total=4),
+            ssl=False,
+        ) as resp:
+            if resp.status != 200:
+                return
+            text = await resp.text()
+    except Exception:
+        return
+    from bs4 import BeautifulSoup as _BS
+    soup = _BS(text, "lxml")
+    for tag in soup(["script","style","nav","header","footer","aside","form","noscript","iframe"]):
+        tag.decompose()
+    body = ""
+    for selector in ["article","main",'[class*="post-content"]',
+                      '[class*="article-body"]','[class*="entry-content"]','[class*="content"]']:
+        el = soup.select_one(selector)
+        if el:
+            body = el.get_text(separator=" ", strip=True)
+            break
+    if not body:
+        body = " ".join(p.get_text(strip=True) for p in soup.find_all("p"))
+    import re as _re
+    body = _re.sub(r"\s+", " ", body).strip()
+    if len(body) > 200:
+        item["_body"] = body[:2000]
+
+
+async def fetch_all_rss_async(feeds):
+    """전체 RSS 피드 병렬 수집 (10개씩 세마포어)."""
+    import aiohttp as _aio
+    sem = asyncio.Semaphore(10)
+    async def _bounded(session, feed):
+        async with sem:
+            return await _fetch_feed_async(session, feed)
+    async with _aio.ClientSession() as session:
+        tasks = [_bounded(session, f) for f in feeds]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+    all_items = []
+    for r in results:
+        if isinstance(r, list):
+            all_items.extend(r)
+    return all_items
+
+
+async def fetch_all_bodies_async(items):
+    """전체 기사 본문 병렬 크롤링 (8개씩 세마포어)."""
+    import aiohttp as _aio
+    sem = asyncio.Semaphore(8)
+    async def _bounded(session, item):
+        async with sem:
+            await _fetch_article_async(session, item)
+    async with _aio.ClientSession() as session:
+        tasks = [_bounded(session, it) for it in items]
+        await asyncio.gather(*tasks, return_exceptions=True)
+
+
 def fetch_feed(feed_info):
     items = []
     try:
         resp = requests.get(
             feed_info["url"],
             headers=SCRAPE_HEADERS,
-            timeout=15,
+            timeout=5,
         )
         resp.raise_for_status()
         feed  = feedparser.parse(resp.text)
@@ -1370,11 +1483,11 @@ def main():
 
     today_items = []
 
-    # 1) RSS 수집
-    print("── RSS 수집 ──────────────────────────────────")
-    for feed in RSS_FEEDS:
-        print(f"📡 [{feed['category']}] {feed['name']} 수집 중...")
-        today_items.extend(fetch_feed(feed))
+    # 1) RSS 수집 (병렬 aiohttp)
+    print("── RSS 수집 (병렬) ───────────────────────────")
+    rss_items = asyncio.run(fetch_all_rss_async(RSS_FEEDS))
+    today_items.extend(rss_items)
+    print(f"  ✅ RSS 총 {len(rss_items)}건 수집 완료")
 
     # 2) 블로그 크롤링
     print("\n── 공식 블로그 크롤링 ────────────────────────")
@@ -1411,6 +1524,10 @@ def main():
             item["one_line"] = one_line_summary(item.get("summary","") or item.get("title",""))
 
     # 5) ★ 전체 기사 AI 요약 (영어+국문)
+    print("\n── 원문 병렬 크롤링 ──────────────────────────────")
+    asyncio.run(fetch_all_bodies_async(today_items))
+    prefetched = sum(1 for i in today_items if i.get("_body",""))
+    print(f"  ✅ 원문 크롤링: {prefetched}/{len(today_items)}건 성공")
     print("\n── AI 요약 처리 (영어 번역+요약 / 국문 요약) ──────")
     batch_translate_items(today_items)
 

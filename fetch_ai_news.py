@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v11
+AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v13
 
 변경 사항 (v11):
   1. 핵심 포인트: 헤드라인 카피 → 원문 인사이트 서술문
@@ -11,6 +11,11 @@ AI 트렌드 — RSS + 블로그 크롤링 수집 스크립트 v11
 """
 
 import json, feedparser, requests, re, os, glob
+try:
+    from google import genai as _genai_mod
+    _GENAI_AVAILABLE = True
+except ImportError:
+    _GENAI_AVAILABLE = False
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from bs4 import BeautifulSoup
@@ -449,6 +454,157 @@ def get_thumbnail(entry):
 # ─────────────────────────────────────────────────────
 _translator = None
 
+
+# ─────────────────────────────────────────────────────
+# ★ Gemini AI 클라이언트 (요약 + 번역)
+# ─────────────────────────────────────────────────────
+_gemini_client = None
+_GEMINI_MODEL  = "gemini-2.5-flash"   # 무료 티어 지원 모델 (250 RPD)
+
+def get_gemini_client():
+    """Gemini 클라이언트 반환. GEMINI_API_KEY 없으면 None."""
+    global _gemini_client
+    if _gemini_client is not None:
+        return _gemini_client
+    if not _GENAI_AVAILABLE:
+        return None
+    api_key = os.environ.get("GEMINI_API_KEY", "")
+    if not api_key:
+        print("  ⚠️  GEMINI_API_KEY 환경변수 없음 — deep-translator로 fallback")
+        return None
+    try:
+        _gemini_client = _genai_mod.Client(api_key=api_key)
+        return _gemini_client
+    except Exception as e:
+        print(f"  ⚠️  Gemini 클라이언트 초기화 실패: {e}")
+        return None
+
+
+def fetch_article_body(url: str, max_chars: int = 2000) -> str:
+    """
+    기사 URL에서 본문 텍스트 추출 (BeautifulSoup).
+    실패하거나 본문이 짧으면 빈 문자열 반환.
+    """
+    try:
+        r = requests.get(
+            url, timeout=8,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; AIPulseBot/1.0)"},
+            allow_redirects=True
+        )
+        if r.status_code != 200:
+            return ""
+        soup = BeautifulSoup(r.text, "lxml")
+        # 불필요 태그 제거
+        for tag in soup(["script", "style", "nav", "header", "footer",
+                          "aside", "form", "noscript", "iframe"]):
+            tag.decompose()
+        # 본문 후보 태그 순서대로 시도
+        body = ""
+        for selector in ["article", "main", '[class*="post-content"]',
+                          '[class*="article-body"]', '[class*="entry-content"]',
+                          '[class*="content"]']:
+            el = soup.select_one(selector)
+            if el:
+                body = el.get_text(separator=" ", strip=True)
+                break
+        if not body:
+            body = " ".join(p.get_text(strip=True) for p in soup.find_all("p"))
+        body = re.sub(r"\s+", " ", body).strip()
+        return body[:max_chars] if len(body) > 100 else ""
+    except Exception:
+        return ""
+
+
+def ai_summarize_batch(items: list, client) -> int:
+    """
+    Gemini API로 기사 목록을 일괄 요약.
+    - 영어 기사: title_kr(번역) + one_line_kr(AI 요약) 생성
+    - 국문 기사: one_line_kr(AI 요약)만 생성, title_kr 불필요
+    - 전체 기사(hot/star/new) 원문 크롤링 시도, 실패 시 RSS summary fallback
+    - RPM 초과 방지: 건당 7초 간격, 429 시 최대 3회 재시도(지수 백오프)
+    반환값: 성공 건수
+    """
+    import time as _time
+    import json as _json
+
+    if not client:
+        return 0
+
+    SLEEP_INTERVAL = 7     # 건당 대기(초) — RPM=10 기준 안전 마진
+    MAX_RETRY      = 3     # 429 시 최대 재시도 횟수
+    RETRY_BASE     = 15    # 재시도 초기 대기(초), 지수 백오프
+
+    ok = 0
+    for idx, it in enumerate(items, 1):
+        lang  = it.get("lang", "en")
+        title = it.get("title", "")
+        summ  = clean_html(it.get("summary", "") or "")
+
+        # ── 원문 크롤링: 전체 기사 시도, 실패 시 RSS summary fallback ──
+        body = fetch_article_body(it.get("url", ""))
+        source_text = body if len(body) > 200 else summ
+        if not source_text:
+            source_text = title
+
+        # ── 언어별 프롬프트 분기 ──
+        if lang == "ko":
+            # 국문 기사: 제목은 이미 한국어이므로 번역 불필요, 요약만 생성
+            prompt = f"""다음 AI 기사의 핵심을 한 문장으로 요약하세요.
+
+제목: {title}
+본문/요약: {source_text[:1500]}
+
+출력 형식 (JSON만, 설명 없이):
+{{
+  "one_line_kr": "본문 전체의 핵심 내용을 한국어로 한 문장 요약. 신규 기능·수치·회사명을 반드시 포함. 60자 이내. 마침표로 끝낼 것."
+}}"""
+        else:
+            # 영어 기사: 제목 번역 + 내용 요약 동시 생성
+            prompt = f"""다음 AI 기사를 분석하세요.
+
+제목(영어): {title}
+본문/요약: {source_text[:1500]}
+
+출력 형식 (JSON만, 설명 없이):
+{{
+  "title_kr": "제목을 자연스러운 한국어로 번역 (50자 이내)",
+  "one_line_kr": "본문 전체 핵심을 한국어로 한 문장 요약. 신규 기능·수치·회사명 포함. 60자 이내. 마침표로 끝낼 것."
+}}"""
+
+        # ── 재시도 루프 ──
+        for attempt in range(MAX_RETRY):
+            try:
+                resp = client.models.generate_content(
+                    model=_GEMINI_MODEL,
+                    contents=prompt,
+                )
+                raw = resp.text.strip()
+                m = re.search(r"\{[\s\S]*?\}", raw)
+                if m:
+                    data = _json.loads(m.group())
+                    it["one_line_kr"] = data.get("one_line_kr", "").strip()[:120]
+                    if lang != "ko":
+                        it["title_kr"] = data.get("title_kr", "").strip()[:80]
+                    ok += 1
+                break  # 성공 시 재시도 루프 탈출
+
+            except Exception as e:
+                err = str(e)
+                if "429" in err or "RESOURCE_EXHAUSTED" in err:
+                    wait = RETRY_BASE * (2 ** attempt)   # 15 → 30 → 60초
+                    print(f"  ⚠️  RPM 한도({idx}번째): {wait}초 대기 후 재시도...")
+                    _time.sleep(wait)
+                else:
+                    # 429 이외 오류는 재시도 안 함
+                    break
+
+        # ── 건당 대기 (RPM 초과 방지) ──
+        if idx < len(items):
+            _time.sleep(SLEEP_INTERVAL)
+
+    return ok
+
+
 def get_translator():
     global _translator
     if _translator is None:
@@ -471,50 +627,81 @@ def translate_to_ko(text, max_len=180):
 
 def batch_translate_items(items):
     """
-    영어 기사의 one_line_kr 필드 채우기 (배치 번역).
-    속도 최적화: hot/star 우선 + 최대 80개 제한
+    전체 기사(영어+국문) AI 요약 처리.
+    - 영어: Gemini로 title_kr(번역) + one_line_kr(AI 요약)
+    - 국문: Gemini로 one_line_kr(AI 요약)만, title_kr 불필요
+    - Fallback: 영어→deep-translator 번역, 국문→one_line 그대로 복사
+    우선순위: hot → star → new, 오늘 기사 우선
     """
-    translator = get_translator()
-    if not translator:
-        print("  ⚠️ deep-translator 미설치, 번역 생략")
-        for it in items:
-            it["one_line_kr"] = it.get("one_line", "")
-        return
-
-    # 번역 대상: 영어 기사 (중요도 순)
-    en_items = [i for i in items if i.get("lang") == "en"]
-    priority = (
-        [i for i in en_items if i["importance"]["class"] == "hot"] +
-        [i for i in en_items if i["importance"]["class"] == "star"] +
-        [i for i in en_items if i["importance"]["class"] == "new"]
-    )
-    # 중복 제거 (id 기준)
-    seen, ordered = set(), []
-    for it in priority:
-        if it["id"] not in seen:
-            seen.add(it["id"]); ordered.append(it)
-
-    translate_targets = ordered[:80]  # 최대 80개
-    translate_ids = {it["id"] for it in translate_targets}
-
-    print(f"  🌐 번역 대상: {len(translate_targets)}건 (영어 기사 중 상위, 제목+요약 번역)")
-    ok_count = 0
+    # ── 필드 초기화 ──
     for it in items:
-        if it["id"] in translate_ids:
-            # ① 한 줄 요약 번역 (one_line_kr)
-            src_line = it.get("one_line", "") or it.get("title", "")
-            it["one_line_kr"] = translate_to_ko(src_line)
-            # ② 제목 번역 (title_kr) — 영어 기사만
-            it["title_kr"] = translate_to_ko(it.get("title", "")[:120])
-            ok_count += 1
-        elif it.get("lang") == "en":
-            it["one_line_kr"] = ""
-            it["title_kr"] = ""
-        else:
-            it["one_line_kr"] = ""
-            it["title_kr"] = ""   # 한국어 기사는 title 그대로 사용
+        if "title_kr" not in it:    it["title_kr"]    = ""
+        if "one_line_kr" not in it: it["one_line_kr"] = ""
 
-    print(f"  ✅ 번역 완료: {ok_count}건 (제목+요약)")
+    # ── 대상 선정: 영어 + 국문 모두, hot→star→new 순 ──
+    def _priority_key(it):
+        cls = it.get("importance", {}).get("class", "new")
+        return {"hot": 0, "star": 1, "new": 2}.get(cls, 3)
+
+    all_targets = sorted(items, key=_priority_key)
+
+    # 오늘 기사 우선
+    today_first = [i for i in all_targets if i.get("date", "")[:10] == TODAY]
+    rest        = [i for i in all_targets if i not in today_first]
+    targets     = (today_first + rest)[:200]  # 최대 200건 (한도 250 여유분 확보)
+    target_ids  = {it.get("id", it.get("url")) for it in targets}
+
+    ko_targets = [i for i in targets if i.get("lang") == "ko"]
+    en_targets = [i for i in targets if i.get("lang") == "en"]
+    today_cnt  = len([i for i in targets if i.get("date", "")[:10] == TODAY])
+    print(f"  🌐 AI 요약 대상: 총 {len(targets)}건 (국문 {len(ko_targets)} / 영문 {len(en_targets)} / 오늘 {today_cnt}건)")
+
+    # ── ① Gemini AI 요약 시도 (영어+국문 전체) ──
+    gemini_ok = 0
+    gemini_client = get_gemini_client()
+    if gemini_client:
+        print(f"  🤖 Gemini AI 요약 시작... (국문 {len(ko_targets)}건 포함)")
+        gemini_ok = ai_summarize_batch(targets, gemini_client)
+        print(f"  ✅ Gemini 완료: {gemini_ok}건")
+
+    # ── ② Fallback 처리 ──
+    needs_fallback_en = [
+        it for it in en_targets
+        if not it.get("one_line_kr")
+    ]
+    needs_fallback_ko = [
+        it for it in ko_targets
+        if not it.get("one_line_kr")
+    ]
+
+    # 영어 fallback: deep-translator 번역
+    if needs_fallback_en:
+        translator = get_translator()
+        if translator:
+            print(f"  🔄 영어 Fallback: {len(needs_fallback_en)}건 (deep-translator)")
+            for it in needs_fallback_en:
+                if not it.get("title_kr"):
+                    it["title_kr"]    = translate_to_ko(it.get("title", "")[:120])
+                if not it.get("one_line_kr"):
+                    src = it.get("one_line", "") or it.get("title", "")
+                    it["one_line_kr"] = translate_to_ko(src)
+
+    # 국문 fallback: one_line 그대로 복사 (이미 한국어)
+    if needs_fallback_ko:
+        print(f"  🔄 국문 Fallback: {len(needs_fallback_ko)}건 (one_line 복사)")
+        for it in needs_fallback_ko:
+            it["one_line_kr"] = it.get("one_line", "") or it.get("title", "")
+
+    # ── 미처리 항목 보장 ──
+    for it in items:
+        if it.get("id", it.get("url")) not in target_ids:
+            if not it.get("one_line_kr"):
+                it["one_line_kr"] = it.get("one_line", "") or it.get("title", "")
+
+    total_ok = sum(1 for i in targets if i.get("one_line_kr"))
+    en_ok    = sum(1 for i in en_targets if i.get("title_kr") and i.get("one_line_kr"))
+    ko_ok    = sum(1 for i in ko_targets if i.get("one_line_kr"))
+    print(f"  📊 완료: 영문 {en_ok}/{len(en_targets)}건 (번역+요약) / 국문 {ko_ok}/{len(ko_targets)}건 (요약)")
 
 # ─────────────────────────────────────────────────────
 # ★ 블로그 크롤러 (RSS 없는 공식 플랫폼)
@@ -1173,7 +1360,7 @@ def build_period_json(items, period_label, days):
 # ─────────────────────────────────────────────────────
 def main():
     print(f"\n{'='*60}")
-    print(f"  AI 트렌드 뉴스 수집 v7 — {TODAY}")
+    print(f"  AI 트렌드 뉴스 수집 v13 — {TODAY}")
     print(f"  실행 시각: {NOW_KST.strftime('%Y-%m-%d %H:%M')} KST")
     print(f"  RSS 소스: {len(RSS_FEEDS)}개 / 블로그 크롤러: {len(BLOG_CONFIGS)}개")
     print(f"{'='*60}\n")
@@ -1220,14 +1407,9 @@ def main():
         if not item.get("one_line"):
             item["one_line"] = one_line_summary(item.get("summary","") or item.get("title",""))
 
-    # 5) ★ 해외 기사 한국어 번역
-    print("\n── 해외 기사 번역 ────────────────────────────")
+    # 5) ★ 전체 기사 AI 요약 (영어+국문)
+    print("\n── AI 요약 처리 (영어 번역+요약 / 국문 요약) ──────")
     batch_translate_items(today_items)
-    # 한국어 기사는 one_line_kr = one_line 복사, title_kr = title 복사
-    for it in today_items:
-        if it.get("lang") == "ko":
-            it["one_line_kr"] = it.get("one_line", "")
-            it["title_kr"] = it.get("title", "")
 
     kr_cnt = sum(1 for i in today_items if i.get("lang")=="ko")
     print(f"\n오늘 수집: {len(today_items)}건 (국내 {kr_cnt} / 해외 {len(today_items)-kr_cnt})")

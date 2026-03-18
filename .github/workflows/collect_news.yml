@@ -38,6 +38,7 @@ jobs:
       - name: 📁 Ensure data/history directory
         run: |
           mkdir -p data/history
+          # .gitkeep 이 없으면 생성 (빈 폴더 추적용)
           [ -f data/history/.gitkeep ] || touch data/history/.gitkeep
 
       # ── 5. AI 뉴스 수집 ──────────────────────────────
@@ -53,8 +54,10 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # 변경된 data/ 파일 전체 스테이징
           git add data/
 
+          # 변경사항이 없으면 커밋 생략
           if git diff --cached --quiet; then
             echo "변경사항 없음 — 커밋 생략"
           else

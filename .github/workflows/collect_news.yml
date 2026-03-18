@@ -42,11 +42,10 @@ jobs:
           [ -f data/history/.gitkeep ] || touch data/history/.gitkeep
 
       # ── 5. AI 뉴스 수집 ──────────────────────────────
-      - name: "📡 Collect AI news (B-mode: daily snapshot + weekly/monthly)"
+      - name: 📡 Collect AI news (B-mode: daily snapshot + weekly/monthly)
         run: python fetch_ai_news.py
         env:
           TZ: Asia/Seoul
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # ── 6. 변경 파일 커밋 & 푸시 ─────────────────────
       - name: 💾 Commit & push data files

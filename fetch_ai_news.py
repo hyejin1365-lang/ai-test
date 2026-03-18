@@ -871,6 +871,14 @@ def scrape_blog(cfg):
 
             kst_date = _parse_scraped_date(date_str)
 
+            # ★ 날짜 필터: 오늘 날짜 기사만 수집 (날짜 추출 실패 → 제외)
+            if kst_date is None:
+                print(f"    ↳ 날짜 없음 제외: {title[:40]}")
+                continue
+            if kst_date[:10] != TODAY:
+                print(f"    ↳ 날짜 불일치 제외({kst_date[:10]}): {title[:40]}")
+                continue
+
             # 요약
             summary = ""
             parent = a.parent
@@ -930,7 +938,7 @@ def _parse_scraped_date(raw: str) -> str:
         year  = int(m.group(3))
         dt = datetime(year, month, day, tzinfo=timezone.utc).astimezone(KST)
         return dt.strftime("%Y-%m-%d %H:%M")
-    return NOW_KST.strftime("%Y-%m-%d %H:%M")
+    return None  # 날짜 추출 실패 → None 반환 (필터에서 제외)
 
 # ─────────────────────────────────────────────────────
 # RSS 수집
@@ -963,6 +971,10 @@ async def _fetch_feed_async(session, feed_info):
         )
         summary = clean_html(raw_summary)
         if not is_ai_related(title, summary, lang): continue
+        item_date = parse_date_kst(entry, lang)
+        # ★ 오늘 날짜 기사만 수집 (어제 이전 기사 제외)
+        if item_date[:10] != TODAY:
+            continue
         items.append({
             "id":           f"{abs(hash(title+link))%999999:06d}",
             "title":        title,
@@ -974,7 +986,7 @@ async def _fetch_feed_async(session, feed_info):
             "category":     feed_info["category"],
             "badge":        feed_info["badge"],
             "lang":         lang,
-            "date":         parse_date_kst(entry, lang),
+            "date":         item_date,
             "collect_date": TODAY,
             "thumbnail":    get_thumbnail(entry),
             "importance":   get_importance(title, summary),
@@ -1081,7 +1093,7 @@ def fetch_feed(feed_info):
                 "category":     feed_info["category"],
                 "badge":        feed_info["badge"],
                 "lang":         lang,
-                "date":         parse_date_kst(entry, lang),
+                "date":         item_date,
                 "collect_date": TODAY,
                 "thumbnail":    get_thumbnail(entry),
                 "importance":   get_importance(title, summary),
@@ -1495,23 +1507,19 @@ def main():
         print(f"🌐 [{cfg['category']}] {cfg['name']} 크롤링 중...")
         today_items.extend(scrape_blog(cfg))
 
-    # 3) URL 중복 제거 (동일 실행 내 + 이전 히스토리)
-    print("\n── 중복 제거 ────────────────────────────────────")
-    prev_urls = load_seen_urls_from_history(exclude_today=True)
-    print(f"  이전 수집 URL: {len(prev_urls)}건")
+    # 3) URL 중복 제거 (동일 실행 내에서만 — history 중복 체크 제거)
+    # ★ history 중복 체크를 하지 않음: 날짜 필터(RSS/블로그)로 이미 오늘 기사만 수집됨
+    # history 중복 체크를 켜면 RSS 기사가 어제와 겹쳐 0건이 되는 문제가 있었음
+    print("\n── 중복 제거 (동일 실행 내) ──────────────────────")
     seen, deduped = set(), []
-    skip_old = 0
     for it in today_items:
         url = it["url"]
-        if url in seen:
-            continue
-        seen.add(url)
-        if url in prev_urls:
-            skip_old += 1
-            continue   # 이전 히스토리에 이미 있는 기사 제외
-        deduped.append(it)
+        if url not in seen:
+            seen.add(url)
+            deduped.append(it)
+    skip_dup = len(today_items) - len(deduped)
     today_items = deduped
-    print(f"  ✅ 이전 중복 제거: {skip_old}건 | 최종 신규: {len(today_items)}건")
+    print(f"  ✅ 동일 URL 중복 제거: {skip_dup}건 | 최종: {len(today_items)}건")
 
     # 4) 카테고리 순서 정렬
     today_items.sort(

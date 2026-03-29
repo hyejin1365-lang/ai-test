@@ -1,40 +1,48 @@
 {
   "period": "monthly",
   "days": 30,
-  "generated_at": "2026-03-29 08:02",
-  "total": 1263,
-  "kr_count": 377,
-  "en_count": 886,
+  "generated_at": "2026-03-30 08:05",
+  "total": 1299,
+  "kr_count": 399,
+  "en_count": 900,
   "category_stats": {
-    "콘텐츠": 364,
-    "영상AI": 163,
+    "콘텐츠": 384,
+    "영상AI": 165,
     "이미지·디자인AI": 151,
-    "LLM": 110,
-    "개발AI": 158,
-    "AI법률": 42,
+    "LLM": 112,
+    "개발AI": 166,
+    "AI법률": 46,
     "논문": 195,
     "비즈니스": 80
   },
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 125
+      "count": 131
     },
     {
       "source": "디지털투데이",
-      "count": 91
+      "count": 98
+    },
+    {
+      "source": "전자신문",
+      "count": 67
     },
     {
       "source": "TechCrunch AI",
-      "count": 63
+      "count": 64
     },
     {
       "source": "HuggingFace Papers",
       "count": 63
     },
     {
-      "source": "전자신문",
-      "count": 60
+      "source": "Bloomberg Tech",
+      "count": 56
+    },
+    {
+      "source": "Wired AI",
+      "count": 56
     },
     {
       "source": "더에이아이",
@@ -47,14 +55,6 @@
     {
       "source": "ArXiv ML",
       "count": 54
-    },
-    {
-      "source": "Bloomberg Tech",
-      "count": 52
-    },
-    {
-      "source": "Wired AI",
-      "count": 52
     },
     {
       "source": "ArXiv CV",
@@ -78,23 +78,27 @@
     },
     {
       "source": "Claude AI News",
-      "count": 23
+      "count": 24
     },
     {
       "source": "Google Gemini News",
       "count": 18
     },
     {
+      "source": "Kling AI News",
+      "count": 17
+    },
+    {
       "source": "OpenAI (Sora)",
       "count": 17
     },
     {
-      "source": "Kling AI News",
+      "source": "LangChain Blog",
       "count": 16
     },
     {
-      "source": "LangChain Blog",
-      "count": 16
+      "source": "AI법률 뉴스(국내)",
+      "count": 15
     },
     {
       "source": "Latent Space",
@@ -109,20 +113,16 @@
       "count": 13
     },
     {
-      "source": "AI법률 뉴스(국내)",
-      "count": 13
-    },
-    {
       "source": "Midjourney News",
       "count": 13
     },
     {
-      "source": "xAI Grok News",
-      "count": 11
+      "source": "AI Regulation News",
+      "count": 12
     },
     {
-      "source": "AI Regulation News",
-      "count": 10
+      "source": "xAI Grok News",
+      "count": 11
     },
     {
       "source": "Simon Willison",
@@ -141,6 +141,10 @@
       "count": 10
     },
     {
+      "source": "Mistral AI News",
+      "count": 9
+    },
+    {
       "source": "Adobe Firefly News",
       "count": 9
     },
@@ -154,10 +158,6 @@
     },
     {
       "source": "CapCut AI News",
-      "count": 8
-    },
-    {
-      "source": "Mistral AI News",
       "count": 8
     },
     {
@@ -280,31 +280,31 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 122
+      "count": 123
+    },
+    {
+      "keyword": "인공지능",
+      "count": 88
     },
     {
       "keyword": "LLM",
       "count": 87
     },
     {
-      "keyword": "인공지능",
-      "count": 82
-    },
-    {
       "keyword": "에이전트",
-      "count": 53
+      "count": 58
     },
     {
       "keyword": "Anthropic",
-      "count": 53
-    },
-    {
-      "keyword": "Claude",
-      "count": 41
+      "count": 54
     },
     {
       "keyword": "GPT",
-      "count": 40
+      "count": 43
+    },
+    {
+      "keyword": "Claude",
+      "count": 43
     },
     {
       "keyword": "Reasoning",
@@ -335,16 +335,20 @@
       "count": 23
     },
     {
+      "keyword": "Kling",
+      "count": 16
+    },
+    {
       "keyword": "Multimodal",
       "count": 16
     },
     {
-      "keyword": "Kling",
+      "keyword": "Midjourney",
       "count": 15
     },
     {
-      "keyword": "Midjourney",
-      "count": 15
+      "keyword": "클로드",
+      "count": 14
     },
     {
       "keyword": "Diffusion",
@@ -353,10 +357,6 @@
     {
       "keyword": "Open Source",
       "count": 13
-    },
-    {
-      "keyword": "Image Generation",
-      "count": 12
     }
   ],
   "daily_timeline": [
@@ -411,9 +411,20 @@
     {
       "date": "2026-03-29",
       "count": 49
+    },
+    {
+      "date": "2026-03-30",
+      "count": 36
     }
   ],
   "cat_daily": {
+    "2026-03-30": {
+      "콘텐츠": 20,
+      "영상AI": 2,
+      "LLM": 2,
+      "개발AI": 8,
+      "AI법률": 4
+    },
     "2026-03-29": {
       "콘텐츠": 23,
       "영상AI": 6,
@@ -541,6 +552,86 @@
   },
   "content_highlights": [
     {
+      "id": "2026-03-30_0000",
+      "title": "지푸, 초저가 코딩 모델 'GLM-5.1' 출시…'클로드 오퍼스 4.6'에 근접",
+      "summary": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다. 최상위권 모델에 근접한 성능을 확보하면서도 가격을 크게 낮춘 ‘고성능·저비용·오픈소스’ 전략이 핵심으로 꼽힌다.지푸는 27일(현지시간) GLM-5.1을 정식 출시하고, 기존 GLM 코딩 플랜 사용자에게 전면 개방했다고 밝혔다. GLM-5.1 모델은 코딩 성능 평가에서 '클로드 코드'를 테스트 프레임워크로 활용했으며, 여기에서 45.3점을 기록했다. 이는 '클로드 오퍼스 4.6'을 적용했을 때 기록…",
+      "one_line": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+      "one_line_kr": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208504",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 18:39",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "지푸, 초저가 코딩 모델 'GLM-5.1' 출시…'클로드 오퍼스 4.6'에 근접"
+    },
+    {
+      "id": "2026-03-30_0004",
+      "title": "인터콤, 고객지원 특화 AI ‘에이펙스’ 공개…“맞춤형으로 GPT·클로드 제쳐”",
+      "summary": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다. 범용 AI 모델이 아닌 ‘도메인 특화 모델’ 전략으로 'GPT-5.4'와 '클로드 오퍼스 4.5' 등 최상위 모델을 성능과 속도, 비용 측면에서 앞섰다는 주장이다.샌프란시스코의 인터콤은 26일(현지시간) 고객지원 특화 AI 모델 ‘핀 에이펙스 1.0(Fin Apex 1.0)’을 공개했다.이 모델은 인터콤의 고객 응대 AI 에이전트 ‘핀(Fin)’을 구동하는 핵심 …",
+      "one_line": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다.",
+      "one_line_kr": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208506",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:38",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "인터콤, 고객지원 특화 AI ‘에이펙스’ 공개…“맞춤형으로 GPT·클로드 제쳐”"
+    },
+    {
+      "id": "2026-03-30_0011",
+      "title": "[AI핫이슈] 자동화 AI 확산...오픈AI·앤트로픽 차세대 모델 윤곽",
+      "summary": "[디지털투데이 황치규 기자] 유력 AI 업체들이 사람 없이 특정 작업을 자동으로 커버하는 AI에이전트 레이스에서 지분 확대를 위해 자동화 기능들을 앞다퉈 쏟아내고 있다. 사용자 대신 다양한 작업을 수행하는 오픈소스 AI 에이전트 툴인 오픈클로가 큰 관심을 받은 이후 테크 기업들 AI에이전트 전략도 보다 자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "one_line": "자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "one_line_kr": "자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649144",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[AI핫이슈] 자동화 AI 확산...오픈AI·앤트로픽 차세대 모델 윤곽"
+    },
+    {
+      "id": "2026-03-30_0023",
+      "title": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus - Engadget",
+      "summary": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus Engadget",
+      "one_line": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus Engadget",
+      "one_line_kr": "Anthropic은 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드'를 출시했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNS09KSWxTdWRvUXBTSEhGUVVUZHpROUw2WkptVnhrT2NPeGdWYi1LQlB0X3VyRjZZNWFkTGN4VVpLTzBHLXdyQ3RNVXBEVFBvZFBaNExjd3hhUWJPT1JvOFRXYnZ6ZGRDNHZxclhyX2Nld2RRS2d3TmZYOC11S1ZySFdTdUVEclFJeVpUUGJGbXd6d2ZaSjZWNXlXOTNYN1Q5dTdKS2JISVdVYVY3WlJadUV4a1d6N3Job3JWaUFUTnloN2xoX1BEbkxJOHhYVE1SaHpXYg?oc=5",
+      "source": "Claude AI News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-03-25 23:25",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Anthropic, 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드' 출시 - Engadget"
+    },
+    {
       "id": "2026-03-29_0009",
       "title": "오픈AI, '챗GPT 광고' 6주 만에 매출 1500억 돌파",
       "summary": "오픈AI가 도입한 '챗GPT' 광고가 예상보다 빠르게 성과를 내며 새로운 캐시카우로 떠올랐다.26일(현지시간) 로이터에 따르면, 오픈AI는 미국에서 진행 중인 챗GPT 광고 파일럿이 출시 6주 만에 연간 환산 매출 1억달러(약 1500억원)를 돌파하며 예상보다 빠른 성장세를 보였다. 이번 광고 실험은 지난 1월 샘 알트먼 CEO가 예고한 전략의 일부로, 미국 내 무료 사용자와 저가 요금제인 ‘고(Go)’ 이용자를 대상으로 제한적으로 진행되고 있다. 광고는 챗봇 응답 하단에 별도로 표시되며, AI의…",
@@ -659,95 +750,15 @@
         "class": "hot"
       },
       "title_kr": "미국, EU 빅테크 제재에 경고…“AI 경제에서 밀려날 것”"
-    },
-    {
-      "id": "2026-03-28_0017",
-      "title": "챗GPT 쇼핑 기능 확 바뀌었다 …지금 바로 써볼 5가지 프롬프트",
-      "summary": "[디지털투데이 홍진주 기자] 오픈AI가 최근 업데이트를 통해 챗GPT의 쇼핑 기능을 대폭 강화했다. 텍스트 중심 검색에서 벗어나 이미지와 비교 중심의 시각적 탐색 경험을 제공하며, 단순한 링크 나열이 아닌 실제 쇼핑몰을 둘러보는 듯한 인터페이스를 구현한 것이 특징이다. 각 제품에는 이미지와 간단한 설명, 추천 이유가 함께 제시되며, 여러 제품을 직관적으로 비교할 수 있는 기능도 강화됐다.관련해 26일(현지시간) IT매체 테크레이더는 다양한 상황을 가정한 5가지 프롬프트를 통해 챗GPT를 개인 쇼핑…",
-      "one_line": "[디지털투데이 홍진주 기자] 오픈AI가 최근 업데이트를 통해 챗GPT의 쇼핑 기능을 대폭 강화했다.",
-      "one_line_kr": "[디지털투데이 홍진주 기자] 오픈AI가 최근 업데이트를 통해 챗GPT의 쇼핑 기능을 대폭 강화했다.",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=647582",
-      "source": "디지털투데이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-03-28 07:30",
-      "collect_date": "2026-03-28",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "챗GPT 쇼핑 기능 확 바뀌었다 …지금 바로 써볼 5가지 프롬프트"
-    },
-    {
-      "id": "2026-03-28_0023",
-      "title": "[오늘의 대학] AI 메모리 사용량, ‘최대 6배’ 줄인다 (26.3.27)",
-      "summary": "국내 연구진과 산학계가 AI·반도체·에너지 전환 세 분야에서 동시에 움직였다.KAIST 전기및전자공학부 한인수 교수가 참여한 구글 리서치·딥마인드·뉴욕대 공동연구팀은 AI 모델의 메모리 사용량을 최대 6배 줄이는 양자화 알고리즘 ‘터보퀀트(TurboQuant)’를 공개했다. 핵심 정보는 유지한 채 고정밀 데이터를 압축하는 2단계 구조로, AI 추론 과정의 가장 큰 걸림돌이었던 메모리 병목을 효과적으로 해소했다는 평가다. 메모리 문턱이 낮아지면 온디바이스 AI부터 대규모 데이터센터까지 AI 적용 범…",
-      "one_line": "국내 연구진과 산학계가 AI·반도체·에너지 전환 세 분야에서 동시에 움직였다.KAIST 전기및전자공학부 한인수 교수가 참여한 구글 리서치·딥마인드·뉴욕대 공동연구팀은 AI 모델의 메모리 사용량을 최대 6배 줄이는…",
-      "one_line_kr": "국내 연구진과 산학계가 AI·반도체·에너지 전환 세 분야에서 동시에 움직였다.KAIST 전기및전자공학부 한인수 교수가 참여한 구글 리서치·딥마인드·뉴욕대 공동연구팀은 AI 모델의 메모리 사용량을 최대 6배 줄이는…",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=20449",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-03-27 15:47",
-      "collect_date": "2026-03-28",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "[오늘의 대학] AI 메모리 사용량, ‘최대 6배’ 줄인다 (26.3.27)"
-    },
-    {
-      "id": "2026-03-28_0033",
-      "title": "Blackmagic Design releases DaVinci Resolve 20.2 - CG Channel",
-      "summary": "Blackmagic Design releases DaVinci Resolve 20.2 CG Channel",
-      "one_line": "Blackmagic Design releases DaVinci Resolve 20.2 CG Channel",
-      "one_line_kr": "Blackmagic Design, DaVinci Resolve 20.2 CG 채널 출시",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbmZqSlIzdEFIUzk5ME5IXzBSVnVhN0xHX2VhTGZ2TDFESE1wejBhX0dRTnpVNGpDT2V6YmVsLTFwLVF4ZFhHNEJwVTJGTEo3LTVTczNHOU9JdnBxR1oyeGktT3M0M3VKSzdkbUdTSnEzVFF6WnpSYlFJSEpGcXdnUW1Qd2kxU2NSdUE?oc=5",
-      "source": "DaVinci Resolve AI",
-      "category": "영상AI",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2025-09-10 16:00",
-      "collect_date": "2026-03-28",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Blackmagic Design, DaVinci Resolve 20.2 출시 - CG 채널"
-    },
-    {
-      "id": "2026-03-28_0034",
-      "title": "ByteDance introduces new AI video generation model to CapCut - The American Bazaar",
-      "summary": "ByteDance introduces new AI video generation model to CapCut The American Bazaar",
-      "one_line": "ByteDance introduces new AI video generation model to CapCut The American Bazaar",
-      "one_line_kr": "ByteDance, CapCut에 새로운 AI 비디오 생성 모델 소개 The American Bazaar",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR2Vid1hTZnJCcTAybHhiUnQ0aU1lSEpZTGI2aE8tdFZGYWxPWm5TQjJ4eEtBa3d3b3V0UEZzd1I5T1BxdmFLUVdxaW91aGNRTXJKZ2xMZXNwM0stWWlwYUJ2czdvZkhvcDctRTAwbnVTbXV1ZlZod1pPeFdWS0xjZkNjMjNHb1hVbDM4azlVbS1oeDhMWXQ0ZVhNVVliZGRrT3RPaEl5VkFKOFBXTEpYY0pR?oc=5",
-      "source": "CapCut AI News",
-      "category": "영상AI",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2026-03-28 02:05",
-      "collect_date": "2026-03-28",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "ByteDance, CapCut에 새로운 AI 비디오 생성 모델 출시 - The American Bazaar"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "오픈AI, '챗GPT 광고' 6주 만에 매출 1500억 돌파",
+      "title": "지푸, 초저가 코딩 모델 'GLM-5.1' 출시…'클로드 오퍼스 4.6'에 근접",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=208488",
-      "one_line": "빠르게 성과를 내며 새로운 캐시카우로 떠올랐다.26일(현지시간) 로이터에 따르면, 오픈AI는 미국에서 진행 중인 챗GPT 광고 파일럿이 출시 6주 만에 연간 환산 매출 1억달러(약 1500억원)를 돌파하며 예상보다",
-      "date": "2026-03-28 11:38"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208504",
+      "one_line": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+      "date": "2026-03-29 18:39"
     },
     "영상AI": {
       "title": "Anthropic’s Claude popularity with paying consumers is skyrocketing",
@@ -764,11 +775,11 @@
       "date": "2024-04-12 16:00"
     },
     "LLM": {
-      "title": "Mistral AI Launches Open-Source Speech Model for Wearables - The Tech Buzz",
-      "source": "Mistral AI News",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNalNQY0lNRzY4OXIzVUZBR0VzZEdXb0RuRVpxMHVmaTM5eG9oOGNOWkxtVC1QZ1NlTjJuaUM1VklnbkNkSG5xejJMZ1dpUzgzSUVhX0dqYzNwVEpJc2ItbGZiT0JkeGRhZVZMN3hTQ0hQSGlydU02TWJHT0FRQkQ5N2VhUzZYalptNDZkOWpsZGZSeUxvVmc?oc=5",
-      "one_line": "Mistral AI, 웨어러블용 오픈 소스 음성 모델 출시",
-      "date": "2026-03-26 20:43"
+      "title": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus - Engadget",
+      "source": "Claude AI News",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNS09KSWxTdWRvUXBTSEhGUVVUZHpROUw2WkptVnhrT2NPeGdWYi1LQlB0X3VyRjZZNWFkTGN4VVpLTzBHLXdyQ3RNVXBEVFBvZFBaNExjd3hhUWJPT1JvOFRXYnZ6ZGRDNHZxclhyX2Nld2RRS2d3TmZYOC11S1ZySFdTdUVEclFJeVpUUGJGbXd6d2ZaSjZWNXlXOTNYN1Q5dTdKS2JISVdVYVY3WlJadUV4a1d6N3Job3JWaUFUTnloN2xoX1BEbkxJOHhYVE1SaHpXYg?oc=5",
+      "one_line": "Anthropic은 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드'를 출시했습니다.",
+      "date": "2026-03-25 23:25"
     },
     "개발AI": {
       "title": "Plan, divide, and conquer: How weak models excel at long context tasks",
@@ -779,14 +790,734 @@
     }
   },
   "period_key_points": [
-    "오픈AI가 도입한 '챗GPT' 광고가 예상보다 빠르게 성과를 내며 새로운 캐시카우로 떠올랐다.",
-    "에이전틱 인공지능(AI) 확산으로 이른바 '사스포칼립스(SaaSpocalypse)' 우려가 커지는 가운데, AI 에이전트가 서비스형 소프트웨어(SaaS) 사업모델을 직접 위협하기보다 오히려 소프트웨어의 활용도와 가치를 높일 수 있다는.",
-    "전체 Claude 소비자 사용자에 대한 추정치는 지도 전체에 나와 있습니다(1,800만 명에서 3,000만 명에 이르는 수치를 확인했습니다.",
-    "기업용 AI 전문 코히어가 첫번째 음성 인식 모델을 공개하며 음성 AI 시장 공략에 나섰다. 코히어는 26일(현지시간) 자동 음성 인식(ASR) 모델 ‘트랜스크라이브(Transcribe)’를 오픈소스로 출시했다.",
-    "오픈AI가 챗GPT의 '성인 모드' 출시 계획을 무기한 보류한 것은 물론, 폐기까지 검토한 것으로 알려졌다. 사회적 영향과 윤리적 논란에 대한 내부 및 투자자 우려가 커지고, 기업용 제품 중심으로 전략을 재편한 데에 따른 것이다."
+    "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+    "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다.",
+    "유력 AI 업체들이 사람 없이 특정 작업을 자동으로 커버하는 AI에이전트 레이스에서 지분 확대를 위해 자동화 기능들을 앞다퉈 쏟아내고 있다.",
+    "Anthropic은 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드'를 출시했습니다.",
+    "오픈AI가 도입한 '챗GPT' 광고가 예상보다 빠르게 성과를 내며 새로운 캐시카우로 떠올랐다."
   ],
-  "period_prose": "이번 월간 총 1263건의 AI 자료가 수집됐습니다. 국내 377건, 해외 886건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 인공지능, 에이전트, Anthropic입니다.",
+  "period_prose": "이번 월간 총 1299건의 AI 자료가 수집됐습니다. 국내 399건, 해외 900건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, 인공지능, LLM, 에이전트, Anthropic입니다.",
   "items": [
+    {
+      "id": "2026-03-30_0000",
+      "title": "지푸, 초저가 코딩 모델 'GLM-5.1' 출시…'클로드 오퍼스 4.6'에 근접",
+      "summary": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다. 최상위권 모델에 근접한 성능을 확보하면서도 가격을 크게 낮춘 ‘고성능·저비용·오픈소스’ 전략이 핵심으로 꼽힌다.지푸는 27일(현지시간) GLM-5.1을 정식 출시하고, 기존 GLM 코딩 플랜 사용자에게 전면 개방했다고 밝혔다. GLM-5.1 모델은 코딩 성능 평가에서 '클로드 코드'를 테스트 프레임워크로 활용했으며, 여기에서 45.3점을 기록했다. 이는 '클로드 오퍼스 4.6'을 적용했을 때 기록…",
+      "one_line": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+      "one_line_kr": "지푸 AI가 코딩 특화 모델 ‘GLM-5.1’을 선보이며 개발자용 AI 시장에 파장을 예고하고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208504",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 18:39",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "지푸, 초저가 코딩 모델 'GLM-5.1' 출시…'클로드 오퍼스 4.6'에 근접"
+    },
+    {
+      "id": "2026-03-30_0001",
+      "title": "“음악 생성 넘어 개인 전용 악기로”... 수노 v5.5, ‘개인화’ 승부수",
+      "summary": "음악 생성 AI 수노(Suno)가 개인화 기능을 대폭 강화한 최신 모델 ‘v5.5’를 공개하며 AI 음악 창작의 새로운 방향을 제시했다. 단순한 작곡 보조를 넘어, 창작자의 개성과 취향을 반영하는 데 초점을 맞춘 것이 이번 업데이트의 핵심이다.수노는 26일(현지시간) v5.5를 발표하며 “가장 표현력이 뛰어난 모델”이라고 강조했다.이번 버전은 음악을 생성하는 수준을 넘어, 창작자의 스타일과 감각을 그대로 반영하는 데 초점을 맞췄다. 수노는 “최고의 음악은 인간으로부터 시작된다는 철학 아래, AI가…",
+      "one_line": "음악 생성 AI 수노(Suno)가 개인화 기능을 대폭 강화한 최신 모델 ‘v5.5’를 공개하며 AI 음악 창작의 새로운 방향을 제시했다.",
+      "one_line_kr": "음악 생성 AI 수노(Suno)가 개인화 기능을 대폭 강화한 최신 모델 ‘v5.5’를 공개하며 AI 음악 창작의 새로운 방향을 제시했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208505",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 18:17",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "“음악 생성 넘어 개인 전용 악기로”... 수노 v5.5, ‘개인화’ 승부수"
+    },
+    {
+      "id": "2026-03-30_0002",
+      "title": "법률 AI 대표 하비, 16조 가치로 투자 유치...\"보조 넘어 에이전트로 진화\"",
+      "summary": "하비(Harvey)가 대규모 투자 유치에 성공하며 ‘AI 기반 법률 인프라’ 대표주자 자리를 굳히고 있다. 단순한 업무 보조를 넘어, 실제 법률 업무를 수행하는 ‘에이전트 플랫폼’으로의 전환이 가속화되는 모습이다.하비는 25일(현지시간) 기업 가치 110억달러(약 16조원)로 2억달러(약 3000억원) 규모의 신규 투자를 유치했다고 발표했다. 2024년 중반 15억달러 수준이었던 몸값은 7배 이상 폭등했다. 이번 투자는 GIC와 세쿼이아 캐피털이 공동 주도했으며, 앤드리슨 호로비츠, 코아투, 클라…",
+      "one_line": "단순한 업무 보조를 넘어, 실제 법률 업무를 수행하는 ‘에이전트 플랫폼’으로의 전환이 가속화되는 모습이다.하비는 25일(현지시간) 기업 가치 110억달러(약 16조원)로 2억달러(약 3000억원) 규모의 신규…",
+      "one_line_kr": "단순한 업무 보조를 넘어, 실제 법률 업무를 수행하는 ‘에이전트 플랫폼’으로의 전환이 가속화되는 모습이다.하비는 25일(현지시간) 기업 가치 110억달러(약 16조원)로 2억달러(약 3000억원) 규모의 신규…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208510",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 18:08",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "법률 AI 대표 하비, 16조 가치로 투자 유치...\"보조 넘어 에이전트로 진화\""
+    },
+    {
+      "id": "2026-03-30_0003",
+      "title": "'AI 회의록' 그래놀라, 기업가치 2조 돌파...\"기업용으로 확장\"",
+      "summary": "대표적인 AI 회의록 플랫폼 그래놀라(Granola)가 대규모 투자 유치에 성공하며 차세대 업무 AI 플랫폼으로의 도약을 본격화하고 있다. 단순한 회의 기록을 넘어 ‘행동하는 AI(Agentic AI)’로 확장, B2B 시장을 공략하겠다는 전략이 투자자들의 기대를 끌어올렸다.그래놀라는 25일(현지시간) 1억2500만달러(약 1800억원) 규모의 시리즈 C 투자를 유치하며 기업가치 15억달러(약 2조원)에 도달했다고 발표했다.이번 투자는 인덱스 벤처스가 주도했으며, 클라이너 퍼킨스를 비롯해 기존 투…",
+      "one_line": "단순한 회의 기록을 넘어 ‘행동하는 AI(Agentic AI)’로 확장, B2B 시장을 공략하겠다는 전략이 투자자들의 기대를 끌어올렸다.그래놀라는 25일(현지시간) 1억2500만달러(약 1800억원) 규모의 시리즈…",
+      "one_line_kr": "단순한 회의 기록을 넘어 ‘행동하는 AI(Agentic AI)’로 확장, B2B 시장을 공략하겠다는 전략이 투자자들의 기대를 끌어올렸다.그래놀라는 25일(현지시간) 1억2500만달러(약 1800억원) 규모의 시리즈…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208507",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 17:09",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "'AI 회의록' 그래놀라, 기업가치 2조 돌파...\"기업용으로 확장\""
+    },
+    {
+      "id": "2026-03-30_0004",
+      "title": "인터콤, 고객지원 특화 AI ‘에이펙스’ 공개…“맞춤형으로 GPT·클로드 제쳐”",
+      "summary": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다. 범용 AI 모델이 아닌 ‘도메인 특화 모델’ 전략으로 'GPT-5.4'와 '클로드 오퍼스 4.5' 등 최상위 모델을 성능과 속도, 비용 측면에서 앞섰다는 주장이다.샌프란시스코의 인터콤은 26일(현지시간) 고객지원 특화 AI 모델 ‘핀 에이펙스 1.0(Fin Apex 1.0)’을 공개했다.이 모델은 인터콤의 고객 응대 AI 에이전트 ‘핀(Fin)’을 구동하는 핵심 …",
+      "one_line": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다.",
+      "one_line_kr": "고객 서비스 플랫폼 전문 인터콤(Intercom)이 자체 개발한 고객지원 특화 AI 모델을 공개하며 AI 시장 구도에 변화를 예고했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208506",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:38",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "인터콤, 고객지원 특화 AI ‘에이펙스’ 공개…“맞춤형으로 GPT·클로드 제쳐”"
+    },
+    {
+      "id": "2026-03-30_0005",
+      "title": "앤트로픽, 생물학 연구용 에이전트 '오페론' 개발 중...'AI 과학자' 발동",
+      "summary": "앤트로픽이 생물학 및 보건 연구를 위한 새로운 클로드 데스크톱 앱 기능을 테스트 중인 것으로 알려졌다. 이는 생물학 분야에서 'AI 과학자'를 구축하려는 노력이 본격화하고 있다는 것을 의미한다.테스팅 카탈로그는 28일(현지시간) 클로드 데스크톱 앱 코드 분석 결과, '오페론(Operon)'이라는 새로운 독립형 모드의 흔적을 발견했다고 소개했다.이에 따르면, 사용자가 오페론에 처음 접속하면 환영 메시지에 이어 개인 환경 설정 페이지가 나타난다. 이 화면에는 ▲계통수 구축(Building Phylog…",
+      "one_line": "이는 생물학 분야에서 'AI 과학자'를 구축하려는 노력이 본격화하고 있다는 것을 의미한다.테스팅 카탈로그는 28일(현지시간) 클로드 데스크톱 앱 코드 분석 결과, '오페론(Operon)'이라는 새로운 독립형 모드의…",
+      "one_line_kr": "이는 생물학 분야에서 'AI 과학자'를 구축하려는 노력이 본격화하고 있다는 것을 의미한다.테스팅 카탈로그는 28일(현지시간) 클로드 데스크톱 앱 코드 분석 결과, '오페론(Operon)'이라는 새로운 독립형 모드의…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208501",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 10:49",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "앤트로픽, 생물학 연구용 에이전트 '오페론' 개발 중...'AI 과학자' 발동"
+    },
+    {
+      "id": "2026-03-30_0006",
+      "title": "제노레이, 박상호 사외이사 재선임",
+      "summary": "[디지털투데이 AI공시팀] 의료용 영상진단장비 전문 기업 제노레이(122310)는 박상호 사외이사를 재선임했다고 30일 공시했다. 사외이사 변경 발생일은 2026년 3월 27일이다.제노레이는 박상호 사외이사를 재선임했으며 임기 시작일은 2026년 3월 29일, 임기는 3년이다. 박상호 사외이사의 사외이사 총 재직기간은 현 임기 포함 3년0개월로 기재됐다.사외이사 변경 전후 모두 등기이사 총수는 4명, 사외이사 총수는 1명으로 사외이사 비율은 25%를 유지한다.박상호 사외이사는 2004년 7월부터 …",
+      "one_line": "[디지털투데이 AI공시팀] 의료용 영상진단장비 전문 기업 제노레이(122310)는 박상호 사외이사를 재선임했다고 30일 공시했다.",
+      "one_line_kr": "[디지털투데이 AI공시팀] 의료용 영상진단장비 전문 기업 제노레이(122310)는 박상호 사외이사를 재선임했다고 30일 공시했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649154",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:52",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "제노레이, 박상호 사외이사 재선임"
+    },
+    {
+      "id": "2026-03-30_0007",
+      "title": "케이엘넷, 사외이사 이시우 신규선임·박상준 자진사임",
+      "summary": "[디지털투데이 AI공시팀] IT 물류 전문 기업 케이엘넷(039420)은 사외이사 이시우를 신규 선임하고 박상준 사외이사가 자진사임했다고 30일 공시했다.케이엘넷은 2026년 3월 27일 사외이사 변동이 발생했으며, 선임·재선임 1명과 해임·중도퇴임 1명이 함께 이뤄졌다고 밝혔다. 변경 전후 모두 등기이사 총수는 6명, 사외이사 총수는 2명으로 사외이사 비율은 33.3%를 유지했다.신규 선임된 사외이사 이시우는 1959년 7월생 남성으로, 임기 시작일은 2026년 3월 27일이며 임기는 3년이다.…",
+      "one_line": "[디지털투데이 AI공시팀] IT 물류 전문 기업 케이엘넷(039420)은 사외이사 이시우를 신규 선임하고 박상준 사외이사가 자진사임했다고 30일 공시했다.케이엘넷은 2026년 3월 27일 사외이사 변동이…",
+      "one_line_kr": "[디지털투데이 AI공시팀] IT 물류 전문 기업 케이엘넷(039420)은 사외이사 이시우를 신규 선임하고 박상준 사외이사가 자진사임했다고 30일 공시했다.케이엘넷은 2026년 3월 27일 사외이사 변동이…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649153",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:52",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "케이엘넷, 사외이사 이시우 신규선임·박상준 자진사임"
+    },
+    {
+      "id": "2026-03-30_0008",
+      "title": "제놀루션, 사외이사 박희우 신규선임",
+      "summary": "[디지털투데이 AI공시팀] 체외진단 의료기기 전문 기업 제놀루션(225220)은 사외이사 박희우를 신규 선임했다고 30일 공시했다. 사외이사 변경 발생일은 2026년3월27일이다.이번 선임으로 사외이사 선임·재선임 인원은 1명이다. 변경 전후 모두 등기이사 총수는 4명, 사외이사 총수는 2명으로 사외이사 비율 50%를 유지했다.신규 선임된 박희우 사외이사는 1963년11월생 남성으로, 임기는 2026년3월27일부터 3년이다. 주요 경력으로는 가톨릭대학교 경영대학 회계학과 교수, 가톨릭대학교 경영대…",
+      "one_line": "[디지털투데이 AI공시팀] 체외진단 의료기기 전문 기업 제놀루션(225220)은 사외이사 박희우를 신규 선임했다고 30일 공시했다.",
+      "one_line_kr": "[디지털투데이 AI공시팀] 체외진단 의료기기 전문 기업 제놀루션(225220)은 사외이사 박희우를 신규 선임했다고 30일 공시했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649155",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:52",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "제놀루션, 사외이사 박희우 신규선임"
+    },
+    {
+      "id": "2026-03-30_0009",
+      "title": "부국증권, 사외이사 2명 선임·재선임…사외이사 비율 50%로",
+      "summary": "[디지털투데이 AI공시팀] 부국증권(001270)은 사외이사 2명을 선임·재선임했다고 30일 공시했다. 사외이사 변경 발생일은 2026년3월27일이다.이번 인사에서 유정석을 사외이사로 재선임하고, 김동회를 사외이사로 신규 선임했다. 두 사람의 임기 시작일은 2026년3월27일이며, 임기는 각각 2년이다.유정석은 1970년8월생 남성으로, 사외이사 총 재직기간은 이번 임기를 포함해 6년이다. 주요 경력은 삼일회계법인 공인회계사, 법무법인 화백 변호사, 법무법인 유한 화우 변호사 등이다.김동회는 19…",
+      "one_line": "[디지털투데이 AI공시팀] 부국증권(001270)은 사외이사 2명을 선임·재선임했다고 30일 공시했다.",
+      "one_line_kr": "[디지털투데이 AI공시팀] 부국증권(001270)은 사외이사 2명을 선임·재선임했다고 30일 공시했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649151",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:52",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "부국증권, 사외이사 2명 선임·재선임…사외이사 비율 50%로"
+    },
+    {
+      "id": "2026-03-30_0010",
+      "title": "한샘, 사외이사 2명 선임·재선임…사외이사 비율 33.3%로",
+      "summary": "[디지털투데이 AI공시팀] 종합 홈인테리어·가구 전문 기업 한샘(009240)은 사외이사 2명을 선임·재선임했다고 30일 공시했다. 사외이사 변경 발생일은 2026년 3월 27일이다.이번 변동으로 사외이사는 기존 2명에서 3명으로 늘었고, 등기이사 총수는 7명에서 9명으로 변경됐다. 이에 따라 사외이사 비율은 28.6%에서 33.3%로 높아졌다.신규 사외이사로는 박영빈이 선임됐다. 박영빈은 2026년 3월 27일부터 2년 임기이며, 주요 경력으로 삼일기업공사 고문, 건설공제조합 이사장, 동성그룹 …",
+      "one_line": "이에 따라 사외이사 비율은 28.6%에서 33.3%로 높아졌다.신규 사외이사로는 박영빈이 선임됐다.",
+      "one_line_kr": "이에 따라 사외이사 비율은 28.6%에서 33.3%로 높아졌다.신규 사외이사로는 박영빈이 선임됐다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649150",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:52",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "한샘, 사외이사 2명 선임·재선임…사외이사 비율 33.3%로"
+    },
+    {
+      "id": "2026-03-30_0011",
+      "title": "[AI핫이슈] 자동화 AI 확산...오픈AI·앤트로픽 차세대 모델 윤곽",
+      "summary": "[디지털투데이 황치규 기자] 유력 AI 업체들이 사람 없이 특정 작업을 자동으로 커버하는 AI에이전트 레이스에서 지분 확대를 위해 자동화 기능들을 앞다퉈 쏟아내고 있다. 사용자 대신 다양한 작업을 수행하는 오픈소스 AI 에이전트 툴인 오픈클로가 큰 관심을 받은 이후 테크 기업들 AI에이전트 전략도 보다 자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "one_line": "자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "one_line_kr": "자동화 중심으로 바뀌는 양상이다.앤트로픽은 클로드 코드(Claude Code)와 클로드 코워크(Claude Cowork)를 업데이트하며, 사용자컴퓨터에서 직접 작업을 수행할 수 있는 기능을 추가했다…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=649144",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[AI핫이슈] 자동화 AI 확산...오픈AI·앤트로픽 차세대 모델 윤곽"
+    },
+    {
+      "id": "2026-03-30_0012",
+      "title": "[테크인사이드] 베일 벗는 'AI 검색' 최적화의 비밀",
+      "summary": "[디지털투데이 황치규 기자] 챗GPT 같은 AI의 확산 속에 지난 20여년 간 소비자 관심을 얻기 위해 검색엔진 최적화(search-engine optimization: SEO)를 활용해왔던 기업들이 다양한 대안을 모색 중이다.최근 생성형 엔진 최적화(generative engine optimization, GEO), 답변 엔진 최적화(answer engine optimization, AEO) 등에 대한 관심이 커지는 배경이다.2025년 8월 맥킨지 조사에 따르면 응답자 절반이 AI 기반 검색 엔…",
+      "one_line": "[디지털투데이 황치규 기자] 챗GPT 같은 AI의 확산 속에 지난 20여년 간 소비자 관심을 얻기 위해 검색엔진 최적화(search-engine optimization: SEO)를 활용해왔던 기업들이 다양한 대안을…",
+      "one_line_kr": "[디지털투데이 황치규 기자] 챗GPT 같은 AI의 확산 속에 지난 20여년 간 소비자 관심을 얻기 위해 검색엔진 최적화(search-engine optimization: SEO)를 활용해왔던 기업들이 다양한 대안을…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=648222",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 07:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "[테크인사이드] 베일 벗는 'AI 검색' 최적화의 비밀"
+    },
+    {
+      "id": "2026-03-30_0013",
+      "title": "[2026 대한민국 가전대상] 기술 파괴가 잉태한 혁신, '생활 설계 지능형 플랫폼'으로 응답",
+      "summary": "“이제 가전은 명령을 기다리는 도구가 아니라, 사용자의 마음을 읽고 한발 앞서 움직이는 지능형 동반자다.” 인공지능(AI)이 무형의 알고리즘을 넘어 물리적 실체와 결합해 실질적인 삶의 궤적을 바꾸는 '피지컬 AI' 시대가 본격적으로 개막했다. 냉장고가 식재료의 신선도를",
+      "one_line": "“이제 가전은 명령을 기다리는 도구가 아니라, 사용자의 마음을 읽고 한발 앞서 움직이는 지능형 동반자다.” 인공지능(AI)이 무형의 알고리즘을 넘어 물리적 실체와 결합해 실질적인 삶의 궤적을 바꾸는 '피지컬 AI'…",
+      "one_line_kr": "“이제 가전은 명령을 기다리는 도구가 아니라, 사용자의 마음을 읽고 한발 앞서 움직이는 지능형 동반자다.” 인공지능(AI)이 무형의 알고리즘을 넘어 물리적 실체와 결합해 실질적인 삶의 궤적을 바꾸는 '피지컬 AI'…",
+      "url": "https://www.etnews.com/20260326000389",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-30 08:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "[2026 대한민국 가전대상] 기술 파괴가 잉태한 혁신, '생활 설계 지능형 플랫폼'으로 응답"
+    },
+    {
+      "id": "2026-03-30_0014",
+      "title": "“제미나이도, 챗GPT도…AI 챗봇, 인간에게 지나치게 아첨 떤다”",
+      "summary": "인공지능(AI) 챗봇이 인간 사용자를 지나치게 칭찬해 오히려 해로운 행동을 강화하는 잘못된 조언을 하고 있다는 연구 결과가 나왔다. 26일(현지시간) AP 통신에 따르면 미국 스탠퍼드 대학교 연구팀은 이날 국제학술지 '사이언스'에 게재한 논문에서 주요 AI 시스템 모두",
+      "one_line": "인공지능(AI) 챗봇이 인간 사용자를 지나치게 칭찬해 오히려 해로운 행동을 강화하는 잘못된 조언을 하고 있다는 연구 결과가 나왔다.",
+      "one_line_kr": "인공지능(AI) 챗봇이 인간 사용자를 지나치게 칭찬해 오히려 해로운 행동을 강화하는 잘못된 조언을 하고 있다는 연구 결과가 나왔다.",
+      "url": "https://www.etnews.com/20260327000290",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:50",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "“제미나이도, 챗GPT도…AI 챗봇, 인간에게 지나치게 아첨 떤다”"
+    },
+    {
+      "id": "2026-03-30_0015",
+      "title": "ì¹´ì¹´ì˜¤, 'í´ë¦­í•˜ëŠ” AI' ë§Œë“ ë‹¤â€¦'ì¹´ë‚˜ë‚˜-v'ì— CUA ë„ìž",
+      "summary": "카카오가 사람처럼 컴퓨터 화면을 보고 마우스·키보드를 조작해 자율적으로 작업을 수행하는 '컴퓨터 사용 에이전트(CUA)' 기술 개발에 도전한다. 오픈AI, 구글 등 글로벌 빅테크가 해당 기술을 활용한 서비스를 시작한 가운데 인공지능(AI) 에이전트 구현 기술을 확보하는",
+      "one_line": "오픈AI, 구글 등 글로벌 빅테크가 해당 기술을 활용한 서비스를 시작한 가운데 인공지능(AI) 에이전트 구현 기술을 확보하는",
+      "one_line_kr": "오픈AI, 구글 등 글로벌 빅테크가 해당 기술을 활용한 서비스를 시작한 가운데 인공지능(AI) 에이전트 구현 기술을 확보하는",
+      "url": "https://www.etnews.com/20260327000242",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:20",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "ì¹´ì¹´ì˜¤, 'í´ë¦­í•˜ëŠ” AI' ë§Œë“ ë‹¤â€¦'ì¹´ë‚˜ë‚˜-v'ì— CUA ë„ìž"
+    },
+    {
+      "id": "2026-03-30_0016",
+      "title": "[이광재의 패러다임 디자인]〈26〉 AI 패권 전쟁의 골든타임, '망분리'라는 낡은 성벽을 허물고 혁신의 길을 터야",
+      "summary": "지금 전 세계는 인공지능(AI)이라는 전례 없는 기술 변곡점 위에 서 있다. AI는 더 이상 단순한 기술 도구가 아니다. 국가의 행정 효율성, 경제 성장, 심지어 국가 안보까지 결정짓는 핵심 인프라가 됐다. 미국을 비롯한 주요국은 이미 'AI 정부'로의 대전환을 위해",
+      "one_line": "지금 전 세계는 인공지능(AI)이라는 전례 없는 기술 변곡점 위에 서 있다.",
+      "one_line_kr": "지금 전 세계는 인공지능(AI)이라는 전례 없는 기술 변곡점 위에 서 있다.",
+      "url": "https://www.etnews.com/20260329000055",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "[이광재의 패러다임 디자인]〈26〉 AI 패권 전쟁의 골든타임, '망분리'라는 낡은 성벽을 허물고 혁신의 길을 터야"
+    },
+    {
+      "id": "2026-03-30_0017",
+      "title": "LG전자 '스마트팩토리' 제조 넘어 물류까지…'피지컬 AI' 승부수",
+      "summary": "LG전자가 물류 전문가를 채용하는 등 스마트팩토리 조직을 강화한다. LG전자는 다음 달까지 스마트팩토리솔루션센터 영업과 HW·SW R&D 등 전 분야에서 인재를 채용한다. 스마트팩토리솔루션센터는 지난해 연말 LG전자가 생산기술원 산하에 신설한 영업·R&D 통합조직이다.",
+      "one_line": "LG전자가 물류 전문가를 채용하는 등 스마트팩토리 조직을 강화한다.",
+      "one_line_kr": "LG전자가 물류 전문가를 채용하는 등 스마트팩토리 조직을 강화한다.",
+      "url": "https://www.etnews.com/20260327000177",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 16:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "LG전자 '스마트팩토리' 제조 넘어 물류까지…'피지컬 AI' 승부수"
+    },
+    {
+      "id": "2026-03-30_0018",
+      "title": "정부, 17개 권역의료기관 의료AI 지원에 142억 투입…공공AX 가속",
+      "summary": "정부가 전국 17개 권역책임의료기관에 총 142억원 규모 의료 인공지능(AI) 솔루션 도입을 지원한다. 공공병원 AI 도입 장벽을 낮추고, 공공의료 전반의 AI전환(AX) 속도를 끌어올리겠다는 구상이다. 29일 업계에 따르면 보건복지부는 최근 권역책임의료기관 상대로 의",
+      "one_line": "정부가 전국 17개 권역책임의료기관에 총 142억원 규모 의료 인공지능(AI) 솔루션 도입을 지원한다.",
+      "one_line_kr": "정부가 전국 17개 권역책임의료기관에 총 142억원 규모 의료 인공지능(AI) 솔루션 도입을 지원한다.",
+      "url": "https://www.etnews.com/20260327000249",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 15:28",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "정부, 17개 권역의료기관 의료AI 지원에 142억 투입…공공AX 가속"
+    },
+    {
+      "id": "2026-03-30_0019",
+      "title": "이노그리드, 47억 규모 EBS AI 학습 지원 사업 우선협상대상자 선정",
+      "summary": "이노그리드가 한국교육방송공사(EBS)가 발주한 48억원 규모의 인공지능(AI) 교육 인프라 운영 사업의 우선협상대상자로 선정됐다. 27일 조달청 나라장터에 따르면 이노그리드는 'EBS 인공지능 기반 영어말하기 학습지원 서비스 운영' 사업의 개찰 결과 1순위 협상대상자로",
+      "one_line": "이노그리드가 한국교육방송공사(EBS)가 발주한 48억원 규모의 인공지능(AI) 교육 인프라 운영 사업의 우선협상대상자로 선정됐다.",
+      "one_line_kr": "이노그리드가 한국교육방송공사(EBS)가 발주한 48억원 규모의 인공지능(AI) 교육 인프라 운영 사업의 우선협상대상자로 선정됐다.",
+      "url": "https://www.etnews.com/20260327000185",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-03-29 14:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "이노그리드, 47억 규모 EBS AI 학습 지원 사업 우선협상대상자 선정"
+    },
+    {
+      "id": "2026-03-30_0020",
+      "title": "Kuaishou’s Kling AI Reaches Over 12 Million Monthly Active Users, Source Says - WSJ",
+      "summary": "Kuaishou’s Kling AI Reaches Over 12 Million Monthly Active Users, Source Says WSJ",
+      "one_line": "Kuaishou’s Kling AI Reaches Over 12 Million Monthly Active Users, Source Says WSJ",
+      "one_line_kr": "Kuaishou의 Kling AI가 월간 활성 사용자 수 1,200만 명 이상에 도달했다고 소식통에 따르면 WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxPeXotekRJcTVPNnR3ZDE1cWxNTUIxV3FhMGVXS21IUEFUWC1XeFBRaUZHdm85cm8xX3pzQnV3ZGMyNUl1TWRIWmczamR2Ri1iZVF3dTVOdHQxTU5KaGZxQ21hcDhtZVpHUkU1M0l4YnFHLWZZbHRrSGRHUEp0QWFkczA5Y1N3TjJRM01RTlV4WTVNdm9KMjhPRG13SWlVai1vZWgxWlZNLTQzMFF4NEVyRGkyVTUwZjRNWWx3OWV4dzJwZzF1OHZ2QzBReEp2R1dqazdTUW4wUmRNaU10b2J3bkJDN2VlSWRkMWZ1M29FZklHUnFNTzFBOW5CT3JwbFdBdnFzY3FzWDVFY0hQWDBDVTR3VnpKQk00YnVZeHhzcUlDUHNPcFliamRaMU9LbnFuVFE2aGFES1JacEpKUi05am1tWklMS1V2RDNyZ3pGb3lBUlRSNmJNcWw3OWM0X2FuSUJzVl96NF9uRWZBSlNianFIdnhBUkJVTkI2OW1mVWFzNUtNUF83dF9odlhvTGdFZHlZbUhDWjJJbHZhLWY5eHRBTnV3T09aUzU4eHpyMElJSkgwakRB?oc=5",
+      "source": "Kling AI News",
+      "category": "영상AI",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-01-21 17:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Kuaishou의 Kling AI가 월간 활성 사용자 수 1,200만 명 이상에 도달했다고 소식통에 따르면 - WSJ"
+    },
+    {
+      "id": "2026-03-30_0021",
+      "title": "Sora’s shutdown could be a reality check moment for AI video",
+      "summary": "Is this just normal corporate strategy, or are we about to see a broader pullback on AI-generated video?",
+      "one_line": "Is this just normal corporate strategy, or are we about to see a broader pullback on AI-generated video?",
+      "one_line_kr": "이것은 단지 정상적인 기업 전략입니까, 아니면 AI 생성 비디오에 대한 더 광범위한 후퇴를 보게 될 것입니까?",
+      "url": "https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-30 01:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Sora의 폐쇄는 AI 비디오의 현실 확인 순간이 될 수 있습니다"
+    },
+    {
+      "id": "2026-03-30_0022",
+      "title": "Speaking of Voxtral - Mistral AI",
+      "summary": "Speaking of Voxtral Mistral AI",
+      "one_line": "Speaking of Voxtral Mistral AI",
+      "one_line_kr": "Voxtral Mistral AI에 대해 말하자면",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB2b19XVXdUSkQ4d2RvNksyaFlfWUdENjRfanF2YkpUZGVxeUtHaEpqeHlRRlhtVVF6TWpqM0cyUDREa2Nka1lwVVMzZw?oc=5",
+      "source": "Mistral AI News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-03-30 04:37",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Voxtral에 대해 말하자면 - Mistral AI"
+    },
+    {
+      "id": "2026-03-30_0023",
+      "title": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus - Engadget",
+      "summary": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus Engadget",
+      "one_line": "Anthropic releases safer Claude Code 'auto mode' to avoid mass file deletions and other AI snafus Engadget",
+      "one_line_kr": "Anthropic은 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드'를 출시했습니다.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNS09KSWxTdWRvUXBTSEhGUVVUZHpROUw2WkptVnhrT2NPeGdWYi1LQlB0X3VyRjZZNWFkTGN4VVpLTzBHLXdyQ3RNVXBEVFBvZFBaNExjd3hhUWJPT1JvOFRXYnZ6ZGRDNHZxclhyX2Nld2RRS2d3TmZYOC11S1ZySFdTdUVEclFJeVpUUGJGbXd6d2ZaSjZWNXlXOTNYN1Q5dTdKS2JISVdVYVY3WlJadUV4a1d6N3Job3JWaUFUTnloN2xoX1BEbkxJOHhYVE1SaHpXYg?oc=5",
+      "source": "Claude AI News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-03-25 23:25",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Anthropic, 대량 파일 삭제 및 기타 AI 문제를 방지하기 위해 보다 안전한 Claude Code '자동 모드' 출시 - Engadget"
+    },
+    {
+      "id": "2026-03-30_0024",
+      "title": "Gen Z Is Bringing Back The Mall",
+      "summary": "Over the last decade, malls were left for dead, casualties of e-commerce and shifting consumer habits, with the pandemic seemingly sealing their fate. Gen Z, however, is bringing malls back, reviving them as social hubs and retail meccas. (Source: Bloomberg)",
+      "one_line": "Gen Z, however, is bringing malls back, reviving them as social hubs and retail meccas.",
+      "one_line_kr": "그러나 Z세대는 쇼핑몰을 다시 불러와 소셜 허브이자 소매 메카로 부활시키고 있습니다.",
+      "url": "https://www.bloomberg.com/news/videos/2026-03-29/gen-z-is-bringing-back-the-mall-video",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-30 04:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Z세대가 쇼핑몰을 다시 불러오고 있습니다"
+    },
+    {
+      "id": "2026-03-30_0025",
+      "title": "Why Is NASA Spending $100 Billion to Return to the Moon? Depends on Who You Ask",
+      "summary": "NASA pulled off the moon landing in 1969 with a clear goal from the outset &mdash; to be the first nation to put people on the lunar surface.",
+      "one_line": "NASA pulled off the moon landing in 1969 with a clear goal from the outset &mdash; to be the first nation to put people…",
+      "one_line_kr": "NASA는 처음부터 명확한 목표를 갖고 1969년에 달 착륙을 성공시켰습니다. 사람을 넣은 최초의 국가가 되려면…",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-29/nasa-s-return-to-the-moon-is-100-billion-bet-on-agency-s-future",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 23:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iC0PWjFxJmIk/v0/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "NASA가 달 탐사에 1000억 달러를 투자하는 이유는 무엇입니까? 누구에게 물어보느냐에 따라 다름"
+    },
+    {
+      "id": "2026-03-30_0026",
+      "title": "Telecom Italia Scraps Plan to Renew Inwit Tower Contract",
+      "summary": "Telecom Italia SpA said it won’t renew a mobile-phone tower agreement with Inwit SpA that would have extended the contract through 2038.",
+      "one_line": "Telecom Italia SpA said it won’t renew a mobile-phone tower agreement with Inwit SpA that would have extended the…",
+      "one_line_kr": "Telecom Italia SpA는 Inwit SpA와 휴대폰 기지국 계약을 갱신하지 않을 것이라고 밝혔습니다.",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-29/telecom-italia-scraps-plan-to-renew-inwit-tower-contract-in-2030",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 20:19",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iRbd6vDUvx0Q/v1/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Telecom Italia, Inwit Tower 계약 갱신 계획 폐기"
+    },
+    {
+      "id": "2026-03-30_0027",
+      "title": "The AI Revolution and The 90s Internet Boom",
+      "summary": "Bloomberg News Senior Editor Chris Anstey joins David Gura and Christina Ruffini this morning on Bloomberg This Weekend to discuss what the 'secret sauce' that's missing in the AI revolution. Watch the full interview on Bloomberg This Weekend and watch the show LIVE every Saturda…",
+      "one_line": "Bloomberg News Senior Editor Chris Anstey joins David Gura and Christina Ruffini this morning on Bloomberg This Weekend…",
+      "one_line_kr": "Bloomberg News 수석 편집자 Chris Anstey가 오늘 아침 Bloomberg 이번 주말에 David Gura 및 Christina Ruffini와 합류합니다…",
+      "url": "https://www.bloomberg.com/news/videos/2026-03-29/the-ai-revolution-and-the-90s-internet-boom-video",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 23:33",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "AI 혁명과 90년대 인터넷 붐"
+    },
+    {
+      "id": "2026-03-30_0028",
+      "title": "9 Best Android Phones of 2026, Tested and Reviewed",
+      "summary": "Shopping for a phone can be an ordeal. That’s why we’ve tested almost every Android phone, from the smartest to the cheapest—even phones that fold—to find the ones worth your money.",
+      "one_line": "Shopping for a phone can be an ordeal.",
+      "one_line_kr": "휴대폰 쇼핑은 시련이 될 수 있습니다.",
+      "url": "https://www.wired.com/gallery/best-android-phones/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 20:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://media.wired.com/photos/69aa57fa133f03206e0ed537/master/pass/The%20Best%20Android%20Phones%20-%202.png",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "테스트 및 검토된 2026년 최고의 Android 휴대폰 9개"
+    },
+    {
+      "id": "2026-03-30_0029",
+      "title": "A School District Tried to Help Train Waymos to Stop for School Buses. It Didn’t Work",
+      "summary": "The incidents in Austin raise questions about how self-driving cars “learn” and adapt to their surroundings.",
+      "one_line": "The incidents in Austin raise questions about how self-driving cars “learn” and adapt to their surroundings.",
+      "one_line_kr": "오스틴에서 발생한 사건은 자율주행차가 어떻게 주변 환경을 \"학습\"하고 적응하는지에 대한 의문을 제기합니다.",
+      "url": "https://www.wired.com/story/a-school-district-tried-to-help-train-waymos-to-stop-for-school-buses-it-didnt-work/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 20:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://media.wired.com/photos/69c41990d449365b26bdb7c5/master/pass/gear_waymo_bus_GettyImages-2149191988.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "한 교육구에서 Waymo가 스쿨버스를 정차하도록 훈련하는 것을 도우려고 했습니다. 작동하지 않았습니다"
+    },
+    {
+      "id": "2026-03-30_0030",
+      "title": "Your Photos Are Probably Giving Away Your Location. Here’s How to Stop That",
+      "summary": "All your snaps come with metadata containing more information than you might realize.",
+      "one_line": "All your snaps come with metadata containing more information than you might realize.",
+      "one_line_kr": "모든 스냅에는 여러분이 생각하는 것보다 더 많은 정보가 포함된 메타데이터가 함께 제공됩니다.",
+      "url": "https://www.wired.com/story/how-to-stop-your-photos-giving-away-your-location/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 19:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://media.wired.com/photos/69c3cbd2667a0efa0564afc3/master/pass/032526_Gear-Your%20Photos%20Are%20Probably%20Giving%20Away%20Your%20Location.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "귀하의 사진이 귀하의 위치를 ​​알려줄 가능성이 있습니다. 이를 중지하는 방법은 다음과 같습니다."
+    },
+    {
+      "id": "2026-03-30_0031",
+      "title": "Best Noise-Canceling Earbuds: Bose, Sony, Apple, and More",
+      "summary": "Everyone needs a good pair of ANC earbuds. These are the best of the bunch.",
+      "one_line": "Everyone needs a good pair of ANC earbuds.",
+      "one_line_kr": "누구나 좋은 ANC 이어버드가 필요합니다.",
+      "url": "https://www.wired.com/gallery/best-noise-canceling-earbuds/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-03-29 19:30",
+      "collect_date": "2026-03-30",
+      "thumbnail": "https://media.wired.com/photos/69c6c3acb2e9941fa7bff773/master/pass/Best-Noise-Canceling-Earbuds.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "최고의 소음 제거 이어버드: Bose, Sony, Apple 등"
+    },
+    {
+      "id": "2026-03-30_0032",
+      "title": "美 트럼프 행정부, 주정부 AI 규제 차단 행정명령 발표 - 법률신문",
+      "summary": "美 트럼프 행정부, 주정부 AI 규제 차단 행정명령 발표 법률신문",
+      "one_line": "美 트럼프 행정부, 주정부 AI 규제 차단 행정명령 발표 법률신문",
+      "one_line_kr": "美 트럼프 행정부, 주정부 AI 규제 차단 행정명령 발표 법률신문",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBSbzZ0LWRLMDFhb0Rtd1RtRWZ2RUM5bFJUYjlwWUk5TktmTWtOaGZuUUtlbHpfRlpBaFBrbzdpaUxGdkdYbkxMMndyc3dadGR4Ul9uM21icjI4c3Q4TXJBSGNnbWdjcW04MHYxRFB30gFyQVVfeXFMTzdGTkZUTFYyTUoyMUJQTFZMeE1CZmN3eHd5MmpYVWFHOWxEUGdJeGQtNVMyemF0S1MydUFMVDNjZlRkSXBwTEhzdUpiWFNzXy1OczFyM2pxU01icjNBYTBWdkgycXMtemlHUFYxSzdsQWxB?oc=5",
+      "source": "AI법률 뉴스(국내)",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "ko",
+      "date": "2025-12-29 17:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "美 트럼프 행정부, 주정부 AI 규제 차단 행정명령 발표 - 법률신문"
+    },
+    {
+      "id": "2026-03-30_0033",
+      "title": "트럼프 행정부, AI 국가 표준 확립 행정명령 발표...주정부 규제 제한 - 한국정보기술진흥원",
+      "summary": "트럼프 행정부, AI 국가 표준 확립 행정명령 발표...주정부 규제 제한 한국정보기술진흥원",
+      "one_line": "트럼프 행정부, AI 국가 표준 확립 행정명령 발표...주정부 규제 제한 한국정보기술진흥원",
+      "one_line_kr": "트럼프 행정부, AI 국가 표준 확립 행정명령 발표...주정부 규제 제한 한국정보기술진흥원",
+      "url": "https://news.google.com/rss/articles/CBMivgVBVV95cUxQbEdVZUdEVnZTcEhsWmRJakQ5TUlFa3RyTU1EdUIzeFdENThxSWs5bmZQUnlWRDBGQ0I1RlFIYlgxS0Ffa0JsLTcyLVV6X2NHX1ZyVS1yamRIWmk0MWpqLXE0LTdIQjBaZjVpMmthNE0yNi04ZVRXaGJ1ZDItUk82MTktX0wwMk5vb2FGdVI0U0JlV1dNU01YRzJPbVV4akxDeW5JVmFtTWpuNTllcTZJT3VMNEFLTU5wYnV0ZS1hUTJBMzBfNlhmLXZXbVpoX0FaQWpHaEVLeHp0NzE3cmd6LUViVjFsOVlkSjhuQ1BqM0NPQWZGVnp0UzdPQm1yUlhLejdZSXh0djFKckJhaE43UzQtcWFxaDRqcWlqTFk2WHZiZ2k5V2ZKZldrcF9ESWpsYVpaUGdKNEZqbTdWdWVLZzdyTU9SdzFZYWtFTmFKcW5Qa3pMd19Nd3Qxdk4tSXBJekU0R1hhMW12QzA2WWQ3ekdUMnFFQ1dyYjJCRkgtZF9JLVJ1aFpoU0FQazNUcWxEajhoOEJiODhGWlU0UkJTZmlhS2k5ZTdxakJaWG02cFR2UG1jQ2pWd2ppT2hSZk5OakNxZGhBTHdsNmtwUUxNUGhva2R4VFdUYW83bWxRN0t3LTZiVXJkV0JkZzZNQUIyRFhlanFld0lseHFNVHExU281M25BSmY4dm9OMzVOVTdGNWdMMThYdUQwWUJzaU5FaTljbkNpQ3VOY0Z5bGdjYjlIR2p6bjBvMWt4b3dzTmo2cGp0ZUdKZ1Aza2pEeG1VYUtpeEVydUZpdmZzU1dVT24zTVc0VklQS1ByOUhsRGhMdXZyQjRsQnE3RFNsUERmNjZVVVBCYW9sSUthY18waEZnN2VwejQ3T3ZrcVlrS1FFZEVGN2pvdkkyUGFQMVlRaTFPcnV1dkdnZDRZVGc?oc=5",
+      "source": "AI법률 뉴스(국내)",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "ko",
+      "date": "2025-12-12 17:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "트럼프 행정부, AI 국가 표준 확립 행정명령 발표...주정부 규제 제한 - 한국정보기술진흥원"
+    },
+    {
+      "id": "2026-03-30_0034",
+      "title": "EU and Luxembourg Update on the European Harmonised Rules on Artificial Intelligence—Recent Developments - K&L Gates",
+      "summary": "EU and Luxembourg Update on the European Harmonised Rules on Artificial Intelligence—Recent Developments K&L Gates",
+      "one_line": "EU and Luxembourg Update on the European Harmonised Rules on Artificial Intelligence—Recent Developments K&L Gates",
+      "one_line_kr": "인공 지능에 대한 유럽 조화 규칙에 대한 EU 및 룩셈부르크 업데이트 - 최근 개발 K&L Gates",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeDd3WjhhZm5nSkNoTms5RmhjWnQ3VVpOeG9POE43dzBtWjhzR2gzMUlpaGIxQmZLeng4SHlKVHdmSHR6MWtTYWQwR3pqOTNXTkZjQ0JkVHVzVExSRElTUnFKblFIak5obm5mamZ0ZXZJZ1B2aG4yS2xVODRZa2NBUUhGcEJaMTBPbGtGSC03MnE5MTFqVGVNVXBkVlExYUpUMEVHbWJBckYyOTYwWm5Lb1VoUXE5TlJheU9GU2ZtdEltUXd4YVc4Y3E1bHJGS0ZTZTY0?oc=5",
+      "source": "AI Regulation News",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-01-20 17:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "인공 지능에 대한 유럽 조화 규칙에 대한 EU 및 룩셈부르크 업데이트 - 최근 개발 - K&L Gates"
+    },
+    {
+      "id": "2026-03-30_0035",
+      "title": "What to Watch in 2026: Key EU Privacy & Cybersecurity Developments - Inside Privacy",
+      "summary": "What to Watch in 2026: Key EU Privacy & Cybersecurity Developments Inside Privacy",
+      "one_line": "What to Watch in 2026: Key EU Privacy & Cybersecurity Developments Inside Privacy",
+      "one_line_kr": "2026년에 주목해야 할 사항: 개인정보 보호 분야의 주요 EU 개인정보 보호 및 사이버 보안 개발",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWHg5cTU3c0txdmhXeU9TS0owdEVmRDFXY0Rlc0h6T3dTaTFXTU0zTWFEOG9penpOVGhTUjNMVk5MWGhTUDZNMDY3d0pKQlVwRThGUV9HOHBWSndOdGdDblZBMHFUaE54ZzZrUzdjd1M3dzRTM0Nta0hmRGRWR3ZQeldmVEV5Z3pld0UyX250dWZxTU5iZll2ODY4cWUyNGRnSjJmTm9SN29Kcnlwck9HNQ?oc=5",
+      "source": "AI Regulation News",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-01-27 17:00",
+      "collect_date": "2026-03-30",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "2026년에 주목해야 할 사항: 주요 EU 개인 정보 보호 및 사이버 보안 개발 - Inside Privacy"
+    },
     {
       "id": "2026-03-29_0000",
       "title": "\"리더십도 AI 시대 위한 전환 필요\"...코카콜라·월마트 CEO, 퇴임 이유로 AI 들어",

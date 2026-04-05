@@ -1,16 +1,16 @@
 {
   "period": "monthly",
   "days": 30,
-  "generated_at": "2026-04-05 08:02",
-  "total": 1782,
-  "kr_count": 572,
-  "en_count": 1210,
+  "generated_at": "2026-04-06 08:05",
+  "total": 1817,
+  "kr_count": 591,
+  "en_count": 1226,
   "category_stats": {
-    "콘텐츠": 555,
-    "영상AI": 209,
-    "이미지·디자인AI": 191,
-    "LLM": 135,
-    "개발AI": 232,
+    "콘텐츠": 574,
+    "영상AI": 212,
+    "이미지·디자인AI": 194,
+    "LLM": 136,
+    "개발AI": 241,
     "AI법률": 53,
     "논문": 296,
     "비즈니스": 111
@@ -18,23 +18,23 @@
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 191
+      "count": 197
     },
     {
       "source": "디지털투데이",
-      "count": 135
+      "count": 142
     },
     {
       "source": "전자신문",
-      "count": 97
+      "count": 103
     },
     {
       "source": "HuggingFace Papers",
-      "count": 92
+      "count": 95
     },
     {
       "source": "TechCrunch AI",
-      "count": 89
+      "count": 92
     },
     {
       "source": "ArXiv AI",
@@ -46,11 +46,11 @@
     },
     {
       "source": "Bloomberg Tech",
-      "count": 80
+      "count": 84
     },
     {
       "source": "Wired AI",
-      "count": 80
+      "count": 84
     },
     {
       "source": "ArXiv ML",
@@ -89,16 +89,16 @@
       "count": 23
     },
     {
+      "source": "Google Gemini News",
+      "count": 22
+    },
+    {
       "source": "OpenAI (Sora)",
       "count": 22
     },
     {
-      "source": "Google Gemini News",
-      "count": 21
-    },
-    {
       "source": "LangChain Blog",
-      "count": 20
+      "count": 21
     },
     {
       "source": "Meta AI News",
@@ -280,19 +280,19 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 167
+      "count": 169
     },
     {
       "keyword": "인공지능",
-      "count": 127
+      "count": 130
     },
     {
       "keyword": "LLM",
-      "count": 124
+      "count": 125
     },
     {
       "keyword": "에이전트",
-      "count": 91
+      "count": 95
     },
     {
       "keyword": "Anthropic",
@@ -303,12 +303,12 @@
       "count": 57
     },
     {
-      "keyword": "Claude",
+      "keyword": "Vision",
       "count": 53
     },
     {
-      "keyword": "Vision",
-      "count": 52
+      "keyword": "Claude",
+      "count": 53
     },
     {
       "keyword": "Reasoning",
@@ -327,16 +327,16 @@
       "count": 34
     },
     {
+      "keyword": "Gemini",
+      "count": 33
+    },
+    {
       "keyword": "Multimodal",
       "count": 32
     },
     {
-      "keyword": "Gemini",
-      "count": 32
-    },
-    {
       "keyword": "클로드",
-      "count": 26
+      "count": 28
     },
     {
       "keyword": "Transformer",
@@ -351,11 +351,11 @@
       "count": 19
     },
     {
-      "keyword": "Midjourney",
+      "keyword": "오픈소스",
       "count": 16
     },
     {
-      "keyword": "Open Source",
+      "keyword": "Midjourney",
       "count": 16
     }
   ],
@@ -439,9 +439,20 @@
     {
       "date": "2026-04-05",
       "count": 42
+    },
+    {
+      "date": "2026-04-06",
+      "count": 35
     }
   ],
   "cat_daily": {
+    "2026-04-06": {
+      "콘텐츠": 19,
+      "영상AI": 3,
+      "이미지·디자인AI": 3,
+      "LLM": 1,
+      "개발AI": 9
+    },
     "2026-04-05": {
       "콘텐츠": 22,
       "영상AI": 3,
@@ -633,6 +644,66 @@
   },
   "content_highlights": [
     {
+      "id": "2026-04-06_0001",
+      "title": "넷플릭스, 물리 기반 AI 영상 모델 '보이드' 오픈소스 공개",
+      "summary": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다. 넷플릭스는 3일(현지시간) 영상에서 객체를 제거하고, 해당 객체가 장면 전체에 미친 물리적 영향까지 자동으로 조정할 수 있는 AI 프레임워크 ’보이드(VOID·Interaction-Aware Counterfactual Video Generation)’를 온라인 아카이브를 통해 공개했다. 기존 영상 객체 제거 기술은 주로 물체 뒤에 가려진 배경을…",
+      "one_line": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+      "one_line_kr": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208815",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 15:55",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "넷플릭스, 물리 기반 AI 영상 모델 '보이드' 오픈소스 공개"
+    },
+    {
+      "id": "2026-04-06_0007",
+      "title": "솔라나 재단, AI 에이전트 스킬 출시…개발자 온체인 작업 자동화 지원",
+      "summary": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을 출시했다.공식 발표에 따르면 이 컴포넌트는 단일 설치 명령어 한 줄로 빠르게 통합할 수 있다. 재단에 따르면 솔라나 생태계와 상호작용하며 온체인 작업을 수행할 수 있는 AI 에이전트 구축에 활용된다.바이낸스 창업자 창펑 자오가 소유한 디지털 지갑 트러스트 월렛도 AI 에이전트를 통한 암호화폐 …",
+      "one_line": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을…",
+      "one_line_kr": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653677",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 21:20",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "솔라나 재단, AI 에이전트 스킬 출시…개발자 온체인 작업 자동화 지원"
+    },
+    {
+      "id": "2026-04-06_0025",
+      "title": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI - Ubergizmo",
+      "summary": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI Ubergizmo",
+      "one_line": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI Ubergizmo",
+      "one_line_kr": "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 Ubergizmo",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pdE52bS1WOVBLWklYRXhlMFVpVUNQWlJTV3J0YXpMZU1TSmNBZXN1RklDRG1sNDdCZnpZMHJaa3NLRnJyNEtUWUZqbURBdnNpakhVSUcyS2poaWh4?oc=5",
+      "source": "Google Gemini News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-04-05 03:55",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 - Ubergizmo"
+    },
+    {
       "id": "2026-04-05_0000",
       "title": "아르시, 추론 모델 ‘트리니티-라지-싱킹’ 출시...에이전트 성능은 '클로드급'",
       "summary": "미국의 대표 오픈소스 AI 스타트업인 아르시 AI(Arcee AI)가 다단계 추론이 가능한 첨단 성능의 에이전트 모델을 내놓았다. 특히, 에이전트 성능은 '클로드 오퍼스 4.6'과 같은 첨단 모델과 맞먹으며, 중국의 대표 오픈 모델을 능가하는 것으로 밝혀졌다.미국의 스타트업 아르시 AI는 3일(현지시간) 새로운 오픈소스 추론 모델 ‘트리니티-라지-싱킹(Trinity-Large-Thinking)’를 출시했다.모델은 API와 함께 허깅페이스를 통해 아파치 2.0 라이선스로 공개돼, 기업과 개발자가 상…",
@@ -771,75 +842,15 @@
         "class": "hot"
       },
       "title_kr": "Anthropic은 Claude Code 가입자가 OpenClaw 사용에 대해 추가 비용을 지불해야 한다고 말합니다."
-    },
-    {
-      "id": "2026-04-05_0026",
-      "title": "Customized Visual Storytelling with Unified Multimodal LLMs",
-      "summary": "Multimodal story customization aims to generate coherent story flows conditioned on textual descriptions, reference identity images, and shot types. While recent progress in story generation has shown promising results, most approaches rely on text-only inputs. A few studies inco…",
-      "one_line": "Multimodal story customization aims to generate coherent story flows conditioned on textual descriptions, reference…",
-      "one_line_kr": "다중 모드 스토리 사용자 정의는 텍스트 설명, 참조를 조건으로 일관된 스토리 흐름을 생성하는 것을 목표로 합니다.",
-      "url": "https://tldr.takara.ai/p/2603.27690",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-03-29 22:24",
-      "collect_date": "2026-04-05",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "통합 멀티모달 LLM을 통한 맞춤형 시각적 스토리텔링"
-    },
-    {
-      "id": "2026-04-04_0007",
-      "title": "알리바바, 폐쇄형으로 확장...세번째 비공개형 모델 ‘큐원3.6-플러스’ 공개",
-      "summary": "알리바바가 ‘큐원-이미지-2.0(Qwen-Image-2.0)’와 ‘큐원3.5-옴니(Qwen3.5-Omni)’에 이어 세번째 폐쇄형 모델 ‘큐원3.6-플러스(Qwen3.6-Plus)’를 공개했다. 알리바바는 2일(현지시간) 에이전트형 코딩과 멀티모달 AI 성능을 강화한 차세대 AI 모델 ‘큐원3.6-플러스’를 공개했다. 큐원3.6-플러스는 효율적인 선형 어텐션(linear attention)과 희소 전문가 혼합(Sparse MoE) 라우팅을 결합한 하이브리드 아키텍처를 기반으로 하며, 이를 통해 뛰…",
-      "one_line": "알리바바는 2일(현지시간) 에이전트형 코딩과 멀티모달 AI 성능을 강화한 차세대 AI 모델 ‘큐원3.6-플러스’를 공개했다.",
-      "one_line_kr": "알리바바는 2일(현지시간) 에이전트형 코딩과 멀티모달 AI 성능을 강화한 차세대 AI 모델 ‘큐원3.6-플러스’를 공개했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=208757",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-04-03 17:00",
-      "collect_date": "2026-04-04",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "알리바바, 폐쇄형으로 확장...세번째 비공개형 모델 ‘큐원3.6-플러스’ 공개"
-    },
-    {
-      "id": "2026-04-04_0011",
-      "title": "구글, 오픈 모델 ‘젬마 4’ 출시",
-      "summary": "구글이 오픈웨이트 모델의 최신 버전인 ‘젬마 4(Gemma 4)’을 발표했다. 구글은 고급 추론과 에이전트 기반 워크플로우를 위해 특수 설계된 모델이라고 강조했다.",
-      "one_line": "구글이 오픈웨이트 모델의 최신 버전인 ‘젬마 4(Gemma 4)’을 발표했다.",
-      "one_line_kr": "구글이 오픈웨이트 모델의 최신 버전인 ‘젬마 4(Gemma 4)’을 발표했다.",
-      "url": "https://byline.network/2026/04/3-408/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-04-03 16:15",
-      "collect_date": "2026-04-04",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "구글, 오픈 모델 ‘젬마 4’ 출시"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "아르시, 추론 모델 ‘트리니티-라지-싱킹’ 출시...에이전트 성능은 '클로드급'",
+      "title": "넷플릭스, 물리 기반 AI 영상 모델 '보이드' 오픈소스 공개",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=208804",
-      "one_line": "특히, 에이전트 성능은 '클로드 오퍼스 4.6'과 같은 첨단 모델과 맞먹으며, 중국의 대표 오픈 모델을 능가하는 것으로 밝혀졌다.미국의 스타트업 아르시 AI는 3일(현지시간) 새로운 오픈소스 추론 모델…",
-      "date": "2026-04-04 20:54"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208815",
+      "one_line": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+      "date": "2026-04-05 15:55"
     },
     "영상AI": {
       "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
@@ -856,11 +867,11 @@
       "date": "2026-03-29 22:24"
     },
     "LLM": {
-      "title": "The Axios supply chain attack used individually targeted social engineering",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Apr/3/supply-chain-social-engineering/#atom-entries",
-      "one_line": "Axios 팀은 악성코드 의존성을 초래한 공급망 공격에 대한 전체 사후 분석을 발표했습니다.",
-      "date": "2026-04-03 22:54"
+      "title": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI - Ubergizmo",
+      "source": "Google Gemini News",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pdE52bS1WOVBLWklYRXhlMFVpVUNQWlJTV3J0YXpMZU1TSmNBZXN1RklDRG1sNDdCZnpZMHJaa3NLRnJyNEtUWUZqbURBdnNpakhVSUcyS2poaWh4?oc=5",
+      "one_line": "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 Ubergizmo",
+      "date": "2026-04-05 03:55"
     },
     "개발AI": {
       "title": "NASA's Artemis II Lifts Off | Bloomberg Artemis II Special 4/1/2026",
@@ -871,14 +882,714 @@
     }
   },
   "period_key_points": [
+    "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+    "솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을 출시했다.",
+    "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 Ubergizmo.",
     "미국의 대표 오픈소스 AI 스타트업인 아르시 AI(Arcee AI)가 다단계 추론이 가능한 첨단 성능의 에이전트 모델을 내놓았다.",
-    "알리바바가 영상 생성부터 편집, 재구성까지 실제 영상 제작 전 과정을 통합한 차세대 AI 모델을 선보이며, 콘텐츠 제작 패러다임 변화에 나섰다.",
-    "그렉 브록먼 오픈AI 사장이 차세대 모델 '스퍼드(Spud)'를 개발했다는 사실을 공개적으로 밝혔다.",
-    "“인공지능(AI) 에이전트에게 일을 맡기려면 성능만 봐서는 안 됩니다.",
-    "오라클 산하 클라우드 ERP 부문인 넷스위트(Oracle NetSuite)가 스위트커넥트 런던 2026 행사에서 AI 커넥터 서비스 확장 기능 3종을 발표했다."
+    "알리바바가 영상 생성부터 편집, 재구성까지 실제 영상 제작 전 과정을 통합한 차세대 AI 모델을 선보이며, 콘텐츠 제작 패러다임 변화에 나섰다."
   ],
-  "period_prose": "이번 월간 총 1782건의 AI 자료가 수집됐습니다. 국내 572건, 해외 1210건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, 인공지능, LLM, 에이전트, Anthropic입니다.",
+  "period_prose": "이번 월간 총 1817건의 AI 자료가 수집됐습니다. 국내 591건, 해외 1226건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, 인공지능, LLM, 에이전트, Anthropic입니다.",
   "items": [
+    {
+      "id": "2026-04-06_0000",
+      "title": "원티드랩 “AX 과도기 맞은 개발자들과 고민 공유...에이전트는 기회의 확대”",
+      "summary": "원티드랩(대표 이복기)은 지난 1일 롯데월드타워 원티드랩 라운지에서 ‘원티드 AI 테크 나이트(Wanted AI Tech Night)’ 행사를 개최, 현업 개발자 및 업계 관계자들과 AI 에이전트 시대 인사이트 공유의 자리를 가졌다. 현장에는 개발자 50명을 비롯, 200명에 달하는 참가자가 모였다. 사회자를 맡은 정기수 원티드랩 AI부문 부문장은 “비슷한 행사를 많이 진행했지만, ‘노쇼’가 이렇게 적은 것은 처음이다”라며 “AI 시대 개발자들의 고민이 깊다는 게 실감된다”라고 말했다.원티드랩은 …",
+      "one_line": "사회자를 맡은 정기수 원티드랩 AI부문 부문장은 “비슷한 행사를 많이 진행했지만, ‘노쇼’가 이렇게 적은 것은 처음이다”라며 “AI 시대 개발자들의 고민이 깊다는 게 실감된다”라고 말했다.원티드랩은 …",
+      "one_line_kr": "사회자를 맡은 정기수 원티드랩 AI부문 부문장은 “비슷한 행사를 많이 진행했지만, ‘노쇼’가 이렇게 적은 것은 처음이다”라며 “AI 시대 개발자들의 고민이 깊다는 게 실감된다”라고 말했다.원티드랩은 …",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208818",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-06 06:40",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "원티드랩 “AX 과도기 맞은 개발자들과 고민 공유...에이전트는 기회의 확대”"
+    },
+    {
+      "id": "2026-04-06_0001",
+      "title": "넷플릭스, 물리 기반 AI 영상 모델 '보이드' 오픈소스 공개",
+      "summary": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다. 넷플릭스는 3일(현지시간) 영상에서 객체를 제거하고, 해당 객체가 장면 전체에 미친 물리적 영향까지 자동으로 조정할 수 있는 AI 프레임워크 ’보이드(VOID·Interaction-Aware Counterfactual Video Generation)’를 온라인 아카이브를 통해 공개했다. 기존 영상 객체 제거 기술은 주로 물체 뒤에 가려진 배경을…",
+      "one_line": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+      "one_line_kr": "넷플릭스가 영상 속 특정 객체를 제거할 때 단순한 배경 복원이 아니라, 물리적으로 자연스러운 장면 변화까지 함께 생성하는 AI 모델을 오픈소스로 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208815",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 15:55",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "넷플릭스, 물리 기반 AI 영상 모델 '보이드' 오픈소스 공개"
+    },
+    {
+      "id": "2026-04-06_0002",
+      "title": "박정국 엘리스그룹 CTO \"데이터센터, 규모보다 운영 역량이 더 중요\"",
+      "summary": "“AI 데이터센터의 성패는 '규모'가 아니라, 얼마나 빨리 짓고 GPU 자원을 100% 가까이 활용할 수 있는지 ‘운영 역량’에 달렸습니다.”글로벌 빅테크의 인프라 경쟁에서는 AI 데이터센터(AIDC)가 핵심으로 꼽힌다. 하지만 기존 빌딩형 데이터센터는 조 단위 천문학적인 비용과 3년 이상의 건축 기간으로 공급이 수요를 못 따라가는 구조에 직면했다.그 해법으로 ‘모듈형 데이터센터(PMDC)’를 선보이며 새로운 패러다임을 제시한 박정국 엘리스그룹 최고 기술책임자(CTO)를 만나 이야기를 나눴다.■ …",
+      "one_line": "“AI 데이터센터의 성패는 '규모'가 아니라, 얼마나 빨리 짓고 GPU 자원을 100% 가까이 활용할 수 있는지 ‘운영 역량’에 달렸습니다.”글로벌 빅테크의 인프라 경쟁에서는 AI 데이터센터(AIDC)가 핵심으로…",
+      "one_line_kr": "“AI 데이터센터의 성패는 '규모'가 아니라, 얼마나 빨리 짓고 GPU 자원을 100% 가까이 활용할 수 있는지 ‘운영 역량’에 달렸습니다.”글로벌 빅테크의 인프라 경쟁에서는 AI 데이터센터(AIDC)가 핵심으로…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208512",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 15:35",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "박정국 엘리스그룹 CTO \"데이터센터, 규모보다 운영 역량이 더 중요\""
+    },
+    {
+      "id": "2026-04-06_0003",
+      "title": "고재준 KTR 사업단장 “국내 최초 AI 인증, 기업 경쟁력에 날개 달아줄 것”",
+      "summary": "AI 도입이 가속화되는 가운데 신뢰성 확보가 기업의 핵심 과제로 부상하고 있다. 잘못된 정보를 생성하는 '환각 현상'과 보안 사고 등이 주요 걸림돌로 작용하면서 객관적 검증 체계의 필요성이 대두되고 있다.KTR(한국화학융합시험연구원)은 AI의 특성을 고려해 국내 최초로 국제 표준 기반 AI 인증 체계를 도입했다.매년 47만건의 시험성적서를 제공하며 기업의 기술 파트너로 자리매김한 고재준 KTR AI·소프트웨어사업단장을 만나 이야기를 들었다.■ 정부사업부터 해외 진출까지 든든한 '기술 신분증' 역할…",
+      "one_line": "걸림돌로 작용하면서 객관적 검증 체계의 필요성이 대두되고 있다.KTR(한국화학융합시험연구원)은 AI의 특성을 고려해 국내 최초로 국제 표준 기반 AI 인증 체계를 도입했다.매년 47만건의 시험성적서를 제공하며…",
+      "one_line_kr": "걸림돌로 작용하면서 객관적 검증 체계의 필요성이 대두되고 있다.KTR(한국화학융합시험연구원)은 AI의 특성을 고려해 국내 최초로 국제 표준 기반 AI 인증 체계를 도입했다.매년 47만건의 시험성적서를 제공하며…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208810",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 15:34",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "고재준 KTR 사업단장 “국내 최초 AI 인증, 기업 경쟁력에 날개 달아줄 것”"
+    },
+    {
+      "id": "2026-04-06_0004",
+      "title": "데이터 전문 머코어 해킹으로 주요 AI 기업 '학습 비밀' 유출 비상",
+      "summary": "세계 최고 수준의 AI 모델 학습 기밀이 담긴 설계도가 유출됐을 가능성이 제기됐다. 메타와 오픈AI의 라벨링 파트너인 머코어(Mercor)가 해킹당하며 AI 업계에 비상이 걸렸다.와이어드는 3일(현지시간) 메타가 머코어와의 100억달러(약 15조원) 규모 협력을 중단했다고 보도했다. 이 회사는 주요 AI 기업들을 위해 맞춤형 학습 데이터셋을 제공한다.이에 따르면, 공급망 공격으로 인해 철저하게 보호되어 온 기밀, 즉 개인 데이터뿐만 아니라 세계 최고 수준의 대형언어모델(LLM)을 구동하는 학습 방…",
+      "one_line": "메타와 오픈AI의 라벨링 파트너인 머코어(Mercor)가 해킹당하며 AI 업계에 비상이 걸렸다.와이어드는 3일(현지시간) 메타가 머코어와의 100억달러(약 15조원) 규모 협력을 중단했다고 보도했다.",
+      "one_line_kr": "메타와 오픈AI의 라벨링 파트너인 머코어(Mercor)가 해킹당하며 AI 업계에 비상이 걸렸다.와이어드는 3일(현지시간) 메타가 머코어와의 100억달러(약 15조원) 규모 협력을 중단했다고 보도했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208814",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 11:53",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "데이터 전문 머코어 해킹으로 주요 AI 기업 '학습 비밀' 유출 비상"
+    },
+    {
+      "id": "2026-04-06_0005",
+      "title": "클로드 월 구독제로 '오픈클로' 못 쓴다...\"시스템에 과도한 부담\"",
+      "summary": "앤트로픽이 수요 급증에 대응하기 위해 인기 AI 에이전트 '오픈클로'에 대한 '클로드' 구독 지원을 중단했다.보리스 체르니 '클로드 코드' 책임자는 3일(현지시간) X를 통해 다음날부터 클로드 구독 서비스에서 오픈클로와 같은 타사 도구 사용이 더 이상 지원되지 않을 것이라고 밝혔다. 그는 오픈클로에 클로드를 활용하려면 클로드 로그인에 연결된 할인된 '추가 사용 패키지'를 통해 비용을 지불하거나 앤트로픽 개발자 플랫폼을 통해 별도의 API를 사용해야 한다고 설명했다.이번 조치는 사용자들의 컴퓨팅 수…",
+      "one_line": "급증에 대응하기 위해 인기 AI 에이전트 '오픈클로'에 대한 '클로드' 구독 지원을 중단했다.보리스 체르니 '클로드 코드' 책임자는 3일(현지시간) X를 통해 다음날부터 클로드 구독 서비스에서 오픈클로와 같은 타사…",
+      "one_line_kr": "급증에 대응하기 위해 인기 AI 에이전트 '오픈클로'에 대한 '클로드' 구독 지원을 중단했다.보리스 체르니 '클로드 코드' 책임자는 3일(현지시간) X를 통해 다음날부터 클로드 구독 서비스에서 오픈클로와 같은 타사…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=208811",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 10:24",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "클로드 월 구독제로 '오픈클로' 못 쓴다...\"시스템에 과도한 부담\""
+    },
+    {
+      "id": "2026-04-06_0006",
+      "title": "[AI핫이슈] 진화하는 SW요금제...中 AI 기업 전략 수정",
+      "summary": "[디지털투데이 황치규 기자] 소프트웨어 기업들이 AI에 맞게 가격 책정 방식을 빠르게 바꾸고 있다. 사용자수, 사용량 기반을 넘어 성과에 초점을 맞춘 요금제가 확산하고 있다. CRM 기업 허브스팟은 AI 에이전트 요금 정책을 ‘사용량’이 아니라 ‘성과’ 기준으로 전환한다. 에이전트가 맡은 작업을 성공적으로 끝냈을 때만 비용이 청구되는 방식이다. 성과 외에 운영 자산에 근거해 요금을 부과하는 회사도 나오고 있다.ㆍ사용량 넘어 성과 기반 AI에이전트 요금제 확산...허브스팟도 본격 가세ㆍIFS, 사용…",
+      "one_line": "[디지털투데이 황치규 기자] 소프트웨어 기업들이 AI에 맞게 가격 책정 방식을 빠르게 바꾸고 있다.",
+      "one_line_kr": "[디지털투데이 황치규 기자] 소프트웨어 기업들이 AI에 맞게 가격 책정 방식을 빠르게 바꾸고 있다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653682",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-06 07:30",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "[AI핫이슈] 진화하는 SW요금제...中 AI 기업 전략 수정"
+    },
+    {
+      "id": "2026-04-06_0007",
+      "title": "솔라나 재단, AI 에이전트 스킬 출시…개발자 온체인 작업 자동화 지원",
+      "summary": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을 출시했다.공식 발표에 따르면 이 컴포넌트는 단일 설치 명령어 한 줄로 빠르게 통합할 수 있다. 재단에 따르면 솔라나 생태계와 상호작용하며 온체인 작업을 수행할 수 있는 AI 에이전트 구축에 활용된다.바이낸스 창업자 창펑 자오가 소유한 디지털 지갑 트러스트 월렛도 AI 에이전트를 통한 암호화폐 …",
+      "one_line": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을…",
+      "one_line_kr": "[디지털투데이 황치규 기자]솔라나 재단(Solana Foundation)이 개발자들이 AI 툴에 사전 구축된 스킬 컴포넌트를 직접 내장할 수 있는 솔라나 에이전트 스킬(Solana Agent Skills)을…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653677",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 21:20",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "솔라나 재단, AI 에이전트 스킬 출시…개발자 온체인 작업 자동화 지원"
+    },
+    {
+      "id": "2026-04-06_0008",
+      "title": "베이스, 2026년 토큰화·스테이블코인·개발자 생태계 집중",
+      "summary": "[디지털투데이 황치규 기자]코인베이스 산하 이더리움 레이어2 네트워크 베이스(Base) 2026년 개발 우선순위를 공개했다. 베이스는 토큰화 시장, 스테이블코인 결제, 개발자 생태계 3가지 부문에 집중한다.토큰화 시장에서는 주식, 원자재 등 실물자산의 온체인 거래 확대를 추진한다. 스테이블코인 결제 분야에서는 다중 통화 유동성 확장에 나선다. 개발자 생태계 지원을 위해서는 개발 툴 투자와 AI 온체인 애플리케이션 지원을 지속적으로 늘린다.베이스는 옵티미즘(Optimism) OP 스택 의존도를 낮추…",
+      "one_line": "[디지털투데이 황치규 기자]코인베이스 산하 이더리움 레이어2 네트워크 베이스(Base) 2026년 개발 우선순위를 공개했다.",
+      "one_line_kr": "[디지털투데이 황치규 기자]코인베이스 산하 이더리움 레이어2 네트워크 베이스(Base) 2026년 개발 우선순위를 공개했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653675",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 21:17",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "베이스, 2026년 토큰화·스테이블코인·개발자 생태계 집중"
+    },
+    {
+      "id": "2026-04-06_0009",
+      "title": "바이브 코딩 개념 창시자, 폴더 3개로 만드는 퍼스널 AI 지식 DB의 비밀",
+      "summary": "[디지털투데이 황치규 기자]오픈AI 공동 창업자 중 1명으로 바이브 코딩 개념을 제안한 것으로 유명한 안드레이 카파시(Andrej Karpathy)가 AI를 활용해 개인 지식베이스를 구축하는 방법을 공개해 눈길을 끈다.그가 최근 소셜 미디어 X(트위터)에 공개한 '비법'을 보면 특별한 소프트웨어나 데이터베이스는 필요 없다. 폴더 3개와 텍스트 파일이 전부다. 핵심은 단순함이다. 우선 프로젝트 폴더 안에 3개 하위 폴더들인 로(raw),위키(wiki), 아웃풋(outputs)을 만든다.raw는 원본…",
+      "one_line": "[디지털투데이 황치규 기자]오픈AI 공동 창업자 중 1명으로 바이브 코딩 개념을 제안한 것으로 유명한 안드레이 카파시(Andrej Karpathy)가 AI를 활용해 개인 지식베이스를 구축하는 방법을 공개해 눈길을…",
+      "one_line_kr": "[디지털투데이 황치규 기자]오픈AI 공동 창업자 중 1명으로 바이브 코딩 개념을 제안한 것으로 유명한 안드레이 카파시(Andrej Karpathy)가 AI를 활용해 개인 지식베이스를 구축하는 방법을 공개해 눈길을…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653672",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 21:09",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "바이브 코딩 개념 창시자, 폴더 3개로 만드는 퍼스널 AI 지식 DB의 비밀"
+    },
+    {
+      "id": "2026-04-06_0010",
+      "title": "에어팟 맥스2 분해해보니…549달러 헤드폰, 6년째 그대로",
+      "summary": "[디지털투데이 AI리포터] 애플 에어팟 맥스2가 1세대와 거의 같은 내부 설계를 유지한 것으로 확인됐다고 4일(현지시간) IT전문매체 폰아레나가 보도했다. 아이픽스잇 분해 결과 1세대 분해 매뉴얼이 새 모델에도 그대로 맞았고, 내부 배치도 5년여 전 나온 기존 에어팟 맥스와 거의 같았다.하드웨어 변화는 H1 칩을 H2로 바꾼 것이 사실상 전부였다. H2 적용으로 어댑티브 오디오, 대화 인지, 향상된 소음 제거 기능이 추가됐다. 반면 배터리와 헤드밴드, 버튼 구조는 2020년형과 2024년형 설계를…",
+      "one_line": "[디지털투데이 AI리포터] 애플 에어팟 맥스2가 1세대와 거의 같은 내부 설계를 유지한 것으로 확인됐다고 4일(현지시간) IT전문매체 폰아레나가 보도했다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 애플 에어팟 맥스2가 1세대와 거의 같은 내부 설계를 유지한 것으로 확인됐다고 4일(현지시간) IT전문매체 폰아레나가 보도했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653666",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 09:32",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "에어팟 맥스2 분해해보니…549달러 헤드폰, 6년째 그대로"
+    },
+    {
+      "id": "2026-04-06_0011",
+      "title": "XRPL 검증인 “XRP, IMF가 지적한 토큰화 문제 일부 이미 해결”",
+      "summary": "[디지털투데이 AI리포터] 국제통화기금(IMF)이 토큰화 금융의 시스템 리스크를 경고하자 XRP 레저(XRPL) 검증인 벳(Vet)이 XRPL은 규정 준수 문제 일부를 이미 풀었다고 반박했다.4일(현지시간) 블록체인 매체 더크립토베이직에 따르면IMF는 최근 공개한 메모에서 토큰화가 거래상대방 위험 같은 기존 문제를 줄일 수 있지만, 새 위험도 키울 수 있다고 짚었다. 거래, 마진콜, 청산이 실시간으로 맞물리면 시장 불안 때 급격한 매도와 큰 변동성이 빠르게 나타날 수 있다는 것이다. 실시간 결제는…",
+      "one_line": "[디지털투데이 AI리포터] 국제통화기금(IMF)이 토큰화 금융의 시스템 리스크를 경고하자 XRP 레저(XRPL) 검증인 벳(Vet)이 XRPL은 규정 준수 문제 일부를 이미 풀었다고 반박했다.4일(현지시간)…",
+      "one_line_kr": "[디지털투데이 AI리포터] 국제통화기금(IMF)이 토큰화 금융의 시스템 리스크를 경고하자 XRP 레저(XRPL) 검증인 벳(Vet)이 XRPL은 규정 준수 문제 일부를 이미 풀었다고 반박했다.4일(현지시간)…",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653665",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 09:30",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "XRPL 검증인 “XRP, IMF가 지적한 토큰화 문제 일부 이미 해결”"
+    },
+    {
+      "id": "2026-04-06_0012",
+      "title": "앤트로픽, “클로드 코드 구독자, 오픈클로 지원은 별도 청구”",
+      "summary": "[디지털투데이 AI리포터] 앤트로픽이 4일 정오부터 클로드 코드 구독자의 오픈클로(OpenClaw) 등 외부 도구 연동 사용에 구독 한도를 적용하지 않는다. 4일(현지시간) IT매체 테크크런치에 따르면 해당 사용량은 구독료와 별도로 종량제로 내야 한다. 앤트로픽은 고객 이메일에서 오픈클로를 포함한 외부 하네스에 클로드 구독 한도를 더 이상 쓸 수 없다고 공지했다. 이날은 오픈클로부터 적용했고, 같은 정책을 다른 외부 하네스로도 확대한다.보리스 체르니 클로드 코드 총괄은 엑스에 구독 상품이 이런 외…",
+      "one_line": "[디지털투데이 AI리포터] 앤트로픽이 4일 정오부터 클로드 코드 구독자의 오픈클로(OpenClaw) 등 외부 도구 연동 사용에 구독 한도를 적용하지 않는다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 앤트로픽이 4일 정오부터 클로드 코드 구독자의 오픈클로(OpenClaw) 등 외부 도구 연동 사용에 구독 한도를 적용하지 않는다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=653664",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 09:20",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "앤트로픽, “클로드 코드 구독자, 오픈클로 지원은 별도 청구”"
+    },
+    {
+      "id": "2026-04-06_0013",
+      "title": "닥터 옥토퍼스 현실판? 팔 6개 달린 로봇 슈트 눈길",
+      "summary": "팔이 여섯 개 달린 착용형 로봇 팔 슈트가 눈길을 끌고 있습니다. 이 로봇 팔은 일본 도쿄대 연구팀이 개발한 지자이 암즈(Jizai Arms)로, 사용자의 움직임과 실시간 동기화되거나 원격조종이 가능합니다. 팔 끝부분은 용도에 따라 집게, 가위 등으로 교체할 수 있어",
+      "one_line": "이 로봇 팔은 일본 도쿄대 연구팀이 개발한 지자이 암즈(Jizai Arms)로, 사용자의 움직임과 실시간 동기화되거나 원격조종이 가능합니다.",
+      "one_line_kr": "이 로봇 팔은 일본 도쿄대 연구팀이 개발한 지자이 암즈(Jizai Arms)로, 사용자의 움직임과 실시간 동기화되거나 원격조종이 가능합니다.",
+      "url": "https://www.etnews.com/20260403000325",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-06 06:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "닥터 옥토퍼스 현실판? 팔 6개 달린 로봇 슈트 눈길"
+    },
+    {
+      "id": "2026-04-06_0014",
+      "title": "스캐터랩, AI 챗봇 '제타' 가입자 600만 돌파…일본서 2배 성장",
+      "summary": "스캐터랩의 인공지능(AI) 캐릭터 챗봇이자 픽션 플랫폼 '제타' 가입자가 600만명을 돌파했다. 일본 시장 가입자도 반 년 만에 두 배 성장했다. 5일 스캐터랩에 따르면 제타 가입자는 500만명을 돌파한 지 두 달여 만인 올해 3월 100만 가입자를 추가 확보하며 60",
+      "one_line": "스캐터랩의 인공지능(AI) 캐릭터 챗봇이자 픽션 플랫폼 '제타' 가입자가 600만명을 돌파했다.",
+      "one_line_kr": "스캐터랩의 인공지능(AI) 캐릭터 챗봇이자 픽션 플랫폼 '제타' 가입자가 600만명을 돌파했다.",
+      "url": "https://www.etnews.com/20260403000179",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 17:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "스캐터랩, AI 챗봇 '제타' 가입자 600만 돌파…일본서 2배 성장"
+    },
+    {
+      "id": "2026-04-06_0015",
+      "title": "충남TP, K-디스플레이 'AX 융합 공장 모델' 개발…중기에 제조 AX 유전자 이식",
+      "summary": "세계 디스플레이 패권 경쟁 심화 속에서 충남테크노파크(이하 충남TP)가 올해부터 3년간 소부장 기업의 소버린 인공지능(AI) 전환(AX) 도입을 체계적으로 지원해 첨단 디스플레이 초격차 기술 유지를 위한 골든타임 사수에 나섰다. 충남TP는 천안 제2·3·4 일반산업단지",
+      "one_line": "세계 디스플레이 패권 경쟁 심화 속에서 충남테크노파크(이하 충남TP)가 올해부터 3년간 소부장 기업의 소버린 인공지능(AI) 전환(AX) 도입을 체계적으로 지원해 첨단 디스플레이 초격차 기술 유지를 위한 골든타임…",
+      "one_line_kr": "세계 디스플레이 패권 경쟁 심화 속에서 충남테크노파크(이하 충남TP)가 올해부터 3년간 소부장 기업의 소버린 인공지능(AI) 전환(AX) 도입을 체계적으로 지원해 첨단 디스플레이 초격차 기술 유지를 위한 골든타임…",
+      "url": "https://www.etnews.com/20260403000117",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 16:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "충남TP, K-디스플레이 'AX 융합 공장 모델' 개발…중기에 제조 AX 유전자 이식"
+    },
+    {
+      "id": "2026-04-06_0016",
+      "title": "[대전창업문화주간] AI 시대 통합형 창업 생태계 구현…시민 참여형 문화 확산",
+      "summary": "대전 지역 스타트업 투자 유치 기회 확대와 대중 창업 및 기술 문화 인식을 넓히기 위한 행사가 열렸다. 대전창조경제혁신센터와 충남대는 3일 대전컨벤션센터(DCC)에서 '대전창업문화주간 with 테크비즈코리아 2026'을 개최했다. 대전창업문화주간은 지역 스타트업, 투자",
+      "one_line": "대전 지역 스타트업 투자 유치 기회 확대와 대중 창업 및 기술 문화 인식을 넓히기 위한 행사가 열렸다.",
+      "one_line_kr": "대전 지역 스타트업 투자 유치 기회 확대와 대중 창업 및 기술 문화 인식을 넓히기 위한 행사가 열렸다.",
+      "url": "https://www.etnews.com/20260403000177",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 14:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[대전창업문화주간] AI 시대 통합형 창업 생태계 구현…시민 참여형 문화 확산"
+    },
+    {
+      "id": "2026-04-06_0017",
+      "title": "KAIST, 섞을수록 강해지는 '高엔트로피' 설계로 수소 생산 3배↑",
+      "summary": "보통 물질을 섞으면 불안정해지지만, 더 많이 섞을수록 오히려 안정되는 '고엔트로피' 현상이 있다. 한국과학기술원(KAIST·총장 이광형) 연구진이 이를 이용, 전지 안에서 수소 이온이 더 잘 움직이고 반응하게 해, 빠르고 효율적인 수소 생산 기술을 개발했다. KAIST",
+      "one_line": "한국과학기술원(KAIST·총장 이광형) 연구진이 이를 이용, 전지 안에서 수소 이온이 더 잘 움직이고 반응하게 해, 빠르고 효율적인 수소 생산 기술을 개발했다.",
+      "one_line_kr": "한국과학기술원(KAIST·총장 이광형) 연구진이 이를 이용, 전지 안에서 수소 이온이 더 잘 움직이고 반응하게 해, 빠르고 효율적인 수소 생산 기술을 개발했다.",
+      "url": "https://www.etnews.com/20260403000050",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 12:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "KAIST, 섞을수록 강해지는 '高엔트로피' 설계로 수소 생산 3배↑"
+    },
+    {
+      "id": "2026-04-06_0018",
+      "title": "ì‚¼ì„±ì „ìž, 2ë¶„ê¸° Dëž¨ ê°€ê²© 30% ë˜ ì¸ìƒâ€¦AI ìˆ˜ìš” ê²¬ê³",
+      "summary": "삼성전자가 2분기 D램 가격을 전 분기 대비 30% 올렸다. 1분기 100% 수준 인상에 이어 추가 가격 상승이 이뤄진 것으로 파악됐다. 인공지능(AI) 인프라 투자 확대로 인한 메모리 수요가 여전히 견고한 것으로 분석된다. 5일 업계에 따르면, 삼성전자는 2분기 D램",
+      "one_line": "삼성전자가 2분기 D램 가격을 전 분기 대비 30% 올렸다.",
+      "one_line_kr": "삼성전자가 2분기 D램 가격을 전 분기 대비 30% 올렸다.",
+      "url": "https://www.etnews.com/20260403000068",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-05 11:30",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "ì‚¼ì„±ì „ìž, 2ë¶„ê¸° Dëž¨ ê°€ê²© 30% ë˜ ì¸ìƒâ€¦AI ìˆ˜ìš” ê²¬ê³"
+    },
+    {
+      "id": "2026-04-06_0019",
+      "title": "Copilot is ‘for entertainment purposes only,’ according to Microsoft’s terms of use",
+      "summary": "AI skeptics aren’t the only ones warning users not to unthinkingly trust models’ outputs — that’s what the AI companies say themselves in their terms of service.",
+      "one_line": "AI skeptics aren’t the only ones warning users not to unthinkingly trust models’ outputs — that’s what the AI companies…",
+      "one_line_kr": "AI 회의론자들은 사용자에게 모델의 결과를 무심코 신뢰하지 말라고 경고하는 유일한 사람이 아닙니다. 그것이 바로 AI 회사들이 하는 일입니다.",
+      "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-06 03:51",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Copilot은 Microsoft의 이용 약관에 따라 '오직 엔터테인먼트 목적'입니다."
+    },
+    {
+      "id": "2026-04-06_0020",
+      "title": "Can orbital data centers help justify a massive valuation for SpaceX?",
+      "summary": "On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's vision for data centers in space.",
+      "one_line": "On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's vision for data centers in space.",
+      "one_line_kr": "TechCrunch의 Equity 팟캐스트 최신 에피소드에서 우리는 우주 데이터 센터에 대한 Elon Musk의 비전에 대해 토론했습니다.",
+      "url": "https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-06 00:40",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "궤도 데이터 센터가 SpaceX의 막대한 가치 평가를 정당화하는 데 도움이 될 수 있습니까?"
+    },
+    {
+      "id": "2026-04-06_0021",
+      "title": "In Japan, the robot isn’t coming for your job; it’s filling the one nobody wants",
+      "summary": "Driven by labor shortages, Japan is pushing physical AI from pilot projects into real-world deployment.",
+      "one_line": "Driven by labor shortages, Japan is pushing physical AI from pilot projects into real-world deployment.",
+      "one_line_kr": "노동력 부족으로 인해 일본은 물리적 AI를 파일럿 프로젝트에서 실제 배포로 추진하고 있습니다.",
+      "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 23:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "일본에서는 로봇이 당신의 일을 위해 오지 않습니다. 아무도 원하지 않는 것을 채우고 있어"
+    },
+    {
+      "id": "2026-04-06_0022",
+      "title": "Calibrated Fusion for Heterogeneous Graph-Vector Retrieval in Multi-Hop QA",
+      "summary": "Graph-augmented retrieval combines dense similarity with graph-based relevance signals such as Personalized PageRank (PPR), but these scores have different distributions and are not directly comparable. We study this as a score calibration problem for heterogeneous retrieval fusi…",
+      "one_line": "We study this as a score calibration problem for heterogeneous retrieval fusi…",
+      "one_line_kr": "우리는 이를 이종 검색 융합을 위한 점수 보정 문제로 연구합니다.",
+      "url": "https://tldr.takara.ai/p/2603.28886",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-03-31 03:13",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "멀티 홉 QA에서 이종 그래프 벡터 검색을 위한 보정된 융합"
+    },
+    {
+      "id": "2026-04-06_0023",
+      "title": "The Spectral Edge Thesis: A Mathematical Framework for Intra-Signal Phase Transitions in Neural Network Training",
+      "summary": "We develop the spectral edge thesis: phase transitions in neural network training -- grokking, capability gains, loss plateaus -- are controlled by the spectral gap of the rolling-window Gram matrix of parameter updates. In the extreme aspect ratio regime (parameters $P \\sim 10^8…",
+      "one_line": "We develop the spectral edge thesis: phase transitions in neural network training -- grokking, capability gains, loss…",
+      "one_line_kr": "우리는 스펙트럼 에지 이론을 개발합니다: 신경망 훈련의 위상 전환 - 그로킹, 능력 이득, 손실...",
+      "url": "https://tldr.takara.ai/p/2603.28964",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-03-31 05:10",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "스펙트럼 에지 논문: 신경망 훈련에서 신호 내 위상 전환을 위한 수학적 프레임워크"
+    },
+    {
+      "id": "2026-04-06_0024",
+      "title": "FlowSlider: Training-Free Continuous Image Editing via Fidelity-Steering Decomposition",
+      "summary": "Continuous image editing aims to provide slider-style control of edit strength while preserving source-image fidelity and maintaining a consistent edit direction. Existing learning-based slider methods typically rely on auxiliary modules trained with synthetic or proxy supervisio…",
+      "one_line": "Continuous image editing aims to provide slider-style control of edit strength while preserving source-image fidelity…",
+      "one_line_kr": "지속적인 이미지 편집은 소스 이미지의 충실도를 유지하면서 편집 강도를 슬라이더 스타일로 제어하는 ​​것을 목표로 합니다.",
+      "url": "https://tldr.takara.ai/p/2604.02088",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-04-02 23:16",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "FlowSlider: 충실도 조정 분해를 통한 교육이 필요 없는 연속 이미지 편집"
+    },
+    {
+      "id": "2026-04-06_0025",
+      "title": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI - Ubergizmo",
+      "summary": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI Ubergizmo",
+      "one_line": "Google Officially Unveils Gemini Nano 4 For On-Device Android AI Ubergizmo",
+      "one_line_kr": "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 Ubergizmo",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pdE52bS1WOVBLWklYRXhlMFVpVUNQWlJTV3J0YXpMZU1TSmNBZXN1RklDRG1sNDdCZnpZMHJaa3NLRnJyNEtUWUZqbURBdnNpakhVSUcyS2poaWh4?oc=5",
+      "source": "Google Gemini News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-04-05 03:55",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Google, 온디바이스 Android AI용 Gemini Nano 4 공식 공개 - Ubergizmo"
+    },
+    {
+      "id": "2026-04-06_0026",
+      "title": "Continual learning for AI agents",
+      "summary": "Most discussions of continual learning in AI focus on one thing: updating model weights. But for AI agents, learning can happen at three distinct layers: the model, the harness, and the context. Understanding the difference changes how you think about building systems that improv…",
+      "one_line": "Most discussions of continual learning in AI focus on one thing: updating model weights.",
+      "one_line_kr": "AI의 지속적인 학습에 대한 대부분의 논의는 모델 가중치 업데이트라는 한 가지에 중점을 둡니다.",
+      "url": "https://blog.langchain.com/continual-learning-for-ai-agents/",
+      "source": "LangChain Blog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-06 06:46",
+      "collect_date": "2026-04-06",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "AI 에이전트를 위한 지속적인 학습"
+    },
+    {
+      "id": "2026-04-06_0027",
+      "title": "Ye Just Made $33 Million in Two Nights. Will His Comeback Last?",
+      "summary": "The music industry is tentatively embracing the artist formerly known as Kanye West",
+      "one_line": "The music industry is tentatively embracing the artist formerly known as Kanye West",
+      "one_line_kr": "음악 산업은 이전에 Kanye West로 알려진 아티스트를 잠정적으로 수용하고 있습니다.",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-04-05/kanye-west-concert-breaks-records-with-18-million-night",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-06 07:15",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iT_XymeckZ9k/v0/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "너희는 이틀 밤에 3,300만 달러를 벌었다. 그의 복귀는 지속될 것인가?"
+    },
+    {
+      "id": "2026-04-06_0028",
+      "title": "On NASA’s Moon Mission, the Biggest Headache Has Been the Toilet",
+      "summary": "As NASA’s Artemis II astronauts make their way to the moon this weekend, their test flight has gone surprisingly well without any major issues, save for one piece of technology giving the crew some grief: the toilet.",
+      "one_line": "As NASA’s Artemis II astronauts make their way to the moon this weekend, their test flight has gone surprisingly well…",
+      "one_line_kr": "NASA의 아르테미스 II 우주비행사들이 이번 주말에 달로 향하면서 그들의 시험 비행은 놀라울 정도로 성공적으로 진행되었습니다…",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-05/on-nasa-s-moon-mission-the-biggest-headache-has-been-the-toilet",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-06 01:20",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ittplSse6NJE/v2/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "NASA의 달 임무에서 가장 큰 두통은 화장실이었습니다"
+    },
+    {
+      "id": "2026-04-06_0029",
+      "title": "Bloomberg This Weekend 4/04/2026",
+      "summary": "The news doesn’t stop when markets close. Hosts Christina Ruffini, Joe Mathieu and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York. Joined by Princeton University Center for Migration & Development Advocacy Researcher Ph…",
+      "one_line": "The news doesn’t stop when markets close.",
+      "one_line_kr": "시장이 닫혀도 뉴스는 멈추지 않습니다.",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-05/bloomberg-this-weekend-4-04-2026-video",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-06 00:52",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGXhOkiRAn.k/v3/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "블룸버그 이번 주말 2026년 4월 4일"
+    },
+    {
+      "id": "2026-04-06_0030",
+      "title": "IBM, Masters use AI to Bring the Fairway to Every Fan",
+      "summary": "IBM and the Masters Golf Tournament are teaming up to give fans an experience unlike any other. IBM SVP of Marketing & Communications Jonathan Adashek and Longtime Caddy Jim \"Bones\" Mackay join Joe Mathieu and Christina Ruffini on Bloomberg This Weekend to discuss the economic im…",
+      "one_line": "IBM and the Masters Golf Tournament are teaming up to give fans an experience unlike any other.",
+      "one_line_kr": "IBM과 Masters Golf Tournament는 팬들에게 다른 어떤 것과도 비교할 수 없는 경험을 제공하기 위해 협력하고 있습니다.",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-05/ibm-masters-use-ai-to-bring-the-fairway-to-every-fan-video",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 22:19",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iPI63aD1dY7g/v3/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "IBM, Masters는 AI를 사용하여 모든 팬에게 페어웨이 제공"
+    },
+    {
+      "id": "2026-04-06_0031",
+      "title": "Best Apple Watch Bands of 2026: Nike, Hermés, and More",
+      "summary": "We’ve been testing bands since the first Apple Watch launched in 2015. From silicone sports straps to leather bands, I’ve rounded up the best for every occasion.",
+      "one_line": "We’ve been testing bands since the first Apple Watch launched in 2015.",
+      "one_line_kr": "우리는 2015년 Apple Watch가 처음 출시된 이후 밴드를 테스트해 왔습니다.",
+      "url": "https://www.wired.com/story/best-apple-watch-bands/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 21:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://media.wired.com/photos/69d03c4f7025f3dd6d8df7bf/master/pass/The-Best-Apple-Watch-Bands,-According-to-Years-of-All-Day-Wear.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "2026년 최고의 Apple Watch 밴드: Nike, Hermés 등"
+    },
+    {
+      "id": "2026-04-06_0032",
+      "title": "Heatbit Maxi Pro Review: a Space Heater That Also Mines Bitcoin",
+      "summary": "Electricity rates have gotten so atrocious that this Heatbit wants to offset your costs with bitcoin mining. But the math doesn't add up.",
+      "one_line": "Electricity rates have gotten so atrocious that this Heatbit wants to offset your costs with bitcoin mining.",
+      "one_line_kr": "전기 요금이 너무 높아져서 이 Heatbit은 비트코인 ​​채굴로 비용을 상쇄하려고 합니다.",
+      "url": "https://www.wired.com/review/heatbit-maxi-pro-bitcoin-miner-heater/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 20:04",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://media.wired.com/photos/69d1513394a47caea8de05bb/master/pass/Review--Heatbit-Maxi-Bitcoin-Miner-and-Heater.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Heatbit Maxi Pro 리뷰: 비트코인 ​​채굴도 가능한 히터"
+    },
+    {
+      "id": "2026-04-06_0033",
+      "title": "3 Best Robot Lawn Mowers (2026), Tested and Reviewed",
+      "summary": "These smart mowers are expensive alternatives to some good old-fashioned yard work, but they’re finally good enough to consider if you’d rather sip an iced tea and watch the robot go by.",
+      "one_line": "These smart mowers are expensive alternatives to some good old-fashioned yard work, but they’re finally good enough to…",
+      "one_line_kr": "이 스마트 모어는 좋은 구식 정원 작업에 대한 값비싼 대안이지만 마침내는…",
+      "url": "https://www.wired.com/gallery/best-robot-lawn-mowers/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 19:00",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://media.wired.com/photos/69cfeeb9d4c18da3282280c6/master/pass/The-Best-Robot-Lawn-Mowers.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "3 최고의 로봇 잔디 깍는 기계(2026), 테스트 및 검토됨"
+    },
+    {
+      "id": "2026-04-06_0034",
+      "title": "Sony’s PS5 Price Hikes Prove This Console Generation Is Far From Over. Good.",
+      "summary": "The current console generation may last longer than anyone expects.",
+      "one_line": "The current console generation may last longer than anyone expects.",
+      "one_line_kr": "현재 콘솔 세대는 누구나 예상하는 것보다 오래 지속될 수 있습니다.",
+      "url": "https://www.wired.com/story/sonys-ps5-price-hikes-prove-this-console-generation-is-far-from-over-good/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-05 18:30",
+      "collect_date": "2026-04-06",
+      "thumbnail": "https://media.wired.com/photos/69cff42f1ee0cf8d69034d6a/master/pass/Maybe-We-Dont-Need-PS6-Anytime-Soon-Gear-2237046289.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "소니의 PS5 가격 인상은 콘솔 세대가 아직 끝나지 않았음을 증명합니다. 좋은."
+    },
     {
       "id": "2026-04-05_0000",
       "title": "아르시, 추론 모델 ‘트리니티-라지-싱킹’ 출시...에이전트 성능은 '클로드급'",

@@ -1,16 +1,16 @@
 {
   "period": "monthly",
   "days": 30,
-  "generated_at": "2026-04-11 08:54",
-  "total": 2268,
-  "kr_count": 747,
-  "en_count": 1521,
+  "generated_at": "2026-04-12 08:05",
+  "total": 2309,
+  "kr_count": 766,
+  "en_count": 1543,
   "category_stats": {
-    "콘텐츠": 726,
-    "영상AI": 260,
-    "이미지·디자인AI": 231,
-    "LLM": 159,
-    "개발AI": 293,
+    "콘텐츠": 745,
+    "영상AI": 265,
+    "이미지·디자인AI": 237,
+    "LLM": 161,
+    "개발AI": 302,
     "AI법률": 58,
     "논문": 402,
     "비즈니스": 139
@@ -18,19 +18,19 @@
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 247
+      "count": 257
     },
     {
       "source": "디지털투데이",
-      "count": 177
+      "count": 184
     },
     {
       "source": "전자신문",
-      "count": 130
+      "count": 131
     },
     {
       "source": "HuggingFace Papers",
-      "count": 120
+      "count": 124
     },
     {
       "source": "ArXiv AI",
@@ -38,19 +38,19 @@
     },
     {
       "source": "TechCrunch AI",
-      "count": 116
+      "count": 117
     },
     {
       "source": "더에이아이",
-      "count": 111
+      "count": 112
     },
     {
       "source": "Bloomberg Tech",
-      "count": 104
+      "count": 108
     },
     {
       "source": "Wired AI",
-      "count": 104
+      "count": 108
     },
     {
       "source": "ArXiv ML",
@@ -78,27 +78,27 @@
     },
     {
       "source": "OpenAI (Sora)",
-      "count": 33
+      "count": 37
     },
     {
       "source": "Claude AI News",
-      "count": 31
+      "count": 32
     },
     {
       "source": "Meta AI News",
       "count": 29
     },
     {
-      "source": "Latent Space",
+      "source": "Google Gemini News",
       "count": 28
     },
     {
-      "source": "Google Gemini News",
-      "count": 27
+      "source": "LangChain Blog",
+      "count": 28
     },
     {
-      "source": "LangChain Blog",
-      "count": 27
+      "source": "Latent Space",
+      "count": 28
     },
     {
       "source": "Kling AI News",
@@ -137,15 +137,15 @@
       "count": 13
     },
     {
+      "source": "Figma AI News",
+      "count": 12
+    },
+    {
       "source": "AI Copyright Law",
       "count": 12
     },
     {
       "source": "YouTube Creator AI",
-      "count": 11
-    },
-    {
-      "source": "Figma AI News",
       "count": 11
     },
     {
@@ -173,6 +173,10 @@
       "count": 9
     },
     {
+      "source": "Ideogram News",
+      "count": 8
+    },
+    {
       "source": "Runway Blog",
       "count": 8
     },
@@ -198,10 +202,6 @@
     },
     {
       "source": "DaVinci Resolve AI",
-      "count": 7
-    },
-    {
-      "source": "Ideogram News",
       "count": 7
     },
     {
@@ -280,43 +280,43 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 202
+      "count": 203
     },
     {
       "keyword": "인공지능",
-      "count": 174
+      "count": 177
     },
     {
       "keyword": "LLM",
-      "count": 169
+      "count": 170
     },
     {
       "keyword": "에이전트",
-      "count": 113
+      "count": 114
     },
     {
       "keyword": "Anthropic",
-      "count": 87
+      "count": 88
     },
     {
       "keyword": "GPT",
-      "count": 79
+      "count": 84
+    },
+    {
+      "keyword": "Claude",
+      "count": 68
     },
     {
       "keyword": "Vision",
       "count": 67
     },
     {
-      "keyword": "Claude",
-      "count": 66
-    },
-    {
       "keyword": "Reasoning",
-      "count": 60
+      "count": 62
     },
     {
       "keyword": "RAG",
-      "count": 50
+      "count": 51
     },
     {
       "keyword": "Benchmark",
@@ -331,12 +331,12 @@
       "count": 39
     },
     {
-      "keyword": "Gemini",
-      "count": 36
+      "keyword": "클로드",
+      "count": 38
     },
     {
-      "keyword": "클로드",
-      "count": 35
+      "keyword": "Gemini",
+      "count": 37
     },
     {
       "keyword": "Transformer",
@@ -344,7 +344,7 @@
     },
     {
       "keyword": "ChatGPT",
-      "count": 24
+      "count": 28
     },
     {
       "keyword": "Diffusion",
@@ -463,9 +463,20 @@
     {
       "date": "2026-04-11",
       "count": 81
+    },
+    {
+      "date": "2026-04-12",
+      "count": 41
     }
   ],
   "cat_daily": {
+    "2026-04-12": {
+      "콘텐츠": 19,
+      "영상AI": 5,
+      "이미지·디자인AI": 6,
+      "LLM": 2,
+      "개발AI": 9
+    },
     "2026-04-11": {
       "콘텐츠": 29,
       "영상AI": 11,
@@ -712,6 +723,86 @@
   },
   "content_highlights": [
     {
+      "id": "2026-04-12_0004",
+      "title": "텐센트, 로봇 파운데이션 모델 ‘HY-임바디드-0.5’ 공개",
+      "summary": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다. 텐센트도 공간을 인식하고 시간의 흐름 속에서 행동까지 수행할 수 있도록 설계된 로봇용 파운데이션 모델을 내놓았다.텐센트는 10일(현지시간) 현실 세계에서 작동하는 로봇과 에이전트를 위한 차세대 파운데이션 모델 ‘HY-임바디드-0.5(HY-Embodied-0.5)’를 공개했다. 기존 비전-언어 모델(VLM)의 한계를 넘어 실제 물리 환경에서의 인식·판단·행동까지 통합한 것이 핵심이다.기존 비전-언어…",
+      "one_line": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+      "one_line_kr": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209113",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 17:09",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "텐센트, 로봇 파운데이션 모델 ‘HY-임바디드-0.5’ 공개"
+    },
+    {
+      "id": "2026-04-12_0005",
+      "title": "xAI, 콜로라도주 AI 규제에 소송…“주별 규제는 혁신 저해”",
+      "summary": "일론 머스크 CEO의 xAI가 미국 콜로라도주의 AI 규제법 시행을 막기 위해 소송을 제기했다.로이터는 9일(현지시간) xAI가 콜로라도 연방지방법원에 소장을 제출하고, 오는 6월 30일 시행 예정인 ‘상원 법안 24-205(SB 24-205)’의 효력을 중단해 달라고 요청했다고 보도했다.이 법안은 고용, 주거, 교육, 의료, 금융 등 주요 분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "one_line": "분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "one_line_kr": "분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209115",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 16:42",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "xAI, 콜로라도주 AI 규제에 소송…“주별 규제는 혁신 저해”"
+    },
+    {
+      "id": "2026-04-12_0006",
+      "title": "코어위브, 앤트로픽과 AI 클라우드 계약 체결로 주가 급등",
+      "summary": "AI 클라우드 전문 코어위브가 앤트로픽에 대규모 컴퓨팅 자원을 공급하기로 하면서 주가가 급등했다. 코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지 않았지만, 인프라는 올해 안부터 차례로 구축·가동될 예정이다. 양사는 초기에는 단계적인 인프라 구축에 집중하고, 수요에 따라 협력 범위를 확대할 계획이다.이번 계약으로 코어위브는 주요 AI 모…",
+      "one_line": "코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지…",
+      "one_line_kr": "코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209110",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 16:21",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "코어위브, 앤트로픽과 AI 클라우드 계약 체결로 주가 급등"
+    },
+    {
+      "id": "2026-04-12_0031",
+      "title": "Introducing Claude Opus 4.5 - Anthropic",
+      "summary": "Introducing Claude Opus 4.5 Anthropic",
+      "one_line": "Introducing Claude Opus 4.5 Anthropic",
+      "one_line_kr": "Claude Opus 4.5 Anthropic 소개",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84OWN3YndfcE4tUnBWQ01XX0RYWWIzVTJienN4Q2NTY0xOMF9Ra1BEOWR4WW8xdGRfck5KdHVjZXZObDVObTd6RE4xMklVMTlJZGJ6ZndTT3JnUQ?oc=5",
+      "source": "Claude AI News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2025-11-24 17:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Claude Opus 4.5 소개 - Anthropic"
+    },
+    {
       "id": "2026-04-11_0001",
       "title": "앤트로픽, ‘클로드 코워크’ 기능 강화하고 정식 서비스 시작",
       "summary": "앤트로픽이 올해 초 화제가 됐던 ‘클로드 코워크(Claude Cowork)’의 전면 확대에 나섰다.앤트로픽은 9일(현지시간) 기업용 AI 협업 도구 클로드 코워크를 모든 유료 요금제에서 정식 출시한다고 발표했다.클로드 코워크는 지난 1월12일 최상위 요금제인 '클로드 맥스' 구독자를 대상으로 서비스를 시작, 적용 범위를 넓혀 왔다. 이제는 3개월간의 피드백 과정을 거쳐 '프리뷰' 단계를 넘어 정식 서비스를 시작했다는 데 의의가 있다.또 기업 고객을 위한 관리·통제 기능을 대폭 강화했다. 이를 통해…",
@@ -830,95 +921,15 @@
         "class": "hot"
       },
       "title_kr": "Flux 2 small은 소비자 그래픽 카드에 AI 이미지 생성 및 편집 기능을 제공합니다."
-    },
-    {
-      "id": "2026-04-11_0056",
-      "title": "AI법정책 포럼 출범: 한국 AI 규제의 새 이정표 - 브랜드경제신문",
-      "summary": "AI법정책 포럼 출범: 한국 AI 규제의 새 이정표 브랜드경제신문",
-      "one_line": "AI법정책 포럼 출범: 한국 AI 규제의 새 이정표 브랜드경제신문",
-      "one_line_kr": "AI법정책 포럼 출범: 한국 AI 규제의 새 이정표 브랜드경제신문",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzSTZfX1hra3pIMzJ1S0wyU3BzRjVQSEw5a2pmNUhKQURTalFEM05VczlvUFR5V2lzUVItMEE3cjkta3RFVE84WkV3VVA?oc=5",
-      "source": "AI법률 뉴스(국내)",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "ko",
-      "date": "2026-04-06 22:35",
-      "collect_date": "2026-04-11",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "AI법정책 포럼 출범: 한국 AI 규제의 새 이정표 - 브랜드경제신문"
-    },
-    {
-      "id": "2026-04-11_0067",
-      "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
-      "summary": "arXiv:2604.07429v1 Announce Type: new Abstract: Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes. Video games offer an ideal testbed with rich…",
-      "one_line": "arXiv:2604.07429v1 Announce Type: new Abstract: Towards an embodied generalist for real-world interaction, Multimodal…",
-      "one_line_kr": "arXiv:2604.07429v1 발표 유형: 새로운 개요: 실제 상호 작용을 위한 구체화된 일반성을 지향하는 멀티모달…",
-      "url": "https://arxiv.org/abs/2604.07429",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-04-10 13:00",
-      "collect_date": "2026-04-11",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "GameWorld: 다중 모드 게임 에이전트의 표준화되고 검증 가능한 평가를 향하여"
-    },
-    {
-      "id": "2026-04-10_0000",
-      "title": "오픈AI, 월 100달러 '프로' 요금제 출시...앤트로픽과 '코딩 전쟁' 선언",
-      "summary": "오픈AI가 AI 코딩 도구 '코덱스(Codex)'의 사용량 제한을 대폭 완화한 월 100달러 '챗GPT 프로' 요금제를 전격 출시했다. 빠르게 기업용 AI 시장을 장악 중인 앤트로픽에 맞서, 코딩 에이전트 주도권을 탈환하겠다는 의도다.오픈AI는 10일 X를 통해 코덱스 사용량 증가에 발맞춰 월 100달러의 챗GPT 프로 등급을 도입했다고 발표했다.국내에서는 월 15만9000원인 이 서비스는 챗GPT 플러스 등급보다 5배 많은 코덱스 사용량을 제공하며, \"장기적이고 집중적인 코덱스 세션에 최적화됐다…",
-      "one_line": "오픈AI가 AI 코딩 도구 '코덱스(Codex)'의 사용량 제한을 대폭 완화한 월 100달러 '챗GPT 프로' 요금제를 전격 출시했다.",
-      "one_line_kr": "오픈AI가 AI 코딩 도구 '코덱스(Codex)'의 사용량 제한을 대폭 완화한 월 100달러 '챗GPT 프로' 요금제를 전격 출시했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=209048",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-04-10 08:35",
-      "collect_date": "2026-04-10",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 월 100달러 '프로' 요금제 출시...앤트로픽과 '코딩 전쟁' 선언"
-    },
-    {
-      "id": "2026-04-10_0002",
-      "title": "“막 시작된 피지컬 AI, 데이터가 핵심”…국내 AI 리더들 실전 전략 공개",
-      "summary": "국내 AI 업계를 대표하는 기업들이 \"피지컬 AI는 이제 시작\"이라고 입을 모았다. 특히 이는 대형언어모델(LLM)과는 완전히 다른 방향으로, ‘데이터 수집’ 경쟁이 심화할 것으로 전망했다. 9일 서울 코엑스 컨퍼런스룸 401호에서 ‘피지컬 AI 컨퍼런스 2026’가 열렸다. AI타임스와 엑스프로모션이 주최하고, 과학기술정보통신부와 정보통신산업진흥원(NIPA) 등이 후원했다. 행사에는 국내 대표 AI 기업 인사들이 참여해 기술 트렌드와 개발 현황, 사업 계획 등을 발표했다. ▲정보통신산업진흥원 ▲…",
-      "one_line": "행사에는 국내 대표 AI 기업 인사들이 참여해 기술 트렌드와 개발 현황, 사업 계획 등을 발표했다.",
-      "one_line_kr": "행사에는 국내 대표 AI 기업 인사들이 참여해 기술 트렌드와 개발 현황, 사업 계획 등을 발표했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=209045",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-04-09 19:13",
-      "collect_date": "2026-04-10",
-      "thumbnail": "",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "“막 시작된 피지컬 AI, 데이터가 핵심”…국내 AI 리더들 실전 전략 공개"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "앤트로픽, ‘클로드 코워크’ 기능 강화하고 정식 서비스 시작",
+      "title": "텐센트, 로봇 파운데이션 모델 ‘HY-임바디드-0.5’ 공개",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=209104",
-      "one_line": "앤트로픽이 올해 초 화제가 됐던 ‘클로드 코워크(Claude Cowork)’의 전면 확대에 나섰다.앤트로픽은 9일(현지시간) 기업용 AI 협업 도구 클로드 코워크를 모든 유료 요금제에서 정식 출시한다고…",
-      "date": "2026-04-10 18:00"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209113",
+      "one_line": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+      "date": "2026-04-11 17:09"
     },
     "영상AI": {
       "title": "Anthropic temporarily banned OpenClaw’s creator from accessing Claude",
@@ -935,11 +946,11 @@
       "date": "2026-01-17 17:00"
     },
     "LLM": {
-      "title": "Goodbye, Llama? Meta launches new proprietary AI model Muse Spark — first since Superintelligence Labs' formation - VentureBeat",
-      "source": "Meta AI News",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOU82OVQ1U0U3d3NVMXRHQ1NhRzhPVThxcmw1MFBJaXVvaWFwVm1VSXk2ZjQ1dVZlTm1Bby1kZDdjVzNxT1VtX3o1bG9JdEl3WTZxTGV1V2g4amZuZHFqaGp3b3ZobDQwc3JHdTk4bHBGbjZ5RXNudjJaYU56bG0yLUwyeDRSZ0NzMF9nV2RTZmszMEY1MmJPR3VKQ1NHUE1tTlE1aE1MQjlRdkd6bnA0?oc=5",
-      "one_line": "Meta, Superintelligence Labs 설립 이후 처음으로 새로운 독점 AI 모델 Muse Spark 출시 VentureBeat",
-      "date": "2026-04-09 03:42"
+      "title": "Introducing Claude Opus 4.5 - Anthropic",
+      "source": "Claude AI News",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84OWN3YndfcE4tUnBWQ01XX0RYWWIzVTJienN4Q2NTY0xOMF9Ra1BEOWR4WW8xdGRfck5KdHVjZXZObDVObTd6RE4xMklVMTlJZGJ6ZndTT3JnUQ?oc=5",
+      "one_line": "Claude Opus 4.5 Anthropic 소개",
+      "date": "2025-11-24 17:00"
     },
     "개발AI": {
       "title": "Deep Agents Deploy: an open alternative to Claude Managed Agents",
@@ -950,14 +961,834 @@
     }
   },
   "period_key_points": [
-    "앤트로픽이 올해 초 화제가 됐던 ‘클로드 코워크(Claude Cowork)’의 전면 확대에 나섰다.앤트로픽은 9일(현지시간) 기업용 AI 협업 도구 클로드 코워크를 모든 유료 요금제에서 정식 출시한다고 발표했다.",
-    "과학기술정보통신부가 한국지능정보사회진흥원(NIA)와 범부처 현황조사 '인공지능(AI) 학습용 데이터 현황조사'를 실시한다.",
-    "인공지능(AI)과의 대화가 원인이 되어 청소년들이 자살하는 사건이 지난해 미국에서 큰 문제가 됐다.",
-    "SK텔레콤이 글로벌 반도체 설계 기업 Arm, 국내 AI 반도체 스타트업 리벨리온과 손잡고 차세대 AI 데이터센터 인프라 개발에 나선다.",
-    "이 금지는 지난주 OpenClaw 사용자에 대한 Claude의 가격이 변경된 후에 발생했습니다."
+    "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+    "일론 머스크 CEO의 xAI가 미국 콜로라도주의 AI 규제법 시행을 막기 위해 소송을 제기했다.",
+    "AI 클라우드 전문 코어위브가 앤트로픽에 대규모 컴퓨팅 자원을 공급하기로 하면서 주가가 급등했다.",
+    "Claude Opus 4.5 Anthropic 소개.",
+    "앤트로픽이 올해 초 화제가 됐던 ‘클로드 코워크(Claude Cowork)’의 전면 확대에 나섰다.앤트로픽은 9일(현지시간) 기업용 AI 협업 도구 클로드 코워크를 모든 유료 요금제에서 정식 출시한다고 발표했다."
   ],
-  "period_prose": "이번 월간 총 2268건의 AI 자료가 수집됐습니다. 국내 747건, 해외 1521건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, 인공지능, LLM, 에이전트, Anthropic입니다.",
+  "period_prose": "이번 월간 총 2309건의 AI 자료가 수집됐습니다. 국내 766건, 해외 1543건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, 인공지능, LLM, 에이전트, Anthropic입니다.",
   "items": [
+    {
+      "id": "2026-04-12_0000",
+      "title": "최첨단 모델들이 '프리미어 리그'에 베팅했더니...\"코딩은 잘하지만, 파산은 못 피해\"",
+      "summary": "오픈AI와 앤트로픽, 구글 등의 AI 모델들이 프리미어 리그 경기에 베팅한 결과, 손실을 봤다는 연구 결과가 나왔다. 최첨단 시스템이라도 장기간에 걸쳐 현실 세계를 분석하는 데에는 어려움을 겪는다는 설명이다.런던에 본사를 둔 AI 스타트업 제너럴 리즈닝(General Reasoning)은 9일(현지시간) 2023~24 프리미어 리그 시즌을 가상으로 재현해 8개의 최고 AI 시스템을 테스트한 '켈리벤치(KellyBench)' 보고서를 발표했다.여기에는 ▲GPT-5.4 ▲클로드 오퍼스 4.6 ▲제미나…",
+      "one_line": "오픈AI와 앤트로픽, 구글 등의 AI 모델들이 프리미어 리그 경기에 베팅한 결과, 손실을 봤다는 연구 결과가 나왔다.",
+      "one_line_kr": "오픈AI와 앤트로픽, 구글 등의 AI 모델들이 프리미어 리그 경기에 베팅한 결과, 손실을 봤다는 연구 결과가 나왔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209118",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 20:21",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "최첨단 모델들이 '프리미어 리그'에 베팅했더니...\"코딩은 잘하지만, 파산은 못 피해\""
+    },
+    {
+      "id": "2026-04-12_0001",
+      "title": "\"대형 모델은 조언자\"... 앤트로픽, 가성비 높인 '어드바이저' 전략 공개",
+      "summary": "앤트로픽이 고가의 고성능 모델 ‘클로드 오퍼스’를 모든 작업에 적용하는 대신, 일부 복잡한 작업만 맡게 하는 오케스트레이션 전략을 공개했다. 복잡한 판단에만 오퍼스를 투입하고, 전반적인 실행은 저비용 모델이 담당하는 구조로 비용을 낮추는 방식이다.앤트로픽은 10일(현지시간) 고성능 모델의 비용 부담을 낮추면서도 성능을 유지할 수 있는 새로운 구조 ‘어드바이저 전략(Advisor Strategy)’을 공개했다. 어드바이저 전략은 모델의 역할 분리가 핵심이다. 비교적 저렴한 ‘클로드 소네트’나 ‘클로…",
+      "one_line": "복잡한 판단에만 오퍼스를 투입하고, 전반적인 실행은 저비용 모델이 담당하는 구조로 비용을 낮추는 방식이다.앤트로픽은 10일(현지시간) 고성능 모델의 비용 부담을 낮추면서도 성능을 유지할 수 있는 새로운 구조…",
+      "one_line_kr": "복잡한 판단에만 오퍼스를 투입하고, 전반적인 실행은 저비용 모델이 담당하는 구조로 비용을 낮추는 방식이다.앤트로픽은 10일(현지시간) 고성능 모델의 비용 부담을 낮추면서도 성능을 유지할 수 있는 새로운 구조…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209112",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 18:38",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"대형 모델은 조언자\"... 앤트로픽, 가성비 높인 '어드바이저' 전략 공개"
+    },
+    {
+      "id": "2026-04-12_0002",
+      "title": "'제미나이'에 인터랙티브 3D 모델·시뮬레이션 생성 기능 추가",
+      "summary": "구글이 ‘제미나이’에 3D 인터랙티브 시뮬레이션 생성 기능을 추가했다. 복잡한 개념을 직접 조작하고 실험할 수 있는 기능이 도입되면서 교육·연구 활용 가능성도 크게 높아질 전망이다.구글은 9일(현지시간) 사용자의 질문에 대해 단순한 설명이나 정적인 이미지 대신, 실시간으로 조작 가능한 3D 모델과 시뮬레이션을 생성할 수 있는 기능을 제미나이에 도입했다고 발표했다. 사용자는 생성된 모델을 회전하거나 확대·축소할 수 있으며, 슬라이더를 조정하거나 변수를 입력해 시뮬레이션 결과를 즉각 변화시키는 것도 …",
+      "one_line": "복잡한 개념을 직접 조작하고 실험할 수 있는 기능이 도입되면서 교육·연구 활용 가능성도 크게 높아질 전망이다.구글은 9일(현지시간) 사용자의 질문에 대해 단순한 설명이나 정적인 이미지 대신, 실시간으로 조작 가능한…",
+      "one_line_kr": "복잡한 개념을 직접 조작하고 실험할 수 있는 기능이 도입되면서 교육·연구 활용 가능성도 크게 높아질 전망이다.구글은 9일(현지시간) 사용자의 질문에 대해 단순한 설명이나 정적인 이미지 대신, 실시간으로 조작 가능한…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209099",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 18:21",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "'제미나이'에 인터랙티브 3D 모델·시뮬레이션 생성 기능 추가"
+    },
+    {
+      "id": "2026-04-12_0003",
+      "title": "알리바바, 화제의 영상 모델 '해피호스' 개발 확인...AI 조직 개편 후 첫 성과",
+      "summary": "알리바바가 베일에 싸여 있던 영상 생성 AI 모델 ‘해피호스(HappyHorse) 1.0’의 개발 주체라고 확인했다.알리바바는 10일 X를 통해 이번주 공개 직후 글로벌 벤치마크에서 1위를 차지하며 화제를 일으킨 영상 생성 AI 모델 해피 호스를 개발했다고 밝혔다.해피호스 1.0은 AI 성능 평가 플랫폼 아티피셜 애널리시스(AA)의 '텍스트-투-비디오'와 '이미지-투-비디오' 부문에서 모두 1위에 오르며 주목받았다. 특히 개발사가 공개되기 전까지 정체가 밝혀지지 않아 업계와 투자자들 사이에서 다양…",
+      "one_line": "알리바바가 베일에 싸여 있던 영상 생성 AI 모델 ‘해피호스(HappyHorse) 1.0’의 개발 주체라고 확인했다.알리바바는 10일 X를 통해 이번주 공개 직후 글로벌 벤치마크에서 1위를 차지하며 화제를 일으킨…",
+      "one_line_kr": "알리바바가 베일에 싸여 있던 영상 생성 AI 모델 ‘해피호스(HappyHorse) 1.0’의 개발 주체라고 확인했다.알리바바는 10일 X를 통해 이번주 공개 직후 글로벌 벤치마크에서 1위를 차지하며 화제를 일으킨…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209109",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 18:06",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "알리바바, 화제의 영상 모델 '해피호스' 개발 확인...AI 조직 개편 후 첫 성과"
+    },
+    {
+      "id": "2026-04-12_0004",
+      "title": "텐센트, 로봇 파운데이션 모델 ‘HY-임바디드-0.5’ 공개",
+      "summary": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다. 텐센트도 공간을 인식하고 시간의 흐름 속에서 행동까지 수행할 수 있도록 설계된 로봇용 파운데이션 모델을 내놓았다.텐센트는 10일(현지시간) 현실 세계에서 작동하는 로봇과 에이전트를 위한 차세대 파운데이션 모델 ‘HY-임바디드-0.5(HY-Embodied-0.5)’를 공개했다. 기존 비전-언어 모델(VLM)의 한계를 넘어 실제 물리 환경에서의 인식·판단·행동까지 통합한 것이 핵심이다.기존 비전-언어…",
+      "one_line": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+      "one_line_kr": "이미지를 이해하는 데 그쳤던 AI가 이제 현실 세계에서 직접 판단하고 행동하는 단계로 진화하고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209113",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 17:09",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "텐센트, 로봇 파운데이션 모델 ‘HY-임바디드-0.5’ 공개"
+    },
+    {
+      "id": "2026-04-12_0005",
+      "title": "xAI, 콜로라도주 AI 규제에 소송…“주별 규제는 혁신 저해”",
+      "summary": "일론 머스크 CEO의 xAI가 미국 콜로라도주의 AI 규제법 시행을 막기 위해 소송을 제기했다.로이터는 9일(현지시간) xAI가 콜로라도 연방지방법원에 소장을 제출하고, 오는 6월 30일 시행 예정인 ‘상원 법안 24-205(SB 24-205)’의 효력을 중단해 달라고 요청했다고 보도했다.이 법안은 고용, 주거, 교육, 의료, 금융 등 주요 분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "one_line": "분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "one_line_kr": "분야에서 활용되는 ‘고위험 AI 시스템’에 대해 개발자의 정보 공개와 위험 완화 조치를 의무화하는 내용을 담고 있다.xAI는 이 법이 미국 헌법 수정 제1조를…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209115",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 16:42",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "xAI, 콜로라도주 AI 규제에 소송…“주별 규제는 혁신 저해”"
+    },
+    {
+      "id": "2026-04-12_0006",
+      "title": "코어위브, 앤트로픽과 AI 클라우드 계약 체결로 주가 급등",
+      "summary": "AI 클라우드 전문 코어위브가 앤트로픽에 대규모 컴퓨팅 자원을 공급하기로 하면서 주가가 급등했다. 코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지 않았지만, 인프라는 올해 안부터 차례로 구축·가동될 예정이다. 양사는 초기에는 단계적인 인프라 구축에 집중하고, 수요에 따라 협력 범위를 확대할 계획이다.이번 계약으로 코어위브는 주요 AI 모…",
+      "one_line": "코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지…",
+      "one_line_kr": "코어위브는 10일(현지시간) 앤트로픽과 다년간 계약을 체결하고, 자사 클라우드 인프라를 통해 ‘클로드(Claude)’ 계열 AI 모델 구동에 필요한 컴퓨팅 성능을 제공한다고 밝혔다.구체적인 계약 금액은 공개되지…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209110",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 16:21",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "코어위브, 앤트로픽과 AI 클라우드 계약 체결로 주가 급등"
+    },
+    {
+      "id": "2026-04-12_0007",
+      "title": "[AI 이슈트렌드] 종전 기대감 속 대통령 지지율·도심 늑대 출몰 등 상위권",
+      "summary": "AI타임스와 이스트에이드의 4월 둘째 주(4월3~9일) 이슈 분석 결과, 종전과 갈등 사이를 오가는 중동 정세와 이에 따른 경제 지표 변동이 상위권을 차지했다.이번 주도 가장 높은 검색량을 기록한 키워드 1, 2위는 ‘이란·중동 지정학적 위기(21.5%)’와 ‘트럼프 이란 갈등(16.2%)’이다.미국과 이란은 지난 7일 2주간의 휴전에 합의했으나 이행 방식을 둘러싼 이견으로 긴장감이 지속되고 있다. 특히 이스라엘의 레바논 공격을 두고 이란 측이 호르무즈 해협 재봉쇄 가능성을 시사하자, 트럼프 대통…",
+      "one_line": "AI타임스와 이스트에이드의 4월 둘째 주(4월3~9일) 이슈 분석 결과, 종전과 갈등 사이를 오가는 중동 정세와 이에 따른 경제 지표 변동이 상위권을 차지했다.이번 주도 가장 높은 검색량을 기록한 키워드 1,…",
+      "one_line_kr": "AI타임스와 이스트에이드의 4월 둘째 주(4월3~9일) 이슈 분석 결과, 종전과 갈등 사이를 오가는 중동 정세와 이에 따른 경제 지표 변동이 상위권을 차지했다.이번 주도 가장 높은 검색량을 기록한 키워드 1,…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209114",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 16:15",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AI 이슈트렌드] 종전 기대감 속 대통령 지지율·도심 늑대 출몰 등 상위권"
+    },
+    {
+      "id": "2026-04-12_0008",
+      "title": "스페이스X, xAI 합병으로 7.4조 손실 기록...\"우주에서 번 돈, AI에 투자\"",
+      "summary": "일론 머스크 CEO의 스페이스X가 xAI 합병으로 인해 지난해 50억달러(약 7조4300억원)에 달하는 손실을 기록한 것으로 알려졌다. 우주 사업의 수익을 AI에 집중 투자하는 모양새다.디 인포메이션은 9일(현지시간) 소식통을 인용, 스페이스X가 지난해 185억달러(약 27조4800억원) 이상의 매출을 올렸지만 50억달러의 손실을 기록했다고 보도했다.이는 스페이스X가 지난 2월 인수한 xAI 때문이다. xAI는 지난해 매달 10억달러 이상의 운영 비용을 소모했으나, 현재까지 가시적인 수익은 보고된…",
+      "one_line": "일론 머스크 CEO의 스페이스X가 xAI 합병으로 인해 지난해 50억달러(약 7조4300억원)에 달하는 손실을 기록한 것으로 알려졌다.",
+      "one_line_kr": "일론 머스크 CEO의 스페이스X가 xAI 합병으로 인해 지난해 50억달러(약 7조4300억원)에 달하는 손실을 기록한 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209111",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 11:58",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "스페이스X, xAI 합병으로 7.4조 손실 기록...\"우주에서 번 돈, AI에 투자\""
+    },
+    {
+      "id": "2026-04-12_0009",
+      "title": "[피지컬 AI 2026] NC·리얼월드, 차세대 RFM·월드모델 전략 제시",
+      "summary": "지난 9일 서울 코엑스에서 열린 '피지컬 AI 컨퍼런스 2026'에서 NC AI와 리얼월드가 기존 로봇 파운데이션 모델(RFM)의 한계를 극복한 차세대 모델과 전략을 공개해 주목을 받았다.■ NC AI, '배키+바르코' 결합 시너지…차세대 월드 모델 청사진 공개NC AI는 산업 특화 파운데이션 모델 '배키(VAETKI)' 기반 월드 파운데이션 모델(WFM)의 청사진을 발표했다. 장한용 NC AI 피지컬 AI 랩 실장은 기존 RFM의 한계로 '데이터 병목'을 지목했다.장 실장은 \"기존 룰 베이스나 …",
+      "one_line": "지난 9일 서울 코엑스에서 열린 '피지컬 AI 컨퍼런스 2026'에서 NC AI와 리얼월드가 기존 로봇 파운데이션 모델(RFM)의 한계를 극복한 차세대 모델과 전략을 공개해 주목을 받았다.■ NC AI,…",
+      "one_line_kr": "지난 9일 서울 코엑스에서 열린 '피지컬 AI 컨퍼런스 2026'에서 NC AI와 리얼월드가 기존 로봇 파운데이션 모델(RFM)의 한계를 극복한 차세대 모델과 전략을 공개해 주목을 받았다.■ NC AI,…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=209102",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 11:20",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[피지컬 AI 2026] NC·리얼월드, 차세대 RFM·월드모델 전략 제시"
+    },
+    {
+      "id": "2026-04-12_0010",
+      "title": "1분기 암호화폐 거래 식었다…월스트리트, 코인 거래소 실적 전망 줄하향",
+      "summary": "[디지털투데이 AI리포터] 암호화폐 거래가 2026년 초 들어 둔화하면서 월스트리트가 코인베이스를 비롯한 업계 전반의 1분기 실적 전망을 낮추고 있다. 11일 블록체인 매체 코인데스크에 따르면 바클레이스와 오펜하이머는 2분기 들어 거래량 약세를 반영해 추정치를 잇달아 하향 조정했다. 바클레이스는 코인베이스 투자의견을 낮추고 글로벌 암호화폐 거래 활동이 2023년 말 이후 가장 낮은 수준으로 떨어졌다고 진단했다. 단기간에 거래가 반등하지 않으면 코인베이스 수익성이 압박을 받을 것이라고도 봤다.코인베…",
+      "one_line": "[디지털투데이 AI리포터] 암호화폐 거래가 2026년 초 들어 둔화하면서 월스트리트가 코인베이스를 비롯한 업계 전반의 1분기 실적 전망을 낮추고 있다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 암호화폐 거래가 2026년 초 들어 둔화하면서 월스트리트가 코인베이스를 비롯한 업계 전반의 1분기 실적 전망을 낮추고 있다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656122",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 08:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "1분기 암호화폐 거래 식었다…월스트리트, 코인 거래소 실적 전망 줄하향"
+    },
+    {
+      "id": "2026-04-12_0011",
+      "title": "“클래리티법, 2026년 통과 가능성 30%”…은행권 반발이 변수",
+      "summary": "[디지털투데이 AI리포터] 미국 암호화폐 시장구조를 정비하는 클래리티 법안의 연내 통과 가능성이 30% 수준이라는 전망이 나왔다. 11일(이하 현지시간) 코인데스크에 따르면 암호화폐 마켓메이커 윈터뮤트의 정책 책임자 론 해먼드는 워싱턴에서 법안 추진 동력이 커지고 있지만 통과까지는 여전히 변수가 많다고 봤다.일부 의원들은 법안을 위원회에서 처리한 뒤 이르면 오는 20일 표결에 부치려 하고 있다. 다만 해먼드는 이런 일정이 수개월째 유동적이었다며, 진전은 있지만 넘어야 할 장애물이 남아 있다고 말했…",
+      "one_line": "[디지털투데이 AI리포터] 미국 암호화폐 시장구조를 정비하는 클래리티 법안의 연내 통과 가능성이 30% 수준이라는 전망이 나왔다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 미국 암호화폐 시장구조를 정비하는 클래리티 법안의 연내 통과 가능성이 30% 수준이라는 전망이 나왔다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656121",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:54",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "“클래리티법, 2026년 통과 가능성 30%”…은행권 반발이 변수"
+    },
+    {
+      "id": "2026-04-12_0012",
+      "title": "그레이스케일, 2분기 알트코인 검토 목록 축소…소비자 토큰 제외하고 AI 자산 추가",
+      "summary": "[디지털투데이 AI리포터] 그레이스케일이 2026년 2분기 투자상품 편입 검토 대상 암호화폐 목록을 36개에서 30개로 줄였다. 11일(현지시간) 블록체인 매체 비인크립토에 따르면 소비자 대상 암호화폐 프로젝트를 묶었던 부문은 이번 목록에서 빠졌고, 인공지능 관련 자산 비중은 더 커졌다.가장 큰 변화는 인공지능 부문 확대다. 그레이스케일은 2분기 목록에 인공지능 연계 자산 10개를 담았다. 직전 분기 7개에서 늘어난 규모다. 새로 포함된 자산은 패브릭 프로토콜, 카이트 AI, 베니스다. 플록, 그…",
+      "one_line": "[디지털투데이 AI리포터] 그레이스케일이 2026년 2분기 투자상품 편입 검토 대상 암호화폐 목록을 36개에서 30개로 줄였다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 그레이스케일이 2026년 2분기 투자상품 편입 검토 대상 암호화폐 목록을 36개에서 30개로 줄였다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656120",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:49",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "그레이스케일, 2분기 알트코인 검토 목록 축소…소비자 토큰 제외하고 AI 자산 추가"
+    },
+    {
+      "id": "2026-04-12_0013",
+      "title": "스페이스X, 50억달러 손실에도 비트코인 8285개 보유 유지",
+      "summary": "[디지털투데이 AI리포터] 스페이스X가 2025년 약 50억달러 손실을 기록했지만 비트코인 8285개는 그대로 보유한 것으로 나타났다. 11일 블록체인 매체 코인데스크에 따르면 이 물량은 코인베이스 프라임 수탁 계정에 보관돼 있으며 현재 가치는 6억300만달러다.스페이스X는 1년 전 약 80억달러 이익을 냈다. 당시 매출은 150억~160억달러로 추산됐다. 2025년 매출은 185억달러로 늘었지만, 2월 인수한 일론 머스크의 인공지능 기업 xAI 통합 비용이 매출을 넘어섰다.실적 악화에도 비트코인…",
+      "one_line": "[디지털투데이 AI리포터] 스페이스X가 2025년 약 50억달러 손실을 기록했지만 비트코인 8285개는 그대로 보유한 것으로 나타났다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 스페이스X가 2025년 약 50억달러 손실을 기록했지만 비트코인 8285개는 그대로 보유한 것으로 나타났다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656119",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:44",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "스페이스X, 50억달러 손실에도 비트코인 8285개 보유 유지"
+    },
+    {
+      "id": "2026-04-12_0014",
+      "title": "이더 머신·다이내믹스 계약 해지…15억달러 이더리움 상장 계획 중단",
+      "summary": "[디지털투데이 AI리포터] 이더리움 트레저리 상장을 추진하던 이더 머신과 다이내믹스가 사업결합 계약을 해지했다. 11일(이하 현지시간) 비인크립토에 따르면 계약 해지 효력은 4월 8일 발생했으며, 이더 머신은 불리한 시장 여건을 이유로 들었다.이로써 이더 머신의 상장 추진도 중단됐다. 이더 머신은 2025년 7월 상장 계획을 공개하며 15억달러 이상의 확약 자본과 40만ETH 이상의 초기 트레저리를 목표로 제시했다. 당시 판테라캐피털, 크라켄, 블록체인닷컴 등이 거래를 지원했다.미국 증권거래위원회…",
+      "one_line": "이더 머신은 2025년 7월 상장 계획을 공개하며 15억달러 이상의 확약 자본과 40만ETH 이상의 초기 트레저리를 목표로 제시했다.",
+      "one_line_kr": "이더 머신은 2025년 7월 상장 계획을 공개하며 15억달러 이상의 확약 자본과 40만ETH 이상의 초기 트레저리를 목표로 제시했다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656118",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:40",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "이더 머신·다이내믹스 계약 해지…15억달러 이더리움 상장 계획 중단"
+    },
+    {
+      "id": "2026-04-12_0015",
+      "title": "텔레그램 창업자 “메신저 푸시 알림, 프라이버시 공격 경로 될 수 있다”",
+      "summary": "[디지털투데이 AI리포터] 파벨 두로프 텔레그램 공동창업자는 메신저 푸시 알림이 사용자 프라이버시를 해치는 중대한 취약점이 될 수 있다고 밝혔다. 11일(현지시간) 코인텔레그래프에 따르면 푸시 알림 데이터가 기기에 저장되면 메시지와 메신저 앱을 삭제한 뒤에도 정보가 복구될 수 있다.두로프의 발언은 최근 수사기관이 아이폰 알림 로그를 통해 시그널 사용자의 삭제된 메시지를 확보했다는 보도 이후 나왔다. 그는 404미디어가 처음 보도한 사례를 언급하며 미국 연방수사국(FBI)이 애플 아이폰의 기기 알림…",
+      "one_line": "[디지털투데이 AI리포터] 파벨 두로프 텔레그램 공동창업자는 메신저 푸시 알림이 사용자 프라이버시를 해치는 중대한 취약점이 될 수 있다고 밝혔다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 파벨 두로프 텔레그램 공동창업자는 메신저 푸시 알림이 사용자 프라이버시를 해치는 중대한 취약점이 될 수 있다고 밝혔다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656117",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:37",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "텔레그램 창업자 “메신저 푸시 알림, 프라이버시 공격 경로 될 수 있다”"
+    },
+    {
+      "id": "2026-04-12_0016",
+      "title": "美 연준, 2조달러 프라이빗 크레딧 점검…은행권 노출도 조사",
+      "summary": "[디지털투데이 AI리포터] 미국 연방준비제도이사회가 대형 은행들을 상대로 프라이빗 크레딧 등 비은행 대출 관련 익스포저 점검에 나섰다. 11일 코인포스트에 따르면 연준은 주요 은행에 프라이빗 크레딧 펀드 대상 대출 관여 현황을 상세히 제출하라고 요구했다.이번 조사는 환매 요청 급증과 부실채권 증가가 금융시스템 전반으로 번질 가능성을 점검하기 위한 것이다. 연준은 통상적인 감독 절차의 하나로 프라이빗 크레딧 펀드가 은행에서 조달한 부채 구조와 담보 연계 위험을 들여다보고 있다.프라이빗 크레딧은 은행…",
+      "one_line": "[디지털투데이 AI리포터] 미국 연방준비제도이사회가 대형 은행들을 상대로 프라이빗 크레딧 등 비은행 대출 관련 익스포저 점검에 나섰다.",
+      "one_line_kr": "[디지털투데이 AI리포터] 미국 연방준비제도이사회가 대형 은행들을 상대로 프라이빗 크레딧 등 비은행 대출 관련 익스포저 점검에 나섰다.",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=656099",
+      "source": "디지털투데이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 21:53",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "美 연준, 2조달러 프라이빗 크레딧 점검…은행권 노출도 조사"
+    },
+    {
+      "id": "2026-04-12_0017",
+      "title": "美·이란, 핵심쟁점 이견 '마라톤 협상'…호르무즈 개방·레바논 휴전 대립",
+      "summary": "미국과 이란이 약 반세기 만에 성사된 고위급 회담에서 종전 협상을 이어가고 있지만, 핵심 쟁점을 둘러싼 입장차로 난항을 겪고 있다. 11일(현지시간) 이슬라마바드에서 열린 이번 회담에는 JD 밴스 미국 부통령과 모하메드 바게르 갈리바프 이란 의회 의장이 참석했으며, 셰",
+      "one_line": "미국과 이란이 약 반세기 만에 성사된 고위급 회담에서 종전 협상을 이어가고 있지만, 핵심 쟁점을 둘러싼 입장차로 난항을 겪고 있다.",
+      "one_line_kr": "미국과 이란이 약 반세기 만에 성사된 고위급 회담에서 종전 협상을 이어가고 있지만, 핵심 쟁점을 둘러싼 입장차로 난항을 겪고 있다.",
+      "url": "https://www.etnews.com/20260412000003",
+      "source": "전자신문",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-12 07:35",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "美·이란, 핵심쟁점 이견 '마라톤 협상'…호르무즈 개방·레바논 휴전 대립"
+    },
+    {
+      "id": "2026-04-12_0018",
+      "title": "[AI 주간브리핑] AI 양강구도 균열… 자국 모델로 승부 거는 국가들",
+      "summary": "[편집자 주] 한 주간 주요 인공지능(AI) 동향을 THE AI가 정리해 드립니다. [AI 주간브리핑]을 보시며 주요 AI 이슈를 만나보세요. 본문 내 제목을 클릭하면 자세한 기사 내용을 보실 수 있습니다.같은 날, 같은 무대에 두 개의 멀티모달 AI가 등장했습니다. 하나는 메타의 ‘뮤즈 스파크’, 다른 하나는 LG AI연구원의 ‘엑사원 4.5’였습니다. 두 모델 모두 텍스트와 이미지를 처음부터 함께 처리하는 네이티브 멀티모달 설계를 내세웠지만, 지향점은 달랐습니다. 메타는 개인의 일상을, LG는…",
+      "one_line": "인공지능(AI) 동향을 THE AI가 정리해 드립니다.",
+      "one_line_kr": "인공지능(AI) 동향을 THE AI가 정리해 드립니다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=20535",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-04-11 06:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "[AI 주간브리핑] AI 양강구도 균열… 자국 모델로 승부 거는 국가들"
+    },
+    {
+      "id": "2026-04-12_0019",
+      "title": "Healthcare",
+      "summary": "Explore how clinicians use ChatGPT to support diagnosis, documentation, and patient care with secure, HIPAA-compliant AI tools.",
+      "one_line": "Explore how clinicians use ChatGPT to support diagnosis, documentation, and patient care with secure, HIPAA-compliant…",
+      "one_line_kr": "임상의가 ChatGPT를 사용하여 안전한 HIPAA 준수를 통해 진단, 문서화, 환자 치료를 지원하는 방법을 알아보세요.",
+      "url": "https://openai.com/academy/healthcare",
+      "source": "OpenAI (Sora)",
+      "category": "영상AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-10 09:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "헬스케어"
+    },
+    {
+      "id": "2026-04-12_0020",
+      "title": "Using skills",
+      "summary": "Learn how to create and use ChatGPT skills to build reusable workflows, automate recurring tasks, and ensure consistent, high-quality outputs.",
+      "one_line": "Learn how to create and use ChatGPT skills to build reusable workflows, automate recurring tasks, and ensure…",
+      "one_line_kr": "재사용 가능한 워크플로를 구축하고, 반복 작업을 자동화하고, 다음을 보장하기 위해 ChatGPT 기술을 만들고 사용하는 방법을 알아보세요.",
+      "url": "https://openai.com/academy/skills",
+      "source": "OpenAI (Sora)",
+      "category": "영상AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-10 09:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "스킬 사용"
+    },
+    {
+      "id": "2026-04-12_0021",
+      "title": "Writing with ChatGPT",
+      "summary": "Learn how to use ChatGPT for writing to draft, revise, and refine content with clear structure, tone, and intent.",
+      "one_line": "Learn how to use ChatGPT for writing to draft, revise, and refine content with clear structure, tone, and intent.",
+      "one_line_kr": "명확한 구조, 어조, 의도로 콘텐츠 초안을 작성하고, 수정하고, 개선하기 위해 ChatGPT를 사용하는 방법을 알아보세요.",
+      "url": "https://openai.com/academy/writing",
+      "source": "OpenAI (Sora)",
+      "category": "영상AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-10 09:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "ChatGPT로 글쓰기"
+    },
+    {
+      "id": "2026-04-12_0022",
+      "title": "ChatGPT for marketing teams",
+      "summary": "Learn how marketing teams use ChatGPT to plan campaigns, generate content, analyze performance, and move from ideas to execution faster.",
+      "one_line": "Learn how marketing teams use ChatGPT to plan campaigns, generate content, analyze performance, and move from ideas to…",
+      "one_line_kr": "마케팅 팀이 ChatGPT를 사용하여 캠페인을 계획하고, 콘텐츠를 생성하고, 성과를 분석하고, 아이디어에서 다음 단계로 이동하는 방법을 알아보세요.",
+      "url": "https://openai.com/academy/marketing",
+      "source": "OpenAI (Sora)",
+      "category": "영상AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-10 09:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "마케팅팀을 위한 ChatGPT"
+    },
+    {
+      "id": "2026-04-12_0023",
+      "title": "Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home",
+      "summary": "The OpenAI CEO's new blog post responds to both an apparent attack on his home and an in-depth New Yorker profile raising questions about his trustworthiness.",
+      "one_line": "The OpenAI CEO's new blog post responds to both an apparent attack on his home and an in-depth New Yorker profile…",
+      "one_line_kr": "OpenAI CEO의 새 블로그 게시물은 그의 집에 대한 명백한 공격과 심층적인 뉴요커 프로필에 대한 답변입니다.",
+      "url": "https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-12 02:18",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "샘 알트먼(Sam Altman)은 자신의 집에 공격을 가한 후 '발화'한 뉴요커 기사에 응답했습니다."
+    },
+    {
+      "id": "2026-04-12_0024",
+      "title": "Ideogram AI image generator review - TechRadar",
+      "summary": "Ideogram AI image generator review TechRadar",
+      "one_line": "Ideogram AI image generator review TechRadar",
+      "one_line_kr": "Ideogram AI 이미지 생성기 리뷰 TechRadar",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVDN4V0E3alNpSllraDNhbHNQcU5ha1VHQlFrOC1yN0wzeFoxTTYwMDEwS3FOd2htOXpqZ2R4TzhwSlByak9yTzE4TnpHbDU0NkhERUc4TmFWMnpaSG5QWUppUEZ5alN5TEZTdUtNc3l2enpnQUlnSHluTk8wN1lCODBqZjNoWHNlQWc?oc=5",
+      "source": "Ideogram News",
+      "category": "이미지·디자인AI",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2024-07-22 16:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Ideogram AI 이미지 생성기 검토 - TechRadar"
+    },
+    {
+      "id": "2026-04-12_0025",
+      "title": "How Will Figma's AI Tools Change Design in 2024? - Analytics India Magazine",
+      "summary": "How Will Figma's AI Tools Change Design in 2024? Analytics India Magazine",
+      "one_line": "How Will Figma's AI Tools Change Design in 2024?",
+      "one_line_kr": "Figma의 AI 도구는 2024년에 디자인을 어떻게 바꿀까요?",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3lkaDRwaGozYzVXSDNrM2ZpYTNwRUNvZVBQU0R5ZWlwdVhyOVhVQjR6X0VTc2c4bjY0cWVScmdGZV9HdjZvSlBQLWo0Z2wzVFV1bU1NYlFRbGRBdXNXU3BtVFViQloxb3B4WTU5bVUtdzJHWUFNRjZzWjlfM3pjVzl4Tm9hN25yZ1U0NF8yX2doTXBDQVRoNHBkYi02MlBYbmd1dFBPVmw0YTdpWV9Tcw?oc=5",
+      "source": "Figma AI News",
+      "category": "이미지·디자인AI",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2025-12-24 17:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Figma의 AI 도구는 2024년에 디자인을 어떻게 바꿀까요? - Analytics India 매거진"
+    },
+    {
+      "id": "2026-04-12_0026",
+      "title": "When Models Know More Than They Say: Probing Analogical Reasoning in LLMs",
+      "summary": "Analogical reasoning is a core cognitive faculty essential for narrative understanding. While LLMs perform well when surface and structural cues align, they struggle in cases where an analogy is not apparent on the surface but requires latent information, suggesting limitations i…",
+      "one_line": "While LLMs perform well when surface and structural cues align, they struggle in cases where an analogy is not apparent…",
+      "one_line_kr": "LLM은 표면적 단서와 구조적 단서가 일치할 때 잘 수행되지만 유사점이 명확하지 않은 경우에는 어려움을 겪습니다.",
+      "url": "https://tldr.takara.ai/p/2604.03877",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-04-05 07:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "모델이 말하는 것보다 더 많은 것을 알고 있는 경우: LLM에서 유추 추론 조사"
+    },
+    {
+      "id": "2026-04-12_0027",
+      "title": "MVis-Fold: A Three-Dimensional Microvascular Structure Inference Model for Super-Resolution Ultrasound",
+      "summary": "Super-resolution ultrasound (SRUS) technology has overcome the resolution limitations of conventional ultrasound, enabling micrometer-scale imaging of microvasculature. However, due to the nature of imaging principles, three-dimensional reconstruction of microvasculature from SRU…",
+      "one_line": "Super-resolution ultrasound (SRUS) technology has overcome the resolution limitations of conventional ultrasound,…",
+      "one_line_kr": "초고해상도 초음파(SRUS) 기술은 기존 초음파의 해상도 한계를 극복했습니다.",
+      "url": "https://tldr.takara.ai/p/2604.04477",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-04-06 15:59",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "MVis-Fold: 초해상도 초음파를 위한 3차원 미세혈관 구조 추론 모델"
+    },
+    {
+      "id": "2026-04-12_0028",
+      "title": "Jeffreys Flow: Robust Boltzmann Generators for Rare Event Sampling via Parallel Tempering Distillation",
+      "summary": "Sampling physical systems with rough energy landscapes is hindered by rare events and metastable trapping. While Boltzmann generators already offer a solution, their reliance on the reverse Kullback--Leibler divergence frequently induces catastrophic mode collapse, missing specif…",
+      "one_line": "Sampling physical systems with rough energy landscapes is hindered by rare events and metastable trapping.",
+      "one_line_kr": "에너지 환경이 거친 물리적 시스템 샘플링은 희귀한 사건과 준안정 트래핑으로 인해 방해를 받습니다.",
+      "url": "https://tldr.takara.ai/p/2604.05303",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-04-07 10:17",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Jeffreys Flow: 병렬 템퍼링 증류를 통한 희귀 사건 샘플링을 위한 강력한 볼츠만 생성기"
+    },
+    {
+      "id": "2026-04-12_0029",
+      "title": "SCT-MOT: Enhancing Air-to-Air Multiple UAVs Tracking with Swarm-Coupled Motion and Trajectory Guidance",
+      "summary": "Air-to-air tracking of swarm UAVs presents significant challenges due to the complex nonlinear group motion and weak visual cues for small objects, which often cause detection failures, trajectory fragmentation, and identity switches. Although existing methods have attempted to i…",
+      "one_line": "Air-to-air tracking of swarm UAVs presents significant challenges due to the complex nonlinear group motion and weak…",
+      "one_line_kr": "군집 UAV의 공대공 추적은 복잡한 비선형 그룹 모션과 약한…",
+      "url": "https://tldr.takara.ai/p/2604.06883",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-04-08 18:42",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "SCT-MOT: 군집 결합 모션 및 궤도 유도를 통해 공대공 다중 UAV 추적 강화"
+    },
+    {
+      "id": "2026-04-12_0030",
+      "title": "Google’s Gemini AI can answer your questions with 3D models and simulations - The Verge",
+      "summary": "Google’s Gemini AI can answer your questions with 3D models and simulations The Verge",
+      "one_line": "Google’s Gemini AI can answer your questions with 3D models and simulations The Verge",
+      "one_line_kr": "Google의 Gemini AI는 3D 모델과 시뮬레이션을 통해 질문에 답할 수 있습니다.",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQc2g1SEdReUFQbVQ0T2dxbHpYb3FhV0U3UmktQ1d3RW54Ym5nbUJvaWpWZHEwcS1keTlCbVdScUxmMmgxejg5ZWt6VFNzTFdpRVp1ZjFUVGVTUlBGUHhhNWRVTHJ3eVRHWEw2aHZCMmRYekctVC1FSGVjTkRPRVp0dQ?oc=5",
+      "source": "Google Gemini News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-04-10 02:57",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Google의 Gemini AI는 3D 모델과 시뮬레이션을 통해 귀하의 질문에 답할 수 있습니다 - The Verge"
+    },
+    {
+      "id": "2026-04-12_0031",
+      "title": "Introducing Claude Opus 4.5 - Anthropic",
+      "summary": "Introducing Claude Opus 4.5 Anthropic",
+      "one_line": "Introducing Claude Opus 4.5 Anthropic",
+      "one_line_kr": "Claude Opus 4.5 Anthropic 소개",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE84OWN3YndfcE4tUnBWQ01XX0RYWWIzVTJienN4Q2NTY0xOMF9Ra1BEOWR4WW8xdGRfck5KdHVjZXZObDVObTd6RE4xMklVMTlJZGJ6ZndTT3JnUQ?oc=5",
+      "source": "Claude AI News",
+      "category": "LLM",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2025-11-24 17:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Claude Opus 4.5 소개 - Anthropic"
+    },
+    {
+      "id": "2026-04-12_0032",
+      "title": "Your harness, your memory",
+      "summary": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere. These harnesses are intimately tied to agent memory. If you used a closed harness - especially if it&#x2019;s behind a proprietary API - you are choosing to yield control of your agent…",
+      "one_line": "Agent harnesses are becoming the dominant way to build agents, and they are not going anywhere.",
+      "one_line_kr": "에이전트 하네스는 에이전트를 구축하는 주요 방법이 되고 있으며 아무데도 가지 않을 것입니다.",
+      "url": "https://blog.langchain.com/your-harness-your-memory/",
+      "source": "LangChain Blog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-04-11 23:52",
+      "collect_date": "2026-04-12",
+      "thumbnail": "",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "당신의 하네스, 당신의 기억"
+    },
+    {
+      "id": "2026-04-12_0033",
+      "title": "Boeing’s Moon Rocket Faces Uncertain Future Under Trump’s NASA",
+      "summary": "NASA’s Boeing Co. rocket just propelled astronauts farther into space than ever before. The Trump administration is already looking to competitors for a replacement.",
+      "one_line": "rocket just propelled astronauts farther into space than ever before.",
+      "one_line_kr": "로켓은 우주비행사를 그 어느 때보다 더 멀리 우주로 밀어냈습니다.",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-11/boeing-s-moon-rocket-faces-uncertain-future-under-trump-s-nasa",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 22:20",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iOU5Z2YMzyPU/v1/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "보잉의 달 로켓, 트럼프의 NASA 하에서 불확실한 미래에 직면하다"
+    },
+    {
+      "id": "2026-04-12_0034",
+      "title": "Japan Bets $16 Billion to Propel Rapidus in Global AI Chip Race",
+      "summary": "Japan approved ¥631.5 billion ($4 billion) in additional subsidies to quicken Rapidus Corp.’s entry into the high-stakes AI chipmaking arena, ramping up support for a project widely regarded as a long shot.",
+      "one_line": "Japan approved ¥631.5 billion ($4 billion) in additional subsidies to quicken Rapidus Corp.’s entry into the…",
+      "one_line_kr": "일본은 Rapidus Corp.의 시장 진출을 가속화하기 위해 6,315억 엔(40억 달러)의 추가 보조금을 승인했습니다.",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-11/japan-bets-16-billion-to-propel-startup-rapidus-into-ai-chips",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 13:22",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibDMIUADKHx8/v0/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "일본, 글로벌 AI 칩 경쟁에서 Rapidus 추진에 160억 달러 투자"
+    },
+    {
+      "id": "2026-04-12_0035",
+      "title": "OpenAI Accuses Musk of ‘Ambush’ as $100 Billion-Plus Trial Looms",
+      "summary": "OpenAI says Elon Musk has suddenly changed direction on what he’s seeking in his lawsuit against the startup in a “legal ambush” just weeks before trial.",
+      "one_line": "OpenAI says Elon Musk has suddenly changed direction on what he’s seeking in his lawsuit against the startup in a…",
+      "one_line_kr": "OpenAI는 Elon Musk가 스타트업을 상대로 한 소송에서 자신이 추구하는 방향을 갑자기 바꾸었다고 말합니다.",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-11/openai-accuses-musk-of-ambush-as-100-billion-plus-trial-looms",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 14:13",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iDCSDs42HZPI/v0/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "OpenAI, 머스크가 1000억 달러 규모의 시험이 다가옴에 따라 '매복'했다고 비난"
+    },
+    {
+      "id": "2026-04-12_0036",
+      "title": "Artemis II Safely Returns to Earth After Historic Moon Mission",
+      "summary": "NASA’s Artemis crew of four astronauts returned to Earth and splashed down in the Pacific Ocean, capping humanity’s first return to the moon in more than 50 years. (Source: Bloomberg)",
+      "one_line": "NASA’s Artemis crew of four astronauts returned to Earth and splashed down in the Pacific Ocean, capping humanity’s…",
+      "one_line_kr": "4명의 우주 비행사로 구성된 NASA의 아르테미스 승무원은 지구로 돌아와 태평양에 추락하여 인류의...",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-11/artemis-ii-safely-returns-to-earth-after-historic-trip-video",
+      "source": "Bloomberg Tech",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 09:29",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ie1VvODQXicw/v3/1200x-1.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "아르테미스 2세는 역사적인 달 임무를 마치고 안전하게 지구로 귀환합니다"
+    },
+    {
+      "id": "2026-04-12_0037",
+      "title": "‘Crimson Desert’ Is a Cat Dad Simulator",
+      "summary": "Step into the shoes of the strongest, goodest boy in a game that is beautiful, baffling, and impossible to put down.",
+      "one_line": "Step into the shoes of the strongest, goodest boy in a game that is beautiful, baffling, and impossible to put down.",
+      "one_line_kr": "아름답고 당혹스럽고 내려놓을 수 없는 게임에서 가장 강하고 착한 소년의 입장이 되어 보세요.",
+      "url": "https://www.wired.com/story/crimson-desert-is-a-cat-dad-simulator/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 21:30",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://media.wired.com/photos/69d91ec24fbd3a67c34041ad/master/pass/Crimson-Desert-Review-Gear-07.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "'진홍사막'은 고양이 아빠 시뮬레이터입니다"
+    },
+    {
+      "id": "2026-04-12_0038",
+      "title": "Zuvi ColorBox Review: A Hair Dye Printer That Struggles",
+      "summary": "This hair dye printer promises hundreds of shades. It couldn't even manage two.",
+      "one_line": "This hair dye printer promises hundreds of shades.",
+      "one_line_kr": "이 머리 염색 프린터는 수백 가지 색상을 약속합니다.",
+      "url": "https://www.wired.com/review/zuvi-colorbox/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 21:11",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://media.wired.com/photos/69d980c64fbd3a67c3404b7c/master/pass/Review--Zuvi-ColorBox.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Zuvi ColorBox 검토: 고군분투하는 머리 염색 프린터"
+    },
+    {
+      "id": "2026-04-12_0039",
+      "title": "MacBook Neo vs. MacBook Air: Which One Should You Buy?",
+      "summary": "After conducting long-term testing on both the MacBook Neo and MacBook Air, I have a good idea who should buy which laptop.",
+      "one_line": "After conducting long-term testing on both the MacBook Neo and MacBook Air, I have a good idea who should buy which…",
+      "one_line_kr": "MacBook Neo와 MacBook Air 모두에서 장기간 테스트를 진행한 결과, 어떤 제품을 구매해야 할지 잘 알 수 있었습니다…",
+      "url": "https://www.wired.com/story/macbook-neo-vs-macbook-air/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 20:30",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://media.wired.com/photos/69d92fd76de370806bb16143/master/pass/macbook-neo-air-top.JPG",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "MacBook Neo와 MacBook Air: 어느 것을 구매해야 할까요?"
+    },
+    {
+      "id": "2026-04-12_0040",
+      "title": "Best Electric Cargo Bikes (2026): Urban Arrow, Lectric, Tern, and More",
+      "summary": "You don't need a car to tote around kids and cup holders. I rode cargo ebikes for miles to find the best one for your buck.",
+      "one_line": "You don't need a car to tote around kids and cup holders.",
+      "one_line_kr": "아이들과 컵 홀더를 운반하기 위해 자동차가 필요하지 않습니다.",
+      "url": "https://www.wired.com/story/best-electric-cargo-bikes/",
+      "source": "Wired AI",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-04-11 20:00",
+      "collect_date": "2026-04-12",
+      "thumbnail": "https://media.wired.com/photos/69d91d304fbd3a67c34041a7/master/pass/The-Best-Electric-Cargo-Bikes-for-Hauling-Your-Life-Around.jpg",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "최고의 전기 화물 자전거(2026): Urban Arrow, Lectric, Tern 등"
+    },
     {
       "id": "2026-04-11_0000",
       "title": "구글이 ‘제미나이’에 ‘노트북LM’를 실시간 동기화한 이유",

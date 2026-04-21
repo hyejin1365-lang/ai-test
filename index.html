@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" data-theme="light">
+<html lang="ko" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,111 +10,94 @@
 </head>
 <body>
 
-<!-- ══ 헤더 ══════════════════════════════════════════════ -->
 <header id="siteHeader">
-  <div class="hd-inner">
-    <div class="hd-brand">
-      <div class="hd-icon">✦</div>
-      <div>
-        <div class="hd-title">AI 트렌드</div>
-        <div class="hd-sub" id="updateTime">로딩 중…</div>
-      </div>
-    </div>
-    <div class="hd-right">
-      <button class="hd-theme-btn" id="themeBtn" title="다크모드">🌙</button>
+  <!-- 제목 행 -->
+  <div class="header-row">
+    <h1>AI 트렌드</h1>
+    <div class="header-actions">
+      <button class="hd-btn" id="themeBtn" title="라이트/다크모드">☀️</button>
     </div>
   </div>
 
-  <!-- 필터 바 — 참고앱 방식 -->
-  <div class="filter-bar" id="filterBar">
+  <!-- 수집 정보 -->
+  <div class="collect-info" id="updateTime">로딩 중…</div>
 
-    <!-- 소스 -->
+  <!-- 필터 영역 -->
+  <div class="filters">
+
+    <!-- 소스 탭 -->
     <div class="filter-group">
-      <span class="filter-group-label">소스</span>
-      <div class="filter-chips" id="sourceChips">
-        <button class="fchip active" data-filter="source" data-val="전체">전체</button>
+      <label>소스</label>
+      <div class="filter-tabs" id="sourceTabs">
+        <button class="active" data-source="all" onclick="selectSource('all',this)">전체</button>
       </div>
     </div>
 
-    <!-- 기간 -->
-    <div class="filter-group">
-      <span class="filter-group-label">기간</span>
-      <div class="filter-chips">
-        <button class="fchip active" data-filter="period" data-val="전체">전체</button>
-        <button class="fchip" data-filter="period" data-val="오늘">오늘</button>
-        <button class="fchip" data-filter="period" data-val="이번주">이번주</button>
-        <button class="fchip" data-filter="period" data-val="이번달">이번달</button>
+    <!-- 기간 / 분류 / 정렬 / 마이너 / 보기 -->
+    <div class="filter-inline-row">
+      <div class="filter-group">
+        <label>기간</label>
+        <select id="daysFilter" onchange="applyFilters()">
+          <option value="1">오늘</option>
+          <option value="7" selected>이번주</option>
+          <option value="30">이번달</option>
+          <option value="365">전체</option>
+        </select>
       </div>
-    </div>
 
-    <!-- 분류 -->
-    <div class="filter-group">
-      <span class="filter-group-label">분류</span>
-      <div class="filter-chips">
-        <button class="fchip active" data-filter="type" data-val="전체">전체</button>
-        <button class="fchip" data-filter="type" data-val="모델출시">모델출시</button>
-        <button class="fchip" data-filter="type" data-val="API변경">API변경</button>
-        <button class="fchip" data-filter="type" data-val="기능추가">기능추가</button>
-        <button class="fchip" data-filter="type" data-val="가격변경">가격변경</button>
-        <button class="fchip" data-filter="type" data-val="도구출시">도구출시</button>
+      <div class="filter-group">
+        <label>분류</label>
+        <select id="categoryFilter" onchange="applyFilters()">
+          <option value="all">전체</option>
+          <option value="모델출시">모델출시</option>
+          <option value="API변경">API변경</option>
+          <option value="기능추가">기능추가</option>
+          <option value="가격변경">가격변경</option>
+          <option value="도구출시">도구출시</option>
+        </select>
       </div>
-    </div>
 
-    <!-- 정렬 / 보기 -->
-    <div class="filter-group filter-group-right">
-      <div class="filter-chips">
-        <button class="fchip active" data-filter="sort" data-val="latest">최신순</button>
-        <button class="fchip" data-filter="sort" data-val="hot">관심도순 🔥</button>
+      <div class="filter-group">
+        <label>정렬</label>
+        <select id="sortFilter" onchange="applyFilters()">
+          <option value="date">최신순</option>
+          <option value="heat">관심도순 🔥</option>
+        </select>
       </div>
+
       <label class="minor-toggle">
-        <input type="checkbox" id="minorToggle"> 마이너 포함
+        <input type="checkbox" id="showMinor" onchange="applyFilters()">
+        마이너 포함
       </label>
-      <div class="view-btns">
-        <button class="view-btn active" id="viewCard" title="카드 보기">📋 카드</button>
-        <button class="view-btn" id="viewList" title="리스트 보기">📝 리스트</button>
+
+      <div class="view-group">
+        <label>보기</label>
+        <div class="view-btns">
+          <button class="view-btn active" id="btnCard">📋 카드</button>
+          <button class="view-btn" id="btnList">📝 리스트</button>
+        </div>
       </div>
     </div>
 
   </div>
 </header>
 
-<!-- ══ 메인 ══════════════════════════════════════════════ -->
-<main id="mainContent">
-
-  <!-- 결과 카운트 -->
-  <div class="result-bar">
-    <span id="resultCount">로딩 중…</span>
+<main id="mainArea">
+  <div id="loadingWrap" class="loading-wrap">
+    <div class="spinner"></div>
+    <span>데이터 불러오는 중…</span>
   </div>
-
-  <!-- 로딩 -->
-  <div class="skeleton-wrap" id="loadingSkeleton">
-    <div class="skeleton-row"></div>
-    <div class="skeleton-row"></div>
-    <div class="skeleton-row"></div>
-    <div class="skeleton-row"></div>
-    <div class="skeleton-row"></div>
+  <div id="errorWrap" class="error-wrap" style="display:none">
+    <span>⚠️</span>
+    <p id="errorMsg">데이터를 불러오지 못했어요.</p>
   </div>
-
-  <!-- 에러 -->
-  <div class="error-card" id="errorBox" style="display:none">
-    <i>⚠️</i>
-    <div><strong>데이터를 불러오지 못했어요</strong><pre id="errorMsg"></pre></div>
-  </div>
-
-  <!-- 카드 뷰 -->
-  <div class="card-grid" id="cardGrid"></div>
-
-  <!-- 리스트 뷰 -->
-  <div class="news-list" id="newsList" style="display:none"></div>
-
+  <div id="updatesList"></div>
 </main>
 
-<!-- ══ 푸터 ══════════════════════════════════════════════ -->
 <footer class="site-footer">
   AI 트렌드 · 매일 자동 수집 · RSS + 공식 Changelog
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

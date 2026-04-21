@@ -1,595 +1,283 @@
 'use strict';
 /* ═══════════════════════════════════════════════════════════
-   AI 트렌드 대시보드  app.js  v9
-   - 오늘 날짜 기사만 피드에 표시 (이전 날짜 기사 숨김)
-   - 핵심 인사이트: 구체적·실용적 서술문
-   - 주간/월간: 내용 중심 (highlights, cat_highlights, keywords)
+   AI 트렌드  app.js  v13
+   참고앱(ai-trend.hamsterapp.net) 구조 완전 재구성
+   - 소스 / 기간 / 분류 / 정렬 / 보기 필터
+   - 카드 뷰 + 리스트 뷰
+   - 다크모드
 ═══════════════════════════════════════════════════════════ */
 
-/* ── 전역 상태 ────────────────────────────────────────── */
-let TODAY_DATA   = null;
-let WEEKLY_DATA  = null;
-let MONTHLY_DATA = null;
+/* ── 전역 상태 ─────────────────────────────────────────── */
+let ALL_ITEMS = [];       // 전체 아이템 (날짜 무관)
+let DATA_DATE = '';
 
-let ALL_ITEMS    = [];   // 오늘 날짜 기사만
-let KEYWORDS     = [];
-let CAT_STATS    = {};
-let SOURCE_STATS = [];
-let DAILY_SUM    = null;
-let DATA_DATE    = '';   // ai_news.json 기준 날짜 (YYYY-MM-DD)
-
-let curCat    = '전체';
-let curLang   = 'all';
-let curSearch = '';
-
-let chartCat, chartWeekly, chartMonthly;
-
-/* ── 상수 ─────────────────────────────────────────────── */
-const CAT_ORDER  = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','AI법률','논문','비즈니스'];
-const CAT_FILTER = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI','AI법률'];
-
-const CAT_COLOR = {
-  '콘텐츠':'#e53e3e', '영상AI':'#f97316',
-  '이미지·디자인AI':'#ec4899', 'LLM':'#8b5cf6',
-  '개발AI':'#2563eb', 'AI법률':'#0d9488', '논문':'#7c3aed', '비즈니스':'#16a34a',
-};
-const CAT_EMOJI = {
-  '콘텐츠':'📰','영상AI':'🎬','이미지·디자인AI':'🖼️',
-  'LLM':'🧠','개발AI':'💻','AI법률':'⚖️','논문':'📄','비즈니스':'📊',
+const filters = {
+  source: '전체',
+  period: '전체',
+  type:   '전체',
+  sort:   'latest',
+  minor:  false,
+  view:   'card',
 };
 
-/* badge → CSS class + label */
-const BADGE = {
-  'kr-news': { cls:'badge-kr',   lbl:'국내'     },
-  official:  { cls:'badge-off',  lbl:'공식'     },
-  crawled:   { cls:'badge-off',  lbl:'공식블로그'},
-  news:      { cls:'badge-news', lbl:'뉴스'     },
-  gnews:     { cls:'badge-gn',   lbl:'뉴스집계' },
-  paper:     { cls:'badge-paper',lbl:'논문'     },
-  tool:      { cls:'badge-tool', lbl:'도구'     },
+/* ── 번역 우선순위 ─────────────────────────────────────── */
+function bestText(item) {
+  const isKo = item.lang === 'ko';
+  if (isKo) return item.one_line || item.title || '';
+  const kr = (item.one_line_kr || '').trim();
+  const isSame = kr === item.one_line || kr === item.title;
+  if (kr && !isSame) return kr;
+  const tkr = (item.title_kr || '').trim();
+  if (tkr && tkr !== item.title) return tkr;
+  return item.one_line || item.title || '';
+}
+
+/* ── 분류(type) 표시 설정 ──────────────────────────────── */
+const TYPE_META = {
+  '모델출시': { color: '#8b5cf6', bg: '#f5f3ff', emoji: '🤖' },
+  'API변경':  { color: '#0ea5e9', bg: '#f0f9ff', emoji: '🔧' },
+  '기능추가': { color: '#10b981', bg: '#f0fdf4', emoji: '✨' },
+  '가격변경': { color: '#f59e0b', bg: '#fffbeb', emoji: '💰' },
+  '도구출시': { color: '#ef4444', bg: '#fff1f2', emoji: '🚀' },
+  '뉴스':     { color: '#6b7280', bg: '#f9fafb', emoji: '📰' },
+  '논문':     { color: '#7c3aed', bg: '#faf5ff', emoji: '📄' },
 };
 
-/* ════════════════════════════════════════════════════════
-   1. 데이터 로딩
-════════════════════════════════════════════════════════ */
-async function loadData() {
-  showSkeleton(true);
-  hideError();
-  try {
-    const ts = `?_=${Date.now()}`;
-    const [r1, r2, r3] = await Promise.allSettled([
-      fetch(`data/ai_news.json${ts}`).then(r => r.ok ? r.json() : null),
-      fetch(`data/weekly.json${ts}` ).then(r => r.ok ? r.json() : null),
-      fetch(`data/monthly.json${ts}`).then(r => r.ok ? r.json() : null),
-    ]);
+const SOURCE_EMOJI = {
+  'Anthropic': '🟣', 'Claude Code': '🔧', 'OpenAI': '🟢',
+  'GitHub Copilot': '🤖', 'Google': '🔵', 'Meta': '🔷',
+  'Mistral': '🟠', 'Cursor': '📝', 'VS Code': '💻',
+};
 
-    TODAY_DATA   = r1.value || null;
-    WEEKLY_DATA  = r2.value || null;
-    MONTHLY_DATA = r3.value || null;
-
-    if (!TODAY_DATA) throw new Error('data/ai_news.json을 불러오지 못했습니다.\nGitHub Actions 실행 후 새로고침 하세요.');
-
-    DATA_DATE = TODAY_DATA.date || '';
-
-    /* ★ 오늘 날짜 기사만 피드에 표시 */
-    const allFetched = TODAY_DATA.items || [];
-    ALL_ITEMS = allFetched.filter(it => {
-      const d = (it.date || '').slice(0, 10);
-      return d === DATA_DATE;
-    });
-
-    /* 오늘 기사가 너무 적으면(<5) collect_date 기준으로 fallback */
-    if (ALL_ITEMS.length < 5) {
-      ALL_ITEMS = allFetched.filter(it => (it.collect_date || '') === DATA_DATE);
-    }
-    /* 그래도 없으면 전체 표시 */
-    if (ALL_ITEMS.length === 0) {
-      ALL_ITEMS = allFetched;
-    }
-
-    KEYWORDS     = TODAY_DATA.keywords      || [];
-    CAT_STATS    = TODAY_DATA.category_stats || {};
-    SOURCE_STATS = TODAY_DATA.source_stats   || [];
-    DAILY_SUM    = TODAY_DATA.daily_summary  || null;
-
-    document.getElementById('updateTime').textContent =
-      `마지막 업데이트: ${TODAY_DATA.generated_at || '-'} KST`;
-
-    renderAll();
-  } catch (err) {
-    showSkeleton(false);
-    showError(`데이터 로딩 실패: ${err.message}`);
+function getSourceEmoji(source) {
+  for (const [k, v] of Object.entries(SOURCE_EMOJI)) {
+    if (source.includes(k)) return v;
   }
+  return '📡';
 }
 
-/* ════════════════════════════════════════════════════════
-   2. 전체 렌더링
-════════════════════════════════════════════════════════ */
-function renderAll() {
-  showSkeleton(false);
-  renderSummaryCard();
-  renderNewsList();
-  renderSidebar();
-  renderWeekly();
-  renderMonthly();
+/* ── 날짜 유틸 ─────────────────────────────────────────── */
+function getKstNow() {
+  const now = new Date();
+  // KST = UTC+9
+  return new Date(now.getTime() + 9 * 3600 * 1000);
 }
 
-/* ════════════════════════════════════════════════════════
-   3. 요약 카드 (오늘 탭 상단)
-════════════════════════════════════════════════════════ */
-function renderSummaryCard() {
-  const el = document.getElementById('summaryCard');
-  if (!el) return;
-  el.style.display = 'block';
+function isInPeriod(item, period) {
+  const raw = (item.date || item.collect_date || '').slice(0, 10);
+  if (!raw) return true;
+  const itemDate = new Date(raw + 'T00:00:00+09:00');
+  const now = getKstNow();
+  const nowDate = new Date(now.toISOString().slice(0, 10) + 'T00:00:00+09:00');
+  const diffDays = (nowDate - itemDate) / 86400000;
 
-  const d = DAILY_SUM;
-  document.getElementById('summaryDate').textContent = d?.date || DATA_DATE;
-
-  /* 통계 배지 */
-  const kr = ALL_ITEMS.filter(i => i.lang === 'ko').length;
-  document.getElementById('summaryStats').innerHTML =
-    `<span class="sc-stat">총 <strong>${ALL_ITEMS.length}건</strong></span>` +
-    `<span class="sc-stat">🇰🇷 <strong>${kr}건</strong></span>` +
-    `<span class="sc-stat">🌐 <strong>${ALL_ITEMS.length - kr}건</strong></span>`;
-
-  /* 핵심 키워드 */
-  const kwEl = document.getElementById('summaryKeywords');
-  kwEl.innerHTML = '';
-  const kws = d?.top_keywords?.length ? d.top_keywords
-    : KEYWORDS.slice(0, 7).map(k => k.keyword);
-  kws.forEach(kw => {
-    const s = document.createElement('span');
-    s.className = 'kw-chip sz3';
-    s.textContent = kw;
-    kwEl.appendChild(s);
-  });
-
-  /* ★ 핵심 인사이트 5개 */
-  const insEl = document.getElementById('summaryInsights');
-  if (insEl) {
-    insEl.innerHTML = '';
-    const pts = d?.key_points || [];
-    const list = pts.length ? pts : ALL_ITEMS.filter(i => i.importance?.class !== 'new').slice(0, 5)
-      .map(i => cleanInsightText(i.one_line_kr || i.one_line || i.title));
-    list.slice(0, 5).forEach((pt, i) => insEl.appendChild(buildInsightItem(i + 1, pt)));
-  }
-
-  /* 추천 픽 */
-  const picksEl = document.getElementById('summaryPicks');
-  picksEl.innerHTML = '';
-  const hotPicks = d?.hot_picks?.length
-    ? d.hot_picks
-    : ALL_ITEMS.filter(i => i.importance?.class === 'hot').slice(0, 3)
-        .map(i => ({ title: i.title, source: i.source, url: i.url }));
-  const picks = hotPicks.length ? hotPicks : ALL_ITEMS.slice(0, 3)
-    .map(i => ({ title: i.title, source: i.source, url: i.url }));
-  picks.forEach((p, i) => picksEl.appendChild(buildPickItem(i + 1, p)));
+  if (period === '오늘')   return diffDays < 1;
+  if (period === '이번주') return diffDays < 7;
+  if (period === '이번달') return diffDays < 30;
+  return true; // 전체
 }
 
-function buildInsightItem(num, text) {
-  const li = document.createElement('li');
-  li.className = 'insight-item';
-  li.innerHTML = `<span class="insight-num">${num}</span><span class="insight-text">${esc(cleanInsightText(text))}</span>`;
-  return li;
+function fmtDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr.replace(' ', 'T'));
+  if (isNaN(d)) return dateStr.slice(0, 10);
+  const now = getKstNow();
+  const diff = (now - d) / 1000;
+  if (diff < 3600)  return `${Math.floor(diff / 60)}분 전`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}시간 전`;
+  return dateStr.slice(0, 10);
 }
 
-function buildPickItem(num, p) {
-  const a = document.createElement('a');
-  a.className = 'pick-item';
-  a.href = p.url || '#';
-  a.target = '_blank';
-  a.rel = 'noopener noreferrer';
-  a.innerHTML = `
-    <span class="pick-num">${num}</span>
-    <span class="pick-title">${esc(p.title)}</span>
-    <span class="pick-source">${esc(p.source)}</span>`;
-  return a;
-}
-
-/* ════════════════════════════════════════════════════════
-   4. 뉴스 리스트
-════════════════════════════════════════════════════════ */
-function getFiltered() {
+/* ── 필터 적용 ─────────────────────────────────────────── */
+function applyFilters() {
   let items = [...ALL_ITEMS];
-  if (curCat  !== '전체') items = items.filter(it => it.category === curCat);
-  if (curLang !== 'all')  items = items.filter(it => (it.lang || 'en') === curLang);
-  if (curSearch) {
-    const q = curSearch.toLowerCase();
-    items = items.filter(it =>
-      (it.title  || '').toLowerCase().includes(q) ||
-      (it.source || '').toLowerCase().includes(q)
+
+  // 소스
+  if (filters.source !== '전체') {
+    items = items.filter(i => i.source === filters.source);
+  }
+  // 기간
+  if (filters.period !== '전체') {
+    items = items.filter(i => isInPeriod(i, filters.period));
+  }
+  // 분류
+  if (filters.type !== '전체') {
+    items = items.filter(i => (i.type || '뉴스') === filters.type);
+  }
+  // 마이너 제외 (importance = new)
+  if (!filters.minor) {
+    const nonMinor = items.filter(i => (i.importance?.class || 'new') !== 'new');
+    items = nonMinor.length > 0 ? nonMinor : items;
+  }
+  // 정렬
+  if (filters.sort === 'hot') {
+    const order = { hot: 0, star: 1, new: 2 };
+    items.sort((a, b) =>
+      (order[a.importance?.class] ?? 2) - (order[b.importance?.class] ?? 2)
     );
+  } else {
+    items.sort((a, b) => {
+      const da = new Date((a.date || a.collect_date || '').replace(' ', 'T'));
+      const db = new Date((b.date || b.collect_date || '').replace(' ', 'T'));
+      return db - da;
+    });
   }
   return items;
 }
 
-function renderNewsList() {
-  const listEl = document.getElementById('newsList');
-  listEl.innerHTML = '';
-  const items = getFiltered();
-
-  const rcEl = document.getElementById('resultCount');
-  rcEl.textContent = items.length > 0 ? `${items.length}건` : '';
-
-  if (!items.length) {
-    listEl.innerHTML = `
-      <div class="empty-state">
-        <i class="fa-solid fa-search"></i>
-        <p>해당 조건의 기사가 없습니다.</p>
-      </div>`;
-    return;
-  }
-  items.forEach(it => listEl.appendChild(buildNewsItem(it)));
+/* ── 카드 빌더 ─────────────────────────────────────────── */
+function esc(s) {
+  return String(s || '')
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-function buildNewsItem(item) {
-  const a = document.createElement('a');
-  a.className = 'news-item';
-  a.href   = item.url || '#';
-  a.target = '_blank';
-  a.rel    = 'noopener noreferrer';
+function buildCard(item) {
+  const type = item.type || '뉴스';
+  const tm = TYPE_META[type] || TYPE_META['뉴스'];
+  const text = bestText(item);
+  const isKo = item.lang === 'ko';
+  const origTitle = (!isKo && item.title) ? item.title : '';
+  const srcEmoji = getSourceEmoji(item.source || '');
+  const dateStr = fmtDate(item.date || item.collect_date);
+  const impCls = item.importance?.class || 'new';
 
-  const b = BADGE[item.badge] || BADGE.news;
-  const impCls = item.importance?.class === 'hot'  ? 'imp-hot'
-               : item.importance?.class === 'star' ? 'imp-star' : 'imp-new';
-  const impLbl = item.importance?.label || '🆕';
-  const emoji  = CAT_EMOJI[item.category] || '📰';
-  const isKr   = item.lang === 'ko';
-
-  /* 한 줄 요약: 한국어→one_line, 해외→one_line_kr(번역) 우선 */
-  const oneLine = isKr
-    ? (item.one_line || '')
-    : (item.one_line_kr || item.one_line || '');
-
-  /* 썸네일 — 해외 기사는 번역 배지 오버레이 표시 */
-  let thumbHTML = '';
-  if (item.thumbnail) {
-    const transOverlay = (!isKr && item.one_line_kr)
-      ? `<span class="ni-thumb-badge">🇰🇷 번역</span>`
-      : '';
-    thumbHTML = `<div class="ni-thumb-wrap">
-        <img src="${esc(item.thumbnail)}" alt="" loading="lazy"
-             onerror="this.parentElement.innerHTML='${emoji}'">
-        ${transOverlay}
-      </div>`;
-  }
-
-  /* 날짜: MM-DD HH:mm 형식 */
-  const dateShort = fmtDateShort(item.date);
-
-  a.innerHTML = `
-    <div class="ni-thumb">${thumbHTML || `<span class="ni-thumb-emoji">${emoji}</span>`}</div>
-    <div class="ni-body">
-      <div class="ni-meta">
-        <span class="ni-badge ${b.cls}">${b.lbl}</span>
-        <span class="ni-imp ${impCls}">${impLbl}</span>
-        ${isKr ? '<span class="ni-flag">🇰🇷</span>' : ''}
-        <span class="ni-src">${esc(item.source)}</span>
-        <span class="ni-cat">${emoji} ${esc(item.category)}</span>
-      </div>
-      <div class="ni-title">${esc(isKr ? item.title : (item.title_kr || item.title))}</div>
-      ${(!isKr && item.title_kr) ? `<div class="ni-title-orig">${esc(item.title)}</div>` : ''}
-      ${oneLine ? `<div class="ni-line">${esc(oneLine)}</div>` : ''}
+  return `<a class="news-card imp-${esc(impCls)}" href="${esc(item.url || '#')}" target="_blank" rel="noopener">
+    <div class="nc-type" style="color:${tm.color};background:${tm.bg}">
+      ${tm.emoji} ${esc(type)}
     </div>
-    <div class="ni-right">
-      <span class="ni-date">${dateShort}</span>
-      <span class="ni-arrow">›</span>
-    </div>`;
-  return a;
+    <div class="nc-body">
+      <div class="nc-text">${esc(text.slice(0, 80))}</div>
+      ${origTitle ? `<div class="nc-orig">${esc(origTitle.slice(0, 70))}</div>` : ''}
+    </div>
+    <div class="nc-footer">
+      <span class="nc-src">${srcEmoji} ${esc(item.source || '')}</span>
+      <span class="nc-date">${esc(dateStr)}</span>
+    </div>
+  </a>`;
 }
 
-/* ════════════════════════════════════════════════════════
-   5. 사이드바
-════════════════════════════════════════════════════════ */
-function renderSidebar() {
-  /* 소스 현황 */
-  const srcEl = document.getElementById('sourceList');
-  srcEl.innerHTML = '';
-  SOURCE_STATS.slice(0, 10).forEach(s => {
-    const li = document.createElement('li');
-    li.className = 'src-item';
-    li.innerHTML = `<span class="src-name">${esc(s.source)}</span><span class="src-count">${s.count}</span>`;
-    srcEl.appendChild(li);
-  });
+/* ── 리스트 아이템 빌더 ──────────────────────────────────── */
+function buildListItem(item) {
+  const type = item.type || '뉴스';
+  const tm = TYPE_META[type] || TYPE_META['뉴스'];
+  const text = bestText(item);
+  const srcEmoji = getSourceEmoji(item.source || '');
+  const dateStr = fmtDate(item.date || item.collect_date);
+  const impCls = item.importance?.class || 'new';
 
-  /* 키워드 바 */
-  const kwEl = document.getElementById('keywordsWrap');
-  kwEl.innerHTML = '';
-  const top = KEYWORDS.slice(0, 10);
-  const max = top[0]?.count || 1;
-  top.forEach(kw => {
-    const pct = Math.round((kw.count / max) * 100);
-    const row = document.createElement('div');
-    row.className = 'kw-bar-row';
-    row.innerHTML = `
-      <span class="kw-bar-label">${esc(kw.keyword)}</span>
-      <div class="kw-bar-track"><div class="kw-bar-fill" style="width:${pct}%"></div></div>
-      <span class="kw-bar-count">${kw.count}</span>`;
-    kwEl.appendChild(row);
-  });
-
-  // 카테고리 도넛차트 제거됨
-}
-
-function renderCatChart() { /* 카테고리 도넛차트 제거됨 */ }
-
-/* ════════════════════════════════════════════════════════
-   6. 주간 리포트
-════════════════════════════════════════════════════════ */
-function renderWeekly() {
-  const W = WEEKLY_DATA;
-
-  /* 날짜 범위 */
-  const rngEl = document.getElementById('weekRange');
-  if (W?.daily_timeline?.length) {
-    const ds = W.daily_timeline.map(d => d.date);
-    rngEl.textContent = `${ds[0]} ~ ${ds[ds.length - 1]}`;
-  } else {
-    rngEl.textContent = '데이터 누적 중';
-  }
-
-  /* 누적 배지 */
-  document.getElementById('wAccumInfo').innerHTML =
-    `<span class="acc-badge">📅 ${W?.daily_timeline?.length || 1}일치</span>` +
-    `<span class="acc-badge">📰 총 ${W?.total || ALL_ITEMS.length}건</span>` +
-    `<span class="acc-badge">🔥 핫이슈 ${(W?.content_highlights || []).filter(i => i.importance?.class === 'hot').length}건</span>` +
-    (!W ? '<span class="acc-badge warn">⚠️ 누적 데이터 없음</span>' : '');
-
-  /* 인사이트 포인트 */
-  renderInsightList('weeklyInsights', W?.period_key_points || []);
-
-  /* 주목 뉴스 */
-  renderHlList('weeklyHighlights',
-    W?.content_highlights || ALL_ITEMS.filter(i => i.importance?.class !== 'new').slice(0, 8));
-
-  /* 카테고리별 대표 */
-  renderCatCards('weeklyCatCards', W?.cat_highlights || {});
-
-  /* 트렌드 차트 */
-  renderTrendChart('weeklyTrendChart', W, 'weekly');
-
-  /* 키워드 */
-  renderKwChips('weeklyKeywords', (W?.keywords || KEYWORDS).slice(0, 16));
-
-  /* 다운로드 */
-  document.getElementById('dlBtn').onclick = () => downloadReport(W || TODAY_DATA, '주간');
-}
-
-/* ════════════════════════════════════════════════════════
-   7. 월간 인사이트
-════════════════════════════════════════════════════════ */
-function renderMonthly() {
-  const M = MONTHLY_DATA;
-
-  const rngEl = document.getElementById('monthRange');
-  if (M?.daily_timeline?.length) {
-    const ds = M.daily_timeline.map(d => d.date);
-    rngEl.textContent = `${ds[0]} ~ ${ds[ds.length - 1]} (${ds.length}일)`;
-  } else {
-    const now = new Date();
-    rngEl.textContent = `${now.getFullYear()}년 ${now.getMonth() + 1}월`;
-  }
-
-  const kr = M?.kr_count ?? (M?.items || ALL_ITEMS).filter(i => i.lang === 'ko').length;
-  document.getElementById('mAccumInfo').innerHTML =
-    `<span class="acc-badge">📅 ${M?.daily_timeline?.length || 1}일치</span>` +
-    `<span class="acc-badge">📰 ${M?.total || ALL_ITEMS.length}건 수집</span>` +
-    `<span class="acc-badge">🇰🇷 국내 ${kr}건</span>` +
-    (!M ? '<span class="acc-badge warn">⚠️ 누적 데이터 없음</span>' : '');
-
-  /* 월간 요약 */
-  const prEl = document.getElementById('monthlySummary');
-  if (prEl) {
-    prEl.innerHTML = M?.period_prose
-      ? `<p>${esc(M.period_prose)}</p>`
-      : `<p>총 <strong>${M?.total || ALL_ITEMS.length}건</strong>의 AI 자료가 수집됐습니다.</p>`;
-  }
-
-  renderInsightList('monthlyInsights', M?.period_key_points || []);
-  renderHlList('monthlyHighlights',
-    M?.content_highlights || ALL_ITEMS.filter(i => i.importance?.class !== 'new').slice(0, 10));
-  renderCatCards('monthlyCatCards', M?.cat_highlights || {});
-  renderTrendChart('monthlyTrendChart', M, 'monthly');
-  renderKwChips('monthlyKeywords', (M?.keywords || KEYWORDS).slice(0, 20));
-}
-
-/* ════════════════════════════════════════════════════════
-   8. 공용 렌더 함수
-════════════════════════════════════════════════════════ */
-function renderInsightList(elId, points) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  el.innerHTML = '';
-  if (!points?.length) {
-    el.innerHTML = '<li class="no-data">데이터 누적 중입니다.</li>';
-    return;
-  }
-  points.forEach((pt, i) => el.appendChild(buildInsightItem(i + 1, pt)));
-}
-
-function renderHlList(elId, items) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  el.innerHTML = '';
-  if (!items?.length) { el.innerHTML = '<div class="no-data">데이터 누적 중입니다.</div>'; return; }
-  items.slice(0, 10).forEach(item => {
-    const a = document.createElement('a');
-    a.className = 'hl-item';
-    a.href   = item.url || '#';
-    a.target = '_blank';
-    a.rel    = 'noopener noreferrer';
-
-    const impCls = item.importance?.class === 'hot'  ? 'imp-hot'
-                 : item.importance?.class === 'star' ? 'imp-star' : 'imp-new';
-    const impLbl = item.importance?.label || '🆕';
-    const emoji  = CAT_EMOJI[item.category] || '📰';
-    const isKr   = item.lang === 'ko';
-    const oneLine = isKr ? (item.one_line || '') : (item.one_line_kr || item.one_line || '');
-
-    a.innerHTML = `
-      <div class="hl-meta">
-        <span class="ni-imp ${impCls}">${impLbl}</span>
-        <span class="hl-cat">${emoji} ${esc(item.category)}</span>
-        <span class="hl-src">${esc(item.source)}</span>
-        <span class="hl-date">${fmtDateShort(item.date)}</span>
+  return `<a class="news-item imp-${esc(impCls)}" href="${esc(item.url || '#')}" target="_blank" rel="noopener">
+    <span class="ni-type-dot" style="background:${tm.color}" title="${esc(type)}"></span>
+    <div class="ni-body">
+      <div class="ni-title">${esc(text.slice(0, 100))}</div>
+      <div class="ni-meta">
+        <span class="ni-type-badge" style="color:${tm.color};background:${tm.bg}">${tm.emoji} ${esc(type)}</span>
+        <span class="ni-src">${srcEmoji} ${esc(item.source || '')}</span>
+        <span class="ni-date">${esc(dateStr)}</span>
+        ${impCls === 'hot' ? '<span class="ni-hot">🔥</span>' : ''}
       </div>
-      <div class="hl-title">${esc(item.title)}</div>
-      ${oneLine ? `<div class="hl-oneline">${esc(oneLine)}</div>` : ''}`;
-    el.appendChild(a);
-  });
+    </div>
+    <span class="ni-arrow">›</span>
+  </a>`;
 }
 
-function renderCatCards(elId, catHighlights) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  el.innerHTML = '';
-  const MAIN = ['콘텐츠','영상AI','이미지·디자인AI','LLM','개발AI'];
-  MAIN.forEach(cat => {
-    const h = catHighlights[cat];
-    if (!h) return;
-    const emoji = CAT_EMOJI[cat] || '📰';
-    const div = document.createElement('div');
-    div.className = 'cat-card';
-    div.style.borderLeftColor = CAT_COLOR[cat] || '#888';
-    div.innerHTML = `
-      <div class="cat-card-header">${emoji} ${esc(cat)}</div>
-      <a href="${esc(h.url || '#')}" target="_blank" rel="noopener">
-        <div class="cat-card-title">${esc(h.title)}</div>
-        ${h.one_line ? `<div class="cat-card-line">${esc(h.one_line)}</div>` : ''}
-        <div class="cat-card-meta">${esc(h.source)} · ${fmtDateShort(h.date)}</div>
-      </a>`;
-    el.appendChild(div);
-  });
-  if (!el.children.length) el.innerHTML = '<div class="no-data">데이터 누적 중입니다.</div>';
-}
+/* ── 렌더링 ────────────────────────────────────────────── */
+function render() {
+  const items = applyFilters();
+  const cardGrid = document.getElementById('cardGrid');
+  const newsList = document.getElementById('newsList');
+  const countEl  = document.getElementById('resultCount');
 
-function renderKwChips(elId, keywords) {
-  const el = document.getElementById(elId);
-  if (!el) return;
-  el.innerHTML = '';
-  const max = keywords[0]?.count || 1;
-  keywords.forEach(kw => {
-    const r = kw.count / max;
-    const sz = r > .8 ? 5 : r > .6 ? 4 : r > .4 ? 3 : r > .2 ? 2 : 1;
-    const chip = document.createElement('span');
-    chip.className   = `kw-chip sz${sz}`;
-    chip.textContent = `${kw.keyword} ${kw.count}`;
-    el.appendChild(chip);
-  });
-}
+  countEl.textContent = `${items.length}개 결과`;
 
-function renderTrendChart(elId, periodData, type) {
-  const ctx = document.getElementById(elId);
-  if (!ctx) return;
-  if (type === 'weekly'  && chartWeekly)  { chartWeekly.destroy();  chartWeekly  = null; }
-  if (type === 'monthly' && chartMonthly) { chartMonthly.destroy(); chartMonthly = null; }
-
-  const tl = periodData?.daily_timeline || [];
-  const cd = periodData?.cat_daily      || {};
-  if (!tl.length) {
-    ctx.parentElement.innerHTML = '<div class="no-data">📅 데이터 누적 중 (2일차부터 표시)</div>';
-    return;
-  }
-
-  const labels = tl.map(d => d.date.slice(5));
-  const dates  = tl.map(d => d.date);
-  const datasets = CAT_FILTER
-    .filter(cat => dates.some(d => cd[d]?.[cat]))
-    .map(cat => ({
-      label: cat,
-      data: dates.map(d => cd[d]?.[cat] || 0),
-      borderColor: CAT_COLOR[cat],
-      backgroundColor: (CAT_COLOR[cat] || '#888') + '22',
-      borderWidth: 2.5, tension: 0.35, fill: false, pointRadius: 4,
-    }));
-
-  const inst = new Chart(ctx, {
-    type: 'line',
-    data: { labels, datasets },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { position:'bottom', labels:{ color:cssVar('--text2'), font:{size:10} } } },
-      scales: {
-        x: { ticks:{ color:cssVar('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' } },
-        y: { ticks:{ color:cssVar('--text2') }, grid:{ color:'rgba(128,128,128,0.1)' }, beginAtZero:true }
-      }
+  if (filters.view === 'card') {
+    cardGrid.style.display = '';
+    newsList.style.display = 'none';
+    if (!items.length) {
+      cardGrid.innerHTML = '<div class="empty-state">조건에 맞는 소식이 없어요.</div>';
+    } else {
+      cardGrid.innerHTML = items.slice(0, 80).map(buildCard).join('');
     }
+  } else {
+    cardGrid.style.display = 'none';
+    newsList.style.display = '';
+    if (!items.length) {
+      newsList.innerHTML = '<div class="empty-state">조건에 맞는 소식이 없어요.</div>';
+    } else {
+      newsList.innerHTML = items.slice(0, 80).map(buildListItem).join('');
+    }
+  }
+}
+
+/* ── 소스 칩 동적 생성 ──────────────────────────────────── */
+function buildSourceChips() {
+  const container = document.getElementById('sourceChips');
+  if (!container) return;
+
+  // 소스별 건수
+  const counts = {};
+  ALL_ITEMS.forEach(i => {
+    counts[i.source] = (counts[i.source] || 0) + 1;
   });
-  if (type === 'weekly')  chartWeekly  = inst;
-  if (type === 'monthly') chartMonthly = inst;
+
+  // 건수 많은 순으로 정렬, 상위 8개만
+  const topSources = Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8)
+    .map(([name]) => name);
+
+  const chips = ['전체', ...topSources];
+  container.innerHTML = chips.map(src =>
+    `<button class="fchip${src === '전체' ? ' active' : ''}" data-filter="source" data-val="${esc(src)}">${esc(src)}</button>`
+  ).join('');
+
+  // 이벤트 재바인딩
+  container.querySelectorAll('.fchip').forEach(btn => {
+    btn.addEventListener('click', () => handleFilterChip(btn));
+  });
 }
 
-/* ════════════════════════════════════════════════════════
-   9. 리포트 다운로드
-════════════════════════════════════════════════════════ */
-function downloadReport(data, label) {
-  const items = data?.items || ALL_ITEMS;
-  const kws   = data?.keywords || KEYWORDS;
-  const hl    = data?.content_highlights || items.filter(i => i.importance?.class !== 'new').slice(0, 10);
-  const kr    = data?.kr_count ?? items.filter(i => i.lang === 'ko').length;
+/* ── 이벤트 바인딩 ──────────────────────────────────────── */
+function handleFilterChip(btn) {
+  const filterKey = btn.dataset.filter;
+  const val = btn.dataset.val;
 
-  const lines = [
-    `AI 트렌드 — ${label} 리포트`,
-    `생성: ${new Date().toLocaleString('ko-KR')}`,
-    `총 수집: ${items.length}건 (국내 ${kr}건 / 해외 ${items.length - kr}건)`,
-    '='.repeat(54), '',
-    '■ 핵심 요약',
-    data?.period_prose || '-', '',
-    `■ ${label} 핵심 뉴스 TOP 10`,
-    ...hl.slice(0, 10).map((it, i) => {
-      const s = it.lang === 'ko' ? (it.one_line || '') : (it.one_line_kr || it.one_line || '');
-      return `  ${i + 1}. [${it.category}] ${it.title}\n     ${s}\n     ${it.url}`;
-    }), '',
-    '■ 핵심 키워드 TOP 10',
-    ...kws.slice(0, 10).map((k, i) => `  ${i + 1}. ${k.keyword} (${k.count}회)`),
-    '', '='.repeat(54), 'AI 트렌드 대시보드',
-  ];
+  // 같은 그룹 active 해제
+  document.querySelectorAll(`.fchip[data-filter="${filterKey}"]`)
+    .forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
 
-  const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  const now  = new Date();
-  a.href     = url;
-  a.download = `ai_trend_${label}_${now.getFullYear()}${p2(now.getMonth()+1)}${p2(now.getDate())}.txt`;
-  a.click();
-  URL.revokeObjectURL(url);
+  filters[filterKey] = val;
+  render();
 }
 
-/* ════════════════════════════════════════════════════════
-   10. 이벤트 바인딩
-════════════════════════════════════════════════════════ */
 function bindEvents() {
-  /* 탭 전환 */
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById(`tab-${btn.dataset.tab}`)?.classList.add('active');
-      setTimeout(() => [chartCat, chartWeekly, chartMonthly].forEach(c => c?.resize()), 60);
-    });
+  // 필터 칩
+  document.querySelectorAll('.fchip').forEach(btn => {
+    btn.addEventListener('click', () => handleFilterChip(btn));
   });
 
-  /* 카테고리 필터 */
-  buildFilterBtns();
-
-  /* 언어 필터 */
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      curLang = btn.dataset.lang;
-      renderNewsList();
-    });
+  // 마이너 토글
+  document.getElementById('minorToggle')?.addEventListener('change', e => {
+    filters.minor = e.target.checked;
+    render();
   });
 
-  /* 검색 */
-  document.getElementById('searchInput')?.addEventListener('input', e => {
-    curSearch = e.target.value.trim();
-    renderNewsList();
+  // 카드/리스트 보기 전환
+  document.getElementById('viewCard')?.addEventListener('click', () => {
+    filters.view = 'card';
+    document.getElementById('viewCard').classList.add('active');
+    document.getElementById('viewList').classList.remove('active');
+    render();
+  });
+  document.getElementById('viewList')?.addEventListener('click', () => {
+    filters.view = 'list';
+    document.getElementById('viewList').classList.add('active');
+    document.getElementById('viewCard').classList.remove('active');
+    render();
   });
 
-  /* 테마 */
+  // 다크모드
   const saved = localStorage.getItem('ai-trend-theme') || 'light';
   applyTheme(saved);
   document.getElementById('themeBtn')?.addEventListener('click', () => {
@@ -599,86 +287,47 @@ function bindEvents() {
   });
 }
 
-function buildFilterBtns() {
-  const el = document.getElementById('filterCats');
-  if (!el) return;
-  el.innerHTML = '';
-  ['전체', ...CAT_FILTER].forEach(cat => {
-    const btn = document.createElement('button');
-    btn.className = `filter-btn${cat === '전체' ? ' active' : ''}`;
-    btn.dataset.cat = cat;
-    btn.textContent = cat === '전체' ? '전체' : `${CAT_EMOJI[cat] || ''} ${cat}`;
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      curCat = cat;
-      renderNewsList();
-    });
-    el.appendChild(btn);
-  });
-}
-
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  const icon = document.querySelector('#themeBtn i');
-  if (icon) icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-  setTimeout(() => [chartCat, chartWeekly, chartMonthly].forEach(c => c?.update()), 80);
+  const btn = document.getElementById('themeBtn');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-/* ════════════════════════════════════════════════════════
-   11. 유틸
-════════════════════════════════════════════════════════ */
-function esc(str) {
-  return String(str || '')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+/* ── 데이터 로드 ────────────────────────────────────────── */
+async function loadData() {
+  const skeleton = document.getElementById('loadingSkeleton');
+  try {
+    const r = await fetch('data/ai_news.json?_=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
 
-function fmtDateShort(dateStr) {
-  if (!dateStr) return '';
-  const m = dateStr.match(/\d{4}-(\d{2}-\d{2})(?: (\d{2}:\d{2}))?/);
-  if (!m) return dateStr;
-  return m[2] ? `${m[1]} ${m[2]}` : m[1];
-}
+    DATA_DATE = d.date || '';
+    ALL_ITEMS = d.items || [];
 
-/** 인사이트 텍스트 정제: 출처 태그 제거, 말줄임 처리 */
-function cleanInsightText(text) {
-  if (!text) return '';
-  // [디지털투데이 XX기자] 형태 제거
-  text = text.replace(/^\[[^\]]{1,30}\]\s*/g, '');
-  // 말줄임표로 끝나는 경우 → 마지막 완결 문장 찾기
-  if (text.endsWith('…') || text.endsWith('...')) {
-    for (const sep of ['다.', '했다.', '됩니다.', '했습니다.', '이다.']) {
-      const idx = text.lastIndexOf(sep);
-      if (idx > 10) return text.slice(0, idx + sep.length);
+    // updateTime
+    const el = document.getElementById('updateTime');
+    if (el) el.textContent = d.generated_at ? `업데이트: ${d.generated_at} KST` : '';
+
+    if (skeleton) skeleton.style.display = 'none';
+
+    // 소스 칩 동적 생성
+    buildSourceChips();
+
+    // 초기 렌더
+    render();
+
+  } catch (e) {
+    if (skeleton) skeleton.style.display = 'none';
+    const box = document.getElementById('errorBox');
+    const msg = document.getElementById('errorMsg');
+    if (box && msg) {
+      msg.textContent = e.message + '\nGitHub Actions 실행 후 새로고침 해주세요.';
+      box.style.display = 'flex';
     }
-    text = text.replace(/[…\.]+$/, '') + '.';
   }
-  return text.trim();
 }
 
-function cssVar(name) {
-  return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888';
-}
-function p2(n) { return String(n).padStart(2, '0'); }
-
-function showSkeleton(show) {
-  const el = document.getElementById('loadingSkeleton');
-  if (el) el.style.display = show ? 'flex' : 'none';
-}
-function showError(msg) {
-  const box = document.getElementById('errorBox');
-  const pre = document.getElementById('errorMsg');
-  if (box && pre) { pre.textContent = msg; box.style.display = 'flex'; }
-}
-function hideError() {
-  const box = document.getElementById('errorBox');
-  if (box) box.style.display = 'none';
-}
-
-/* ════════════════════════════════════════════════════════
-   초기화
-════════════════════════════════════════════════════════ */
+/* ── 초기화 ────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
   loadData();

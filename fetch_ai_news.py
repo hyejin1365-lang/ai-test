@@ -337,6 +337,68 @@ def get_importance(title, summary="", category=""):
     return {"label": "🆕 신규", "class": "new"}
 
 
+# ── 참고앱 방식: 뉴스 분류(type) 자동 감지 ────────────────
+# 분류: 모델출시 / API변경 / 기능추가 / 가격변경 / 도구출시 / 뉴스
+TYPE_PATTERNS = {
+    "모델출시": [
+        r'(?:모델|model).*(?:출시|공개|릴리스|launch|release|introduc|announc)',
+        r'(?:출시|공개|릴리스|launch|release|introduc).*(?:모델|model|LLM|GPT|Claude|Gemini|Llama|Mistral|Opus|Sonnet|Flash|Haiku|Grok|Phi|Qwen|DeepSeek)',
+        r'(?:new|신규|새로운).*(?:model|모델)',
+        r'(?:GPT|Claude|Gemini|Llama|Mistral|Opus|Sonnet|Haiku|Grok|Phi|Qwen|DeepSeek|Sora|Flux|DALL-E|Midjourney)\s*\d',
+        r'(?:is now available|정식 출시|GA|Generally Available).*(?:model|모델)',
+    ],
+    "API변경": [
+        r'API\s*(?:변경|업데이트|추가|deprecated|deprecat|endpoint|지원|support)',
+        r'(?:API|SDK|endpoint)\s*v\d',
+        r'(?:deprecated|deprecat|종료|sunset|migration)',
+        r'(?:SDK|API)\s*(?:v\d|\d+\.\d+)',
+        r'(?:새|신규|추가)\s*(?:API|엔드포인트|endpoint)',
+    ],
+    "가격변경": [
+        r'(?:가격|요금|price|pricing|cost|비용|할인|discount|free|무료|인하|인상|플랜|plan|tier)',
+        r'(?:token|토큰).*(?:price|가격|cost|비용)',
+        r'(?:무료|free)\s*(?:플랜|plan|tier|버전)',
+        r'(?:요금|price|pricing)\s*(?:변경|update|change|인하|인상)',
+    ],
+    "도구출시": [
+        r'(?:도구|tool|plugin|extension|앱|app|CLI|SDK|라이브러리|library|framework|프레임워크).*(?:출시|launch|release|공개)',
+        r'(?:출시|launch|release).*(?:도구|tool|plugin|extension|앱|CLI)',
+        r'(?:Cursor|Copilot|VS Code|VSCode|GitHub|Codex|Claude Code|Windsurf|Replit|Bolt|Lovable).*(?:업데이트|update|release|출시|기능)',
+        r'(?:Chrome|Firefox|Safari).*(?:extension|확장|plugin)',
+        r'(?:MCP|Model Context Protocol)',
+    ],
+    "기능추가": [
+        r'(?:기능|feature|추가|added|추가됨|지원|support).*(?:추가|added|지원|support|improved|개선)',
+        r'(?:added|추가|지원|improved|강화|업그레이드).*(?:기능|feature|capability|지원|support)',
+        r'(?:이제|now).*(?:가능|available|지원|support)',
+        r'(?:새|new|신규)\s*(?:기능|feature|functionality)',
+        r'(?:업데이트|update|개선|improvement|enhanced)',
+    ],
+}
+
+def get_type(title: str, summary: str = "", source: str = "", category: str = "") -> str:
+    """
+    참고앱 방식으로 뉴스 분류 자동 감지.
+    모델출시 > API변경 > 가격변경 > 도구출시 > 기능추가 > 뉴스 순으로 우선순위.
+    """
+    text = (title + " " + summary).lower()
+
+    for type_name in ["모델출시", "API변경", "가격변경", "도구출시", "기능추가"]:
+        for pattern in TYPE_PATTERNS[type_name]:
+            if re.search(pattern, title + " " + summary, re.IGNORECASE):
+                return type_name
+
+    # 국내 뉴스 미디어는 기본 '뉴스'
+    if category == "콘텐츠":
+        return "뉴스"
+
+    # 논문은 별도
+    if category == "논문":
+        return "논문"
+
+    return "뉴스"
+
+
 # ─────────────────────────────────────────────────────
 # 시간 파싱
 # ─────────────────────────────────────────────────────
@@ -733,6 +795,7 @@ def scrape_blog(cfg):
                 "date":         kst_date,
                 "collect_date": TODAY,
                 "thumbnail":    "",
+                "type":         get_type(title, summary, cfg["name"], cfg["category"]),
                 "importance":   get_importance(title, summary, cfg["category"]),
             })
             count += 1
@@ -813,6 +876,7 @@ def fetch_feed(feed_info):
                 "date":         parse_date_kst(entry, lang),
                 "collect_date": TODAY,
                 "thumbnail":    get_thumbnail(entry),
+                "type":         get_type(title, summary, feed_info["name"], cat),
                 "importance":   get_importance(title, summary, cat),
             })
             count += 1

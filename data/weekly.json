@@ -1,32 +1,32 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-05-30 08:19",
-  "total": 380,
-  "kr_count": 109,
-  "en_count": 271,
+  "generated_at": "2026-05-31 08:05",
+  "total": 370,
+  "kr_count": 112,
+  "en_count": 258,
   "category_stats": {
-    "콘텐츠": 109,
-    "영상AI": 35,
-    "이미지·디자인AI": 31,
+    "콘텐츠": 112,
+    "영상AI": 37,
+    "이미지·디자인AI": 30,
     "LLM": 7,
     "개발AI": 46,
     "AI법률": 4,
-    "논문": 124,
+    "논문": 110,
     "비즈니스": 24
   },
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 66
+      "count": 68
     },
     {
       "source": "ArXiv AI",
-      "count": 48
+      "count": 40
     },
     {
       "source": "ArXiv ML",
-      "count": 36
+      "count": 30
     },
     {
       "source": "더에이아이",
@@ -38,7 +38,7 @@
     },
     {
       "source": "TechCrunch AI",
-      "count": 24
+      "count": 26
     },
     {
       "source": "HuggingFace Papers",
@@ -54,7 +54,7 @@
     },
     {
       "source": "바이라인네트워크",
-      "count": 15
+      "count": 16
     },
     {
       "source": "MIT Tech Review",
@@ -73,12 +73,12 @@
       "count": 8
     },
     {
-      "source": "HuggingFace Blog",
+      "source": "Latent Space",
       "count": 6
     },
     {
-      "source": "Latent Space",
-      "count": 6
+      "source": "HuggingFace Blog",
+      "count": 5
     },
     {
       "source": "OpenAI Blog",
@@ -124,26 +124,22 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 63
+      "count": 61
     },
     {
       "keyword": "LLM",
-      "count": 47
+      "count": 44
     },
     {
       "keyword": "에이전트",
-      "count": 17
-    },
-    {
-      "keyword": "Reasoning",
-      "count": 16
+      "count": 22
     },
     {
       "keyword": "GPT",
-      "count": 15
+      "count": 18
     },
     {
-      "keyword": "Benchmark",
+      "keyword": "Reasoning",
       "count": 15
     },
     {
@@ -151,11 +147,19 @@
       "count": 13
     },
     {
+      "keyword": "Benchmark",
+      "count": 13
+    },
+    {
+      "keyword": "인공지능",
+      "count": 12
+    },
+    {
       "keyword": "Multimodal",
       "count": 12
     },
     {
-      "keyword": "인공지능",
+      "keyword": "추론",
       "count": 11
     },
     {
@@ -163,51 +167,43 @@
       "count": 11
     },
     {
-      "keyword": "추론",
-      "count": 10
-    },
-    {
-      "keyword": "Diffusion",
-      "count": 10
+      "keyword": "클로드",
+      "count": 9
     },
     {
       "keyword": "Vision",
       "count": 9
     },
     {
-      "keyword": "Claude",
-      "count": 8
-    },
-    {
-      "keyword": "클로드",
-      "count": 8
-    },
-    {
       "keyword": "GitHub",
+      "count": 8
+    },
+    {
+      "keyword": "Diffusion",
+      "count": 8
+    },
+    {
+      "keyword": "Claude",
       "count": 7
     },
     {
-      "keyword": "Transformer",
-      "count": 6
-    },
-    {
-      "keyword": "Fine-tuning",
+      "keyword": "오픈소스",
       "count": 5
     },
     {
       "keyword": "Copilot",
-      "count": 4
+      "count": 5
     },
     {
-      "keyword": "Perplexity",
-      "count": 4
+      "keyword": "Transformer",
+      "count": 5
+    },
+    {
+      "keyword": "Fine-tuning",
+      "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-05-24",
-      "count": 34
-    },
     {
       "date": "2026-05-25",
       "count": 18
@@ -231,9 +227,19 @@
     {
       "date": "2026-05-30",
       "count": 68
+    },
+    {
+      "date": "2026-05-31",
+      "count": 24
     }
   ],
   "cat_daily": {
+    "2026-05-31": {
+      "콘텐츠": 11,
+      "영상AI": 4,
+      "이미지·디자인AI": 4,
+      "개발AI": 5
+    },
     "2026-05-30": {
       "콘텐츠": 23,
       "영상AI": 7,
@@ -285,16 +291,177 @@
       "영상AI": 2,
       "이미지·디자인AI": 4,
       "개발AI": 4
-    },
-    "2026-05-24": {
-      "콘텐츠": 8,
-      "영상AI": 2,
-      "이미지·디자인AI": 5,
-      "개발AI": 5,
-      "논문": 14
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-05-31_0000",
+      "title": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가",
+      "summary": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다. 하드웨어 사업 강화로 수익을 확대하고 자체 AI 모델 활용도를 극대화하려는 의도다.디 인포메이션은 29일(현지시간) 알렉스 히멜 메타 웨어러블 부문 부사장이 작성한 내부 메모를 입수, 웨어러블 기기 로드맵을 공개했다.이에 따르면, 히멜 부사장은 메타의 AI 모델과 새로운 앱 구독 요금제, 현재 개발 중인 소비자용 AI 에이전트 '해치(Hatch)'의 사용을 촉진하기 위해 하드웨어 제품군을 확대한다고 밝혔…",
+      "one_line": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+      "one_line_kr": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211141",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 21:41",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가"
+    },
+    {
+      "id": "2026-05-31_0003",
+      "title": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화",
+      "summary": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다. 리퀴드 AI는 28일(현지시간) 도구 호출과 에이전트 작업 수행에 최적화된 전문가 혼합(MoE) 모델 ‘LFM2.5-8B-A1B’를 공개했다. 새 모델은 최대 12만8000토큰의 장문 컨텍스트와 추론(reasoning) 기능을 새롭게 지원한다.LFM2.5-8B-A1B는 지난해 공개된 LFM2-8B-A1B의 후속 모델로, 총 83억개(8.3B)의 매개변수를 보유하고 있지만 실제 추론 과정에서는 15억개(1.…",
+      "one_line": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
+      "one_line_kr": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211132",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:55",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화"
+    },
+    {
+      "id": "2026-05-31_0004",
+      "title": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\"",
+      "summary": "스텝펀이 멀티모달 기능과 에이전트 실행 능력을 대폭 강화한 차세대 모델을 공개했다. 이 모델은 이미지 이해 기능이 처음으로 탑재됐으며, 코딩과 도구 활용, 장기 작업 수행 능력에서 전작을 크게 뛰어넘는 성능을 기록했다. 스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의 언어 모델과 18억개 규모의 비전 인코더(ViT)를 결합해 이미지와 텍…",
+      "one_line": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
+      "one_line_kr": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211130",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:47",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\""
+    },
+    {
+      "id": "2026-05-31_0005",
+      "title": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원",
+      "summary": "오픈AI가 코딩 에이전트 ‘코덱스(Codex)’의 기능을 대폭 확장하며 윈도우 11 환경에서도 AI가 직접 컴퓨터를 조작할 수 있는 ‘컴퓨터 유즈(Computer Use)’ 기능을 지원하기 시작했다. 또 아이폰과 안드로이드용 챗GPT 앱을 통해 윈도우 PC에서 실행 중인 코덱스 작업을 원격으로 제어할 수 있게 되면서, 장소에 구애받지 않는 AI 개발 환경 구축에 한 걸음 더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "one_line": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "one_line_kr": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211135",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:03",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원"
+    },
+    {
+      "id": "2026-05-31_0007",
+      "title": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\"",
+      "summary": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다. 특히 나노 바나나 2는 텍스트와 이미지를 넘어 동영상까지 입력으로 활용하는 기능을 추가하며 멀티모달 AI 경쟁력을 강화했다.구글은 29일(현지시간) 기업용 AI 플랫폼인 구글 클라우드 제미나이 엔터프라이즈 에이전트 플랫폼을 통해 나노 바나나 2(제미나이 3.1 플래시 이미지)와 나노 바나나 프로(제미나이 3 …",
+      "one_line": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
+      "one_line_kr": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211134",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 11:29",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\""
+    },
+    {
+      "id": "2026-05-31_0010",
+      "title": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run",
+      "summary": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을 강조했다. 김 대표는 활용 가능한 국내 API가 많지 않아 대부분의 해커톤이 해외 IT 인프라를 기반으로 진행되고 있다고 설명했다. 이어 생성형 인공지능(AI) 기반 개발 방식인 바이브코딩 시대를 맞아 국내 서비스와 연결된 개방형 생태계를 조성하기 위해 이번 행사를 마련했다고 밝혔다.",
+      "one_line": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
+      "one_line_kr": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
+      "url": "https://byline.network/2026/05/0530-3/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-31 00:50",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run"
+    },
+    {
+      "id": "2026-05-31_0021",
+      "title": "Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation",
+      "summary": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics, rendering, compilation, and tooling. The system achieves a Pearson correlation of 0.8996 between simulation and real-world robot rollouts, and reduces policy evaluation …",
+      "one_line": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics,…",
+      "one_line_kr": "Genesis AI는 2026년 5월 27일에 Genesis World 1.0을 출시했습니다. 이는 물리학을 다루는 4가지 구성 요소 시뮬레이션 플랫폼입니다.…",
+      "url": "https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 18:25",
+      "collect_date": "2026-05-31",
+      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-30-at-2.19.49-AM-1-150x150.png",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Genesis AI, 확장 가능한 로봇공학 기반 모델 평가를 위한 Nyx, Quadrants 및 Genesis World 1.0 물리 플랫폼 출시"
+    },
+    {
+      "id": "2026-05-31_0022",
+      "title": "Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4",
+      "summary": "Nous Research's Hermes Agent adds Tool Search to fix MCP context bloat using BM25 progressive schema disclosure. The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first on MarkTechPost.",
+      "one_line": "The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first…",
+      "one_line_kr": "MCP에 대한 Hermes Agent Ships 도구 검색 게시물: Anthropic Evals는 Opus 4에서 49% ~ 74%의 정확도 이득을 보여줍니다.",
+      "url": "https://www.marktechpost.com/2026/05/29/hermes-agent-ships-tool-search-for-mcp-anthropic-evals-show-49-to-74-accuracy-gain-on-opus-4/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 12:11",
+      "collect_date": "2026-05-31",
+      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-7.56.04-PM-1-150x150.png",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MCP에 대한 Hermes Agent Ships 도구 검색: Anthropic Evals는 Opus 4에서 49%~74%의 정확도 향상을 보여줍니다."
+    },
     {
       "id": "2026-05-30_0001",
       "title": "구글·메타, AI가 스스로 추론 최적화하는 기술 개발...\"토큰 비용 69.5% 절감\"",
@@ -336,183 +503,15 @@
         "class": "hot"
       },
       "title_kr": "오케스트로, GPU 활용률 높이는 AI 추론 운영 플랫폼 ‘콘체르토 AI’ 공개"
-    },
-    {
-      "id": "2026-05-30_0025",
-      "title": "Strengthening societal resilience with Rosalind Biodefense",
-      "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
-      "one_line": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S.",
-      "one_line_kr": "OpenAI, Rosalind Biodefense 출시, 검증된 개발자와 미국을 위해 GPT-Rosalind에 대한 신뢰할 수 있는 액세스 확대",
-      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "source": "OpenAI News (영상)",
-      "category": "영상AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-05-29 12:00",
-      "collect_date": "2026-05-30",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Rosalind Biodefense로 사회적 회복력 강화"
-    },
-    {
-      "id": "2026-05-30_0033",
-      "title": "Claude Opus 4.8: \"a modest but tangible improvement\"",
-      "summary": "Anthropic shipped Claude Opus 4.8 today. My favourite thing about it is this note in the release announcement: Users will find Opus 4.8 to be a modest but tangible improvement on its predecessor. There’s still more to be done: we’re working on developing and releasing models that…",
-      "one_line": "Anthropic shipped Claude Opus 4.8 today.",
-      "one_line_kr": "Anthropic은 오늘 Claude Opus 4.8을 출시했습니다.",
-      "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-entries",
-      "source": "Simon Willison",
-      "category": "LLM",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-05-29 08:59",
-      "collect_date": "2026-05-30",
-      "thumbnail": "https://static.simonwillison.net/static/2026/claude-opus-4.8-low.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Claude Opus 4.8: \"보통이지만 실질적인 개선\""
-    },
-    {
-      "id": "2026-05-30_0037",
-      "title": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
-      "summary": "Total Anthropic victory!",
-      "one_line": "Total Anthropic victory!",
-      "one_line_kr": "인류 전체의 승리!",
-      "url": "https://www.latent.space/p/ainews-anthropic-raises-965b-series",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-29 11:07",
-      "collect_date": "2026-05-30",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!9YXV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeb0a3a2-e744-4174-a24b-be1fd75961bc_1888x1630.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "[AINews] Anthropic, 9650억 달러 규모의 Series H 투자 유치, Opus 4.8 및 Dynamic Workflows/ultracode 출시"
-    },
-    {
-      "id": "2026-05-30_0038",
-      "title": "NVIDIA Introduces X-Token: Projection-Guided Cross-Tokenizer KD That Outperforms GOLD by +3.82 Average Points on Llama-3.2-1B",
-      "summary": "NVIDIA's X-Token fixes two structural failures in GOLD and improves GSM8k accuracy from 2.56 to 15.54 The post NVIDIA Introduces X-Token: Projection-Guided Cross-Tokenizer KD That Outperforms GOLD by +3.82 Average Points on Llama-3.2-1B appeared first on MarkTechPost.",
-      "one_line": "NVIDIA's X-Token fixes two structural failures in GOLD and improves GSM8k accuracy from 2.56 to 15.54 The post NVIDIA…",
-      "one_line_kr": "NVIDIA의 X-Token은 GOLD의 두 가지 구조적 오류를 수정하고 GSM8k 정확도를 2.56에서 15.54로 향상합니다. The post NVIDIA…",
-      "url": "https://www.marktechpost.com/2026/05/29/nvidia-introduces-x-token-projection-guided-cross-tokenizer-kd-that-outperforms-gold-by-3-82-average-points-on-llama-3-2-1b/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 08:19",
-      "collect_date": "2026-05-30",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-4.09.12-PM-1-150x150.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "NVIDIA, X-토큰 출시: Llama-3에서 평균 포인트 +3.82만큼 GOLD보다 뛰어난 프로젝션 기반 크로스 토크나이저 KD"
-    },
-    {
-      "id": "2026-05-30_0039",
-      "title": "StepFun Releases Step 3.7 Flash: A 198B MoE Vision-Language Model for Coding Agents and Search Workflows",
-      "summary": "StepFun releases Step 3.7 Flash, a 198B MoE model with native vision, 256k context, and Advisor Mode. The post StepFun Releases Step 3.7 Flash: A 198B MoE Vision-Language Model for Coding Agents and Search Workflows appeared first on MarkTechPost.",
-      "one_line": "The post StepFun Releases Step 3.7 Flash: A 198B MoE Vision-Language Model for Coding Agents and Search Workflows…",
-      "one_line_kr": "포스트 StepFun은 3.7 단계 플래시 출시: 코딩 에이전트 및 검색 워크플로를 위한 198B MoE 비전 언어 모델…",
-      "url": "https://www.marktechpost.com/2026/05/29/stepfun-releases-step-3-7-flash-a-198b-moe-vision-language-model-for-coding-agents-and-search-workflows/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 06:25",
-      "collect_date": "2026-05-30",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "StepFun, 3.7단계 플래시 출시: 코딩 에이전트 및 검색 워크플로를 위한 198B MoE 비전 언어 모델"
-    },
-    {
-      "id": "2026-05-30_0040",
-      "title": "Meet mKernel: A Multi-GPU, Multi-Node Fused Kernel Library for GPU-Driven Communication",
-      "summary": "UC Berkeley's UCCL team releases mKernel, fusing intra-node NVLink, inter-node RDMA, and dense compute into a single persistent CUDA kernel. The post Meet mKernel: A Multi-GPU, Multi-Node Fused Kernel Library for GPU-Driven Communication appeared first on MarkTechPost.",
-      "one_line": "UC Berkeley's UCCL team releases mKernel, fusing intra-node NVLink, inter-node RDMA, and dense compute into a single…",
-      "one_line_kr": "UC Berkeley의 UCCL 팀은 노드 내 NVLink, 노드 간 RDMA 및 고밀도 컴퓨팅을 단일 장치로 융합한 mKernel을 출시합니다.",
-      "url": "https://www.marktechpost.com/2026/05/29/meet-mkernel-a-multi-gpu-multi-node-fused-kernel-library-for-gpu-driven-communication/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-29 17:43",
-      "collect_date": "2026-05-30",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "mKernel을 만나보세요: GPU 기반 통신을 위한 다중 GPU, 다중 노드 융합 커널 라이브러리"
-    },
-    {
-      "id": "2026-05-30_0041",
-      "title": "Hexo Labs Open-Sources SIA: A Self-Improving Agent That Updates Both the Harness and the Model Weights",
-      "summary": "Hexo Labs released SIA, an open-source self-improving loop, under an MIT license. A Feedback-Agent reads each run's trajectory, then either rewrites the scaffold or triggers a LoRA weight update on gpt-oss-120b. Combining both levers beat scaffold-only iteration on LawBench, TriM…",
-      "one_line": "Hexo Labs released SIA, an open-source self-improving loop, under an MIT license.",
-      "one_line_kr": "Hexo Labs는 MIT 라이선스에 따라 오픈 소스 자체 개선 루프인 SIA를 출시했습니다.",
-      "url": "https://www.marktechpost.com/2026/05/29/hexo-labs-open-sources-sia-a-self-improving-agent-that-updates-both-the-harness-and-the-model-weights/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-29 16:28",
-      "collect_date": "2026-05-30",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-12.13.58-AM-1-150x150.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Hexo Labs 오픈 소스 SIA: 하네스와 모델 가중치를 모두 업데이트하는 자체 개선 에이전트"
-    },
-    {
-      "id": "2026-05-30_0066",
-      "title": "Prompt: Robinhood Wants AI Agents to Trade, Spend on Your Behalf",
-      "summary": "The company's new tools could bring AI-driven trading and financial transactions into the mainstream.",
-      "one_line": "The company's new tools could bring AI-driven trading and financial transactions into the mainstream.",
-      "one_line_kr": "회사의 새로운 도구는 AI 기반 거래 및 금융 거래를 주류로 가져올 수 있습니다.",
-      "url": "https://aibusiness.com/agentic-ai/robinhood-wants-ai-agents-trade-spend-your-behalf",
-      "source": "AI Business",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 00:28",
-      "collect_date": "2026-05-30",
-      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt9ec13a7e4f8c8407/6a19b1e99b028051afe1866a/AI_face.jpg?width=1280&auto=webp&quality=80&disable=upscale",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "프롬프트: Robinhood는 AI 에이전트가 귀하를 대신하여 거래하고 지출하기를 원합니다."
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "구글·메타, AI가 스스로 추론 최적화하는 기술 개발...\"토큰 비용 69.5% 절감\"",
+      "title": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211087",
-      "one_line": "구글과 메타가 대형언어모델(LLM)의 추론(reasoning) 효율을 자동으로 최적화하는 새로운 프레임워크 ‘오토 TTS(AutoTTS)’를 공개했다.",
-      "date": "2026-05-29 17:27"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211141",
+      "one_line": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+      "date": "2026-05-30 21:41"
     },
     "영상AI": {
       "title": "Strengthening societal resilience with Rosalind Biodefense",
@@ -536,22 +535,526 @@
       "date": "2026-05-29 08:59"
     },
     "개발AI": {
-      "title": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
-      "source": "Latent Space",
-      "url": "https://www.latent.space/p/ainews-anthropic-raises-965b-series",
-      "one_line": "인류 전체의 승리!",
-      "date": "2026-05-29 11:07"
+      "title": "Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/",
+      "one_line": "Genesis AI는 2026년 5월 27일에 Genesis World 1.0을 출시했습니다. 이는 물리학을 다루는 4가지 구성 요소 시뮬레이션 플랫폼입니다.…",
+      "date": "2026-05-30 18:25"
     }
   },
   "period_key_points": [
-    "구글과 메타가 대형언어모델(LLM)의 추론(reasoning) 효율을 자동으로 최적화하는 새로운 프레임워크 ‘오토 TTS(AutoTTS)’를 공개했다.",
-    "AI·클라우드 전문 오케스트로(대표 김범재, 김영광)는 GPU 인프라의 활용 효율을 높이는 AI 추론 운영 플랫폼 ‘콘체르토 AI(CONCERTO A.I.)’를 출시했다고 29일 밝혔다.",
-    "OpenAI, Rosalind Biodefense 출시, 검증된 개발자와 미국을 위해 GPT-Rosalind에 대한 신뢰할 수 있는 액세스 확대.",
-    "Anthropic은 오늘 Claude Opus 4.8을 출시했습니다.",
-    "Anthropic, 9650억 달러 규모의 Series H 투자 유치, Opus 4.8 및 Dynamic Workflows/ultracode 출시."
+    "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+    "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
+    "스텝펀이 멀티모달 기능과 에이전트 실행 능력을 대폭 강화한 차세대 모델을 공개했다.",
+    "오픈AI가 코딩 에이전트 ‘코덱스(Codex)’의 기능을 대폭 확장하며 윈도우 11 환경에서도 AI가 직접 컴퓨터를 조작할 수 있는 ‘컴퓨터 유즈(Computer Use)’ 기능을 지원하기 시작했다.",
+    "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다."
   ],
-  "period_prose": "이번 주간 총 380건의 AI 자료가 수집됐습니다. 국내 109건, 해외 271건이며 논문 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, Reasoning, GPT입니다.",
+  "period_prose": "이번 주간 총 370건의 AI 자료가 수집됐습니다. 국내 112건, 해외 258건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Reasoning입니다.",
   "items": [
+    {
+      "id": "2026-05-31_0000",
+      "title": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가",
+      "summary": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다. 하드웨어 사업 강화로 수익을 확대하고 자체 AI 모델 활용도를 극대화하려는 의도다.디 인포메이션은 29일(현지시간) 알렉스 히멜 메타 웨어러블 부문 부사장이 작성한 내부 메모를 입수, 웨어러블 기기 로드맵을 공개했다.이에 따르면, 히멜 부사장은 메타의 AI 모델과 새로운 앱 구독 요금제, 현재 개발 중인 소비자용 AI 에이전트 '해치(Hatch)'의 사용을 촉진하기 위해 하드웨어 제품군을 확대한다고 밝혔…",
+      "one_line": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+      "one_line_kr": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211141",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 21:41",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가"
+    },
+    {
+      "id": "2026-05-31_0001",
+      "title": "구글, AI 검색에 ‘사용자 선호 소스’ 기능 도입...\"맞춤형 콘텐츠 강화\"",
+      "summary": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수 있는 '선호 소스(Preferred Sources)’ 기능을 추가했다.사용자가 검색 개인 설정에서 소스 기본 설정을 찾아 자주 방문하거나 신뢰하는 미디어나 블로그 사이트를 등록하면, AI 답변에서 해당 소스의 링크가 먼저 노출된다. 구글은 사전 테스트 결과, 사용자가 선호하는 소스로 지정…",
+      "one_line": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수…",
+      "one_line_kr": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211139",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 19:49",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "구글, AI 검색에 ‘사용자 선호 소스’ 기능 도입...\"맞춤형 콘텐츠 강화\""
+    },
+    {
+      "id": "2026-05-31_0002",
+      "title": "[AI 이슈트렌드] 서소문 고가 붕괴·삼전닉스 ETF 여풀 속 '종전 기대감'에 출렁인 환율",
+      "summary": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가 붕괴(8.76%)’다.서울 서소문 고가차도 철거 현장에서 발생한 붕괴 사고로 3명이 숨졌다. 사고 직후 열차 운행에 차질이 빚어졌으며, 사고 나흘 만에 KTX와 경의선 운행이 재개되고 있다. 노동 당국은 공사의 원·하청업체 본사 및 현장사무실 등 총 7개소에 대해 압수수색을 진행 중이다.2…",
+      "one_line": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가…",
+      "one_line_kr": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211137",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 17:36",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AI 이슈트렌드] 서소문 고가 붕괴·삼전닉스 ETF 여풀 속 '종전 기대감'에 출렁인 환율"
+    },
+    {
+      "id": "2026-05-31_0003",
+      "title": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화",
+      "summary": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다. 리퀴드 AI는 28일(현지시간) 도구 호출과 에이전트 작업 수행에 최적화된 전문가 혼합(MoE) 모델 ‘LFM2.5-8B-A1B’를 공개했다. 새 모델은 최대 12만8000토큰의 장문 컨텍스트와 추론(reasoning) 기능을 새롭게 지원한다.LFM2.5-8B-A1B는 지난해 공개된 LFM2-8B-A1B의 후속 모델로, 총 83억개(8.3B)의 매개변수를 보유하고 있지만 실제 추론 과정에서는 15억개(1.…",
+      "one_line": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
+      "one_line_kr": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211132",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:55",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화"
+    },
+    {
+      "id": "2026-05-31_0004",
+      "title": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\"",
+      "summary": "스텝펀이 멀티모달 기능과 에이전트 실행 능력을 대폭 강화한 차세대 모델을 공개했다. 이 모델은 이미지 이해 기능이 처음으로 탑재됐으며, 코딩과 도구 활용, 장기 작업 수행 능력에서 전작을 크게 뛰어넘는 성능을 기록했다. 스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의 언어 모델과 18억개 규모의 비전 인코더(ViT)를 결합해 이미지와 텍…",
+      "one_line": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
+      "one_line_kr": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211130",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:47",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\""
+    },
+    {
+      "id": "2026-05-31_0005",
+      "title": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원",
+      "summary": "오픈AI가 코딩 에이전트 ‘코덱스(Codex)’의 기능을 대폭 확장하며 윈도우 11 환경에서도 AI가 직접 컴퓨터를 조작할 수 있는 ‘컴퓨터 유즈(Computer Use)’ 기능을 지원하기 시작했다. 또 아이폰과 안드로이드용 챗GPT 앱을 통해 윈도우 PC에서 실행 중인 코덱스 작업을 원격으로 제어할 수 있게 되면서, 장소에 구애받지 않는 AI 개발 환경 구축에 한 걸음 더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "one_line": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "one_line_kr": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211135",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 12:03",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원"
+    },
+    {
+      "id": "2026-05-31_0006",
+      "title": "메타의 AI 학습용 '마우스 추적', 유럽 개인정보 규정 위반 논란",
+      "summary": "메타가 AI 에이전트 개발을 위해 미국 직원들의 컴퓨터 사용 기록을 광범위하게 수집하는 가운데, 해외 직원들의 이메일과 채팅 내용까지 수집 대상에 포함될 수 있다는 사실이 알려졌다. 이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability Initiative)’라는 도구를 도입해 직원들의 컴퓨터 사용 패턴을 AI 학습 데이터로 수집하고 있다고 보도했다. 이…",
+      "one_line": "이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability…",
+      "one_line_kr": "이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211129",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 11:50",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "메타의 AI 학습용 '마우스 추적', 유럽 개인정보 규정 위반 논란"
+    },
+    {
+      "id": "2026-05-31_0007",
+      "title": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\"",
+      "summary": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다. 특히 나노 바나나 2는 텍스트와 이미지를 넘어 동영상까지 입력으로 활용하는 기능을 추가하며 멀티모달 AI 경쟁력을 강화했다.구글은 29일(현지시간) 기업용 AI 플랫폼인 구글 클라우드 제미나이 엔터프라이즈 에이전트 플랫폼을 통해 나노 바나나 2(제미나이 3.1 플래시 이미지)와 나노 바나나 프로(제미나이 3 …",
+      "one_line": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
+      "one_line_kr": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211134",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 11:29",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\""
+    },
+    {
+      "id": "2026-05-31_0008",
+      "title": "오픈AI는 동맹국 확장, 앤트로픽은 제한…엇갈리는 사이버보안 전략",
+      "summary": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다. 오픈AI는 한국 정부에 이어 일본 은행권에 최신 모델 접근을 제공하며 모델 배포 확대에 나섰지만, 미소스는 영국과 EU조차 접근하지 못하는 등 여전히 미국 중심의 제한적 운영 기조를 유지하는 모습이다.가타야마 사츠키 일본 재무장관은 29일 제이슨 권 오픈AI 최고 전략책임자(CSO)와의 회담 후, 오픈AI가 사이버 공격 방지를 돕기 위해 일부 일본 금융기관에 'GPT-5.5-사이버' 모델 접근 권한을 제공했…",
+      "one_line": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다.",
+      "one_line_kr": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211131",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 10:10",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "오픈AI는 동맹국 확장, 앤트로픽은 제한…엇갈리는 사이버보안 전략"
+    },
+    {
+      "id": "2026-05-31_0009",
+      "title": "[AI카툰] Bob, Senior IT guy - 밥, 정리해고에서 살아남다",
+      "summary": "글·그림 Dr. Alf",
+      "one_line": "글·그림 Dr. Alf",
+      "one_line_kr": "글·그림 Dr. Alf",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211126",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-30 10:00",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AI카툰] Bob, Senior IT guy - 밥, 정리해고에서 살아남다"
+    },
+    {
+      "id": "2026-05-31_0010",
+      "title": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run",
+      "summary": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을 강조했다. 김 대표는 활용 가능한 국내 API가 많지 않아 대부분의 해커톤이 해외 IT 인프라를 기반으로 진행되고 있다고 설명했다. 이어 생성형 인공지능(AI) 기반 개발 방식인 바이브코딩 시대를 맞아 국내 서비스와 연결된 개방형 생태계를 조성하기 위해 이번 행사를 마련했다고 밝혔다.",
+      "one_line": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
+      "one_line_kr": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
+      "url": "https://byline.network/2026/05/0530-3/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-05-31 00:50",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run"
+    },
+    {
+      "id": "2026-05-31_0011",
+      "title": "SoftBank says it will invest up to €75 billion to build French data centers",
+      "summary": "The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity.",
+      "one_line": "The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity.",
+      "one_line_kr": "회사에 따르면 목표는 최대 5기가와트의 추가 데이터 센터 용량을 개발하고 운영하는 것입니다.",
+      "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-31 06:45",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "SoftBank는 프랑스 데이터 센터 구축에 최대 750억 유로를 투자할 것이라고 밝혔습니다."
+    },
+    {
+      "id": "2026-05-31_0012",
+      "title": "‘What a joke’: Github Copilot’s new token-based billing spurs consternation among devs",
+      "summary": "The golden age of Microsoft's Github Copilot appears to be at an end.",
+      "one_line": "The golden age of Microsoft's Github Copilot appears to be at an end.",
+      "one_line_kr": "Microsoft Github Copilot의 황금시대는 이제 끝난 것 같습니다.",
+      "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-31 01:30",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "'정말 농담이군요': Github Copilot의 새로운 토큰 기반 청구는 개발자들 사이에 경악을 불러일으킵니다"
+    },
+    {
+      "id": "2026-05-31_0013",
+      "title": "Meta is reportedly developing an AI pendant",
+      "summary": "Meta seems to be making big bets on AI-powered hardware.",
+      "one_line": "Meta seems to be making big bets on AI-powered hardware.",
+      "one_line_kr": "Meta는 AI 기반 하드웨어에 큰 투자를 하고 있는 것 같습니다.",
+      "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-31 00:59",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "메타가 AI 펜던트를 개발 중인 것으로 알려졌습니다."
+    },
+    {
+      "id": "2026-05-31_0014",
+      "title": "I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful",
+      "summary": "Gemini Spark helps automate everyday tasks, from inbox summaries to local event planning, but it’s unclear why Google made it a separate product.",
+      "one_line": "Gemini Spark helps automate everyday tasks, from inbox summaries to local event planning, but it’s unclear why Google…",
+      "one_line_kr": "Gemini Spark는 받은편지함 요약부터 지역 이벤트 계획까지 일상적인 작업을 자동화하는 데 도움이 되지만 Google이…",
+      "url": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-31 00:30",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Google의 연중무휴 AI 비서인 Gemini Spark를 작업에 투입했는데 실제로 꽤 유용합니다."
+    },
+    {
+      "id": "2026-05-31_0015",
+      "title": "BEAT: Rhythm-Elastic Alignment for Agentic Music-guided Movie Trailer Generation",
+      "summary": "Automatic movie trailer generation must select shots from a full-length film and synchronize them with background music. Existing methods either relegate music alignment to post-processing or enforce rigid one-to-one shot-music mappings, overlooking that professional editing rhyt…",
+      "one_line": "Automatic movie trailer generation must select shots from a full-length film and synchronize them with background music.",
+      "one_line_kr": "자동 영화 예고편 생성은 장편 영화에서 장면을 선택하고 배경 음악과 동기화해야 합니다.",
+      "url": "https://tldr.takara.ai/p/2605.27067",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-05-26 23:18",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "BEAT: 에이전트틱 음악 기반 영화 예고편 생성을 위한 리듬-탄력적 정렬"
+    },
+    {
+      "id": "2026-05-31_0016",
+      "title": "Optimal Rates for Differentially Private Hypothesis Testing with E-values",
+      "summary": "E-values have attracted considerable interest in recent years as flexible tools for enabling anytime-valid and adaptive data analysis. Hypothesis testing is at the core of many of these applications, which can often involve private or sensitive data. In this work, we answer a sim…",
+      "one_line": "E-values have attracted considerable interest in recent years as flexible tools for enabling anytime-valid and adaptive…",
+      "one_line_kr": "E-value는 언제 어디서나 유효하고 적응력이 뛰어난 유연한 도구로서 최근 몇 년간 상당한 관심을 불러일으켰습니다.",
+      "url": "https://tldr.takara.ai/p/2605.28952",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-05-28 03:00",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "E-값을 사용한 차등 비공개 가설 검정을 위한 최적 비율"
+    },
+    {
+      "id": "2026-05-31_0017",
+      "title": "Temporal Simultaneity Predicts Annotation Quality in Sentiment Corpora",
+      "summary": "Annotation quality is difficult to sustain when campaigns span weeks or months with small annotator pools. We present a Setswana sentiment dataset of 3,565 tweets annotated by three native-speaker annotators across eight batches and examine why inter-annotator agreement (IAA) dec…",
+      "one_line": "Annotation quality is difficult to sustain when campaigns span weeks or months with small annotator pools.",
+      "one_line_kr": "캠페인이 작은 주석자 풀로 몇 주 또는 몇 달에 걸쳐 진행되는 경우 주석 품질을 유지하기가 어렵습니다.",
+      "url": "https://tldr.takara.ai/p/2605.27239",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-05-27 01:21",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "시간적 동시성은 감정 말뭉치의 주석 품질을 예측합니다."
+    },
+    {
+      "id": "2026-05-31_0018",
+      "title": "ESAM++: Efficient Online 3D Perception on the Edge",
+      "summary": "Online 3D scene perception in real time is essential for robotics, AR/VR, and autonomous systems, particularly in edge computing scenarios where computational resources are limited and privacy is crucial. Recent state-of-the-art methods like EmbodiedSAM (ESAM) demonstrate the pro…",
+      "one_line": "Recent state-of-the-art methods like EmbodiedSAM (ESAM) demonstrate the pro…",
+      "one_line_kr": "ESAM(EmbodiedSAM)과 같은 최신 최첨단 방법은 프로…",
+      "url": "https://tldr.takara.ai/p/2605.29505",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-05-28 16:29",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "ESAM++: 엣지에서의 효율적인 온라인 3D 인식"
+    },
+    {
+      "id": "2026-05-31_0019",
+      "title": "[AINews] Founders and Forward Deployed Engineers",
+      "summary": "a quiet day lets us highlight the new AIE WF focuses",
+      "one_line": "a quiet day lets us highlight the new AIE WF focuses",
+      "one_line_kr": "조용한 날에는 새로운 AIE WF 초점을 강조할 수 있습니다.",
+      "url": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
+      "source": "Latent Space",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 10:57",
+      "collect_date": "2026-05-31",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!SpLP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AINews] 창립자와 전방 배치 엔지니어"
+    },
+    {
+      "id": "2026-05-31_0020",
+      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
+      "summary": "Text-to-speech changed fast in 2026. This guide ranks the leading commercial and open-weight TTS models, comparing quality, latency, cost, language coverage, and licensing so engineers can match a model to the job. The post Best Text-to-Speech TTS Models in 2026: A Benchmark-Base…",
+      "one_line": "Text-to-speech changed fast in 2026.",
+      "one_line_kr": "2026년에 TTS(텍스트 음성 변환)가 빠르게 변화했습니다.",
+      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-31 06:26",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "2026년 최고의 텍스트 음성 변환 TTS 모델: 벤치마크 기반 비교"
+    },
+    {
+      "id": "2026-05-31_0021",
+      "title": "Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation",
+      "summary": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics, rendering, compilation, and tooling. The system achieves a Pearson correlation of 0.8996 between simulation and real-world robot rollouts, and reduces policy evaluation …",
+      "one_line": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics,…",
+      "one_line_kr": "Genesis AI는 2026년 5월 27일에 Genesis World 1.0을 출시했습니다. 이는 물리학을 다루는 4가지 구성 요소 시뮬레이션 플랫폼입니다.…",
+      "url": "https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 18:25",
+      "collect_date": "2026-05-31",
+      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-30-at-2.19.49-AM-1-150x150.png",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Genesis AI, 확장 가능한 로봇공학 기반 모델 평가를 위한 Nyx, Quadrants 및 Genesis World 1.0 물리 플랫폼 출시"
+    },
+    {
+      "id": "2026-05-31_0022",
+      "title": "Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4",
+      "summary": "Nous Research's Hermes Agent adds Tool Search to fix MCP context bloat using BM25 progressive schema disclosure. The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first on MarkTechPost.",
+      "one_line": "The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first…",
+      "one_line_kr": "MCP에 대한 Hermes Agent Ships 도구 검색 게시물: Anthropic Evals는 Opus 4에서 49% ~ 74%의 정확도 이득을 보여줍니다.",
+      "url": "https://www.marktechpost.com/2026/05/29/hermes-agent-ships-tool-search-for-mcp-anthropic-evals-show-49-to-74-accuracy-gain-on-opus-4/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 12:11",
+      "collect_date": "2026-05-31",
+      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-7.56.04-PM-1-150x150.png",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MCP에 대한 Hermes Agent Ships 도구 검색: Anthropic Evals는 Opus 4에서 49%~74%의 정확도 향상을 보여줍니다."
+    },
+    {
+      "id": "2026-05-31_0023",
+      "title": "How to Use AgentTrove: Streaming 1.7M Agentic Traces and Building a Clean ShareGPT SFT Dataset in Python",
+      "summary": "AgentTrove is the largest open-source collection of agentic interaction traces, with 1.7M rows in a ShareGPT-style layout. This hands-on Python tutorial shows how to stream the dataset without full downloads, normalize agent turns, extract commands, analyze trajectories, and expo…",
+      "one_line": "AgentTrove is the largest open-source collection of agentic interaction traces, with 1.7M rows in a ShareGPT-style…",
+      "one_line_kr": "AgentTrove는 ShareGPT 스타일의 170만 행을 포함하는 가장 큰 오픈 소스 에이전트 상호 작용 추적 컬렉션입니다.",
+      "url": "https://www.marktechpost.com/2026/05/29/how-to-use-agenttrove-streaming-1-7m-agentic-traces-and-building-a-clean-sharegpt-sft-dataset-in-python/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-05-30 09:46",
+      "collect_date": "2026-05-31",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "AgentTrove 사용 방법: 170만 개의 에이전트 추적을 스트리밍하고 Python에서 깨끗한 ShareGPT SFT 데이터 세트 구축"
+    },
     {
       "id": "2026-05-30_0000",
       "title": "[5월29일] 요미우리 감독 사건은 왜 ‘챗GPT의 비극’이 됐나",
@@ -7817,720 +8320,6 @@
         "class": "hot"
       },
       "title_kr": "NVIDIA AI, Gated DeltaNet-2 출시: 델타 규칙에서 삭제와 쓰기를 분리하는 선형 주의 계층"
-    },
-    {
-      "id": "2026-05-24_0000",
-      "title": "피차이 \"구글 코딩, 타사에 뒤져...데이터 선순환 구조로 역전할 것\"",
-      "summary": "순다르 피차이 CEO가 구글의 코딩 성능이 타사에 비해 떨어졌다는 점을 시인했다. 그 이유로 코딩에서 '데이터 플라이휠(data flywheel)' 구조를 갖추는 것이 부족했다고 짚었다.피차이 CEO는 22일(현지시간) 공개된 뉴욕타임스의 '하드 포크' 팟캐스트에 등장, 구글이 최근 앤트로픽이나 오픈AI와의 코딩 AI 경쟁에서 뒤처지고 있다는 비판에 대해 솔직한 발언을 내놓았다. 최근 그의 인터뷰 중 가장 직설적이고 솔직한 발언이 이어졌다. 이례적으로 '전략적 패배'라는 점도 인정했다.그는 \"코딩…",
-      "one_line": "그 이유로 코딩에서 '데이터 플라이휠(data flywheel)' 구조를 갖추는 것이 부족했다고 짚었다.피차이 CEO는 22일(현지시간) 공개된 뉴욕타임스의 '하드 포크' 팟캐스트에 등장, 구글이 최근 앤트로픽이나…",
-      "one_line_kr": "그 이유로 코딩에서 '데이터 플라이휠(data flywheel)' 구조를 갖추는 것이 부족했다고 짚었다.피차이 CEO는 22일(현지시간) 공개된 뉴욕타임스의 '하드 포크' 팟캐스트에 등장, 구글이 최근 앤트로픽이나…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210871",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 21:12",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "피차이 \"구글 코딩, 타사에 뒤져...데이터 선순환 구조로 역전할 것\""
-    },
-    {
-      "id": "2026-05-24_0001",
-      "title": "오픈AI, '코덱스' 업데이트로 맥락 파악·자율성 강화...\"맥북 닫아도 작동\"",
-      "summary": "오픈AI가 AI 코딩 에이전트 ‘코덱스(Codex)’의 대규모 업데이트를 공개하며 개발 업무 자동화와 자율형 작업 수행 기능 강화에 나섰다. 오픈AI는 21일(현지시간) 이번 업데이트를 통해 맥용 코덱스 앱에 '앱샷(AppShots)' 기능을 도입했다고 밝혔다. 사용자는 맥에서 ‘Command-Command’ 키를 누르면 현재 활성화된 앱 창을 코덱스 대화 스레드에 즉시 첨부할 수 있다.앱샷은 단순 스크린샷뿐 아니라 화면 내 텍스트와 화면 밖에 존재하는 일부 맥락 정보까지 전달한다. 이에 따라 사…",
-      "one_line": "오픈AI가 AI 코딩 에이전트 ‘코덱스(Codex)’의 대규모 업데이트를 공개하며 개발 업무 자동화와 자율형 작업 수행 기능 강화에 나섰다.",
-      "one_line_kr": "오픈AI가 AI 코딩 에이전트 ‘코덱스(Codex)’의 대규모 업데이트를 공개하며 개발 업무 자동화와 자율형 작업 수행 기능 강화에 나섰다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210864",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 18:51",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, '코덱스' 업데이트로 맥락 파악·자율성 강화...\"맥북 닫아도 작동\""
-    },
-    {
-      "id": "2026-05-24_0002",
-      "title": "엔비디아 차세대 AI 서버 한대에 '118억'... 메모리 값만 30억 육박",
-      "summary": "AI 수요 폭증으로 핵심 부품 가격이 급등하면서, 엔비디아의 차세대 AI 서버 시스템 가격도 큰 폭으로 오를 전망이다. 특히 차세대 ‘베라 루빈(Vera Rubin)’ 기반 AI 랙 시스템은 메모리 비중이 전체 비용의 25% 수준까지 확대되며, 고대역폭 메모리(HBM)와 NAND 공급망이 AI 인프라 경쟁의 핵심 변수로 부상하고 있다.22일(현지시간) 모건스탠리 리서치에 따르면, 엔비디아의 차세대 AI 서버인 ‘VR200 NVL72’ 랙 시스템 가격은 780만달러(약 118억원)에 달할 것으로 추…",
-      "one_line": "폭증으로 핵심 부품 가격이 급등하면서, 엔비디아의 차세대 AI 서버 시스템 가격도 큰 폭으로 오를 전망이다.",
-      "one_line_kr": "폭증으로 핵심 부품 가격이 급등하면서, 엔비디아의 차세대 AI 서버 시스템 가격도 큰 폭으로 오를 전망이다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210866",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 18:25",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "엔비디아 차세대 AI 서버 한대에 '118억'... 메모리 값만 30억 육박"
-    },
-    {
-      "id": "2026-05-24_0003",
-      "title": "스포티파이, ‘AI 리믹스’ 시대 선언...“음악 감상 넘어 직접 만든다”",
-      "summary": "세계 최대 음원 스트리밍 플랫폼인 스포티파이가 유니버설 뮤직 그룹(UMG)이 생성 AI를 활용한 음악 커버와 리믹스 제작 기능 도입을 위한 라이선스 계약을 체결했다. AI 기술을 활용해 팬들이 참여형 음악 콘텐츠를 제작할 수 있도록 하는 동시에, 아티스트와 작곡가에게 새로운 수익원을 제공하겠다는 구상이다.스포티파이는 21일(현지시간) 이번 계약에 따라 프리미엄 구독자를 대상으로 유료 부가 서비스 형태의 AI 음악 제작 기능을 선보일 예정이라고 발표했다.이용자는 참여를 승인한 아티스트의 곡을 기반으…",
-      "one_line": "AI 기술을 활용해 팬들이 참여형 음악 콘텐츠를 제작할 수 있도록 하는 동시에, 아티스트와 작곡가에게 새로운 수익원을 제공하겠다는 구상이다.스포티파이는 21일(현지시간) 이번 계약에 따라 프리미엄 구독자를 대상으로…",
-      "one_line_kr": "AI 기술을 활용해 팬들이 참여형 음악 콘텐츠를 제작할 수 있도록 하는 동시에, 아티스트와 작곡가에게 새로운 수익원을 제공하겠다는 구상이다.스포티파이는 21일(현지시간) 이번 계약에 따라 프리미엄 구독자를 대상으로…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210865",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 18:15",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "스포티파이, ‘AI 리믹스’ 시대 선언...“음악 감상 넘어 직접 만든다”"
-    },
-    {
-      "id": "2026-05-24_0004",
-      "title": "앤트로픽, FDE 담당할 스타트업 인수로 기업용 AI 시장 공략",
-      "summary": "앤트로픽이 기업 AI 시장 확대를 위해 신설한 회사를 운영할 AI 서비스 전문 스타트업을 인수했다. 이들은 전방 배치 엔지니어(FDE)를 담당하게 된다.앤트로픽은 21일(현지시간) 블랙스톤, 헬먼 앤 프리드먼(H&F) 등과 설립한 신생 AI 서비스 합작사의 운영을 위해 샌프란시스코의 AI 서비스 스타트업 프랙셔널 AI(Fractional AI)를 인수했다고 발표했다. 아직 이름이 정해지지 않은 합작사는 중견 기업들이 생성 AI를 실제 업무 환경에 도입할 수 있도록 지원하는 것을 목표로 하고 있다.…",
-      "one_line": "이들은 전방 배치 엔지니어(FDE)를 담당하게 된다.앤트로픽은 21일(현지시간) 블랙스톤, 헬먼 앤 프리드먼(H&F) 등과 설립한 신생 AI 서비스 합작사의 운영을 위해 샌프란시스코의 AI 서비스 스타트업 프랙셔널…",
-      "one_line_kr": "이들은 전방 배치 엔지니어(FDE)를 담당하게 된다.앤트로픽은 21일(현지시간) 블랙스톤, 헬먼 앤 프리드먼(H&F) 등과 설립한 신생 AI 서비스 합작사의 운영을 위해 샌프란시스코의 AI 서비스 스타트업 프랙셔널…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210860",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 17:59",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "앤트로픽, FDE 담당할 스타트업 인수로 기업용 AI 시장 공략"
-    },
-    {
-      "id": "2026-05-24_0005",
-      "title": "[AI 이슈트렌드] 삼성전자 파업·스타벅스 '5·18 비하' 파문에 관심 집중",
-      "summary": "AI타임스와 이스트에이드의 5월 셋째 주(5월 15일~21일) 이슈 분석 결과, 대기업 파업과 역사 비하 논란, 국내외 주요 정세 등이 상위권을 차지했다.이번 주는 ‘삼성전자 파업 긴급조정(30.67%)’이 압도적 검색량을 기록했다.총파업 직전 극적으로 노사 잠정 합의안이 도출되며 파업은 일시 유보됐다. 노조는 오는 27일까지 찬반투표를 실시하나, DS 부문과 DX·비메모리 부문 간 성과급 격차가 최대 10배에 달해 내부 부결 움직임도 예고됐다.삼성전자 주주 단체도 주주총회 결의 없이 이루어진 합…",
-      "one_line": "AI타임스와 이스트에이드의 5월 셋째 주(5월 15일~21일) 이슈 분석 결과, 대기업 파업과 역사 비하 논란, 국내외 주요",
-      "one_line_kr": "AI타임스와 이스트에이드의 5월 셋째 주(5월 15일~21일) 이슈 분석 결과, 대기업 파업과 역사 비하 논란, 국내외 주요",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210867",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 16:19",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AI 이슈트렌드] 삼성전자 파업·스타벅스 '5·18 비하' 파문에 관심 집중"
-    },
-    {
-      "id": "2026-05-24_0006",
-      "title": "[AI카툰] Bob, Senior IT guy - 밥, VC와 데이트하기",
-      "summary": "글·그림 Dr. Alf",
-      "one_line": "글·그림 Dr. Alf",
-      "one_line_kr": "글·그림 Dr. Alf",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210869",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 10:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AI카툰] Bob, Senior IT guy - 밥, VC와 데이트하기"
-    },
-    {
-      "id": "2026-05-24_0007",
-      "title": "메타, 한달 새 앱 2개 기습 출시…\"AI로 수십개 개발\" 현실화하나",
-      "summary": "메타가 레딧과 흡사한 커뮤니티 독립 앱을 조용히 출시했다. 앱의 기능보다 마크 저커버그 CEO가 예고했던 'AI 기반의 다수 앱 개발' 전략이 본격적인 실행 단계에 접어들었다는 점이 주목된다.메타는 22일(현지시간) 애플 앱스토어를 통해 페이스북 그룹 기반의 독립 앱 '포럼(Forum)'을 선보였다. 사용자들이 관심 있는 주제로 토론 그룹을 만들고 피드를 맞춤 설정할 수 있는 서비스다.AI 기능이 기반이다. 사용자의 활동 조사를 기반으로 맞춤형 추천을 제공하는 것은 물론, '질문하기(Ask)' 기…",
-      "one_line": "메타가 레딧과 흡사한 커뮤니티 독립 앱을 조용히 출시했다.",
-      "one_line_kr": "메타가 레딧과 흡사한 커뮤니티 독립 앱을 조용히 출시했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=210861",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-23 09:55",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "메타, 한달 새 앱 2개 기습 출시…\"AI로 수십개 개발\" 현실화하나"
-    },
-    {
-      "id": "2026-05-24_0008",
-      "title": "Ferrari is using IBM’s AI to create F1 superfans",
-      "summary": "IBM and Scuderia Ferrari HP take TechCrunch inside how they are redefining the fan experience.",
-      "one_line": "IBM and Scuderia Ferrari HP take TechCrunch inside how they are redefining the fan experience.",
-      "one_line_kr": "IBM과 Scuderia Ferrari HP는 TechCrunch를 통해 팬 경험을 어떻게 재정의하고 있는지 알아봅니다.",
-      "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-24 00:08",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "페라리는 IBM의 AI를 사용하여 F1 슈퍼팬을 만들고 있습니다."
-    },
-    {
-      "id": "2026-05-24_0009",
-      "title": "Elon Musk has given up on solar power (on Earth)",
-      "summary": "Elon Muks's xAI has gone all in on natural gas, while SpaceX is obsessed with orbital data centers. What happened to the \"solar-electric economy\" he promised?",
-      "one_line": "Elon Muks's xAI has gone all in on natural gas, while SpaceX is obsessed with orbital data centers.",
-      "one_line_kr": "Elon Muks의 xAI는 천연가스에 모든 것을 투자한 반면 SpaceX는 궤도 데이터 센터에 집착하고 있습니다.",
-      "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-23 22:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Elon Musk는 (지구에서) 태양 에너지를 포기했습니다."
-    },
-    {
-      "id": "2026-05-24_0010",
-      "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-      "summary": "",
-      "one_line": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-      "one_line_kr": "Nemotron-Labs 확산 언어 모델을 사용한 광속 텍스트 생성을 향하여",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
-      "source": "HuggingFace Blog",
-      "category": "이미지·디자인AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-05-23 09:02",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Nemotron-Labs 확산 언어 모델을 사용한 광속 텍스트 생성을 향하여"
-    },
-    {
-      "id": "2026-05-24_0011",
-      "title": "Findings of the Counter Turing Test: AI-Generated Image Detection",
-      "summary": "The rapid advancements in generative AI technologies, such as Stable Diffusion, DALL-E, and Midjourney, have significantly transformed the creation of synthetic visual content. While these models enable innovation across industries, they also pose serious challenges, including mi…",
-      "one_line": "The rapid advancements in generative AI technologies, such as Stable Diffusion, DALL-E, and Midjourney, have…",
-      "one_line_kr": "Stable Diffusion, DALL-E, Midjourney 등 생성 AI 기술의 급속한 발전은…",
-      "url": "https://tldr.takara.ai/p/2605.20787",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-20 15:32",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "카운터 튜링 테스트 결과: AI 생성 이미지 감지"
-    },
-    {
-      "id": "2026-05-24_0012",
-      "title": "Your Neighbors Know: Leveraging Local Neighborhoods for Backdoor Detection in Decentralized Learning",
-      "summary": "Decentralized learning (DL) is an emerging machine learning paradigm where nodes collaboratively train models without a central server. However, the collaborative nature of DL makes it vulnerable to backdoor attacks, where a model is taught to behave normally on standard inputs w…",
-      "one_line": "Decentralized learning (DL) is an emerging machine learning paradigm where nodes collaboratively train models without a…",
-      "one_line_kr": "분산 학습(DL)은 노드가 아무런 조치 없이 모델을 공동으로 훈련하는 새로운 기계 학습 패러다임입니다.",
-      "url": "https://tldr.takara.ai/p/2605.19969",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-20 00:17",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "이웃은 알고 있습니다: 분산 학습에서 백도어 탐지를 위해 지역 이웃 활용"
-    },
-    {
-      "id": "2026-05-24_0013",
-      "title": "Divergence-Suppressing Couplings for Rectified Flow",
-      "summary": "The promise of Rectified Flow rests on producing self-generated couplings whose trajectories are straight, or nearly so. In practice, trajectories generated by the base flow model can bend and intertwine, and the resulting coupling inherits this distortion. In this paper, we iden…",
-      "one_line": "The promise of Rectified Flow rests on producing self-generated couplings whose trajectories are straight, or nearly so.",
-      "one_line_kr": "Rectified Flow의 약속은 궤적이 직선이거나 거의 직선인 자체 생성 커플링을 생성하는 데 있습니다.",
-      "url": "https://tldr.takara.ai/p/2605.17733",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-18 10:34",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "정류 흐름을 위한 발산 억제 커플링"
-    },
-    {
-      "id": "2026-05-24_0014",
-      "title": "Entropy-Guided Self-Supervised Learning for Medical Image Classification",
-      "summary": "Accurate and robust medical image classification is paramount for early disease diagnosis and treatment planning. However, challenges such as limited annotated data, high intra-class variability, and subtle inter-class differences often hinder the performance of deep learning mod…",
-      "one_line": "Accurate and robust medical image classification is paramount for early disease diagnosis and treatment planning.",
-      "one_line_kr": "정확하고 견고한 의료 영상 분류는 질병의 조기 진단 및 치료 계획에 매우 중요합니다.",
-      "url": "https://tldr.takara.ai/p/2605.21970",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-21 13:01",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "의료 영상 분류를 위한 엔트로피 기반 자가 지도 학습"
-    },
-    {
-      "id": "2026-05-24_0015",
-      "title": "[AINews] All Model Labs are now Agent Labs",
-      "summary": "a quiet day lets us tie together a few quotes as all model labs become agent labs",
-      "one_line": "a quiet day lets us tie together a few quotes as all model labs become agent labs",
-      "one_line_kr": "조용한 날에는 모든 모델 랩이 에이전트 랩이 되므로 몇 가지 인용문을 함께 묶을 수 있습니다.",
-      "url": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-23 13:21",
-      "collect_date": "2026-05-24",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!TLyU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F348d0573-16b0-46d0-a852-ccaae2b6ff4f_1122x534.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "[AINews] 모든 Model Lab이 Agent Lab으로 변경되었습니다."
-    },
-    {
-      "id": "2026-05-24_0016",
-      "title": "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
-      "summary": "Tencent has open-sourced TencentDB Agent Memory, a fully local memory system for AI agents released under the MIT license. The project pairs symbolic short-term memory, which offloads verbose tool logs into a compact Mermaid task canvas, with a 4-tier long-term memory pyramid (L0…",
-      "one_line": "Tencent has open-sourced TencentDB Agent Memory, a fully local memory system for AI agents released under the MIT…",
-      "one_line_kr": "Tencent는 MIT에서 출시된 AI 에이전트를 위한 완전 로컬 메모리 시스템인 TencentDB Agent Memory를 오픈 소스로 보유하고 있습니다.",
-      "url": "https://www.marktechpost.com/2026/05/23/tencent-open-sources-tencentdb-agent-memory-a-4-tier-local-memory-pipeline-for-ai-agents/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-24 04:31",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Tencent 오픈 소스 TencentDB 에이전트 메모리: AI 에이전트를 위한 4계층 로컬 메모리 파이프라인"
-    },
-    {
-      "id": "2026-05-24_0017",
-      "title": "Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory",
-      "summary": "In this tutorial, we build an advanced workflow using the SuperClaude Framework as a structured layer on top of the Anthropic API. The post Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory appeared first on MarkTechPost.",
-      "one_line": "The post Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory appeared first on…",
-      "one_line_kr": "명령, 에이전트, 모드 및 세션 메모리를 사용하여 SuperClaude 프레임워크 워크플로 구축 게시물이 첫 번째로 게재되었습니다.",
-      "url": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-24 04:05",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "명령, 에이전트, 모드 및 세션 메모리를 사용하여 SuperClaude 프레임워크 워크플로 구축"
-    },
-    {
-      "id": "2026-05-24_0018",
-      "title": "Nous Research Releases Contrastive Neuron Attribution (CNA): Sparse MLP Circuit Steering Without SAE Training or Weight Modification",
-      "summary": "Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron circuits to steer LLM behavior — no sparse autoencoder training, no weight modification, and no degradation of general capability benchmarks. The post Nous Research…",
-      "one_line": "Nous Research releases Contrastive Neuron Attribution (CNA), a method that identifies and ablates sparse MLP neuron…",
-      "one_line_kr": "Nous Research는 희소 MLP 뉴런을 식별하고 제거하는 방법인 CNA(Contrastive Neuron Attribution)를 출시합니다.",
-      "url": "https://www.marktechpost.com/2026/05/23/nous-research-releases-contrastive-neuron-attribution-cna-sparse-mlp-circuit-steering-without-sae-training-or-weight-modification/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-23 19:32",
-      "collect_date": "2026-05-24",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-23-at-2.48.09-AM-150x150.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Nous Research, CNA(Contrastive Neuron Attribution) 출시: SAE 훈련이나 가중치 없이 희소 MLP 회로 조정"
-    },
-    {
-      "id": "2026-05-24_0019",
-      "title": "Perplexity Open-Sources Bumblebee: A Read-Only Supply-Chain Scanner for Developer Endpoints",
-      "summary": "Perplexity has open-sourced Bumblebee, an internal security tool it uses to protect the developer systems behind its search product, Comet, and Computer. Bumblebee is a read-only inventory collector for macOS and Linux developer endpoints. It scans npm, PyPI, Go modules, MCP conf…",
-      "one_line": "Perplexity has open-sourced Bumblebee, an internal security tool it uses to protect the developer systems behind its…",
-      "one_line_kr": "Perplexity는 개발자 시스템을 보호하기 위해 사용하는 내부 보안 도구인 Bumblebee를 오픈 소스로 공개했습니다.",
-      "url": "https://www.marktechpost.com/2026/05/23/perplexity-open-sources-bumblebee-a-read-only-supply-chain-scanner-for-developer-endpoints/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-23 17:17",
-      "collect_date": "2026-05-24",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-23-at-1.20.14-AM-1-150x150.png",
-      "type": "도구출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Perplexity 오픈 소스 Bumblebee: 개발자 엔드포인트를 위한 읽기 전용 공급망 스캐너"
-    },
-    {
-      "id": "2026-05-24_0020",
-      "title": "Benchmarking and Improving Monitors for Out-Of-Distribution Alignment Failure in LLMs",
-      "summary": "arXiv:2605.21602v1 Announce Type: new Abstract: Many safety and alignment failures of large language models (LLMs) occur due to out-of-distribution (OOD) situations: unusual prompt or response patterns that are unforeseen by model developers. We systematically study whether LLM m…",
-      "one_line": "arXiv:2605.21602v1 Announce Type: new Abstract: Many safety and alignment failures of large language models (LLMs)…",
-      "one_line_kr": "arXiv:2605.21602v1 발표 유형: 새로운 개요: 대규모 언어 모델(LLM)의 많은 안전 및 정렬 실패…",
-      "url": "https://arxiv.org/abs/2605.21602",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "LLM의 배포 외 정렬 실패에 대한 모니터 벤치마킹 및 개선"
-    },
-    {
-      "id": "2026-05-24_0021",
-      "title": "TO-Agents: A Multi-Agent AI Pipeline for Preference-Guided Topology Optimization",
-      "summary": "arXiv:2605.21622v1 Announce Type: new Abstract: Topology optimization can generate efficient structures, but designers often must manually translate qualitative intent, such as desired visual style, product experience, or manufacturability into solver settings that are not direct…",
-      "one_line": "arXiv:2605.21622v1 Announce Type: new Abstract: Topology optimization can generate efficient structures, but designers…",
-      "one_line_kr": "arXiv:2605.21622v1 발표 유형: new 개요: 토폴로지 최적화는 효율적인 구조를 생성할 수 있지만 설계자는…",
-      "url": "https://arxiv.org/abs/2605.21622",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "TO-Agents: 기본 설정 기반 토폴로지 최적화를 위한 다중 에이전트 AI 파이프라인"
-    },
-    {
-      "id": "2026-05-24_0022",
-      "title": "The Shape of Testimony: A Scalable Framework for Oral History Archive Comparison",
-      "summary": "arXiv:2605.21623v1 Announce Type: new Abstract: Researchers in Holocaust studies have often distinguished between two styles of oral survivor testimony: the USC Shoah Foundation's interviews tend to follow a structured, interviewer-guided format, whereas the Yale Fortunoff Video …",
-      "one_line": "arXiv:2605.21623v1 Announce Type: new Abstract: Researchers in Holocaust studies have often distinguished between two…",
-      "one_line_kr": "arXiv:2605.21623v1 발표 유형: 새로운 개요: 홀로코스트 연구 연구자들은 종종 두 가지를 구별했습니다…",
-      "url": "https://arxiv.org/abs/2605.21623",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "증언의 형태: 구술사 아카이브 비교를 위한 확장 가능한 프레임워크"
-    },
-    {
-      "id": "2026-05-24_0023",
-      "title": "MindLoom: Composing Thought Modes for Frontier-Level Reasoning Data Synthesis",
-      "summary": "arXiv:2605.21630v1 Announce Type: new Abstract: Although LLMs have made substantial progress in reasoning, systematically producing frontier-level reasoning data remains difficult. Existing synthesis methods often have limited visibility into the structural factors that govern pr…",
-      "one_line": "arXiv:2605.21630v1 Announce Type: new Abstract: Although LLMs have made substantial progress in reasoning,…",
-      "one_line_kr": "arXiv:2605.21630v1 발표 유형: 새로운 개요: LLM이 추론 분야에서 상당한 진전을 이루었지만…",
-      "url": "https://arxiv.org/abs/2605.21630",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "MindLoom: 프론티어 수준 추론 데이터 합성을 위한 사고 모드 구성"
-    },
-    {
-      "id": "2026-05-24_0024",
-      "title": "AOP-Wiki EMOD 3.0: Data Model Expansions and Content Evaluation Framework for Using Agentic AI to Improve Integration between AOPs and New Approach Methodologies (NAMs)",
-      "summary": "arXiv:2605.21645v1 Announce Type: new Abstract: Adverse Outcome Pathways (AOP) are logic models that causally link biological mechanisms that can be measured in a lab to adverse outcomes, relevant to chemical regulatory endpoints. AOPs contextualize new approach methodologies (NA…",
-      "one_line": "arXiv:2605.21645v1 Announce Type: new Abstract: Adverse Outcome Pathways (AOP) are logic models that causally link…",
-      "one_line_kr": "arXiv:2605.21645v1 발표 유형: 새로운 개요: 불리한 결과 경로(AOP)는…",
-      "url": "https://arxiv.org/abs/2605.21645",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "AOP-Wiki EMOD 3.0: 통합 개선을 위해 Agentic AI를 사용하기 위한 데이터 모델 확장 및 콘텐츠 평가 프레임워크"
-    },
-    {
-      "id": "2026-05-24_0025",
-      "title": "Investigating Concept Alignment Using Implausible Category Members",
-      "summary": "arXiv:2605.21683v1 Announce Type: new Abstract: Developing AI systems with a human-like understanding of everyday concepts is a key step towards developing safe, reliable systems whose behavior makes sense to humans. When probing concept understanding, asking questions about plau…",
-      "one_line": "arXiv:2605.21683v1 Announce Type: new Abstract: Developing AI systems with a human-like understanding of everyday…",
-      "one_line_kr": "arXiv:2605.21683v1 발표 유형: 새로운 개요: 인간과 같은 일상 생활 이해를 갖춘 AI 시스템 개발…",
-      "url": "https://arxiv.org/abs/2605.21683",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "타당하지 않은 범주 구성원을 사용하여 개념 정렬 조사"
-    },
-    {
-      "id": "2026-05-24_0026",
-      "title": "The Impact of AI Usage and Informativeness on Skill Development in Logical Reasoning",
-      "summary": "arXiv:2605.21695v1 Announce Type: new Abstract: Artificial intelligence (AI) is being increasingly integrated into human problem-solving, yet its effects on individual skill development remain unclear. We examine how both AI usage and informativeness can shape learning in the con…",
-      "one_line": "arXiv:2605.21695v1 Announce Type: new Abstract: Artificial intelligence (AI) is being increasingly integrated into…",
-      "one_line_kr": "arXiv:2605.21695v1 발표 유형: 새로운 개요: 인공 지능(AI)이 점점 더 많은 분야에 통합되고 있습니다.",
-      "url": "https://arxiv.org/abs/2605.21695",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "AI 활용과 정보성이 논리적 추론 능력 개발에 미치는 영향"
-    },
-    {
-      "id": "2026-05-24_0027",
-      "title": "Latent-space Attacks for Refusal Evasion in Language Models",
-      "summary": "arXiv:2605.21706v1 Announce Type: new Abstract: Safety-aligned language models are trained to refuse harmful requests, yet refusal behavior can be suppressed by steering their internal representations. Existing methods do so by ablating a refusal direction from model activations,…",
-      "one_line": "arXiv:2605.21706v1 Announce Type: new Abstract: Safety-aligned language models are trained to refuse harmful requests,…",
-      "one_line_kr": "arXiv:2605.21706v1 발표 유형: 새로운 개요: 안전 지향 언어 모델은 유해한 요청을 거부하도록 훈련되어…",
-      "url": "https://arxiv.org/abs/2605.21706",
-      "source": "ArXiv AI",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "언어 모델의 거부 회피를 위한 잠재 공간 공격"
-    },
-    {
-      "id": "2026-05-24_0028",
-      "title": "Temporal Contrastive Transformer for Financial Crime Detection: Self-Supervised Sequence Embeddings via Predictive Contrastive Coding",
-      "summary": "arXiv:2605.21490v1 Announce Type: new Abstract: We introduce the Temporal Contrastive Transformer (TCT), a representation learning framework designed to capture contextual temporal dynamics in sequences of financial transactions. The model is trained using a self-supervised contr…",
-      "one_line": "The model is trained using a self-supervised contr…",
-      "one_line_kr": "모델은 자기 감독 제어를 사용하여 학습됩니다.",
-      "url": "https://arxiv.org/abs/2605.21490",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "금융 범죄 탐지를 위한 시간 대비 변환기: 예측 Contr을 통한 자체 감독 시퀀스 임베딩"
-    },
-    {
-      "id": "2026-05-24_0029",
-      "title": "Teaching Language Models to Forecast Research Success Through Comparative Idea Evaluation",
-      "summary": "arXiv:2605.21491v1 Announce Type: new Abstract: As language models accelerate scientific research by automating hypothesis generation and implementation, a new bottleneck emerges: evaluating and filtering hundreds of AI-generated ideas without exhaustive experimentation. We ask w…",
-      "one_line": "arXiv:2605.21491v1 Announce Type: new Abstract: As language models accelerate scientific research by automating…",
-      "one_line_kr": "arXiv:2605.21491v1 발표 유형: 새로운 개요: 언어 모델이 자동화를 통해 과학 연구를 가속화함에 따라…",
-      "url": "https://arxiv.org/abs/2605.21491",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "비교 아이디어 평가를 통해 연구 성공을 예측하기 위한 언어 모델 교육"
-    },
-    {
-      "id": "2026-05-24_0030",
-      "title": "The Attribution Impossibility: No Feature Ranking Is Faithful, Stable, and Complete Under Collinearity",
-      "summary": "arXiv:2605.21492v1 Announce Type: new Abstract: No feature ranking can be simultaneously faithful, stable, and complete when features are collinear. For collinear pairs, ranking reduces to a coin flip. We prove this impossibility, quantify it for four model classes, resolve it vi…",
-      "one_line": "arXiv:2605.21492v1 Announce Type: new Abstract: No feature ranking can be simultaneously faithful, stable, and complete…",
-      "one_line_kr": "arXiv:2605.21492v1 발표 유형: new 개요: 어떤 기능 순위도 충실하고 안정적이며 완전할 수 없습니다…",
-      "url": "https://arxiv.org/abs/2605.21492",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "귀인 불가능: 공선성 하에서 충실하고 안정적이며 완전한 기능 순위는 없습니다."
-    },
-    {
-      "id": "2026-05-24_0031",
-      "title": "Don't Collapse Your Features: Why CenterLoss Hurts OOD Detection and Multi-Scale Mahalanobis Wins",
-      "summary": "arXiv:2605.21493v1 Announce Type: new Abstract: The ability to detect out-of-distribution (OOD) inputs is fundamental to safe deployment of machine learning systems. Yet, current methods often rely on feature representations that are optimised solely for classification accuracy, …",
-      "one_line": "arXiv:2605.21493v1 Announce Type: new Abstract: The ability to detect out-of-distribution (OOD) inputs is fundamental…",
-      "one_line_kr": "arXiv:2605.21493v1 발표 유형: 새로운 개요: OOD(Out-of-Distribution) 입력을 감지하는 기능은 기본입니다…",
-      "url": "https://arxiv.org/abs/2605.21493",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "기능을 축소하지 마십시오: CenterLoss가 OOD 감지에 해를 끼치고 다중 규모 Mahalanobis가 승리하는 이유"
-    },
-    {
-      "id": "2026-05-24_0032",
-      "title": "Double descent for least-squares interpolation on contaminated data: A simulation study",
-      "summary": "arXiv:2605.21494v1 Announce Type: new Abstract: Overparametrized models can exhibit an excellent generalization performance, although they should be prone to overfitting according to classical statistical theory. The discovery of the \"double descent\", indicating that the generali…",
-      "one_line": "arXiv:2605.21494v1 Announce Type: new Abstract: Overparametrized models can exhibit an excellent generalization…",
-      "one_line_kr": "arXiv:2605.21494v1 발표 유형: new 개요: 과잉 매개변수화된 모델은 뛰어난 일반화를 보여줄 수 있습니다…",
-      "url": "https://arxiv.org/abs/2605.21494",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "오염된 데이터에 대한 최소제곱 보간을 위한 이중 하강: 시뮬레이션 연구"
-    },
-    {
-      "id": "2026-05-24_0033",
-      "title": "HealthCraft: A Reinforcement Learning Safety Environment for Emergency Medicine",
-      "summary": "arXiv:2605.21496v1 Announce Type: new Abstract: Frontier language models are being deployed into clinical workflows faster than the infrastructure to evaluate them safely. Static medical-QA benchmarks miss the failure modes that matter in emergency medicine: trajectory-level safe…",
-      "one_line": "arXiv:2605.21496v1 Announce Type: new Abstract: Frontier language models are being deployed into clinical workflows…",
-      "one_line_kr": "arXiv:2605.21496v1 발표 유형: 새로운 개요: 프론티어 언어 모델이 임상 작업 흐름에 배포되고 있습니다…",
-      "url": "https://arxiv.org/abs/2605.21496",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-23 13:00",
-      "collect_date": "2026-05-24",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "HealthCraft: 응급 의료를 위한 강화 학습 안전 환경"
     }
   ]
 }

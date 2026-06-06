@@ -1,19 +1,19 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-06-06 08:15",
-  "total": 401,
-  "kr_count": 117,
-  "en_count": 284,
+  "generated_at": "2026-06-07 08:10",
+  "total": 396,
+  "kr_count": 116,
+  "en_count": 280,
   "category_stats": {
-    "콘텐츠": 114,
+    "콘텐츠": 113,
     "영상AI": 41,
-    "이미지·디자인AI": 37,
-    "LLM": 7,
-    "개발AI": 54,
+    "이미지·디자인AI": 34,
+    "LLM": 8,
+    "개발AI": 51,
     "AI법률": 6,
     "논문": 114,
-    "비즈니스": 28
+    "비즈니스": 29
   },
   "source_stats": [
     {
@@ -29,10 +29,6 @@
       "count": 30
     },
     {
-      "source": "HuggingFace Papers",
-      "count": 28
-    },
-    {
       "source": "TechCrunch AI",
       "count": 26
     },
@@ -45,24 +41,28 @@
       "count": 25
     },
     {
+      "source": "HuggingFace Papers",
+      "count": 24
+    },
+    {
       "source": "ArXiv ML",
       "count": 24
     },
     {
       "source": "GitHub Changelog",
-      "count": 22
-    },
-    {
-      "source": "MarkTechPost",
-      "count": 19
+      "count": 23
     },
     {
       "source": "AI Business",
       "count": 16
     },
     {
+      "source": "MarkTechPost",
+      "count": 15
+    },
+    {
       "source": "바이라인네트워크",
-      "count": 14
+      "count": 13
     },
     {
       "source": "MIT Tech Review",
@@ -78,7 +78,7 @@
     },
     {
       "source": "HuggingFace Blog",
-      "count": 9
+      "count": 10
     },
     {
       "source": "Anthropic Blog",
@@ -101,6 +101,14 @@
       "count": 2
     },
     {
+      "source": "Simon Willison",
+      "count": 1
+    },
+    {
+      "source": "Ahead of AI",
+      "count": 1
+    },
+    {
       "source": "VS Code Release Notes",
       "count": 1
     },
@@ -120,19 +128,19 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 55
+      "count": 54
     },
     {
       "keyword": "LLM",
-      "count": 43
+      "count": 45
     },
     {
       "keyword": "에이전트",
-      "count": 30
+      "count": 26
     },
     {
       "keyword": "Reasoning",
-      "count": 25
+      "count": 24
     },
     {
       "keyword": "GitHub",
@@ -144,19 +152,19 @@
     },
     {
       "keyword": "GPT",
-      "count": 16
-    },
-    {
-      "keyword": "RAG",
       "count": 15
     },
     {
-      "keyword": "Benchmark",
+      "keyword": "RAG",
       "count": 14
     },
     {
-      "keyword": "인공지능",
+      "keyword": "Benchmark",
       "count": 13
+    },
+    {
+      "keyword": "인공지능",
+      "count": 12
     },
     {
       "keyword": "Multimodal",
@@ -167,23 +175,19 @@
       "count": 10
     },
     {
-      "keyword": "클로드",
-      "count": 9
-    },
-    {
       "keyword": "Transformer",
       "count": 9
     },
     {
-      "keyword": "추론",
+      "keyword": "클로드",
       "count": 8
     },
     {
       "keyword": "오픈소스",
-      "count": 8
+      "count": 7
     },
     {
-      "keyword": "Anthropic",
+      "keyword": "추론",
       "count": 7
     },
     {
@@ -195,15 +199,15 @@
       "count": 6
     },
     {
-      "keyword": "멀티모달",
+      "keyword": "Anthropic",
+      "count": 6
+    },
+    {
+      "keyword": "ChatGPT",
       "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-05-31",
-      "count": 24
-    },
     {
       "date": "2026-06-01",
       "count": 23
@@ -227,9 +231,21 @@
     {
       "date": "2026-06-06",
       "count": 72
+    },
+    {
+      "date": "2026-06-07",
+      "count": 19
     }
   ],
   "cat_daily": {
+    "2026-06-07": {
+      "콘텐츠": 10,
+      "영상AI": 4,
+      "이미지·디자인AI": 1,
+      "LLM": 1,
+      "개발AI": 2,
+      "비즈니스": 1
+    },
     "2026-06-06": {
       "콘텐츠": 22,
       "영상AI": 4,
@@ -282,15 +298,156 @@
       "이미지·디자인AI": 4,
       "개발AI": 4,
       "AI법률": 2
-    },
-    "2026-05-31": {
-      "콘텐츠": 11,
-      "영상AI": 4,
-      "이미지·디자인AI": 4,
-      "개발AI": 5
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-06-07_0002",
+      "title": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개",
+      "summary": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다. 구글은 4일(현지시간) 음악가들이 실제 악기처럼 연주할 수 있는 차세대 실시간 AI 음악 생성 모델 ‘마젠타 리얼타임 2(MRT2·Magenta RealTime 2)’를 공개했다.기존 생성 음악 모델이 텍스트 프롬프트를 입력받아 완성된 곡을 만드는 데 초점을 맞췄다면, MRT2는 MIDI와 오디오, 텍스트 입력에 실시간으로 반응하며 연주 가능한 AI 악기를 구현하는…",
+      "one_line": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+      "one_line_kr": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211417",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:24",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개"
+    },
+    {
+      "id": "2026-06-07_0003",
+      "title": "구글, ‘젬마 4' 온디바이스 버전 QAT 공개…“메모리 1GB로 압축”",
+      "summary": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을 공개했다. 모바일 전용 양자화 기술을 통해 모델 크기를 1기가바이트(GB) 수준까지 줄이면서도 성능 저하를 최소화해, 고성능 생성 AI의 온디바이스 실행 시대를 앞당길 수 있을 것으로 기대된다.구글은 5일(현지시간) '젬마 4' 제품군을 위한 QAT 체크포인트를 공개했다. 이를 통해 고성…",
+      "one_line": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을…",
+      "one_line_kr": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211418",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:14",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, ‘젬마 4' 온디바이스 버전 QAT 공개…“메모리 1GB로 압축”"
+    },
+    {
+      "id": "2026-06-07_0004",
+      "title": "나델라 \"신규 에이전트 목표는 사용자 중독\" 내부 문건에 격노",
+      "summary": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고 나섰다. 그는 이를 “터무니없는 내용”이라고 비판하며, AI의 목적은 사용자 의존성을 높이는 것이 아니라 생산성과 경제적 가치를 창출하는 데 있다고 강조했다.4일(현지시간) 디 인포메이션에 따르면, 이번 논란은 MS가 연례 개발자 행사인 '빌드' 컨퍼런스에서 공개한 개인용 AI 에이전트 스카…",
+      "one_line": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고…",
+      "one_line_kr": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211416",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:46",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "나델라 \"신규 에이전트 목표는 사용자 중독\" 내부 문건에 격노"
+    },
+    {
+      "id": "2026-06-07_0006",
+      "title": "미 하원, 초당적 AI 법안 초안 공개…'주정부 규제 무력화' 논란",
+      "summary": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다. 첨단 AI 모델의 위험성 평가와 보안 계획 수립을 의무화하는 내용이 포함됐지만, 주정부의 규제 권한을 대폭 축소하는 조항을 둘러싸고 찬반 논란이 거세지고 있다.폴리티코에 따르면, 미국 하원의 공화당 소속 제이 오버놀트 의원과 민주당 소속 로리 트레이핸 의원은 4일(현지시간) 269페이지 분량의 AI 입법 초안을 발표했다. 이는 오는 8월 의회 휴회 …",
+      "one_line": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다.",
+      "one_line_kr": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211419",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:24",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "미 하원, 초당적 AI 법안 초안 공개…'주정부 규제 무력화' 논란"
+    },
+    {
+      "id": "2026-06-07_0010",
+      "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
+      "summary": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "one_line": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the…",
+      "one_line_kr": "잠금 모드를 사용하더라도 ChatGPT는 즉각적인 주입에 여전히 취약할 수 있지만 목표는…",
+      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-07 05:32",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenAI, 즉각적인 주입 공격으로부터 민감한 데이터를 보호하는 잠금 모드 공개"
+    },
+    {
+      "id": "2026-06-07_0015",
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "summary": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called micropython-wasm, and I'm usi…",
+      "one_line": "I've released it as an alpha package called micropython-wasm, and I'm usi…",
+      "one_line_kr": "micropython-wasm이라는 알파 패키지로 출시했는데...",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-entries",
+      "source": "Simon Willison",
+      "category": "LLM",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-06-06 12:53",
+      "collect_date": "2026-06-07",
+      "thumbnail": "https://static.simonwillison.net/static/2026/micropython-in-datasette-agent.jpg",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MicroPython 및 WASM을 사용하여 샌드박스에서 Python 코드 실행"
+    },
+    {
+      "id": "2026-06-07_0016",
+      "title": "GPT-5.2 and GPT-5.2-Codex deprecated",
+      "summary": "As of today, June 5, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note&#8230; The post GPT-5.2 and GPT-5.2-Codex deprecated appeared first on The GitHub Blog…",
+      "one_line": "Note&#8230; The post GPT-5.2 and GPT-5.2-Codex deprecated appeared first on The GitHub Blog…",
+      "one_line_kr": "참고&#8230; 더 이상 사용되지 않는 GPT-5.2 및 GPT-5.2-Codex 게시물이 GitHub 블로그에 처음 나타났습니다…",
+      "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-06-06 07:32",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "API변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "GPT-5.2 및 GPT-5.2-Codex는 더 이상 사용되지 않습니다."
+    },
     {
       "id": "2026-06-06_0003",
       "title": "엔비디아, 자체 최고 성능 ‘네모트론 3 울트라’ 출시…“비용 30% 절감”",
@@ -353,169 +510,22 @@
         "class": "hot"
       },
       "title_kr": "아마존 물류 로봇, 자연어로 작업 지시 받는다"
-    },
-    {
-      "id": "2026-06-06_0018",
-      "title": "EDB, ‘에이전틱 레이크하우스’ 비전과 플랫폼 전략 발표",
-      "summary": "EDB코리아는 5일 기자간담회를 열고 국내 기업 시장에 초점을 맞춘 오픈소스 전환(OX) 전략과, 포스트그레스 원본 데이터를 기반으로 AI 에이전트와 분석 워크로드를 실시간으로 수행할 수 있도록 지원하는 ‘에이전틱 레이크하우스(Agentic Lakehouse)’ 비전을 발표했다.",
-      "one_line": "EDB코리아는 5일 기자간담회를 열고 국내 기업 시장에 초점을 맞춘 오픈소스 전환(OX) 전략과, 포스트그레스 원본 데이터를 기반으로 AI 에이전트와 분석 워크로드를 실시간으로 수행할 수 있도록 지원하는 ‘에이전틱…",
-      "one_line_kr": "EDB코리아는 5일 기자간담회를 열고 국내 기업 시장에 초점을 맞춘 오픈소스 전환(OX) 전략과, 포스트그레스 원본 데이터를 기반으로 AI 에이전트와 분석 워크로드를 실시간으로 수행할 수 있도록 지원하는 ‘에이전틱…",
-      "url": "https://byline.network/2026/06/5-432/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-05 14:03",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "EDB, ‘에이전틱 레이크하우스’ 비전과 플랫폼 전략 발표"
-    },
-    {
-      "id": "2026-06-06_0019",
-      "title": "SW 개발 파트너 IBM 밥, 대형고객 ‘기술부채’ 노린다",
-      "summary": "IBM이 엔터프라이즈 기업의 ‘기술부채’ 해소와, 규정 및 규제 준수에 초점을 맞춘 AI 코딩 도구를 출시했다. 메인프레임, 파워 시스템 등을 위해 개발된 레거시 코드를 최신 인프라와 플랫폼 기반으로 빠르게 이전할 수 있고, 소프트웨어 개발 수명주기(SDLC) 전반에서 AI 코딩 도구의 보안성과 통제를 유지할 수 있다는 강점을 내세웠다.",
-      "one_line": "IBM이 엔터프라이즈 기업의 ‘기술부채’ 해소와, 규정 및 규제 준수에 초점을 맞춘 AI 코딩 도구를 출시했다.",
-      "one_line_kr": "IBM이 엔터프라이즈 기업의 ‘기술부채’ 해소와, 규정 및 규제 준수에 초점을 맞춘 AI 코딩 도구를 출시했다.",
-      "url": "https://byline.network/2026/06/5-431/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-05 13:25",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "SW 개발 파트너 IBM 밥, 대형고객 ‘기술부채’ 노린다"
-    },
-    {
-      "id": "2026-06-06_0021",
-      "title": "오프라인 구동 가능한 기업용 AI…구글 ‘젬마4 12B’ 공개",
-      "summary": "기업의 내부 데이터를 외부 클라우드 서버로 보내지 않고도 일반 업무용 기기에서 고성능 인공지능(AI)을 구동할 수 있는 모델이 출시됐다. 인터넷 연결이 차단된 사내망이나 오프라인 환경에서도 민감한 데이터를 처리할 수 있어, 데이터 유출 방지가 필수적인 기업용 기업 간 거래(B2B) 시장을 겨냥했다.",
-      "one_line": "기업의 내부 데이터를 외부 클라우드 서버로 보내지 않고도 일반 업무용 기기에서 고성능 인공지능(AI)을 구동할 수 있는 모델이 출시됐다.",
-      "one_line_kr": "기업의 내부 데이터를 외부 클라우드 서버로 보내지 않고도 일반 업무용 기기에서 고성능 인공지능(AI)을 구동할 수 있는 모델이 출시됐다.",
-      "url": "https://byline.network/2026/06/0604-6/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-04 17:08",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오프라인 구동 가능한 기업용 AI…구글 ‘젬마4 12B’ 공개"
-    },
-    {
-      "id": "2026-06-06_0026",
-      "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-      "summary": "",
-      "one_line": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-      "one_line_kr": "Thousand Token Wood: 3B 모델로 다중 에이전트 경제 출시",
-      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
-      "source": "HuggingFace Blog",
-      "category": "이미지·디자인AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-06-06 07:18",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Thousand Token Wood: 3B 모델로 다중 에이전트 경제 출시"
-    },
-    {
-      "id": "2026-06-06_0039",
-      "title": "CodeQL 2.25.6 adds Swift 6.3.2 support and improves C# coverage",
-      "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We've recently released CodeQL 2.25.6, which adds Swift 6.3.2 support, completes&#8230; The post CodeQL 2.25.6 adds Swift 6.3.2 support and improves C# cover…",
-      "one_line": "We've recently released CodeQL 2.25.6, which adds Swift 6.3.2 support, completes&#8230; The post CodeQL 2.25.6 adds…",
-      "one_line_kr": "우리는 최근 Swift 6.3.2 지원을 추가하는 CodeQL 2.25.6을 출시했습니다. 포스트 CodeQL 2.25.6은 다음을 추가합니다…",
-      "url": "https://github.blog/changelog/2026-06-05-codeql-2-25-6-adds-swift-6-3-2-support-and-improves-c-coverage",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-06-06 06:30",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "CodeQL 2.25.6은 Swift 6.3.2 지원을 추가하고 C# 적용 범위를 개선합니다."
-    },
-    {
-      "id": "2026-06-06_0040",
-      "title": "Enterprise-managed plugins in VS Code in public preview",
-      "summary": "Last month we launched a public preview with Copilot CLI that allows enterprise administrators the ability to configure and distribute plugins to GitHub Copilot CLI users across their enterprise. VS&#8230; The post Enterprise-managed plugins in VS Code in public preview appeared …",
-      "one_line": "Last month we launched a public preview with Copilot CLI that allows enterprise administrators the ability to configure…",
-      "one_line_kr": "지난 달 우리는 기업 관리자가 다음을 구성할 수 있는 Copilot CLI를 통해 공개 미리 보기를 출시했습니다.",
-      "url": "https://github.blog/changelog/2026-06-05-enterprise-managed-plugins-in-vs-code-in-public-preview",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-06-06 06:01",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "공개 미리 보기로 제공되는 VS Code의 엔터프라이즈 관리 플러그인"
-    },
-    {
-      "id": "2026-06-06_0046",
-      "title": "Google DeepMind Releases Gemma 4 QAT Checkpoints: Q4_0 and a New Mobile Format Cut On-Device Memory",
-      "summary": "Compare Gemma 4 edge formats: BF16, Q4_0 QAT, and mobile QAT, on published memory numbers and design tradeoffs. The post Google DeepMind Releases Gemma 4 QAT Checkpoints: Q4_0 and a New Mobile Format Cut On-Device Memory appeared first on MarkTechPost.",
-      "one_line": "The post Google DeepMind Releases Gemma 4 QAT Checkpoints: Q4_0 and a New Mobile Format Cut On-Device Memory appeared…",
-      "one_line_kr": "Google DeepMind가 Gemma 4 QAT 체크포인트: Q4_0을 출시하고 새로운 모바일 형식 컷 온디바이스 메모리가 등장한 게시물…",
-      "url": "https://www.marktechpost.com/2026/06/05/google-deepmind-releases-gemma-4-qat-checkpoints-q4_0-and-a-new-mobile-format-cut-on-device-memory/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-06 03:59",
-      "collect_date": "2026-06-06",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Google DeepMind, Gemma 4 QAT 체크포인트: Q4_0 및 온디바이스 메모리를 줄이는 새로운 모바일 형식 출시"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "엔비디아, 자체 최고 성능 ‘네모트론 3 울트라’ 출시…“비용 30% 절감”",
+      "title": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211367",
-      "one_line": "엔비디아가 장시간 실행되는 AI 에이전트 시대를 겨냥한 차세대 대형언어모델(LLM)을 공개했다.",
-      "date": "2026-06-05 17:19"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211417",
+      "one_line": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+      "date": "2026-06-06 19:24"
     },
     "영상AI": {
-      "title": "How Endava is redesigning software delivery around AI agents",
-      "source": "OpenAI News (영상)",
-      "url": "https://openai.com/index/endava-frontiers",
-      "one_line": "Endava가 AI 에이전트, ChatGPT Enterprise 및 Codex를 사용하여 소프트웨어 제공을 가속화하고 워크플로를 자동화하는 방법을 알아보세요.",
-      "date": "2026-06-04 21:00"
+      "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+      "one_line": "잠금 모드를 사용하더라도 ChatGPT는 즉각적인 주입에 여전히 취약할 수 있지만 목표는…",
+      "date": "2026-06-07 05:32"
     },
     "이미지·디자인AI": {
       "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
@@ -525,29 +535,428 @@
       "date": "2026-06-06 07:18"
     },
     "LLM": {
-      "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
-      "one_line": "우리는 Project Glasswing을 15개국 이상, 약 150개의 새로운 조직으로 확장하고 있습니다.",
-      "date": "2026-05-25 09:00"
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-entries",
+      "one_line": "micropython-wasm이라는 알파 패키지로 출시했는데...",
+      "date": "2026-06-06 12:53"
     },
     "개발AI": {
-      "title": "CodeQL 2.25.6 adds Swift 6.3.2 support and improves C# coverage",
+      "title": "GPT-5.2 and GPT-5.2-Codex deprecated",
       "source": "GitHub Changelog",
-      "url": "https://github.blog/changelog/2026-06-05-codeql-2-25-6-adds-swift-6-3-2-support-and-improves-c-coverage",
-      "one_line": "우리는 최근 Swift 6.3.2 지원을 추가하는 CodeQL 2.25.6을 출시했습니다. 포스트 CodeQL 2.25.6은 다음을 추가합니다…",
-      "date": "2026-06-06 06:30"
+      "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated",
+      "one_line": "참고&#8230; 더 이상 사용되지 않는 GPT-5.2 및 GPT-5.2-Codex 게시물이 GitHub 블로그에 처음 나타났습니다…",
+      "date": "2026-06-06 07:32"
     }
   },
   "period_key_points": [
-    "엔비디아가 장시간 실행되는 AI 에이전트 시대를 겨냥한 차세대 대형언어모델(LLM)을 공개했다.",
-    "EDB가 5일 서울에서 국내 엔터프라이즈 시장을 겨냥한 전략 발표 행사를 열고, 오픈소스 전환(이하 OX) 비전과 함께 ‘EDB Postgres AI 에이전틱 레이크하우스’ 플랫폼 전략을 공개했다.",
-    "복잡한 코딩이나 전용 소프트웨어 조작 없이, 일상적인 언어로 지시를 내릴 수 있는 물류 로봇이 등장했다.",
-    "EDB코리아는 5일 기자간담회를 열고 국내 기업 시장에 초점을 맞춘 오픈소스 전환(OX) 전략과, 포스트그레스 원본 데이터를 기반으로 AI 에이전트와 분석 워크로드를 실시간으로 수행할 수 있도록 지원하는 ‘에이전틱 레이크하우스(Age.",
-    "IBM이 엔터프라이즈 기업의 ‘기술부채’ 해소와, 규정 및 규제 준수에 초점을 맞춘 AI 코딩 도구를 출시했다."
+    "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+    "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을 공개했다.",
+    "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고 나섰다.",
+    "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다.",
+    "잠금 모드를 사용하더라도 ChatGPT는 즉각적인 주입에 여전히 취약할 수 있지만 목표는."
   ],
-  "period_prose": "이번 주간 총 401건의 AI 자료가 수집됐습니다. 국내 117건, 해외 284건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, Reasoning, GitHub입니다.",
+  "period_prose": "이번 주간 총 396건의 AI 자료가 수집됐습니다. 국내 116건, 해외 280건이며 논문 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, Reasoning, GitHub입니다.",
   "items": [
+    {
+      "id": "2026-06-07_0000",
+      "title": "\"한국, AI 비싸게 쓴다\"…한국어 토큰 소모, 영어 최대 2.59배 높아",
+      "summary": "최근 글로벌 AI 기업이 사용량(토큰)만큼 비용을 청구하는 종량제 요금제를 확대하면서 이용자의 비용 부담이 커지고 있다.여기에 동일한 AI 모델이라도 한국어가 영어보다 토큰을 최대 3.5배 더 소모한다는 연구 결과가 나오면서 비영어권 이용자가 사실상 더 많은 비용을 치르는 '비영어권 언어세(Non-English Tax)' 문제가 실제로 확인됐다.■ 한국어 영어 대비 최대 3.5배 토큰 소모...\"앤트로픽 모델이 가장 비싸\"AI 연구원 아란 코마츠자키는 SNS를 통해 유명 AI 에세이 원문을 각국 …",
+      "one_line": "최근 글로벌 AI 기업이 사용량(토큰)만큼 비용을 청구하는 종량제 요금제를 확대하면서 이용자의 비용 부담이 커지고 있다.여기에 동일한 AI 모델이라도 한국어가 영어보다",
+      "one_line_kr": "최근 글로벌 AI 기업이 사용량(토큰)만큼 비용을 청구하는 종량제 요금제를 확대하면서 이용자의 비용 부담이 커지고 있다.여기에 동일한 AI 모델이라도 한국어가 영어보다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211350",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:48",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"한국, AI 비싸게 쓴다\"…한국어 토큰 소모, 영어 최대 2.59배 높아"
+    },
+    {
+      "id": "2026-06-07_0001",
+      "title": "월마트가 직접 만든 AI 코딩 에이전트 인기...\"빅테크 종속 깬다\"",
+      "summary": "월마트의 자체 개발 AI 코딩 에이전트가 사내에서 폭발적인 인기를 끌고 있다. 특정 AI 모델에 의존하지 않고 다양한 대형언어모델(LLM)을 자유롭게 활용할 수 있도록 설계된 점이 강점으로 꼽히며, AI 시대 최대 위험 요소 중 하나로 지목되는 '벤더 종속(Vendor Lock-in)' 문제를 해결하려는 시도로 주목받고 있다. 4일(현지시간) 비즈니스 인사이더에 따르면, 월마트 글로벌 테크 조직의 수석 엔지니어인 마이크 파펜버거가 AI 코딩 에이전트 '코드 퍼피(Code Puppy)'를 개발했다.…",
+      "one_line": "월마트의 자체 개발 AI 코딩 에이전트가 사내에서 폭발적인 인기를 끌고 있다.",
+      "one_line_kr": "월마트의 자체 개발 AI 코딩 에이전트가 사내에서 폭발적인 인기를 끌고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211414",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:36",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "월마트가 직접 만든 AI 코딩 에이전트 인기...\"빅테크 종속 깬다\""
+    },
+    {
+      "id": "2026-06-07_0002",
+      "title": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개",
+      "summary": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다. 구글은 4일(현지시간) 음악가들이 실제 악기처럼 연주할 수 있는 차세대 실시간 AI 음악 생성 모델 ‘마젠타 리얼타임 2(MRT2·Magenta RealTime 2)’를 공개했다.기존 생성 음악 모델이 텍스트 프롬프트를 입력받아 완성된 곡을 만드는 데 초점을 맞췄다면, MRT2는 MIDI와 오디오, 텍스트 입력에 실시간으로 반응하며 연주 가능한 AI 악기를 구현하는…",
+      "one_line": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+      "one_line_kr": "구글이 텍스트로 음악을 만드는 수준을 넘어, 연주자의 입력에 실시간으로 반응하며 악기처럼 사용할 수 있는 AI 음악 모델을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211417",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:24",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, 연주자 입력에 실시간 반응하는 AI 악기 ‘마젠타 리얼타임 2’ 공개"
+    },
+    {
+      "id": "2026-06-07_0003",
+      "title": "구글, ‘젬마 4' 온디바이스 버전 QAT 공개…“메모리 1GB로 압축”",
+      "summary": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을 공개했다. 모바일 전용 양자화 기술을 통해 모델 크기를 1기가바이트(GB) 수준까지 줄이면서도 성능 저하를 최소화해, 고성능 생성 AI의 온디바이스 실행 시대를 앞당길 수 있을 것으로 기대된다.구글은 5일(현지시간) '젬마 4' 제품군을 위한 QAT 체크포인트를 공개했다. 이를 통해 고성…",
+      "one_line": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을…",
+      "one_line_kr": "구글이 오픈소스 AI 모델 '젬마 4(Gemma 4)'를 스마트폰과 엣지 기기에서도 원활하게 구동할 수 있도록 최적화한 새로운 양자화 인식 학습(QAT·Quantization-Aware Training ) 버전을…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211418",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 19:14",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, ‘젬마 4' 온디바이스 버전 QAT 공개…“메모리 1GB로 압축”"
+    },
+    {
+      "id": "2026-06-07_0004",
+      "title": "나델라 \"신규 에이전트 목표는 사용자 중독\" 내부 문건에 격노",
+      "summary": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고 나섰다. 그는 이를 “터무니없는 내용”이라고 비판하며, AI의 목적은 사용자 의존성을 높이는 것이 아니라 생산성과 경제적 가치를 창출하는 데 있다고 강조했다.4일(현지시간) 디 인포메이션에 따르면, 이번 논란은 MS가 연례 개발자 행사인 '빌드' 컨퍼런스에서 공개한 개인용 AI 에이전트 스카…",
+      "one_line": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고…",
+      "one_line_kr": "사티아 나델라 마이크로소프트(MS) CEO가 최근 공개된 사내 문건을 통해 신규 AI 에이전트 ‘스카우트(Scout)’의 초기 목표로 “사용자를 중독시키는 것”이라는 표현이 사용된 데 대해 공개적으로 반박하고…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211416",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:46",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "나델라 \"신규 에이전트 목표는 사용자 중독\" 내부 문건에 격노"
+    },
+    {
+      "id": "2026-06-07_0005",
+      "title": "메타, 구글 따라 '대규모 주식 발행' 검토 중…AI 자금 조달 총력전",
+      "summary": "메타가 AI 인프라 구축을 위한 막대한 자금 수요를 충당하기 위해 수십억달러 규모의 신규 주식 발행을 검토하고 있는 것으로 알려졌다. 최근 구글이 기록적인 규모의 자금 조달에 성공한 이후 메타 내부 논의가 더 활발해진 것으로 전해졌다.5일(현지시간) 파이낸셜타임스 등에 따르면, 메타 경영진은 AI 사업 확대에 필요한 자금을 마련하기 위해 다양한 자금 조달 방안을 검토하고 있다.메타는 올해 AI 관련 자본 지출(CAPEX)을 최대 1450억달러(약 226조원)까지 확대할 계획이며, 2027년에는 이…",
+      "one_line": "메타가 AI 인프라 구축을 위한 막대한 자금 수요를 충당하기 위해 수십억달러 규모의 신규 주식 발행을 검토하고 있는 것으로 알려졌다.",
+      "one_line_kr": "메타가 AI 인프라 구축을 위한 막대한 자금 수요를 충당하기 위해 수십억달러 규모의 신규 주식 발행을 검토하고 있는 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211412",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:34",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "메타, 구글 따라 '대규모 주식 발행' 검토 중…AI 자금 조달 총력전"
+    },
+    {
+      "id": "2026-06-07_0006",
+      "title": "미 하원, 초당적 AI 법안 초안 공개…'주정부 규제 무력화' 논란",
+      "summary": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다. 첨단 AI 모델의 위험성 평가와 보안 계획 수립을 의무화하는 내용이 포함됐지만, 주정부의 규제 권한을 대폭 축소하는 조항을 둘러싸고 찬반 논란이 거세지고 있다.폴리티코에 따르면, 미국 하원의 공화당 소속 제이 오버놀트 의원과 민주당 소속 로리 트레이핸 의원은 4일(현지시간) 269페이지 분량의 AI 입법 초안을 발표했다. 이는 오는 8월 의회 휴회 …",
+      "one_line": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다.",
+      "one_line_kr": "미국 의회가 AI 개발 기업에 대한 연방 차원의 안전 규제를 도입하는 대신, 각 주의 AI 개발 규제를 제한하는 내용을 담은 초당적 법안을 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211419",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:24",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "미 하원, 초당적 AI 법안 초안 공개…'주정부 규제 무력화' 논란"
+    },
+    {
+      "id": "2026-06-07_0007",
+      "title": "모건스탠리, 스페이스X 2040년 매출 5300조 전망...\"초대형 성장 핵심은 AI 사업\"",
+      "summary": "스페이스X가 다음주 기업공개(IPO)를 통해 1조7700억달러(약 2760조원)의 기업 가치를 목표로 하는 가운데, 주관사인 모건스탠리가 2040년 연 매출이 3조4000억달러(약 5302조원)에 달할 수 있다는 초대형 성장 전망을 내놓았다.월스트리트저널(WSJ)에 따르면, 모건스탠리는 4일(현지시간) 주요 기관투자자들에게 제공한 분석 자료에서 스페이스X의 2040년 매출이 3조4000억달러에 이르고 조정 EBITDA(상각 전 영업이익)는 2조7000억달러(약 4210조원)를 넘어설 것으로 전망했…",
+      "one_line": "스페이스X가 다음주 기업공개(IPO)를 통해 1조7700억달러(약 2760조원)의 기업 가치를 목표로 하는 가운데, 주관사인 모건스탠리가 2040년 연 매출이 3조4000억달러(약 5302조원)에 달할 수 있다는…",
+      "one_line_kr": "스페이스X가 다음주 기업공개(IPO)를 통해 1조7700억달러(약 2760조원)의 기업 가치를 목표로 하는 가운데, 주관사인 모건스탠리가 2040년 연 매출이 3조4000억달러(약 5302조원)에 달할 수 있다는…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211413",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 18:15",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "모건스탠리, 스페이스X 2040년 매출 5300조 전망...\"초대형 성장 핵심은 AI 사업\""
+    },
+    {
+      "id": "2026-06-07_0008",
+      "title": "[AI 이슈트렌드] 한화에어로 폭발부터 6·3 지선 논란, 흔들리는 반도체주까지",
+      "summary": "AI타임스와 이스트에이드의 6월 첫째 주(5월29일~6월4일) 이슈 분석 결과, 대형 인명 사고와 6·3 지방선거, 국제 증시 변동 등이 상위권을 차지했다.이번 주 검색량 1위 키워드는 ‘한화에어로스페이스 폭발 사고(7.57%)’다.지난 1일 대전사업장 세척공실에서 발생한 폭발 사고로 근로자 5명이 숨졌다. 사고 이후 전국 9개 사업장이 이틀간 가동을 전면 중단하고 특별 안전점검에 들어갔다.해당 공장은 최근 2년 연속 화재안전 조사에서 '불량' 판정을 받은 데다, 세척공실은 제조시설이 아니라는 이…",
+      "one_line": "AI타임스와 이스트에이드의 6월 첫째 주(5월29일~6월4일) 이슈 분석 결과, 대형 인명 사고와 6·3 지방선거, 국제 증시 변동 등이 상위권을 차지했다.이번 주 검색량 1위 키워드는 ‘한화에어로스페이스 폭발…",
+      "one_line_kr": "AI타임스와 이스트에이드의 6월 첫째 주(5월29일~6월4일) 이슈 분석 결과, 대형 인명 사고와 6·3 지방선거, 국제 증시 변동 등이 상위권을 차지했다.이번 주 검색량 1위 키워드는 ‘한화에어로스페이스 폭발…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211407",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 12:02",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AI 이슈트렌드] 한화에어로 폭발부터 6·3 지선 논란, 흔들리는 반도체주까지"
+    },
+    {
+      "id": "2026-06-07_0009",
+      "title": "김영훈 노동장관 \"대기업 AI 초과이익 공유해야...명백한 재투자\"",
+      "summary": "김영훈 고용노동부 장관이 외신 인터뷰에서 AI 붐으로 막대한 수익을 올린 대기업들을 향해 '초과이익 공유제'를 제안했다.김 장관은 5일 공개된 로이터와의 단독 인터뷰를 통해 \"삼성전자와 같이 수익 목표를 초과 달성한 IT 및 반도체 기업들은 공급업체, 하청업체, 그리고 그들의 근로자들과 세후 초과 이익을 공유하는 방안을 고려해야 한다\"라고 밝혔다.이어 \"정부와 기업, 노조, 공급업체들이 이러한 초과 이익을 어떻게 분배하고 대기업과 소규모 공급업체 간의 격차를 줄일지에 대해 공개적인 대화를 해야 한…",
+      "one_line": "김영훈 고용노동부 장관이 외신 인터뷰에서 AI 붐으로 막대한 수익을 올린 대기업들을 향해 '초과이익 공유제'를 제안했다.김 장관은 5일 공개된 로이터와의 단독 인터뷰를 통해 \"삼성전자와 같이 수익 목표를 초과…",
+      "one_line_kr": "김영훈 고용노동부 장관이 외신 인터뷰에서 AI 붐으로 막대한 수익을 올린 대기업들을 향해 '초과이익 공유제'를 제안했다.김 장관은 5일 공개된 로이터와의 단독 인터뷰를 통해 \"삼성전자와 같이 수익 목표를 초과…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=211411",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-06 11:29",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "김영훈 노동장관 \"대기업 AI 초과이익 공유해야...명백한 재투자\""
+    },
+    {
+      "id": "2026-06-07_0010",
+      "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
+      "summary": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+      "one_line": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the…",
+      "one_line_kr": "잠금 모드를 사용하더라도 ChatGPT는 즉각적인 주입에 여전히 취약할 수 있지만 목표는…",
+      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-07 05:32",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenAI, 즉각적인 주입 공격으로부터 민감한 데이터를 보호하는 잠금 모드 공개"
+    },
+    {
+      "id": "2026-06-07_0011",
+      "title": "What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates",
+      "summary": "Apple's WWDC nears: Here's what you can look forward to.",
+      "one_line": "Apple's WWDC nears: Here's what you can look forward to.",
+      "one_line_kr": "Apple의 WWDC가 다가옵니다. 여러분이 기대할 수 있는 사항은 다음과 같습니다.",
+      "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-07 03:13",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "WWDC 2026에서 기대할 수 있는 것: 많은 기대를 모은 Siri의 개편 및 Apple Intelligence 업데이트"
+    },
+    {
+      "id": "2026-06-07_0012",
+      "title": "Sriram Krishnan is leaving his role as White House AI advisor",
+      "summary": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "one_line": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+      "one_line_kr": "크리슈난은 트럼프의 AI 정책을 계속해서 형성하기 위해 새로운 기관을 설립하는 것으로 알려졌다.",
+      "url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-07 02:42",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "스리람 크리슈난(Sriram Krishnan), 백악관 AI 자문직 사임"
+    },
+    {
+      "id": "2026-06-07_0013",
+      "title": "The Trump administration might take an equity stake in OpenAI",
+      "summary": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "one_line": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+      "one_line_kr": "도널드 트럼프 미국 대통령은 \"미국 국민이 AI의 성공으로 혜택을 받을 수 있는 거래\"를 논의하고 있다고 밝혔습니다.",
+      "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-07 01:17",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "트럼프 행정부가 OpenAI 지분을 확보할 수도 있다"
+    },
+    {
+      "id": "2026-06-07_0014",
+      "title": "Five labs, five minds: building a multi-model finance drama on small models",
+      "summary": "",
+      "one_line": "Five labs, five minds: building a multi-model finance drama on small models",
+      "one_line_kr": "다섯 개의 연구소, 다섯 개의 마음: 작은 모델을 바탕으로 다중 모델 금융 드라마 구축",
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+      "source": "HuggingFace Blog",
+      "category": "이미지·디자인AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-06-07 04:02",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "다섯 개의 연구소, 다섯 개의 마음: 작은 모델을 바탕으로 다중 모델 금융 드라마 구축"
+    },
+    {
+      "id": "2026-06-07_0015",
+      "title": "Running Python code in a sandbox with MicroPython and WASM",
+      "summary": "I've been experimenting with different approaches to running code in a sandbox for several years now, but my latest attempt feels like it might finally have all of the characteristics I've been looking for. I've released it as an alpha package called micropython-wasm, and I'm usi…",
+      "one_line": "I've released it as an alpha package called micropython-wasm, and I'm usi…",
+      "one_line_kr": "micropython-wasm이라는 알파 패키지로 출시했는데...",
+      "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-entries",
+      "source": "Simon Willison",
+      "category": "LLM",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-06-06 12:53",
+      "collect_date": "2026-06-07",
+      "thumbnail": "https://static.simonwillison.net/static/2026/micropython-in-datasette-agent.jpg",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MicroPython 및 WASM을 사용하여 샌드박스에서 Python 코드 실행"
+    },
+    {
+      "id": "2026-06-07_0016",
+      "title": "GPT-5.2 and GPT-5.2-Codex deprecated",
+      "summary": "As of today, June 5, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note&#8230; The post GPT-5.2 and GPT-5.2-Codex deprecated appeared first on The GitHub Blog…",
+      "one_line": "Note&#8230; The post GPT-5.2 and GPT-5.2-Codex deprecated appeared first on The GitHub Blog…",
+      "one_line_kr": "참고&#8230; 더 이상 사용되지 않는 GPT-5.2 및 GPT-5.2-Codex 게시물이 GitHub 블로그에 처음 나타났습니다…",
+      "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-06-06 07:32",
+      "collect_date": "2026-06-07",
+      "thumbnail": "",
+      "type": "API변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "GPT-5.2 및 GPT-5.2-Codex는 더 이상 사용되지 않습니다."
+    },
+    {
+      "id": "2026-06-07_0017",
+      "title": "[AINews] not much happened today",
+      "summary": "a quiet day of RSI.",
+      "one_line": "a quiet day of RSI.",
+      "one_line_kr": "RSI가 있는 조용한 날.",
+      "url": "https://www.latent.space/p/ainews-not-much-happened-today-6b8",
+      "source": "Latent Space",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-06 13:34",
+      "collect_date": "2026-06-07",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AINews] 오늘은 별 일 없었어요"
+    },
+    {
+      "id": "2026-06-07_0018",
+      "title": "LLM Research Papers: The 2026 List (January to May)",
+      "summary": "A curated roundup of notable LLM research papers that came out this year",
+      "one_line": "A curated roundup of notable LLM research papers that came out this year",
+      "one_line_kr": "올해 발표된 주목할만한 LLM 연구 논문을 모아 정리했습니다.",
+      "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+      "source": "Ahead of AI",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-06 20:16",
+      "collect_date": "2026-06-07",
+      "thumbnail": "https://substack-post-media.s3.amazonaws.com/public/images/8630eb02-eeac-4411-bef3-1865c1920b03_2912x1632.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "LLM 연구 논문: 2026년 목록(1월~5월)"
+    },
     {
       "id": "2026-06-06_0000",
       "title": "[6월5일] 테드 창이 'AI 의식'과 앤트로픽을 비판한 이유...\"문제는 인간의 착각\"",
@@ -8464,510 +8873,6 @@
         "class": "new"
       },
       "title_kr": "Taylor Swift는 AI 법률의 맹점을 폭로했습니다. 저작권보다 더 큰 문제입니다. - Fortune"
-    },
-    {
-      "id": "2026-05-31_0000",
-      "title": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가",
-      "summary": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다. 하드웨어 사업 강화로 수익을 확대하고 자체 AI 모델 활용도를 극대화하려는 의도다.디 인포메이션은 29일(현지시간) 알렉스 히멜 메타 웨어러블 부문 부사장이 작성한 내부 메모를 입수, 웨어러블 기기 로드맵을 공개했다.이에 따르면, 히멜 부사장은 메타의 AI 모델과 새로운 앱 구독 요금제, 현재 개발 중인 소비자용 AI 에이전트 '해치(Hatch)'의 사용을 촉진하기 위해 하드웨어 제품군을 확대한다고 밝혔…",
-      "one_line": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
-      "one_line_kr": "메타가 내년에 새로운 AI 펜던트를 추가하고 AI 안경 제품군을 대폭 확장할 것으로 밝혀졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211141",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 21:41",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "메타, ‘AI 펜던트’ 개발 착수…AI 안경 라인업도 대폭 추가"
-    },
-    {
-      "id": "2026-05-31_0001",
-      "title": "구글, AI 검색에 ‘사용자 선호 소스’ 기능 도입...\"맞춤형 콘텐츠 강화\"",
-      "summary": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수 있는 '선호 소스(Preferred Sources)’ 기능을 추가했다.사용자가 검색 개인 설정에서 소스 기본 설정을 찾아 자주 방문하거나 신뢰하는 미디어나 블로그 사이트를 등록하면, AI 답변에서 해당 소스의 링크가 먼저 노출된다. 구글은 사전 테스트 결과, 사용자가 선호하는 소스로 지정…",
-      "one_line": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수…",
-      "one_line_kr": "구글이 AI 검색에서도 사용자가 신뢰하는 출처와 고품질 콘텐츠를 쉽게 발견할 수 있도록 돕는 새로운 업데이트를 발표했다.구글은 27일(현지시간) AI 개요와 AI 모드에서 사용자가 즐겨 찾는 웹사이트를 지정할 수…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211139",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 19:49",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "구글, AI 검색에 ‘사용자 선호 소스’ 기능 도입...\"맞춤형 콘텐츠 강화\""
-    },
-    {
-      "id": "2026-05-31_0002",
-      "title": "[AI 이슈트렌드] 서소문 고가 붕괴·삼전닉스 ETF 여풀 속 '종전 기대감'에 출렁인 환율",
-      "summary": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가 붕괴(8.76%)’다.서울 서소문 고가차도 철거 현장에서 발생한 붕괴 사고로 3명이 숨졌다. 사고 직후 열차 운행에 차질이 빚어졌으며, 사고 나흘 만에 KTX와 경의선 운행이 재개되고 있다. 노동 당국은 공사의 원·하청업체 본사 및 현장사무실 등 총 7개소에 대해 압수수색을 진행 중이다.2…",
-      "one_line": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가…",
-      "one_line_kr": "AI타임스와 이스트에이드의 5월 넷째 주(5월 22일~28일) 이슈 분석 결과, 인명 사고와 주식 시장 변동성, 국제 정세 등이 키워드 상위권을 차지했다.이번 주 가장 높은 검색량을 기록한 1위는 ‘서소문 고가…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211137",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 17:36",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AI 이슈트렌드] 서소문 고가 붕괴·삼전닉스 ETF 여풀 속 '종전 기대감'에 출렁인 환율"
-    },
-    {
-      "id": "2026-05-31_0003",
-      "title": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화",
-      "summary": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다. 리퀴드 AI는 28일(현지시간) 도구 호출과 에이전트 작업 수행에 최적화된 전문가 혼합(MoE) 모델 ‘LFM2.5-8B-A1B’를 공개했다. 새 모델은 최대 12만8000토큰의 장문 컨텍스트와 추론(reasoning) 기능을 새롭게 지원한다.LFM2.5-8B-A1B는 지난해 공개된 LFM2-8B-A1B의 후속 모델로, 총 83억개(8.3B)의 매개변수를 보유하고 있지만 실제 추론 과정에서는 15억개(1.…",
-      "one_line": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
-      "one_line_kr": "리퀴드 AI가 소비자용 하드웨어에서 실행할 수 있는 차세대 온디바이스 AI 모델을 공개했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211132",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 12:55",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "리퀴드 AI, 온디바이스용 모델 ‘LFM2.5’ 공개…환각 줄고 추론 강화"
-    },
-    {
-      "id": "2026-05-31_0004",
-      "title": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\"",
-      "summary": "스텝펀이 멀티모달 기능과 에이전트 실행 능력을 대폭 강화한 차세대 모델을 공개했다. 이 모델은 이미지 이해 기능이 처음으로 탑재됐으며, 코딩과 도구 활용, 장기 작업 수행 능력에서 전작을 크게 뛰어넘는 성능을 기록했다. 스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의 언어 모델과 18억개 규모의 비전 인코더(ViT)를 결합해 이미지와 텍…",
-      "one_line": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
-      "one_line_kr": "스텝펀은 29일(현지시간) 총 1980억개(198B)의 매개변수를 갖춘 희소 전문가 혼합(MoE) 기반 비전-언어 모델 ‘스텝 3.7 플래시(Step 3.7 Flash)’를 오픈소스로 공개했다.1960개 규모의…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211130",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 12:47",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "스텝펀, ‘스텝 3.7 플래시’ 공개...\"클로드 97% 성능인데 비용은 1/9\""
-    },
-    {
-      "id": "2026-05-31_0005",
-      "title": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원",
-      "summary": "오픈AI가 코딩 에이전트 ‘코덱스(Codex)’의 기능을 대폭 확장하며 윈도우 11 환경에서도 AI가 직접 컴퓨터를 조작할 수 있는 ‘컴퓨터 유즈(Computer Use)’ 기능을 지원하기 시작했다. 또 아이폰과 안드로이드용 챗GPT 앱을 통해 윈도우 PC에서 실행 중인 코덱스 작업을 원격으로 제어할 수 있게 되면서, 장소에 구애받지 않는 AI 개발 환경 구축에 한 걸음 더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
-      "one_line": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
-      "one_line_kr": "더 다가섰다는 평가가 나왔다.오픈AI는 29일(현지시간) 코덱스 데스크톱 애플리케이션 업데이트를 통해 윈도우 11 사용자에게 컴…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211135",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 12:03",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 윈도우용 코덱스에 ‘컴퓨터 유즈’ 도입…모바일 원격 제어 지원"
-    },
-    {
-      "id": "2026-05-31_0006",
-      "title": "메타의 AI 학습용 '마우스 추적', 유럽 개인정보 규정 위반 논란",
-      "summary": "메타가 AI 에이전트 개발을 위해 미국 직원들의 컴퓨터 사용 기록을 광범위하게 수집하는 가운데, 해외 직원들의 이메일과 채팅 내용까지 수집 대상에 포함될 수 있다는 사실이 알려졌다. 이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability Initiative)’라는 도구를 도입해 직원들의 컴퓨터 사용 패턴을 AI 학습 데이터로 수집하고 있다고 보도했다. 이…",
-      "one_line": "이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability…",
-      "one_line_kr": "이 때문에 유럽의 개인정보보호 규정(GDPR) 위반 논란으로 확대될 가능성이 제기됐다.로이터는 29일(현지시간) 내부 문건을 인용, 메타가 ‘모델 역량 이니셔티브(MCI·Model Capability…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211129",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 11:50",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "메타의 AI 학습용 '마우스 추적', 유럽 개인정보 규정 위반 논란"
-    },
-    {
-      "id": "2026-05-31_0007",
-      "title": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\"",
-      "summary": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다. 특히 나노 바나나 2는 텍스트와 이미지를 넘어 동영상까지 입력으로 활용하는 기능을 추가하며 멀티모달 AI 경쟁력을 강화했다.구글은 29일(현지시간) 기업용 AI 플랫폼인 구글 클라우드 제미나이 엔터프라이즈 에이전트 플랫폼을 통해 나노 바나나 2(제미나이 3.1 플래시 이미지)와 나노 바나나 프로(제미나이 3 …",
-      "one_line": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
-      "one_line_kr": "구글이 기업용 미디어 시장 공략을 강화하기 위해 차세대 이미지 생성 모델 ‘나노 바나나 2(Nano Banana 2)’와 ‘나노 바나나 프로(Nano Banana Pro)’를 정식 출시했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211134",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 11:29",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "구글, ‘나노 바나나 2·프로’ 정식 출시…\"동영상 보고 이미지 만든다\""
-    },
-    {
-      "id": "2026-05-31_0008",
-      "title": "오픈AI는 동맹국 확장, 앤트로픽은 제한…엇갈리는 사이버보안 전략",
-      "summary": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다. 오픈AI는 한국 정부에 이어 일본 은행권에 최신 모델 접근을 제공하며 모델 배포 확대에 나섰지만, 미소스는 영국과 EU조차 접근하지 못하는 등 여전히 미국 중심의 제한적 운영 기조를 유지하는 모습이다.가타야마 사츠키 일본 재무장관은 29일 제이슨 권 오픈AI 최고 전략책임자(CSO)와의 회담 후, 오픈AI가 사이버 공격 방지를 돕기 위해 일부 일본 금융기관에 'GPT-5.5-사이버' 모델 접근 권한을 제공했…",
-      "one_line": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다.",
-      "one_line_kr": "오픈AI와 앤트로픽이 사이버보안 모델 글로벌 확대 전략에서 서로 다른 방향을 보이고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211131",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 10:10",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "오픈AI는 동맹국 확장, 앤트로픽은 제한…엇갈리는 사이버보안 전략"
-    },
-    {
-      "id": "2026-05-31_0009",
-      "title": "[AI카툰] Bob, Senior IT guy - 밥, 정리해고에서 살아남다",
-      "summary": "글·그림 Dr. Alf",
-      "one_line": "글·그림 Dr. Alf",
-      "one_line_kr": "글·그림 Dr. Alf",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211126",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-30 10:00",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AI카툰] Bob, Senior IT guy - 밥, 정리해고에서 살아남다"
-    },
-    {
-      "id": "2026-05-31_0010",
-      "title": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run",
-      "summary": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을 강조했다. 김 대표는 활용 가능한 국내 API가 많지 않아 대부분의 해커톤이 해외 IT 인프라를 기반으로 진행되고 있다고 설명했다. 이어 생성형 인공지능(AI) 기반 개발 방식인 바이브코딩 시대를 맞아 국내 서비스와 연결된 개방형 생태계를 조성하기 위해 이번 행사를 마련했다고 밝혔다.",
-      "one_line": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
-      "one_line_kr": "김서준 해시드 대표는 30일 경기도 용인시 카카오 AI 캠퍼스에서 열린 국내 오픈 API·오픈소스 개발자를 위한 주말 해커톤 'OBA(오픈 빌더스 얼라이언스) Run'에서 국내 API 생태계 확대의 필요성을…",
-      "url": "https://byline.network/2026/05/0530-3/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-05-31 00:50",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "개발은 AI에 맡기고 사람은 네트워킹하는 해커톤, 해시드 OBA Run"
-    },
-    {
-      "id": "2026-05-31_0011",
-      "title": "SoftBank says it will invest up to €75 billion to build French data centers",
-      "summary": "The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity.",
-      "one_line": "The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity.",
-      "one_line_kr": "회사에 따르면 목표는 최대 5기가와트의 추가 데이터 센터 용량을 개발하고 운영하는 것입니다.",
-      "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-31 06:45",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "SoftBank는 프랑스 데이터 센터 구축에 최대 750억 유로를 투자할 것이라고 밝혔습니다."
-    },
-    {
-      "id": "2026-05-31_0012",
-      "title": "‘What a joke’: Github Copilot’s new token-based billing spurs consternation among devs",
-      "summary": "The golden age of Microsoft's Github Copilot appears to be at an end.",
-      "one_line": "The golden age of Microsoft's Github Copilot appears to be at an end.",
-      "one_line_kr": "Microsoft Github Copilot의 황금시대는 이제 끝난 것 같습니다.",
-      "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-31 01:30",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "'정말 농담이군요': Github Copilot의 새로운 토큰 기반 청구는 개발자들 사이에 경악을 불러일으킵니다"
-    },
-    {
-      "id": "2026-05-31_0013",
-      "title": "Meta is reportedly developing an AI pendant",
-      "summary": "Meta seems to be making big bets on AI-powered hardware.",
-      "one_line": "Meta seems to be making big bets on AI-powered hardware.",
-      "one_line_kr": "Meta는 AI 기반 하드웨어에 큰 투자를 하고 있는 것 같습니다.",
-      "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-31 00:59",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "메타가 AI 펜던트를 개발 중인 것으로 알려졌습니다."
-    },
-    {
-      "id": "2026-05-31_0014",
-      "title": "I put Google’s 24/7 AI assistant Gemini Spark to work, and it’s actually pretty useful",
-      "summary": "Gemini Spark helps automate everyday tasks, from inbox summaries to local event planning, but it’s unclear why Google made it a separate product.",
-      "one_line": "Gemini Spark helps automate everyday tasks, from inbox summaries to local event planning, but it’s unclear why Google…",
-      "one_line_kr": "Gemini Spark는 받은편지함 요약부터 지역 이벤트 계획까지 일상적인 작업을 자동화하는 데 도움이 되지만 Google이…",
-      "url": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-31 00:30",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Google의 연중무휴 AI 비서인 Gemini Spark를 작업에 투입했는데 실제로 꽤 유용합니다."
-    },
-    {
-      "id": "2026-05-31_0015",
-      "title": "BEAT: Rhythm-Elastic Alignment for Agentic Music-guided Movie Trailer Generation",
-      "summary": "Automatic movie trailer generation must select shots from a full-length film and synchronize them with background music. Existing methods either relegate music alignment to post-processing or enforce rigid one-to-one shot-music mappings, overlooking that professional editing rhyt…",
-      "one_line": "Automatic movie trailer generation must select shots from a full-length film and synchronize them with background music.",
-      "one_line_kr": "자동 영화 예고편 생성은 장편 영화에서 장면을 선택하고 배경 음악과 동기화해야 합니다.",
-      "url": "https://tldr.takara.ai/p/2605.27067",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-26 23:18",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "BEAT: 에이전트틱 음악 기반 영화 예고편 생성을 위한 리듬-탄력적 정렬"
-    },
-    {
-      "id": "2026-05-31_0016",
-      "title": "Optimal Rates for Differentially Private Hypothesis Testing with E-values",
-      "summary": "E-values have attracted considerable interest in recent years as flexible tools for enabling anytime-valid and adaptive data analysis. Hypothesis testing is at the core of many of these applications, which can often involve private or sensitive data. In this work, we answer a sim…",
-      "one_line": "E-values have attracted considerable interest in recent years as flexible tools for enabling anytime-valid and adaptive…",
-      "one_line_kr": "E-value는 언제 어디서나 유효하고 적응력이 뛰어난 유연한 도구로서 최근 몇 년간 상당한 관심을 불러일으켰습니다.",
-      "url": "https://tldr.takara.ai/p/2605.28952",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-28 03:00",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "E-값을 사용한 차등 비공개 가설 검정을 위한 최적 비율"
-    },
-    {
-      "id": "2026-05-31_0017",
-      "title": "Temporal Simultaneity Predicts Annotation Quality in Sentiment Corpora",
-      "summary": "Annotation quality is difficult to sustain when campaigns span weeks or months with small annotator pools. We present a Setswana sentiment dataset of 3,565 tweets annotated by three native-speaker annotators across eight batches and examine why inter-annotator agreement (IAA) dec…",
-      "one_line": "Annotation quality is difficult to sustain when campaigns span weeks or months with small annotator pools.",
-      "one_line_kr": "캠페인이 작은 주석자 풀로 몇 주 또는 몇 달에 걸쳐 진행되는 경우 주석 품질을 유지하기가 어렵습니다.",
-      "url": "https://tldr.takara.ai/p/2605.27239",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-27 01:21",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "시간적 동시성은 감정 말뭉치의 주석 품질을 예측합니다."
-    },
-    {
-      "id": "2026-05-31_0018",
-      "title": "ESAM++: Efficient Online 3D Perception on the Edge",
-      "summary": "Online 3D scene perception in real time is essential for robotics, AR/VR, and autonomous systems, particularly in edge computing scenarios where computational resources are limited and privacy is crucial. Recent state-of-the-art methods like EmbodiedSAM (ESAM) demonstrate the pro…",
-      "one_line": "Recent state-of-the-art methods like EmbodiedSAM (ESAM) demonstrate the pro…",
-      "one_line_kr": "ESAM(EmbodiedSAM)과 같은 최신 최첨단 방법은 프로…",
-      "url": "https://tldr.takara.ai/p/2605.29505",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-05-28 16:29",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "ESAM++: 엣지에서의 효율적인 온라인 3D 인식"
-    },
-    {
-      "id": "2026-05-31_0019",
-      "title": "[AINews] Founders and Forward Deployed Engineers",
-      "summary": "a quiet day lets us highlight the new AIE WF focuses",
-      "one_line": "a quiet day lets us highlight the new AIE WF focuses",
-      "one_line_kr": "조용한 날에는 새로운 AIE WF 초점을 강조할 수 있습니다.",
-      "url": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 10:57",
-      "collect_date": "2026-05-31",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!SpLP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AINews] 창립자와 전방 배치 엔지니어"
-    },
-    {
-      "id": "2026-05-31_0020",
-      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
-      "summary": "Text-to-speech changed fast in 2026. This guide ranks the leading commercial and open-weight TTS models, comparing quality, latency, cost, language coverage, and licensing so engineers can match a model to the job. The post Best Text-to-Speech TTS Models in 2026: A Benchmark-Base…",
-      "one_line": "Text-to-speech changed fast in 2026.",
-      "one_line_kr": "2026년에 TTS(텍스트 음성 변환)가 빠르게 변화했습니다.",
-      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-31 06:26",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "2026년 최고의 텍스트 음성 변환 TTS 모델: 벤치마크 기반 비교"
-    },
-    {
-      "id": "2026-05-31_0021",
-      "title": "Genesis AI Releases Nyx, Quadrants, and Genesis World 1.0 Physics Platform for Scalable Robotics Foundation Model Evaluation",
-      "summary": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics, rendering, compilation, and tooling. The system achieves a Pearson correlation of 0.8996 between simulation and real-world robot rollouts, and reduces policy evaluation …",
-      "one_line": "Genesis AI released Genesis World 1.0 on May 27, 2026 — a four-component simulation platform covering physics,…",
-      "one_line_kr": "Genesis AI는 2026년 5월 27일에 Genesis World 1.0을 출시했습니다. 이는 물리학을 다루는 4가지 구성 요소 시뮬레이션 플랫폼입니다.…",
-      "url": "https://www.marktechpost.com/2026/05/30/genesis-ai-releases-nyx-quadrants-and-genesis-world-1-0-physics-platform-for-scalable-robotics-foundation-model-evaluation/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 18:25",
-      "collect_date": "2026-05-31",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-30-at-2.19.49-AM-1-150x150.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Genesis AI, 확장 가능한 로봇공학 기반 모델 평가를 위한 Nyx, Quadrants 및 Genesis World 1.0 물리 플랫폼 출시"
-    },
-    {
-      "id": "2026-05-31_0022",
-      "title": "Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4",
-      "summary": "Nous Research's Hermes Agent adds Tool Search to fix MCP context bloat using BM25 progressive schema disclosure. The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first on MarkTechPost.",
-      "one_line": "The post Hermes Agent Ships Tool Search for MCP: Anthropic Evals Show 49% to 74% Accuracy Gain on Opus 4 appeared first…",
-      "one_line_kr": "MCP에 대한 Hermes Agent Ships 도구 검색 게시물: Anthropic Evals는 Opus 4에서 49% ~ 74%의 정확도 이득을 보여줍니다.",
-      "url": "https://www.marktechpost.com/2026/05/29/hermes-agent-ships-tool-search-for-mcp-anthropic-evals-show-49-to-74-accuracy-gain-on-opus-4/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 12:11",
-      "collect_date": "2026-05-31",
-      "thumbnail": "https://www.marktechpost.com/wp-content/uploads/2026/05/Screenshot-2026-05-29-at-7.56.04-PM-1-150x150.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "MCP에 대한 Hermes Agent Ships 도구 검색: Anthropic Evals는 Opus 4에서 49%~74%의 정확도 향상을 보여줍니다."
-    },
-    {
-      "id": "2026-05-31_0023",
-      "title": "How to Use AgentTrove: Streaming 1.7M Agentic Traces and Building a Clean ShareGPT SFT Dataset in Python",
-      "summary": "AgentTrove is the largest open-source collection of agentic interaction traces, with 1.7M rows in a ShareGPT-style layout. This hands-on Python tutorial shows how to stream the dataset without full downloads, normalize agent turns, extract commands, analyze trajectories, and expo…",
-      "one_line": "AgentTrove is the largest open-source collection of agentic interaction traces, with 1.7M rows in a ShareGPT-style…",
-      "one_line_kr": "AgentTrove는 ShareGPT 스타일의 170만 행을 포함하는 가장 큰 오픈 소스 에이전트 상호 작용 추적 컬렉션입니다.",
-      "url": "https://www.marktechpost.com/2026/05/29/how-to-use-agenttrove-streaming-1-7m-agentic-traces-and-building-a-clean-sharegpt-sft-dataset-in-python/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-05-30 09:46",
-      "collect_date": "2026-05-31",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "AgentTrove 사용 방법: 170만 개의 에이전트 추적을 스트리밍하고 Python에서 깨끗한 ShareGPT SFT 데이터 세트 구축"
     }
   ]
 }

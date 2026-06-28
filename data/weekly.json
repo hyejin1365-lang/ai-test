@@ -1,24 +1,24 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-06-28 08:09",
-  "total": 379,
-  "kr_count": 122,
-  "en_count": 257,
+  "generated_at": "2026-06-29 08:11",
+  "total": 381,
+  "kr_count": 123,
+  "en_count": 258,
   "category_stats": {
-    "콘텐츠": 122,
-    "영상AI": 37,
-    "이미지·디자인AI": 34,
+    "콘텐츠": 123,
+    "영상AI": 36,
+    "이미지·디자인AI": 37,
     "LLM": 3,
-    "개발AI": 46,
-    "AI법률": 8,
+    "개발AI": 44,
+    "AI법률": 9,
     "논문": 96,
     "비즈니스": 33
   },
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 69
+      "count": 70
     },
     {
       "source": "ArXiv AI",
@@ -29,16 +29,16 @@
       "count": 28
     },
     {
+      "source": "HuggingFace Papers",
+      "count": 27
+    },
+    {
       "source": "TechCrunch AI",
       "count": 26
     },
     {
       "source": "바이라인네트워크",
       "count": 25
-    },
-    {
-      "source": "HuggingFace Papers",
-      "count": 24
     },
     {
       "source": "ArXiv ML",
@@ -66,23 +66,23 @@
     },
     {
       "source": "MarkTechPost",
-      "count": 14
+      "count": 13
     },
     {
       "source": "OpenAI News (영상)",
-      "count": 10
+      "count": 9
     },
     {
       "source": "HuggingFace Blog",
       "count": 9
     },
     {
-      "source": "Latent Space",
-      "count": 8
+      "source": "AI Copyright Law",
+      "count": 7
     },
     {
-      "source": "AI Copyright Law",
-      "count": 6
+      "source": "Latent Space",
+      "count": 7
     },
     {
       "source": "VS Code Release Notes",
@@ -124,7 +124,7 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 42
+      "count": 40
     },
     {
       "keyword": "LLM",
@@ -132,19 +132,15 @@
     },
     {
       "keyword": "에이전트",
-      "count": 29
-    },
-    {
-      "keyword": "GPT",
-      "count": 16
+      "count": 32
     },
     {
       "keyword": "GitHub",
-      "count": 14
+      "count": 15
     },
     {
-      "keyword": "Vision",
-      "count": 13
+      "keyword": "GPT",
+      "count": 14
     },
     {
       "keyword": "RAG",
@@ -155,31 +151,39 @@
       "count": 13
     },
     {
+      "keyword": "Vision",
+      "count": 13
+    },
+    {
       "keyword": "Benchmark",
       "count": 12
     },
     {
-      "keyword": "Claude",
-      "count": 10
-    },
-    {
-      "keyword": "인공지능",
-      "count": 10
+      "keyword": "Copilot",
+      "count": 11
     },
     {
       "keyword": "Reasoning",
       "count": 10
     },
     {
-      "keyword": "Copilot",
-      "count": 10
+      "keyword": "Claude",
+      "count": 9
+    },
+    {
+      "keyword": "인공지능",
+      "count": 9
     },
     {
       "keyword": "추론",
-      "count": 6
+      "count": 8
     },
     {
       "keyword": "오픈소스",
+      "count": 6
+    },
+    {
+      "keyword": "딥시크",
       "count": 5
     },
     {
@@ -195,19 +199,11 @@
       "count": 5
     },
     {
-      "keyword": "딥시크",
-      "count": 4
-    },
-    {
       "keyword": "Phi",
-      "count": 4
+      "count": 3
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-06-22",
-      "count": 18
-    },
     {
       "date": "2026-06-23",
       "count": 46
@@ -231,9 +227,20 @@
     {
       "date": "2026-06-28",
       "count": 26
+    },
+    {
+      "date": "2026-06-29",
+      "count": 20
     }
   ],
   "cat_daily": {
+    "2026-06-29": {
+      "콘텐츠": 11,
+      "영상AI": 2,
+      "이미지·디자인AI": 3,
+      "개발AI": 3,
+      "AI법률": 1
+    },
     "2026-06-28": {
       "콘텐츠": 10,
       "영상AI": 4,
@@ -286,14 +293,114 @@
       "LLM": 1,
       "개발AI": 2,
       "비즈니스": 7
-    },
-    "2026-06-22": {
-      "콘텐츠": 10,
-      "영상AI": 3,
-      "개발AI": 5
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-06-29_0001",
+      "title": "국내 AI 업계, 마누스 외면… \"중국산 거부감보다 대체재 풍부\"",
+      "summary": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다. 마누스는 지난해 출시 직후 뛰어난 성능으로 주목받았으며, 최근에는 메타의 인수 추진 과정에서 중국 정부가 이례적으로 '거래 철회 명령'을 내리며 미국과의 기술 갈등의 중심에 선 바 있다. 이 때문에 시장에서는 이를 ‘중국계 AI’로 인식하는 분위기가 짙다. 마누스도 국내 진출에 가장 큰 걸림돌로 이런 점을 문제로 파악한 것으로 알려졌다.이에 따라 국내 AI 기업 10여 곳을 대상으로 마누스와 중국산 AI 이미…",
+      "one_line": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+      "one_line_kr": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212196",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 21:08",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "국내 AI 업계, 마누스 외면… \"중국산 거부감보다 대체재 풍부\""
+    },
+    {
+      "id": "2026-06-29_0002",
+      "title": "장시간 컴퓨터 사용 능력 벤치마크 공개…'오퍼스 4.8' 최고점",
+      "summary": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다. 기존의 한계를 넘어 실제 전문가 수준의 업무 환경을 반영한 평가 도구다. AI 연구소인 X랭(XLANG)은 26일(현지시간) 장기 컴퓨터 사용(Long-horizon Computer Use) 능력을 평가하기 위해 'OS월드(OSWorld) 2.0'을 공개했다.기존 벤치마크가 수십 단계 안에 끝나는 단순 작업을 평가했다면, OS월드 2.0은 숙련된 사람이 평균 1.6시간이 걸리는 실제 업무를 기반으로 AI 에이전트의 …",
+      "one_line": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다.",
+      "one_line_kr": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212199",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 14:02",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "장시간 컴퓨터 사용 능력 벤치마크 공개…'오퍼스 4.8' 최고점"
+    },
+    {
+      "id": "2026-06-29_0003",
+      "title": "딥시크, LLM 추론 속도 최대 85% 높이는 ‘D스파크’ 오픈소스 공개",
+      "summary": "딥시크가 기존 모델의 응답 속도와 서비스 효율을 높이기 위한 최적화 기술을 선보였다. 여러 토큰을 먼저 생성한 뒤 문맥에 맞게 차례대로 보완하고, GPU 작업량에 따라 검증하는 토큰 수를 자동으로 조절해 추론 속도와 서비스 효율을 높였다. 딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다. 기존 '딥시크-V4' 모델에 D스파크를 적용한 '딥시크-V4-프로…",
+      "one_line": "딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다.",
+      "one_line_kr": "딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212191",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 13:44",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "딥시크, LLM 추론 속도 최대 85% 높이는 ‘D스파크’ 오픈소스 공개"
+    },
+    {
+      "id": "2026-06-29_0005",
+      "title": "MS, 깃허브 코파일럿에 자체 코딩 모델 출시...\"하이쿠보다 빠르고 저렴\"",
+      "summary": "마이크로소프트(MS)가 '깃허브 코파일럿(GitHub Copilot)'에 자체 AI 코딩 모델 적용을 확대하며 기업용 AI 코딩 시장 공략에 속도를 내고 있다. MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와 낮은 지연시간을 앞세워 대규모 개발 환경에서 반복적인 AI 코딩 작업을 지원하는 모델로, 기업용 깃허브 코파일럿에 MS의 자체 A…",
+      "one_line": "MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와…",
+      "one_line_kr": "MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212192",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 13:06",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MS, 깃허브 코파일럿에 자체 코딩 모델 출시...\"하이쿠보다 빠르고 저렴\""
+    },
+    {
+      "id": "2026-06-29_0018",
+      "title": "Liquid AI Ships LFM2.5-230M with llama.cpp, MLX, vLLM, SGLang, and ONNX Support for On-Device Inference",
+      "summary": "Liquid AI released LFM2.5-230M, its smallest model yet. The 230M-parameter, open-weight model runs on-device at 213 tok/s on a Galaxy S25 Ultra and 42 on a Raspberry Pi 5. Built on the LFM2 architecture, it targets tool use and data extraction, beating larger models like Qwen3.5-…",
+      "one_line": "Liquid AI released LFM2.5-230M, its smallest model yet.",
+      "one_line_kr": "Liquid AI는 아직 가장 작은 모델인 LFM2.5-230M을 출시했습니다.",
+      "url": "https://www.marktechpost.com/2026/06/27/liquid-ai-ships-lfm2-5-230m-with-llama-cpp-mlx-vllm-sglang-and-onnx-support-for-on-device-inference/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-28 13:58",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Liquid AI, 온디바이스 추론을 위한 llama.cpp, MLX, vLLM, SGLang 및 ONNX 지원과 함께 LFM2.5-230M 출시"
+    },
     {
       "id": "2026-06-28_0002",
       "title": "바이두, '언리미티드 OCR' 공개… \"메모리 한계 깨고 수십페이지 문서 한 번에\"",
@@ -398,120 +505,15 @@
         "class": "hot"
       },
       "title_kr": "Anthropic의 수출 금지가 지연되면서 아시아 AI 스타트업, Mythos와 유사한 모델 출시"
-    },
-    {
-      "id": "2026-06-28_0018",
-      "title": "[AINews] OpenAI GPT-5.6 Sol / Terra / Luna — restricted to trusted partners",
-      "summary": "Oddly tiered releases to both OAI and ANT on the same day.",
-      "one_line": "Oddly tiered releases to both OAI and ANT on the same day.",
-      "one_line_kr": "같은 날 OAI와 ANT 모두에 이상하게 계층화된 릴리스가 출시됩니다.",
-      "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-27 14:23",
-      "collect_date": "2026-06-28",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!xf8R!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2899dbdf-7aed-499f-92b9-63cc194a604e_1328x932.png",
-      "type": "가격변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "[AINews] OpenAI GPT-5.6 Sol / Terra / Luna - 신뢰할 수 있는 파트너로 제한됨"
-    },
-    {
-      "id": "2026-06-28_0019",
-      "title": "DeepSeek Releases DSpark, a Speculative Decoding Framework That Accelerates DeepSeek-V4 Per-User Generation 60–85% Over MTP-1",
-      "summary": "DeepSeek open-sourced DSpark, a speculative decoding framework that attaches a draft module to existing DeepSeek-V4 weights. It pairs a parallel draft backbone with a lightweight Markov head to cut suffix decay, then adds confidence-scheduled verification that tailors how many to…",
-      "one_line": "It pairs a parallel draft backbone with a lightweight Markov head to cut suffix decay, then adds confidence-scheduled…",
-      "one_line_kr": "접미사 부패를 줄이기 위해 가벼운 Markov 헤드와 병렬 초안 백본을 결합한 다음 신뢰도 일정을 추가합니다…",
-      "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-28 01:59",
-      "collect_date": "2026-06-28",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "DeepSeek, 사용자별 DeepSeek-V4 생성을 60~85% 이상 가속화하는 추측적 디코딩 프레임워크인 DSpark 출시"
-    },
-    {
-      "id": "2026-06-28_0020",
-      "title": "Meta’s Astryx Brings a CLI and MCP Server to an Open-Source React Design System Agents Can Read",
-      "summary": "Meta released Astryx, an open-source React design system built on StyleX. It pairs a CSS-variable theme cascade with a CLI and MCP server, so both engineers and AI agents build using the same API. The project is in Beta, MIT-licensed, and grew inside Meta over eight years. The po…",
-      "one_line": "Meta released Astryx, an open-source React design system built on StyleX.",
-      "one_line_kr": "Meta는 StyleX를 기반으로 구축된 오픈 소스 React 디자인 시스템인 Astryx를 출시했습니다.",
-      "url": "https://www.marktechpost.com/2026/06/27/metas-astryx-brings-a-cli-and-mcp-server-to-an-open-source-react-design-system-agents-can-read/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-27 17:38",
-      "collect_date": "2026-06-28",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Meta의 Astryx는 에이전트가 읽을 수 있는 오픈 소스 React 디자인 시스템에 CLI 및 MCP 서버를 제공합니다."
-    },
-    {
-      "id": "2026-06-28_0022",
-      "title": "Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro",
-      "summary": "A Cursor study shows coding agents retrieve known fixes instead of deriving them, inflating SWE-bench Pro scores through runtime contamination. The post Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro appeared first on MarkTechPost.",
-      "one_line": "The post Cursor Study Finds Reward Hacking Inflates Coding-Agent Benchmark Scores on SWE-bench Pro appeared first on…",
-      "one_line_kr": "커서 연구에 따르면 보상 해킹으로 인해 SWE-bench Pro의 코딩 에이전트 벤치마크 점수가 부풀려진 것으로 나타났습니다.",
-      "url": "https://www.marktechpost.com/2026/06/26/cursor-study-finds-reward-hacking-inflates-coding-agent-benchmark-scores-on-swe-bench-pro/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-27 08:31",
-      "collect_date": "2026-06-28",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "커서 연구에서 보상 해킹이 SWE-bench Pro의 코딩 에이전트 벤치마크 점수를 부풀리는 것으로 나타났습니다."
-    },
-    {
-      "id": "2026-06-27_0002",
-      "title": "오픈AI, 최고 성능 ‘GPT-5.6’ 3종 공개...\"정부 요청으로 제한적 출시\"",
-      "summary": "오픈AI가 지능과 비용 측면에서 한 단계 진화한 차세대 모델 제품군 'GPT-5.6' 시리즈를 선보였다. 하지만, 미국 정부의 요청에 따라 초기에는 일부 파트너들로 출시를 제한했다.오픈AI는 26일(현지시간) 플래그십 모델인 'GPT-5.6 솔(Sol)'과 일상적인 작업에 최적화된 균형 잡힌 모델인 '테라(Terra)', 그리고 빠르고 경제적인 '루나(Luna)' 3가지 모델을 공개했다.특히 테라는 기존 'GPT-5.5'와 경쟁할 수 있는 성능을 제공하면서도 가격은 2배 저렴하며, 루나는 역대 가…",
-      "one_line": "오픈AI가 지능과 비용 측면에서 한 단계 진화한 차세대 모델 제품군 'GPT-5.6' 시리즈를 선보였다.",
-      "one_line_kr": "오픈AI가 지능과 비용 측면에서 한 단계 진화한 차세대 모델 제품군 'GPT-5.6' 시리즈를 선보였다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=212175",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-27 05:25",
-      "collect_date": "2026-06-27",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 최고 성능 ‘GPT-5.6’ 3종 공개...\"정부 요청으로 제한적 출시\""
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "바이두, '언리미티드 OCR' 공개… \"메모리 한계 깨고 수십페이지 문서 한 번에\"",
+      "title": "국내 AI 업계, 마누스 외면… \"중국산 거부감보다 대체재 풍부\"",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=212177",
-      "one_line": "바이두는 22일 오픈소스 OCR 모델 '언리미티드 OCR(Unlimited OCR)'을 온라인 아카이브를 통해 공개했다.기존 대형언어모델(LLM) 기반 OCR의 가장 큰 한계였던 메모리 사용량 증가와 속도 저하…",
-      "date": "2026-06-27 13:45"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212196",
+      "one_line": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+      "date": "2026-06-28 21:08"
     },
     "영상AI": {
       "title": "Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on",
@@ -535,22 +537,442 @@
       "date": "2026-06-23 09:00"
     },
     "개발AI": {
-      "title": "[AINews] OpenAI GPT-5.6 Sol / Terra / Luna — restricted to trusted partners",
-      "source": "Latent Space",
-      "url": "https://www.latent.space/p/ainews-openai-gpt-56-sol-terra-luna",
-      "one_line": "같은 날 OAI와 ANT 모두에 이상하게 계층화된 릴리스가 출시됩니다.",
-      "date": "2026-06-27 14:23"
+      "title": "Liquid AI Ships LFM2.5-230M with llama.cpp, MLX, vLLM, SGLang, and ONNX Support for On-Device Inference",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/06/27/liquid-ai-ships-lfm2-5-230m-with-llama-cpp-mlx-vllm-sglang-and-onnx-support-for-on-device-inference/",
+      "one_line": "Liquid AI는 아직 가장 작은 모델인 LFM2.5-230M을 출시했습니다.",
+      "date": "2026-06-28 13:58"
     }
   },
   "period_key_points": [
-    "대용량 문서를 한 번에 처리할 수 있는 새로운 광학문자인식(OCR) 기술이 등장했다. 바이두는 22일 오픈소스 OCR 모델 '언리미티드 OCR(Unlimited OCR)'을 온라인 아카이브를 통해 공개했다.",
-    "AI 모델의 실제 업무 수행 능력을 평가하기 위한 새로운 벤치마크가 등장했다. 단일 질문에 답하는 기존 평가 방식을 넘어, 몇주에 걸친 장기 프로젝트를 얼마나 완성도 있게 수행하는지를 측정하는 것이 핵심이다.",
-    "엔비디아가 지푸 AI의 인기 오픈소스 대형언어모델(LLM) 'GLM-5.2'를 자체 NVFP4(4비트) 양자화 기술로 최적화한 체크포인트를 공개했다.",
-    "딥시크가 수십억달러의 외부 투자를 유치하게 된 것은 앤트로픽의 '미소스' 충격 때문으로 알려졌다. 미소스의 차원이 다른 성능이 대규모 인프라 투자의 결과라는 점에서, 딥시크도 고효율 전략만으로 버티기는 어려워졌다는 판단이라는 내용이다.",
-    "수출 금지에 대한 두려움 없이 신화와 유사한 기능을 약속하는 새로운 모델이 아시아에서 출시되고 있습니다."
+    "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+    "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다.",
+    "딥시크가 기존 모델의 응답 속도와 서비스 효율을 높이기 위한 최적화 기술을 선보였다.",
+    "마이크로소프트(MS)가 '깃허브 코파일럿(GitHub Copilot)'에 자체 AI 코딩 모델 적용을 확대하며 기업용 AI 코딩 시장 공략에 속도를 내고 있다.",
+    "Liquid AI는 아직 가장 작은 모델인 LFM2.5-230M을 출시했습니다."
   ],
-  "period_prose": "이번 주간 총 379건의 AI 자료가 수집됐습니다. 국내 122건, 해외 257건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, GitHub입니다.",
+  "period_prose": "이번 주간 총 381건의 AI 자료가 수집됐습니다. 국내 123건, 해외 258건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GitHub, GPT입니다.",
   "items": [
+    {
+      "id": "2026-06-29_0000",
+      "title": "김준기 래블업 CTO “풀스택 AI 인프라로 GPU 한계 넘는다”",
+      "summary": "최근 국내 AI 시장에서 안정적이고 효율적인 GPU 공급을 내세운 서비스가 급증하고 있다. GPU 가격 상승과 추론 수요 확대로 기업들의 AI 인프라 복잡성이 커진 데다, 저전력 NPU 등 하드웨어 선택지도 다양해졌기 때문이다.이러한 상황 속에서 2015년 설립 이후 ‘GPU 가상화’ 시장을 개척해 온 래블업(대표 신정규)이 기존 '모델 개발 및 사전 훈련' 중심에서 최근 수요가 급증한 '추론과 에이전트' 영역으로 비즈니스를 본격 확장하고 나섰다.그 중심에는 래블업의 ‘백엔드닷에이아이(Backen…",
+      "one_line": "최근 국내 AI 시장에서 안정적이고 효율적인 GPU 공급을 내세운 서비스가 급증하고 있다.",
+      "one_line_kr": "최근 국내 AI 시장에서 안정적이고 효율적인 GPU 공급을 내세운 서비스가 급증하고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212203",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-29 02:50",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "김준기 래블업 CTO “풀스택 AI 인프라로 GPU 한계 넘는다”"
+    },
+    {
+      "id": "2026-06-29_0001",
+      "title": "국내 AI 업계, 마누스 외면… \"중국산 거부감보다 대체재 풍부\"",
+      "summary": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다. 마누스는 지난해 출시 직후 뛰어난 성능으로 주목받았으며, 최근에는 메타의 인수 추진 과정에서 중국 정부가 이례적으로 '거래 철회 명령'을 내리며 미국과의 기술 갈등의 중심에 선 바 있다. 이 때문에 시장에서는 이를 ‘중국계 AI’로 인식하는 분위기가 짙다. 마누스도 국내 진출에 가장 큰 걸림돌로 이런 점을 문제로 파악한 것으로 알려졌다.이에 따라 국내 AI 기업 10여 곳을 대상으로 마누스와 중국산 AI 이미…",
+      "one_line": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+      "one_line_kr": "AI 에이전트 서비스 마누스(Manus)가 최근 국내 진출을 검토 중인 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212196",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 21:08",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "국내 AI 업계, 마누스 외면… \"중국산 거부감보다 대체재 풍부\""
+    },
+    {
+      "id": "2026-06-29_0002",
+      "title": "장시간 컴퓨터 사용 능력 벤치마크 공개…'오퍼스 4.8' 최고점",
+      "summary": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다. 기존의 한계를 넘어 실제 전문가 수준의 업무 환경을 반영한 평가 도구다. AI 연구소인 X랭(XLANG)은 26일(현지시간) 장기 컴퓨터 사용(Long-horizon Computer Use) 능력을 평가하기 위해 'OS월드(OSWorld) 2.0'을 공개했다.기존 벤치마크가 수십 단계 안에 끝나는 단순 작업을 평가했다면, OS월드 2.0은 숙련된 사람이 평균 1.6시간이 걸리는 실제 업무를 기반으로 AI 에이전트의 …",
+      "one_line": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다.",
+      "one_line_kr": "장시간에 걸친 실제 컴퓨터 업무 수행 능력을 평가하는 새로운 벤치마크가 공개됐다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212199",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 14:02",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "장시간 컴퓨터 사용 능력 벤치마크 공개…'오퍼스 4.8' 최고점"
+    },
+    {
+      "id": "2026-06-29_0003",
+      "title": "딥시크, LLM 추론 속도 최대 85% 높이는 ‘D스파크’ 오픈소스 공개",
+      "summary": "딥시크가 기존 모델의 응답 속도와 서비스 효율을 높이기 위한 최적화 기술을 선보였다. 여러 토큰을 먼저 생성한 뒤 문맥에 맞게 차례대로 보완하고, GPU 작업량에 따라 검증하는 토큰 수를 자동으로 조절해 추론 속도와 서비스 효율을 높였다. 딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다. 기존 '딥시크-V4' 모델에 D스파크를 적용한 '딥시크-V4-프로…",
+      "one_line": "딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다.",
+      "one_line_kr": "딥시크는 26일(현지시간) 대형언어모델(LLM)의 추론 성능을 크게 높일 수 있는 추측형 디코딩(Speculative Decoding) 프레임워크 ‘D스파크(DSpark)’를 오픈소스로 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212191",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 13:44",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "딥시크, LLM 추론 속도 최대 85% 높이는 ‘D스파크’ 오픈소스 공개"
+    },
+    {
+      "id": "2026-06-29_0004",
+      "title": "에포크 AI, '장기 개발 능력' 벤치마크 공개...“코드 암기론 통과 못해”",
+      "summary": "에포크 AI가 AI 모델의 장기간 소프트웨어 개발 능력을 평가하는 새로운 벤치마크 '미러코드(MirrorCode)'를 공개했다. 기존 소프트웨어 엔지니어링 벤치마크가 버그 수정이나 단일 기능 구현 등 단기 작업에 초점을 맞췄다면, 미러코드는 인터넷이나 원본 소스코드 없이 프로그램 전체를 처음부터 다시 구현하도록 요구해 AI의 실제 소프트웨어 개발 역량을 측정하도록 설계됐다.에포크 AI는 26일(현지시간) AI 안전성 연구기관 METR와 공동으로 미러코드를 개발했다고 밝혔다.AI가 기존 프로그램의 …",
+      "one_line": "에포크 AI가 AI 모델의 장기간 소프트웨어 개발 능력을 평가하는 새로운 벤치마크 '미러코드(MirrorCode)'를 공개했다.",
+      "one_line_kr": "에포크 AI가 AI 모델의 장기간 소프트웨어 개발 능력을 평가하는 새로운 벤치마크 '미러코드(MirrorCode)'를 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212195",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 13:32",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "에포크 AI, '장기 개발 능력' 벤치마크 공개...“코드 암기론 통과 못해”"
+    },
+    {
+      "id": "2026-06-29_0005",
+      "title": "MS, 깃허브 코파일럿에 자체 코딩 모델 출시...\"하이쿠보다 빠르고 저렴\"",
+      "summary": "마이크로소프트(MS)가 '깃허브 코파일럿(GitHub Copilot)'에 자체 AI 코딩 모델 적용을 확대하며 기업용 AI 코딩 시장 공략에 속도를 내고 있다. MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와 낮은 지연시간을 앞세워 대규모 개발 환경에서 반복적인 AI 코딩 작업을 지원하는 모델로, 기업용 깃허브 코파일럿에 MS의 자체 A…",
+      "one_line": "MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와…",
+      "one_line_kr": "MS는 26일(현지시간) 자체 개발한 AI 코딩 모델 'MAI-코드-1-플래시(MAI-Code-1-Flash)'를 깃허브 코파일럿 비즈니스와 깃허브 코파일럿 엔터프라이즈 고객에게 정식 출시했다.빠른 응답 속도와…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212192",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 13:06",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "MS, 깃허브 코파일럿에 자체 코딩 모델 출시...\"하이쿠보다 빠르고 저렴\""
+    },
+    {
+      "id": "2026-06-29_0006",
+      "title": "KAIST, AI의 '디지털 연령차별' 정량 분석...\"생성 AI의 은밀한 연령 편향\"",
+      "summary": "한국과학기술원(KAIST) 연구진이 생성 AI의 답변에 내재된 연령 관련 고정관념을 정량적으로 분석해 규명했다. 이번 연구는 AI의 편향이 사회적 인식에 미칠 영향을 조명하고, 포용적 AI 개발을 위한 것이다.KAIST(총장 이광형)는 과학기술정책대학원 최문정 교수 연구팀이 오픈AI의 'GPT-4o'가 생성하는 문장 속에 노인에 대한 미묘한 고정관념이 내재되어 있음을 정량적으로 분석했다고 28일 밝혔다.생성 AI는 일상 속 정보 탐색과 의사결정 과정에 폭넓게 활용되고 있지만, 학습 데이터에 포함된…",
+      "one_line": "한국과학기술원(KAIST) 연구진이 생성 AI의 답변에 내재된 연령 관련 고정관념을 정량적으로 분석해 규명했다.",
+      "one_line_kr": "한국과학기술원(KAIST) 연구진이 생성 AI의 답변에 내재된 연령 관련 고정관념을 정량적으로 분석해 규명했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212190",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 12:00",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "KAIST, AI의 '디지털 연령차별' 정량 분석...\"생성 AI의 은밀한 연령 편향\""
+    },
+    {
+      "id": "2026-06-29_0007",
+      "title": "애플, 메모리 폭등에 '블랙리스트' 중국 CXMT 칩 구매 추진",
+      "summary": "애플이 메모리 반도체 가격 압박을 이기지 못하고, 미국 정부의 블랙리스트에 오른 중국 메모리 반도체 기업으로부터 칩을 조달하기 위해 로비를 벌이는 것으로 알려졌다.파이낸셜타임스(FT)는 27일(현지시간) 관계자 6명을 인용, 중국 창신메모리테크놀로지(CXMT)로부터 메모리 칩을 구매할 수 있도록 도널드 트럼프 행정부의 승인을 얻기 위해 로비 활동을 펼치고 있다고 보도했다.애플이 이 같은 전략적 선택을 강행하는 배경에는 글로벌 빅테크 기업들이 AI 데이터센터 구축에 수천억달러를 쏟아부으면서, 고대역…",
+      "one_line": "애플이 메모리 반도체 가격 압박을 이기지 못하고, 미국 정부의 블랙리스트에 오른 중국 메모리 반도체 기업으로부터 칩을 조달하기 위해 로비를 벌이는 것으로 알려졌다.파이낸셜타임스(FT)는 27일(현지시간) 관계자…",
+      "one_line_kr": "애플이 메모리 반도체 가격 압박을 이기지 못하고, 미국 정부의 블랙리스트에 오른 중국 메모리 반도체 기업으로부터 칩을 조달하기 위해 로비를 벌이는 것으로 알려졌다.파이낸셜타임스(FT)는 27일(현지시간) 관계자…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212194",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 11:44",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "애플, 메모리 폭등에 '블랙리스트' 중국 CXMT 칩 구매 추진"
+    },
+    {
+      "id": "2026-06-29_0008",
+      "title": "테슬라, 'FSD' 첫 보행자 사망 소송 합의…비전 AI 한계론 부각",
+      "summary": "테슬라가 운전자 보조 시스템인 'FSD' 작동 중 발생한 치명적인 보행자 사망 사고 소송을 최근 합의로 종결했다. 일론 머스크 CEO가 로보택시와 AI 중심의 미래 비전을 가속화하는 시점에서, 이번 합의가 카메라 기반 자율주행 시스템의 기술적 결함 논란에 어떤 파장을 미칠지 주목된다.블룸버그에 따르면, 테슬라는 지난 2023년 애리조나 고속도로에서 FSD를 활성화한 채 주행 중이던 '모델 Y'가 도로 위의 71세 보행자를 충돌해 사망에 이르게 한 사건의 유족 측 소송을 해결했다. 이는 테슬라 FS…",
+      "one_line": "테슬라가 운전자 보조 시스템인 'FSD' 작동 중 발생한 치명적인 보행자 사망 사고 소송을 최근 합의로 종결했다.",
+      "one_line_kr": "테슬라가 운전자 보조 시스템인 'FSD' 작동 중 발생한 치명적인 보행자 사망 사고 소송을 최근 합의로 종결했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212193",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 11:15",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "테슬라, 'FSD' 첫 보행자 사망 소송 합의…비전 AI 한계론 부각"
+    },
+    {
+      "id": "2026-06-29_0009",
+      "title": "순천, 여성 구직자 대상 취·창업 연계 박람회 개최",
+      "summary": "AI 생성 영상순천시는 지난 25일 순천팔마실내체육관에서 ‘2026년 전남 여성일자리 박람회’를 개최했다고 26일 밝혔다.이번 박람회는 취업을 희망하는 여성에게 일자리 정보를 제공하고 취·창업 연계를 지원하기 위해 마련됐다. 전라남도와 순천이 공동 주최하고 순천YWCA여성인력개발센터가 주관했으며, ‘여성의 내일(Job), 함께 여는 미래’를 슬로건으로 진행됐다.박람회에는 순천을 비롯해 담양군, 곡성군, 구례군, 고흥군, 보성군, 화순군, 장흥군 등 전남 동부권 8개 시군이 참여했다. 직접 참여업체…",
+      "one_line": "AI 생성 영상순천시는 지난 25일 순천팔마실내체육관에서 ‘2026년 전남 여성일자리 박람회’를 개최했다고 26일 밝혔다.이번 박람회는 취업을 희망하는 여성에게 일자리 정보를 제공하고 취·창업 연계를 지원하기 위해…",
+      "one_line_kr": "AI 생성 영상순천시는 지난 25일 순천팔마실내체육관에서 ‘2026년 전남 여성일자리 박람회’를 개최했다고 26일 밝혔다.이번 박람회는 취업을 희망하는 여성에게 일자리 정보를 제공하고 취·창업 연계를 지원하기 위해…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212159",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-28 09:40",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "순천, 여성 구직자 대상 취·창업 연계 박람회 개최"
+    },
+    {
+      "id": "2026-06-29_0010",
+      "title": "신한금융지주 ‘원앱’ 전략, 이번에는 어떻게 달라졌을까",
+      "summary": "신한금융지주가 애플리케이션(앱) 하나만 남기고 다른 앱의 서비스는 모두 종료하겠다고 발표하면서 ‘슈퍼앱’ 경쟁을 위한 초석을 마련했다는 평가가 나온다. 주요 금융지주가 슈퍼앱으로 성장하기 위해 가장 어려운 관문인 단일화 과정은 성공했다는 이유에서다. 다만 증권 활성화 전략과 AI 에이전트 기능에 대한 효과는 장기적인 관점에서 지켜봐야 한다는 의견도 제기된다.",
+      "one_line": "신한금융지주가 애플리케이션(앱) 하나만 남기고 다른 앱의 서비스는 모두 종료하겠다고 발표하면서 ‘슈퍼앱’ 경쟁을 위한 초석을 마련했다는 평가가 나온다.",
+      "one_line_kr": "신한금융지주가 애플리케이션(앱) 하나만 남기고 다른 앱의 서비스는 모두 종료하겠다고 발표하면서 ‘슈퍼앱’ 경쟁을 위한 초석을 마련했다는 평가가 나온다.",
+      "url": "https://byline.network/2026/06/625213123/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-06-26 18:51",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "API변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "신한금융지주 ‘원앱’ 전략, 이번에는 어떻게 달라졌을까"
+    },
+    {
+      "id": "2026-06-29_0011",
+      "title": "Ford rehires ‘gray beard’ engineers after AI falls short",
+      "summary": "\"Mistakenly we thought that by just introducing artificial intelligence ... that would produce a high-quality product.”",
+      "one_line": "\"Mistakenly we thought that by just introducing artificial intelligence ...",
+      "one_line_kr": "\"실수로 우리는 인공지능을 도입하는 것만으로 그렇게 생각했습니다.",
+      "url": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-29 04:05",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "포드, AI 부족 후 '회색 수염' 엔지니어 다시 고용"
+    },
+    {
+      "id": "2026-06-29_0012",
+      "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+      "summary": "Eager to find more public AI-related companies that may do as well as Nvidia, Wall Street investors think they've found a winner with Micron.",
+      "one_line": "Eager to find more public AI-related companies that may do as well as Nvidia, Wall Street investors think they've found…",
+      "one_line_kr": "월스트리트 투자자들은 Nvidia만큼 성공할 수 있는 AI 관련 공공 기업을 더 많이 찾고 싶어하며 다음과 같은 사실을 발견했다고 생각합니다.",
+      "url": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-29 00:00",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "월스트리트가 미국 메모리 제조사 마이크론을 차세대 엔비디아로 생각하는 이유"
+    },
+    {
+      "id": "2026-06-29_0013",
+      "title": "ROMEVA: Geometry-Preserving Vocabulary Expansion for Roman Urdu Language Models",
+      "summary": "Multilingual Language Models like mBERT are widely used for low-resource NLP, yet their adaptation to morphologically inconsistent languages such as Roman Urdu remains underexplored. Roman Urdu spelling variation causes severe sub-word fragmentation, averaging 1.50 sub-words per …",
+      "one_line": "Multilingual Language Models like mBERT are widely used for low-resource NLP, yet their adaptation to morphologically…",
+      "one_line_kr": "mBERT와 같은 다국어 언어 모델은 저자원 NLP에 널리 사용되지만 형태학적으로는…",
+      "url": "https://tldr.takara.ai/p/2606.22478",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-06-21 21:40",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "ROMEVA: 로마 우르두어 모델을 위한 기하학 보존 어휘 확장"
+    },
+    {
+      "id": "2026-06-29_0014",
+      "title": "Selective Time Series Forecasting via Metalearning",
+      "summary": "Deep learning methods have achieved state-of-the-art in time series forecasting, yet their accuracy varies considerably across samples, as some instances remain inherently difficult to predict. Reject option mechanisms, which allow models to abstain from high-risk predictions, ar…",
+      "one_line": "Deep learning methods have achieved state-of-the-art in time series forecasting, yet their accuracy varies considerably…",
+      "one_line_kr": "딥러닝 방법은 시계열 예측 분야에서 최첨단을 달성했지만 정확도는 상당히 다양합니다.",
+      "url": "https://tldr.takara.ai/p/2606.23448",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-06-23 00:02",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Metalearning을 통한 선택적 시계열 예측"
+    },
+    {
+      "id": "2026-06-29_0015",
+      "title": "Learning a Normal World Model for Few-Shot Boundary-Calibrated Abnormality Detection",
+      "summary": "Abnormality detection in complex systems faces two practical barriers: abnormal labels are scarce, and binary labels do not quantify how far an event has departed from normal behavior. We study a normal-world modeling formulation for this setting. Instead of learning a large and …",
+      "one_line": "Abnormality detection in complex systems faces two practical barriers: abnormal labels are scarce, and binary labels do…",
+      "one_line_kr": "복잡한 시스템의 이상 탐지는 두 가지 실질적인 장벽에 직면해 있습니다. 즉, 비정상적인 라벨은 드물고, 바이너리 라벨은…",
+      "url": "https://tldr.takara.ai/p/2606.22261",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-06-21 08:15",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Few-Shot 경계 보정 이상 감지를 위한 Normal World 모델 학습"
+    },
+    {
+      "id": "2026-06-29_0016",
+      "title": "OCRmyPDF Tutorial: Convert Scanned Documents into Searchable PDF/A Files with Sidecar Text Extraction and Batch Processing",
+      "summary": "In this tutorial, we build a complete, self-contained OCRmyPDF pipeline in Python. We generate synthetic image-only PDFs so we can test OCR without external files, then convert them into searchable PDFs and PDF/A outputs. We extract sidecar text, validate results, measure word-re…",
+      "one_line": "In this tutorial, we build a complete, self-contained OCRmyPDF pipeline in Python.",
+      "one_line_kr": "이 튜토리얼에서는 Python으로 완전한 독립형 OCRmyPDF 파이프라인을 구축합니다.",
+      "url": "https://www.marktechpost.com/2026/06/28/ocrmypdf-tutorial-convert-scanned-documents-into-searchable-pdf-a-files-with-sidecar-text-extraction-and-batch-processing/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-29 01:47",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "OCRmyPDF 튜토리얼: 사이드카 텍스트 추출 및 일괄 처리를 사용하여 스캔한 문서를 검색 가능한 PDF/A 파일로 변환i"
+    },
+    {
+      "id": "2026-06-29_0017",
+      "title": "Building a Stable Fable 5 Traces Workflow in Colab: Parsing Tool Calls, Auditing Data, and Training Baselines",
+      "summary": "In this tutorial, we build a stable workflow around the Fable 5 Traces dataset from Hugging Face. We avoid fragile dependencies and manually parse the merged JSONL file to keep Colab reliable. We inspect repository files, normalize tool calls, audit structure, redact secrets, and…",
+      "one_line": "In this tutorial, we build a stable workflow around the Fable 5 Traces dataset from Hugging Face.",
+      "one_line_kr": "이 튜토리얼에서는 Hugging Face의 Fable 5 Traces 데이터 세트를 중심으로 안정적인 워크플로를 구축합니다.",
+      "url": "https://www.marktechpost.com/2026/06/28/building-a-stable-fable-5-traces-workflow-in-colab-parsing-tool-calls-auditing-data-and-training-baselines/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-28 16:02",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Colab에서 Stable Fable 5 Traces 워크플로 구축: 도구 호출 구문 분석, 데이터 감사 및 기준 훈련"
+    },
+    {
+      "id": "2026-06-29_0018",
+      "title": "Liquid AI Ships LFM2.5-230M with llama.cpp, MLX, vLLM, SGLang, and ONNX Support for On-Device Inference",
+      "summary": "Liquid AI released LFM2.5-230M, its smallest model yet. The 230M-parameter, open-weight model runs on-device at 213 tok/s on a Galaxy S25 Ultra and 42 on a Raspberry Pi 5. Built on the LFM2 architecture, it targets tool use and data extraction, beating larger models like Qwen3.5-…",
+      "one_line": "Liquid AI released LFM2.5-230M, its smallest model yet.",
+      "one_line_kr": "Liquid AI는 아직 가장 작은 모델인 LFM2.5-230M을 출시했습니다.",
+      "url": "https://www.marktechpost.com/2026/06/27/liquid-ai-ships-lfm2-5-230m-with-llama-cpp-mlx-vllm-sglang-and-onnx-support-for-on-device-inference/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-06-28 13:58",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Liquid AI, 온디바이스 추론을 위한 llama.cpp, MLX, vLLM, SGLang 및 ONNX 지원과 함께 LFM2.5-230M 출시"
+    },
+    {
+      "id": "2026-06-29_0019",
+      "title": "Anthropic, Nvidia Sway Judge to Split Authors’ AI Copyright Suit - Bloomberg Law News",
+      "summary": "Anthropic, Nvidia Sway Judge to Split Authors’ AI Copyright Suit Bloomberg Law News",
+      "one_line": "Anthropic, Nvidia Sway Judge to Split Authors’ AI Copyright Suit Bloomberg Law News",
+      "one_line_kr": "Anthropic, Nvidia Sway 판사, 작성자의 AI 저작권 소송 분할 Bloomberg Law News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS3oxTDdzSHI0b0JLWG5kS1BTUjllZjkwd0ptUkl6bmRfRlVFd19FWEN2eHhYWkpvOXYyUUJEV1JWVWJTVmJjWF9qUDltMHB0VG9DTU9IWVdOQTdRclZnazVKNnZJejNMYnZvR3JsbzhMZE5ueFNoV05qMVZndEVRNUxwWkNMQ3g2eWhQaFg5aEtfZU9kR2V5VnJlSmpqa3Fo?oc=5",
+      "source": "AI Copyright Law",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-06-09 16:00",
+      "collect_date": "2026-06-29",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Anthropic, Nvidia Sway 판사, 작성자의 AI 저작권 소송 분할 - Bloomberg Law News"
+    },
     {
       "id": "2026-06-28_0000",
       "title": "'미소스 5' 미국 내 제한적 배포 허용…'페이블 5'는 금지 유지",
@@ -8131,384 +8553,6 @@
         "class": "new"
       },
       "title_kr": "World Model AI Lab Odyssey의 가치는 현재 14억 5천만 달러로 평가됩니다."
-    },
-    {
-      "id": "2026-06-22_0000",
-      "title": "'최초·최다 AI 더빙' 허드슨에이아이 “에이전틱 더빙 시대 열 것”",
-      "summary": "“AI 음성 기술은 결국 우리가 나아가는 방향과 맞닿아있다고 생각합니다. 현재는 콘텐츠 더빙에만 활용되고 있지만, 앞으로는 실시간 소통 영역에서도 주력 기술로 자리 잡을 것입니다. AI나 로봇과 소통할 때도 텍스트 중심에서 음성 중심으로 고도화될 것으로 봅니다.”허드슨에이아이는 지난 2022년부터 AI 더빙 분야에 집중하고 있다. 당시에는 전 세계적으로도 AI 더빙 레퍼런스가 전무한 상태였으며, 공식적인 자료에 의하면 허드슨에이아이가 최초로 AI 더빙을 활용한 사업 모델을 선보인 것으로 알려져 있…",
-      "one_line": "당시에는 전 세계적으로도 AI 더빙 레퍼런스가 전무한 상태였으며, 공식적인 자료에 의하면 허드슨에이아이가 최초로 AI 더빙을 활용한 사업 모델을 선보인 것으로 알려져 있…",
-      "one_line_kr": "당시에는 전 세계적으로도 AI 더빙 레퍼런스가 전무한 상태였으며, 공식적인 자료에 의하면 허드슨에이아이가 최초로 AI 더빙을 활용한 사업 모델을 선보인 것으로 알려져 있…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211946",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 20:00",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "'최초·최다 AI 더빙' 허드슨에이아이 “에이전틱 더빙 시대 열 것”"
-    },
-    {
-      "id": "2026-06-22_0001",
-      "title": "\"RAG도 미세조정도 한계\"... 실시간 모델 만드는 '하이퍼네트워크' 뜬다",
-      "summary": "장시간 업무에서 한계를 드러내는 자율형 에이전트 문제를 해결하기 위해 '하이퍼네트워크(Hypernetworks)' 기반 전문 모델이 떠오르는 것으로 알려졌다. 기업 맞춤형 지식을 실시간으로 모델에 반영, 높은 자율성과 낮은 운영 비용을 동시에 달성할 수 있을지 관심이 집중되고 있다.벤처비트는 19일(현지시간) 기업들이 원하는 것은 장시간 독립적으로 업무를 수행한 뒤 사람이 최종 결과의 일부만 검토하는 ‘고자율성 에이전트’이지만, 실제 운영 환경에서는 기대만큼 자율적으로 작동하지 못한다고 지적했다.…",
-      "one_line": "장시간 업무에서 한계를 드러내는 자율형 에이전트 문제를 해결하기 위해 '하이퍼네트워크(Hypernetworks)' 기반 전문 모델이 떠오르는 것으로 알려졌다.",
-      "one_line_kr": "장시간 업무에서 한계를 드러내는 자율형 에이전트 문제를 해결하기 위해 '하이퍼네트워크(Hypernetworks)' 기반 전문 모델이 떠오르는 것으로 알려졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211947",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 18:39",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "\"RAG도 미세조정도 한계\"... 실시간 모델 만드는 '하이퍼네트워크' 뜬다"
-    },
-    {
-      "id": "2026-06-22_0002",
-      "title": "손으로 작동하는 '크랭크GPT'...\"AI 답변 받으려면 직접 전력 생산\"",
-      "summary": "사용자가 직접 손으로 전력을 만들어 구동하는 독특한 AI 기기가 등장했다. 막대한 전력 소비와 환경 문제를 일으키는 거대한 데이터센터에 의존하지 않고 필요한 용도에 맞춰 전력 소비량을 최적화한 장치라는 설명이다.더 레지스터 등 외신에 따르면, 컴퓨터 과학자 카트린 토마넥과 전 구글 첨단 기술 및 프로젝트(ATAP) 그룹의 리더 알렉스 카우프만은 최근 수동 크랭크 구동식 음성 AI 비서 '크랭크GPT(CrankGPT)'를 공개했다.이 장치는 사용자가 직접 손잡이(크랭크)를 돌려 전기를 공급해야만 작…",
-      "one_line": "사용자가 직접 손으로 전력을 만들어 구동하는 독특한 AI 기기가 등장했다.",
-      "one_line_kr": "사용자가 직접 손으로 전력을 만들어 구동하는 독특한 AI 기기가 등장했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211953",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 17:48",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "손으로 작동하는 '크랭크GPT'...\"AI 답변 받으려면 직접 전력 생산\""
-    },
-    {
-      "id": "2026-06-22_0003",
-      "title": "\"기억할 건 기억하고 잊을 건 잊는다\"…뇌 닮은 초저전력 AI 소자 개발",
-      "summary": "인간 뇌처럼 정보의 중요도에 따라 기억을 유지하거나 잊을 수 있는 차세대 AI 하드웨어가 등장했다. 미국 오리건주립대학 연구진은 최근 센서와 메모리, 연산 기능을 하나의 소자에 통합한 광전자 소자를 개발해 초저전력 뉴로모픽(neuromorphic) 컴퓨팅과 인-센서(in-sensor) AI 구현 가능성을 제시했다.‘신경 조절기에서 영감받은 게이트 조절 가능 테트라센-금속 산화물 광트랜지스터를 이용한 적응형 광전자 메모리 및 뉴로모픽 컴퓨팅’ 논문을 통해 연구진은 이 소자가 도파민과 세로토닌 같은 …",
-      "one_line": "인간 뇌처럼 정보의 중요도에 따라 기억을 유지하거나 잊을 수 있는 차세대 AI 하드웨어가 등장했다.",
-      "one_line_kr": "인간 뇌처럼 정보의 중요도에 따라 기억을 유지하거나 잊을 수 있는 차세대 AI 하드웨어가 등장했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211951",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 12:57",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "\"기억할 건 기억하고 잊을 건 잊는다\"…뇌 닮은 초저전력 AI 소자 개발"
-    },
-    {
-      "id": "2026-06-22_0004",
-      "title": "구글, '제미나이' 탑재한 AI 스피커 5년 만에 출시…한국은 미정",
-      "summary": "구글이 '제미나이'를 탑재한 새로운 스마트 스피커 '구글 홈 스피커(Google Home Speaker)'를 공개했다. 단순 음성 명령을 수행하던 기존 스마트 스피커에서 벗어나 사람과 자연스럽게 대화하고 복합적인 작업을 수행할 수 있는 AI 비서로 진화했다는 점이 특징이다.구글은 17일(현지시간) 미국의 사전 주문을 시작했으며, 정식 출시는 오는 25일로 예정됐다고 밝혔다. 가격은 99.99달러(약 15만3300원)다.추가 국가의 출시 일정은 명시되지 않았다. 그러나 구글의 스마트홈 AI 서비스인…",
-      "one_line": "구글이 '제미나이'를 탑재한 새로운 스마트 스피커 '구글 홈 스피커(Google Home Speaker)'를 공개했다.",
-      "one_line_kr": "구글이 '제미나이'를 탑재한 새로운 스마트 스피커 '구글 홈 스피커(Google Home Speaker)'를 공개했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211950",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 12:42",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "구글, '제미나이' 탑재한 AI 스피커 5년 만에 출시…한국은 미정"
-    },
-    {
-      "id": "2026-06-22_0005",
-      "title": "오픈AI, 이번 주 'GPT-5.6' 출시 전망…앤트로픽 규제 틈타나",
-      "summary": "오픈AI의 차세대 모델 'GPT-5.6'이 이번 주 공개될 것으로 전망됐다. 앤트로픽의 최신 모델 '페이블 5'가 정부 규제에 묶인 사이에 첨단 모델 출시로 사징을 선점하겠다는 의도로 분석됐다.18일(현지시간) AI 전문 매체 테스팅카탈로그 등이 포착한 바에 따르면, 일부 챗GPT 프로 구독자는 이미 'GPT-5.6 프로' 빌드를 테스트 중인 것으로 나타났다.이를 바탕으로 각종 커뮤니티에서는 23일 GPT-5.6가 출시될 것으로 내다봤다. 일부에서는 '미니'와 '프로' 버전까지 한꺼번에 서비스를 …",
-      "one_line": "오픈AI의 차세대 모델 'GPT-5.6'이 이번 주 공개될 것으로 전망됐다.",
-      "one_line_kr": "오픈AI의 차세대 모델 'GPT-5.6'이 이번 주 공개될 것으로 전망됐다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211949",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 11:20",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 이번 주 'GPT-5.6' 출시 전망…앤트로픽 규제 틈타나"
-    },
-    {
-      "id": "2026-06-22_0006",
-      "title": "전남, 정부양곡 보관·가공·공급 품질관리 교육",
-      "summary": "AI 생성 영상전라남도가 정부양곡 품질관리 역량 강화에 나섰다고 밝혔다.전남은 19일 나주 뉴나주시티호텔에서 정부양곡 관리 효율화 워크숍을 열고, 시군 공무원과 정부양곡 도정공장 대표 등 60여명을 대상으로 보관·가공·공급, 품질 감정 등 현장 실무 교육을 진행했다.이번 워크숍은 정부양곡의 안정적 공급과 품질 신뢰도 향상을 위해 마련됐다. 참석자들은 정부양곡 정책 추진 방향과 쌀 수급관리 방안을 공유하고, 업무 현장의 주요 현안과 애로사항을 함께 다뤘다.교육은 양곡가공기술 도정 이론, 쌀 품질 감…",
-      "one_line": "AI 생성 영상전라남도가 정부양곡 품질관리 역량 강화에 나섰다고 밝혔다.전남은 19일 나주 뉴나주시티호텔에서 정부양곡 관리 효율화 워크숍을 열고, 시군 공무원과 정부양곡 도정공장 대표 등 60여명을 대상으로…",
-      "one_line_kr": "AI 생성 영상전라남도가 정부양곡 품질관리 역량 강화에 나섰다고 밝혔다.전남은 19일 나주 뉴나주시티호텔에서 정부양곡 관리 효율화 워크숍을 열고, 시군 공무원과 정부양곡 도정공장 대표 등 60여명을 대상으로…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211906",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 09:30",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "전남, 정부양곡 보관·가공·공급 품질관리 교육"
-    },
-    {
-      "id": "2026-06-22_0007",
-      "title": "광주 광산구, 임방울거리·첨단지구 골목상권 육성",
-      "summary": "AI 생성 영상광주 광산구가 임방울거리와 첨단지구 골목상권 육성에 들어간다고 19일 밝혔다.광산구는 중소벤처기업부의 2026년 지역상권 육성사업 유망골목상권 공모에 임방울거리1구역 골목형상점가와 첨단지구 골목형상점가가 선정돼 국비 3억9000만원을 확보했다.이번 사업은 지역자원을 활용한 특색 있는 상권 육성과 지속 가능한 골목경제 생태계 조성을 목표로 한 신규 사업이다. 중소벤처기업부는 해당 사업을 통해 최대 5억원까지 지원하며, 광산구는 두 상권의 특성을 반영한 맞춤형 육성 전략을 추진한다.임방…",
-      "one_line": "AI 생성 영상광주 광산구가 임방울거리와 첨단지구 골목상권 육성에 들어간다고 19일 밝혔다.광산구는 중소벤처기업부의 2026년 지역상권 육성사업 유망골목상권 공모에 임방울거리1구역 골목형상점가와 첨단지구…",
-      "one_line_kr": "AI 생성 영상광주 광산구가 임방울거리와 첨단지구 골목상권 육성에 들어간다고 19일 밝혔다.광산구는 중소벤처기업부의 2026년 지역상권 육성사업 유망골목상권 공모에 임방울거리1구역 골목형상점가와 첨단지구…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211907",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 09:25",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "광주 광산구, 임방울거리·첨단지구 골목상권 육성"
-    },
-    {
-      "id": "2026-06-22_0008",
-      "title": "광양, 어린이집·유치원 아동 구강 인형극 운영",
-      "summary": "AI 생성 영상광양시가 어린이집·유치원 아동을 대상으로 구강 인형극을 진행했다고 19일 밝혔다.광양 보건소는 17일부터 18일까지 광양읍 문화예술회관에서 어린이집과 유치원 23개소 아동 614명을 대상으로 구강 인형극을 운영했다.이번 공연은 구강보건의 날을 기념해 어린이들이 올바른 칫솔질 습관과 충치 예방의 중요성을 쉽게 익힐 수 있도록 마련됐다. 공연은 총 4회 진행됐으며, 아이들의 눈높이에 맞춘 이야기와 친근한 캐릭터를 활용했다.인형극은 올바른 양치 방법, 충치 예방을 위한 생활습관, 건강한 …",
-      "one_line": "AI 생성 영상광양시가 어린이집·유치원 아동을 대상으로 구강 인형극을 진행했다고 19일 밝혔다.광양 보건소는 17일부터 18일까지 광양읍 문화예술회관에서 어린이집과 유치원 23개소 아동 614명을 대상으로 구강…",
-      "one_line_kr": "AI 생성 영상광양시가 어린이집·유치원 아동을 대상으로 구강 인형극을 진행했다고 19일 밝혔다.광양 보건소는 17일부터 18일까지 광양읍 문화예술회관에서 어린이집과 유치원 23개소 아동 614명을 대상으로 구강…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=211912",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 09:15",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "광양, 어린이집·유치원 아동 구강 인형극 운영"
-    },
-    {
-      "id": "2026-06-22_0009",
-      "title": "로그프레소 “24시간 공격 대응, AI가 해결해야 할 과제”",
-      "summary": "구동언 로그프레소 전무는 지난 18일 서울 잠실 롯데호텔에서 열린 주최 ‘사이버보안 기술 전략 컨퍼런스’에서 사람은 정해진 근무시간에 일하지만 공격자는 24시간 활동하기 때문에 인력을 교대 투입하는 방식만으로는 대응에 한계가 있다며, 이러한 상시 대응 체계는 인공지능(AI)이 해결해야 할 영역이라고 말했다.",
-      "one_line": "구동언 로그프레소 전무는 지난 18일 서울 잠실 롯데호텔에서 열린 주최 ‘사이버보안 기술 전략 컨퍼런스’에서 사람은 정해진 근무시간에 일하지만 공격자는 24시간 활동하기 때문에 인력을 교대 투입하는 방식만으로는…",
-      "one_line_kr": "구동언 로그프레소 전무는 지난 18일 서울 잠실 롯데호텔에서 열린 주최 ‘사이버보안 기술 전략 컨퍼런스’에서 사람은 정해진 근무시간에 일하지만 공격자는 24시간 활동하기 때문에 인력을 교대 투입하는 방식만으로는…",
-      "url": "https://byline.network/2026/06/0619-3/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-06-21 20:20",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "로그프레소 “24시간 공격 대응, AI가 해결해야 할 과제”"
-    },
-    {
-      "id": "2026-06-22_0010",
-      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
-      "one_line": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest…",
-      "one_line_kr": "삼성전자, 전 세계 직원들에게 ChatGPT Enterprise와 Codex 배포…",
-      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-      "source": "OpenAI News (영상)",
-      "category": "영상AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-06-22 08:00",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "삼성전자, 직원들에게 ChatGPT와 Codex 제공"
-    },
-    {
-      "id": "2026-06-22_0011",
-      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
-      "summary": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic, and what this might mean for the AI ecosystem.",
-      "one_line": "On the new episode of Equity, we discussed what actually prompted the administration's latest moves against Anthropic,…",
-      "one_line_kr": "Equity의 새 에피소드에서 우리는 Anthropic에 대한 행정부의 최근 움직임을 실제로 촉발한 요인에 대해 논의했습니다.",
-      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-22 00:28",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "트럼프 행정부가 Anthropic을 단속하면 누가 이익을 얻나요?"
-    },
-    {
-      "id": "2026-06-22_0012",
-      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
-      "summary": "Siri’s AI overhaul may have grabbed the headlines at WWDC, but some of Apple’s most useful AI features are arriving elsewhere in iOS 27.",
-      "one_line": "Siri’s AI overhaul may have grabbed the headlines at WWDC, but some of Apple’s most useful AI features are arriving…",
-      "one_line_kr": "Siri의 AI 개편은 WWDC에서 헤드라인을 장식했을 수도 있지만 Apple의 가장 유용한 AI 기능 중 일부가 출시되고 있습니다.",
-      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-21 23:40",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Siri를 넘어서: iOS 27에서 iPhone에 제공되는 실용적인 AI 기능은 다음과 같습니다."
-    },
-    {
-      "id": "2026-06-22_0013",
-      "title": "[Exclusive] $250 off AI Engineer tix til Monday",
-      "summary": "special offer for subscribers - $250 off AI Engineer tix til Monday",
-      "one_line": "special offer for subscribers - $250 off AI Engineer tix til Monday",
-      "one_line_kr": "구독자를 위한 특별 제안 - 월요일까지 AI Engineer 티켓 $250 할인",
-      "url": "https://www.latent.space/p/exclusive-250-off-ai-engineer-tix",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-22 00:01",
-      "collect_date": "2026-06-22",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!MovB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2eafb12-892b-44cc-b2d0-6ed07ef991cc_1494x870.png",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[단독] 월요일까지 AI 엔지니어 티켓 $250 할인"
-    },
-    {
-      "id": "2026-06-22_0014",
-      "title": "The 7 Types of Agent Memory: A Technical Guide for AI Engineers",
-      "summary": "LLMs are stateless by default. Agent memory fixes that. This guide breaks down all 7 types — working, semantic, episodic, procedural, retrieval, parametric, and prospective. It covers what each stores, where it lives, and when to build it. Includes a comparison table and working …",
-      "one_line": "LLMs are stateless by default.",
-      "one_line_kr": "LLM은 기본적으로 상태 비저장입니다.",
-      "url": "https://www.marktechpost.com/2026/06/21/the-7-types-of-agent-memory-a-technical-guide-for-ai-engineers/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-22 08:12",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "에이전트 메모리의 7가지 유형: AI 엔지니어를 위한 기술 가이드"
-    },
-    {
-      "id": "2026-06-22_0015",
-      "title": "Crawlee for Python: Build a Web Crawling Pipeline with Robots Handling, Link Graphs, and RAG Chunk Export",
-      "summary": "In this tutorial, we build a complete Crawlee for Python workflow from setup to AI-ready output. We generate a local demo website, then crawl it with BeautifulSoupCrawler, ParselCrawler, and PlaywrightCrawler. We extract titles, metadata, product fields, and JavaScript-rendered c…",
-      "one_line": "In this tutorial, we build a complete Crawlee for Python workflow from setup to AI-ready output.",
-      "one_line_kr": "이 튜토리얼에서는 설정부터 AI 지원 출력까지 완전한 Python용 Crawlee 워크플로를 구축합니다.",
-      "url": "https://www.marktechpost.com/2026/06/20/crawlee-for-python-build-a-web-crawling-pipeline-with-robots-handling-link-graphs-and-rag-chunk-export/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-21 15:52",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Python용 Crawlee: 로봇 처리, 링크 그래프 및 RAG 청크 내보내기를 사용하여 웹 크롤링 파이프라인 구축"
-    },
-    {
-      "id": "2026-06-22_0016",
-      "title": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
-      "summary": "Cisco Foundation AI has open-sourced FAPO (Fully Automated Prompt Optimization), a Claude Code-driven system that autonomously optimizes multi-step LLM pipelines from baseline prompts to target accuracy. FAPO evaluates a chain, attributes failures at the step level, proposes vari…",
-      "one_line": "FAPO evaluates a chain, attributes failures at the step level, proposes vari…",
-      "one_line_kr": "FAPO는 체인을 평가하고, 단계 수준에서 실패를 평가하고, 다양한 제안을 제안합니다.",
-      "url": "https://www.marktechpost.com/2026/06/20/cisco-ai-introduces-fapo-pipeline-aware-prompt-optimization-with-step-level-failure-attribution-and-claude-code-orchestration/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-21 08:04",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Cisco AI, FAPO 출시: 단계 수준 실패 기여 분석 및 Claude Code Orchest를 통한 파이프라인 인식 프롬프트 최적화"
-    },
-    {
-      "id": "2026-06-22_0017",
-      "title": "Nous Research Updates Hermes Agent With a Blank Slate Mode That Pins Toolsets via platform_toolsets.cli and disabled_toolsets",
-      "summary": "Nous Research has added a Blank Slate setup mode to its open-source Hermes Agent. It starts an agent with everything off except provider, model, File Operations, and Terminal. You opt in to the rest. The post Nous Research Updates Hermes Agent With a Blank Slate Mode That Pins To…",
-      "one_line": "Nous Research has added a Blank Slate setup mode to its open-source Hermes Agent.",
-      "one_line_kr": "Nous Research는 오픈 소스 Hermes Agent에 Blank Slate 설정 모드를 추가했습니다.",
-      "url": "https://www.marktechpost.com/2026/06/20/nous-research-updates-hermes-agent-with-a-blank-slate-mode-that-pins-toolsets-via-platform_toolsets-cli-and-disabled_toolsets/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-06-21 06:50",
-      "collect_date": "2026-06-22",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Nous Research는 platform_toolsets.cli 및 비활성화_too를 통해 도구 세트를 고정하는 빈 슬레이트 모드로 Hermes 에이전트를 업데이트합니다."
     }
   ]
 }

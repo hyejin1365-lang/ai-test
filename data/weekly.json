@@ -1,17 +1,17 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-08-16 07:28",
-  "total": 397,
+  "generated_at": "2026-08-17 07:27",
+  "total": 394,
   "kr_count": 124,
-  "en_count": 273,
+  "en_count": 270,
   "category_stats": {
     "콘텐츠": 124,
-    "영상AI": 44,
-    "이미지·디자인AI": 36,
-    "LLM": 7,
-    "개발AI": 40,
-    "AI법률": 4,
+    "영상AI": 43,
+    "이미지·디자인AI": 37,
+    "LLM": 8,
+    "개발AI": 38,
+    "AI법률": 2,
     "논문": 107,
     "비즈니스": 35
   },
@@ -33,12 +33,12 @@
       "count": 30
     },
     {
-      "source": "TechCrunch AI",
-      "count": 27
+      "source": "HuggingFace Papers",
+      "count": 28
     },
     {
-      "source": "HuggingFace Papers",
-      "count": 27
+      "source": "TechCrunch AI",
+      "count": 26
     },
     {
       "source": "ArXiv CV",
@@ -65,10 +65,6 @@
       "count": 16
     },
     {
-      "source": "MarkTechPost",
-      "count": 10
-    },
-    {
       "source": "HuggingFace Blog",
       "count": 9
     },
@@ -77,8 +73,16 @@
       "count": 9
     },
     {
+      "source": "MarkTechPost",
+      "count": 8
+    },
+    {
       "source": "Latent Space",
       "count": 6
+    },
+    {
+      "source": "Simon Willison",
+      "count": 5
     },
     {
       "source": "Pika Blog",
@@ -89,20 +93,8 @@
       "count": 4
     },
     {
-      "source": "Simon Willison",
-      "count": 4
-    },
-    {
       "source": "OpenAI Blog",
       "count": 3
-    },
-    {
-      "source": "AI Regulation News",
-      "count": 2
-    },
-    {
-      "source": "AI Copyright Law",
-      "count": 2
     },
     {
       "source": "DeepMind",
@@ -113,7 +105,15 @@
       "count": 2
     },
     {
+      "source": "AI Regulation News",
+      "count": 1
+    },
+    {
       "source": "Ahead of AI",
+      "count": 1
+    },
+    {
+      "source": "AI Copyright Law",
       "count": 1
     },
     {
@@ -128,27 +128,27 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 48
+      "count": 47
     },
     {
       "keyword": "LLM",
-      "count": 43
+      "count": 42
     },
     {
       "keyword": "에이전트",
-      "count": 31
+      "count": 30
     },
     {
       "keyword": "GPT",
-      "count": 25
+      "count": 24
+    },
+    {
+      "keyword": "Vision",
+      "count": 20
     },
     {
       "keyword": "Reasoning",
       "count": 18
-    },
-    {
-      "keyword": "Vision",
-      "count": 17
     },
     {
       "keyword": "GitHub",
@@ -159,12 +159,12 @@
       "count": 14
     },
     {
-      "keyword": "오픈소스",
-      "count": 12
+      "keyword": "Benchmark",
+      "count": 13
     },
     {
-      "keyword": "Benchmark",
-      "count": 11
+      "keyword": "오픈소스",
+      "count": 12
     },
     {
       "keyword": "추론",
@@ -179,10 +179,6 @@
       "count": 10
     },
     {
-      "keyword": "Grok",
-      "count": 9
-    },
-    {
       "keyword": "Gemini",
       "count": 8
     },
@@ -191,7 +187,11 @@
       "count": 8
     },
     {
-      "keyword": "Claude",
+      "keyword": "Transformer",
+      "count": 7
+    },
+    {
+      "keyword": "Grok",
       "count": 7
     },
     {
@@ -203,15 +203,11 @@
       "count": 7
     },
     {
-      "keyword": "Transformer",
+      "keyword": "Claude",
       "count": 6
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-08-10",
-      "count": 21
-    },
     {
       "date": "2026-08-11",
       "count": 77
@@ -235,9 +231,19 @@
     {
       "date": "2026-08-16",
       "count": 33
+    },
+    {
+      "date": "2026-08-17",
+      "count": 18
     }
   ],
   "cat_daily": {
+    "2026-08-17": {
+      "콘텐츠": 10,
+      "영상AI": 3,
+      "이미지·디자인AI": 4,
+      "LLM": 1
+    },
     "2026-08-16": {
       "콘텐츠": 10,
       "영상AI": 3,
@@ -289,16 +295,72 @@
       "개발AI": 6,
       "논문": 24,
       "비즈니스": 7
-    },
-    "2026-08-10": {
-      "콘텐츠": 10,
-      "영상AI": 4,
-      "이미지·디자인AI": 3,
-      "개발AI": 2,
-      "AI법률": 2
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-08-17_0001",
+      "title": "허깅페이스 점령한 중국 AI...'큐원' 다운로드 20억건·파생 모델 15만개",
+      "summary": "중국 AI 기업들이 오픈소스 생태계에서 미국 기업을 빠르게 추월하며 글로벌 개발자 시장에서 영향력을 대폭 확대하고 있다. 특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로 부상했다.오픈소스 AI 플랫폼 허깅페이스는 14일(현지시간) 공개한 '2026년 오픈 모델 현황' 보고서에 따르면, 올해 1월부터 8월까지 플랫폼 내 공개 모델 저장소는 …",
+      "one_line": "특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로…",
+      "one_line_kr": "특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214007",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 18:00",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "허깅페이스 점령한 중국 AI...'큐원' 다운로드 20억건·파생 모델 15만개"
+    },
+    {
+      "id": "2026-08-17_0015",
+      "title": "Robustness of AI-Art Detectors under Generator Shift",
+      "summary": "Text-to-image generative models have advanced rapidly, with modern Diffusion Transformer architectures producing images that are increasingly difficult to distinguish from human-created artwork. This development has raised significant concerns regarding copyright protection, misi…",
+      "one_line": "This development has raised significant concerns regarding copyright protection, misi…",
+      "one_line_kr": "이러한 발전으로 인해 저작권 보호, 기타…",
+      "url": "https://tldr.takara.ai/p/2608.11643",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-12 13:41",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "발전기 교대 시 AI-Art 감지기의 견고성"
+    },
+    {
+      "id": "2026-08-17_0017",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "summary": "Friday's big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was …",
+      "one_line": "Friday's big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen…",
+      "one_line_kr": "금요일의 대규모 릴리스는 Alibaba Qwen의 Apache 2 라이센스 27B 매개변수 비전 지원 LLM인 Qwen 3.8 27B였습니다.",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "source": "Simon Willison",
+      "category": "LLM",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-17 07:00",
+      "collect_date": "2026-08-17",
+      "thumbnail": "https://static.simonwillison.net/static/2026/qwen-thinking-bicycle-27b.jpg",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Qwen 3.8 27B는 훌륭하지만 기본적으로 지나치게 지나치게 생각하는 경향이 있습니다."
+    },
     {
       "id": "2026-08-16_0001",
       "title": "알리바바, '큐원3.8-맥스' 가중치 공개…상업적 이용엔 라이선스 필요",
@@ -445,78 +507,15 @@
         "class": "hot"
       },
       "title_kr": "OAuth 앱을 위한 다중 리디렉션 URI 및 토큰 새로 고침"
-    },
-    {
-      "id": "2026-08-16_0018",
-      "title": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
-      "summary": "Flue 2 takes its inspiration from React. Creator Fred Schott, of Astro fame, tells Latent Space why he added hooks and why agents are defined by their harnesses.",
-      "one_line": "Flue 2 takes its inspiration from React.",
-      "one_line_kr": "Flue 2는 React에서 영감을 얻었습니다.",
-      "url": "https://www.latent.space/p/flue-2",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-16 00:46",
-      "collect_date": "2026-08-16",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!Osie!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F131d402d-63bf-4895-b5e7-b8990972a14c_1280x720.png",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "에이전트를 위한 React: Astro Creator가 자신의 메타 하네스인 Flue에 후크를 제공합니다."
-    },
-    {
-      "id": "2026-08-16_0019",
-      "title": "Fine-Tuning Tool-Calling LLMs: A Complete Guide Using XYZ-Aquila-SFT and Qwen3",
-      "summary": "Implement an end-to-end fine-tuning pipeline for tool-calling language models. This tutorial covers parsing trajectories, structured tool-call extraction, Qwen-compatible ChatML rendering, and efficient LoRA adaptation using PyTorch. The post Fine-Tuning Tool-Calling LLMs: A Comp…",
-      "one_line": "The post Fine-Tuning Tool-Calling LLMs: A Comp…",
-      "one_line_kr": "포스트 미세 조정 도구 호출 LLM: A Comp…",
-      "url": "https://www.marktechpost.com/2026/08/15/fine-tuning-tool-calling-llms-a-complete-guide-using-xyz-aquila-sft-and-qwen3/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-15 20:28",
-      "collect_date": "2026-08-16",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "미세 조정 도구 호출 LLM: XYZ-Aquila-SFT 및 Qwen3을 사용한 전체 가이드"
-    },
-    {
-      "id": "2026-08-16_0020",
-      "title": "Z.ai Ships GLM-5.3 Without Retraining the Base Model: Better at Complex Coding and Long-Horizon Tasks",
-      "summary": "Z.ai released GLM-5.3 on August 14, 2026. The model reuses the 743B GLM-5.2 base unchanged. Every reported gain comes from scaled post-training: more long-horizon task environments, more environment types, longer training. Terminal-Bench 3.0 moves from 4.6 to 28.3, and DeepSWE v1…",
-      "one_line": "Z.ai released GLM-5.3 on August 14, 2026.",
-      "one_line_kr": "Z.ai는 2026년 8월 14일에 GLM-5.3을 출시했습니다.",
-      "url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 17:03",
-      "collect_date": "2026-08-16",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Z.ai, 기본 모델 재교육 없이 GLM-5.3 출시: 복잡한 코딩 및 장거리 작업에 더 적합"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "알리바바, '큐원3.8-맥스' 가중치 공개…상업적 이용엔 라이선스 필요",
+      "title": "허깅페이스 점령한 중국 AI...'큐원' 다운로드 20억건·파생 모델 15만개",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213997",
-      "one_line": "알리바바가 최신 플래그십 AI 모델 'Qwen3.8-맥스(Max)'의 핵심 가중치(Weights) 파일을 13일 무료 공개했다.",
-      "date": "2026-08-15 17:12"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214007",
+      "one_line": "특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로…",
+      "date": "2026-08-16 18:00"
     },
     "영상AI": {
       "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
@@ -526,18 +525,18 @@
       "date": "2026-08-15 00:43"
     },
     "이미지·디자인AI": {
-      "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
+      "title": "Robustness of AI-Art Detectors under Generator Shift",
       "source": "HuggingFace Papers",
-      "url": "https://tldr.takara.ai/p/2608.09248",
-      "one_line": "기술 기반 LLM 에이전트는 외부 라이브러리에서 재사용 가능한 절차를 선택하여 복잡한 작업을 해결하지만 라우팅은…",
-      "date": "2026-08-10 17:09"
+      "url": "https://tldr.takara.ai/p/2608.11643",
+      "one_line": "이러한 발전으로 인해 저작권 보호, 기타…",
+      "date": "2026-08-12 13:41"
     },
     "LLM": {
-      "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
       "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/",
-      "one_line": "2022년에 저는 GPT-3에서 생성된 게임 컨셉의 스크린샷과 DALL-E를 사용하여 생성된 일부 컨셉 \"아트\"를 트윗했습니다.",
-      "date": "2026-08-06 04:42"
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "one_line": "금요일의 대규모 릴리스는 Alibaba Qwen의 Apache 2 라이센스 27B 매개변수 비전 지원 LLM인 Qwen 3.8 27B였습니다.",
+      "date": "2026-08-17 07:00"
     },
     "개발AI": {
       "title": "Multiple redirect URIs and token refresh for OAuth apps",
@@ -548,14 +547,392 @@
     }
   },
   "period_key_points": [
+    "중국 AI 기업들이 오픈소스 생태계에서 미국 기업을 빠르게 추월하며 글로벌 개발자 시장에서 영향력을 대폭 확대하고 있다.",
+    "이러한 발전으로 인해 저작권 보호, 기타.",
+    "금요일의 대규모 릴리스는 Alibaba Qwen의 Apache 2 라이센스 27B 매개변수 비전 지원 LLM인 Qwen 3.8 27B였습니다.",
     "알리바바가 최신 플래그십 AI 모델 'Qwen3.8-맥스(Max)'의 핵심 가중치(Weights) 파일을 13일 무료 공개했다.",
-    "오픈AI가 '챗GPT'를 사용자의 컴퓨터 작업 맥락까지 지속적으로 이해하는 개인형 AI 비서로 확장하고 있다. 챗GPT가 맥(Mac)에서의 앱과 웹사이트 활동을 기억해 과거 업무를 찾아주고 반복 작업을 자동화할 수 있는 기능을 선보였다.",
-    "알리바바가 최신 AI 모델 ‘큐원3.8-27B’의 가중치를 공개하며 고성능 AI 모델의 오픈소스 경쟁에 다시 불을 붙였다.",
-    "슬랙 대화와 화상회의 녹화, 고객지원 기록, 이메일, 업무 문서, 코드 변경 기록 등 과거에는 기업 내부에 묻혀 있던 데이터가 AI 에이전트를 훈련하는 핵심 자산으로 부상하면서 스타트업의 오래된 업무 기록에 새로운 ‘데이터 가치’가.",
-    "구글이 AI로 생성한 이미지와 동영상, 음악 등에 표시되는 눈에 보이는 워터마크를 사용자가 직접 제거할 수 있도록 정책을 변경했다."
+    "오픈AI가 '챗GPT'를 사용자의 컴퓨터 작업 맥락까지 지속적으로 이해하는 개인형 AI 비서로 확장하고 있다. 챗GPT가 맥(Mac)에서의 앱과 웹사이트 활동을 기억해 과거 업무를 찾아주고 반복 작업을 자동화할 수 있는 기능을 선보였다."
   ],
-  "period_prose": "이번 주간 총 397건의 AI 자료가 수집됐습니다. 국내 124건, 해외 273건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Reasoning입니다.",
+  "period_prose": "이번 주간 총 394건의 AI 자료가 수집됐습니다. 국내 124건, 해외 270건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Vision입니다.",
   "items": [
+    {
+      "id": "2026-08-17_0000",
+      "title": "GLM-5.3, '커서' 보안 취약점 찾아냈다...AI 보안 역량 입증",
+      "summary": "지푸 AI(Z.ai)의 최신 오픈웨이트 모델 'GLM-5.3'이 강화된 사이버 보안 능력을 통해 코딩 플랫폼 커서(Cursor)의 심각한 잠재적 보안 취약점을 발견한 것으로 알려졌다. 지푸 AI의 개발자 옹호자(Developer Advocate)로 활동 중인 루는 14일(현지시간) X에 올린 글을 통해 GLM-5.3에 복잡한 리버스 엔지니어링 과제를 부여한 결과, 커서에서 \"잠재적으로 심각한 취약점\"을 찾아냈다고 밝혔다.그는 발견한 취약점을 커서에 제보했으며, 커서가 문제를 해결하기 위해 지푸와 …",
+      "one_line": "지푸 AI(Z.ai)의 최신 오픈웨이트 모델 'GLM-5.3'이 강화된 사이버 보안 능력을 통해 코딩 플랫폼 커서(Cursor)의 심각한 잠재적 보안 취약점을 발견한 것으로 알려졌다.",
+      "one_line_kr": "지푸 AI(Z.ai)의 최신 오픈웨이트 모델 'GLM-5.3'이 강화된 사이버 보안 능력을 통해 코딩 플랫폼 커서(Cursor)의 심각한 잠재적 보안 취약점을 발견한 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214011",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 18:16",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "GLM-5.3, '커서' 보안 취약점 찾아냈다...AI 보안 역량 입증"
+    },
+    {
+      "id": "2026-08-17_0001",
+      "title": "허깅페이스 점령한 중국 AI...'큐원' 다운로드 20억건·파생 모델 15만개",
+      "summary": "중국 AI 기업들이 오픈소스 생태계에서 미국 기업을 빠르게 추월하며 글로벌 개발자 시장에서 영향력을 대폭 확대하고 있다. 특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로 부상했다.오픈소스 AI 플랫폼 허깅페이스는 14일(현지시간) 공개한 '2026년 오픈 모델 현황' 보고서에 따르면, 올해 1월부터 8월까지 플랫폼 내 공개 모델 저장소는 …",
+      "one_line": "특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로…",
+      "one_line_kr": "특히 알리바바의 대표 AI 모델군 '큐원'은 AI 플랫폼 허깅페이스에서 올해 들어 20억건이 넘는 다운로드를 올린 데 이어, 큐원을 기반으로 개발된 파생 모델도 15만개를 넘어서며 오픈소스 시장의 핵심 축으로…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214007",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 18:00",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "허깅페이스 점령한 중국 AI...'큐원' 다운로드 20억건·파생 모델 15만개"
+    },
+    {
+      "id": "2026-08-17_0002",
+      "title": "미국, 동맹국에 'AI 진영 선택' 통보... \"중국과 양다리 안 된다\"",
+      "summary": "미국이 중국과의 AI 패권 경쟁이 격화되는 가운데 동맹국과 우호국들에 사실상 'AI 진영 선택'을 요구할 전망이다. 14일(현지시간) 로이터가 확인한 미국 국무부 내부 초안과 미국 정부 관계자에 따르면, 미국은 지난 6월 미국의 'AI 기회 성명(AI Opportunity Statement)'에 서명한 35개국에 서한을 보냈다.이를 통해 미국 주도의 AI 협력 체제와 중국의 경쟁적 AI 협력 체제 가운데 어느 쪽에 참여할지 명확히 선택할 것을 요구했다. 다만 서한이 실제 언제 발송될지는 확인되지 …",
+      "one_line": "미국이 중국과의 AI 패권 경쟁이 격화되는 가운데 동맹국과 우호국들에 사실상 'AI 진영 선택'을 요구할 전망이다.",
+      "one_line_kr": "미국이 중국과의 AI 패권 경쟁이 격화되는 가운데 동맹국과 우호국들에 사실상 'AI 진영 선택'을 요구할 전망이다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214005",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 17:22",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "미국, 동맹국에 'AI 진영 선택' 통보... \"중국과 양다리 안 된다\""
+    },
+    {
+      "id": "2026-08-17_0003",
+      "title": "미 상무장관, 애플에 직격탄...\"중국산 메모리 칩 사지 마라\"",
+      "summary": "미국 트럼프 행정부가 AI 데이터센터 확산으로 메모리 반도체 공급 부족이 심화되는 가운데 애플에 중국산 메모리 칩을 구매하지 말 것을 공개적으로 요구했다. 월스트리트저널(WSJ)에 따르면, 하워드 러트닉 미국 상무장관은 13일(현지시간) 애플의 텍사스주 휴스턴 제조시설을 방문한 뒤 인터뷰에서 트럼프 행정부가 애플의 중국산 메모리 칩 구매를 원하지 않는다고 밝혔다.그는 메모리 공급 부족을 해결할 \"다른 해법\"이 필요하다며 미국 기업이 중국산 메모리를 사용하는 것은 바람직하지 않다는 입장을 분명히 했…",
+      "one_line": "미국 트럼프 행정부가 AI 데이터센터 확산으로 메모리 반도체 공급 부족이 심화되는 가운데 애플에 중국산 메모리 칩을 구매하지 말 것을 공개적으로 요구했다.",
+      "one_line_kr": "미국 트럼프 행정부가 AI 데이터센터 확산으로 메모리 반도체 공급 부족이 심화되는 가운데 애플에 중국산 메모리 칩을 구매하지 말 것을 공개적으로 요구했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214004",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 17:16",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "미 상무장관, 애플에 직격탄...\"중국산 메모리 칩 사지 마라\""
+    },
+    {
+      "id": "2026-08-17_0004",
+      "title": "서울 AI 허브, 22일 '피지컬 AI' 해커톤 개최…“코드 개발부터 하드웨어 연결까지”",
+      "summary": "서울 AI 허브는 오는 22일 양재동에 있는 서울 AI 허브 메인센터에서 오픈AI, 누코드(NUCODE), 한국투자액셀러레이터 등과 피지컬 AI 해커톤 '토이톤(TOYTHON)'을 개최한다고 밝혔다. 스타트업 대표를 비롯해 개발자, 기획자, 디자이너 등 아이디어를 실제 제품으로 구현해보고 싶은 빌더라면 누구나 신청할 수 있으며, 신청자 가운데 100명을 선발한다. 참가비는 무료다.참가자들은 AI 개발 도구와 NUCODE 개발보드를 활용해 아이디어 기획부터 AI 활용 개발, 하드웨어 연결까지 전 과…",
+      "one_line": "서울 AI 허브는 오는 22일 양재동에 있는 서울 AI 허브 메인센터에서 오픈AI, 누코드(NUCODE), 한국투자액셀러레이터 등과 피지컬 AI 해커톤 '토이톤(TOYTHON)'을 개최한다고 밝혔다.",
+      "one_line_kr": "서울 AI 허브는 오는 22일 양재동에 있는 서울 AI 허브 메인센터에서 오픈AI, 누코드(NUCODE), 한국투자액셀러레이터 등과 피지컬 AI 해커톤 '토이톤(TOYTHON)'을 개최한다고 밝혔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214013",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 17:06",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "서울 AI 허브, 22일 '피지컬 AI' 해커톤 개최…“코드 개발부터 하드웨어 연결까지”"
+    },
+    {
+      "id": "2026-08-17_0005",
+      "title": "KAIST, 저전력으로 두뇌 구조 모사하는 ‘뉴로모틱 뉴런’ 구현",
+      "summary": "한국과학기술원(KAIST, 총장 배충식)은 김경민 신소재공학과 교수 연구팀이 ‘반도체에서 자연스럽게 발생하는 잡음’을 활용해 사람의 뇌처럼 정보를 처리하는 새로운 ‘뉴로모픽 뉴런 반도체 기술’을 개발했다고 16일 밝혔다. 전자기기에서 ‘잡음’이란 정보의 수신을 방해하는 대상으로 여겨져 왔다. 하지만, 인간의 뇌는 전자기기와 달리 잡음과 같은 ‘불규칙성’에 대해 유연하게 대응하는 특성을 지니고 있다. 또, 같은 자극에 대해서도 늘 같은 반응을 보이는 것이 아니라 때에 따라 다른 대응을 보인다. 연구…",
+      "one_line": "한국과학기술원(KAIST, 총장 배충식)은 김경민 신소재공학과 교수 연구팀이 ‘반도체에서 자연스럽게 발생하는 잡음’을 활용해 사람의 뇌처럼 정보를 처리하는 새로운 ‘뉴로모픽 뉴런 반도체 기술’을 개발했다고 16일…",
+      "one_line_kr": "한국과학기술원(KAIST, 총장 배충식)은 김경민 신소재공학과 교수 연구팀이 ‘반도체에서 자연스럽게 발생하는 잡음’을 활용해 사람의 뇌처럼 정보를 처리하는 새로운 ‘뉴로모픽 뉴런 반도체 기술’을 개발했다고 16일…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214012",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 17:06",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "KAIST, 저전력으로 두뇌 구조 모사하는 ‘뉴로모틱 뉴런’ 구현"
+    },
+    {
+      "id": "2026-08-17_0006",
+      "title": "오픈AI, 살해 계획 담긴 챗GPT 대화 경찰에 신고...AI 대화 감시 논란",
+      "summary": "오픈AI가 챗GPT 이용자 대화에서 타인에 대한 구체적인 위해 계획을 탐지해 미 연방수사국(FBI)에 직접 신고하고, 관련 스토킹·살해 협박 범죄 피의자 체포로 이어진 사실이 밝혀졌다. 이번 사건은 AI 기업이 이용자 대화를 수사기관에 제보한 희귀 사례로, AI 챗봇의 안전장치 강화와 이용자 사생활 보호 간의 경계선 논쟁을 다시 불붙이고 있다.14일(현지시간) 퓨처리즘 등에 따르면, 미국 플로리다주에 거주하던 전 골드만삭스 애널리스트 대런 저우는 지난 3월 여자친구와 헤어진 뒤 챗GPT에 이별 과…",
+      "one_line": "오픈AI가 챗GPT 이용자 대화에서 타인에 대한 구체적인 위해 계획을 탐지해 미 연방수사국(FBI)에 직접 신고하고, 관련 스토킹·살해 협박 범죄 피의자 체포로 이어진 사실이 밝혀졌다.",
+      "one_line_kr": "오픈AI가 챗GPT 이용자 대화에서 타인에 대한 구체적인 위해 계획을 탐지해 미 연방수사국(FBI)에 직접 신고하고, 관련 스토킹·살해 협박 범죄 피의자 체포로 이어진 사실이 밝혀졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214002",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 16:50",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "오픈AI, 살해 계획 담긴 챗GPT 대화 경찰에 신고...AI 대화 감시 논란"
+    },
+    {
+      "id": "2026-08-17_0007",
+      "title": "엔비디아, SB 에너지에 4조 투자 논의...오픈AI 10GW 데이터센터 구축 총력",
+      "summary": "엔비디아가 오픈AI의 대규모 데이터센터 프로젝트를 추진하는 소프트뱅크 계열 SB 에너지에 최대 30억달러(약 4조원)를 투자하는 방안을 논의하고 있는 것으로 알려졌다. 이번 투자는 엔비디아가 오픈AI와 SB 에너지의 미국 오하이오주 데이터센터 구축 사업을 지원하기 위해 1000억달러(약 142조원) 규모의 신용보증을 제공하는 협상의 일부로 추진되고 있다. 15일(현지시간) 디 인포메이션에 따르면, 엔비디아는 SB 에너지에 대한 30억달러 투자를 두 차례에 걸쳐 진행하는 방안을 검토하고 있다.오하이…",
+      "one_line": "엔비디아가 오픈AI의 대규모 데이터센터 프로젝트를 추진하는 소프트뱅크 계열 SB 에너지에 최대 30억달러(약 4조원)를 투자하는 방안을 논의하고 있는 것으로 알려졌다.",
+      "one_line_kr": "엔비디아가 오픈AI의 대규모 데이터센터 프로젝트를 추진하는 소프트뱅크 계열 SB 에너지에 최대 30억달러(약 4조원)를 투자하는 방안을 논의하고 있는 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214001",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 16:29",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "엔비디아, SB 에너지에 4조 투자 논의...오픈AI 10GW 데이터센터 구축 총력"
+    },
+    {
+      "id": "2026-08-17_0008",
+      "title": "\"IPO 앞두고 흔들리는 리더십\"… 오픈AI, 인원 이탈·안전성 후퇴 지적",
+      "summary": "기업 가치 1조달러를 목표로 기업공개(IPO)를 추진 중인 오픈AI가 전례 없는 내부 혼란에 휩싸였다는 분석이 등장했다. 샘 알트먼 CEO가 상장을 앞두고 조직 정비와 기업용 서비스(B2B) 사업 집중을 선언했으나, 잦은 조직 개편과 핵심 임원진의 연쇄 사퇴, 그리고 안전성 연구의 후순위화로 인해 내부 불안감과 좌절감이 극에 달하고 있다는 지적이다.파이낸셜타임스(FT)는 15일(현지시간) 복수의 소식통과 내부 직원들을 인용해 오픈AI가 올해 들어서만 6차례에 걸친 대대적인 조직 개편을 진행하며 내…",
+      "one_line": "기업 가치 1조달러를 목표로 기업공개(IPO)를 추진 중인 오픈AI가 전례 없는 내부 혼란에 휩싸였다는 분석이 등장했다.",
+      "one_line_kr": "기업 가치 1조달러를 목표로 기업공개(IPO)를 추진 중인 오픈AI가 전례 없는 내부 혼란에 휩싸였다는 분석이 등장했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214006",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 12:05",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"IPO 앞두고 흔들리는 리더십\"… 오픈AI, 인원 이탈·안전성 후퇴 지적"
+    },
+    {
+      "id": "2026-08-17_0009",
+      "title": "목포시립도서관, 9월 독서의 달…공연·체험·AI 독서법 강연",
+      "summary": "AI 생성 영상목포시립도서관이 9월 독서의 달을 맞아 어린이와 가족, 성인까지 참여할 수 있는 독서문화 프로그램을 운영한다고 14일 밝혔다.입체낭독극과 업사이클링 체험, 독서 이벤트와 전시, AI시대 독서법 강연까지 책을 다양한 방식으로 접할 수 있는 프로그램을 마련했다.6일에는 6세 이상 어린이와 가족을 대상으로 체험형 입체낭독극 ‘북극 Book in Stage’를 진행한다. 공연자와 관객이 함께 참여해 책 속 이야기를 입체적으로 경험하는 프로그램이다.성인 대상 ‘업사이클링 북슬리브 만들기’는 …",
+      "one_line": "AI 생성 영상목포시립도서관이 9월 독서의 달을 맞아 어린이와 가족, 성인까지 참여할 수 있는 독서문화 프로그램을 운영한다고 14일 밝혔다.입체낭독극과 업사이클링 체험, 독서 이벤트와 전시, AI시대 독서법…",
+      "one_line_kr": "AI 생성 영상목포시립도서관이 9월 독서의 달을 맞아 어린이와 가족, 성인까지 참여할 수 있는 독서문화 프로그램을 운영한다고 14일 밝혔다.입체낭독극과 업사이클링 체험, 독서 이벤트와 전시, AI시대 독서법…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=213960",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-16 09:40",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "목포시립도서관, 9월 독서의 달…공연·체험·AI 독서법 강연"
+    },
+    {
+      "id": "2026-08-17_0010",
+      "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+      "summary": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+      "one_line": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+      "one_line_kr": "OpenRouter의 CEO는 최근 이 스타트업을 AI용 Stripe라고 설명했습니다.",
+      "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-17 05:57",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "스트라이프(Stripe)가 AI 게이트웨이 스타트업 오픈라우터(OpenRouter)를 70억 달러 이상에 인수할 것으로 알려졌습니다."
+    },
+    {
+      "id": "2026-08-17_0011",
+      "title": "Why people aren’t buying Mark Zuckerberg’s AI future",
+      "summary": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.",
+      "one_line": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-17 05:32",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "사람들이 Mark Zuckerberg의 AI 미래를 구매하지 않는 이유"
+    },
+    {
+      "id": "2026-08-17_0012",
+      "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+      "summary": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+      "one_line": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+      "one_line_kr": "다리오 아모데이(Dario Amodei)는 자신이 AI에 대해 지나치게 비관적인 그림을 그려왔다는 생각에 반발하고 있습니다.",
+      "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-17 01:53",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Anthropic CEO는 AI 반발이 '근본적으로 신뢰의 위기'라고 말합니다."
+    },
+    {
+      "id": "2026-08-17_0013",
+      "title": "Classical $\\mathrm{SU}(2)$ Models Match or Exceed Shallow Variational Quantum Circuits on Vision Benchmarks",
+      "summary": "Quaternion-valued neural networks and variational quantum circuits (VQCs) both derive local transformations from $\\mathrm{SU}(2)$ geometry, yet their performance on classical supervised learning remains poorly understood. We compare real-valued, quaternion-valued, and quantum cla…",
+      "one_line": "Quaternion-valued neural networks and variational quantum circuits (VQCs) both derive local transformations from…",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://tldr.takara.ai/p/2608.07822",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-08 08:50",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-17_0014",
+      "title": "Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms",
+      "summary": "Clustering is a fundamental class of data analysis techniques with the most important representatives being centroid-based methods like $k$-means. Such methods are strongly connected to quantization problems, which aim to approximate general probability measures with discrete one…",
+      "one_line": "Such methods are strongly connected to quantization problems, which aim to approximate general probability measures…",
+      "one_line_kr": "이러한 방법은 일반적인 확률 측정값을 근사화하는 것을 목표로 하는 양자화 문제와 밀접하게 연결되어 있습니다.",
+      "url": "https://tldr.takara.ai/p/2608.11016",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-11 23:58",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Gromov-Wasserstein 양자화 및 클러스터링: 구조, 속도 및 알고리즘"
+    },
+    {
+      "id": "2026-08-17_0015",
+      "title": "Robustness of AI-Art Detectors under Generator Shift",
+      "summary": "Text-to-image generative models have advanced rapidly, with modern Diffusion Transformer architectures producing images that are increasingly difficult to distinguish from human-created artwork. This development has raised significant concerns regarding copyright protection, misi…",
+      "one_line": "This development has raised significant concerns regarding copyright protection, misi…",
+      "one_line_kr": "이러한 발전으로 인해 저작권 보호, 기타…",
+      "url": "https://tldr.takara.ai/p/2608.11643",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-12 13:41",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "발전기 교대 시 AI-Art 감지기의 견고성"
+    },
+    {
+      "id": "2026-08-17_0016",
+      "title": "Topology-Unified 2D Pose Estimation across Intact, Residual and Prosthetic Limbs",
+      "summary": "Driven by the availability of large-scale datasets, Human Pose Estimation (HPE) plays a critical role in numerous downstream tasks. However, mainstream benchmarks exhibit severe representation bias, predominantly featuring able-bodied individuals. While a few pioneering datasets …",
+      "one_line": "Driven by the availability of large-scale datasets, Human Pose Estimation (HPE) plays a critical role in numerous…",
+      "one_line_kr": "대규모 데이터 세트의 가용성에 힘입어 HPE(Human Pose Estimation)는 다양한 분야에서 중요한 역할을 합니다.",
+      "url": "https://tldr.takara.ai/p/2608.13047",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-13 19:11",
+      "collect_date": "2026-08-17",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "손상되지 않은 팔다리, 잔여 팔다리, 의수족에 대한 토폴로지 통합 2D 자세 추정"
+    },
+    {
+      "id": "2026-08-17_0017",
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "summary": "Friday's big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was …",
+      "one_line": "Friday's big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen…",
+      "one_line_kr": "금요일의 대규모 릴리스는 Alibaba Qwen의 Apache 2 라이센스 27B 매개변수 비전 지원 LLM인 Qwen 3.8 27B였습니다.",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "source": "Simon Willison",
+      "category": "LLM",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-17 07:00",
+      "collect_date": "2026-08-17",
+      "thumbnail": "https://static.simonwillison.net/static/2026/qwen-thinking-bicycle-27b.jpg",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Qwen 3.8 27B는 훌륭하지만 기본적으로 지나치게 지나치게 생각하는 경향이 있습니다."
+    },
     {
       "id": "2026-08-16_0000",
       "title": "앤트로픽 '워터마크' 도입에 사용자 반발…'클로드' 구독 취소 확산",
@@ -8451,447 +8828,6 @@
         "class": "new"
       },
       "title_kr": "유타 구리 광산에 배치된 Boston Dynamics의 스팟 로봇"
-    },
-    {
-      "id": "2026-08-10_0000",
-      "title": "가트너 \"2027년 중국 AI 점유율 50%…특정 국가 의존은 치명적 리스크\"",
-      "summary": "중국 AI 모델이 강력한 가성비와 기술력을 앞세워 2027년 전 세계 기업 도입률 50%를 기록할 것이라는 전망이 나왔다. 그러나 지정학적 갈등에 따라 반도체에 이어 AI 모델도 수출 통제 대상으로 꼽히며, 글로벌 기업들이 특정 국가나 기술에 지나치게 의존하면 심각한 공급망 리스크에 직면할 수 있다는 경고가 제기됐다.가트너는 3일(현지시간) 발표한 '2026년 중국 AI 주요 트렌드' 보고서를 통해 전 세계 기업의 중국산 AI 모델 도입률은 2025년 5%에서 2027년 50%로 폭발적으로 증가할…",
-      "one_line": "중국 AI 모델이 강력한 가성비와 기술력을 앞세워 2027년 전 세계 기업 도입률 50%를 기록할 것이라는 전망이 나왔다.",
-      "one_line_kr": "중국 AI 모델이 강력한 가성비와 기술력을 앞세워 2027년 전 세계 기업 도입률 50%를 기록할 것이라는 전망이 나왔다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213719",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 18:23",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "가트너 \"2027년 중국 AI 점유율 50%…특정 국가 의존은 치명적 리스크\""
-    },
-    {
-      "id": "2026-08-10_0001",
-      "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중",
-      "summary": "스페이스XAI가 단순히 한 장의 이미지를 만드는 데 그치지 않고 복잡한 레이아웃과 정확한 텍스트 표현, 반복적인 이미지 편집, 캐릭터와 배경의 시각적 일관성 유지 등에 초점을 맞춘 이미지 모델을 공개했다.스페이스XAI는 8일(현지시간) 이미지 생성·편집 모델 ‘이매진 이미지 2.0(Imagine Image 2.0)’을 출시했다. 이매진 이미지 2.0은 스페이스XAI의 웹 기반 이미지 생성 서비스와 그록(Grok)의 iOS·안드로이드 앱에서 새로운 ‘퀄리티 모드(Quality Mode)’로 제공된다…",
-      "one_line": "스페이스XAI가 단순히 한 장의 이미지를 만드는 데 그치지 않고 복잡한 레이아웃과 정확한 텍스트 표현, 반복적인 이미지 편집, 캐릭터와 배경의 시각적 일관성 유지 등에 초점을 맞춘 이미지 모델을…",
-      "one_line_kr": "스페이스XAI가 단순히 한 장의 이미지를 만드는 데 그치지 않고 복잡한 레이아웃과 정확한 텍스트 표현, 반복적인 이미지 편집, 캐릭터와 배경의 시각적 일관성 유지 등에 초점을 맞춘 이미지 모델을…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213713",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 12:31",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중"
-    },
-    {
-      "id": "2026-08-10_0002",
-      "title": "구글, 인터넷 없이 작동하는 AI 번역기 ‘젬마 트랜슬레이터’ 공개",
-      "summary": "구글이 소형 오픈 모델과 저가형 컴퓨터를 결합해 인터넷이 없는 환경에서도 작동하는 온디바이스 AI 번역기를 선보였다.구글은 6일(현지시간) 인터넷 연결 없이도 음성을 실시간으로 번역할 수 있는 소형 AI 번역기 ‘젬마 트랜슬레이터(Gemma Translator)’를 공개했다.라즈베리파이5와 소형 오픈웨이트 AI 모델을 결합해 음성 인식부터 번역, 음성 합성까지 모든 과정을 기기에서 처리하는 것이 특징이다. 특히 설계도와 소스코드, 3D 프린터용 케이스까지 오픈소스로 공개해 누구나 직접 제작할 수 …",
-      "one_line": "구글이 소형 오픈 모델과 저가형 컴퓨터를 결합해 인터넷이 없는 환경에서도 작동하는 온디바이스 AI 번역기를 선보였다.구글은 6일(현지시간) 인터넷 연결 없이도 음성을 실시간으로 번역할 수 있는 소형 AI 번역기…",
-      "one_line_kr": "구글이 소형 오픈 모델과 저가형 컴퓨터를 결합해 인터넷이 없는 환경에서도 작동하는 온디바이스 AI 번역기를 선보였다.구글은 6일(현지시간) 인터넷 연결 없이도 음성을 실시간으로 번역할 수 있는 소형 AI 번역기…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213717",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 12:19",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "구글, 인터넷 없이 작동하는 AI 번역기 ‘젬마 트랜슬레이터’ 공개"
-    },
-    {
-      "id": "2026-08-10_0003",
-      "title": "\"음성 대화하며 문서 분석까지\"...오픈AI, GPT-라이브 기능 대폭 확장",
-      "summary": "오픈AI가 음성 기반 AI 모델 ‘GPT-라이브(GPT-Live)’에 파일 첨부와 프로젝트 워크스페이스 기능을 추가했다. 이제 사용자는 음성으로 챗GPT와 대화하면서 문서나 파일을 직접 첨부해 내용을 질문할 수 있으며, 여행 계획이나 구직 활동 관리 등 장기적인 작업을 프로젝트 단위로 이어갈 수 있게 됐다. 오픈AI는 7일(현지시간) GPT-라이브가 이제 파일을 첨부하고 해당 파일에 대해 질문할 수 있다고 밝혔다.또 GPT-라이브를 챗GPT의 ‘프로젝트(Projects)’ 안에서 사용할 수 있어 …",
-      "one_line": "오픈AI가 음성 기반 AI 모델 ‘GPT-라이브(GPT-Live)’에 파일 첨부와 프로젝트 워크스페이스 기능을 추가했다.",
-      "one_line_kr": "오픈AI가 음성 기반 AI 모델 ‘GPT-라이브(GPT-Live)’에 파일 첨부와 프로젝트 워크스페이스 기능을 추가했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213716",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 12:13",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "\"음성 대화하며 문서 분석까지\"...오픈AI, GPT-라이브 기능 대폭 확장"
-    },
-    {
-      "id": "2026-08-10_0004",
-      "title": "메타, 맥용 '메타 AI' 데스크톱 앱 개발 정황 포착...'슈퍼 앱' 경쟁 예고",
-      "summary": "메타가 애플 맥(Mac)에서 사용할 수 있는 자체 AI 데스크톱 앱을 개발 중인 정황이 포착됐다. 테스팅카탈로그는 7일(현지시간) 메타 AI 웹 서비스에 새롭게 추가된 설정 메뉴에서 ‘메타 AI 다운로드(Download Meta AI)’라는 맥OS 전용 버튼이 발견됐다고 전했다.버튼 주변에는 데스크톱 어디에서든 AI와 대화하고, 콘텐츠를 만들고, 협업할 수 있는 앱이라는 취지의 설명이 표시됐다. 다만 현재 다운로드 링크는 연결되지 않으며, 구체적인 출시 일정이나 이용 가능 여부도 공개되지 않았다.…",
-      "one_line": "메타가 애플 맥(Mac)에서 사용할 수 있는 자체 AI 데스크톱 앱을 개발 중인 정황이 포착됐다.",
-      "one_line_kr": "메타가 애플 맥(Mac)에서 사용할 수 있는 자체 AI 데스크톱 앱을 개발 중인 정황이 포착됐다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213714",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 12:01",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "메타, 맥용 '메타 AI' 데스크톱 앱 개발 정황 포착...'슈퍼 앱' 경쟁 예고"
-    },
-    {
-      "id": "2026-08-10_0005",
-      "title": "엔비디아, 전력 공급사 랜시엄에 최대 4조 투자...AI 전력 확보 총력",
-      "summary": "엔비디아가 오픈AI와 오라클의 데이터센터 프로젝트 ‘스타게이트’ 개발을 지원하는 전력 인프라 기업 랜시엄(Lancium)에 최대 30억달러(약 4조원)를 투자할 것으로 알려졌다. 7일(현지시간) 디 인포메이션에 따르면, 엔비디아는 랜시엄에 우선 20억달러를 투자해 약 20%의 지분을 확보하고, 추가 전력 공급을 확보해 일정 기준을 충족하면 10억달러를 추가 투자할 예정이다.추가 투자까지 이뤄지면 엔비디아의 지분율은 30%까지 높아질 수 있다. 이번 거래를 반영한 랜시엄의 기업 가치는 부채와 투자금…",
-      "one_line": "엔비디아가 오픈AI와 오라클의 데이터센터 프로젝트 ‘스타게이트’ 개발을 지원하는 전력 인프라 기업 랜시엄(Lancium)에 최대 30억달러(약 4조원)를 투자할 것으로 알려졌다.",
-      "one_line_kr": "엔비디아가 오픈AI와 오라클의 데이터센터 프로젝트 ‘스타게이트’ 개발을 지원하는 전력 인프라 기업 랜시엄(Lancium)에 최대 30억달러(약 4조원)를 투자할 것으로 알려졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213711",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 11:47",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "엔비디아, 전력 공급사 랜시엄에 최대 4조 투자...AI 전력 확보 총력"
-    },
-    {
-      "id": "2026-08-10_0006",
-      "title": "'커서' 이름 사라지나...스페이스X 인수 후 '그록'으로 브랜드 개편 예정",
-      "summary": "스페이스X가 600억달러(약 84조6600억원) 규모 인수를 앞둔 AI 코딩 스타트업 애니스피어의 기존의 대표 브랜드 '커서'를 폐지하고 '그록' 브랜드로 통합하려는 것으로 알려졌다.디 인포메이션에 따르면, 커서는 6일(현지시간) 전 직원회의에서 다음 주말까지 인수 작업이 완료될 수 있다고 밝히며 몇달 안에 신제품에서 커서 브랜드명을 단계적으로 없앨 가능성이 높다고 밝혔다.이에 따르면, 첫 단계는 커서가 내부 코드명 '샌드(Sand)'로 개발해 온 차세대 범용 에이전트를 '그록 봇(Grok Bot…",
-      "one_line": "스페이스X가 600억달러(약 84조6600억원) 규모 인수를 앞둔 AI 코딩 스타트업 애니스피어의 기존의 대표 브랜드 '커서'를 폐지하고 '그록' 브랜드로 통합하려는 것으로 알려졌다.디 인포메이션에 따르면, 커서는…",
-      "one_line_kr": "스페이스X가 600억달러(약 84조6600억원) 규모 인수를 앞둔 AI 코딩 스타트업 애니스피어의 기존의 대표 브랜드 '커서'를 폐지하고 '그록' 브랜드로 통합하려는 것으로 알려졌다.디 인포메이션에 따르면, 커서는…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213718",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 11:33",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "'커서' 이름 사라지나...스페이스X 인수 후 '그록'으로 브랜드 개편 예정"
-    },
-    {
-      "id": "2026-08-10_0007",
-      "title": "오픈AI, 프레젠테이션 스타트업 '넥스트슬라이드' 인수…챗GPT 시각적 업무 기능 강화",
-      "summary": "오픈AI가 프레젠테이션 제작 자동화 스타트업인 넥스트슬라이드(NextSlide)를 인수하며 '챗GPT'의 문서 시각화 및 업무 생산성 기능 강화에 나섰다. 아흐메드 베슈리 넥스트슬라이드 창립자는 8일(현지시간) 홈페이지를 통해 최근 오픈AI 인수 협상을 완료하고 팀이 챗GPT 핵심 개발 조직에 합류했다고 발표했다. 구체적인 재정적 조건은 공개되지 않았다. 1년 전 창립한 넥스트슬라이드는 텍스트 프롬프트, 메모, 문서, 연구 자료 등을 사용자가 쉽게 수정할 수 있는 고품질 프레젠테이션 슬라이드로 자…",
-      "one_line": "아흐메드 베슈리 넥스트슬라이드 창립자는 8일(현지시간) 홈페이지를 통해 최근 오픈AI 인수 협상을 완료하고 팀이 챗GPT 핵심 개발 조직에 합류했다고 발표했다.",
-      "one_line_kr": "아흐메드 베슈리 넥스트슬라이드 창립자는 8일(현지시간) 홈페이지를 통해 최근 오픈AI 인수 협상을 완료하고 팀이 챗GPT 핵심 개발 조직에 합류했다고 발표했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213715",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 10:41",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 프레젠테이션 스타트업 '넥스트슬라이드' 인수…챗GPT 시각적 업무 기능 강화"
-    },
-    {
-      "id": "2026-08-10_0008",
-      "title": "여수, 수족구병 증가…영유아 예방수칙 주의 당부",
-      "summary": "AI 생성 영상여수시가 영유아를 중심으로 수족구병 예방관리가 강화한다. 여수는 7일 최근 전국적으로 수족구병 환자가 늘고 있다며 어린이집과 유치원, 키즈카페 등 영유아 이용시설과 가정에 올바른 손 씻기와 공용물품 소독 등 개인위생수칙 준수를 당부했다.질병관리청 수족구병 표본감시 결과에 따르면 수족구병 의심환자 비율은 최근 12주간 약 33배 증가했다. 특히 0~6세 영유아는 외래환자 1000명당 48.3명으로 가장 높은 비율을 보였다.수족구병은 환자의 침과 콧물, 수포 진물, 분변 등에 접촉하거나…",
-      "one_line": "AI 생성 영상여수시가 영유아를 중심으로 수족구병 예방관리가 강화한다.",
-      "one_line_kr": "AI 생성 영상여수시가 영유아를 중심으로 수족구병 예방관리가 강화한다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213686",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 09:35",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "여수, 수족구병 증가…영유아 예방수칙 주의 당부"
-    },
-    {
-      "id": "2026-08-10_0009",
-      "title": "순천, 폭염 중대경보 대응 강화…취약계층·야외작업장 점검",
-      "summary": "AI 생성 영상순천시가 폭염 장기화에 대비해 재난안전대책본부를 가동하고 현장 중심 대응을 강화한다.7일 순천 지역에 폭염 중대경보가 내려진 뒤 9개 부서와 읍면동이 상황근무에 들어갔으며, 취약계층 보호와 야외작업장 안전관리, 농축수산 피해 예방을 분야별로 추진한다.순천은 지난 5일 폭염대응 점검회의와 상황판단회의를 열고 온열질환 감시, 취약계층 보호, 공사장·농작업장 안전관리, 무더위쉼터 운영, 농축수산 피해 예방, 시민 홍보 등 분야별 조치방안을 마련했다.순천은 독거노인과 거동불편 장애인, 기저…",
-      "one_line": "AI 생성 영상순천시가 폭염 장기화에 대비해 재난안전대책본부를 가동하고 현장 중심 대응을 강화한다.7일 순천 지역에 폭염 중대경보가 내려진 뒤 9개 부서와 읍면동이 상황근무에 들어갔으며, 취약계층 보호와 야외작업장…",
-      "one_line_kr": "AI 생성 영상순천시가 폭염 장기화에 대비해 재난안전대책본부를 가동하고 현장 중심 대응을 강화한다.7일 순천 지역에 폭염 중대경보가 내려진 뒤 9개 부서와 읍면동이 상황근무에 들어갔으며, 취약계층 보호와 야외작업장…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213673",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-09 09:25",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "순천, 폭염 중대경보 대응 강화…취약계층·야외작업장 점검"
-    },
-    {
-      "id": "2026-08-10_0010",
-      "title": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
-      "summary": "The AI-focused hedge fund is still making some big bets.",
-      "one_line": "The AI-focused hedge fund is still making some big bets.",
-      "one_line_kr": "AI에 초점을 맞춘 헤지펀드는 여전히 큰 규모의 투자를 하고 있습니다.",
-      "url": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-10 05:35",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "위기에 처한 헤지펀드 Situational Awareness, 칩 스타트업 Source Foundry에 4억 달러 투자"
-    },
-    {
-      "id": "2026-08-10_0011",
-      "title": "Anthropic is turning Claude Code’s auto mode on by default",
-      "summary": "Programming with Claude Code will soon require even less human oversight.",
-      "one_line": "Programming with Claude Code will soon require even less human oversight.",
-      "one_line_kr": "Claude Code를 사용한 프로그래밍에는 곧 사람의 감독이 훨씬 덜 필요하게 될 것입니다.",
-      "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-10 04:20",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Anthropic은 기본적으로 Claude Code의 자동 모드를 활성화합니다."
-    },
-    {
-      "id": "2026-08-10_0012",
-      "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
-      "summary": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad science fiction reader.",
-      "one_line": "On the latest episode of Equity, we spoke to Jill Lepore about \"government by machines\" and why Elon Musk is a bad…",
-      "one_line_kr": "Equity의 최신 에피소드에서 우리는 Jill Lepore와 \"기계에 의한 정부\"에 대해 이야기하고 Elon Musk가 나쁜 이유에 대해 이야기했습니다.",
-      "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-10 00:00",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "역사가 질 레포어(Jill Lepore)는 실리콘 밸리가 공상 과학 소설을 잘못 읽고 민주주의를 훼손한다고 말했습니다."
-    },
-    {
-      "id": "2026-08-10_0013",
-      "title": "The AI safety test is becoming a safety risk",
-      "summary": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about whether safety infrastructure, industry standards and regulation can keep pace with increasingly powerful models.",
-      "one_line": "AI agents are escaping cybersecurity testing environments and reaching real-world systems, raising questions about…",
-      "one_line_kr": "AI 에이전트는 사이버 보안 테스트 환경을 벗어나 실제 시스템에 도달하여 다음에 대한 질문을 제기합니다.",
-      "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-09 23:30",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "AI 안전성 테스트가 안전 리스크로 대두되고 있다"
-    },
-    {
-      "id": "2026-08-10_0014",
-      "title": "Sheaf-theoretic Signal Processing on Graphs: Spectral Theory, Filtering, and Sampling",
-      "summary": "Modern sensing, communication, and learning systems generate heterogeneous network signals, with local data differing in dimension, modality, and geometric structure. Processing such data requires a mathematical framework capable of simultaneously modeling heterogeneous local sig…",
-      "one_line": "Modern sensing, communication, and learning systems generate heterogeneous network signals, with local data differing…",
-      "one_line_kr": "현대의 감지, 통신 및 학습 시스템은 로컬 데이터가 서로 다른 이기종 네트워크 신호를 생성합니다.",
-      "url": "https://tldr.takara.ai/p/2608.01318",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-03 00:39",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "그래프의 뭉치 이론적인 신호 처리: 스펙트럼 이론, 필터링 및 샘플링"
-    },
-    {
-      "id": "2026-08-10_0015",
-      "title": "Observation-Grounded Self-Predictive Reinforcement Learning for Visual Continuous Control",
-      "summary": "Sample-efficient policy learning from pixels is a long-standing challenge in reinforcement learning (RL). Recent dynamics-based representation learning methods have significantly improved the sample efficiency of model-free visual RL by learning dynamics-aware representations thr…",
-      "one_line": "Sample-efficient policy learning from pixels is a long-standing challenge in reinforcement learning (RL).",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://tldr.takara.ai/p/2608.05989",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-06 22:02",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "시각적 연속 제어를 위한 관찰 기반 자기 예측 강화 학습"
-    },
-    {
-      "id": "2026-08-10_0016",
-      "title": "Trajectory-Guided Forget-Recover Network for Continual LLM Unlearning",
-      "summary": "Machine unlearning aims to eliminate the influence of sensitive data on a model. In the real world, unlearning requests arrive continually, which gives rise to two challenges. First, an unlearning intervention may redistribute target-related computation across remaining pathways,…",
-      "one_line": "First, an unlearning intervention may redistribute target-related computation across remaining pathways,…",
-      "one_line_kr": "첫째, 학습 취소 개입은 나머지 경로에 걸쳐 목표 관련 계산을 재분배할 수 있습니다.",
-      "url": "https://tldr.takara.ai/p/2608.03123",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-04 13:49",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "지속적인 LLM 언러닝을 위한 궤도 기반 망각 복구 네트워크"
-    },
-    {
-      "id": "2026-08-10_0017",
-      "title": "Top LLM Observability and Evaluation Platforms in 2026: Langfuse, LangSmith, Braintrust, Arize, and More Compared",
-      "summary": "A verified 2026 comparison of LLM observability platforms covering tracing depth, evaluation capability, production monitoring, and pricing. The post Top LLM Observability and Evaluation Platforms in 2026: Langfuse, LangSmith, Braintrust, Arize, and More Compared appeared first o…",
-      "one_line": "The post Top LLM Observability and Evaluation Platforms in 2026: Langfuse, LangSmith, Braintrust, Arize, and More…",
-      "one_line_kr": "2026년 최고의 LLM 관찰 가능성 및 평가 플랫폼: Langfuse, LangSmith, Braintrust, Arize 등...",
-      "url": "https://www.marktechpost.com/2026/08/09/top-llm-observability-and-evaluation-platforms-in-2026-langfuse-langsmith-braintrust-arize-and-more-compared/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-10 03:15",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "2026년 최고의 LLM 관찰 가능성 및 평가 플랫폼: Langfuse, LangSmith, Braintrust, Arize 등 기타 비교 대상"
-    },
-    {
-      "id": "2026-08-10_0018",
-      "title": "IMDb Sentiment Analysis with DistilBERT LoRA, TF-IDF Baselines, Calibration, Interpretability, Robustness Testing, and Semi-Supervised Learning",
-      "summary": "This tutorial provides a comprehensive guide to building a robust sentiment analysis workflow. By combining classical TF-IDF baselines with modern parameter-efficient fine-tuning (DistilBERT + LoRA), we explore deep model interpretability, calibration, and semi-supervised techniq…",
-      "one_line": "This tutorial provides a comprehensive guide to building a robust sentiment analysis workflow.",
-      "one_line_kr": "이 튜토리얼은 강력한 감정 분석 워크플로우를 구축하기 위한 포괄적인 가이드를 제공합니다.",
-      "url": "https://www.marktechpost.com/2026/08/09/imdb-sentiment-analysis-with-distilbert-lora-tf-idf-baselines-calibration-interpretability-robustness-testing-and-semi-supervised-learning/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-09 16:17",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "DistilBERT LoRA, TF-IDF 기준선, 보정, 해석성, 견고성 테스트 및 S를 사용한 IMDb 감정 분석"
-    },
-    {
-      "id": "2026-08-10_0019",
-      "title": "What came into force with the EU’s AI Act this week – and what didn’t - Al Jazeera",
-      "summary": "What came into force with the EU’s AI Act this week – and what didn’t Al Jazeera",
-      "one_line": "What came into force with the EU’s AI Act this week – and what didn’t Al Jazeera",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHl4alozYkdOS3hobGhycktVYmVLSnpvTFE4Zmt4Szh2bUR3SXJqUTV6UWE2RDd1SnlNdURrZ0tVRE0yVEVMd2JCZXFjREVFa2pUNjZkWDZwNGF1VkpFZ2tybWgwdElTWnFMMFQxdEFiUTd3LWVDLVF2Yy1RRXJYSkVydlhIV3NvTXUzTEVmOERSMFNwc1BVT1lxR1NIR3oyVmZSYXRfT3bSAa4BQVVfeXFMUEZUTXJIN1RKMVljV25weVJDd28zajBOb1Y1cHhqcjNLTlVjbGJNQUVZcGlDUzcxMFJ3UmlkOWlpLTk3RHhycTVzOVRTRzZsYWtnaEtRMGlPb19CX1N4YUw0TDRoQUswbUkzQlFSeDVvcW91a3pYV3FocVBodlZVb3VrdjdROUl5WkM2OEhrenB3X0J3X3Y0d3ZzOHA3bHh5Q3dPN0t1ak50bS1ESi13?oc=5",
-      "source": "AI Regulation News",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2026-08-06 21:55",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "이번 주에 EU의 AI법이 발효된 것과 발효되지 않은 것 - Al Jazeera"
-    },
-    {
-      "id": "2026-08-10_0020",
-      "title": "Anthropic pays $1.5 billion to settle a copyright case - marketplace.org",
-      "summary": "Anthropic pays $1.5 billion to settle a copyright case marketplace.org",
-      "one_line": "Anthropic pays $1.5 billion to settle a copyright case marketplace.org",
-      "one_line_kr": "Anthropic은 저작권 소송을 해결하기 위해 15억 달러를 지불했습니다 market.org",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUjJ5QU5DbDRaUUlWQ0RhWXdWM3lFNHpxcmY1QllwcDJaWjZaemVlZmU1VGN2YWRRdW5wOFlzcTNJODZwNEp2NWpJanZfaGQ2SzY0U2Z5eWctdTY3Nnh6S3hKYmJtTEE1NUNKTnhuX25kakdrQVAtczdpQzJPblAtZDZoOFRNVjJqR0lCcjZPOWlaX2F1R255OUh6VTBUZw?oc=5",
-      "source": "AI Copyright Law",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2026-07-21 16:00",
-      "collect_date": "2026-08-10",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Anthropic은 저작권 소송을 해결하기 위해 15억 달러를 지불했습니다-marketplace.org"
     }
   ]
 }

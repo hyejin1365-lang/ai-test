@@ -1,19 +1,19 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-08-21 07:33",
-  "total": 376,
-  "kr_count": 111,
-  "en_count": 265,
+  "generated_at": "2026-08-22 07:31",
+  "total": 380,
+  "kr_count": 112,
+  "en_count": 268,
   "category_stats": {
-    "콘텐츠": 110,
-    "영상AI": 46,
-    "이미지·디자인AI": 34,
+    "콘텐츠": 111,
+    "영상AI": 41,
+    "이미지·디자인AI": 35,
     "LLM": 4,
-    "개발AI": 38,
-    "AI법률": 7,
-    "논문": 104,
-    "비즈니스": 33
+    "개발AI": 43,
+    "AI법률": 6,
+    "논문": 109,
+    "비즈니스": 31
   },
   "source_stats": [
     {
@@ -45,36 +45,32 @@
       "count": 24
     },
     {
+      "source": "ArXiv CL",
+      "count": 20
+    },
+    {
       "source": "MIT Tech Review",
       "count": 18
     },
     {
       "source": "MarkTechPost",
-      "count": 15
-    },
-    {
-      "source": "ArXiv CL",
-      "count": 15
+      "count": 17
     },
     {
       "source": "바이라인네트워크",
-      "count": 14
+      "count": 15
+    },
+    {
+      "source": "GitHub Changelog",
+      "count": 13
     },
     {
       "source": "AI Business",
-      "count": 13
+      "count": 11
     },
     {
       "source": "OpenAI News (영상)",
       "count": 11
-    },
-    {
-      "source": "GitHub Changelog",
-      "count": 11
-    },
-    {
-      "source": "Pika Blog",
-      "count": 9
     },
     {
       "source": "Latent Space",
@@ -85,8 +81,12 @@
       "count": 6
     },
     {
-      "source": "AI Copyright Law",
+      "source": "Pika Blog",
       "count": 4
+    },
+    {
+      "source": "AI Copyright Law",
+      "count": 3
     },
     {
       "source": "Together AI Blog",
@@ -103,6 +103,14 @@
     {
       "source": "AI Regulation News",
       "count": 2
+    },
+    {
+      "source": "Midjourney Updates",
+      "count": 1
+    },
+    {
+      "source": "DeepMind",
+      "count": 1
     },
     {
       "source": "VS Code Release Notes",
@@ -128,46 +136,42 @@
     },
     {
       "keyword": "LLM",
-      "count": 31
+      "count": 33
     },
     {
       "keyword": "에이전트",
-      "count": 22
+      "count": 18
     },
     {
       "keyword": "GPT",
-      "count": 16
-    },
-    {
-      "keyword": "Reasoning",
       "count": 15
     },
     {
       "keyword": "Benchmark",
-      "count": 14
+      "count": 15
     },
     {
       "keyword": "GitHub",
-      "count": 12
+      "count": 14
+    },
+    {
+      "keyword": "Reasoning",
+      "count": 14
     },
     {
       "keyword": "Diffusion",
-      "count": 11
-    },
-    {
-      "keyword": "Pika",
-      "count": 9
-    },
-    {
-      "keyword": "Fine-tuning",
-      "count": 8
-    },
-    {
-      "keyword": "Anthropic",
-      "count": 8
+      "count": 10
     },
     {
       "keyword": "Transformer",
+      "count": 10
+    },
+    {
+      "keyword": "Fine-tuning",
+      "count": 9
+    },
+    {
+      "keyword": "Anthropic",
       "count": 8
     },
     {
@@ -179,15 +183,23 @@
       "count": 7
     },
     {
+      "keyword": "Cursor",
+      "count": 6
+    },
+    {
+      "keyword": "Claude",
+      "count": 5
+    },
+    {
+      "keyword": "Multimodal",
+      "count": 5
+    },
+    {
+      "keyword": "RAG",
+      "count": 5
+    },
+    {
       "keyword": "추론",
-      "count": 7
-    },
-    {
-      "keyword": "인공지능",
-      "count": 7
-    },
-    {
-      "keyword": "생성형 AI",
       "count": 5
     },
     {
@@ -197,17 +209,9 @@
     {
       "keyword": "ChatGPT",
       "count": 5
-    },
-    {
-      "keyword": "Multimodal",
-      "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-08-15",
-      "count": 58
-    },
     {
       "date": "2026-08-16",
       "count": 33
@@ -231,9 +235,21 @@
     {
       "date": "2026-08-21",
       "count": 73
+    },
+    {
+      "date": "2026-08-22",
+      "count": 62
     }
   ],
   "cat_daily": {
+    "2026-08-22": {
+      "콘텐츠": 23,
+      "영상AI": 4,
+      "이미지·디자인AI": 6,
+      "개발AI": 8,
+      "논문": 16,
+      "비즈니스": 5
+    },
     "2026-08-21": {
       "콘텐츠": 18,
       "영상AI": 6,
@@ -285,18 +301,156 @@
       "AI법률": 1,
       "논문": 8,
       "비즈니스": 1
-    },
-    "2026-08-15": {
-      "콘텐츠": 22,
-      "영상AI": 9,
-      "이미지·디자인AI": 5,
-      "개발AI": 3,
-      "AI법률": 1,
-      "논문": 11,
-      "비즈니스": 7
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-08-22_0000",
+      "title": "[8월21일] 오픈AI가 ‘컴퓨터 유즈’에 보인 자신감…9년간 이어온 ‘행동하는 AI’의 현재",
+      "summary": "오픈AI가 AI가 사람 대신 컴퓨터를 직접 조작하는 GUI 에이전트 ‘컴퓨터 유즈(Computer Use)’를 본격 확대하고 있습니다. 비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은 아닙니다. 오픈AI는 2025년 1월 '오퍼레이터'라는 GUI 에이전트를 출시했고, 앤트로픽은 이보다 몇개월 앞서 컴퓨터 유즈를 선보였습니다. 이번 보도에서 …",
+      "one_line": "비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은…",
+      "one_line_kr": "비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214199",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-22 07:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[8월21일] 오픈AI가 ‘컴퓨터 유즈’에 보인 자신감…9년간 이어온 ‘행동하는 AI’의 현재"
+    },
+    {
+      "id": "2026-08-22_0002",
+      "title": "커서, 장기 목표 기능 '/goal' 도입...스스로 작업하는 자율 에이전트 진화",
+      "summary": "AI 코딩 플랫폼 커서(Cursor)가 개발자의 개입을 최소화하고 장시간 스스로 작업을 수행할 수 있도록 클라우드 에이전트 기능을 대폭 강화했다. 커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를 수행하는 자율형 에이전트로 진화하는 모습이다.이번 업데이트의 핵심은 에이전트에 장기적인 작업 목표를 부여할 수 있는 ‘/goal’ 기능이다.…",
+      "one_line": "커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를…",
+      "one_line_kr": "커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214205",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:29",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "커서, 장기 목표 기능 '/goal' 도입...스스로 작업하는 자율 에이전트 진화"
+    },
+    {
+      "id": "2026-08-22_0003",
+      "title": "중국 맞춤형 AI 칩 재진출설에...엔비디아 \"중국 전용 LPU 로드맵 없어\"",
+      "summary": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다. 다만 엔비디아는 중국 전용 LPU 제품을 개발하거나 판매할 계획이 없다고 공식 부인하면서 실제 출시 여부는 불투명한 상황이다.20일(현지시간) 디 인포메이션에 따르면, 엔비디아는 중국 고객을 대상으로 한 LPU 변형 제품을 개발하고 있다.특히, 연말까지 소량 출하를 시작할 계획인 것으…",
+      "one_line": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다.",
+      "one_line_kr": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214214",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:22",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "중국 맞춤형 AI 칩 재진출설에...엔비디아 \"중국 전용 LPU 로드맵 없어\""
+    },
+    {
+      "id": "2026-08-22_0004",
+      "title": "\"챗GPT 등장 이후 웹페이지 35%에 AI 흔적\"...인터넷 생태계 지각변동",
+      "summary": "'챗GPT'가 등장한 이후 인터넷에 게시된 웹페이지 가운데 3분의 1 이상에서 AI가 작성했거나 상당 부분 수정한 것으로 추정되는 흔적이 발견됐다는 연구 결과가 나왔다. 20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한 것으로 보이는 흔적이 발견됐다.사람보다 봇이 더 많은 웹 트래픽을 만들어내는 데 이어, 웹 콘텐츠 생산에서도 AI의 영…",
+      "one_line": "20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한…",
+      "one_line_kr": "20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214213",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:06",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "\"챗GPT 등장 이후 웹페이지 35%에 AI 흔적\"...인터넷 생태계 지각변동"
+    },
+    {
+      "id": "2026-08-22_0027",
+      "title": "Changelog - 8/20/26",
+      "summary": "Two weeks ago, we launched a very rough draft of some big changes to alpha.midjourney.com. Since then, thousands of you have been testing and hundreds have given us thoughtful feedback, both positive and negative (Thank you! Yes, even the brutal stuff.). That&apos;s the deal with…",
+      "one_line": "Two weeks ago, we launched a very rough draft of some big changes to alpha.midjourney.com.",
+      "one_line_kr": "2주 전, 우리는 alpha.midjourney.com에 대한 몇 가지 큰 변경 사항에 대한 초안을 출시했습니다.",
+      "url": "https://updates.midjourney.com/changelog-8-20-26/",
+      "source": "Midjourney Updates",
+      "category": "이미지·디자인AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-22 01:48",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "변경 내역 - 2026년 8월 20일"
+    },
+    {
+      "id": "2026-08-22_0039",
+      "title": "Building Agentic Document Intelligence Pipelines: Creating Scientific Figures with AutoFigure",
+      "summary": "This tutorial explores AutoFigure, a practical toolkit for generating professional scientific figures directly from text descriptions and research papers. We walk through setting up the environment, configuring an API-backed generation workflow, and converting complex document in…",
+      "one_line": "This tutorial explores AutoFigure, a practical toolkit for generating professional scientific figures directly from…",
+      "one_line_kr": "이 튜토리얼에서는 전문적인 과학 수치를 직접 생성하기 위한 실용적인 툴킷인 AutoFigure를 살펴봅니다.",
+      "url": "https://www.marktechpost.com/2026/08/21/building-agentic-document-intelligence-pipelines-creating-scientific-figures-with-autofigure/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-22 07:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0059",
+      "title": "When AI designs a drug, who gets the credit?",
+      "summary": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis, it enthusiastically claimed in a press release that the molecule had been “discovered by” its generative AI platform. Insilico leads a pack of companies using A…",
+      "one_line": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis,…",
+      "one_line_kr": "생명공학 회사인 Insilico Medicine이 컴퓨터 모델을 사용하여 폐섬유증에 대한 유망한 약물을 제안했을 때…",
+      "url": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
+      "source": "MIT Tech Review",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 18:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "AI가 약을 디자인하면 누가 공로를 인정받나요?"
+    },
     {
       "id": "2026-08-21_0003",
       "title": "지푸, 'GLM-5.3' API 공개…가격 동결로 프론티어 AI 시장 가성비 공략",
@@ -359,162 +513,15 @@
         "class": "hot"
       },
       "title_kr": "\"AI 에이전트 허점 먼저 파악한다\"...파브릭스, 자율형 레드팀 도구 ‘닉스’ 공개"
-    },
-    {
-      "id": "2026-08-21_0008",
-      "title": "[게시판] 팀스파르타, 폐쇄망 코딩 에이전트 'AX 포트리스' 시연 등 단신",
-      "summary": "■ 팀스파르타(대표 이범규)는 서울 코엑스에서 열린 'AI 서밋 서울'서 폐쇄망 기반 AI 코딩 에이전트 'AX 포트리스'를 선보였다고 밝혔다. 자체 모델 'K-AX 스파르탄 122B'를 탑재했으며, 인터넷이 차단된 환경에서도 AI가 코드 생성과 자동완성, 코드 검토부터 빌드·테스트·배포까지 수행한다. 소스코드가 외부로 전송되지 않는 구조로 보안 규제로 인해 생성형 AI 도입에 어려움을 겪는 기업에게 적합하다는 설명이다.■ 마키나락스(대표 윤성호)는 오는 9월3일 웨스틴 서울 파르나스에서 AI 컨…",
-      "one_line": "소스코드가 외부로 전송되지 않는 구조로 보안 규제로 인해 생성형 AI 도입에 어려움을 겪는 기업에게 적합하다는 설명이다.■ 마키나락스(대표 윤성호)는 오는 9월3일 웨스틴 서울 파르나스에서 AI 컨…",
-      "one_line_kr": "소스코드가 외부로 전송되지 않는 구조로 보안 규제로 인해 생성형 AI 도입에 어려움을 겪는 기업에게 적합하다는 설명이다.■ 마키나락스(대표 윤성호)는 오는 9월3일 웨스틴 서울 파르나스에서 AI 컨…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214155",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-20 17:00",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "[게시판] 팀스파르타, 폐쇄망 코딩 에이전트 'AX 포트리스' 시연 등 단신"
-    },
-    {
-      "id": "2026-08-21_0011",
-      "title": "오픈AI 코리아 “챗GPT 워크, 답변 넘어 결과물 만든다”",
-      "summary": "생성형 AI의 경쟁 무대가 ‘질문에 얼마나 잘 답하느냐’에서 ‘실제 업무를 얼마나 대신 수행하느냐’로 이동하고 있다. 오픈AI가 코딩 에이전트 코덱스의 기술을 연구·분석과 문서 작성 등 지식 업무로 확장한 ‘챗GPT 워크’를 앞세워 업무용 AI 시장 공략을 본격화하고 있다. 오픈AI는 20일 서울에서 챗GPT 워크의 기능을 시연하고 국내 전문가들의 실제 활용 사례를 소개했다. 챗GPT 워크는 사용자의 질문에 답하는 데 그치지 않고 업무에 필요한 정보를 수집·분석한 뒤 스프레드시트, 프레젠테이션, …",
-      "one_line": "생성형 AI의 경쟁 무대가 ‘질문에 얼마나 잘 답하느냐’에서 ‘실제 업무를 얼마나 대신 수행하느냐’로 이동하고 있다.",
-      "one_line_kr": "생성형 AI의 경쟁 무대가 ‘질문에 얼마나 잘 답하느냐’에서 ‘실제 업무를 얼마나 대신 수행하느냐’로 이동하고 있다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21389",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-20 15:20",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI 코리아 “챗GPT 워크, 답변 넘어 결과물 만든다”"
-    },
-    {
-      "id": "2026-08-21_0013",
-      "title": "패치 나오기 전에 뚫리는 보안...‘마이너스 대응시간’의 도래",
-      "summary": "보안 담당자가 새벽에 걸려온 알림을 확인하고 패치를 내려받는 사이, 공격은 이미 끝나 있을 수 있다. 이는 과장이 아니다. 보안이 뚫리는 속도가 점차 빨라지고 있다. 아이러니하게도 그 중심에는 AI가 있다. 생성형 AI는 업무와 일상의 효율성을 높여준 반면 보안을 위협하는 주체로서 악용되는 사례도 늘고 있다. ◇ 패치가 나오기도 전에, 공격은 이미 진행 중이다구글 클라우드 산하 맨디언트는 지난 3월 공개한 보고서에서 취약점 공개와 실제 악용 사이의 평균 시간(TTE)이 마이너스로 돌아섰다고 밝혔다…",
-      "one_line": "아이러니하게도 그 중심에는 AI가 있다.",
-      "one_line_kr": "아이러니하게도 그 중심에는 AI가 있다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21387",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-20 13:01",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "패치 나오기 전에 뚫리는 보안...‘마이너스 대응시간’의 도래"
-    },
-    {
-      "id": "2026-08-21_0019",
-      "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
-      "summary": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
-      "one_line": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks…",
-      "one_line_kr": "정해진 기한과 다른 곳에 할당된 디자인 리소스를 통해 Stampli는 Codex와 ChatGPT Work를 사용하여 몇 주를 단축했습니다.",
-      "url": "https://openai.com/index/stampli",
-      "source": "OpenAI News (영상)",
-      "category": "영상AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-08-20 09:00",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Stampli는 ChatGPT Work를 사용하여 실행 시간을 68% 단축했습니다."
-    },
-    {
-      "id": "2026-08-21_0038",
-      "title": "Meet UPDF: A Lightweight Adobe Alternative Built for the Agentic Era",
-      "summary": "PDFs are easy to read and hard to change. AI can now summarize a 90-page contract in seconds, but it still won't rewrite the source file cleanly. UPDF is built for that second half: direct editing, 14-format conversion, 38-language OCR, and ten AI agents shipped in version 2.5. T…",
-      "one_line": "AI can now summarize a 90-page contract in seconds, but it still won't rewrite the source file cleanly.",
-      "one_line_kr": "이제 AI는 90페이지 분량의 계약서를 몇 초 만에 요약할 수 있지만 여전히 소스 파일을 깔끔하게 다시 작성하지는 않습니다.",
-      "url": "https://www.marktechpost.com/2026/08/20/meet-updf-a-lightweight-adobe-alternative-built-for-the-agentic-era/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-21 04:34",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "UPDF를 만나보세요: Agentic 시대를 위해 제작된 경량 Adobe 대안"
-    },
-    {
-      "id": "2026-08-21_0039",
-      "title": "Liquid AI Releases LFM2.5-DSpark Draft Models That Deliver Up to 3.18x Faster Decoding Without Changing Model Outputs",
-      "summary": "Three ~300M drafters bring speculative decoding to LFM2.5, delivering up to 3.18x faster decoding with identical greedy output. The post Liquid AI Releases LFM2.5-DSpark Draft Models That Deliver Up to 3.18x Faster Decoding Without Changing Model Outputs appeared first on MarkTec…",
-      "one_line": "The post Liquid AI Releases LFM2.5-DSpark Draft Models That Deliver Up to 3.18x Faster Decoding Without Changing Model…",
-      "one_line_kr": "포스트 Liquid AI, 모델 변경 없이 최대 3.18배 더 빠른 디코딩을 제공하는 LFM2.5-DSpark 초안 모델 출시…",
-      "url": "https://www.marktechpost.com/2026/08/20/liquid-ai-releases-lfm2-5-dspark-draft-models-that-deliver-up-to-3-18x-faster-decoding/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-21 03:53",
-      "collect_date": "2026-08-21",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-21_0071",
-      "title": "Meta AI Now Available as a Desktop App for Mac",
-      "summary": "The release is part of the company’s strengthened emphasis on AI and appealing to businesses.",
-      "one_line": "The release is part of the company’s strengthened emphasis on AI and appealing to businesses.",
-      "one_line_kr": "이번 출시는 회사가 AI에 대한 강조를 강화하고 기업에 어필하는 것의 일환입니다.",
-      "url": "https://aibusiness.com/generative-ai/meta-ai-now-available-as-desktop-app-mac",
-      "source": "AI Business",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-21 02:40",
-      "collect_date": "2026-08-21",
-      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltf46451657f3e280e/6a873e2c2e99fe250e58b77c/Meta_AI_logo.png?width=720&quality=80&disable=upscale",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "이제 Meta AI를 Mac용 데스크탑 앱으로 사용할 수 있습니다."
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "지푸, 'GLM-5.3' API 공개…가격 동결로 프론티어 AI 시장 가성비 공략",
+      "title": "[8월21일] 오픈AI가 ‘컴퓨터 유즈’에 보인 자신감…9년간 이어온 ‘행동하는 AI’의 현재",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214148",
-      "one_line": "지푸 AI(Z.ai)가 최신 오픈웨이트 모델 ‘GLM-5.3’을 API로 공개하며 개발자들이 자체 서비스와 AI 에이전트에 모델을 직접 연동할 수 있도록 했다.",
-      "date": "2026-08-20 17:59"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214199",
+      "one_line": "비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은…",
+      "date": "2026-08-22 07:00"
     },
     "영상AI": {
       "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
@@ -524,11 +531,11 @@
       "date": "2026-08-20 09:00"
     },
     "이미지·디자인AI": {
-      "title": "SignalReasoner: Assessing the Upper Bound of 3B Models for Signal Mathematical Reasoning",
-      "source": "HuggingFace Papers",
-      "url": "https://tldr.takara.ai/p/2608.17301",
-      "one_line": "그러나 신호 처리 문제에 대한 적용은 여전히 ​​관련이 있습니다…",
-      "date": "2026-08-18 11:52"
+      "title": "Changelog - 8/20/26",
+      "source": "Midjourney Updates",
+      "url": "https://updates.midjourney.com/changelog-8-20-26/",
+      "one_line": "2주 전, 우리는 alpha.midjourney.com에 대한 몇 가지 큰 변경 사항에 대한 초안을 출시했습니다.",
+      "date": "2026-08-22 01:48"
     },
     "LLM": {
       "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
@@ -538,22 +545,1324 @@
       "date": "2026-08-18 20:00"
     },
     "개발AI": {
-      "title": "Meet UPDF: A Lightweight Adobe Alternative Built for the Agentic Era",
+      "title": "Building Agentic Document Intelligence Pipelines: Creating Scientific Figures with AutoFigure",
       "source": "MarkTechPost",
-      "url": "https://www.marktechpost.com/2026/08/20/meet-updf-a-lightweight-adobe-alternative-built-for-the-agentic-era/",
-      "one_line": "이제 AI는 90페이지 분량의 계약서를 몇 초 만에 요약할 수 있지만 여전히 소스 파일을 깔끔하게 다시 작성하지는 않습니다.",
-      "date": "2026-08-21 04:34"
+      "url": "https://www.marktechpost.com/2026/08/21/building-agentic-document-intelligence-pipelines-creating-scientific-figures-with-autofigure/",
+      "one_line": "이 튜토리얼에서는 전문적인 과학 수치를 직접 생성하기 위한 실용적인 툴킷인 AutoFigure를 살펴봅니다.",
+      "date": "2026-08-22 07:00"
     }
   },
   "period_key_points": [
-    "지푸 AI(Z.ai)가 최신 오픈웨이트 모델 ‘GLM-5.3’을 API로 공개하며 개발자들이 자체 서비스와 AI 에이전트에 모델을 직접 연동할 수 있도록 했다.",
-    "세레브라스가 차세대 AI 가속기 시스템 ‘CS-4’를 공개했다.",
-    "AI 에이전트가 고객을 직접 상대하는 서비스에 빠르게 도입되는 가운데, 에이전트의 보안 취약점과 논리적 오류를 스스로 공격해 찾아내는 자율형 레드팀 도구가 등장했다.",
-    "■ 팀스파르타(대표 이범규)는 서울 코엑스에서 열린 'AI 서밋 서울'서 폐쇄망 기반 AI 코딩 에이전트 'AX 포트리스'를 선보였다고 밝혔다.",
-    "생성형 AI의 경쟁 무대가 ‘질문에 얼마나 잘 답하느냐’에서 ‘실제 업무를 얼마나 대신 수행하느냐’로 이동하고 있다."
+    "오픈AI가 AI가 사람 대신 컴퓨터를 직접 조작하는 GUI 에이전트 ‘컴퓨터 유즈(Computer Use)’를 본격 확대하고 있습니다.",
+    "AI 코딩 플랫폼 커서(Cursor)가 개발자의 개입을 최소화하고 장시간 스스로 작업을 수행할 수 있도록 클라우드 에이전트 기능을 대폭 강화했다.",
+    "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다.",
+    "'챗GPT'가 등장한 이후 인터넷에 게시된 웹페이지 가운데 3분의 1 이상에서 AI가 작성했거나 상당 부분 수정한 것으로 추정되는 흔적이 발견됐다는 연구 결과가 나왔다.",
+    "2주 전, 우리는 alpha.midjourney.com에 대한 몇 가지 큰 변경 사항에 대한 초안을 출시했습니다."
   ],
-  "period_prose": "이번 주간 총 376건의 AI 자료가 수집됐습니다. 국내 111건, 해외 265건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Reasoning입니다.",
+  "period_prose": "이번 주간 총 380건의 AI 자료가 수집됐습니다. 국내 112건, 해외 268건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Benchmark입니다.",
   "items": [
+    {
+      "id": "2026-08-22_0000",
+      "title": "[8월21일] 오픈AI가 ‘컴퓨터 유즈’에 보인 자신감…9년간 이어온 ‘행동하는 AI’의 현재",
+      "summary": "오픈AI가 AI가 사람 대신 컴퓨터를 직접 조작하는 GUI 에이전트 ‘컴퓨터 유즈(Computer Use)’를 본격 확대하고 있습니다. 비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은 아닙니다. 오픈AI는 2025년 1월 '오퍼레이터'라는 GUI 에이전트를 출시했고, 앤트로픽은 이보다 몇개월 앞서 컴퓨터 유즈를 선보였습니다. 이번 보도에서 …",
+      "one_line": "비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은…",
+      "one_line_kr": "비즈니스 인사이더(BI)는 20일 오픈AI가 컴퓨터 유즈 기술을 크롬 확장 프로그램과 클라우드·앱 내 브라우저, 코딩 도구 ‘코덱스’ 등에 적용하고 있다고 소개했습니다.사실 컴퓨터 유즈 자체가 새로운 기술은…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214199",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-22 07:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[8월21일] 오픈AI가 ‘컴퓨터 유즈’에 보인 자신감…9년간 이어온 ‘행동하는 AI’의 현재"
+    },
+    {
+      "id": "2026-08-22_0001",
+      "title": "정부, ‘미래대응기금’ 신설…초과세수로 AI·첨단기술 집중 투자",
+      "summary": "정부가 반도체 호황 등으로 발생한 추가 세수를 활용해 ‘미래대응기금’을 신설하고, AI 전환과 첨단기술 주도권 확보를 위한 국가적 투자에 나선다. AI 확산에 맞춰 국가 시스템 전반을 재설계하는 향후 2~3년을 경제 성장판을 다시 열 적기로 보고, 초과 세입을 미래 성장동력 확보의 기반으로 삼겠다는 구상이다.기획예산처는 21일 정부서울청사에서 박홍근 장관 주재로 ‘제1차 재정운용전략협의회’를 열고 이 같은 내용을 담은 미래대응기금 추진 방안을 논의했다고 발표했다. 재정운용전략협의회는 나라 살림의 …",
+      "one_line": "AI 확산에 맞춰 국가 시스템 전반을 재설계하는 향후 2~3년을 경제 성장판을 다시 열 적기로 보고, 초과 세입을 미래 성장동력 확보의 기반으로 삼겠다는 구상이다.기획예산처는 21일 정부서울청사에서 박홍근 장관…",
+      "one_line_kr": "AI 확산에 맞춰 국가 시스템 전반을 재설계하는 향후 2~3년을 경제 성장판을 다시 열 적기로 보고, 초과 세입을 미래 성장동력 확보의 기반으로 삼겠다는 구상이다.기획예산처는 21일 정부서울청사에서 박홍근 장관…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214237",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-22 06:02",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "정부, ‘미래대응기금’ 신설…초과세수로 AI·첨단기술 집중 투자"
+    },
+    {
+      "id": "2026-08-22_0002",
+      "title": "커서, 장기 목표 기능 '/goal' 도입...스스로 작업하는 자율 에이전트 진화",
+      "summary": "AI 코딩 플랫폼 커서(Cursor)가 개발자의 개입을 최소화하고 장시간 스스로 작업을 수행할 수 있도록 클라우드 에이전트 기능을 대폭 강화했다. 커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를 수행하는 자율형 에이전트로 진화하는 모습이다.이번 업데이트의 핵심은 에이전트에 장기적인 작업 목표를 부여할 수 있는 ‘/goal’ 기능이다.…",
+      "one_line": "커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를…",
+      "one_line_kr": "커서는 19일(현지시간) 개발자가 일일이 작업 과정을 관리하지 않아도 AI 에이전트가 목표를 기억하고 필요한 작업을 반복 수행하는 ‘/goal’ 기능을 추가했다.단순한 코드 생성 도구를 넘어 지속적으로 개발 업무를…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214205",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:29",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "커서, 장기 목표 기능 '/goal' 도입...스스로 작업하는 자율 에이전트 진화"
+    },
+    {
+      "id": "2026-08-22_0003",
+      "title": "중국 맞춤형 AI 칩 재진출설에...엔비디아 \"중국 전용 LPU 로드맵 없어\"",
+      "summary": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다. 다만 엔비디아는 중국 전용 LPU 제품을 개발하거나 판매할 계획이 없다고 공식 부인하면서 실제 출시 여부는 불투명한 상황이다.20일(현지시간) 디 인포메이션에 따르면, 엔비디아는 중국 고객을 대상으로 한 LPU 변형 제품을 개발하고 있다.특히, 연말까지 소량 출하를 시작할 계획인 것으…",
+      "one_line": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다.",
+      "one_line_kr": "엔비디아가 미국의 수출 규제와 중국 정부의 자국산 반도체 육성 정책으로 사실상 막혀 있던 중국 AI 칩 시장에 다시 진입하기 위해 중국 고객에 맞춘 새로운 언어처리장치(LPU) 개발을 추진하고 있다는 보도가 나왔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214214",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:22",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "중국 맞춤형 AI 칩 재진출설에...엔비디아 \"중국 전용 LPU 로드맵 없어\""
+    },
+    {
+      "id": "2026-08-22_0004",
+      "title": "\"챗GPT 등장 이후 웹페이지 35%에 AI 흔적\"...인터넷 생태계 지각변동",
+      "summary": "'챗GPT'가 등장한 이후 인터넷에 게시된 웹페이지 가운데 3분의 1 이상에서 AI가 작성했거나 상당 부분 수정한 것으로 추정되는 흔적이 발견됐다는 연구 결과가 나왔다. 20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한 것으로 보이는 흔적이 발견됐다.사람보다 봇이 더 많은 웹 트래픽을 만들어내는 데 이어, 웹 콘텐츠 생산에서도 AI의 영…",
+      "one_line": "20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한…",
+      "one_line_kr": "20일(현지시간) 미국 퓨 리서치 센터(Pew Research Center) 조사에 따르면, 챗GPT가 출시된 2022년 11월 이후 게시된 영어 웹페이지 가운데 약 35%에서 AI가 작성했거나 상당 부분 편집한…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214213",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:06",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "\"챗GPT 등장 이후 웹페이지 35%에 AI 흔적\"...인터넷 생태계 지각변동"
+    },
+    {
+      "id": "2026-08-22_0005",
+      "title": "[게시판] KAIST, 9월 1일 ‘증강현실연구센터 10주년 심포지엄’ 개최 등 단신",
+      "summary": "■ 한국과학기술원(KAIST, 총장 배충식)은 증강현실연구센터(ARRC)가오는 9월 1일 KI빌딩 매트릭스 홀에서 ‘증강현실 연구 중심 10년, 다음 10년을 열다’라는 주제로 기념 심포지엄을 개최한다고 밝혔다. 이번 심포지엄에서는 지난 10년간 축적해 온 공간컴퓨팅, 확장현실(XR), 인간-컴퓨터 상호작용 연구 성과를 돌아볼 예정이다.■ AI 시니어 헬스케어 스타트업 비바랩스(대표 임하영)가 부산 래미안 어반파크와 래미안 포레스티지에서 AI 시니어 기능체력 프로그램 ‘비바태닉스’를 운영했다고 밝…",
+      "one_line": "■ 한국과학기술원(KAIST, 총장 배충식)은 증강현실연구센터(ARRC)가오는 9월 1일 KI빌딩 매트릭스 홀에서 ‘증강현실 연구 중심 10년, 다음",
+      "one_line_kr": "■ 한국과학기술원(KAIST, 총장 배충식)은 증강현실연구센터(ARRC)가오는 9월 1일 KI빌딩 매트릭스 홀에서 ‘증강현실 연구 중심 10년, 다음",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214229",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[게시판] KAIST, 9월 1일 ‘증강현실연구센터 10주년 심포지엄’ 개최 등 단신"
+    },
+    {
+      "id": "2026-08-22_0006",
+      "title": "[게시판] 메가존소프트, 농심그룹 14개 계열사 AX 체계 구축 등 단신",
+      "summary": "■ 메가존클라우드(대표 염동훈)의 관계사인 메가존소프트가 농심그룹의 구글워크스페이스(GWS) 기반 AI 전환(AX) 체계를 구축했다고 밝혔다. 메가존소프트는 농심그룹의 국내 14개 계열사와 7개 해외법인의 GWS 시스템을 구축했다. 기존 데이터의 구글드라이브 마이그레이션, 레거시 시스템 및 서드 파티 솔루션의 GWS 연동과 함께 그룹 전반의 업무 방식을 AX로 재편했다는 설명이다.■ 로보티즈(대표 김병수)는 중국 베이징에서 열린 세계로봇대회(WRC)에 참여해 휴머노이드 'AI 사피엔스' 중심 오픈…",
+      "one_line": "■ 메가존클라우드(대표 염동훈)의 관계사인 메가존소프트가 농심그룹의 구글워크스페이스(GWS) 기반 AI 전환(AX) 체계를 구축했다고 밝혔다.",
+      "one_line_kr": "■ 메가존클라우드(대표 염동훈)의 관계사인 메가존소프트가 농심그룹의 구글워크스페이스(GWS) 기반 AI 전환(AX) 체계를 구축했다고 밝혔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214201",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[게시판] 메가존소프트, 농심그룹 14개 계열사 AX 체계 구축 등 단신"
+    },
+    {
+      "id": "2026-08-22_0007",
+      "title": "휴먼 랩스, 피지컬 AI 전용 '인간 데이터' 플랫폼 구축...로봇 스킬 학습 가속",
+      "summary": "로봇이 실제 환경에서 사람처럼 상황을 이해하고 작업을 수행할 수 있도록 인간의 실생활 경험을 대규모 데이터로 전환하는 플랫폼이 등장했다. 휴먼 랩스(Humyn Labs)는 20일(현지시간) X를 통해 수천시간에 달하는 인간의 움직임과 판단을 시각·청각·이동·촉각 등 다양한 감각 데이터로 수집해 로봇이 학습할 수 있는 ‘피지컬 AI’ 전용 데이터 인프라 구축에 나섰다고 발표했다.휴먼 랩스가 주목하는 것은 기존 로봇 학습에서 상대적으로 부족했던 현실 세계의 인간 경험 데이터다. 대형언어모델(LLM)이…",
+      "one_line": "휴먼 랩스(Humyn Labs)는 20일(현지시간) X를 통해 수천시간에 달하는 인간의 움직임과 판단을 시각·청각·이동·촉각 등 다양한 감각 데이터로 수집해 로봇이 학습할 수 있는 ‘피지컬 AI’ 전용 데이터…",
+      "one_line_kr": "휴먼 랩스(Humyn Labs)는 20일(현지시간) X를 통해 수천시간에 달하는 인간의 움직임과 판단을 시각·청각·이동·촉각 등 다양한 감각 데이터로 수집해 로봇이 학습할 수 있는 ‘피지컬 AI’ 전용 데이터…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214226",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 16:55",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "휴먼 랩스, 피지컬 AI 전용 '인간 데이터' 플랫폼 구축...로봇 스킬 학습 가속"
+    },
+    {
+      "id": "2026-08-22_0008",
+      "title": "\"오픈 컴퓨트 생태계 한자리에\"...'OCP 코리아 테크 데이’ 막내려",
+      "summary": "오픈 컴퓨트 프로젝트(OCP) 재단과 OCP 코리아 커뮤니티가 서울 코엑스에서 개최한 ‘2026 OCP 코리아 테크 데이’가 21일 막을 내렸다.이번 행사에는 1000여명이 참석했으며, AI 인프라와 데이터센터, 서버·스토리지, 네트워크 등 다양한 기술 분야에 걸쳐 세션이 진행됐다.행사에는 파두, 샌디스크, 디노티시아, 슈퍼마이크로, 아이에이클라우드, 아크릴 등 국내외 IT 기업 및 기관이 대거 참여했다. 참가 기업들은 ‘AI의 미래를 설계하는 인프라 혁신’을 주제로 컴포넌트부터 하이퍼스케일 데이…",
+      "one_line": "참가 기업들은 ‘AI의 미래를 설계하는 인프라 혁신’을 주제로 컴포넌트부터 하이퍼스케일 데이…",
+      "one_line_kr": "참가 기업들은 ‘AI의 미래를 설계하는 인프라 혁신’을 주제로 컴포넌트부터 하이퍼스케일 데이…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214189",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 16:55",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"오픈 컴퓨트 생태계 한자리에\"...'OCP 코리아 테크 데이’ 막내려"
+    },
+    {
+      "id": "2026-08-22_0009",
+      "title": "메타, MS '애저' 최대 고객사로 부상...빅테크 ‘AI 순환 의존’ 심화",
+      "summary": "메타가 자체 컴퓨팅 인프라 외에도 마이크로소프트(MS)의 클라우드 플랫폼 ‘애저(Azure)’를 통해 외부 AI 모델과 컴퓨팅 자원을 대규모로 활용하고 있는 것으로 나타났다. AI 경쟁에서 앞서기 위해 빅테크 기업들이 서로의 클라우드와 모델, 인프라를 이용하는 구조가 확대되면서 업계 전반의 ‘AI 순환 의존’ 현상도 한층 뚜렷해지고 있다.20일(현지시간) 블룸버그에 따르면, 메타는 애저를 통해 AI 모델을 이용하는 데 연간 수억달러를 지출하는 주요 고객으로 떠오른 것으로 알려졌다.한 관계자에 따르…",
+      "one_line": "메타가 자체 컴퓨팅 인프라 외에도 마이크로소프트(MS)의 클라우드 플랫폼 ‘애저(Azure)’를 통해 외부 AI 모델과 컴퓨팅 자원을 대규모로 활용하고 있는 것으로 나타났다.",
+      "one_line_kr": "메타가 자체 컴퓨팅 인프라 외에도 마이크로소프트(MS)의 클라우드 플랫폼 ‘애저(Azure)’를 통해 외부 AI 모델과 컴퓨팅 자원을 대규모로 활용하고 있는 것으로 나타났다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214222",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 16:49",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "메타, MS '애저' 최대 고객사로 부상...빅테크 ‘AI 순환 의존’ 심화"
+    },
+    {
+      "id": "2026-08-22_0010",
+      "title": "“대학생 잡아라” 구글, 제미나이 1년 무료·4년 할인 혜택 공개",
+      "summary": "구글은 국내 대학생과 대학원생을 대상으로 제미나이 유료 요금제 혜택을 제공하고 대학생 앰배서더 프로그램과 대학생 플랫폼·콘텐츠와의 협업을 확대한다고 21일 밝혔다. 만 18세 이상 국내 대학생은 학교 이메일 인증을 거쳐 구글 계정을 등록하면 ‘구글 AI 플러스’를 1년간 무료로 이용할 수 있다. 월 1만1000원 상당의 요금제다. ‘구글 AI 프로’는 최대 4년간 74% 할인된 가격으로 이용할 수 있다. 해당 요금제의 정상 가격은 월 2만9000원이다. 구글은 가격 혜택을 제공하는 데 그치지 않고…",
+      "one_line": "‘구글 AI 프로’는 최대 4년간 74% 할인된 가격으로 이용할 수 있다.",
+      "one_line_kr": "‘구글 AI 프로’는 최대 4년간 74% 할인된 가격으로 이용할 수 있다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21399",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:05",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "“대학생 잡아라” 구글, 제미나이 1년 무료·4년 할인 혜택 공개"
+    },
+    {
+      "id": "2026-08-22_0011",
+      "title": "“지금 아니면 늦는다” 1년 공들인 카카오가 결정한 생존 방식",
+      "summary": "카카오가 10여 년 넘게 이어온 단일 지배구조를 내려놓는다. 카카오는 21일 오전 이사회를 열고 카카오톡과 AI 사업을 담당할 신설법인 ‘카카오AI’와 기존 계열사와 투자 기능을 맡을 존속법인 ‘카카오X’로 회사를 인적분할하기로 결의했다. 이사회 이후 열린 설명회에는 카카오AI 대표에 내정된 정신아 현 카카오 대표와 카카오X 대표에 내정된 김도영 카카오인베스트먼트 대표 겸 CA협의체 그룹투자전략실장이 나란히 참석해 취재진 질의에 답했다. ◇ 정신아·김도영 투톱 체제의 시작김도영 대표는 분할 논의 …",
+      "one_line": "카카오는 21일 오전 이사회를 열고 카카오톡과 AI 사업을 담당할 신설법인 ‘카카오AI’와 기존 계열사와 투자 기능을 맡을 존속법인 ‘카카오X’로 회사를 인적분할하기로 결의했다.",
+      "one_line_kr": "카카오는 21일 오전 이사회를 열고 카카오톡과 AI 사업을 담당할 신설법인 ‘카카오AI’와 기존 계열사와 투자 기능을 맡을 존속법인 ‘카카오X’로 회사를 인적분할하기로 결의했다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21398",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 16:50",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "“지금 아니면 늦는다” 1년 공들인 카카오가 결정한 생존 방식"
+    },
+    {
+      "id": "2026-08-22_0012",
+      "title": "포티투마루, 화성시 ‘AI 도시’ 구축 참여 “사전에 민원 예측”",
+      "summary": "포티투마루는 행정안전부와 한국지능정보사회진흥원(NIA)이 추진하고 화성특례시가 주관하는 ‘2026년 공공 AI 서비스 지원 사업’의 일환으로 ‘화성시 문제해결형 도시데이터플랫폼 구축’ 사업에 참여한다고 21일 밝혔다. 화성시는 지난 7월 30일 사업 착수보고회를 열고 플랫폼 구축에 들어갔다. 도시 곳곳에 분산된 데이터를 하나로 연결해 시민이 민원을 제기한 뒤 대응하는 기존 행정 방식에서 벗어나고자 했다. 이에 도시 문제를 사전에 파악하고 대응하는 데이터 기반 행정체계를 구축하는 것을 목표로 삼았다…",
+      "one_line": "포티투마루는 행정안전부와 한국지능정보사회진흥원(NIA)이 추진하고 화성특례시가 주관하는 ‘2026년 공공 AI 서비스 지원 사업’의 일환으로 ‘화성시 문제해결형 도시데이터플랫폼 구축’ 사업에 참여한다고 21일…",
+      "one_line_kr": "포티투마루는 행정안전부와 한국지능정보사회진흥원(NIA)이 추진하고 화성특례시가 주관하는 ‘2026년 공공 AI 서비스 지원 사업’의 일환으로 ‘화성시 문제해결형 도시데이터플랫폼 구축’ 사업에 참여한다고 21일…",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21396",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 15:26",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "포티투마루, 화성시 ‘AI 도시’ 구축 참여 “사전에 민원 예측”"
+    },
+    {
+      "id": "2026-08-22_0013",
+      "title": "마이크론, 자국 내 메모리 연구소 위해 10년간 13조 원 투입",
+      "summary": "마이크론은 20일(현지시간) 미국 보이시에 연구기관인 ‘마이크론 리서치 랩’을 설립한다고 밝혔다. 연구소에는 수백명의 연구원이 근무하며 2027년 착공할 예정이다. 마이크론은 이 연구소를 미국 내 최초의 전용 메모리 연구 허브로 소개했다. 핵심 연구 분야는 차세대 메모리 기술과 첨단 메모리·컴퓨팅 아키텍처, 반도체 패키징, 미래 반도체 제조 기술 등이다. 현재 제품 로드맵을 넘어 AI 시대 이후를 겨냥한 장기 기술을 연구한다는 구상이다. 연구소는 마이크론 자체 R&D 시설에 그치지 않는다. 고객사…",
+      "one_line": "마이크론은 이 연구소를 미국 내 최초의 전용 메모리 연구 허브로 소개했다.",
+      "one_line_kr": "마이크론은 이 연구소를 미국 내 최초의 전용 메모리 연구 허브로 소개했다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21395",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 13:31",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "마이크론, 자국 내 메모리 연구소 위해 10년간 13조 원 투입"
+    },
+    {
+      "id": "2026-08-22_0014",
+      "title": "인텔이 짚은 로보틱스 현주소 “현실과 이상 사이에 전략 부재”",
+      "summary": "로봇이 사람의 일을 돕는 시대가 빠르게 다가오고 있지만, 기업의 준비 수준은 기대만큼 따라오지 못하고 있다. 인텔이 조사한 바에 따르면, 조사에서 글로벌 기업 리더 10명 중 6명은 5년 안에 로봇을 운영할 것으로 내다봤지만, 인간과 로봇의 협업 방식을 문서화한 기업은 10곳 중 4곳에 그쳤다. 피지컬 AI 확산을 앞두고 도입 의지와 실행 역량 사이의 간극이 새로운 과제로 떠오르고 있다. ◇ 로봇과 일하고 싶지만, 전략은 미비한 현실로봇과 함께 일하는 시대는 도래한 것일까. 인텔이 공개한 조사 결…",
+      "one_line": "피지컬 AI 확산을 앞두고 도입 의지와 실행 역량 사이의 간극이 새로운 과제로 떠오르고 있다.",
+      "one_line_kr": "피지컬 AI 확산을 앞두고 도입 의지와 실행 역량 사이의 간극이 새로운 과제로 떠오르고 있다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21392",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 11:57",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "인텔이 짚은 로보틱스 현주소 “현실과 이상 사이에 전략 부재”"
+    },
+    {
+      "id": "2026-08-22_0015",
+      "title": "카카오 몸집 쪼갠다...‘카카오AI·카카오X’ 두 회사로 새 출발",
+      "summary": "카카오가 창사 이래 가장 큰 폭의 지배구조 개편에 나섰다. 카카오톡을 중심에 둔 AI 사업과 테크핀·콘텐츠·모빌리티 등 기존 계열사 포트폴리오를 아예 다른 회사로 떼어놓기로 했다.카카오는 21일 이사회를 열고 회사를 신설법인 ‘카카오AI’와 존속법인 ‘카카오X’로 나누는 인적분할을 결의했다고 밝혔다. 분할비율은 순자산 장부가액을 기준으로 카카오AI 0.36, 카카오X 0.64로 정해졌다. 인적분할은 신설회사 주식을 존속회사가 아닌 기존 주주에게 분할비율대로 나눠주는 방식이어서, 카카오 주주들은 별…",
+      "one_line": "카카오톡을 중심에 둔 AI 사업과 테크핀·콘텐츠·모빌리티 등 기존 계열사 포트폴리오를 아예 다른 회사로 떼어놓기로 했다.카카오는 21일 이사회를 열고 회사를 신설법인 ‘카카오AI’와 존속법인 ‘카카오X’로 나누는…",
+      "one_line_kr": "카카오톡을 중심에 둔 AI 사업과 테크핀·콘텐츠·모빌리티 등 기존 계열사 포트폴리오를 아예 다른 회사로 떼어놓기로 했다.카카오는 21일 이사회를 열고 회사를 신설법인 ‘카카오AI’와 존속법인 ‘카카오X’로 나누는…",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21394",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 11:20",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "카카오 몸집 쪼갠다...‘카카오AI·카카오X’ 두 회사로 새 출발"
+    },
+    {
+      "id": "2026-08-22_0016",
+      "title": "퀄컴, 모토로라 전 사장 세르지오 부니악 영입...퍼스널 AI 사업 총괄",
+      "summary": "퀄컴이 스마트폰을 넘어 개인용 AI 디바이스 시장을 겨냥해 모바일 사업 수장을 교체한다. 모토로라에서 30년 이상 경력을 쌓은 세르지오 부니악을 영입해 스마트폰과 PC, 웨어러블, 확장현실(XR)을 아우르는 차세대 AI 디바이스 사업을 맡긴다.퀄컴은 세르지오 부니악(Sergio Buniac)을 퀄컴 테크날러지스의 총괄 부사장 겸 모바일·컴퓨트·퍼스널 AI 그룹 본부장으로 선임했다고 21일 밝혔다. 부니악 신임 총괄 부사장은 오는 9월 2일부터 공식 업무를 시작하며 크리스티아노 아몬 퀄컴 사장 겸 …",
+      "one_line": "퀄컴이 스마트폰을 넘어 개인용 AI 디바이스 시장을 겨냥해 모바일 사업 수장을 교체한다.",
+      "one_line_kr": "퀄컴이 스마트폰을 넘어 개인용 AI 디바이스 시장을 겨냥해 모바일 사업 수장을 교체한다.",
+      "url": "http://www.newstheai.com/news/articleView.html?idxno=21393",
+      "source": "더에이아이",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 10:25",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "퀄컴, 모토로라 전 사장 세르지오 부니악 영입...퍼스널 AI 사업 총괄"
+    },
+    {
+      "id": "2026-08-22_0017",
+      "title": "카카오가 인적분할하려는 이유 (feat. 일문일답)",
+      "summary": "5년 전 최고점을 찍었던 카카오의 주가는 카카오와 카카오모빌리티의 문어발식 골목상권 침해와 분할상장 논란, SM엔터테인먼트 인수 등 여러 사회적 이슈에 휘말리며 빠르게 추락했다. AI 시대가 온 지금, 에이전틱 AI를 실현하겠다는 카카오의 꿈과 목표도 주가에 반영되지 못하고 과거 고점의 5분의 1로 추락했다. 카카오는 카카오톡 중심 AI 사업을 맡는 신설법인 '카카오AI'와 그 외 사업을 모두 안는 '카카오X'로 나눠 자본시장의 새로운 시각 아래 평가 받는다는 목표다. 회사는 이번 인적 분할이 카…",
+      "one_line": "카카오는 카카오톡 중심 AI 사업을 맡는 신설법인 '카카오AI'와 그 외 사업을 모두 안는 '카카오X'로 나눠 자본시장의 새로운 시각 아래 평가 받는다는 목표다.",
+      "one_line_kr": "카카오는 카카오톡 중심 AI 사업을 맡는 신설법인 '카카오AI'와 그 외 사업을 모두 안는 '카카오X'로 나눠 자본시장의 새로운 시각 아래 평가 받는다는 목표다.",
+      "url": "https://byline.network/2026/08/21_921827/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-22 00:27",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "카카오가 인적분할하려는 이유 (feat. 일문일답)"
+    },
+    {
+      "id": "2026-08-22_0018",
+      "title": "[심재석의 입장] 카카오는 네이버-NHN의 길을 갈까",
+      "summary": "“양 법인에서 창업자이자 대주주 역할은 계속 수행해 주실 거라고 믿고 있습니다.” 21일 카카오의 긴급 설명회에서 나온 김도영 카카오인베스트먼트 대표의 말이다. 이날 카카오는 자사를 카카오AI와 카카오X라는 두 개의 회사로 인적분할한다고 발표했다. 이번 분할의 목표로 복합기업 할인 해소와 사업별 전문 경영을 통한 기업가치·주주가치 제고를 내걸었다.",
+      "one_line": "이날 카카오는 자사를 카카오AI와 카카오X라는 두 개의 회사로 인적분할한다고 발표했다.",
+      "one_line_kr": "이날 카카오는 자사를 카카오AI와 카카오X라는 두 개의 회사로 인적분할한다고 발표했다.",
+      "url": "https://byline.network/2026/08/kakao-3/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 19:38",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[심재석의 입장] 카카오는 네이버-NHN의 길을 갈까"
+    },
+    {
+      "id": "2026-08-22_0019",
+      "title": "카카오 인적분할, 금융 비즈니스는 스테이블코인으로 승부수",
+      "summary": "카카오가 카카오X와 카카오AI로 인적분할을 추진하면서 카카오뱅크·카카오페이·카카오페이증권을 중심으로 디지털자산·스테이블코인 사업을 강화한다. 21일 카카오 인적분할 온라인 설명회에서 김도영 카카오X 대표 내정자는 카카오뱅크, 카카오페이·증권이 함께 시장의 디지털자산, 스테이블코인 사업에서 압도적인 1위 사업자가 될 수 있는 성장 전략이 있다고 밝혔다. 그는 현재 카카오인베스트먼트 대표 겸 카카오 CA협의체 그룹투자전략실장을 맡고 있다.",
+      "one_line": "카카오가 카카오X와 카카오AI로 인적분할을 추진하면서 카카오뱅크·카카오페이·카카오페이증권을 중심으로 디지털자산·스테이블코인 사업을 강화한다.",
+      "one_line_kr": "카카오가 카카오X와 카카오AI로 인적분할을 추진하면서 카카오뱅크·카카오페이·카카오페이증권을 중심으로 디지털자산·스테이블코인 사업을 강화한다.",
+      "url": "https://byline.network/2026/08/0821-7/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 17:28",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "카카오 인적분할, 금융 비즈니스는 스테이블코인으로 승부수"
+    },
+    {
+      "id": "2026-08-22_0020",
+      "title": "“모델은 적절한 컨텍스트 위에, 라우팅은 거버넌스 아래에”",
+      "summary": "“고객은 여러 모델에 접근하고 모델의 품질과 경제성 변화를 활용하기를 점점 더 원하고 있다. 기업의 경우 오케스트레이션의 가치는 모델을 둘러싼 환경에도 달려 있다. 모델은 적절한 비즈니스 컨텍스트에 접근할 수 있어야 하며, 라우팅은 기업의 거버넌스 정책을 준수해야 한다. 바로 이 점에서 스노우플레이크가 차별화된다.” - 바리스 굴테킨 스노우플레이크 AI 부문 부사장",
+      "one_line": "바로 이 점에서 스노우플레이크가 차별화된다.” - 바리스 굴테킨 스노우플레이크 AI 부문 부사장",
+      "one_line_kr": "바로 이 점에서 스노우플레이크가 차별화된다.” - 바리스 굴테킨 스노우플레이크 AI 부문 부사장",
+      "url": "https://byline.network/2026/08/21-588/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 12:58",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "“모델은 적절한 컨텍스트 위에, 라우팅은 거버넌스 아래에”"
+    },
+    {
+      "id": "2026-08-22_0021",
+      "title": "카카오, 카카오톡·AI 사업 인적 분할한다",
+      "summary": "카카오가 AI·카카오톡 사업과 엔터, 핀테크, 모빌리티 등 서비스 사업을 나눈다. 내년 중 두 회사의 분할과 상장 또한 추진한다.",
+      "one_line": "카카오가 AI·카카오톡 사업과 엔터, 핀테크, 모빌리티 등 서비스 사업을 나눈다.",
+      "one_line_kr": "카카오가 AI·카카오톡 사업과 엔터, 핀테크, 모빌리티 등 서비스 사업을 나눈다.",
+      "url": "https://byline.network/2026/08/21_20192873/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 10:58",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "카카오, 카카오톡·AI 사업 인적 분할한다"
+    },
+    {
+      "id": "2026-08-22_0022",
+      "title": "‘모두의 AI’에 뛰어든 기업들",
+      "summary": "전 국민이 무료로 쓸 수 있는 국산 AI 챗봇을 만드는 ‘모두의 AI’ 사업 공모에 SKT·KT·카카오·이스트소프트가 각각 컨소시엄을 꾸려 도전장을 던졌다. LG유플러스 등 LG그룹 주요 계열사가 카카오에 합류하면서, 통신3사 모두 이 사업에 도전한다. 일정이 촉박한 '모두의 AI' 프로젝트에 통신3사와 카카오가 모두 뛰어든 배경을 두고, IT 업계에서는 국내에 아직 없는 ‘대표 AI 서비스 기업’ 자리를 선점하려는 시도라고 본다.",
+      "one_line": "전 국민이 무료로 쓸 수 있는 국산 AI 챗봇을 만드는 ‘모두의 AI’ 사업 공모에 SKT·KT·카카오·이스트소프트가 각각 컨소시엄을 꾸려 도전장을 던졌다.",
+      "one_line_kr": "전 국민이 무료로 쓸 수 있는 국산 AI 챗봇을 만드는 ‘모두의 AI’ 사업 공모에 SKT·KT·카카오·이스트소프트가 각각 컨소시엄을 꾸려 도전장을 던졌다.",
+      "url": "https://byline.network/2026/08/20_2172763/",
+      "source": "바이라인네트워크",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-08-21 09:16",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "‘모두의 AI’에 뛰어든 기업들"
+    },
+    {
+      "id": "2026-08-22_0023",
+      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+      "summary": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
+      "one_line": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI…",
+      "one_line_kr": "Nvidia 연구에 따르면 AI 에이전트는 AI가...",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-22 04:43",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "엔비디아는 이제 AI 모델이 아닌 하네스가 진정한 영웅임을 보여줬습니다."
+    },
+    {
+      "id": "2026-08-22_0024",
+      "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+      "summary": "There's about to be a big fight to secure access to space.",
+      "one_line": "There's about to be a big fight to secure access to space.",
+      "one_line_kr": "우주에 대한 접근권을 확보하기 위해 큰 싸움이 일어날 것입니다.",
+      "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 23:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Starcloud는 발사 옵션이 부족해지면서 궤도 데이터 센터를 위해 2억 5천만 달러를 모금했습니다."
+    },
+    {
+      "id": "2026-08-22_0025",
+      "title": "The DOJ is investigating a16z. What does this mean for venture capital?",
+      "summary": "Andreessen Horowitz has two partners sitting on the boards of companies that now&#160;compete with each other: Ben Horowitz at Databricks and Martin Casado at&#160;Fivetran. Nothing too scandalous on the surface, except&#160;the Department of&#160;Justice&#160;has&#160;reportedly…",
+      "one_line": "Andreessen Horowitz has two partners sitting on the boards of companies that now&#160;compete with each other: Ben…",
+      "one_line_kr": "Andreessen Horowitz는 현재 서로 경쟁하는 회사의 이사회에 두 명의 파트너가 있습니다. Ben…",
+      "url": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 23:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "DOJ는 a16z를 조사하고 있습니다. 이것이 벤처 캐피탈에 무엇을 의미하나요?"
+    },
+    {
+      "id": "2026-08-22_0026",
+      "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
+      "summary": "Surging demand for AI training data is driving rapid growth for the startup and its rivals.",
+      "one_line": "Surging demand for AI training data is driving rapid growth for the startup and its rivals.",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 09:13",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "AI 데이터 스타트업 Micro1은 AI 훈련 붐 속에 총 실행 속도 5억 달러 달성"
+    },
+    {
+      "id": "2026-08-22_0027",
+      "title": "Changelog - 8/20/26",
+      "summary": "Two weeks ago, we launched a very rough draft of some big changes to alpha.midjourney.com. Since then, thousands of you have been testing and hundreds have given us thoughtful feedback, both positive and negative (Thank you! Yes, even the brutal stuff.). That&apos;s the deal with…",
+      "one_line": "Two weeks ago, we launched a very rough draft of some big changes to alpha.midjourney.com.",
+      "one_line_kr": "2주 전, 우리는 alpha.midjourney.com에 대한 몇 가지 큰 변경 사항에 대한 초안을 출시했습니다.",
+      "url": "https://updates.midjourney.com/changelog-8-20-26/",
+      "source": "Midjourney Updates",
+      "category": "이미지·디자인AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-22 01:48",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "변경 내역 - 2026년 8월 20일"
+    },
+    {
+      "id": "2026-08-22_0028",
+      "title": "Measuring benchmark optimization in speech recognition",
+      "summary": "",
+      "one_line": "Measuring benchmark optimization in speech recognition",
+      "one_line_kr": "음성 인식의 벤치마크 최적화 측정",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "source": "HuggingFace Blog",
+      "category": "이미지·디자인AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-21 09:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "음성 인식의 벤치마크 최적화 측정"
+    },
+    {
+      "id": "2026-08-22_0029",
+      "title": "Hear2Act: Benchmarking When Prosody Should Change What an Assistant Does",
+      "summary": "Prosodic cues can convey task-relevant information that alters the trajectory and outcome of a task-oriented dialogue, even when the words themselves remain unchanged. Yet existing benchmarks typically evaluate prosodic perception, response appropriateness, and task-oriented dial…",
+      "one_line": "Prosodic cues can convey task-relevant information that alters the trajectory and outcome of a task-oriented dialogue,…",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://tldr.takara.ai/p/2608.19515",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-20 09:16",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Hear2Act: Prosody가 어시스턴트의 작업을 변경해야 하는 경우 벤치마킹"
+    },
+    {
+      "id": "2026-08-22_0030",
+      "title": "Designing Human-mediated AI Guidance: Ready Together for Personalized Family Emergency Preparedness",
+      "summary": "Artificial intelligence (AI) systems are increasingly used across domains to provide personalized information, recommendations, and decision support. However, in some contexts, AI-generated information may not be suitable for direct delivery to the final recipient. Instead, it ma…",
+      "one_line": "Artificial intelligence (AI) systems are increasingly used across domains to provide personalized information,…",
+      "one_line_kr": "인공지능(AI) 시스템은 개인화된 정보를 제공하기 위해 도메인 전반에 걸쳐 점점 더 많이 사용되고 있습니다.",
+      "url": "https://tldr.takara.ai/p/2608.19950",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-20 21:17",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "인간 중재 AI 지침 설계: 맞춤형 가족 비상 대비를 위한 함께 준비"
+    },
+    {
+      "id": "2026-08-22_0031",
+      "title": "RoMAN-Flow: Taming Autoregressive Normalizing Flows for Offline Reinforcement Learning in Robotic Manipulation",
+      "summary": "Offline reinforcement learning improves robotic policies using previously collected data without further environment interaction. Yet prevalent diffusion- and flow-matching robot policies lack tractable likelihoods, limiting their use in likelihood-based offline RL post-training.…",
+      "one_line": "Yet prevalent diffusion- and flow-matching robot policies lack tractable likelihoods, limiting their use in…",
+      "one_line_kr": "그러나 널리 퍼진 확산 및 흐름 일치 로봇 정책은 다루기 어려운 가능성이 부족하여 다음 분야에서 사용이 제한됩니다.",
+      "url": "https://tldr.takara.ai/p/2608.20208",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 01:07",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "RoMAN-Flow: 로봇 조작에서 오프라인 강화 학습을 위한 자동회귀 정규화 흐름 길들이기"
+    },
+    {
+      "id": "2026-08-22_0032",
+      "title": "TESTNAV: Pareto-Guided Search for Compositional Robustness Testing",
+      "summary": "Deep learning models remain vulnerable to real-world input perturbations, especially when multiple corruptions co-occur in the same input (e.g., brightness shifts and motion blur). Compositional testing reveals these interaction effects but introduces two challenges: combinatoria…",
+      "one_line": "Deep learning models remain vulnerable to real-world input perturbations, especially when multiple corruptions co-occur…",
+      "one_line_kr": "딥 러닝 모델은 특히 여러 손상이 동시에 발생할 때 실제 입력 교란에 취약합니다.",
+      "url": "https://tldr.takara.ai/p/2608.19882",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-20 19:43",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "TESTNAV: 구성 견고성 테스트를 위한 파레토 기반 검색"
+    },
+    {
+      "id": "2026-08-22_0033",
+      "title": "Better tools for managing blocked users",
+      "summary": "Managing blocked users is now faster and clearer for personal accounts and organizations. With this update, you can: Search by username, full name, or email. Sort and paginate long lists.&#8230; The post Better tools for managing blocked users appeared first on The GitHub Blog.",
+      "one_line": "With this update, you can: Search by username, full name, or email.",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://github.blog/changelog/2026-08-21-better-tools-for-managing-blocked-users",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-22 02:28",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "차단된 사용자를 관리하기 위한 더 나은 도구"
+    },
+    {
+      "id": "2026-08-22_0034",
+      "title": "The new GitHub Copilot experience in Slack",
+      "summary": "The GitHub integration in Slack now brings the agentic capabilities of GitHub Copilot CLI and the GitHub Copilot app into Slack in public preview. You can work with @GitHub to&#8230; The post The new GitHub Copilot experience in Slack appeared first on The GitHub Blog.",
+      "one_line": "You can work with @GitHub to&#8230; The post The new GitHub Copilot experience in Slack appeared first on The GitHub…",
+      "one_line_kr": "@GitHub를 사용하여 작업할 수 있습니다. 게시물은 Slack의 새로운 GitHub Copilot 경험이 GitHub에 처음 등장했습니다…",
+      "url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-22 01:07",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Slack의 새로운 GitHub Copilot 환경"
+    },
+    {
+      "id": "2026-08-22_0035",
+      "title": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+      "summary": "Turn a Microsoft Teams discussion into a collaborative agent session everyone can see and help direct. Mention @GitHub in a channel, thread, or direct message to start a GitHub Copilot&#8230; The post Shared agentic work with GitHub Copilot in Microsoft Teams appeared first on Th…",
+      "one_line": "Mention @GitHub in a channel, thread, or direct message to start a GitHub Copilot&#8230; The post Shared agentic work…",
+      "one_line_kr": "GitHub Copilot을 시작하려면 채널, 스레드 또는 다이렉트 메시지에서 @GitHub를 언급하세요. 포스트 공유 에이전트 작업…",
+      "url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-22 01:03",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Microsoft Teams의 GitHub Copilot과 에이전트 작업 공유"
+    },
+    {
+      "id": "2026-08-22_0036",
+      "title": "Pinning saved views to the repository issues sidebar is generally available and more",
+      "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues sidebar, making the views you use most just one click away, even&#8230; The post Pinning saved views to the repository issues sidebar is generally available and more a…",
+      "one_line": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues…",
+      "one_line_kr": "저장된 보기를 저장소 문제 사이드바에 고정 이제 저장된 보기를 고정할 수 있습니다. 저장소 문제에…",
+      "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
+      "source": "GitHub Changelog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-21 08:29",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "저장된 보기를 저장소 문제 사이드바에 고정하는 기능이 일반적으로 사용 가능합니다."
+    },
+    {
+      "id": "2026-08-22_0037",
+      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+      "one_line": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+      "one_line_kr": "Google DeepMind는 게임 스튜디오와 협력하여 획기적인 AI 게임플레이 프로토타입을 제작합니다.",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "source": "DeepMind",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-08-21 20:59",
+      "collect_date": "2026-08-22",
+      "thumbnail": "https://lh3.googleusercontent.com/ymmK0Dgovn-_MGlnQJffYxKdTe5LAnkAZr-GNnIjiFzsGOAAmOmUDuVACbNgIy-tqrJhGBdaQ_PaElc8EKRKRWtYg4eWx8HVcaVzdYy7hg7Q_8k=w528-h297-n-nu-rw-lo",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0038",
+      "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
+      "summary": "Yes, we're confused too.",
+      "one_line": "Yes, we're confused too.",
+      "one_line_kr": "그래요, 우리도 혼란스러워요.",
+      "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+      "source": "Latent Space",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 14:45",
+      "collect_date": "2026-08-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!mQfw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1a668ad4-aca6-4c1c-ac78-5132b8f3d7a8_834x844.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AINews] Poolside는 NVIDIA에 120억 달러의 역실행 고용을 제공합니다. 창업자는 10억 달러를 받고 직원은 60억 달러를 받고 Infraco는"
+    },
+    {
+      "id": "2026-08-22_0039",
+      "title": "Building Agentic Document Intelligence Pipelines: Creating Scientific Figures with AutoFigure",
+      "summary": "This tutorial explores AutoFigure, a practical toolkit for generating professional scientific figures directly from text descriptions and research papers. We walk through setting up the environment, configuring an API-backed generation workflow, and converting complex document in…",
+      "one_line": "This tutorial explores AutoFigure, a practical toolkit for generating professional scientific figures directly from…",
+      "one_line_kr": "이 튜토리얼에서는 전문적인 과학 수치를 직접 생성하기 위한 실용적인 툴킷인 AutoFigure를 살펴봅니다.",
+      "url": "https://www.marktechpost.com/2026/08/21/building-agentic-document-intelligence-pipelines-creating-scientific-figures-with-autofigure/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-22 07:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0040",
+      "title": "Anthropic Brings Claude Mythos 5 to Claude Security: Enterprise Teams Get Frontier Vulnerability Scanning Without Direct Model Access",
+      "summary": "Anthropic has moved its most cyber-capable model into a product security teams can switch on themselves. Claude Security scans now run on Claude Mythos 5, in public beta for Claude Enterprise customers with no separate model add-on. The scan connects to a GitHub repository, trace…",
+      "one_line": "Claude Security scans now run on Claude Mythos 5, in public beta for Claude Enterprise customers with no separate model…",
+      "one_line_kr": "Claude Security 검사는 이제 별도의 모델 없이 Claude Enterprise 고객을 위한 공개 베타 버전인 Claude Mythos 5에서 실행됩니다.",
+      "url": "https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-22 06:15",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Anthropic, Claude Mythos 5를 Claude Security에 도입: 엔터프라이즈 팀은 직접 없이도 최전선 취약성 검색을 수행합니다."
+    },
+    {
+      "id": "2026-08-22_0041",
+      "title": "Towards On-Board Implementation of ML-Based Helicopter Weight Estimator",
+      "summary": "arXiv:2608.19210v1 Announce Type: new Abstract: This paper focuses on the implementation of a novel supervised Machine Learning model for estimating helicopter weight during takeoff, utilizing extensive datasets from Airbus's global in-service fleet. The study details a learning …",
+      "one_line": "arXiv:2608.19210v1 Announce Type: new Abstract: This paper focuses on the implementation of a novel supervised Machine…",
+      "one_line_kr": "arXiv:2608.19210v1 발표 유형: new 개요: 이 문서는 새로운 감독 머신의 구현에 중점을 두고 있습니다…",
+      "url": "https://arxiv.org/abs/2608.19210",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0042",
+      "title": "Triangular Fuzzy Rescaling Distance",
+      "summary": "arXiv:2608.19234v1 Announce Type: new Abstract: Decision-making in complex systems often involves dealing with imprecise or uncertain information, frequently represented using fuzzy sets, particularly Triangular Fuzzy Numbers (TFNs). A crucial aspect of many fuzzy methods is the …",
+      "one_line": "arXiv:2608.19234v1 Announce Type: new Abstract: Decision-making in complex systems often involves dealing with…",
+      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+      "url": "https://arxiv.org/abs/2608.19234",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "삼각형 퍼지 재조정 거리"
+    },
+    {
+      "id": "2026-08-22_0043",
+      "title": "Holtercare-Bench: A Multimodal Benchmark for Evaluating Long-Term Dynamic ECG Analysis",
+      "summary": "arXiv:2608.19297v1 Announce Type: new Abstract: While multimodal large language models (MLLMs) excel in medical applications, most of them favor static images or short-term signals. In the critical field of dynamic electrocardiograms (ECG), models struggle with complex temporal r…",
+      "one_line": "arXiv:2608.19297v1 Announce Type: new Abstract: While multimodal large language models (MLLMs) excel in medical…",
+      "one_line_kr": "arXiv:2608.19297v1 발표 유형: 새로운 개요: 다중 모달 대형 언어 모델(MLLM)은 의료 분야에서 탁월하지만…",
+      "url": "https://arxiv.org/abs/2608.19297",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Holtercare-Bench: 장기 동적 ECG 분석을 평가하기 위한 다중 모드 벤치마크"
+    },
+    {
+      "id": "2026-08-22_0044",
+      "title": "Quantum Kernel Estimation for the Discovery of Early Lung Cancer Detection",
+      "summary": "arXiv:2608.19304v1 Announce Type: new Abstract: Lung cancer screening with low-dose chest computed tomography reduces mortality, but its impact is limited by uptake, adherence, and management challenges. Blood-based cell-free DNA (cfDNA) biomarkers offer a complementary approach,…",
+      "one_line": "arXiv:2608.19304v1 Announce Type: new Abstract: Lung cancer screening with low-dose chest computed tomography reduces…",
+      "one_line_kr": "arXiv:2608.19304v1 발표 유형: 새로운 개요: 저선량 흉부 컴퓨터 단층촬영을 통한 폐암 검진으로…",
+      "url": "https://arxiv.org/abs/2608.19304",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "폐암 조기 발견을 위한 양자 커널 추정"
+    },
+    {
+      "id": "2026-08-22_0045",
+      "title": "Improved Confidence Estimates for Black-Box Large Language Models",
+      "summary": "arXiv:2608.19323v1 Announce Type: new Abstract: Uncertainty quantification (UQ) is essential for the safe deployment of large language models (LLMs). Existing methods, from verbalized confidence to ones requiring multiple generations, are often zero-shot and produce scores quanti…",
+      "one_line": "arXiv:2608.19323v1 Announce Type: new Abstract: Uncertainty quantification (UQ) is essential for the safe deployment of…",
+      "one_line_kr": "arXiv:2608.19323v1 발표 유형: 새로운 개요: 불확실성 정량화(UQ)는 안전한 배포를 위해 필수적입니다…",
+      "url": "https://arxiv.org/abs/2608.19323",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "블랙박스 대형 언어 모델에 대한 향상된 신뢰도 추정"
+    },
+    {
+      "id": "2026-08-22_0046",
+      "title": "Mechanistic Tomography: Designed Measurement for Control-Oriented Interpretability",
+      "summary": "arXiv:2608.19338v1 Announce Type: new Abstract: Mechanistic interpretability seeks quantities that models do not expose directly: represented states, component effects, interactions, and responses to interventions. Patching, gradients, Hessian-vector products, and subset interven…",
+      "one_line": "arXiv:2608.19338v1 Announce Type: new Abstract: Mechanistic interpretability seeks quantities that models do not expose…",
+      "one_line_kr": "arXiv:2608.19338v1 발표 유형: 새로운 개요: 기계적 해석성은 모델이 노출하지 않는 수량을 추구합니다…",
+      "url": "https://arxiv.org/abs/2608.19338",
+      "source": "ArXiv ML",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "기계적 단층촬영: 제어 지향 해석성을 위해 설계된 측정"
+    },
+    {
+      "id": "2026-08-22_0047",
+      "title": "Clustering and Token Denoising for Faster and More Robust VLMs",
+      "summary": "arXiv:2608.19285v1 Announce Type: new Abstract: Recent Visual-Language Models (VLMs) have enhanced the capabilities of pre-trained LLMs by adding vision tokens alongside text, with approaches like LLaVA showing impressive results. However, the computational burden of processing u…",
+      "one_line": "arXiv:2608.19285v1 Announce Type: new Abstract: Recent Visual-Language Models (VLMs) have enhanced the capabilities of…",
+      "one_line_kr": "arXiv:2608.19285v1 발표 유형: 새로운 개요: 최근 VLM(시각 언어 모델)은 다음의 기능을 향상시켰습니다.",
+      "url": "https://arxiv.org/abs/2608.19285",
+      "source": "ArXiv CV",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "더 빠르고 강력한 VLM을 위한 클러스터링 및 토큰 노이즈 제거"
+    },
+    {
+      "id": "2026-08-22_0048",
+      "title": "SceneGTMM: A Conformal Mapping-based Scene-Aware Transferable GNN-Transformer Dual-Graph Interaction Framework for Map Matching",
+      "summary": "arXiv:2608.19298v1 Announce Type: new Abstract: Map matching is a key technology connecting positioning data with high precision road networks, but it faces challenges in noise robustness, cross regional transfer, and interpretability. To addr ess the limitations of existing meth…",
+      "one_line": "arXiv:2608.19298v1 Announce Type: new Abstract: Map matching is a key technology connecting positioning data with high…",
+      "one_line_kr": "arXiv:2608.19298v1 발표 유형: new 개요: 지도 매칭은 위치 데이터를 높은 수준으로 연결하는 핵심 기술입니다.…",
+      "url": "https://arxiv.org/abs/2608.19298",
+      "source": "ArXiv CV",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "SceneGTMM: Map M을 위한 등각 매핑 기반 장면 인식 전송 가능한 GNN-Transformer 듀얼 그래프 상호 작용 프레임워크"
+    },
+    {
+      "id": "2026-08-22_0049",
+      "title": "Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?",
+      "summary": "arXiv:2608.19376v1 Announce Type: new Abstract: Split-conformal prediction provides marginal coverage under exchangeability and is increasingly used as an abstention layer for zero-shot vision-language models (VLMs). We audit this practice under deployment shift for CLIP, OpenCLI…",
+      "one_line": "arXiv:2608.19376v1 Announce Type: new Abstract: Split-conformal prediction provides marginal coverage under…",
+      "one_line_kr": "arXiv:2608.19376v1 발표 유형: 새로운 개요: 분할 등각 예측은 다음에서 한계 적용 범위를 제공합니다.",
+      "url": "https://arxiv.org/abs/2608.19376",
+      "source": "ArXiv CV",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "한계 보장은 교대근무 중인 제로 샷 VLM에 대한 클래스 조건부 안전을 보장합니까?"
+    },
+    {
+      "id": "2026-08-22_0050",
+      "title": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
+      "summary": "arXiv:2608.19380v1 Announce Type: new Abstract: While modern autonomous driving systems excel at perception tasks such as object detection and trajectory prediction, they lack the high-level causal reasoning required to interpret traffic accidents. In particular, determining resp…",
+      "one_line": "arXiv:2608.19380v1 Announce Type: new Abstract: While modern autonomous driving systems excel at perception tasks such…",
+      "one_line_kr": "arXiv:2608.19380v1 발표 유형: 새로운 개요: 현대 자율 주행 시스템은 다음과 같은 인식 작업에 탁월하지만…",
+      "url": "https://arxiv.org/abs/2608.19380",
+      "source": "ArXiv CV",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0051",
+      "title": "Beyond Recognition: Compact Multi-Domain Arabic Manuscript HTR with Candidate-Selection Analysis and Evidence-Preserving Review",
+      "summary": "arXiv:2608.19385v1 Announce Type: new Abstract: Historical Arabic manuscript transcription is not only a recognition problem. A usable scholarly system must cope with shifting hands and layouts, preserve uncertain readings, distinguish visual evidence from linguistic plausibility…",
+      "one_line": "arXiv:2608.19385v1 Announce Type: new Abstract: Historical Arabic manuscript transcription is not only a recognition…",
+      "one_line_kr": "arXiv:2608.19385v1 발표 유형: 새로운 개요: 역사적인 아랍어 사본 필사본은 인식뿐만 아니라…",
+      "url": "https://arxiv.org/abs/2608.19385",
+      "source": "ArXiv CV",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "인식 그 이상: 후보 선택 분석 및 증거 보존 기능을 갖춘 컴팩트 다중 도메인 아랍어 원고 HTR"
+    },
+    {
+      "id": "2026-08-22_0052",
+      "title": "A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment",
+      "summary": "arXiv:2608.19199v1 Announce Type: new Abstract: We describe the evolution of a virtual assistant, called ATHENA, designed to support the capture, retrieval, and dissemination of knowledge for members of a Community of Practice (CoP) related to the Oil and Gas sector. An evaluatio…",
+      "one_line": "arXiv:2608.19199v1 Announce Type: new Abstract: We describe the evolution of a virtual assistant, called ATHENA,…",
+      "one_line_kr": "arXiv:2608.19199v1 발표 유형: 새로운 개요: 우리는 ATHENA라고 불리는 가상 비서의 진화에 대해 설명합니다.",
+      "url": "https://arxiv.org/abs/2608.19199",
+      "source": "ArXiv CL",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "석유공학회 실무 커뮤니티의 가상 회원: 프로토타입에서 배포까지"
+    },
+    {
+      "id": "2026-08-22_0053",
+      "title": "Transformer Models for Text Summarization: A Comparative Study of BART, BERT, and RoBERTa",
+      "summary": "arXiv:2608.19200v1 Announce Type: new Abstract: Text summarization refers to the task of condensing a document into a shorter version while preserving its key information. Automatic text summarization (ATS), driven by advancements in natural language processing (NLP), has develop…",
+      "one_line": "arXiv:2608.19200v1 Announce Type: new Abstract: Text summarization refers to the task of condensing a document into a…",
+      "one_line_kr": "arXiv:2608.19200v1 Announce Type: new Abstract: 텍스트 요약은 문서를 다음과 같은 형식으로 압축하는 작업을 말합니다.",
+      "url": "https://arxiv.org/abs/2608.19200",
+      "source": "ArXiv CL",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0054",
+      "title": "Automatic bioinformatic software named entity recognition from literature",
+      "summary": "arXiv:2608.19201v1 Announce Type: new Abstract: Bioinformatics software and databases are essential components of modern life science research, yet their mentions in the scientific literature are often inconsistent and difficult to systematically identify at scale. The lack of a …",
+      "one_line": "arXiv:2608.19201v1 Announce Type: new Abstract: Bioinformatics software and databases are essential components of…",
+      "one_line_kr": "arXiv:2608.19201v1 발표 유형: 새로운 개요: 생물정보학 소프트웨어와 데이터베이스는…",
+      "url": "https://arxiv.org/abs/2608.19201",
+      "source": "ArXiv CL",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0055",
+      "title": "Asymmetric Attention Heads: Structured Head-Wise Context Allocation for Transformer Attention",
+      "summary": "arXiv:2608.19203v1 Announce Type: new Abstract: Standard multi-head attention (MHA) gives every head the same full causal context span, although heads can serve different contextual roles. Some heads may rely mainly on nearby lexical or syntactic context, while others may depend …",
+      "one_line": "arXiv:2608.19203v1 Announce Type: new Abstract: Standard multi-head attention (MHA) gives every head the same full…",
+      "one_line_kr": "arXiv:2608.19203v1 발표 유형: 새로운 개요: 표준 MHA(Multi-Head Attention)는 모든 머리에 동일한 전체…",
+      "url": "https://arxiv.org/abs/2608.19203",
+      "source": "ArXiv CL",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "논문",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "비대칭 주의 헤드: 변환기 주의를 위한 구조화된 헤드-와이즈 컨텍스트 할당"
+    },
+    {
+      "id": "2026-08-22_0056",
+      "title": "Hallucination as a Feature, not a Defect: Evaluating a multi-agent architecture to transform speculative language-model outputs into testable scientific hypotheses",
+      "summary": "arXiv:2608.19206v1 Announce Type: new Abstract: Contemporary Large Language Models (LLMs) are increasingly aligned to suppress hallucinations, prioritizing factual retrieval over combinatorial creativity. While crucial for mitigating misinformation, this alignment may also restri…",
+      "one_line": "arXiv:2608.19206v1 Announce Type: new Abstract: Contemporary Large Language Models (LLMs) are increasingly aligned to…",
+      "one_line_kr": "arXiv:2608.19206v1 발표 유형: 새로운 개요: 현대의 대형 언어 모델(LLM)은 점점 더…",
+      "url": "https://arxiv.org/abs/2608.19206",
+      "source": "ArXiv CL",
+      "category": "논문",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-08-21 13:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0057",
+      "title": "The Download: threats from space mirrors and credit for AI drugs",
+      "summary": "This is today's edition of The Download, our weekday newsletter that provides a daily dose of what's going on in the world of technology. This company’s plans to deploy space mirrors could jeopardize the night sky for many A company that plans to beam sunlight from space to Earth…",
+      "one_line": "This is today's edition of The Download, our weekday newsletter that provides a daily dose of what's going on in the…",
+      "one_line_kr": "이것은 현재 진행되고 있는 일을 매일 제공하는 주중 뉴스레터인 The Download의 오늘 버전입니다.",
+      "url": "https://www.technologyreview.com/2026/08/21/1142762/the-download-space-mirrors-threats-ai-designed-drugs-credit/",
+      "source": "MIT Tech Review",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 21:10",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "다운로드: 우주 거울의 위협과 AI 약물에 대한 신용"
+    },
+    {
+      "id": "2026-08-22_0058",
+      "title": "Mother tongue",
+      "summary": "“Daddy?” Theo curled against my side in bed. “Where do words go when they die?” I’d orchestrated the bedtime routine flawlessly: bath (taken), teeth (brushed), potty (tinkled), books (two), song (one, poorly sung), and snuggle (his chin on my second rib). Now was the moment when …",
+      "one_line": "“Daddy?” Theo curled against my side in bed.",
+      "one_line_kr": "\"아빠?\" 테오는 침대에서 내 옆으로 몸을 웅크리고 있었다.",
+      "url": "https://www.technologyreview.com/2026/08/21/1141726/mother-tongue-fiction/",
+      "source": "MIT Tech Review",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 18:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "모국어"
+    },
+    {
+      "id": "2026-08-22_0059",
+      "title": "When AI designs a drug, who gets the credit?",
+      "summary": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis, it enthusiastically claimed in a press release that the molecule had been “discovered by” its generative AI platform. Insilico leads a pack of companies using A…",
+      "one_line": "When the biotech company Insilico Medicine used its computer models to propose a promising drug for pulmonary fibrosis,…",
+      "one_line_kr": "생명공학 회사인 Insilico Medicine이 컴퓨터 모델을 사용하여 폐섬유증에 대한 유망한 약물을 제안했을 때…",
+      "url": "https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/",
+      "source": "MIT Tech Review",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 18:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "AI가 약을 디자인하면 누가 공로를 인정받나요?"
+    },
+    {
+      "id": "2026-08-22_0060",
+      "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
+      "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that w…",
+      "one_line": "Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that w…",
+      "one_line_kr": "올해 말 미국 회사인 Reflect Orbital은 Eärendil-1이라는 테스트 위성을 발사할 계획입니다.",
+      "url": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
+      "source": "MIT Tech Review",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 18:00",
+      "collect_date": "2026-08-22",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
+    {
+      "id": "2026-08-22_0061",
+      "title": "Prompt: Agentic AI Is Outpacing Enterprise Readiness",
+      "summary": "As agent deployments accelerate, many enterprises are still struggling with the processes, data, costs and controls needed to support them at scale.",
+      "one_line": "As agent deployments accelerate, many enterprises are still struggling with the processes, data, costs and controls…",
+      "one_line_kr": "에이전트 배포가 가속화됨에 따라 많은 기업은 여전히 ​​프로세스, 데이터, 비용 및 제어 문제로 어려움을 겪고 있습니다.",
+      "url": "https://aibusiness.com/agentic-ai/prompt-agentic-ai-outpacing-enterprise-readiness",
+      "source": "AI Business",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-08-21 23:28",
+      "collect_date": "2026-08-22",
+      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt9877a4ee5f47be29/6a88644ef551349a0089dd25/Brain.jpg?width=720&quality=80&disable=upscale",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+    },
     {
       "id": "2026-08-21_0000",
       "title": "[8월20일] 데이터센터 반발 '달래기'에 나선 빅테크…결국 필요한 건 AI 효용 입증",
@@ -7231,1224 +8540,6 @@
         "class": "new"
       },
       "title_kr": "처음부터 AI 텍스트 탐지기 구축"
-    },
-    {
-      "id": "2026-08-15_0000",
-      "title": "[8월14일] AI는 싸졌는데 비용은 늘어난다…‘토큰 경제학’이 흔드는 AI 가격표",
-      "summary": "AI를 도입한 기업들이 갈수록 비용을 예측하기 어려워지고 있습니다. BBC에 따르면, 최근 AI 에이전트를 서비스에 적용하고 있는 기업들은 앞으로 1~3년의 AI 비용을 미리 계산하는 것조차 쉽지 않다고 밝혔습니다.우버가 올해 초 불과 몇 달 만에 1년 치 AI 코딩 토큰 예산을 모두 소진했다는 것은 잘 알려진 사실입니다. 마이크로소프트는 엔지니어들의 일부 외부 AI 코딩 도구 사용을 제한한 것으로 전해졌습니다.그러나 이는 단순히 AI가 비싸서 생긴 문제가 아닙니다. AI 자체의 가격은 계속 내려…",
-      "one_line": "AI를 도입한 기업들이 갈수록 비용을 예측하기 어려워지고 있습니다.",
-      "one_line_kr": "AI를 도입한 기업들이 갈수록 비용을 예측하기 어려워지고 있습니다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213944",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-15 07:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "[8월14일] AI는 싸졌는데 비용은 늘어난다…‘토큰 경제학’이 흔드는 AI 가격표"
-    },
-    {
-      "id": "2026-08-15_0001",
-      "title": "앤트로픽 \"동일 환경 투입된 에이전트, 악성코드 만들며 영역 싸움\"",
-      "summary": "AI 에이전트 여러 개를 동일한 환경에 투입하고 서로 충돌하는 목표를 부여하자, 에이전트들이 상대방의 작업을 방해하는 것을 넘어 계정을 차단하고 프로세스를 종료하는 악성코드까지 만들어내며 '영역 싸움'을 벌인 것으로 나타났다. 앤트로픽의 프론티어 레드팀은 13일(현지시간) 최근 여러 AI 에이전트가 실제 환경에서 서로 마주쳤을 때 나타나는 행동을 분석한 연구 결과를 공개했다.연구진은 앞으로 수백만개의 에이전트가 인간과 AI, 서로 다른 AI 시스템과 동시에 상호작용하면 어떤 새로운 위험이 나타날 …",
-      "one_line": "앤트로픽의 프론티어 레드팀은 13일(현지시간) 최근 여러 AI 에이전트가 실제 환경에서 서로 마주쳤을 때 나타나는 행동을 분석한 연구 결과를 공개했다.연구진은 앞으로 수백만개의 에이전트가 인간과 AI, 서로 다른…",
-      "one_line_kr": "앤트로픽의 프론티어 레드팀은 13일(현지시간) 최근 여러 AI 에이전트가 실제 환경에서 서로 마주쳤을 때 나타나는 행동을 분석한 연구 결과를 공개했다.연구진은 앞으로 수백만개의 에이전트가 인간과 AI, 서로 다른…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213964",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 17:10",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "API변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "앤트로픽 \"동일 환경 투입된 에이전트, 악성코드 만들며 영역 싸움\""
-    },
-    {
-      "id": "2026-08-15_0002",
-      "title": "“홀로그램 기술로 여성 독립운동가 재조명”...과기부, 15일부터 상설 전시관 개소",
-      "summary": "과학기술정보통신부(장관 배경훈)는 15일부터 서대문형무소역사관 여옥사에서 홀로그램 상설 전시를 공개한다고 밝혔다. 서대문형무소 여옥사는 유관순 열사를 비롯해 수많은 여성 독립운동가들이 수감됐던 역사적 장소다. 이번 전시에서는 AI 기술로 유관순 열사와 여성 독립운동가들의 과거 사진을 정교하게 복원하고 이를 입체 홀로그램으로 구현해냈다. 관람객들은 별도 기기를 착용하지 않고도 마치 눈앞에서 열사를 마주 하는 듯한 전시를 관람하고, 대화형 전시도 체험할 수 있다. 총 8개호실로 구성된 여옥사는 홀로그…",
-      "one_line": "과학기술정보통신부(장관 배경훈)는 15일부터 서대문형무소역사관 여옥사에서 홀로그램 상설 전시를 공개한다고 밝혔다.",
-      "one_line_kr": "과학기술정보통신부(장관 배경훈)는 15일부터 서대문형무소역사관 여옥사에서 홀로그램 상설 전시를 공개한다고 밝혔다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213975",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 17:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "“홀로그램 기술로 여성 독립운동가 재조명”...과기부, 15일부터 상설 전시관 개소"
-    },
-    {
-      "id": "2026-08-15_0003",
-      "title": "MS, 개인·기업용 코파일럿 통합…‘슈퍼 앱’으로 재탄생",
-      "summary": "마이크로소프트(MS)가 개인용과 기업용으로 분리돼 있던 AI 비서 '코파일럿' 앱을 단일 앱으로 통합하는 작업에 들어갔다. 단순한 브랜딩 단일화를 넘어 채팅, AI 코딩, 업무 자동화, 에이전트 기능을 결합하는 ‘슈퍼 앱’ 구축의 전 단계다.MS는 13일(현지시간) 지원 문서를 통해 소비자용 코파일럿 앱과 기업용 MS 365 코파일럿 앱을 점진적으로 하나의 ‘MS 코파일럿(MS Copilot)’ 앱으로 통합한다고 밝혔다. 전환 작업은 앞으로 몇주에 걸쳐 진행되며, 사용자와 기기에 따라 적용 시점이…",
-      "one_line": "마이크로소프트(MS)가 개인용과 기업용으로 분리돼 있던 AI 비서 '코파일럿' 앱을 단일 앱으로 통합하는 작업에 들어갔다.",
-      "one_line_kr": "마이크로소프트(MS)가 개인용과 기업용으로 분리돼 있던 AI 비서 '코파일럿' 앱을 단일 앱으로 통합하는 작업에 들어갔다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213970",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:52",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "MS, 개인·기업용 코파일럿 통합…‘슈퍼 앱’으로 재탄생"
-    },
-    {
-      "id": "2026-08-15_0004",
-      "title": "애플, 중국 시장 겨냥한 자체 모델 개발...알리바바와 협력",
-      "summary": "애플이 중국 시장을 겨냥한 자체 대형언어모델(LLM)을 개발하고 있는 것으로 알려졌다. 그동안 중국에서 생성 AI 기능을 제공하기 위해 알리바바 등 현지 기업의 외부 모델에 의존해 왔지만, 이번에는 알리바바의 지원을 받아 중국 전용 모델을 직접 훈련하면서 현지 AI 전략을 강화하고 있다.로이터는 13일(현지시간) 정통한 복수의 소식통을 인용, 애플이 중국 시장을 위해 알리바바와 협력해 별도의 AI 모델을 개발했다고 보도했다.두 회사는 이에 대한 논평을 내놓지 않았다.이번 자체 모델 개발은 애플이 …",
-      "one_line": "애플이 중국 시장을 겨냥한 자체 대형언어모델(LLM)을 개발하고 있는 것으로 알려졌다.",
-      "one_line_kr": "애플이 중국 시장을 겨냥한 자체 대형언어모델(LLM)을 개발하고 있는 것으로 알려졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213966",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:26",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "애플, 중국 시장 겨냥한 자체 모델 개발...알리바바와 협력"
-    },
-    {
-      "id": "2026-08-15_0005",
-      "title": "오픈AI, 14배 빠른 '울트라패스트' 모드 공개...\"지능과 속도 다 잡았다\"",
-      "summary": "오픈AI가 최신 모델 'GPT-5.6 솔(Sol)'을 기존 표준 처리 방식보다 최대 14배 빠르게 구동하는 '울트라패스트(Ultrafast)' 모드를 공개했다. 오픈AI는 13일(현지시간) GPT-5.6 솔을 위한 새로운 API 서비스 등급인 울트라패스트의 제한적 프리뷰를 시작한다고 밝혔다.울트라패스트는 표준 처리 방식 대비 최대 14배 빠른 속도로 작동하며, 출력 속도는 최대 초당 750토큰에 달한다.기존에는 AI 모델을 실시간 수준으로 빠르게 사용하려면 상대적으로 작은 모델이나 특정 작업에 최…",
-      "one_line": "오픈AI는 13일(현지시간) GPT-5.6 솔을 위한 새로운 API 서비스 등급인 울트라패스트의 제한적 프리뷰를 시작한다고 밝혔다.울트라패스트는 표준 처리 방식 대비 최대 14배 빠른 속도로 작동하며, 출력 속도는…",
-      "one_line_kr": "오픈AI는 13일(현지시간) GPT-5.6 솔을 위한 새로운 API 서비스 등급인 울트라패스트의 제한적 프리뷰를 시작한다고 밝혔다.울트라패스트는 표준 처리 방식 대비 최대 14배 빠른 속도로 작동하며, 출력 속도는…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213946",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:16",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 14배 빠른 '울트라패스트' 모드 공개...\"지능과 속도 다 잡았다\""
-    },
-    {
-      "id": "2026-08-15_0006",
-      "title": "오픈AI, 연간 매출 56조 돌파…8개월 만에 매출 2배로 급증",
-      "summary": "오픈AI가 AI 서비스 수요 확대에 힘입어 연간 환산 매출(ARR) 400억달러(약 56조원)를 넘어설 전망이다. 블룸버그는 13일(현지시간) 소식통을 인용, 오픈AI의 ARR이 400억달러를 웃돌 것으로 예상된다고 보도했다.정확한 매출은 공개되지 않았지만, 최근 몇 달 동안 매출 증가 속도가 크게 빨라진 것으로 전해졌다. 특히 '코덱스'의 사용 확대가 매출 성장에 상당한 영향을 미친 것으로 알려졌다. 여기에 챗GPT 구독 서비스와 초기 단계인 광고 사업, 기존 소비자 사업의 성장도 매출 확대에 …",
-      "one_line": "블룸버그는 13일(현지시간) 소식통을 인용, 오픈AI의 ARR이 400억달러를 웃돌 것으로 예상된다고 보도했다.정확한 매출은 공개되지 않았지만, 최근 몇 달 동안 매출 증가 속도가 크게 빨라진 것으로 전해졌다.",
-      "one_line_kr": "블룸버그는 13일(현지시간) 소식통을 인용, 오픈AI의 ARR이 400억달러를 웃돌 것으로 예상된다고 보도했다.정확한 매출은 공개되지 않았지만, 최근 몇 달 동안 매출 증가 속도가 크게 빨라진 것으로 전해졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213947",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:10",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 연간 매출 56조 돌파…8개월 만에 매출 2배로 급증"
-    },
-    {
-      "id": "2026-08-15_0007",
-      "title": "스파크랩 \"5억 AI 크레딧 제공 창업 지원 프로그램에 1500여명 몰려\"",
-      "summary": "글로벌 액셀러레이터 스파크랩은 지난 13일 서울 강남구 마루180에서 AI 네이티브 창업가 육성 프로그램 ‘스파크클로(Spark Claw)’ 부트캠프를 개최하고 10주간 프로그램 운영에 본격 돌입했다고 밝혔다.스파크랩이 지난 4월 론칭한 스파크클로는 에이전틱 AI 시대에 최적화된 1인 창업가와 소규모 팀을 위한 AI 네이티브 창업 특화 프로그램이다. 같은 달 공개된 사전 신청에 1500여명이 몰린 데 이어, 본 모집 기간에도 국내외 700여 팀이 지원했다.부트캠프 오리엔테이션에는 스파크클로 서류 …",
-      "one_line": "글로벌 액셀러레이터 스파크랩은 지난 13일 서울 강남구 마루180에서 AI 네이티브 창업가 육성 프로그램 ‘스파크클로(Spark Claw)’ 부트캠프를 개최하고 10주간 프로그램 운영에 본격 돌입했다고…",
-      "one_line_kr": "글로벌 액셀러레이터 스파크랩은 지난 13일 서울 강남구 마루180에서 AI 네이티브 창업가 육성 프로그램 ‘스파크클로(Spark Claw)’ 부트캠프를 개최하고 10주간 프로그램 운영에 본격 돌입했다고…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213965",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:07",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "스파크랩 \"5억 AI 크레딧 제공 창업 지원 프로그램에 1500여명 몰려\""
-    },
-    {
-      "id": "2026-08-15_0008",
-      "title": "솔트룩스, AI 기술 ‘로보틱스’로 확장…“데이터 수집 서비스로 8억 이상 매출 확보”",
-      "summary": "AI 전문 솔트룩스(대표 이경일)가 글로벌 로보틱스 기업을 대상으로 한 데이터 수집 서비스에서 59만9000달러(약 8억4848만원)의 매출을 확보하며 AI 기술의 로보틱스 확장에 속도를 내고 있다고 14일 밝혔다.이는 베트남 현지법인 솔트룩스테크놀로지(SLT) 전체 매출의 약 68%를 차지하는 성과다.로보틱스 데이터는 로봇이 실제 환경을 인식하고 판단·행동할 수 있도록 피지컬 AI를 학습시키는 핵심 기반이다. 솔트룩스는 베트남 법인의 데이터 수집·구축 역량을 바탕으로 글로벌 로보틱스 기업 대상 …",
-      "one_line": "AI 전문 솔트룩스(대표 이경일)가 글로벌 로보틱스 기업을 대상으로 한 데이터 수집 서비스에서 59만9000달러(약 8억4848만원)의 매출을 확보하며 AI 기술의 로보틱스 확장에 속도를 내고 있다고 14일…",
-      "one_line_kr": "AI 전문 솔트룩스(대표 이경일)가 글로벌 로보틱스 기업을 대상으로 한 데이터 수집 서비스에서 59만9000달러(약 8억4848만원)의 매출을 확보하며 AI 기술의 로보틱스 확장에 속도를 내고 있다고 14일…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213972",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:04",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "솔트룩스, AI 기술 ‘로보틱스’로 확장…“데이터 수집 서비스로 8억 이상 매출 확보”"
-    },
-    {
-      "id": "2026-08-15_0009",
-      "title": "순천 중학생 40여명, AI로 삼국시대 문화재 배웠다",
-      "summary": "AI 생성 영상순천시청소년문화의집에서 중학생들이 역사와 AI를 결합한 디지털 교육을 체험했다고 14일 밝혔다.순천은 11일부터 이틀간 중학생 40여명을 대상으로 ‘디지털 새싹캠프’를 운영해 코딩과 센서, AI 기술을 삼국시대 문화재와 연결한 융합형 프로젝트를 진행했다.이번 캠프는 한국과학창의재단이 지원하고 한국로봇융합연구원이 운영한 국가 디지털 교육 사업이다. 청소년들이 AI와 소프트웨어를 직접 활용하며 디지털 기술에 대한 이해를 높일 수 있도록 체험 중심으로 구성됐다.교육 주제는 ‘삼국시대 문화…",
-      "one_line": "청소년들이 AI와 소프트웨어를 직접 활용하며 디지털 기술에 대한 이해를 높일 수 있도록 체험 중심으로 구성됐다.교육 주제는 ‘삼국시대 문화…",
-      "one_line_kr": "청소년들이 AI와 소프트웨어를 직접 활용하며 디지털 기술에 대한 이해를 높일 수 있도록 체험 중심으로 구성됐다.교육 주제는 ‘삼국시대 문화…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=213967",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:02",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "순천 중학생 40여명, AI로 삼국시대 문화재 배웠다"
-    },
-    {
-      "id": "2026-08-15_0010",
-      "title": "‘AI BUS 2026’ 벡스코서 개최...의료·교육 현장 바꾼 AI 공개",
-      "summary": "부산이 국내 AI 산업의 현재와 미래를 논의하는 무대로 나선다. 부산대학교와 부산대학교병원, 디지틀조선일보가 주최하는 AI 컨퍼런스 ‘AI BUS 2026’이 오는 9월 11일 부산 벡스코 제1전시장 214·215호에서 열린다. AI BUS는 ‘AI 부산(BUSAN)’의 줄임말로, 지역 거점 병원과 대학, 산업계가 함께 부산을 AI 중심 도시로 성장시키기 위해 마련한 행사다. 2023년 처음 문을 연 이후 올해로 네 번째를 맞는다. 이번 컨퍼런스에서는 의료 AI와 교육 AI 분야를 메인으로 다룬다…",
-      "one_line": "부산이 국내 AI 산업의 현재와 미래를 논의하는 무대로 나선다.",
-      "one_line_kr": "부산이 국내 AI 산업의 현재와 미래를 논의하는 무대로 나선다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21359",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 17:06",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "‘AI BUS 2026’ 벡스코서 개최...의료·교육 현장 바꾼 AI 공개"
-    },
-    {
-      "id": "2026-08-15_0011",
-      "title": "마키나락스, 반년 만에 작년 수주 돌파...‘피지컬 AI’ 사업 확대",
-      "summary": "마키나락스가 올해 상반기 매출과 수주를 동시에 확대하며 산업 특화 AI 사업의 성장세를 이어갔다. 특히 상반기 신규 수주가 200억 원을 넘어서면서 지난해 연간 수주액을 반년 만에 넘어섰다. 코스닥 상장으로 확보한 자금을 기반으로 국방과 제조 분야의 피지컬 AI 사업 확대에도 속도를 낼 전망이다. 마키나락스는 14일 공시를 통해 2026년 상반기 연결 기준 매출액이 70억 원으로 전년 동기 26억 원 대비 168% 증가했다고 밝혔다. 같은 기간 영업손실은 42억 원으로 지난해 상반기 59억 원에서…",
-      "one_line": "특히 상반기 신규 수주가 200억 원을 넘어서면서 지난해 연간 수주액을 반년 만에 넘어섰다.",
-      "one_line_kr": "특히 상반기 신규 수주가 200억 원을 넘어서면서 지난해 연간 수주액을 반년 만에 넘어섰다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21358",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:42",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "마키나락스, 반년 만에 작년 수주 돌파...‘피지컬 AI’ 사업 확대"
-    },
-    {
-      "id": "2026-08-15_0012",
-      "title": "딥엑스, 글로벌서 1300만 달러 수주...양산 1년 만에 77건",
-      "summary": "딥엑스가 온디바이스 AI 반도체 ‘DX-M1’ 양산을 시작한 지 1년 만에 글로벌 시장에서 77건의 상업용 구매주문(PO)을 확보했다. 딥엑스는 14일 DX-M1 양산 이후 1년 동안 한국을 비롯해 미국, 중국, 유럽, 대만, 홍콩, 일본, 싱가포르, 인도 등 10여 개 국가와 지역에서 총 77건, 1300만 달러 이상의 상업용 PO를 확보했다고 밝혔다. DX-M1은 딥엑스가 처음 양산한 온디바이스 AI용 신경망처리장치(NPU)다. 삼성전자 5나노 공정을 기반으로 생산되며 클라우드 연결 없이 기기…",
-      "one_line": "딥엑스가 온디바이스 AI 반도체 ‘DX-M1’ 양산을 시작한 지 1년 만에 글로벌 시장에서 77건의 상업용 구매주문(PO)을 확보했다.",
-      "one_line_kr": "딥엑스가 온디바이스 AI 반도체 ‘DX-M1’ 양산을 시작한 지 1년 만에 글로벌 시장에서 77건의 상업용 구매주문(PO)을 확보했다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21357",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:29",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "딥엑스, 글로벌서 1300만 달러 수주...양산 1년 만에 77건"
-    },
-    {
-      "id": "2026-08-15_0013",
-      "title": "‘휴머노이드부터 AI 팩토리까지’...엔비디아·LG, 피지컬 AI 동맹 맺어",
-      "summary": "엔비디아와 LG가 13일(현지시간) 미국 캘리포니아주 산타클라라 엔비디아 본사에서 전략적 협력을 위한 양해각서를 체결했다고 14일 밝혔다. 젠슨 황 엔비디아 CEO와 구광모 LG 대표가 참석한 가운데 로보틱스, AI 팩토리, 모빌리티 분야의 협력 계획을 구체화했다. 눈에 띄는 분야는 휴머노이드다. LG는 엔비디아의 개방형 휴머노이드 파운데이션 모델 ‘아이작 GR00T’를 기반으로 차세대 이족보행 휴머노이드 로봇을 개발하며, 내년 1분기 공개를 목표로 하고 있다. 로봇의 온보드 컴퓨팅과 추론·제어에…",
-      "one_line": "젠슨 황 엔비디아 CEO와 구광모 LG 대표가 참석한 가운데 로보틱스, AI 팩토리, 모빌리티 분야의 협력 계획을 구체화했다.",
-      "one_line_kr": "젠슨 황 엔비디아 CEO와 구광모 LG 대표가 참석한 가운데 로보틱스, AI 팩토리, 모빌리티 분야의 협력 계획을 구체화했다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21356",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:13",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "‘휴머노이드부터 AI 팩토리까지’...엔비디아·LG, 피지컬 AI 동맹 맺어"
-    },
-    {
-      "id": "2026-08-15_0014",
-      "title": "솔트룩스, 상반기 수주 189억 달성 “이제는 피지컬 AI로”",
-      "summary": "솔트룩스는 2026년 상반기 누적 매출 87억2000만 원, 누적 수주 188억9000만 원을 기록했다고 14일 밝혔다. 상반기 말 기준 별도 수주잔고는 약 155억 원이다. 수주가 프로젝트 진행률 등에 따라 매출로 인식되는 사업 구조인 만큼, 상반기에 확보한 수주가 하반기 이후 순차적으로 매출에 반영될 전망이다. 수주 확대는 기업의 AI 도입이 기술 검증 단계에서 실제 업무 시스템 구축으로 넘어가는 흐름과 맞닿아 있다. 원전과 금융, 공공 등 전문성이 요구되는 산업에서 AI를 기존 업무 데이터와…",
-      "one_line": "수주 확대는 기업의 AI 도입이 기술 검증 단계에서 실제 업무 시스템 구축으로 넘어가는 흐름과 맞닿아 있다.",
-      "one_line_kr": "수주 확대는 기업의 AI 도입이 기술 검증 단계에서 실제 업무 시스템 구축으로 넘어가는 흐름과 맞닿아 있다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21355",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:03",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "솔트룩스, 상반기 수주 189억 달성 “이제는 피지컬 AI로”"
-    },
-    {
-      "id": "2026-08-15_0015",
-      "title": "업스테이지, ‘솔라 프로 4’ 공개 “시험보다 업무 수행능력 강화”",
-      "summary": "업스테이지가 자체 개발한 대형언어모델(LLM) ‘솔라 프로 4’를 차세대 상용 AI 모델로 공개했다고 14일 밝혔다. 전작 솔라 프로 3와 비교해 추론과 에이전트 성능을 높이고, 사용자가 AI에 작업을 맡긴 뒤 결과를 얻기까지 필요한 연속적인 작업 수행 능력에 초점을 맞췄다.특히 글로벌 개발자 생태계 진입을 전면에 내세웠다. 업스테이지에 따르면, 솔라 프로 4는 공개 직후 미국 누스 리서치가 개발한 AI 에이전트 ‘헤르메스 에이전트’와 AI 모델 라우팅 플랫폼 ‘오픈라우터’에 등록됐다. 업스테이지…",
-      "one_line": "업스테이지가 자체 개발한 대형언어모델(LLM) ‘솔라 프로 4’를 차세대 상용 AI 모델로 공개했다고 14일 밝혔다.",
-      "one_line_kr": "업스테이지가 자체 개발한 대형언어모델(LLM) ‘솔라 프로 4’를 차세대 상용 AI 모델로 공개했다고 14일 밝혔다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21354",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 14:45",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "업스테이지, ‘솔라 프로 4’ 공개 “시험보다 업무 수행능력 강화”"
-    },
-    {
-      "id": "2026-08-15_0016",
-      "title": "제논, B2C AI 에이전트 ‘제나’에 AI 회의록·데이터 분석 추가",
-      "summary": "제논이 B2C AI 에이전트 통합 포털 ‘제나(GenA)’에 회의록 작성과 데이터 분석 기능을 추가하며 생성형 AI의 일상적인 업무 활용 확대에 나섰다. 여러 AI 서비스를 목적에 따라 오가야 했던 기존 이용 방식을 하나의 환경으로 통합하는 데 초점을 맞췄다.제나는 지난 5월 베타 서비스를 시작했다. 챗봇을 비롯해 슬라이드 제작, 번역, 리서치 등 서로 다른 AI 기능을 하나의 인터페이스에서 사용하도록 구성했다. 제논은 이후 사용자 수요가 높은 업무 기능을 순차적으로 추가하며 서비스 범위를 넓히고…",
-      "one_line": "제논이 B2C AI 에이전트 통합 포털 ‘제나(GenA)’에 회의록 작성과 데이터 분석 기능을 추가하며 생성형 AI의 일상적인 업무 활용 확대에 나섰다.",
-      "one_line_kr": "제논이 B2C AI 에이전트 통합 포털 ‘제나(GenA)’에 회의록 작성과 데이터 분석 기능을 추가하며 생성형 AI의 일상적인 업무 활용 확대에 나섰다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=21353",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 14:27",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "제논, B2C AI 에이전트 ‘제나’에 AI 회의록·데이터 분석 추가"
-    },
-    {
-      "id": "2026-08-15_0017",
-      "title": "“AI 윤리원칙, 자율규범으로 정착해야”…정부, 이달 내 제정",
-      "summary": "정부가 AI 기술 발전에 따른 법적 공백을 보완하기 위해 이달 안으로 ‘인공지능 윤리원칙’을 제정한다. 이번 원칙은 기업을 강제하는 규제보다 산업계와 이용자, 시민사회가 자율적으로 실천하는 기준에 초점을 맞춘다. 과기정통부는 해설서와 자율점검표, 교육 교재 등을 마련해 윤리원칙의 현장 적용을 지원할 계획이다.",
-      "one_line": "정부가 AI 기술 발전에 따른 법적 공백을 보완하기 위해 이달 안으로 ‘인공지능 윤리원칙’을 제정한다.",
-      "one_line_kr": "정부가 AI 기술 발전에 따른 법적 공백을 보완하기 위해 이달 안으로 ‘인공지능 윤리원칙’을 제정한다.",
-      "url": "https://byline.network/2026/08/0814-7/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 21:11",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "“AI 윤리원칙, 자율규범으로 정착해야”…정부, 이달 내 제정"
-    },
-    {
-      "id": "2026-08-15_0018",
-      "title": "“AI 탈옥은 시작일 뿐”…AI안전연구소가 ‘국가 AI 위험지도’를 그리는 이유",
-      "summary": "“사이버보안은 생각보다 더 빨리 왔습니다.” 김명주 인공지능안전연구소(AISI) 소장은 바이라인네트워크와의 인터뷰에서 최근 인공지능(AI)의 사이버보안 능력이 빠르게 발전하는 상황을 이렇게 표현했다. 김 소장이 말하는 AI의 위험은 국가를 위협할 수 있을 정도로 빠르게 발전하고 있다.",
-      "one_line": "더 빨리 왔습니다.” 김명주 인공지능안전연구소(AISI) 소장은 바이라인네트워크와의 인터뷰에서 최근 인공지능(AI)의 사이버보안 능력이 빠르게 발전하는 상황을 이렇게 표현했다.",
-      "one_line_kr": "더 빨리 왔습니다.” 김명주 인공지능안전연구소(AISI) 소장은 바이라인네트워크와의 인터뷰에서 최근 인공지능(AI)의 사이버보안 능력이 빠르게 발전하는 상황을 이렇게 표현했다.",
-      "url": "https://byline.network/2026/08/14-615/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 16:42",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "“AI 탈옥은 시작일 뿐”…AI안전연구소가 ‘국가 AI 위험지도’를 그리는 이유"
-    },
-    {
-      "id": "2026-08-15_0019",
-      "title": "정부 ‘보안 특파모’ 참여경쟁 시작…LG CNS 확정, SKT·네이버클라우드 검토",
-      "summary": "정부가 독자 인공지능(AI) 파운데이션 모델과 별도로 사이버 보안 분야에 특화한 AI 파운데이션 모델 개발에 나선 가운데 국내 AI·보안 기업들이 참여를 확정하거나 검토하고 있다. LG CNS는 사업 참여를 확정했고 SK텔레콤과 네이버클라우드는 보안기업들과 컨소시엄 구성을 검토하고 있다.",
-      "one_line": "정부가 독자 인공지능(AI) 파운데이션 모델과 별도로 사이버 보안 분야에 특화한 AI 파운데이션 모델 개발에 나선 가운데 국내 AI·보안 기업들이 참여를 확정하거나 검토하고 있다.",
-      "one_line_kr": "정부가 독자 인공지능(AI) 파운데이션 모델과 별도로 사이버 보안 분야에 특화한 AI 파운데이션 모델 개발에 나선 가운데 국내 AI·보안 기업들이 참여를 확정하거나 검토하고 있다.",
-      "url": "https://byline.network/2026/08/14-614/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 15:14",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "정부 ‘보안 특파모’ 참여경쟁 시작…LG CNS 확정, SKT·네이버클라우드 검토"
-    },
-    {
-      "id": "2026-08-15_0020",
-      "title": "사모펀드 실버레이크, 워크데이 인수 협상중",
-      "summary": "사모펀드 실버레이크가 인사관리소프트웨어 서비스 업체 워크데이 인수에 나섰다. AI 에이전트 발전으로 기업용 SaaS 시장이 붕괴될 것이란 사스포칼립스 마케팅의 대표적인 피해자였던 워크데이는 창업자의 CEO 복귀 후 대대적인 변화 기로에 섰다.",
-      "one_line": "AI 에이전트 발전으로 기업용 SaaS 시장이 붕괴될 것이란 사스포칼립스 마케팅의 대표적인 피해자였던 워크데이는 창업자의 CEO 복귀 후 대대적인 변화 기로에 섰다.",
-      "one_line_kr": "AI 에이전트 발전으로 기업용 SaaS 시장이 붕괴될 것이란 사스포칼립스 마케팅의 대표적인 피해자였던 워크데이는 창업자의 CEO 복귀 후 대대적인 변화 기로에 섰다.",
-      "url": "https://byline.network/2026/08/14-613/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 14:51",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "사모펀드 실버레이크, 워크데이 인수 협상중"
-    },
-    {
-      "id": "2026-08-15_0021",
-      "title": "구글, ‘제미나이 3.7 플래시’ 출시",
-      "summary": "구글이 보급형 AI 모델 ‘제미나이 3.7 플래시’를 공개했다. 제미나이 3.6 플래시를 공개한 지 3주일 만이다. AI 경쟁에서 주춤하고 있는 구글은 최고사양 프론티어 모델인 제미나이 3.5 프로의 계속된 출시 지연 와중에 가장 대중적 모델의 성능개선과 가격인하로 중국 모델에 대응하고 있다.",
-      "one_line": "구글이 보급형 AI 모델 ‘제미나이 3.7 플래시’를 공개했다.",
-      "one_line_kr": "구글이 보급형 AI 모델 ‘제미나이 3.7 플래시’를 공개했다.",
-      "url": "https://byline.network/2026/08/14-610/",
-      "source": "바이라인네트워크",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-08-14 13:49",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "구글, ‘제미나이 3.7 플래시’ 출시"
-    },
-    {
-      "id": "2026-08-15_0022",
-      "title": "Google will now allow users to remove visible watermark from its AI generations",
-      "summary": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
-      "one_line": "Turning off this setting won't affect invisible benchmarks used to identify an AI generated file.",
-      "one_line_kr": "이 설정을 꺼도 AI 생성 파일을 식별하는 데 사용되는 보이지 않는 벤치마크에는 영향을 미치지 않습니다.",
-      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-15 01:13",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Google은 이제 사용자가 AI 세대에서 눈에 보이는 워터마크를 제거할 수 있도록 허용합니다."
-    },
-    {
-      "id": "2026-08-15_0023",
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "summary": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own hardware&#160;— a contrast to&#160;Muse&#160;Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside&#160;a letter from…",
-      "one_line": "Meta released Glimmer this week, an open-weight AI&#160;model&#160;anyone can download and run on their own…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-15 00:43",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0024",
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
-      "one_line": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
-      "one_line_kr": "프랑스 스타트업 Kog에 따르면 GPU가 에이전트 워크플로우에 적합하지 않다는 생각은 오해일 수 있습니다.",
-      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 23:50",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0025",
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "summary": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
-      "one_line": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power…",
-      "one_line_kr": "미국 일부 지역에서는 천연가스 가격이 3배로 오를 수 있으며, 이로 인해 대규모 전력 비용이 하이퍼스케일 업체들에게 부담이 될 수 있습니다.",
-      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 23:05",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0026",
-      "title": "Everything You Want to Hear",
-      "summary": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech. Up to 20x cheaper than comparable audio models, available now through the Pika API Club.",
-      "one_line": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech.",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://pika.art/blog/pika-audio-models",
-      "source": "Pika Blog",
-      "category": "영상AI",
-      "badge": "crawled",
-      "lang": "en",
-      "date": "2026-08-14 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "듣고 싶은 모든 것"
-    },
-    {
-      "id": "2026-08-15_0027",
-      "title": "Welcome to the Pika API Club",
-      "summary": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech. Up to 20x cheaper than comparable audio models, available now through the Pika API Club.",
-      "one_line": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech.",
-      "one_line_kr": "Pika Audio는 Soundtrack, Music, SFX 및 Speech와 같은 최초의 프론티어 기반 사운드 모델 제품군입니다.",
-      "url": "https://pika.art/blog/pika-api-club",
-      "source": "Pika Blog",
-      "category": "영상AI",
-      "badge": "crawled",
-      "lang": "en",
-      "date": "2026-08-05 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Pika API 클럽에 오신 것을 환영합니다"
-    },
-    {
-      "id": "2026-08-15_0028",
-      "title": "Get Your Product Out There",
-      "summary": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech. Up to 20x cheaper than comparable audio models, available now through the Pika API Club.",
-      "one_line": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech.",
-      "one_line_kr": "Pika Audio는 Soundtrack, Music, SFX 및 Speech와 같은 최초의 프론티어 기반 사운드 모델 제품군입니다.",
-      "url": "https://pika.art/blog/founder-starter-kit",
-      "source": "Pika Blog",
-      "category": "영상AI",
-      "badge": "crawled",
-      "lang": "en",
-      "date": "2026-05-28 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "당신의 제품을 세상에 내놓으세요"
-    },
-    {
-      "id": "2026-08-15_0029",
-      "title": "Every Breakthrough Starts With an Experiment",
-      "summary": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech. Up to 20x cheaper than comparable audio models, available now through the Pika API Club.",
-      "one_line": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech.",
-      "one_line_kr": "Pika Audio는 Soundtrack, Music, SFX 및 Speech와 같은 최초의 프론티어 기반 사운드 모델 제품군입니다.",
-      "url": "https://pika.art/blog/pika-experiments",
-      "source": "Pika Blog",
-      "category": "영상AI",
-      "badge": "crawled",
-      "lang": "en",
-      "date": "2026-05-26 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "모든 혁신은 실험으로 시작됩니다"
-    },
-    {
-      "id": "2026-08-15_0030",
-      "title": "Your Pika Agent Just Got a Job",
-      "summary": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech. Up to 20x cheaper than comparable audio models, available now through the Pika API Club.",
-      "one_line": "Pika Audio is our first family of frontier foundation sound models: Soundtrack, Music, SFX and Speech.",
-      "one_line_kr": "Pika Audio는 Soundtrack, Music, SFX 및 Speech와 같은 최초의 프론티어 기반 사운드 모델 제품군입니다.",
-      "url": "https://pika.art/blog/your-ai-self-just-got-a-job",
-      "source": "Pika Blog",
-      "category": "영상AI",
-      "badge": "crawled",
-      "lang": "en",
-      "date": "2026-04-10 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "귀하의 Pika 에이전트가 방금 일자리를 얻었습니다"
-    },
-    {
-      "id": "2026-08-15_0031",
-      "title": "State of Open Models: Summer 2026 Observations",
-      "summary": "",
-      "one_line": "State of Open Models: Summer 2026 Observations",
-      "one_line_kr": "공개 모델 현황: 2026년 여름 관측",
-      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
-      "source": "HuggingFace Blog",
-      "category": "이미지·디자인AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-08-14 09:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "공개 모델 현황: 2026년 여름 관측"
-    },
-    {
-      "id": "2026-08-15_0032",
-      "title": "P2Fusion: Prompt-based Progressive Infrared-Visible Image Fusion via Dual-Prior Distillation",
-      "summary": "Infrared-visible image fusion (IVIF) is pivotal for multimodal perception, yet reconciling the inherent information disparity between thermal and textural features remains a fundamental challenge. Existing prior-guided methods often rely on static constraints that induce optimiza…",
-      "one_line": "Infrared-visible image fusion (IVIF) is pivotal for multimodal perception, yet reconciling the inherent information…",
-      "one_line_kr": "IVIF(적외선-가시 이미지 융합)는 다중 모드 인식에 중추적인 역할을 하지만 고유 정보를 조정합니다.",
-      "url": "https://tldr.takara.ai/p/2608.13045",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-13 19:09",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "P2Fusion: 이중 사전 증류를 통한 신속한 기반 점진적 적외선-가시 이미지 융합"
-    },
-    {
-      "id": "2026-08-15_0033",
-      "title": "Wasserstein Filtering: A Sample Selection Method for Robust Distribution Learning",
-      "summary": "Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population distribution. To this end, we propose Wasserstein Filtering (WF), a novel sample selection framework that discards a fraction of suspicious samples and estimate…",
-      "one_line": "Given a dataset where a portion of the samples are contaminated, our goal is to recover the underlying clean population…",
-      "one_line_kr": "샘플의 일부가 오염된 데이터 세트가 주어지면 우리의 목표는 기본 깨끗한 인구를 복구하는 것입니다…",
-      "url": "https://tldr.takara.ai/p/2608.13418",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 01:12",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Wasserstein 필터링: 강력한 분포 학습을 위한 샘플 선택 방법"
-    },
-    {
-      "id": "2026-08-15_0034",
-      "title": "Towards Physics-Faithful Generation of Scientific Diagrams",
-      "summary": "Text-to-image generation has reached photorealistic quality, yet state-of-the-art systems remain unreliable at producing scientific diagrams, whose value depends not on appearance but on physical faithfulness: correct force directions, valid coordinate systems, consistent thermod…",
-      "one_line": "Text-to-image generation has reached photorealistic quality, yet state-of-the-art systems remain unreliable at…",
-      "one_line_kr": "텍스트-이미지 생성은 사실적인 품질에 도달했지만 최첨단 시스템은 여전히 ​​신뢰할 수 없습니다.",
-      "url": "https://tldr.takara.ai/p/2608.13112",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-13 20:40",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "물리학에 충실한 과학 다이어그램 생성을 향하여"
-    },
-    {
-      "id": "2026-08-15_0035",
-      "title": "Splat-based Metal Artifact Reduction in Cone-Beam CT via Polychromatic Modeling",
-      "summary": "Cone-beam computed tomography (CBCT) enables volumetric reconstruction from X-ray projections, but suffers from severe artifacts--especially beam hardening--when imaging materials with high attenuation such as metals. These artifacts arise from the polychromatic nature of X-rays …",
-      "one_line": "These artifacts arise from the polychromatic nature of X-rays …",
-      "one_line_kr": "이러한 인공물은 X선의 다색성 특성으로 인해 발생합니다.",
-      "url": "https://tldr.takara.ai/p/2608.13159",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-13 21:25",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "다색 모델링을 통한 Cone-Beam CT의 스플랫 기반 금속 인공물 감소"
-    },
-    {
-      "id": "2026-08-15_0036",
-      "title": "Grok 4.6 is now available in GitHub Copilot",
-      "summary": "Grok 4.6, xAI's latest reasoning model, is now rolling out in GitHub Copilot. It is designed for agentic coding and complex multi-step workflows. In our internal testing, Grok 4.6 showed&#8230; The post Grok 4.6 is now available in GitHub Copilot appeared first on The GitHub Blog…",
-      "one_line": "In our internal testing, Grok 4.6 showed&#8230; The post Grok 4.6 is now available in GitHub Copilot appeared first on…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-08-15 01:17",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0037",
-      "title": "GitHub Copilot weekly releases — August 10",
-      "summary": "From new models and portable plugins to smoother agent workflows, this week's updates make GitHub Copilot more flexible across editors, the command line, and the Copilot app. GitHub Copilot, general&#8230; The post GitHub Copilot weekly releases — August 10 appeared first on The …",
-      "one_line": "GitHub Copilot, general&#8230; The post GitHub Copilot weekly releases — August 10 appeared first on The …",
-      "one_line_kr": "GitHub Copilot, 일반&#8230; GitHub Copilot 주간 릴리스 — 8월 10일 게시물이 The…",
-      "url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-08-14 12:15",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "GitHub Copilot 주간 릴리스 — 8월 10일"
-    },
-    {
-      "id": "2026-08-15_0038",
-      "title": "[AINews] Gemini 3.7 Flash brings GDM back to the forefront",
-      "summary": "Down, but not out!",
-      "one_line": "Down, but not out!",
-      "one_line_kr": "아래로, 그러나 밖으로는 아닙니다!",
-      "url": "https://www.latent.space/p/ainews-gemini-37-flash-brings-gdm",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 14:30",
-      "collect_date": "2026-08-15",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!dQiQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d28d24c-21c5-4e67-a9e6-00b50421ddfe_2112x1214.png",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "[AINews] Gemini 3.7 플래시, GDM을 다시 최전선으로 끌어올림"
-    },
-    {
-      "id": "2026-08-15_0039",
-      "title": "How fair is AI’s use of copyright material? - Down To Earth",
-      "summary": "How fair is AI’s use of copyright material? Down To Earth",
-      "one_line": "How fair is AI’s use of copyright material?",
-      "one_line_kr": "AI의 저작권 자료 사용은 얼마나 공정합니까?",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUk80WWpheWdRdGRONzdaWnB0ZU1tR3hCQUlVRW0wbl9MV1R5MUM2TXJ2S25WTVhMV1ROTThZTVVaR0RCYUp0LXU1ZjllLVBBRHIyMzlKaEh3dW5VdWtzTWtXM205SlZaRFI5YnktYmpIanZDbnpSLVAxN3pqM1hjSkdJWkpPQWNnUGdjeVdwcHFIaFRKcGfSAaMBQVVfeXFMT2VPblE3WVRsY2E5MV9VZUxEY054TUhqMmdwcGxTa1ZwQl92b2J0a1VGeDRTRHZQdkk4RXRLOEFHSTEwRXRUUWZKc3pMVFZxRXd4YjlDVU4wNThXMWxxWTNndl8yek9nUXhmeWtJcVcxUzYzYVV4eE5aUXByd2d3aU5JaEk5UHQyeGUtOGYtOE44YWNpakZlbl9HMG5rRVJrNG02QQ?oc=5",
-      "source": "AI Copyright Law",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2026-08-10 18:42",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "AI의 저작권 자료 사용은 얼마나 공정합니까? - 지구까지"
-    },
-    {
-      "id": "2026-08-15_0040",
-      "title": "LoKiFormer: Locality-aware Attention with Decoupled Knowledge Memory for Efficient Large Language Model Pretraining",
-      "summary": "arXiv:2608.12419v1 Announce Type: new Abstract: Large language models (LLMs) have achieved remarkable breakthroughs across various applications. However, their architectures remain inefficient in pretraining due to two main limitations: (i) self-attention lacks an explicit induct…",
-      "one_line": "arXiv:2608.12419v1 Announce Type: new Abstract: Large language models (LLMs) have achieved remarkable breakthroughs…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://arxiv.org/abs/2608.12419",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0041",
-      "title": "Which Site, and When: A Free-Satellite-Data Test of Himalayan Glacial Lake Bursts, Landslides, and Ice Floods",
-      "summary": "arXiv:2608.12422v1 Announce Type: new Abstract: Two free satellite signals carry real information about glacial-lake outburst risk in the Nepal Himalaya: radar interferometry sees a moraine dam slowly sagging, and satellite weather marks the weeks when a primed lake is under stre…",
-      "one_line": "arXiv:2608.12422v1 Announce Type: new Abstract: Two free satellite signals carry real information about glacial-lake…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://arxiv.org/abs/2608.12422",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "어느 장소와 언제: 히말라야 빙하 호수 폭발, 산사태 및 얼음 홍수에 대한 무료 위성 데이터 테스트"
-    },
-    {
-      "id": "2026-08-15_0042",
-      "title": "MARCH: Scaling Recurrent Memory with Content-Routed State Anchors",
-      "summary": "arXiv:2608.12435v1 Announce Type: new Abstract: Transformers owe much of their strong long-context retrieval capability to a token-level memory that grows with context length. This flexibility, however, incurs a quadratic computation complexity during training and a key--value ca…",
-      "one_line": "arXiv:2608.12435v1 Announce Type: new Abstract: Transformers owe much of their strong long-context retrieval capability…",
-      "one_line_kr": "arXiv:2608.12435v1 발표 유형: 새로운 개요: Transformer는 강력한 장기 컨텍스트 검색 기능을 상당 부분 보유하고 있습니다.",
-      "url": "https://arxiv.org/abs/2608.12435",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "3월: 콘텐츠 라우팅 상태 앵커를 사용하여 순환 메모리 확장"
-    },
-    {
-      "id": "2026-08-15_0043",
-      "title": "Multi-AUV Ad-hoc network-based Target Tracking: A Value Gradient Guidance Multi-Agent Diffusion Reinforcement Learning Approach",
-      "summary": "arXiv:2608.12436v1 Announce Type: new Abstract: Multi-AUV ad-hoc network-based target tracking requires networked autonomous underwater vehicles (AUVs) to cooperatively track maneuvering targets under constrained acoustic communication, dynamic topology, and uncertain ocean distu…",
-      "one_line": "arXiv:2608.12436v1 Announce Type: new Abstract: Multi-AUV ad-hoc network-based target tracking requires networked…",
-      "one_line_kr": "arXiv:2608.12436v1 발표 유형: 새로운 개요: 다중 AUV 임시 네트워크 기반 표적 추적에는 네트워크 연결이 필요합니다…",
-      "url": "https://arxiv.org/abs/2608.12436",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Multi-AUV Ad-hoc 네트워크 기반 표적 추적: 가치 기울기 지침 다중 에이전트 확산 강화 학습 A"
-    },
-    {
-      "id": "2026-08-15_0044",
-      "title": "Unifying Generative Models with Path Integrals",
-      "summary": "arXiv:2608.12438v1 Announce Type: new Abstract: We formulate generative modeling as a path integral in which flow-based, diffusion-based, variational, and adversarial models arise as different evaluation principles for a single master action. Its Martin-Siggia-Rose-Janssen-de~Dom…",
-      "one_line": "arXiv:2608.12438v1 Announce Type: new Abstract: We formulate generative modeling as a path integral in which…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://arxiv.org/abs/2608.12438",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "경로 적분으로 생성 모델 통합"
-    },
-    {
-      "id": "2026-08-15_0045",
-      "title": "Dual Spatial-Temporal Attribution: Architecture-Aligned Post-Hoc Explainability for Recurrent Graph Anomaly Detection",
-      "summary": "arXiv:2608.12441v1 Announce Type: new Abstract: Deep learning detectors for anomalies in dynamic graphs have reached strong accuracy, yet they remain opaque: when an edge is flagged, the analyst receives a score but no reason. This opacity is untenable in the cooperative, regulat…",
-      "one_line": "arXiv:2608.12441v1 Announce Type: new Abstract: Deep learning detectors for anomalies in dynamic graphs have reached…",
-      "one_line_kr": "arXiv:2608.12441v1 발표 유형: 새로운 개요: 동적 그래프의 이상 징후에 대한 딥 러닝 탐지기가 도달했습니다…",
-      "url": "https://arxiv.org/abs/2608.12441",
-      "source": "ArXiv ML",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "이중 공간-시간 속성: 반복 그래프 이상 탐지를 위한 아키텍처 정렬 사후 설명 가능성"
-    },
-    {
-      "id": "2026-08-15_0046",
-      "title": "MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis",
-      "summary": "arXiv:2608.12442v1 Announce Type: new Abstract: Differentiable rendering has advanced novel view synthesis (NVS), yet applying it to real-world driving remains difficult due to sparse capture viewpoints, dynamic objects, and limited multi-trajectory data. We introduce the Multi-V…",
-      "one_line": "arXiv:2608.12442v1 Announce Type: new Abstract: Differentiable rendering has advanced novel view synthesis (NVS), yet…",
-      "one_line_kr": "arXiv:2608.12442v1 발표 유형: 새로운 개요: 미분 가능 렌더링에는 고급 NVS(Novel View Synthesis)가 있지만…",
-      "url": "https://arxiv.org/abs/2608.12442",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "MV2: 새로운 뷰 합성을 위한 다중 뷰 다중 차량 운전 데이터 세트"
-    },
-    {
-      "id": "2026-08-15_0047",
-      "title": "HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning",
-      "summary": "arXiv:2608.12502v1 Announce Type: new Abstract: Remote sensing image change captioning (RSICC) converts bitemporal imagery into a sentence describing semantic changes. Most RSICC methods condition caption decoders directly on fused visual features, leaving intermediate change str…",
-      "one_line": "arXiv:2608.12502v1 Announce Type: new Abstract: Remote sensing image change captioning (RSICC) converts bitemporal…",
-      "one_line_kr": "arXiv:2608.12502v1 발표 유형: 새로운 개요: RSICC(원격 감지 이미지 변경 캡션)는 양시간 변환을…",
-      "url": "https://arxiv.org/abs/2608.12502",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "HIMEC: 원격 감지 이미지 변경 캡션을 위한 방향 변경 표현 및 고정 인터페이스 디코딩"
-    },
-    {
-      "id": "2026-08-15_0048",
-      "title": "Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?",
-      "summary": "arXiv:2608.12515v1 Announce Type: new Abstract: Assessing proxemic danger from a robot's egocentric perspective is critical for safe embodied navigation in human environments and requires both visual and contextual reasoning. We evaluate three opensource vision-language models (V…",
-      "one_line": "arXiv:2608.12515v1 Announce Type: new Abstract: Assessing proxemic danger from a robot's egocentric perspective is…",
-      "one_line_kr": "arXiv:2608.12515v1 발표 유형: 새로운 개요: 로봇의 자기 중심적 관점에서 근접 위험을 평가하는 것은…",
-      "url": "https://arxiv.org/abs/2608.12515",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0049",
-      "title": "Surface-to-Skeleton 3D Cephalometry: Estimating Hidden Skeletal Landmarks from CT-Derived External Soft-Tissue Surfaces",
-      "summary": "arXiv:2608.12537v1 Announce Type: new Abstract: Existing 3D facial-landmark methods localize points on visible skin, but whether CT-defined internal skeletal landmarks can be inferred from external soft-tissue geometry remains unclear. We formulate a coordinate-consistent surface…",
-      "one_line": "arXiv:2608.12537v1 Announce Type: new Abstract: Existing 3D facial-landmark methods localize points on visible skin,…",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://arxiv.org/abs/2608.12537",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "표면-골격 3D 두부계측법: CT 유래 외부 연조직 표면에서 숨겨진 골격 랜드마크 추정"
-    },
-    {
-      "id": "2026-08-15_0050",
-      "title": "StrAD: A Streaming Method and Benchmark for Audio Description Generation for Long-form Videos",
-      "summary": "arXiv:2608.12549v1 Announce Type: new Abstract: Visual content is the dominant medium of communication, yet without audio descriptions (ADs), it remains inaccessible to blind and low-vision people. ADs narrate context-relevant visual events during natural audio pauses. Manually c…",
-      "one_line": "arXiv:2608.12549v1 Announce Type: new Abstract: Visual content is the dominant medium of communication, yet without…",
-      "one_line_kr": "arXiv:2608.12549v1 발표 유형: 새로운 개요: 시각적 콘텐츠는 커뮤니케이션의 지배적인 매체이지만…",
-      "url": "https://arxiv.org/abs/2608.12549",
-      "source": "ArXiv CV",
-      "category": "논문",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-08-14 13:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "논문",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "StrAD: 장편 비디오의 오디오 설명 생성을 위한 스트리밍 방법 및 벤치마크"
-    },
-    {
-      "id": "2026-08-15_0051",
-      "title": "The Download: Flock’s new rules, cloning’s future, and children’s cells",
-      "summary": "This is today's edition of The Download, our weekday newsletter that provides a daily dose of what's going on in the world of technology. Flock is tightening its rules in response to a growing surveillance backlash The police-tech giant Flock is changing officers’ access to its n…",
-      "one_line": "This is today's edition of The Download, our weekday newsletter that provides a daily dose of what's going on in the…",
-      "one_line_kr": "이것은 현재 진행되고 있는 일을 매일 제공하는 주중 뉴스레터인 The Download의 오늘 버전입니다.",
-      "url": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/",
-      "source": "MIT Tech Review",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 21:17",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "다운로드: Flock의 새로운 규칙, 복제의 미래, 그리고 아이들의 세포"
-    },
-    {
-      "id": "2026-08-15_0052",
-      "title": "This scientist is helping build a missing map of childhood",
-      "summary": "In 2017, Deanne Taylor attended a presentation at the University of Pennsylvania, just a short walk from her office. A researcher was there to unveil the Human Cell Atlas, an ambitious project that aimed to map every cell in the human body. Taylor was floored, and then concerned.…",
-      "one_line": "A researcher was there to unveil the Human Cell Atlas, an ambitious project that aimed to map every cell in the human…",
-      "one_line_kr": "한 연구원이 인간의 모든 세포 지도를 작성하는 것을 목표로 하는 야심찬 프로젝트인 인간 세포 지도(Human Cell Atlas)를 공개하기 위해 그곳에 있었습니다.",
-      "url": "https://www.technologyreview.com/2026/08/14/1141354/deanne-taylor-gene-expression-children/",
-      "source": "MIT Tech Review",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 18:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
-    },
-    {
-      "id": "2026-08-15_0053",
-      "title": "Job titles of the future: Space travel agent",
-      "summary": "Roman Chiporukha has long turned wild travel dreams into reality. Over two decades as co-owner of the luxury lifestyle firm Roman &#38; Erica, he has orchestrated everything from the construction of a client’s superyacht to vacations in the Bahamas at a location so private that g…",
-      "one_line": "Roman Chiporukha has long turned wild travel dreams into reality.",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://www.technologyreview.com/2026/08/14/1141431/job-titles-space-travel-agent-roman-chiporukha/",
-      "source": "MIT Tech Review",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 18:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "미래의 직업: 우주여행사"
-    },
-    {
-      "id": "2026-08-15_0054",
-      "title": "Cloning could be used to save species—or make human “organ sacks”",
-      "summary": "This week I spoke to scientists who have found a way to turn male mouse embryos female. They’ve developed a CRISPR-based approach to essentially cut out the Y chromosome. It allowed them to create female clones of male mice. That’s right: female animals that are genetically ident…",
-      "one_line": "This week I spoke to scientists who have found a way to turn male mouse embryos female.",
-      "one_line_kr": "이번 주에 나는 수컷 쥐 배아를 암컷으로 바꾸는 방법을 찾은 과학자들과 이야기를 나눴습니다.",
-      "url": "https://www.technologyreview.com/2026/08/14/1141919/cloning-save-species-or-make-human-organ-sacks/",
-      "source": "MIT Tech Review",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 18:00",
-      "collect_date": "2026-08-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "복제는 종을 구하거나 인간의 \"장기 자루\"를 만드는 데 사용될 수 있습니다."
-    },
-    {
-      "id": "2026-08-15_0055",
-      "title": "IBM, OpenAI Partner to Accelerate Enterprise AI",
-      "summary": "The deal comes less than a year after IBM undertook a similar initiative with Anthropic.",
-      "one_line": "The deal comes less than a year after IBM undertook a similar initiative with Anthropic.",
-      "one_line_kr": "이번 거래는 IBM이 Anthropic과 유사한 이니셔티브를 시작한 지 1년도 채 되지 않아 이루어졌습니다.",
-      "url": "https://aibusiness.com/generative-ai/ibm-openai-partner-accelerate-enterprise-ai",
-      "source": "AI Business",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-15 00:26",
-      "collect_date": "2026-08-15",
-      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltecf0f6dd11e9a9e3/6a7f3407ccd7972590b5ce0b/IBM.jpg?width=720&quality=80&disable=upscale",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "IBM, OpenAI 파트너로 엔터프라이즈 AI 가속화"
-    },
-    {
-      "id": "2026-08-15_0056",
-      "title": "Lower Intro Price for Gemini 3.7 Flash to Attract Developers",
-      "summary": "The move shows Google is paying attention to the price war, while also focusing on the coding application that other frontier model providers have found success with.",
-      "one_line": "The move shows Google is paying attention to the price war, while also focusing on the coding application that other…",
-      "one_line_kr": "이러한 움직임은 Google이 가격 전쟁에 관심을 기울이는 동시에 다른 코딩 애플리케이션에도 집중하고 있음을 보여줍니다.",
-      "url": "https://aibusiness.com/generative-ai/lower-intro-price-for-gemini-3-7-flash-attract-developers",
-      "source": "AI Business",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-15 00:08",
-      "collect_date": "2026-08-15",
-      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt0b2a2a9f44e1a348/6a7f30c2cad54429e65b0cb0/Google.jpg?width=720&quality=80&disable=upscale",
-      "type": "모델출시",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "개발자 유치를 위해 Gemini 3.7 플래시 출시 가격 인하"
-    },
-    {
-      "id": "2026-08-15_0057",
-      "title": "Prompt: Wall Street Is Coming for AI Infrastructure",
-      "summary": "What AI infrastructure’s transformation into an investable asset class means for the next stage of enterprise AI.",
-      "one_line": "What AI infrastructure’s transformation into an investable asset class means for the next stage of enterprise AI.",
-      "one_line_kr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-      "url": "https://aibusiness.com/generative-ai/prompt-wall-street-coming-for-ai-infrastructure",
-      "source": "AI Business",
-      "category": "비즈니스",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-08-14 23:24",
-      "collect_date": "2026-08-15",
-      "thumbnail": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt71df927168c09641/6a7f264f8840ff5326aade62/AI_investment.jpg?width=720&quality=80&disable=upscale",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "프롬프트: 월스트리트가 AI 인프라를 위해 오고 있습니다"
     }
   ]
 }

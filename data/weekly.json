@@ -1,16 +1,16 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-09-20 09:01",
-  "total": 360,
+  "generated_at": "2026-09-21 09:03",
+  "total": 369,
   "kr_count": 121,
-  "en_count": 239,
+  "en_count": 248,
   "category_stats": {
     "콘텐츠": 119,
-    "영상AI": 33,
-    "이미지·디자인AI": 19,
-    "LLM": 4,
-    "개발AI": 43,
+    "영상AI": 35,
+    "이미지·디자인AI": 23,
+    "LLM": 3,
+    "개발AI": 47,
     "AI법률": 8,
     "논문": 107,
     "비즈니스": 27
@@ -30,7 +30,7 @@
     },
     {
       "source": "TechCrunch AI",
-      "count": 26
+      "count": 28
     },
     {
       "source": "더에이아이",
@@ -45,6 +45,10 @@
       "count": 23
     },
     {
+      "source": "HuggingFace Papers",
+      "count": 20
+    },
+    {
       "source": "ArXiv CV",
       "count": 20
     },
@@ -53,16 +57,12 @@
       "count": 18
     },
     {
-      "source": "HuggingFace Papers",
+      "source": "MarkTechPost",
       "count": 16
     },
     {
       "source": "MIT Tech Review",
       "count": 16
-    },
-    {
-      "source": "MarkTechPost",
-      "count": 12
     },
     {
       "source": "AI Business",
@@ -115,10 +115,6 @@
     {
       "source": "DeepMind",
       "count": 1
-    },
-    {
-      "source": "Simon Willison",
-      "count": 1
     }
   ],
   "keywords": [
@@ -132,11 +128,7 @@
     },
     {
       "keyword": "GPT",
-      "count": 17
-    },
-    {
-      "keyword": "에이전트",
-      "count": 15
+      "count": 18
     },
     {
       "keyword": "Reasoning",
@@ -148,46 +140,54 @@
     },
     {
       "keyword": "RAG",
-      "count": 13
+      "count": 14
+    },
+    {
+      "keyword": "에이전트",
+      "count": 14
     },
     {
       "keyword": "Benchmark",
       "count": 13
     },
     {
-      "keyword": "인공지능",
+      "keyword": "Vision",
       "count": 12
     },
     {
-      "keyword": "Vision",
-      "count": 11
+      "keyword": "인공지능",
+      "count": 12
     },
     {
       "keyword": "Copilot",
       "count": 9
     },
     {
-      "keyword": "추론",
+      "keyword": "클로드",
       "count": 8
     },
     {
       "keyword": "Transformer",
-      "count": 7
+      "count": 8
+    },
+    {
+      "keyword": "추론",
+      "count": 8
     },
     {
       "keyword": "Anthropic",
       "count": 7
     },
     {
-      "keyword": "ChatGPT",
-      "count": 7
-    },
-    {
-      "keyword": "클로드",
+      "keyword": "Gemini",
       "count": 6
     },
     {
-      "keyword": "Gemini",
+      "keyword": "ChatGPT",
+      "count": 6
+    },
+    {
+      "keyword": "제미나이",
       "count": 5
     },
     {
@@ -197,17 +197,9 @@
     {
       "keyword": "생성형 AI",
       "count": 5
-    },
-    {
-      "keyword": "Multimodal",
-      "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-09-14",
-      "count": 13
-    },
     {
       "date": "2026-09-15",
       "count": 64
@@ -231,9 +223,19 @@
     {
       "date": "2026-09-20",
       "count": 20
+    },
+    {
+      "date": "2026-09-21",
+      "count": 22
     }
   ],
   "cat_daily": {
+    "2026-09-21": {
+      "콘텐츠": 10,
+      "영상AI": 4,
+      "이미지·디자인AI": 4,
+      "개발AI": 4
+    },
     "2026-09-20": {
       "콘텐츠": 10,
       "영상AI": 5,
@@ -285,14 +287,93 @@
       "AI법률": 1,
       "논문": 24,
       "비즈니스": 6
-    },
-    "2026-09-14": {
-      "콘텐츠": 10,
-      "영상AI": 2,
-      "LLM": 1
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-09-21_0000",
+      "title": "“문장 생성 버렸다”…판단 전용 AI ‘제브’에 개발자 반응 폭발",
+      "summary": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다. 텍스트 생성이라는 생성 AI의 기본 기능을 과감히 버리고, 소프트웨어 백엔드에 직접 이식 가능한 구조화된 판단(Typed Decisions)만 내리는 새로운 AI 모델에 개발자들의 관심이 쏟아지는 모습이다.타입세이프 AI(TypeSafe AI)가 지난 15일(현지시간) 선보인 첫 번째 AI 모델 ‘제브(Jev)’는 공개 직후 기술 전문 커뮤니티인 해커뉴스 상단에 오르며 수백개의 댓…",
+      "one_line": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+      "one_line_kr": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215506",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 17:40",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "“문장 생성 버렸다”…판단 전용 AI ‘제브’에 개발자 반응 폭발"
+    },
+    {
+      "id": "2026-09-21_0018",
+      "title": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only",
+      "summary": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps. We look at what changed: a layered CI suite that drives packaged apps on real devices, bundled Python 3.12, 3.13 and 3.14, more than 100 mobile ready packages, faster control d…",
+      "one_line": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+      "one_line_kr": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+      "url": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 05:50",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only"
+    },
+    {
+      "id": "2026-09-21_0020",
+      "title": "Alibaba Qwen Team Releases Qwen3.8-LiveTranslate: A Real-Time Interpretation Model That Cuts Average Lag to 2.3 Seconds Across 60 Languages",
+      "summary": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave architecture. It cuts average lagging (LAAL) from 2.8 seconds to 2.3 seconds. It also adds real-time speaker diarization with stable voice cloning, synchronized biling…",
+      "one_line": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave…",
+      "one_line_kr": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave…",
+      "url": "https://www.marktechpost.com/2026/09/19/alibaba-qwen-team-releases-qwen3-8-livetranslate/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-20 15:46",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Alibaba Qwen Team Releases Qwen3.8-LiveTranslate: A Real-Time Interpretation Model That Cuts Average Lag to 2.3 Seconds "
+    },
+    {
+      "id": "2026-09-21_0021",
+      "title": "OpenClaw Releases 2026.9.5 With Atomic Updates, Plugin Hot Reload, Conversation Sharing, and Expanded GPT Live",
+      "summary": "OpenClaw 2026.9.5 ships 4,179 pull requests from 502 contributing accounts. The headline change is Atomic Updates, which check the next version against a private copy of your setup while the current Gateway keeps running. The release also adds plugin hot reload, read-only convers…",
+      "one_line": "The headline change is Atomic Updates, which check the next version against a private copy of your setup while the…",
+      "one_line_kr": "The headline change is Atomic Updates, which check the next version against a private copy of your setup while the…",
+      "url": "https://www.marktechpost.com/2026/09/19/openclaw-releases-2026-9-5/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-20 06:44",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenClaw Releases 2026.9.5 With Atomic Updates, Plugin Hot Reload, Conversation Sharing, and Expanded GPT Live"
+    },
     {
       "id": "2026-09-20_0001",
       "title": "오픈AI, 기업 시장 점유율 역전…앤트로픽, IPO전 신형 모델 출시 검토",
@@ -418,99 +499,15 @@
         "class": "hot"
       },
       "title_kr": "술레이만 \"오픈AI의 '셀프 프롬프트 인젝션'은 매우 심각한 상황\""
-    },
-    {
-      "id": "2026-09-20_0015",
-      "title": "SlotDiT: Object-Centric Representations for Diffusion Transformers",
-      "summary": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic applications. However, existing approaches rely on pixel-level or VAE-based latent representations that lack explicit semantic structure, leaving the impact of th…",
-      "one_line": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic…",
-      "one_line_kr": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic…",
-      "url": "https://tldr.takara.ai/p/2609.17414",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-16 01:38",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "SlotDiT: Object-Centric Representations for Diffusion Transformers"
-    },
-    {
-      "id": "2026-09-20_0016",
-      "title": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication",
-      "summary": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when client-specific variation is low-dimensional while training repeatedly releases high-dimensional updates. In this paper, we address this misalignment by releasing a private…",
-      "one_line": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when…",
-      "one_line_kr": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when…",
-      "url": "https://tldr.takara.ai/p/2609.15950",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-15 02:48",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication"
-    },
-    {
-      "id": "2026-09-19_0002",
-      "title": "구글, AI 문제 해결에 ‘재귀적 자기개선’ 도입...탐색 비용 162배 절감",
-      "summary": "구글이 AI 에이전트의 문제 해결 과정에 재귀적 자기개선(RSI)을 적용하면서도 탐색에 필요한 실행 비용을 크게 줄이는 새로운 방법을 공개했다. 구글은 17일(현지시간) AI 코딩 및 문제 해결(탐색) 에이전트가 실패한 경로를 반복 실행하며 막대한 연산 비용을 낭비하는 문제를 해결하기 위해, 과거의 경로 탐색 기록을 재사용하는 '드림-RSI(Dream-RSI)' 시스템을 공개했다.과거 탐색 기록을 일종의 시뮬레이터로 활용해 수천개의 새로운 탐색 전략을 실제 코드 실행 없이 평가하는 것이 핵심이다.…",
-      "one_line": "구글이 AI 에이전트의 문제 해결 과정에 재귀적 자기개선(RSI)을 적용하면서도 탐색에 필요한 실행 비용을 크게 줄이는 새로운 방법을 공개했다.",
-      "one_line_kr": "구글이 AI 에이전트의 문제 해결 과정에 재귀적 자기개선(RSI)을 적용하면서도 탐색에 필요한 실행 비용을 크게 줄이는 새로운 방법을 공개했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215459",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-18 18:37",
-      "collect_date": "2026-09-19",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "구글, AI 문제 해결에 ‘재귀적 자기개선’ 도입...탐색 비용 162배 절감"
-    },
-    {
-      "id": "2026-09-19_0005",
-      "title": "스탠포드, 논문을 '대화형 에이전트'로 만드는 프레임워크 공개",
-      "summary": "논문에 포함된 복잡한 분석 코드와 연구 방법을 자동으로 검증하고, 자연어로 실행할 수 있는 대화형 AI 에이전트로 바꾸는 오픈소스 시스템이 등장했다. 스탠포드대학교 연구진은 16일(현지시간) 논문과 코드 저장소를 분석해 연구 방법을 실행 가능한 도구로 변환하는 '페이퍼투에이전트(Paper2Agent)'를 네이처를 통해 공개했다. 단순히 논문 내용을 요약하는 것을 넘어, 논문에 담긴 연구 방법을 검증 가능한 실행 도구로 바꾼다는 점이 핵심이다.컴퓨터과학이나 바이오메디컬 분야의 연구 논문은 코드가 함…",
-      "one_line": "논문에 포함된 복잡한 분석 코드와 연구 방법을 자동으로 검증하고, 자연어로 실행할 수 있는 대화형 AI 에이전트로 바꾸는 오픈소스 시스템이 등장했다.",
-      "one_line_kr": "논문에 포함된 복잡한 분석 코드와 연구 방법을 자동으로 검증하고, 자연어로 실행할 수 있는 대화형 AI 에이전트로 바꾸는 오픈소스 시스템이 등장했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215465",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-18 18:01",
-      "collect_date": "2026-09-19",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "스탠포드, 논문을 '대화형 에이전트'로 만드는 프레임워크 공개"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "오픈AI, 기업 시장 점유율 역전…앤트로픽, IPO전 신형 모델 출시 검토",
+      "title": "“문장 생성 버렸다”…판단 전용 AI ‘제브’에 개발자 반응 폭발",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215494",
-      "one_line": "다리오 아모데이 앤트로픽 CEO가 안전성 확보를 위한 AI 발전 속도 조절론을 제기한 지 불과 일주일 만에 나온 움직임으로, 시장 경쟁 압박이 회사 정체성과 전략까지 흔드는 모양새다.로이터는 19일 소식통 3명을…",
-      "date": "2026-09-19 19:46"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215506",
+      "one_line": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+      "date": "2026-09-20 17:40"
     },
     "영상AI": {
       "title": "Your AI agents can now control your Google Home devices",
@@ -534,22 +531,484 @@
       "date": "2026-09-16 21:00"
     },
     "개발AI": {
-      "title": "Copilot code review: An improved review experience",
-      "source": "GitHub Changelog",
-      "url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
-      "one_line": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves…",
-      "date": "2026-09-19 05:17"
+      "title": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
+      "one_line": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+      "date": "2026-09-21 05:50"
     }
   },
   "period_key_points": [
-    "오픈AI가 'GPT-6 아스트라'를 앞세워 기업용 시장 점유율을 가파르게 확대하자, 이 분야에서 우위를 점해온 앤트로픽이 기업공개(IPO)를 앞두고 차세대 AI 모델 공개를 준비 중인 것으로 알려졌다.",
-    "AI가 단순히 사람이 지정한 애플리케이션 코드를 작성하는 단계를 넘어, 자신이 구동되는 하드웨어 및 시스템 인프라 최적화 레이어까지 직접 진입하며 개발 과정을 진화시키고 있다.",
-    "애플의 인수 검토설로 주목받은 AI 스타트업 프리즘ML(PrismML)이 한층 진화한 온디바이스 AI 압축 모델을 선보였다.",
-    "메타의 개인용 AI 에이전트 ‘뮤즈(Muse)’가 맥(Mac)으로 서비스를 확대하면서 AI가 사용자의 컴퓨터에서 직접 작업을 수행하는 시대가 본격화하고 있다.",
-    "스페이스XAI는 18일(현지시간) 음성을 텍스트로 변환하는 새로운 음성 전사 모델 ‘그록 보이스 트랜스크라이브 2.0(Grok Voice Transcribe 2.0)’을 공개했다."
+    "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+    "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+    "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave.",
+    "The headline change is Atomic Updates, which check the next version against a private copy of your setup while the.",
+    "오픈AI가 'GPT-6 아스트라'를 앞세워 기업용 시장 점유율을 가파르게 확대하자, 이 분야에서 우위를 점해온 앤트로픽이 기업공개(IPO)를 앞두고 차세대 AI 모델 공개를 준비 중인 것으로 알려졌다."
   ],
-  "period_prose": "이번 주간 총 360건의 AI 자료가 수집됐습니다. 국내 121건, 해외 239건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, GPT, 에이전트, Reasoning입니다.",
+  "period_prose": "이번 주간 총 369건의 AI 자료가 수집됐습니다. 국내 121건, 해외 248건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, GPT, Reasoning, GitHub입니다.",
   "items": [
+    {
+      "id": "2026-09-21_0000",
+      "title": "“문장 생성 버렸다”…판단 전용 AI ‘제브’에 개발자 반응 폭발",
+      "summary": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다. 텍스트 생성이라는 생성 AI의 기본 기능을 과감히 버리고, 소프트웨어 백엔드에 직접 이식 가능한 구조화된 판단(Typed Decisions)만 내리는 새로운 AI 모델에 개발자들의 관심이 쏟아지는 모습이다.타입세이프 AI(TypeSafe AI)가 지난 15일(현지시간) 선보인 첫 번째 AI 모델 ‘제브(Jev)’는 공개 직후 기술 전문 커뮤니티인 해커뉴스 상단에 오르며 수백개의 댓…",
+      "one_line": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+      "one_line_kr": "'챗GPT' 개발의 핵심 역할을 맡았던 연구원이 공개한 ‘글 못 쓰는 AI’가 전 세계 엔지니어들을 열광시키고 있다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215506",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 17:40",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "“문장 생성 버렸다”…판단 전용 AI ‘제브’에 개발자 반응 폭발"
+    },
+    {
+      "id": "2026-09-21_0001",
+      "title": "과기부, 연구자가 지켜야 할 ‘AI 활용’ 7대 권고사항 제시",
+      "summary": "과학기술정보통신부(장관 배경훈)는 국가과학기술자문회의 운영위원회 심의·의결을 거쳐 ‘국가연구개발 AI 연구윤리 가이드’가 확정됐다고 20일 밝혔다.이번 가이드는 국가연구개발 수행의 모든 단계에서 AI를 책임감 있고 윤리적으로 활용할 수 있도록 지원하는 것을 목표로 한다. \"국가연구개발에서 AI의 역할은 도구로 제한되며, 최종 결과물에 대한 책임과 권리는 AI를 활용한 연구자에게 귀속된다\"라는 기본원칙 아래, 연구자가 지켜야 할 7대 권고사항을 제시하고 있다. 구체적인 7대 권고사항은 ▲사실관계 검…",
+      "one_line": "과학기술정보통신부(장관 배경훈)는 국가과학기술자문회의 운영위원회 심의·의결을 거쳐 ‘국가연구개발 AI 연구윤리 가이드’가 확정됐다고 20일 밝혔다.이번 가이드는 국가연구개발 수행의 모든 단계에서 AI를 책임감 있고…",
+      "one_line_kr": "과학기술정보통신부(장관 배경훈)는 국가과학기술자문회의 운영위원회 심의·의결을 거쳐 ‘국가연구개발 AI 연구윤리 가이드’가 확정됐다고 20일 밝혔다.이번 가이드는 국가연구개발 수행의 모든 단계에서 AI를 책임감 있고…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215505",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 17:25",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "과기부, 연구자가 지켜야 할 ‘AI 활용’ 7대 권고사항 제시"
+    },
+    {
+      "id": "2026-09-21_0002",
+      "title": "앤트로픽, 자체 생물학 연구소 설립…시뮬레이션 넘어 실제 실험 진출",
+      "summary": "앤트로픽이 가상 시뮬레이션을 넘어 물리적 생물학 연구를 직접 수행하기 위해 샌프란시스코 베이 지역에 자체 연구소를 조용히 설립했다. 앤트로픽은 18일(현지시간) 로이터를 통해 희귀 질환 치료제 개발과 생명과학 분야 AI 기술 적용을 가속하기 위해 실제 습식 연구소(Wet Lab)를 운영 중이라고 확인했다.이는 기존 건식 연구소(Dry Lab) 기반의 데이터 분석을 넘어 클로드가 최소한의 인간 개입으로 실험실 내 로봇 장비를 직접 제어해 과학 실험을 수행하는 생물학 자동화 기술을 검증하기 위한 것이…",
+      "one_line": "앤트로픽이 가상 시뮬레이션을 넘어 물리적 생물학 연구를 직접 수행하기 위해 샌프란시스코 베이 지역에 자체 연구소를 조용히 설립했다.",
+      "one_line_kr": "앤트로픽이 가상 시뮬레이션을 넘어 물리적 생물학 연구를 직접 수행하기 위해 샌프란시스코 베이 지역에 자체 연구소를 조용히 설립했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215504",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 16:58",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "앤트로픽, 자체 생물학 연구소 설립…시뮬레이션 넘어 실제 실험 진출"
+    },
+    {
+      "id": "2026-09-21_0003",
+      "title": "삼성전자, 실리콘밸리서 ‘테크 포럼’개최…AI 비전과 사업전략 공유",
+      "summary": "삼성전자가 18일(현지시간) 미국 실리콘밸리에서 기술 인재들을 초청해 주요 사업 방향과 연구 분야를 소개하고 최신 기술 트렌드를 논의하는 ‘2026 테크 포럼’을 개최했다고 밝혔다.올해로 8회째를 맞이하는 이번 행사는 실리콘밸리 마운틴뷰에 위치한 삼성 리서치 아메리카(SRA)에서 진행됐으며, 글로벌 IT 기업의 리더급 개발자와 삼성전자 주요 경영진 등 총 80여명이 참석했다.이날 행사에는 삼성전자 DX 부문 ▲ 노태문 대표이사 사장 ▲ 이원진 영상디스플레이사업부장 사장 ▲ 윤장현 최고기술책임자(C…",
+      "one_line": "삼성전자가 18일(현지시간) 미국 실리콘밸리에서 기술 인재들을 초청해 주요",
+      "one_line_kr": "삼성전자가 18일(현지시간) 미국 실리콘밸리에서 기술 인재들을 초청해 주요",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215508",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 15:40",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "삼성전자, 실리콘밸리서 ‘테크 포럼’개최…AI 비전과 사업전략 공유"
+    },
+    {
+      "id": "2026-09-21_0004",
+      "title": "젠슨 황, AI 종말론 또 일축... \"2030년 세계 끝날 확률 0%\"",
+      "summary": "젠슨 황 엔비디아 CEO가 AI로 인해 인류가 멸종하거나 2030년 세계가 끝날 가능성은 없다고 다시 한번 강조했다. 최근 AI 업계 일각에서 제기된 종말론적 우려에 대해 거듭 강하게 반박한 것이다.황 CEO는 18일(현지시간) CBS 뉴스의 '선데이 모닝' 인터뷰에서 AI가 초래할 수 있는 종말론적 시나리오와 관련해 “어떻게 표현하든 2030년이 세계의 종말이 되는 일은 없을 것”이라며 “세계가 끝날 가능성은 0%”라고 말했다.이번 인터뷰는 앤트로픽 출신 연구진이 \"AI를 만드는 사람들은 이번 …",
+      "one_line": "젠슨 황 엔비디아 CEO가 AI로 인해 인류가 멸종하거나 2030년 세계가 끝날 가능성은 없다고 다시 한번 강조했다.",
+      "one_line_kr": "젠슨 황 엔비디아 CEO가 AI로 인해 인류가 멸종하거나 2030년 세계가 끝날 가능성은 없다고 다시 한번 강조했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215496",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 15:31",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "젠슨 황, AI 종말론 또 일축... \"2030년 세계 끝날 확률 0%\""
+    },
+    {
+      "id": "2026-09-21_0005",
+      "title": "샘 알트먼, 유엔 안보리서 'AI와 국제 안보' 브리핑 예정",
+      "summary": "샘 알트먼 오픈AI CEO가 이번 주 미국 뉴욕에서 열리는 유엔총회 기간에 유엔 안전보장이사회에 참석해 AI와 국제 안보 문제를 주제로 연설할 예정이다. 오픈AI 대변인은 18일(현지시간) 알트먼 CEO가 안전보장이사회의 공개회의에서 직접 발언할 예정이라고 로이터에 밝혔다.15개 이사국으로 구성된 안전보장이사회는 오는 23일 AI와 국제 안보를 주제로 회의를 개최한다. 이번에는 AI 기술의 급속한 발전과 악용 가능성, 인간의 통제를 벗어날 위험 등이 주요 의제로 다뤄질 전망이다.오픈AI에 따르면,…",
+      "one_line": "오픈AI 대변인은 18일(현지시간) 알트먼 CEO가 안전보장이사회의 공개회의에서 직접 발언할 예정이라고 로이터에 밝혔다.15개 이사국으로 구성된 안전보장이사회는 오는 23일 AI와 국제 안보를 주제로 회의를…",
+      "one_line_kr": "오픈AI 대변인은 18일(현지시간) 알트먼 CEO가 안전보장이사회의 공개회의에서 직접 발언할 예정이라고 로이터에 밝혔다.15개 이사국으로 구성된 안전보장이사회는 오는 23일 AI와 국제 안보를 주제로 회의를…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215498",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 11:30",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "샘 알트먼, 유엔 안보리서 'AI와 국제 안보' 브리핑 예정"
+    },
+    {
+      "id": "2026-09-21_0006",
+      "title": "\"안전 핑계 대고 밀실 담합\"…앤트로픽·오픈AI 등 4곳, 소비자에게 피소",
+      "summary": "주요 AI 기업들이 안전 확보를 명목으로 제시한 '개발 속도 조절' 구상이 반독점법 위반 논란에 휩싸였다. 안전장치 마련을 위한 업계 자율 협력을 선언한 지 불과 일주일 만에 소비자들로부터 담합 혐의로 고소를 당했다.AP와 CBS 뉴스 등에 따르면, 18일(현지시간) 미국 캘리포니아 북부 지방법원에는 챗GPT와 클로드, 제미나이, 그록 등 주요 AI 서비스의 유료 구독자 4명이 소장을 제출했다. 이들은 미국의 유료 구독자들을 대표해 앤트로픽과 오픈AI, 구글, 스페이스XAI를 상대로 집단소송을 제…",
+      "one_line": "AI 기업들이 안전 확보를 명목으로 제시한 '개발 속도 조절' 구상이 반독점법 위반 논란에 휩싸였다.",
+      "one_line_kr": "AI 기업들이 안전 확보를 명목으로 제시한 '개발 속도 조절' 구상이 반독점법 위반 논란에 휩싸였다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215502",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 11:09",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "\"안전 핑계 대고 밀실 담합\"…앤트로픽·오픈AI 등 4곳, 소비자에게 피소"
+    },
+    {
+      "id": "2026-09-21_0007",
+      "title": "\"AI 환각에 중국과 충돌할 뻔\"…미군, 정보 오류에 ‘식은땀’",
+      "summary": "미군이 AI의 잘못된 분석 결과를 바탕으로 중국 선박을 차단하려다 직전에 철회하는 사건이 발생했다.18일(현지시간) CNN에 따르면, 올봄 이란과의 전쟁이 한창이던 당시 중동에 있 중국 선박이 핵무기 개발 프로그램 부품을 운반 중이라는 정보 보고서가 미군 지휘부 전반에 배포됐다.보고서를 접한 미군은 즉시 작전에 착수했다. 무장한 미군 병력이 선박 승선을 준비하고 상공에는 군용기까지 출격하는 등 긴장감이 최고조에 달했다.그러나 작전 개시 직전, 보고서를 재검토하는 과정에서 치명적인 오류가 발견됐다.…",
+      "one_line": "미군이 AI의 잘못된 분석 결과를 바탕으로 중국 선박을 차단하려다",
+      "one_line_kr": "미군이 AI의 잘못된 분석 결과를 바탕으로 중국 선박을 차단하려다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215501",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 10:34",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"AI 환각에 중국과 충돌할 뻔\"…미군, 정보 오류에 ‘식은땀’"
+    },
+    {
+      "id": "2026-09-21_0008",
+      "title": "오픈AI 2030년까지 386조 소진… 컴퓨팅 비용 폭증에 투자 유치 압박",
+      "summary": "오픈AI가 오는 2030년까지 수천억달러에 달하는 현금을 소진, 2028년에는 보유한 자금이 모두 떨어질 것이라는 전망이 나왔다. 경쟁사인 앤트로픽도 가파른 매출 성장세 뒤에 감춰진 인프라 비용 폭증과 적자 전환 우려로 기업공개(IPO)를 앞두고 월가의 신중론에 직면하는 등 양대 프런티어 AI 기업의 재무적 부담이 만만치 않은 상황이다.파이낸셜 타임스(FT)는 19일(현지시간) 비공개 투자자 발표 자료를 입수, 오픈AI가 2026년부터 2030년까지 5년간 2780억달러(약 386조원)에 달하는 …",
+      "one_line": "경쟁사인 앤트로픽도 가파른 매출 성장세 뒤에 감춰진 인프라 비용 폭증과 적자 전환 우려로 기업공개(IPO)를 앞두고 월가의 신중론에 직면하는 등 양대 프런티어 AI 기업의 재무적 부담이 만만치 않은…",
+      "one_line_kr": "경쟁사인 앤트로픽도 가파른 매출 성장세 뒤에 감춰진 인프라 비용 폭증과 적자 전환 우려로 기업공개(IPO)를 앞두고 월가의 신중론에 직면하는 등 양대 프런티어 AI 기업의 재무적 부담이 만만치 않은…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215500",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 10:03",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "오픈AI 2030년까지 386조 소진… 컴퓨팅 비용 폭증에 투자 유치 압박"
+    },
+    {
+      "id": "2026-09-21_0009",
+      "title": "광양, 청년 맞춤 지원 확대…문화부터 취업 준비까지",
+      "summary": "AI 생성 영상광양시가 청년의 문화생활과 자산형성, 교육·취업 준비를 지원하는 청년정책을 연계 운영한다.광양은 청년 문화복지카드와 도서 구입비 지원, 자산형성 통장, 결혼축하금, 대학생 생활비 장학금 등을 통해 청년의 생활과 미래 준비를 지원하고 있다고 17일 밝혔다.‘전남청년 문화복지카드’는 광양에 주민등록을 두고 전남에 2년 이상 거주한 청년에게 연간 25만원의 문화복지비를 지원하는 사업이다.지원금은 도서 구입과 공연·영화 관람, 체육시설 이용, 학원 수강 등에 사용할 수 있다. 3차 신청은 …",
+      "one_line": "AI 생성 영상광양시가 청년의 문화생활과 자산형성, 교육·취업 준비를 지원하는 청년정책을 연계 운영한다.광양은 청년 문화복지카드와 도서 구입비 지원, 자산형성 통장, 결혼축하금, 대학생 생활비 장학금 등을 통해…",
+      "one_line_kr": "AI 생성 영상광양시가 청년의 문화생활과 자산형성, 교육·취업 준비를 지원하는 청년정책을 연계 운영한다.광양은 청년 문화복지카드와 도서 구입비 지원, 자산형성 통장, 결혼축하금, 대학생 생활비 장학금 등을 통해…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215446",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-20 09:50",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "광양, 청년 맞춤 지원 확대…문화부터 취업 준비까지"
+    },
+    {
+      "id": "2026-09-21_0010",
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+      "summary": "Current ticket pricing ends in 6 days on Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then.",
+      "one_line": "Current ticket pricing ends in 6 days on Sept.",
+      "one_line_kr": "Current ticket pricing ends in 6 days on Sept.",
+      "url": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 06:41",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "6 days left to save up to $200 to TechCrunch Disrupt 2026"
+    },
+    {
+      "id": "2026-09-21_0011",
+      "title": "World model companies are keeping a lot of secrets",
+      "summary": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building.",
+      "one_line": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from…",
+      "one_line_kr": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from…",
+      "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 05:29",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "World model companies are keeping a lot of secrets"
+    },
+    {
+      "id": "2026-09-21_0012",
+      "title": "Is the AI industry really ready to slow down?",
+      "summary": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
+      "one_line": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
+      "one_line_kr": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
+      "url": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 03:56",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Is the AI industry really ready to slow down?"
+    },
+    {
+      "id": "2026-09-21_0013",
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "summary": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
+      "one_line": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
+      "one_line_kr": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
+      "url": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 03:32",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Vocci’s ring adds a new form factor to meeting note-taking"
+    },
+    {
+      "id": "2026-09-21_0014",
+      "title": "Opinion Dynamics-based Coalition Formation for Federated Learning in Heterogeneous IoT Systems",
+      "summary": "Federated learning (FL) enables privacy-preserving, on-device training across heterogeneous Internet-of-Things (IoT) deployments such as smart-city water-metering networks, where each smart meter observes a household-specific consumption time series. Under such statistical hetero…",
+      "one_line": "Federated learning (FL) enables privacy-preserving, on-device training across heterogeneous Internet-of-Things (IoT)…",
+      "one_line_kr": "Federated learning (FL) enables privacy-preserving, on-device training across heterogeneous Internet-of-Things (IoT)…",
+      "url": "https://tldr.takara.ai/p/2609.19695",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-17 13:44",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Opinion Dynamics-based Coalition Formation for Federated Learning in Heterogeneous IoT Systems"
+    },
+    {
+      "id": "2026-09-21_0015",
+      "title": "Training Neural Networks to Approach the Optimum Bayes Estimator in Dense Multi-Emitter Localization",
+      "summary": "We train neural networks on synthesized frames to approach the optimum Bayes estimator for dense emitter localization. The result justifies the future work on training neural networks to achieve high-throughput large-FOV super spatiotemporal resolution SMLM.",
+      "one_line": "We train neural networks on synthesized frames to approach the optimum Bayes estimator for dense emitter localization.",
+      "one_line_kr": "We train neural networks on synthesized frames to approach the optimum Bayes estimator for dense emitter localization.",
+      "url": "https://tldr.takara.ai/p/2609.20465",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-17 23:25",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Training Neural Networks to Approach the Optimum Bayes Estimator in Dense Multi-Emitter Localization"
+    },
+    {
+      "id": "2026-09-21_0016",
+      "title": "G-ray: Ray-Level Relative Geometric Position Encoding in Multi-View Vision Transformers under Camera Heterogeneity",
+      "summary": "We study relative position encoding for multi-view vision Transformers under camera heterogeneity, including varying fields of view (FoVs) or projection models. Existing rotary relative position encodings commonly use image-plane positional coordinates, producing projection-depen…",
+      "one_line": "We study relative position encoding for multi-view vision Transformers under camera heterogeneity, including varying…",
+      "one_line_kr": "We study relative position encoding for multi-view vision Transformers under camera heterogeneity, including varying…",
+      "url": "https://tldr.takara.ai/p/2609.15018",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-14 13:30",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "G-ray: Ray-Level Relative Geometric Position Encoding in Multi-View Vision Transformers under Camera Heterogeneity"
+    },
+    {
+      "id": "2026-09-21_0017",
+      "title": "Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving",
+      "summary": "LLM serving is typically offered as a shared, multi-tenant service, where high-demand workloads from one client can cause latency SLO violations for others. Existing solutions for performance isolation equalize client throughput in the long run, for example through queueing and b…",
+      "one_line": "LLM serving is typically offered as a shared, multi-tenant service, where high-demand workloads from one client can…",
+      "one_line_kr": "LLM serving is typically offered as a shared, multi-tenant service, where high-demand workloads from one client can…",
+      "url": "https://tldr.takara.ai/p/2609.18112",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-16 13:33",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Token Latency Fairness: Performance Isolation for Multi-Tenant LLM Serving"
+    },
+    {
+      "id": "2026-09-21_0018",
+      "title": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only",
+      "summary": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps. We look at what changed: a layered CI suite that drives packaged apps on real devices, bundled Python 3.12, 3.13 and 3.14, more than 100 mobile ready packages, faster control d…",
+      "one_line": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+      "one_line_kr": "Flet 1.0 shipped on September 15, 2026, and the team now calls the framework ready for production apps.",
+      "url": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 05:50",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Flet 1.0 Released: Build Production Web, Desktop and Mobile Apps in Python Only"
+    },
+    {
+      "id": "2026-09-21_0019",
+      "title": "You too Google! Google Confirms Gemini Breached 3 Companies in AI Security Tests",
+      "summary": "Google says Gemini accessed 3 real companies in May by guessing a password and reusing credentials from a public repository. Irregular told 4 labs in late July. Google spoke on September 18, after the WSJ asked. The misconfiguration is fixable. The staggered disclosure is the har…",
+      "one_line": "Google says Gemini accessed 3 real companies in May by guessing a password and reusing credentials from a public…",
+      "one_line_kr": "Google says Gemini accessed 3 real companies in May by guessing a password and reusing credentials from a public…",
+      "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-21 05:20",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "You too Google! Google Confirms Gemini Breached 3 Companies in AI Security Tests"
+    },
+    {
+      "id": "2026-09-21_0020",
+      "title": "Alibaba Qwen Team Releases Qwen3.8-LiveTranslate: A Real-Time Interpretation Model That Cuts Average Lag to 2.3 Seconds Across 60 Languages",
+      "summary": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave architecture. It cuts average lagging (LAAL) from 2.8 seconds to 2.3 seconds. It also adds real-time speaker diarization with stable voice cloning, synchronized biling…",
+      "one_line": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave…",
+      "one_line_kr": "Qwen has released Qwen3.8-LiveTranslate, a real-time simultaneous interpretation model built on a new Interleave…",
+      "url": "https://www.marktechpost.com/2026/09/19/alibaba-qwen-team-releases-qwen3-8-livetranslate/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-20 15:46",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Alibaba Qwen Team Releases Qwen3.8-LiveTranslate: A Real-Time Interpretation Model That Cuts Average Lag to 2.3 Seconds "
+    },
+    {
+      "id": "2026-09-21_0021",
+      "title": "OpenClaw Releases 2026.9.5 With Atomic Updates, Plugin Hot Reload, Conversation Sharing, and Expanded GPT Live",
+      "summary": "OpenClaw 2026.9.5 ships 4,179 pull requests from 502 contributing accounts. The headline change is Atomic Updates, which check the next version against a private copy of your setup while the current Gateway keeps running. The release also adds plugin hot reload, read-only convers…",
+      "one_line": "The headline change is Atomic Updates, which check the next version against a private copy of your setup while the…",
+      "one_line_kr": "The headline change is Atomic Updates, which check the next version against a private copy of your setup while the…",
+      "url": "https://www.marktechpost.com/2026/09/19/openclaw-releases-2026-9-5/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-20 06:44",
+      "collect_date": "2026-09-21",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenClaw Releases 2026.9.5 With Atomic Updates, Plugin Hot Reload, Conversation Sharing, and Expanded GPT Live"
+    },
     {
       "id": "2026-09-20_0000",
       "title": "[AI 이슈트렌드] 역대급 수출 실적 속 AI 속도조절론·대통령 지지율 최저 주목",
@@ -7836,279 +8295,6 @@
         "class": "new"
       },
       "title_kr": "Fully Driverless Robotaxis Now Operating in Europe"
-    },
-    {
-      "id": "2026-09-14_0000",
-      "title": "'가상 초파리' 뇌 시뮬레이션 이색 시도 열풍…‘파리 언어모델'까지 등장",
-      "summary": "과학계가 성체 초파리의 전체 신경망(커넥톰) 시뮬레이션 모델을 오픈소스로 공개하자, 글로벌 개발자 커뮤니티에서 이를 활용한 기발하고 다채로운 실험이 쏟아지고 있다. 16만6700개의 가상 뉴런과 2500만여개의 신경 교착점을 갖춘 곤충의 뇌가 디지털 공간에서 고전 게임을 플레이하는 것을 넘어 로봇 제어, 암호화폐 매매, 대형언어모델(LLM) 결합 및 코드 작성에 이르기까지 영역을 넓히는 모습이다.구글 리서치와 하워드 휴즈 의학연구소(HHMI) 자넬리아 연구캠퍼스 공동 연구진은 지난 3일(현지시간)…",
-      "one_line": "16만6700개의 가상 뉴런과 2500만여개의 신경 교착점을 갖춘 곤충의 뇌가 디지털 공간에서 고전 게임을 플레이하는 것을 넘어 로봇 제어, 암호화폐 매매, 대형언어모델(LLM) 결합 및 코드 작성에 이르기까지…",
-      "one_line_kr": "16만6700개의 가상 뉴런과 2500만여개의 신경 교착점을 갖춘 곤충의 뇌가 디지털 공간에서 고전 게임을 플레이하는 것을 넘어 로봇 제어, 암호화폐 매매, 대형언어모델(LLM) 결합 및 코드 작성에 이르기까지…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215207",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 17:28",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "'가상 초파리' 뇌 시뮬레이션 이색 시도 열풍…‘파리 언어모델'까지 등장"
-    },
-    {
-      "id": "2026-09-14_0001",
-      "title": "스페이스X, 미공개 고객과 월 1.5조 규모 컴퓨팅 계약 체결",
-      "summary": "스페이스X가 AI 컴퓨팅 수요 급증에 힘입어 고객사 한 곳과 월 11억달러(약 1조5천억원) 규모의 대형 데이터센터 호스팅 계약을 체결했다고 밝혔다. 우주 항공 기업을 넘어 AI 클라우드 인프라 시장의 주요 사업자로 입지를 급격히 확장하고 있음을 보여준다.비즈니스 인사이더에 따르면, 브렛 존슨 스페이스X 최고 재무책임자(CFO)는 10일(현지시간) 미국 샌프란시스코에서 열린 골드만삭스 컨퍼런스에서 이달 초 새로운 호스팅 계약을 체결했다고 밝혔다. 상대는 공개하지 않았다.이를 통해 오는 12월1일부…",
-      "one_line": "급증에 힘입어 고객사 한 곳과 월 11억달러(약 1조5천억원) 규모의 대형 데이터센터 호스팅 계약을 체결했다고 밝혔다.",
-      "one_line_kr": "급증에 힘입어 고객사 한 곳과 월 11억달러(약 1조5천억원) 규모의 대형 데이터센터 호스팅 계약을 체결했다고 밝혔다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215204",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 11:55",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "스페이스X, 미공개 고객과 월 1.5조 규모 컴퓨팅 계약 체결"
-    },
-    {
-      "id": "2026-09-14_0002",
-      "title": "구글, 코딩 강화 위해 스타트업 메카나이즈 인재 흡수",
-      "summary": "구글이 약점으로 꼽히는 AI 코딩 성능을 끌어올리기 위해 스타트업 메카나이즈(Mechanize) 인원을 대거 영입하는 대형 계약을 단행했다.비즈니스 인사이더는 11일(현지시간) 구글이 메카나이즈의 핵심 기술과 인력을 흡수하기 위한 15억달러(약 2조원) 규모의 인재 확보 계약을 마무리했다고 보도했다.이번 거래는 반독점 규제 위험을 줄이면서도 필요한 코딩 기술 역량을 단숨에 끌어올리기 위한 결정으로 해석된다.메카나이즈는 AI 모델의 코드 작성 및 프로그램 수정 능력을 전문적으로 끌어올리는 기술을 연…",
-      "one_line": "구글이 약점으로 꼽히는 AI 코딩 성능을 끌어올리기 위해 스타트업 메카나이즈(Mechanize) 인원을 대거 영입하는 대형 계약을 단행했다.비즈니스 인사이더는 11일(현지시간) 구글이 메카나이즈의 핵심 기술과…",
-      "one_line_kr": "구글이 약점으로 꼽히는 AI 코딩 성능을 끌어올리기 위해 스타트업 메카나이즈(Mechanize) 인원을 대거 영입하는 대형 계약을 단행했다.비즈니스 인사이더는 11일(현지시간) 구글이 메카나이즈의 핵심 기술과…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215205",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 11:37",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "구글, 코딩 강화 위해 스타트업 메카나이즈 인재 흡수"
-    },
-    {
-      "id": "2026-09-14_0003",
-      "title": "\"지침 줄이고 완료 기준 명확히\"...오픈AI가 밝힌 '아스트라' 활용법",
-      "summary": "'GPT-6 아스트라'의 등장으로 코딩 에이전트 활용 방식과 개발자가 작성하는 스킬·프롬프트의 설계 원칙도 다시 점검할 필요가 커지고 있다. 과거에는 모델의 작업을 원하는 방향으로 유도하기 위해 상세한 지침과 반복적인 스캐폴딩이 필요했지만, 모델 성능이 크게 향상되면서 지나친 지시가 오히려 판단을 방해하는 요소로 지적됐다.오픈AI는 11일(현지시간) 블로그를 통해 아스트라 모델을 위한 스킬 및 프롬프트 재고찰(Rethinking Skills and Prompts) 지침을 공개했다.코덱스 개발자 경…",
-      "one_line": "'GPT-6 아스트라'의 등장으로 코딩 에이전트 활용 방식과 개발자가 작성하는 스킬·프롬프트의 설계 원칙도 다시 점검할 필요가 커지고 있다.",
-      "one_line_kr": "'GPT-6 아스트라'의 등장으로 코딩 에이전트 활용 방식과 개발자가 작성하는 스킬·프롬프트의 설계 원칙도 다시 점검할 필요가 커지고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215202",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 11:18",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "\"지침 줄이고 완료 기준 명확히\"...오픈AI가 밝힌 '아스트라' 활용법"
-    },
-    {
-      "id": "2026-09-14_0004",
-      "title": "제프 딘의 AI 스타트업 디스커버리 루프, 67조 몸값 노린다",
-      "summary": "구글의 전설적인 AI 연구자 제프 딘이 설립한 AI 스타트업 디스커버리 루프(Discovery Loop)가 500억달러(약 67조원)의 기업 가치를 목표로 투자 유치에 나선 것으로 알려졌다. 쟁쟁한 연구진을 앞세워 제품을 출시하기도 전인 설립 2개월 만에 목표 평가액이 100억달러에서 500억달러로 5배 급등했다. 비즈니스 인사이더는 11일(현지시간) 정통한 관계자를 인용, 디스커버리 루프가 약 500억달러의 기업 가치로 신규 자금 조달을 추진하고 있다고 보도했다.협상 조건은 변경될 수 있으며, …",
-      "one_line": "구글의 전설적인 AI 연구자 제프 딘이 설립한 AI 스타트업 디스커버리 루프(Discovery Loop)가 500억달러(약 67조원)의 기업 가치를 목표로 투자 유치에 나선 것으로 알려졌다.",
-      "one_line_kr": "구글의 전설적인 AI 연구자 제프 딘이 설립한 AI 스타트업 디스커버리 루프(Discovery Loop)가 500억달러(약 67조원)의 기업 가치를 목표로 투자 유치에 나선 것으로 알려졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215197",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 10:39",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "제프 딘의 AI 스타트업 디스커버리 루프, 67조 몸값 노린다"
-    },
-    {
-      "id": "2026-09-14_0005",
-      "title": "KAIST, 미래기술 연구거점 ‘LOTTE x KAIST R&D 센터’ 준공",
-      "summary": "기후변화와 탄소중립 등 인류가 직면한 지속가능성 문제를 해결하기 위해, 새로운 산학협력 거점이 KAIST에 들어섰다.한국과학기술원(KAIST, 총장 배충식)는 11일 대전 본원에서 신동빈 롯데그룹 회장을 비롯한 롯데그룹 관계자와 KAIST 주요 보직자, 생명화학공학과 교수 및 관계자 등이 참석한 가운데 ‘LOTTE x KAIST R&D CENTER’ 준공식을 개최했다고 밝혔다.LOTTE x KAIST R&D 센터는 롯데그룹이 지원한 건축기부금 100억 원과 KAIST 생명화학공학과의 자체 기금 등…",
-      "one_line": "기후변화와 탄소중립 등 인류가 직면한 지속가능성 문제를 해결하기 위해, 새로운 산학협력 거점이 KAIST에 들어섰다.한국과학기술원(KAIST, 총장 배충식)는 11일 대전 본원에서 신동빈 롯데그룹 회장을 비롯한…",
-      "one_line_kr": "기후변화와 탄소중립 등 인류가 직면한 지속가능성 문제를 해결하기 위해, 새로운 산학협력 거점이 KAIST에 들어섰다.한국과학기술원(KAIST, 총장 배충식)는 11일 대전 본원에서 신동빈 롯데그룹 회장을 비롯한…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215203",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 10:15",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "KAIST, 미래기술 연구거점 ‘LOTTE x KAIST R&D 센터’ 준공"
-    },
-    {
-      "id": "2026-09-14_0006",
-      "title": "엔비디아, 앤트로픽 초대형 IPO에 '13조 앵커 투자' 논의",
-      "summary": "엔비디아가 앤트로픽의 기업공개(IPO)에 최대 100억달러(약 13조4000억원)를 투자하는 방안을 검토하고 있는 것으로 알려졌다. 성사될 경우 엔비디아는 앤트로픽의 핵심 앵커 투자자로 참여하며 AI 모델 개발사와 컴퓨팅 인프라 공급사 간 전략적 협력 관계를 한층 더 강화할 전망이다.로이터는 11일(현지시간) 정통한 관계자들을 인용, 앤트로픽이 엔비디아를 IPO의 핵심 앵커 투자자(Anchor Investor)로 참여시키기 위해 협상을 진행하고 있다고 보도했다. 투자 규모와 조건 등은 아직 논의 …",
-      "one_line": "엔비디아가 앤트로픽의 기업공개(IPO)에 최대 100억달러(약 13조4000억원)를 투자하는 방안을 검토하고 있는 것으로 알려졌다.",
-      "one_line_kr": "엔비디아가 앤트로픽의 기업공개(IPO)에 최대 100억달러(약 13조4000억원)를 투자하는 방안을 검토하고 있는 것으로 알려졌다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215196",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 10:12",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "엔비디아, 앤트로픽 초대형 IPO에 '13조 앵커 투자' 논의"
-    },
-    {
-      "id": "2026-09-14_0007",
-      "title": "나주, 첫 사회복지의 날 기념식…복지 종사자 등 600여명 참석",
-      "summary": "AI 생성 영상나주시가 제27회 사회복지의 날을 맞아 지역 사회복지 종사자들이 참여하는 자체 기념행사를 처음 열었다.나주는 지난 9일 나주문화예술회관에서 사회복지시설·기관·단체 종사자와 지역사회보장협의체 위원, 노인맞춤돌봄 종사자 등 600여명이 참석한 가운데 ‘제1회 나주시 사회복지의 날 기념식’을 개최했다고 11일 밝혔다.이번 행사는 지역 복지 현장에서 일하는 종사자들의 노고를 격려하고 민관 복지 관계자 간 교류를 확대하기 위해 마련됐다.기념식은 시립국악단 공연을 시작으로 사회복지사 선서, 기…",
-      "one_line": "AI 생성 영상나주시가 제27회 사회복지의 날을 맞아 지역 사회복지 종사자들이 참여하는 자체 기념행사를 처음",
-      "one_line_kr": "AI 생성 영상나주시가 제27회 사회복지의 날을 맞아 지역 사회복지 종사자들이 참여하는 자체 기념행사를 처음",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215163",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 09:45",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "나주, 첫 사회복지의 날 기념식…복지 종사자 등 600여명 참석"
-    },
-    {
-      "id": "2026-09-14_0008",
-      "title": "AI 데이터센터에 발목 잡힌 오라클…매출 폭증에도 재무 부담 가중",
-      "summary": "오라클이 AI 인프라 구축을 위한 자금 마련과 비용 효율화 사이에서 극심한 재무적 딜레마를 겪는 것으로 나타났다. AI 클라우드 수요 폭증에 힘입어 분기 매출이 30% 급증하며 역대급 실적을 올렸지만, 급격히 불어난 채무 부담과 막대한 설비투자(CapEx)를 감당하기 위해 강도 높은 구조조정 및 자금 조달에 나서는 모습이다.오라클은 11일(현지시간) 미 증권거래위원회(SEC) 공시를 통해 2026 회계연도 구조조정 계획에 7억달러(약 9300억원)의 비용을 추가 집행할 예정이라고 발표했다. 이로써…",
-      "one_line": "오라클이 AI 인프라 구축을 위한 자금 마련과 비용 효율화 사이에서 극심한 재무적 딜레마를 겪는 것으로 나타났다.",
-      "one_line_kr": "오라클이 AI 인프라 구축을 위한 자금 마련과 비용 효율화 사이에서 극심한 재무적 딜레마를 겪는 것으로 나타났다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215201",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 09:40",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "AI 데이터센터에 발목 잡힌 오라클…매출 폭증에도 재무 부담 가중"
-    },
-    {
-      "id": "2026-09-14_0009",
-      "title": "전남보건환경연구원, 신축 아파트 실내공기질 점검…일부 권고기준 초과",
-      "summary": "AI 생성 영상전남보건환경연구원이 입주를 앞둔 신축 공동주택의 실내공기질을 점검한 결과 일부 단지와 세대에서 권고기준을 넘는 오염물질이 확인됐다. 연구원은 해당 시군과 시공사에 결과를 통보하고 베이크아웃 등 저감조치를 하도록 지도했다.전남보건환경연구원은 지역 신축 공동주택을 대상으로 실내공기질 관리 상태를 점검했다고 11일 밝혔다.이번 점검은 건축자재와 마감재 등에서 발생할 수 있는 유해물질을 입주 전에 확인해 새집증후군을 줄이고 쾌적한 주거환경을 조성하기 위해 진행됐다.점검 대상 물질은 폼알데하…",
-      "one_line": "AI 생성 영상전남보건환경연구원이 입주를 앞둔 신축 공동주택의 실내공기질을 점검한 결과 일부 단지와 세대에서 권고기준을 넘는 오염물질이 확인됐다.",
-      "one_line_kr": "AI 생성 영상전남보건환경연구원이 입주를 앞둔 신축 공동주택의 실내공기질을 점검한 결과 일부 단지와 세대에서 권고기준을 넘는 오염물질이 확인됐다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215129",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-13 09:35",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "전남보건환경연구원, 신축 아파트 실내공기질 점검…일부 권고기준 초과"
-    },
-    {
-      "id": "2026-09-14_0010",
-      "title": "What’s behind the AI industry’s latest warnings of doom?",
-      "summary": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
-      "one_line": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
-      "one_line_kr": "On Equity, we discussed the AI industry's latest debate about whether it poses an existential threat to humanity.",
-      "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-14 04:40",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "What’s behind the AI industry’s latest warnings of doom?"
-    },
-    {
-      "id": "2026-09-14_0011",
-      "title": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
-      "summary": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
-      "one_line": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very…",
-      "one_line_kr": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very…",
-      "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-14 01:30",
-      "collect_date": "2026-09-14",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards"
-    },
-    {
-      "id": "2026-09-14_0012",
-      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
-      "summary": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at <my address>. Figure out 5K and 10K running routes from me that loop from my house. Use OSM data. It worked for 27 minutes and produced exactly what I'd asked for, as both an embedded visuali…",
-      "one_line": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at .",
-      "one_line_kr": "Here's a neat thing I had ChatGPT Work with GPT-6 Astra (Max) do this morning: I live at .",
-      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
-      "source": "Simon Willison",
-      "category": "LLM",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-09-13 08:56",
-      "collect_date": "2026-09-14",
-      "thumbnail": "https://static.simonwillison.net/static/2026/5k-route.webp",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Generating running routes with GPT-6 Astra and ChatGPT Work"
     }
   ]
 }

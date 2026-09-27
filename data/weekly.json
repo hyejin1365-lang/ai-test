@@ -1,17 +1,17 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-09-26 09:28",
-  "total": 373,
+  "generated_at": "2026-09-27 09:23",
+  "total": 375,
   "kr_count": 104,
-  "en_count": 269,
+  "en_count": 271,
   "category_stats": {
     "콘텐츠": 103,
-    "영상AI": 41,
+    "영상AI": 39,
     "이미지·디자인AI": 32,
     "LLM": 8,
-    "개발AI": 60,
-    "AI법률": 3,
+    "개발AI": 63,
+    "AI법률": 4,
     "논문": 99,
     "비즈니스": 27
   },
@@ -26,7 +26,7 @@
     },
     {
       "source": "TechCrunch AI",
-      "count": 28
+      "count": 27
     },
     {
       "source": "ArXiv CL",
@@ -38,6 +38,10 @@
     },
     {
       "source": "HuggingFace Papers",
+      "count": 23
+    },
+    {
+      "source": "MarkTechPost",
       "count": 23
     },
     {
@@ -53,10 +57,6 @@
       "count": 20
     },
     {
-      "source": "MarkTechPost",
-      "count": 19
-    },
-    {
       "source": "MIT Tech Review",
       "count": 16
     },
@@ -66,11 +66,11 @@
     },
     {
       "source": "OpenAI News (영상)",
-      "count": 11
+      "count": 10
     },
     {
       "source": "Latent Space",
-      "count": 11
+      "count": 10
     },
     {
       "source": "AI Business",
@@ -113,6 +113,10 @@
       "count": 2
     },
     {
+      "source": "AI Regulation News",
+      "count": 1
+    },
+    {
       "source": "AI법률 뉴스(국내)",
       "count": 1
     },
@@ -128,19 +132,23 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 34
-    },
-    {
-      "keyword": "GPT",
-      "count": 30
+      "count": 36
     },
     {
       "keyword": "LLM",
       "count": 30
     },
     {
+      "keyword": "GPT",
+      "count": 29
+    },
+    {
       "keyword": "에이전트",
-      "count": 26
+      "count": 28
+    },
+    {
+      "keyword": "Benchmark",
+      "count": 20
     },
     {
       "keyword": "GitHub",
@@ -148,19 +156,15 @@
     },
     {
       "keyword": "Vision",
-      "count": 17
+      "count": 16
     },
     {
-      "keyword": "Benchmark",
-      "count": 16
+      "keyword": "Multimodal",
+      "count": 15
     },
     {
       "keyword": "Copilot",
       "count": 15
-    },
-    {
-      "keyword": "Multimodal",
-      "count": 13
     },
     {
       "keyword": "Anthropic",
@@ -183,35 +187,31 @@
       "count": 8
     },
     {
-      "keyword": "Transformer",
-      "count": 8
-    },
-    {
       "keyword": "Qwen",
       "count": 7
     },
     {
-      "keyword": "추론",
+      "keyword": "Transformer",
       "count": 7
     },
     {
       "keyword": "제미나이",
-      "count": 6
+      "count": 5
     },
     {
       "keyword": "Gemini",
-      "count": 6
+      "count": 5
+    },
+    {
+      "keyword": "추론",
+      "count": 5
     },
     {
       "keyword": "Grok",
-      "count": 5
+      "count": 4
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-09-20",
-      "count": 20
-    },
     {
       "date": "2026-09-21",
       "count": 22
@@ -235,9 +235,20 @@
     {
       "date": "2026-09-26",
       "count": 65
+    },
+    {
+      "date": "2026-09-27",
+      "count": 22
     }
   ],
   "cat_daily": {
+    "2026-09-27": {
+      "콘텐츠": 10,
+      "영상AI": 3,
+      "이미지·디자인AI": 4,
+      "개발AI": 4,
+      "AI법률": 1
+    },
     "2026-09-26": {
       "콘텐츠": 10,
       "영상AI": 5,
@@ -289,15 +300,114 @@
       "영상AI": 4,
       "이미지·디자인AI": 4,
       "개발AI": 4
-    },
-    "2026-09-20": {
-      "콘텐츠": 10,
-      "영상AI": 5,
-      "이미지·디자인AI": 4,
-      "개발AI": 1
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-09-27_0000",
+      "title": "오픈AI 에이전트, 미국 정부 사이트까지 뒤졌다…‘에이전트 스팸’도 확인",
+      "summary": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다. 일부는 정부 기관의 공개 정보를 조회한 것이었지만, 보안 제한을 우회하거나 외부 사이트에 정보를 게시하고 이용자 데이터를 다른 서비스로 전송한 사례도 드러났다.오픈AI는 25일(현지시간) 자사 모델이 학습과 평가 과정에서 인터넷에서 수행한 활동을 광범위하게 검토한 결과를 공개하고, 이 과정에서 확인된 일부 사례를 외부 기관에 통보했다고 밝혔다.이번 검토는 지난 7월 AI…",
+      "one_line": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+      "one_line_kr": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215679",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-27 09:12",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI 에이전트, 미국 정부 사이트까지 뒤졌다…‘에이전트 스팸’도 확인"
+    },
+    {
+      "id": "2026-09-27_0005",
+      "title": "트럼프·미 하원의장, 빅테크 수장들과 29일 AI 안전 회의 예정",
+      "summary": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요 기술 기업 CEO들은 29일(현지시간) AI을 주제로 회의를 열 예정이다. 구체적인 참석 기업과 의제는 아직 공개되지 않았다. 이번 회의는 최근 AI 안전과 규제를 둘러싼 워싱턴의 논의가 본격화되는 가운데 마련됐다. 주요 AI 기업들은 AI가 인간에게 미칠 위험을 경고하며 각국 정부가 함께 대응해야 한다고 주장해 왔지만,…",
+      "one_line": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요",
+      "one_line_kr": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215673",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 13:58",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "트럼프·미 하원의장, 빅테크 수장들과 29일 AI 안전 회의 예정"
+    },
+    {
+      "id": "2026-09-27_0017",
+      "title": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English",
+      "summary": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English. It pairs an audio encoder with a 3B hybrid state-space decoder. It adds keyterm prompting for up to 50 terms, 5 output modes from 1 model, and streaming with first-token latency …",
+      "one_line": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+      "one_line_kr": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+      "url": "https://www.marktechpost.com/2026/09/26/sarvam-ai-releases-saaras-v4-a-speech-to-text-model-for-all-22-indian-languages-and-global-english/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-27 06:56",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English"
+    },
+    {
+      "id": "2026-09-27_0018",
+      "title": "Supersonic Labs Releases Julia 1: A 144.3M-Parameter Open Decision Model That Runs on a CPU",
+      "summary": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small. It takes context, a question, and 2 to 20 options, then returns one choice with probabilities. The model runs on a CPU and ships under Apache 2.0. It beat Jev reference values on 3 of 4…",
+      "one_line": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small.",
+      "one_line_kr": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small.",
+      "url": "https://www.marktechpost.com/2026/09/26/supersonic-labs-releases-julia-1-a-144-3m-parameter-open-decision-model-that-runs-on-a-cpu/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-27 04:50",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Supersonic Labs Releases Julia 1: A 144.3M-Parameter Open Decision Model That Runs on a CPU"
+    },
+    {
+      "id": "2026-09-27_0019",
+      "title": "Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building",
+      "summary": "Exa has released Agent Ultra, the highest effort mode of its Exa Agent API. It coordinates subagents across thousands of sources for list building and entity enrichment. Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "one_line": "Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "one_line_kr": "Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "url": "https://www.marktechpost.com/2026/09/26/exa-launches-agent-ultra-a-subagent-swarm-deep-research-api-built-for-exhaustive-list-building/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-26 17:04",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building"
+    },
     {
       "id": "2026-09-26_0000",
       "title": "오픈AI, 'GPT-6 사이버' 공개 임박…API 넘어서는 '전용 배포 제품' 선보인다",
@@ -402,120 +512,15 @@
         "class": "hot"
       },
       "title_kr": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI"
-    },
-    {
-      "id": "2026-09-26_0024",
-      "title": "GitHub Copilot weekly releases — September 21",
-      "summary": "This week's releases add new models to Copilot, local sandboxing in the Copilot app, and updates to Copilot in Slack, Microsoft Teams, JetBrains, and VS Code. GitHub Copilot Claude Opus&#8230; The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub Blo…",
-      "one_line": "GitHub Copilot Claude Opus&#8230; The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub…",
-      "one_line_kr": "GitHub Copilot Claude Opus&#8230; The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub…",
-      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-09-26 01:42",
-      "collect_date": "2026-09-26",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "GitHub Copilot weekly releases — September 21"
-    },
-    {
-      "id": "2026-09-26_0030",
-      "title": "Liquid AI Releases LFM2.5-VL-3B-DSpark: Speculative Decoding for Vision-Language Models With Up to 3.13x Faster Decoding",
-      "summary": "Liquid AI has released LFM2.5-VL-3B-DSpark, a 279.5M-parameter draft model that brings speculative decoding to its LFM2.5-VL-3B vision-language model. It delivers up to 3.13x faster decoding on Apple M5 Max and 2.66x on H100, with identical output under greedy decoding. Support s…",
-      "one_line": "Liquid AI has released LFM2.5-VL-3B-DSpark, a 279.5M-parameter draft model that brings speculative decoding to its…",
-      "one_line_kr": "Liquid AI has released LFM2.5-VL-3B-DSpark, a 279.5M-parameter draft model that brings speculative decoding to its…",
-      "url": "https://www.marktechpost.com/2026/09/25/liquid-ai-releases-lfm2-5-vl-3b-dspark-speculative-decoding-for-vision-language-models-with-up-to-3-13x-faster-decoding/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-26 08:11",
-      "collect_date": "2026-09-26",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Liquid AI Releases LFM2.5-VL-3B-DSpark: Speculative Decoding for Vision-Language Models With Up to 3.13x Faster Decoding"
-    },
-    {
-      "id": "2026-09-26_0031",
-      "title": "Aikido Security Releases Altar-1: An Open-Weight Security Model Pruned From GLM-5.3 to 328 GB",
-      "summary": "Aikido Security has released Altar-1, its first open-weight security model. It is a compressed version of Z.AI's GLM-5.3, built to run inside infrastructure the customer controls. Altar-1 powers Aikido Machine, the company's autonomous pentesting appliance for on-prem and air-gap…",
-      "one_line": "Aikido Security has released Altar-1, its first open-weight security model.",
-      "one_line_kr": "Aikido Security has released Altar-1, its first open-weight security model.",
-      "url": "https://www.marktechpost.com/2026/09/25/aikido-security-releases-altar-1-an-open-weight-security-model-pruned-from-glm-5-3-to-328-gb/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-26 00:14",
-      "collect_date": "2026-09-26",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Aikido Security Releases Altar-1: An Open-Weight Security Model Pruned From GLM-5.3 to 328 GB"
-    },
-    {
-      "id": "2026-09-26_0032",
-      "title": "Perplexity Trains Its Computer Agent on Real Mistakes With Hint-Guided Self-Distillation",
-      "summary": "Perplexity Research published a new post-training study. It trains a model inside Perplexity Computer on real user sessions, including failed ones. The method pairs rejection sampling fine-tuning with hint-guided self-distillation. In a live A/B test, tool-call failures fell from…",
-      "one_line": "Perplexity Research published a new post-training study.",
-      "one_line_kr": "Perplexity Research published a new post-training study.",
-      "url": "https://www.marktechpost.com/2026/09/25/perplexity-trains-its-computer-agent-on-real-mistakes-with-hint-guided-self-distillation/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-25 23:30",
-      "collect_date": "2026-09-26",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Perplexity Trains Its Computer Agent on Real Mistakes With Hint-Guided Self-Distillation"
-    },
-    {
-      "id": "2026-09-26_0033",
-      "title": "Fastino Releases GLiNER2.5-Decide: A 340M Open-Weight Decision Model That Runs on CPU",
-      "summary": "Fastino Labs has released GLiNER2.5-Decide, a 340M-parameter open-weight decision model. It takes text and a schema of typed questions and returns structured answers. Each answer comes with a probability distribution, a confidence score, and constraint-feasibility metadata. It ta…",
-      "one_line": "Fastino Labs has released GLiNER2.5-Decide, a 340M-parameter open-weight decision model.",
-      "one_line_kr": "Fastino Labs has released GLiNER2.5-Decide, a 340M-parameter open-weight decision model.",
-      "url": "https://www.marktechpost.com/2026/09/24/fastino-releases-gliner2-5-decide-a-340m-open-weight-decision-model-that-runs-on-cpu/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-25 13:46",
-      "collect_date": "2026-09-26",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Fastino Releases GLiNER2.5-Decide: A 340M Open-Weight Decision Model That Runs on CPU"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "오픈AI, 'GPT-6 사이버' 공개 임박…API 넘어서는 '전용 배포 제품' 선보인다",
+      "title": "오픈AI 에이전트, 미국 정부 사이트까지 뒤졌다…‘에이전트 스팸’도 확인",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215667",
-      "one_line": "오픈AI가 최신 사이버 보안 전용 모델 'GPT-6 사이버(Cyber)'를 몇주 안에 공개하고, 기존 모델 API 공급 방식에서 벗어나 고객이 모델을 더 안전하고 자동화된 방식으로 배포 및 운용할 수 있도록…",
-      "date": "2026-09-26 08:57"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215679",
+      "one_line": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+      "date": "2026-09-27 09:12"
     },
     "영상AI": {
       "title": "Welcome to the New Pika",
@@ -539,22 +544,484 @@
       "date": "2026-09-23 08:46"
     },
     "개발AI": {
-      "title": "GitHub Copilot weekly releases — September 21",
-      "source": "GitHub Changelog",
-      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
-      "one_line": "GitHub Copilot Claude Opus&#8230; The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub…",
-      "date": "2026-09-26 01:42"
+      "title": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English",
+      "source": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/09/26/sarvam-ai-releases-saaras-v4-a-speech-to-text-model-for-all-22-indian-languages-and-global-english/",
+      "one_line": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+      "date": "2026-09-27 06:56"
     }
   },
   "period_key_points": [
-    "오픈AI가 최신 사이버 보안 전용 모델 'GPT-6 사이버(Cyber)'를 몇주 안에 공개하고, 기존 모델 API 공급 방식에서 벗어나 고객이 모델을 더 안전하고 자동화된 방식으로 배포 및 운용할 수 있도록 지원하는 최초의 사이버 보.",
-    "마이크로소프트(MS)가 '코파일럿(Copilot)'의 전면 개편을 단행하며 챗봇 중심 시장에서 자율형 에이전트 플랫폼으로의 전환을 선언했다.",
-    "오픈AI가 'GPT-6' 제품군을 장시간 작동하는 AI 에이전트 환경에서 효율적으로 구동할 수 있도록 '프롬프트 캐싱' 기능을 대폭 강화했다.",
-    "구글과 오픈AI, 앤트로픽이 정부의 직접적인 감독 없이 최첨단 AI 모델의 안전 기준을 마련하는 업계 자율 규제기구 설립을 추진 중이다.",
-    "Large Language Models (LLMs) typically exhibit a performance profile where reliability degrades as task complexity."
+    "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+    "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.",
+    "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+    "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small.",
+    "Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall."
   ],
-  "period_prose": "이번 주간 총 373건의 AI 자료가 수집됐습니다. 국내 104건, 해외 269건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, GPT, LLM, 에이전트, GitHub입니다.",
+  "period_prose": "이번 주간 총 375건의 AI 자료가 수집됐습니다. 국내 104건, 해외 271건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, GPT, 에이전트, Benchmark입니다.",
   "items": [
+    {
+      "id": "2026-09-27_0000",
+      "title": "오픈AI 에이전트, 미국 정부 사이트까지 뒤졌다…‘에이전트 스팸’도 확인",
+      "summary": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다. 일부는 정부 기관의 공개 정보를 조회한 것이었지만, 보안 제한을 우회하거나 외부 사이트에 정보를 게시하고 이용자 데이터를 다른 서비스로 전송한 사례도 드러났다.오픈AI는 25일(현지시간) 자사 모델이 학습과 평가 과정에서 인터넷에서 수행한 활동을 광범위하게 검토한 결과를 공개하고, 이 과정에서 확인된 일부 사례를 외부 기관에 통보했다고 밝혔다.이번 검토는 지난 7월 AI…",
+      "one_line": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+      "one_line_kr": "오픈AI의 AI 에이전트가 인터넷에서 예상하지 못한 방식으로 외부 웹사이트에 접근하거나 정보를 게시하는 사례가 잇달아 확인됐다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215679",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-27 09:12",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI 에이전트, 미국 정부 사이트까지 뒤졌다…‘에이전트 스팸’도 확인"
+    },
+    {
+      "id": "2026-09-27_0001",
+      "title": "말 못하는 AI '제브'가 실리콘밸리 흔들었다...\"일주일 새 몸값 50배 뛰어\"",
+      "summary": "챗봇 기능을 빼고 속도와 비용 효율에 집중한 신형 AI 모델 '제브(Jev)'가 출시 일주일 만에 폭발적인 반응을 얻고 있다. 개발사인 타입세이프 AI(TypeSafe AI)의 기업 가치도 일주일 새 50배 치솟았다.24일(현지시간) 디 인포메이션에 따르면, 타입세이프 AI는 최근 투자자들과 10억달러(약 1조3590억원) 이상 규모의 신규 자금 조달을 위한 논의를 시작했다.지난주 비공개 모드에서 벗어나 제브를 처음 공개할 당시 시드 투자 기준 기업 가치는 2억달러 수준이었으나, 일주일 만에 일부…",
+      "one_line": "개발사인 타입세이프 AI(TypeSafe AI)의 기업 가치도 일주일 새 50배 치솟았다.24일(현지시간) 디 인포메이션에 따르면, 타입세이프 AI는 최근 투자자들과 10억달러(약 1조3590억원) 이상 규모의…",
+      "one_line_kr": "개발사인 타입세이프 AI(TypeSafe AI)의 기업 가치도 일주일 새 50배 치솟았다.24일(현지시간) 디 인포메이션에 따르면, 타입세이프 AI는 최근 투자자들과 10억달러(약 1조3590억원) 이상 규모의…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215675",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 15:30",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "말 못하는 AI '제브'가 실리콘밸리 흔들었다...\"일주일 새 몸값 50배 뛰어\""
+    },
+    {
+      "id": "2026-09-27_0002",
+      "title": "머스크 \"연말까지 콜로서스 2 GPU 두 배 증설\"... 최대 121만개 달성",
+      "summary": "일론 머스크 CEO가 스페이스XAI의 대규모 AI 컴퓨팅 클러스터 ‘콜로서스 2’에 탑재되는 엔비디아 GPU를 연말까지 현재의 두 배 이상으로 늘리겠다는 계획을 밝혔다.머스크는 25일(현지시간) X를 통해 콜로서스 2에 현재 엔비디아 GB200 11만개와 GB300 44만개가 가동되고 있다고 밝혔다. 여기에 다음 주까지 GB300 22만개를 추가 가동하고, 11월에도 22만개를 더 투입할 계획이다.이어 “운이 좋다면(if we get lucky)” 12월 말에는 추가로 22만개를 가동할 가능성도 …",
+      "one_line": "일론 머스크 CEO가 스페이스XAI의 대규모 AI 컴퓨팅 클러스터 ‘콜로서스 2’에 탑재되는 엔비디아 GPU를 연말까지 현재의 두 배 이상으로 늘리겠다는 계획을 밝혔다.머스크는 25일(현지시간) X를 통해 콜로서스…",
+      "one_line_kr": "일론 머스크 CEO가 스페이스XAI의 대규모 AI 컴퓨팅 클러스터 ‘콜로서스 2’에 탑재되는 엔비디아 GPU를 연말까지 현재의 두 배 이상으로 늘리겠다는 계획을 밝혔다.머스크는 25일(현지시간) X를 통해 콜로서스…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215674",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 14:39",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "기능추가",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "머스크 \"연말까지 콜로서스 2 GPU 두 배 증설\"... 최대 121만개 달성"
+    },
+    {
+      "id": "2026-09-27_0003",
+      "title": "구글, 우주에서 AI 칩 첫 시험...‘선캐처 프로젝트’ 10월 본격화",
+      "summary": "구글이 AI 데이터센터를 우주에 구축하는 ‘선캐처(Project Suncatcher)’ 프로젝트의 첫 번째 실증에 나선다. 구글은 오는 10월1일(현지시간) 스페이스X의 팰컨9 로켓을 이용해 실험용 위성 ‘MVP’를 저궤도에 올리고, 실제 우주 환경에서 AI 칩이 정상적으로 작동하는지 확인할 예정이라고 발표했다.이번 임무는 우주에 대규모 데이터센터를 바로 구축하는 것이 아니라 앞으로 우주 기반 AI 컴퓨팅이 가능한지를 확인하기 위한 시험이다. MVP에는 구글의 AI 전용 칩 TPU 4개가 탑재되며…",
+      "one_line": "구글은 오는 10월1일(현지시간) 스페이스X의 팰컨9 로켓을 이용해 실험용 위성 ‘MVP’를 저궤도에 올리고, 실제 우주 환경에서 AI 칩이 정상적으로 작동하는지 확인할 예정이라고 발표했다.이번 임무는 우주에…",
+      "one_line_kr": "구글은 오는 10월1일(현지시간) 스페이스X의 팰컨9 로켓을 이용해 실험용 위성 ‘MVP’를 저궤도에 올리고, 실제 우주 환경에서 AI 칩이 정상적으로 작동하는지 확인할 예정이라고 발표했다.이번 임무는 우주에…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215670",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 14:29",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "구글, 우주에서 AI 칩 첫 시험...‘선캐처 프로젝트’ 10월 본격화"
+    },
+    {
+      "id": "2026-09-27_0004",
+      "title": "공쿠르상, 'AI 작성·표절 의혹' 소설 후보서 제외",
+      "summary": "프랑스의 권위 있는 문학상인 공쿠르상이 AI로 소설을 썼다는 의혹을 받은 아이티계 캐나다 작가 텔리송 오렐리앵의 작품을 장편 후보에서 제외했다. 공쿠르 아카데미는 25일(현지시간) 오렐리앵의 소설 ‘그것 아니면 죽음이었다(C’était ça ou mourir)’를 2026년 공쿠르상 후보 명단에서 제외한다고 밝혔다.AI 사용 및 표절 의혹과 관련해 \"공쿠르상과 아카데미의 온전성을 지키기 위한 결정\"이라고 설명했다.특히 \"AI의 도움으로 생성된 텍스트의 창작을 어떤 방식으로도 지지하거나 용인하지 않…",
+      "one_line": "프랑스의 권위 있는 문학상인 공쿠르상이 AI로 소설을 썼다는 의혹을 받은 아이티계 캐나다",
+      "one_line_kr": "프랑스의 권위 있는 문학상인 공쿠르상이 AI로 소설을 썼다는 의혹을 받은 아이티계 캐나다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215671",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 14:03",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "공쿠르상, 'AI 작성·표절 의혹' 소설 후보서 제외"
+    },
+    {
+      "id": "2026-09-27_0005",
+      "title": "트럼프·미 하원의장, 빅테크 수장들과 29일 AI 안전 회의 예정",
+      "summary": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요 기술 기업 CEO들은 29일(현지시간) AI을 주제로 회의를 열 예정이다. 구체적인 참석 기업과 의제는 아직 공개되지 않았다. 이번 회의는 최근 AI 안전과 규제를 둘러싼 워싱턴의 논의가 본격화되는 가운데 마련됐다. 주요 AI 기업들은 AI가 인간에게 미칠 위험을 경고하며 각국 정부가 함께 대응해야 한다고 주장해 왔지만,…",
+      "one_line": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요",
+      "one_line_kr": "미국에서 AI 규제와 안전장치를 둘러싼 논쟁이 커지는 가운데 정부와 의회, 업계 수장이 한자리에 모인다.로이터에 따르면, 도널드 트럼프 미국 대통령과 마이크 존슨 하원의장, 주요",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215673",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 13:58",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "트럼프·미 하원의장, 빅테크 수장들과 29일 AI 안전 회의 예정"
+    },
+    {
+      "id": "2026-09-27_0006",
+      "title": "메타, AI 에이전트 '뮤즈' 보안 취약점 발견…안전 경고 강화",
+      "summary": "메타가 개인용 AI 에이전트 '뮤즈(Muse)'에서 사용자의 민감한 정보에 접근할 수 있는 보안 취약점이 발견되자 안전 경고를 강화했다. AI 에이전트가 이메일과 파일 등 개인 데이터에 직접 접근하고 외부 웹사이트와 상호작용하는 만큼, 악성 링크를 이용한 공격 가능성에 대한 보호 장치를 추가한 것이다.24일(현지시간) 디 인포메이션에 따르면, 외부 보안 연구원이 메타의 버그바운티 프로그램을 통해 뮤즈의 취약점을 신고했다.메타 내부 사고 보고서에는 이 취약점을 악용하면 공격자가 사용자의 전용 가상머…",
+      "one_line": "메타가 개인용 AI 에이전트 '뮤즈(Muse)'에서 사용자의 민감한 정보에 접근할 수 있는 보안 취약점이 발견되자 안전 경고를 강화했다.",
+      "one_line_kr": "메타가 개인용 AI 에이전트 '뮤즈(Muse)'에서 사용자의 민감한 정보에 접근할 수 있는 보안 취약점이 발견되자 안전 경고를 강화했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215666",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 13:47",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "메타, AI 에이전트 '뮤즈' 보안 취약점 발견…안전 경고 강화"
+    },
+    {
+      "id": "2026-09-27_0007",
+      "title": "트웰브랩스, 스마트 제조·피지컬 AI로 B2B 사업 영토 대폭 확장",
+      "summary": "국내 대표 영상 AI 전문 트웰브랩스(대표 이재성)가 기존 주력 무대였던 글로벌 미디어·엔터테인먼트 분야를 넘어 국내 스마트 제조와 피지컬 AI 시장으로 B2B 비즈니스 영토를 넓힌다.트웰브랩스는 국내외 사업을 공격적으로 확대하며 기존 방송·미디어 중심 사업 구조를 제조 현장과 피지컬 AI 영역으로 빠르게 전환하고 있다고 26일 밝혔다.신규 시장 공략과 맞물려 국내 영업 조직과 에이전트 개발진 채용을 대폭 가속화하고 있으며, 2025년 초 대비 한국 사무실 전체 인력 규모는 50% 이상 늘어났다.…",
+      "one_line": "국내 대표 영상 AI 전문 트웰브랩스(대표 이재성)가 기존 주력 무대였던 글로벌 미디어·엔터테인먼트 분야를 넘어 국내 스마트 제조와 피지컬 AI 시장으로 B2B 비즈니스 영토를 넓힌다.트웰브랩스는 국내외 사업을…",
+      "one_line_kr": "국내 대표 영상 AI 전문 트웰브랩스(대표 이재성)가 기존 주력 무대였던 글로벌 미디어·엔터테인먼트 분야를 넘어 국내 스마트 제조와 피지컬 AI 시장으로 B2B 비즈니스 영토를 넓힌다.트웰브랩스는 국내외 사업을…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215656",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 13:45",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "트웰브랩스, 스마트 제조·피지컬 AI로 B2B 사업 영토 대폭 확장"
+    },
+    {
+      "id": "2026-09-27_0008",
+      "title": "딥시크, 매출 두 달 만에 2배 껑충...\"가격 인상에도 1.4조 달성\"",
+      "summary": "딥시크의 연간 반복 매출(ARR)이 10억달러(약 1조3600억원)에 도달한 것으로 전해졌다. 두 달 전보다 2배 이상 늘어난 수준으로, 최근 AI 모델 가격 인상과 지속적인 사용자 수요가 매출 증가를 이끈 것으로 보인다.디 인포메이션은 23일(현지시간) 정통한 소식통을 인용, 량원펑 CEO가 최근 투자자들과의 회의에서 이 같은 매출 수치를 공유했다고 보도했다. 딥시크의 ARR은 지난 7월만 해도 4억~5억달러 수준으로 알려졌지만, 이번에 10억달러까지 증가했다. 특히 지난달 AI 모델 가격을 2…",
+      "one_line": "딥시크의 연간 반복 매출(ARR)이 10억달러(약 1조3600억원)에 도달한 것으로 전해졌다.",
+      "one_line_kr": "딥시크의 연간 반복 매출(ARR)이 10억달러(약 1조3600억원)에 도달한 것으로 전해졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215672",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 13:10",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "딥시크, 매출 두 달 만에 2배 껑충...\"가격 인상에도 1.4조 달성\""
+    },
+    {
+      "id": "2026-09-27_0009",
+      "title": "아카마이, 앤트로픽과 16조 클라우드 계약...5% 지분 인수권도 부여",
+      "summary": "세계 최대의 콘텐츠 전송 기업인 아카마이(Akamai Technologies)가 앤트로픽의 대규모 AI 컴퓨팅 수요를 통해 클라우드 사업을 크게 확대한다. 아카마이는 24일(현지시간) 앤트로픽과 7년간 116억달러(약 15조7600억원) 규모의 클라우드 인프라 계약을 체결했다. 급증하는 AI 서비스 수요에 대응하기 위해 분산형 클라우드 인프라와 CPU 컴퓨팅 자원을 제공하는 내용이다.이번 계약은 지난 5월 체결한 18억달러(약 2조4400억원) 규모 계약을 크게 확대하는 것이다. 아카마이는 올해 …",
+      "one_line": "급증하는 AI 서비스 수요에 대응하기 위해 분산형 클라우드 인프라와 CPU 컴퓨팅 자원을 제공하는 내용이다.이번 계약은 지난 5월 체결한 18억달러(약 2조4400억원) 규모 계약을 크게 확대하는 것이다.",
+      "one_line_kr": "급증하는 AI 서비스 수요에 대응하기 위해 분산형 클라우드 인프라와 CPU 컴퓨팅 자원을 제공하는 내용이다.이번 계약은 지난 5월 체결한 18억달러(약 2조4400억원) 규모 계약을 크게 확대하는 것이다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215664",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-09-26 12:57",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "아카마이, 앤트로픽과 16조 클라우드 계약...5% 지분 인수권도 부여"
+    },
+    {
+      "id": "2026-09-27_0010",
+      "title": "Insurers claim AI is already increasing healthcare costs",
+      "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+      "one_line": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year…",
+      "one_line_kr": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year…",
+      "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-27 06:02",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Insurers claim AI is already increasing healthcare costs"
+    },
+    {
+      "id": "2026-09-27_0011",
+      "title": "I created an interactive digital avatar of myself — and you can talk to it",
+      "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+      "one_line": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI…",
+      "one_line_kr": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI…",
+      "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-26 23:00",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "I created an interactive digital avatar of myself — and you can talk to it"
+    },
+    {
+      "id": "2026-09-27_0012",
+      "title": "At Meta Connect, the company’s smart glasses were everywhere",
+      "summary": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
+      "one_line": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing…",
+      "one_line_kr": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing…",
+      "url": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-26 10:08",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "At Meta Connect, the company’s smart glasses were everywhere"
+    },
+    {
+      "id": "2026-09-27_0013",
+      "title": "The Answer-Basin Representation Hypothesis: We Are Not Probing or Steering Concepts",
+      "summary": "The Linear Representation Hypothesis associates high-level concepts with directions in language models, but it remains unclear how these concept-related linear structures are organized within the model. We propose the Answer-Basin Representation Hypothesis: the probability measur…",
+      "one_line": "The Linear Representation Hypothesis associates high-level concepts with directions in language models, but it remains…",
+      "one_line_kr": "The Linear Representation Hypothesis associates high-level concepts with directions in language models, but it remains…",
+      "url": "https://tldr.takara.ai/p/2609.24821",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-22 01:11",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "The Answer-Basin Representation Hypothesis: We Are Not Probing or Steering Concepts"
+    },
+    {
+      "id": "2026-09-27_0014",
+      "title": "MCPGen: Benchmarking LLMs on Executable MCPWorkflow Development",
+      "summary": "We study whether LLMs can produce executable workflow artifacts that remain consistent across graph structure, tool implementation, schema bindings, and runtime wiring. In this setting, correctness depends on cross-layer consistency: a workflow may be structurally plausible, yet …",
+      "one_line": "We study whether LLMs can produce executable workflow artifacts that remain consistent across graph structure, tool…",
+      "one_line_kr": "We study whether LLMs can produce executable workflow artifacts that remain consistent across graph structure, tool…",
+      "url": "https://tldr.takara.ai/p/2609.23925",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-21 07:57",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "MCPGen: Benchmarking LLMs on Executable MCPWorkflow Development"
+    },
+    {
+      "id": "2026-09-27_0015",
+      "title": "BiCFlow-MER: Orchestrating Discriminative and Generative Multimodal Emotion Recognition via Conditional Transport",
+      "summary": "In multimodal emotion recognition (MER), human affective states are inferred by integrating complementary cues from multiple modalities. In audio-text MER, affective cues are often entangled with speaker style and lexical content, while cross-modal disagreement further complicate…",
+      "one_line": "In multimodal emotion recognition (MER), human affective states are inferred by integrating complementary cues from…",
+      "one_line_kr": "In multimodal emotion recognition (MER), human affective states are inferred by integrating complementary cues from…",
+      "url": "https://tldr.takara.ai/p/2609.27615",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-23 18:36",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "BiCFlow-MER: Orchestrating Discriminative and Generative Multimodal Emotion Recognition via Conditional Transport"
+    },
+    {
+      "id": "2026-09-27_0016",
+      "title": "SambaGraph: Action-Reaction Spatio-Temporal Graphs for Soccer Tactical Response Modeling",
+      "summary": "Soccer tactics are interactive: an attacking action changes the opponent's defensive problem, and the observed response depends on the multi-agent match state. We introduce SambaGraph, an action--reaction spatio-temporal graph dataset and benchmark for soccer tactical response mo…",
+      "one_line": "We introduce SambaGraph, an action--reaction spatio-temporal graph dataset and benchmark for soccer tactical response…",
+      "one_line_kr": "We introduce SambaGraph, an action--reaction spatio-temporal graph dataset and benchmark for soccer tactical response…",
+      "url": "https://tldr.takara.ai/p/2609.25569",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-09-22 11:02",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "SambaGraph: Action-Reaction Spatio-Temporal Graphs for Soccer Tactical Response Modeling"
+    },
+    {
+      "id": "2026-09-27_0017",
+      "title": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English",
+      "summary": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English. It pairs an audio encoder with a 3B hybrid state-space decoder. It adds keyterm prompting for up to 50 terms, 5 output modes from 1 model, and streaming with first-token latency …",
+      "one_line": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+      "one_line_kr": "Sarvam AI's Saaras V4 is a speech-to-text model covering all 22 Indian languages plus global English.",
+      "url": "https://www.marktechpost.com/2026/09/26/sarvam-ai-releases-saaras-v4-a-speech-to-text-model-for-all-22-indian-languages-and-global-english/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-27 06:56",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Sarvam AI Releases Saaras V4: A Speech-to-Text Model for All 22 Indian Languages and Global English"
+    },
+    {
+      "id": "2026-09-27_0018",
+      "title": "Supersonic Labs Releases Julia 1: A 144.3M-Parameter Open Decision Model That Runs on a CPU",
+      "summary": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small. It takes context, a question, and 2 to 20 options, then returns one choice with probabilities. The model runs on a CPU and ships under Apache 2.0. It beat Jev reference values on 3 of 4…",
+      "one_line": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small.",
+      "one_line_kr": "Supersonic Labs has released Julia 1, a 144.3M-parameter decision model built on mmBERT-small.",
+      "url": "https://www.marktechpost.com/2026/09/26/supersonic-labs-releases-julia-1-a-144-3m-parameter-open-decision-model-that-runs-on-a-cpu/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-27 04:50",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Supersonic Labs Releases Julia 1: A 144.3M-Parameter Open Decision Model That Runs on a CPU"
+    },
+    {
+      "id": "2026-09-27_0019",
+      "title": "Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building",
+      "summary": "Exa has released Agent Ultra, the highest effort mode of its Exa Agent API. It coordinates subagents across thousands of sources for list building and entity enrichment. Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "one_line": "Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "one_line_kr": "Exa reports it beats Opus 5.5, GPT-6 Astra, and Perplexity Agent on 4 benchmarks, including 81.4% soft recall …",
+      "url": "https://www.marktechpost.com/2026/09/26/exa-launches-agent-ultra-a-subagent-swarm-deep-research-api-built-for-exhaustive-list-building/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-26 17:04",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Exa Launches Agent Ultra: A Subagent Swarm Deep Research API Built for Exhaustive List Building"
+    },
+    {
+      "id": "2026-09-27_0020",
+      "title": "End-to-End Multimodal Data Augmentation and Adversarial Robustness Benchmark with AugLy for Images, Text, Audio, and PyTorch",
+      "summary": "Discover how to build a comprehensive multimodal augmentation and adversarial robustness workflow using AugLy for images, text, audio, and PyTorch datasets. The post End-to-End Multimodal Data Augmentation and Adversarial Robustness Benchmark with AugLy for Images, Text, Audio, a…",
+      "one_line": "Discover how to build a comprehensive multimodal augmentation and adversarial robustness workflow using AugLy for…",
+      "one_line_kr": "Discover how to build a comprehensive multimodal augmentation and adversarial robustness workflow using AugLy for…",
+      "url": "https://www.marktechpost.com/2026/09/26/end-to-end-multimodal-data-augmentation-and-adversarial-robustness-benchmark-with-augly-for-images-text-audio-and-pytorch/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-09-26 16:22",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "End-to-End Multimodal Data Augmentation and Adversarial Robustness Benchmark with AugLy for Images, Text, Audio, and PyT"
+    },
+    {
+      "id": "2026-09-27_0021",
+      "title": "EU AI Act Explained - diplomacyandlaw.com",
+      "summary": "EU AI Act Explained diplomacyandlaw.com",
+      "one_line": "EU AI Act Explained diplomacyandlaw.com",
+      "one_line_kr": "EU AI Act Explained diplomacyandlaw.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9VTkFLV2FYM0lITU4zbFk1RWR1V2V6OG9DRVJrR2pQRTg1MXR2VEM3dDR0UWp0MzlpVXZweWlxaWdFQ1A1Q09ERUZSeHZXMUNlYUxZMTU5RlpnUVZ1Zzg1dkZGWkFGVHM?oc=5",
+      "source": "AI Regulation News",
+      "category": "AI법률",
+      "badge": "gnews",
+      "lang": "en",
+      "date": "2026-08-08 16:00",
+      "collect_date": "2026-09-27",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "EU AI Act Explained - diplomacyandlaw.com"
+    },
     {
       "id": "2026-09-26_0000",
       "title": "오픈AI, 'GPT-6 사이버' 공개 임박…API 넘어서는 '전용 배포 제품' 선보인다",
@@ -7967,426 +8434,6 @@
         "class": "hot"
       },
       "title_kr": "OpenClaw Releases 2026.9.5 With Atomic Updates, Plugin Hot Reload, Conversation Sharing, and Expanded GPT Live"
-    },
-    {
-      "id": "2026-09-20_0000",
-      "title": "[AI 이슈트렌드] 역대급 수출 실적 속 AI 속도조절론·대통령 지지율 최저 주목",
-      "summary": "AI타임스와 이스트에이드의 9월 셋째 주(9월11일~17일) 이슈 분석 결과, SBS 개그맨 술집 난동을 포함해 MBC 사장 인선과 수출 실적, AI 관련 소식이 상위권을 차지했다.이번 주 검색량 1위는 'SBS 개그맨 술집 난동(5.60%)'이 차지했다. SBS 공채 개그맨을 사칭한 남성이 서울의 한 술집에서 업주에게 폭언하고 맥주잔을 던지는 등 난동을 부려 경찰 조사를 받아 화제를 모았다.2위는 'MBC 사장 이성주 내정(4.76%)'으로 이성주 iMBC 경영이사와 전동건 전 울산MBC 사장 …",
-      "one_line": "AI타임스와 이스트에이드의 9월 셋째 주(9월11일~17일) 이슈 분석 결과, SBS 개그맨 술집 난동을 포함해 MBC 사장 인선과 수출 실적, AI 관련 소식이 상위권을 차지했다.이번 주 검색량 1위는 'SBS…",
-      "one_line_kr": "AI타임스와 이스트에이드의 9월 셋째 주(9월11일~17일) 이슈 분석 결과, SBS 개그맨 술집 난동을 포함해 MBC 사장 인선과 수출 실적, AI 관련 소식이 상위권을 차지했다.이번 주 검색량 1위는 'SBS…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215491",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 21:57",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AI 이슈트렌드] 역대급 수출 실적 속 AI 속도조절론·대통령 지지율 최저 주목"
-    },
-    {
-      "id": "2026-09-20_0001",
-      "title": "오픈AI, 기업 시장 점유율 역전…앤트로픽, IPO전 신형 모델 출시 검토",
-      "summary": "오픈AI가 'GPT-6 아스트라'를 앞세워 기업용 시장 점유율을 가파르게 확대하자, 이 분야에서 우위를 점해온 앤트로픽이 기업공개(IPO)를 앞두고 차세대 AI 모델 공개를 준비 중인 것으로 알려졌다. 다리오 아모데이 앤트로픽 CEO가 안전성 확보를 위한 AI 발전 속도 조절론을 제기한 지 불과 일주일 만에 나온 움직임으로, 시장 경쟁 압박이 회사 정체성과 전략까지 흔드는 모양새다.로이터는 19일 소식통 3명을 인용, 앤트로픽이 IPO 이전에 경쟁사의 상승세에 대응하기 위한 신규 AI 모델 출시를…",
-      "one_line": "다리오 아모데이 앤트로픽 CEO가 안전성 확보를 위한 AI 발전 속도 조절론을 제기한 지 불과 일주일 만에 나온 움직임으로, 시장 경쟁 압박이 회사 정체성과 전략까지 흔드는 모양새다.로이터는 19일 소식통 3명을…",
-      "one_line_kr": "다리오 아모데이 앤트로픽 CEO가 안전성 확보를 위한 AI 발전 속도 조절론을 제기한 지 불과 일주일 만에 나온 움직임으로, 시장 경쟁 압박이 회사 정체성과 전략까지 흔드는 모양새다.로이터는 19일 소식통 3명을…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215494",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 19:46",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, 기업 시장 점유율 역전…앤트로픽, IPO전 신형 모델 출시 검토"
-    },
-    {
-      "id": "2026-09-20_0002",
-      "title": "구글 '제미나이', 보안 테스트 환경 오류로 기업 3곳 침투 사고 발생",
-      "summary": "구글의 '제미나이'가 사이버 보안 평가 도중 기업 시스템 3곳에 무단 침투한 사실이 확인됐다. 월스트리트저널(WSJ)이 18일(현지시간) 해당 사실을 보도한 직후, 구글은 자율적 침투 발생을 인정했다.다만 이번 사건은 AI 모델의 자체 결함이나 불량 작동이 아닌, 외주 평가업체의 테스트 환경 관리 소홀에서 비롯된 사고라는 점이 드러났다.사고는 지난 5월 AI 보안 평가 전문 스타트업 이레귤러(Irregular)가 진행한 모의 침투 훈련 과정에서 일어났다. 가상 환경 내 격리된 기업 시스템을 공격하…",
-      "one_line": "구글의 '제미나이'가 사이버 보안 평가 도중 기업 시스템 3곳에 무단 침투한 사실이 확인됐다.",
-      "one_line_kr": "구글의 '제미나이'가 사이버 보안 평가 도중 기업 시스템 3곳에 무단 침투한 사실이 확인됐다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215493",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 19:06",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "구글 '제미나이', 보안 테스트 환경 오류로 기업 3곳 침투 사고 발생"
-    },
-    {
-      "id": "2026-09-20_0003",
-      "title": "Z.ai “AI가 AI 실행 인프라 스스로 구축...'재귀적 자기개선'의 시작”",
-      "summary": "AI가 단순히 사람이 지정한 애플리케이션 코드를 작성하는 단계를 넘어, 자신이 구동되는 하드웨어 및 시스템 인프라 최적화 레이어까지 직접 진입하며 개발 과정을 진화시키고 있다.Z.ai(지푸 AI)는 17일(현지시간) 자체 개발한 'GLM'을 활용해 차세대 AI 모델의 추론 인프라를 직접 구축하고 최적화하는 사례를 공개했다.아직 AI가 스스로 후속 모델을 설계하고 학습하는 ‘재귀적 자기개선(RSI)’ 단계에는 도달하지 않았지만, GLM이 자신의 실행 환경을 개선하는 초기 형태가 나타나고 있다고 설명…",
-      "one_line": "AI가 단순히 사람이 지정한 애플리케이션 코드를 작성하는 단계를 넘어, 자신이 구동되는 하드웨어 및 시스템 인프라 최적화 레이어까지 직접 진입하며 개발 과정을 진화시키고 있다.Z.ai(지푸 AI)는…",
-      "one_line_kr": "AI가 단순히 사람이 지정한 애플리케이션 코드를 작성하는 단계를 넘어, 자신이 구동되는 하드웨어 및 시스템 인프라 최적화 레이어까지 직접 진입하며 개발 과정을 진화시키고 있다.Z.ai(지푸 AI)는…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215483",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 18:05",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Z.ai “AI가 AI 실행 인프라 스스로 구축...'재귀적 자기개선'의 시작”"
-    },
-    {
-      "id": "2026-09-20_0004",
-      "title": "'애플 인수설' 프리즘ML, 270억 매개변수 모델 5.9GB로 압축",
-      "summary": "애플의 인수 검토설로 주목받은 AI 스타트업 프리즘ML(PrismML)이 한층 진화한 온디바이스 AI 압축 모델을 선보였다. 270억 매개변수급 대형언어모델(LLM)을 5.9기가바이트(GB) 수준으로 압축해 일반 PC와 노트북, 고성능 스마트폰에서도 원활하게 작동하는 신규 모델을 공개했다.캘리포니아 공과대학(Caltech) 스핀오프 기업인 프리즘ML은 지난 7월 54GB 크기의 모델을 4GB 미만으로 줄여 아이폰 17 프로에서 구동하는 데 성공하며 애플 등 빅테크의 인수 및 협력 검토 대상으로 떠…",
-      "one_line": "270억 매개변수급 대형언어모델(LLM)을 5.9기가바이트(GB) 수준으로 압축해 일반 PC와 노트북, 고성능 스마트폰에서도 원활하게 작동하는 신규 모델을 공개했다.캘리포니아 공과대학(Caltech) 스핀오프…",
-      "one_line_kr": "270억 매개변수급 대형언어모델(LLM)을 5.9기가바이트(GB) 수준으로 압축해 일반 PC와 노트북, 고성능 스마트폰에서도 원활하게 작동하는 신규 모델을 공개했다.캘리포니아 공과대학(Caltech) 스핀오프…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215479",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 17:36",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "'애플 인수설' 프리즘ML, 270억 매개변수 모델 5.9GB로 압축"
-    },
-    {
-      "id": "2026-09-20_0005",
-      "title": "메타, 에이전트 '뮤즈' 맥으로 확대…앱스토어 1위 인기 속 '보안' 부각",
-      "summary": "메타의 개인용 AI 에이전트 ‘뮤즈(Muse)’가 맥(Mac)으로 서비스를 확대하면서 AI가 사용자의 컴퓨터에서 직접 작업을 수행하는 시대가 본격화하고 있다. 또 뮤즈는 모바일 버전이 앱스토어 1위에 오르며 폭발적인 인기를 끌고 있지만, 사용자 데이터 접근에 따른 개인정보 보호와 보안 문제는 넘어야 할 최대 과제로 꼽힌다.메타는 17일(현지시간) 맥용 뮤즈를 공식 출시했다. 모바일과 웹에 이어 맥 데스크톱 환경으로 영역을 넓혀 파일, 메시지, 캘린더, 메모, 이메일 등 PC 내 주요 애플리케이션 …",
-      "one_line": "메타의 개인용 AI 에이전트 ‘뮤즈(Muse)’가 맥(Mac)으로 서비스를 확대하면서 AI가 사용자의 컴퓨터에서 직접 작업을 수행하는 시대가 본격화하고 있다.",
-      "one_line_kr": "메타의 개인용 AI 에이전트 ‘뮤즈(Muse)’가 맥(Mac)으로 서비스를 확대하면서 AI가 사용자의 컴퓨터에서 직접 작업을 수행하는 시대가 본격화하고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215478",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 17:03",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "메타, 에이전트 '뮤즈' 맥으로 확대…앱스토어 1위 인기 속 '보안' 부각"
-    },
-    {
-      "id": "2026-09-20_0006",
-      "title": "스페이스XAI, ‘그록 보이스 트랜스크라이브 2.0’ 공개...전사 정확도 1위",
-      "summary": "스페이스XAI는 18일(현지시간) 음성을 텍스트로 변환하는 새로운 음성 전사 모델 ‘그록 보이스 트랜스크라이브 2.0(Grok Voice Transcribe 2.0)’을 공개했다.이를 두고 \"현재 사용 가능한 변환 모델 중 가장 정확한 모델 중 하나\"라고 강조했다. 실제 환경에서 수집한 다양한 음성 데이터를 바탕으로 전사 정확도를 크게 높였다는 설명이다.그록 보이스 트랜스크라이브 2.0은 그록 음성 기능에 사용되는 오디오 기반 모델을 바탕으로 개발됐다. 기존 '그록 보이스'는 하루 수만건의 고객지…",
-      "one_line": "스페이스XAI는 18일(현지시간) 음성을 텍스트로 변환하는 새로운 음성 전사 모델 ‘그록 보이스 트랜스크라이브 2.0(Grok Voice Transcribe 2.0)’을 공개했다.이를 두고 \"현재 사용 가능한 변환…",
-      "one_line_kr": "스페이스XAI는 18일(현지시간) 음성을 텍스트로 변환하는 새로운 음성 전사 모델 ‘그록 보이스 트랜스크라이브 2.0(Grok Voice Transcribe 2.0)’을 공개했다.이를 두고 \"현재 사용 가능한 변환…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215485",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 15:50",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "스페이스XAI, ‘그록 보이스 트랜스크라이브 2.0’ 공개...전사 정확도 1위"
-    },
-    {
-      "id": "2026-09-20_0007",
-      "title": "네오클라우드 엔스케일, 엔비디아 지원으로 뉴욕증시 상장 추진",
-      "summary": "영국의 네오클라우드 엔스케일(Nscale)이 미국 뉴욕증권거래소(NYSE) 상장을 위한 기업공개(IPO)를 신청했다. 2024년 가상자산 채굴 인프라 기업에서 분사한 지 약 2년 만에 상장에 나선 것으로, 폭발적으로 늘어나는 AI 컴퓨팅 수요를 겨냥한 대규모 자금 조달에 나섰다.CNBC 등에 따르면, 엔스케일은 18일(현지시간) 미국 증권거래위원회(SEC)에 IPO 신청서를 제출했다.이를 통해 2026년 상반기 매출이 1억4060만달러(약 2000억원), 순손실은 10억2000만달러(약 1조400…",
-      "one_line": "영국의 네오클라우드 엔스케일(Nscale)이 미국 뉴욕증권거래소(NYSE) 상장을 위한 기업공개(IPO)를 신청했다.",
-      "one_line_kr": "영국의 네오클라우드 엔스케일(Nscale)이 미국 뉴욕증권거래소(NYSE) 상장을 위한 기업공개(IPO)를 신청했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215489",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 15:17",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "네오클라우드 엔스케일, 엔비디아 지원으로 뉴욕증시 상장 추진"
-    },
-    {
-      "id": "2026-09-20_0008",
-      "title": "디즈니, 사상 첫 CTO 선임…'저작권 마찰' 캐릭터닷AI CEO 영입",
-      "summary": "월트 디즈니 컴퍼니가 창사 이래 처음으로 회사 전체를 아우르는 최고 기술책임자(CTO) 직책을 신설하고 AI 중심의 디지털 전환에 속도를 내겠다는 의지를 드러냈다. 특히 자사 캐릭터 IP 무단 사용 문제로 법적 경고장을 보냈던 캐릭터닷AI 출신의 카란딥 아난드를 영입했다는 점이 눈길을 끈다.디즈니는 18일(현지시간) 캐릭터닷AI의 전 CEO인 카란딥 아난드를 수석 부사장 겸 초대 CTO로 임명했다고 발표했다.아난드 신임 CTO는 메타와 마이크로소프트에서 고위 임원을 거쳐 2025년 6월부터 캐릭터…",
-      "one_line": "월트 디즈니 컴퍼니가 창사 이래 처음으로 회사 전체를 아우르는 최고 기술책임자(CTO) 직책을 신설하고 AI 중심의 디지털 전환에 속도를 내겠다는 의지를 드러냈다.",
-      "one_line_kr": "월트 디즈니 컴퍼니가 창사 이래 처음으로 회사 전체를 아우르는 최고 기술책임자(CTO) 직책을 신설하고 AI 중심의 디지털 전환에 속도를 내겠다는 의지를 드러냈다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215487",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 11:39",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "디즈니, 사상 첫 CTO 선임…'저작권 마찰' 캐릭터닷AI CEO 영입"
-    },
-    {
-      "id": "2026-09-20_0009",
-      "title": "술레이만 \"오픈AI의 '셀프 프롬프트 인젝션'은 매우 심각한 상황\"",
-      "summary": "무스타파 술레이만 마이크로소프트(MS) AI CEO가 오픈AI의 보고서에서 드러난 '셀프 프롬프트 인젝션' 현상에 대해 강한 우려를 표명했다. AI가 스스로 추론 과정과 작업 메모리를 조작해 미래 버전의 자신에게 지시를 남기는 행위가 현실화하면 인간이 시스템에 대한 통제력을 잃게 되는 위험한 결과로 이어질 수 있다는 경고다.술레이만 CEO는 18일(현지시간) CNBC의 ‘스쿼크 박스’ 인터뷰에 출연해 오픈AI가 공개한 오정렬 사례들을 \"심각한 상황\"으로 규정하며 이같이 밝혔다.그는 오픈AI의 사례…",
-      "one_line": "무스타파 술레이만 마이크로소프트(MS) AI CEO가 오픈AI의 보고서에서 드러난 '셀프 프롬프트 인젝션' 현상에 대해 강한 우려를 표명했다.",
-      "one_line_kr": "무스타파 술레이만 마이크로소프트(MS) AI CEO가 오픈AI의 보고서에서 드러난 '셀프 프롬프트 인젝션' 현상에 대해 강한 우려를 표명했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215486",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-09-19 11:18",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "술레이만 \"오픈AI의 '셀프 프롬프트 인젝션'은 매우 심각한 상황\""
-    },
-    {
-      "id": "2026-09-20_0010",
-      "title": "Introducing the Australian Youth Safety Blueprint",
-      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
-      "one_line": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and…",
-      "one_line_kr": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and…",
-      "url": "https://openai.com/index/australian-youth-safety-blueprint",
-      "source": "OpenAI News (영상)",
-      "category": "영상AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-09-18 21:00",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Introducing the Australian Youth Safety Blueprint"
-    },
-    {
-      "id": "2026-09-20_0011",
-      "title": "Flock reportedly tries to shrink workforce with employee buyouts",
-      "summary": "Without buyouts, Flock would \"almost certainly\" need to lay off staff.",
-      "one_line": "Without buyouts, Flock would \"almost certainly\" need to lay off staff.",
-      "one_line_kr": "Without buyouts, Flock would \"almost certainly\" need to lay off staff.",
-      "url": "https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-20 05:39",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Flock reportedly tries to shrink workforce with employee buyouts"
-    },
-    {
-      "id": "2026-09-20_0012",
-      "title": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
-      "summary": "Trump claimed, without evidence, that the AI backlash is a Democratic hoax.",
-      "one_line": "Trump claimed, without evidence, that the AI backlash is a Democratic hoax.",
-      "one_line_kr": "Trump claimed, without evidence, that the AI backlash is a Democratic hoax.",
-      "url": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-20 04:57",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force"
-    },
-    {
-      "id": "2026-09-20_0013",
-      "title": "Google’s Gemini is the latest AI model to hack other companies",
-      "summary": "Google said Gemini had \"acted appropriately\" by ending each hack immediately.",
-      "one_line": "Google said Gemini had \"acted appropriately\" by ending each hack immediately.",
-      "one_line_kr": "Google said Gemini had \"acted appropriately\" by ending each hack immediately.",
-      "url": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-20 02:30",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Google’s Gemini is the latest AI model to hack other companies"
-    },
-    {
-      "id": "2026-09-20_0014",
-      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
-      "summary": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how much your cat is eating and when — though the fanciest health-monitoring features will cost you an extra subscription.",
-      "one_line": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how…",
-      "one_line_kr": "Petlibro's new Granary 2 smart feeders use a built-in scale and (on pricier models) an AI camera to track exactly how…",
-      "url": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-20 00:00",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes"
-    },
-    {
-      "id": "2026-09-20_0015",
-      "title": "SlotDiT: Object-Centric Representations for Diffusion Transformers",
-      "summary": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic applications. However, existing approaches rely on pixel-level or VAE-based latent representations that lack explicit semantic structure, leaving the impact of th…",
-      "one_line": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic…",
-      "one_line_kr": "Text-conditioned latent diffusion models perform strongly in video generation and are promising backbones for robotic…",
-      "url": "https://tldr.takara.ai/p/2609.17414",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-16 01:38",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "SlotDiT: Object-Centric Representations for Diffusion Transformers"
-    },
-    {
-      "id": "2026-09-20_0016",
-      "title": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication",
-      "summary": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when client-specific variation is low-dimensional while training repeatedly releases high-dimensional updates. In this paper, we address this misalignment by releasing a private…",
-      "one_line": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when…",
-      "one_line_kr": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when…",
-      "url": "https://tldr.takara.ai/p/2609.15950",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-15 02:48",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication"
-    },
-    {
-      "id": "2026-09-20_0017",
-      "title": "Acting in Meters: Learning Metric Interactions for Precise Robotic Manipulation",
-      "summary": "Vision-Language-Action models and World-Action Models have advanced language-conditioned robotic manipulation, yet often leave metric relations among actions, objects, and scene geometry implicit. Human manipulation combines semantic understanding of task-relevant objects with sp…",
-      "one_line": "Vision-Language-Action models and World-Action Models have advanced language-conditioned robotic manipulation, yet…",
-      "one_line_kr": "Vision-Language-Action models and World-Action Models have advanced language-conditioned robotic manipulation, yet…",
-      "url": "https://tldr.takara.ai/p/2609.18243",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-16 16:20",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Acting in Meters: Learning Metric Interactions for Precise Robotic Manipulation"
-    },
-    {
-      "id": "2026-09-20_0018",
-      "title": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trained Generations",
-      "summary": "Safety evaluations for large language models rely on surface-form classifiers that report declining harm scores across model generations. We provide evidence that this methodology is systematically incomplete: explicit discriminatory content is transformed rather than removed. We…",
-      "one_line": "Safety evaluations for large language models rely on surface-form classifiers that report declining harm scores across…",
-      "one_line_kr": "Safety evaluations for large language models rely on surface-form classifiers that report declining harm scores across…",
-      "url": "https://tldr.takara.ai/p/2609.20779",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-09-18 02:49",
-      "collect_date": "2026-09-20",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Harm Laundering in GPT Models: Evidence That Gender Discrimination Is Transformed Rather Than Reduced Across Safety-Trai"
-    },
-    {
-      "id": "2026-09-20_0019",
-      "title": "[AINews] Here are 6 Clones of Jev in 2 days",
-      "summary": "Imitation is the sincerest form of Flattery",
-      "one_line": "Imitation is the sincerest form of Flattery",
-      "one_line_kr": "Imitation is the sincerest form of Flattery",
-      "url": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-09-19 14:48",
-      "collect_date": "2026-09-20",
-      "thumbnail": "https://substackcdn.com/image/fetch/$s_!0a7_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHSiGtZba0AEezOP.jpg",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AINews] Here are 6 Clones of Jev in 2 days"
     }
   ]
 }

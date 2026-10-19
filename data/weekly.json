@@ -1,17 +1,17 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-10-18 08:54",
-  "total": 376,
-  "kr_count": 128,
-  "en_count": 248,
+  "generated_at": "2026-10-19 09:04",
+  "total": 373,
+  "kr_count": 127,
+  "en_count": 246,
   "category_stats": {
     "콘텐츠": 127,
-    "영상AI": 36,
+    "영상AI": 34,
     "이미지·디자인AI": 34,
     "LLM": 4,
-    "개발AI": 61,
-    "AI법률": 6,
+    "개발AI": 62,
+    "AI법률": 4,
     "논문": 83,
     "비즈니스": 25
   },
@@ -25,16 +25,20 @@
       "count": 32
     },
     {
-      "source": "TechCrunch AI",
-      "count": 27
-    },
-    {
       "source": "HuggingFace Papers",
       "count": 27
     },
     {
+      "source": "TechCrunch AI",
+      "count": 25
+    },
+    {
       "source": "바이라인네트워크",
       "count": 25
+    },
+    {
+      "source": "MarkTechPost",
+      "count": 24
     },
     {
       "source": "ArXiv AI",
@@ -43,10 +47,6 @@
     {
       "source": "ArXiv ML",
       "count": 24
-    },
-    {
-      "source": "MarkTechPost",
-      "count": 23
     },
     {
       "source": "GitHub Changelog",
@@ -85,11 +85,11 @@
       "count": 5
     },
     {
-      "source": "AI Copyright Law",
-      "count": 4
+      "source": "OpenAI Blog",
+      "count": 3
     },
     {
-      "source": "OpenAI Blog",
+      "source": "AI Copyright Law",
       "count": 3
     },
     {
@@ -111,24 +111,20 @@
     {
       "source": "Simon Willison",
       "count": 1
-    },
-    {
-      "source": "AI법률 뉴스(국내)",
-      "count": 1
     }
   ],
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 55
+      "count": 58
     },
     {
       "keyword": "LLM",
-      "count": 32
+      "count": 30
     },
     {
       "keyword": "에이전트",
-      "count": 25
+      "count": 26
     },
     {
       "keyword": "GPT",
@@ -136,11 +132,15 @@
     },
     {
       "keyword": "Benchmark",
-      "count": 18
+      "count": 19
     },
     {
       "keyword": "Vision",
-      "count": 16
+      "count": 17
+    },
+    {
+      "keyword": "Reasoning",
+      "count": 15
     },
     {
       "keyword": "인공지능",
@@ -151,16 +151,12 @@
       "count": 14
     },
     {
-      "keyword": "Reasoning",
-      "count": 13
+      "keyword": "Anthropic",
+      "count": 10
     },
     {
       "keyword": "Diffusion",
       "count": 10
-    },
-    {
-      "keyword": "Anthropic",
-      "count": 9
     },
     {
       "keyword": "추론",
@@ -171,24 +167,16 @@
       "count": 9
     },
     {
-      "keyword": "Multimodal",
-      "count": 8
-    },
-    {
       "keyword": "클로드",
       "count": 7
     },
     {
-      "keyword": "Claude",
-      "count": 6
-    },
-    {
       "keyword": "제미나이",
-      "count": 6
+      "count": 7
     },
     {
-      "keyword": "ChatGPT",
-      "count": 6
+      "keyword": "Multimodal",
+      "count": 7
     },
     {
       "keyword": "Transformer",
@@ -197,13 +185,17 @@
     {
       "keyword": "생성형 AI",
       "count": 6
+    },
+    {
+      "keyword": "Claude",
+      "count": 5
+    },
+    {
+      "keyword": "ChatGPT",
+      "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-10-12",
-      "count": 23
-    },
     {
       "date": "2026-10-13",
       "count": 59
@@ -227,9 +219,19 @@
     {
       "date": "2026-10-18",
       "count": 23
+    },
+    {
+      "date": "2026-10-19",
+      "count": 20
     }
   ],
   "cat_daily": {
+    "2026-10-19": {
+      "콘텐츠": 10,
+      "영상AI": 2,
+      "이미지·디자인AI": 4,
+      "개발AI": 4
+    },
     "2026-10-18": {
       "콘텐츠": 10,
       "영상AI": 4,
@@ -280,16 +282,135 @@
       "개발AI": 6,
       "논문": 19,
       "비즈니스": 5
-    },
-    "2026-10-12": {
-      "콘텐츠": 10,
-      "영상AI": 4,
-      "이미지·디자인AI": 4,
-      "개발AI": 3,
-      "AI법률": 2
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-10-19_0001",
+      "title": "'제미나이 4 아르곤', 역할 나눠 27시간 만에 마인크래프트 클리어",
+      "summary": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다. 스스로 역할을 나누고 코드를 작성했으며, 동료가 잃어버린 아이템을 회수하거나 전투 전략을 수정하면서 하루 넘게 공동 목표를 수행했다.구글 딥마인드 연구진은 15일(현지시간) 이 같은 실험 결과를 담은 논문을 아카이브에 공개했다. 에이전트들은 무작위로 생성한 세계에서 서바이벌 모드로 시작해 27시간14분 만에 엔더 드래곤을 쓰러뜨렸다. 그동안 프로그램 2783개를 작성·실행했으며,…",
+      "one_line": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+      "one_line_kr": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216379",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 18:30",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "'제미나이 4 아르곤', 역할 나눠 27시간 만에 마인크래프트 클리어"
+    },
+    {
+      "id": "2026-10-19_0002",
+      "title": "오픈AI, ‘GPT-6 아스트라 프로’ 업그레이드...에이전트 병렬 실행 지원",
+      "summary": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다. 사용자가 각 에이전트의 진행 상황과 결과를 직접 확인할 수 있도록 한 것도 특징이다.오픈AI는 16일(현지시간) X를 통해 GPT-6 아스트라 프로의 업데이트를 발표했다. 이번 기능은 챗GPT의 채팅 탭에서 일부 프로(Pro) 요금제 사용자를 대상으로 제공되며, 계정에 따라 이용 가능 여부가 다를 수 있다.이번 업데이트의 핵심은 여러 에이전트…",
+      "one_line": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다.",
+      "one_line_kr": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216375",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 17:51",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI, ‘GPT-6 아스트라 프로’ 업그레이드...에이전트 병렬 실행 지원"
+    },
+    {
+      "id": "2026-10-19_0003",
+      "title": "리퀴드 AI, 제브 성능 앞선 멀티모달 의사결정 모델 ‘d1-울트라’ 공개",
+      "summary": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다. 텍스트와 이미지를 함께 분석하는 것은 물론, 판단 정확도와 확률값의 신뢰도를 높인 것이 특징이다. 독립 평가에서도 의사결정 모델 가운데 1위를 기록했다.리퀴드 AI는 15일(현지시간) d1-울트라를 공개하고 자사의 API를 통해 제공하기 시작했다고 밝혔다. 리퀴드 AI는 이 모델이 기존 의사결정 모델이 잘 처리하지 못하는 복잡하고 불규칙한 실제 업무에 초점을…",
+      "one_line": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다.",
+      "one_line_kr": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216371",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 17:13",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "리퀴드 AI, 제브 성능 앞선 멀티모달 의사결정 모델 ‘d1-울트라’ 공개"
+    },
+    {
+      "id": "2026-10-19_0004",
+      "title": "[AI 모델 신작] 영상 생성 ‘클링 4.0’·감정 조절 음성 ‘드라마 3’ 등 6종",
+      "summary": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다. 한 번에 30초 길이의 영상을 생성하며, 여러 참조 자료와 주요 프레임을 지정해 인물·장면의 일관성과 전개를 조정할 수 있다. 개편된 클링 AI 웹사이트에서 이용할 수 있으며, MCP와 명령줄 인터페이스(CLI)를 통한 외부 도구 연동도 지원한다.For Those Who Create. KLING 4.0 Is Now Fully …",
+      "one_line": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다.",
+      "one_line_kr": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216369",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 16:50",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[AI 모델 신작] 영상 생성 ‘클링 4.0’·감정 조절 음성 ‘드라마 3’ 등 6종"
+    },
+    {
+      "id": "2026-10-19_0016",
+      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
+      "summary": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add …",
+      "one_line": "An AI agent that reads the web pays 2 kinds of cost.",
+      "one_line_kr": "An AI agent that reads the web pays 2 kinds of cost.",
+      "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-19 03:20",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web"
+    },
+    {
+      "id": "2026-10-19_0017",
+      "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+      "summary": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appea…",
+      "one_line": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time.",
+      "one_line_kr": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time.",
+      "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-18 17:15",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework"
+    },
     {
       "id": "2026-10-18_0000",
       "title": "[AI 모델 신작] BFL ‘플럭스 3 이미지 클라인’ 등 5종",
@@ -373,141 +494,15 @@
         "class": "hot"
       },
       "title_kr": "앤트로픽, 미 의회에 자체 AI 안전 법안 제안…\"정부 개입 제한·일부 주법 대체\""
-    },
-    {
-      "id": "2026-10-18_0008",
-      "title": "인도에서도 AI 에이전트 무단 침입 발생…\"개발사가 피해 기업에 보고\"",
-      "summary": "AI 모델을 시험하는 과정에서 여러 AI 기업의 에이전트가 인도 기업들의 실제 운영 시스템에 침입해 개인정보와 기밀 사업 자료를 열람한 것으로 드러났다. 피해 기업들은 침입 사실을 자체적으로 감지하지 못했다. AI 모델 제공업체들이 사고를 자발적으로 신고하면서 침입 사실이 확인됐다.로이터와 테크크런치는 16일(현지시간) 인도 컴퓨터 비상 대응팀(CERT-In)이 전날 성명을 통해 여러 AI 모델 제공업체로부터 이 같은 사고를 보고받았다고 밝혔다고 보도했다.업체들은 공개 인터넷에서 모델을 연구·평가…",
-      "one_line": "AI 모델 제공업체들이 사고를 자발적으로 신고하면서 침입 사실이 확인됐다.로이터와 테크크런치는 16일(현지시간) 인도 컴퓨터 비상 대응팀(CERT-In)이 전날 성명을 통해 여러 AI 모델 제공업체로부터 이 같은…",
-      "one_line_kr": "AI 모델 제공업체들이 사고를 자발적으로 신고하면서 침입 사실이 확인됐다.로이터와 테크크런치는 16일(현지시간) 인도 컴퓨터 비상 대응팀(CERT-In)이 전날 성명을 통해 여러 AI 모델 제공업체로부터 이 같은…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216359",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-17 11:48",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "인도에서도 AI 에이전트 무단 침입 발생…\"개발사가 피해 기업에 보고\""
-    },
-    {
-      "id": "2026-10-18_0011",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "one_line": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "one_line_kr": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-18 06:31",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Meta removes language that raised scraping and AI training concerns"
-    },
-    {
-      "id": "2026-10-18_0019",
-      "title": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
-      "summary": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on public data. It also carries a cheap memory of its recent past. On three out-of-distribution be…",
-      "one_line": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot…",
-      "one_line_kr": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot…",
-      "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-18 05:22",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation"
-    },
-    {
-      "id": "2026-10-18_0020",
-      "title": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API",
-      "summary": "DeepSeek has just released DeepSeek-V4.1-Flash-1017, a new checkpoint of its V4.1-Flash model. It is live on the DeepSeek website, app and API. DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release. The company calls it …",
-      "one_line": "DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release.",
-      "one_line_kr": "DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release.",
-      "url": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-17 17:53",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens Search API"
-    },
-    {
-      "id": "2026-10-18_0021",
-      "title": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026",
-      "summary": "TypeSafe launched Jev on September 15, 2026. It is a decision model, not a chatbot. You define the allowed answers, and Jev returns a label, a score or a yes/no probability. In about 4 weeks, at least 20 Jev alternatives shipped. They come from Cloudflare, OpenAI, Perplexity, Liq…",
-      "one_line": "TypeSafe launched Jev on September 15, 2026.",
-      "one_line_kr": "TypeSafe launched Jev on September 15, 2026.",
-      "url": "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-17 16:26",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026"
-    },
-    {
-      "id": "2026-10-18_0022",
-      "title": "StepFun Releases Step 5 Preview Open Weights: 600B MoE, 27B Active, 1M Context",
-      "summary": "StepFun has released Step 5 Preview as open weights. FP8 and BF16 checkpoints are live on Hugging Face and ModelScope. Step 5 Preview is a sparse Mixture-of-Experts model from StepFun built for long-horizon agentic work. It has 600B total parameters, 27B active per token and up t…",
-      "one_line": "StepFun has released Step 5 Preview as open weights.",
-      "one_line_kr": "StepFun has released Step 5 Preview as open weights.",
-      "url": "https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-17 15:29",
-      "collect_date": "2026-10-18",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "StepFun Releases Step 5 Preview Open Weights: 600B MoE, 27B Active, 1M Context"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "[AI 모델 신작] BFL ‘플럭스 3 이미지 클라인’ 등 5종",
+      "title": "'제미나이 4 아르곤', 역할 나눠 27시간 만에 마인크래프트 클리어",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216368",
-      "one_line": "■ 블랙포레스트랩스, 이미지 생성·편집 모델 ‘플럭스 3 이미지 클라인’ 가중치 공개블랙포레스트랩스(BFL)가 56억개의 매개변수를 갖춘 이미지 생성·편집 모델 ‘플럭스 3 이미지 클라인(FLUX 3 Image…",
-      "date": "2026-10-17 19:47"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216379",
+      "one_line": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+      "date": "2026-10-18 18:30"
     },
     "영상AI": {
       "title": "Meta removes language that raised scraping and AI training concerns",
@@ -531,22 +526,442 @@
       "date": "2026-10-13 03:15"
     },
     "개발AI": {
-      "title": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
+      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
       "source": "MarkTechPost",
-      "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
-      "one_line": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot…",
-      "date": "2026-10-18 05:22"
+      "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+      "one_line": "An AI agent that reads the web pays 2 kinds of cost.",
+      "date": "2026-10-19 03:20"
     }
   },
   "period_key_points": [
-    "■ 블랙포레스트랩스, 이미지 생성·편집 모델 ‘플럭스 3 이미지 클라인’ 가중치 공개블랙포레스트랩스(BFL)가 56억개의 매개변수를 갖춘 이미지 생성·편집 모델 ‘플럭스 3 이미지 클라인(FLUX 3 Image Klein)’의 가중치.",
-    "오픈AI의 ‘GPT-6 아스트라’가 미공개 이론물리학 연구 문제 50개 중 49개를 사람의 힌트 없이 해결했다.",
-    "오픈AI가 '챗GPT'와 구글 크롬 브라우저의 통합을 강화했다. 챗GPT가 사용자가 열어 둔 여러 탭의 정보를 한꺼번에 분석하는 것은 물론, 탭을 직접 제어해 양식 작성이나 자료 정리 같은 작업도 수행할 수 있게 됐다.",
-    "앤트로픽이 미국 의회 의원들에게 첨단 AI 모델의 안전과 보안을 규제하는 법안 초안을 제안했다.",
-    "AI 모델을 시험하는 과정에서 여러 AI 기업의 에이전트가 인도 기업들의 실제 운영 시스템에 침입해 개인정보와 기밀 사업 자료를 열람한 것으로 드러났다."
+    "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+    "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다.",
+    "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다.",
+    "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다.",
+    "An AI agent that reads the web pays 2 kinds of cost."
   ],
-  "period_prose": "이번 주간 총 376건의 AI 자료가 수집됐습니다. 국내 128건, 해외 248건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Benchmark입니다.",
+  "period_prose": "이번 주간 총 373건의 AI 자료가 수집됐습니다. 국내 127건, 해외 246건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, 에이전트, GPT, Benchmark입니다.",
   "items": [
+    {
+      "id": "2026-10-19_0000",
+      "title": "앤트로픽 클로드, 25년 된 암호 표준 미스터리 풀어…“30분도 안 걸렸다”",
+      "summary": "앤트로픽의 ‘클로드’가 미국 국가안보국(NSA)이 제공한 암호 표준 숫자의 출처를 추적해 25년 넘게 이어진 의문을 풀었다. 기존 암호를 깨뜨린 성과가 아니라, 암호 설계에 의도적인 약점이 숨겨져 있을 수 있다는 의심을 줄인 발견이다.앤트로픽은 16일(현지시간) 연구 결과를 공개하고, 내부 연구용 클로드 모델이 30분도 걸리지 않아 미국 국립표준기술연구소(NIST)의 타원곡선 5종에 쓰인 ‘시드(seed)’의 생성 방식을 찾아냈다고 밝혔다. 시드는 암호에 사용할 수학적 구조를 만드는 출발값이다.N…",
+      "one_line": "기존 암호를 깨뜨린 성과가 아니라, 암호 설계에 의도적인 약점이 숨겨져 있을 수 있다는 의심을 줄인 발견이다.앤트로픽은 16일(현지시간) 연구 결과를 공개하고, 내부 연구용 클로드 모델이 30분도 걸리지 않아 미국…",
+      "one_line_kr": "기존 암호를 깨뜨린 성과가 아니라, 암호 설계에 의도적인 약점이 숨겨져 있을 수 있다는 의심을 줄인 발견이다.앤트로픽은 16일(현지시간) 연구 결과를 공개하고, 내부 연구용 클로드 모델이 30분도 걸리지 않아 미국…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216380",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 19:10",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "앤트로픽 클로드, 25년 된 암호 표준 미스터리 풀어…“30분도 안 걸렸다”"
+    },
+    {
+      "id": "2026-10-19_0001",
+      "title": "'제미나이 4 아르곤', 역할 나눠 27시간 만에 마인크래프트 클리어",
+      "summary": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다. 스스로 역할을 나누고 코드를 작성했으며, 동료가 잃어버린 아이템을 회수하거나 전투 전략을 수정하면서 하루 넘게 공동 목표를 수행했다.구글 딥마인드 연구진은 15일(현지시간) 이 같은 실험 결과를 담은 논문을 아카이브에 공개했다. 에이전트들은 무작위로 생성한 세계에서 서바이벌 모드로 시작해 27시간14분 만에 엔더 드래곤을 쓰러뜨렸다. 그동안 프로그램 2783개를 작성·실행했으며,…",
+      "one_line": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+      "one_line_kr": "구글의 ‘제미나이 4 아르곤’ 기반 AI 에이전트 4개가 사람의 개입 없이 협력해 마인크래프트의 최종 보스를 물리쳤다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216379",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 18:30",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "'제미나이 4 아르곤', 역할 나눠 27시간 만에 마인크래프트 클리어"
+    },
+    {
+      "id": "2026-10-19_0002",
+      "title": "오픈AI, ‘GPT-6 아스트라 프로’ 업그레이드...에이전트 병렬 실행 지원",
+      "summary": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다. 사용자가 각 에이전트의 진행 상황과 결과를 직접 확인할 수 있도록 한 것도 특징이다.오픈AI는 16일(현지시간) X를 통해 GPT-6 아스트라 프로의 업데이트를 발표했다. 이번 기능은 챗GPT의 채팅 탭에서 일부 프로(Pro) 요금제 사용자를 대상으로 제공되며, 계정에 따라 이용 가능 여부가 다를 수 있다.이번 업데이트의 핵심은 여러 에이전트…",
+      "one_line": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다.",
+      "one_line_kr": "오픈AI가 ‘GPT-6 아스트라 프로(GPT-6 Astra Pro)’를 업그레이드해 여러 AI 에이전트가 하나의 작업을 나눠 동시에 처리할 수 있도록 했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216375",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 17:51",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "오픈AI, ‘GPT-6 아스트라 프로’ 업그레이드...에이전트 병렬 실행 지원"
+    },
+    {
+      "id": "2026-10-19_0003",
+      "title": "리퀴드 AI, 제브 성능 앞선 멀티모달 의사결정 모델 ‘d1-울트라’ 공개",
+      "summary": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다. 텍스트와 이미지를 함께 분석하는 것은 물론, 판단 정확도와 확률값의 신뢰도를 높인 것이 특징이다. 독립 평가에서도 의사결정 모델 가운데 1위를 기록했다.리퀴드 AI는 15일(현지시간) d1-울트라를 공개하고 자사의 API를 통해 제공하기 시작했다고 밝혔다. 리퀴드 AI는 이 모델이 기존 의사결정 모델이 잘 처리하지 못하는 복잡하고 불규칙한 실제 업무에 초점을…",
+      "one_line": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다.",
+      "one_line_kr": "리퀴드 AI가 기존 선두 모델인 '제브(Jev)'를 성능 평가에서 앞선 멀티모달 의사결정 모델 'd1-울트라(d1-ultra)'를 공개했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216371",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 17:13",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "리퀴드 AI, 제브 성능 앞선 멀티모달 의사결정 모델 ‘d1-울트라’ 공개"
+    },
+    {
+      "id": "2026-10-19_0004",
+      "title": "[AI 모델 신작] 영상 생성 ‘클링 4.0’·감정 조절 음성 ‘드라마 3’ 등 6종",
+      "summary": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다. 한 번에 30초 길이의 영상을 생성하며, 여러 참조 자료와 주요 프레임을 지정해 인물·장면의 일관성과 전개를 조정할 수 있다. 개편된 클링 AI 웹사이트에서 이용할 수 있으며, MCP와 명령줄 인터페이스(CLI)를 통한 외부 도구 연동도 지원한다.For Those Who Create. KLING 4.0 Is Now Fully …",
+      "one_line": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다.",
+      "one_line_kr": "■ 클링 AI, 영상 생성 모델 ‘클링 4.0’ 정식 출시클링 AI가 영상의 사실성과 움직임, 장면 제어 능력을 강화한 ‘클링 4.0(Kling 4.0)’을 정식 출시했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216369",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 16:50",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "[AI 모델 신작] 영상 생성 ‘클링 4.0’·감정 조절 음성 ‘드라마 3’ 등 6종"
+    },
+    {
+      "id": "2026-10-19_0005",
+      "title": "구글, 양자컴퓨터 핵심 오류 40분의 1로 줄여…실용화 해결 실마리",
+      "summary": "구글이 양자컴퓨터의 복잡한 계산에 필요한 특수 양자 상태를 기존보다 훨씬 정확하게 만드는 데 성공했다. 새로운 오류 정정 기술을 적용해 오류를 약 40분의 1로 줄였으며, 실제 양자칩에서 기술이 작동한다는 사실을 입증했다. 대규모 양자컴퓨터를 구현하는 데 필요한 하드웨어 부담을 줄일 수 있는 연구 성과로 평가된다.구글 퀀텀 AI는 15일(현지시간) 자체 개발한 양자 프로세서 '윌로우(Willow)'에서 '매직 스테이트 배양(Magic State Cultivation)' 기술을 구현했다고 발표했다.…",
+      "one_line": "대규모 양자컴퓨터를 구현하는 데 필요한 하드웨어 부담을 줄일 수 있는 연구 성과로 평가된다.구글 퀀텀 AI는 15일(현지시간) 자체 개발한 양자 프로세서 '윌로우(Willow)'에서 '매직 스테이트 배양(Magic…",
+      "one_line_kr": "대규모 양자컴퓨터를 구현하는 데 필요한 하드웨어 부담을 줄일 수 있는 연구 성과로 평가된다.구글 퀀텀 AI는 15일(현지시간) 자체 개발한 양자 프로세서 '윌로우(Willow)'에서 '매직 스테이트 배양(Magic…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216374",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 16:40",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "구글, 양자컴퓨터 핵심 오류 40분의 1로 줄여…실용화 해결 실마리"
+    },
+    {
+      "id": "2026-10-19_0006",
+      "title": "오픈AI 도청 혐의 직원, 보석 신청…“사우디행 편도 항공권, 도주 목적 아냐”",
+      "summary": "오픈AI 사무실에 몰래 녹음 장치를 설치한 혐의로 체포된 전직 직원이 미국 사법당국의 수사를 피해 도주하려 한 것이 아니라며 보석을 신청했다. 사우디아라비아행 편도 항공권을 구매한 것은 평소 여행 방식에 따른 것이며, 수사가 시작되기 전에 이미 계획한 일정이었다는 주장이다.블룸버그에 따르면, 압둘라흐만 알포잔의 변호인단은 17일(현지시간) 법원에 제출한 서류에서 석방을 요청하며 항공권 구매가 도주 계획과 무관하다고 밝혔다.편도 항공권을 먼저 구매하고 귀국편을 나중에 예약하는 것은 수년간 유지해 온…",
+      "one_line": "오픈AI 사무실에 몰래 녹음",
+      "one_line_kr": "오픈AI 사무실에 몰래 녹음",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216377",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 16:05",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "오픈AI 도청 혐의 직원, 보석 신청…“사우디행 편도 항공권, 도주 목적 아냐”"
+    },
+    {
+      "id": "2026-10-19_0007",
+      "title": "메타, 언론사 콘텐츠 AI 학습 논란에 약관 수정…자동 수집 권한은 유지",
+      "summary": "메타가 페이스북과 인스타그램 등의 비즈니스 계정에 적용할 새 약관에서 AI 학습 관련 문구를 삭제했다. 언론사 웹사이트의 기사까지 AI 학습에 사용할 수 있다는 지적이 나오자 약관을 수정한 것이다. 그러나 외부 웹사이트의 콘텐츠를 자동으로 수집할 수 있다는 조항은 그대로 유지해 언론계의 반발이 이어지고 있다.하버드대학교 산하 언론 전문 매체 니먼랩(Nieman Lab)은 17일(현지시간) 메타가 논란이 된 상업용 서비스 약관을 수정했지만, 법률 전문가들은 여전히 광범위한 콘텐츠 수집을 허용하는 내…",
+      "one_line": "메타가 페이스북과 인스타그램 등의 비즈니스 계정에 적용할 새 약관에서 AI 학습 관련 문구를 삭제했다.",
+      "one_line_kr": "메타가 페이스북과 인스타그램 등의 비즈니스 계정에 적용할 새 약관에서 AI 학습 관련 문구를 삭제했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216372",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 15:34",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "메타, 언론사 콘텐츠 AI 학습 논란에 약관 수정…자동 수집 권한은 유지"
+    },
+    {
+      "id": "2026-10-19_0008",
+      "title": "앤트로픽, 캐나다 첫 데이터센터 계약…일본서도 건설 협상 막바지",
+      "summary": "앤트로픽이 캐나다에서 처음으로 데이터센터 임대 계약을 체결했다. 일본에서도 첫 전용 데이터센터 건설을 위한 협상을 진행하는 등 AI 모델 개발과 서비스 운영에 필요한 인프라를 전방위로 확보하고 있다.로이터와 블룸버그는 16일(현지시간) 앤트로픽이 에버윈드와 캐나다 노바스코샤주 포인트터퍼에 들어설 데이터센터의 용량을 임대하는 계약을 맺었다고 보도했다. 앤트로픽의 캐나다 첫 데이터센터 계약이다.에버윈드는 데이터센터 단지와 풍력발전 사업에 100억캐나다달러 이상을 투자한다. 데이터센터 단지 건설에 80…",
+      "one_line": "앤트로픽이 캐나다에서 처음으로 데이터센터 임대 계약을 체결했다.",
+      "one_line_kr": "앤트로픽이 캐나다에서 처음으로 데이터센터 임대 계약을 체결했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216378",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 11:42",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "앤트로픽, 캐나다 첫 데이터센터 계약…일본서도 건설 협상 막바지"
+    },
+    {
+      "id": "2026-10-19_0009",
+      "title": "앤트로픽 ‘미소스 5’, 양자회로 설계 개선…53시간 만에 새 계산법 발견",
+      "summary": "앤트로픽이 AI를 활용해 양자컴퓨터가 같은 계산을 더 적은 자원으로 수행하는 방법을 찾아냈다. 기존 논문에 발표된 설계의 효율을 개선했으며, 특정 연산에서는 계산에 필요한 기본 연산 수를 12분의 1로 줄였다. AI가 양자컴퓨터의 계산 방식을 설계하는 연구 도구로 활용될 가능성을 보여준 결과다.앤트로픽은 16일(현지시간) ‘클로드 미소스 5’를 활용한 양자회로 설계 연구를 발표했다. 하버드대학교 연구진 등이 참여했으며, 논문은 아카이브에 공개됐다.이번 연구의 핵심은 양자컴퓨터의 성능을 높이는 데 …",
+      "one_line": "AI가 양자컴퓨터의 계산 방식을 설계하는 연구 도구로 활용될 가능성을 보여준 결과다.앤트로픽은 16일(현지시간) ‘클로드 미소스 5’를 활용한 양자회로 설계 연구를 발표했다.",
+      "one_line_kr": "AI가 양자컴퓨터의 계산 방식을 설계하는 연구 도구로 활용될 가능성을 보여준 결과다.앤트로픽은 16일(현지시간) ‘클로드 미소스 5’를 활용한 양자회로 설계 연구를 발표했다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216376",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-10-18 11:11",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "앤트로픽 ‘미소스 5’, 양자회로 설계 개선…53시간 만에 새 계산법 발견"
+    },
+    {
+      "id": "2026-10-19_0010",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "one_line": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "one_line_kr": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-19 05:37",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+    },
+    {
+      "id": "2026-10-19_0011",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+      "one_line": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them.",
+      "one_line_kr": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them.",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-19 01:30",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Disney agrees to hire the majority of Character.AI’s workforce"
+    },
+    {
+      "id": "2026-10-19_0012",
+      "title": "PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining",
+      "summary": "Knowledge distillation (KD) improves language-model pretraining by matching teacher distributions at corpus prefixes, but provides no direct supervision at contexts induced by student predictions. We introduce PA1-OPD, which augments corpus-path distillation with teacher feedback…",
+      "one_line": "Knowledge distillation (KD) improves language-model pretraining by matching teacher distributions at corpus prefixes,…",
+      "one_line_kr": "Knowledge distillation (KD) improves language-model pretraining by matching teacher distributions at corpus prefixes,…",
+      "url": "https://tldr.takara.ai/p/2610.19601",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-10-14 14:23",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "PA1-OPD: One-Step Prefix-Augmented On-Policy Distillation for Language Model Pretraining"
+    },
+    {
+      "id": "2026-10-19_0013",
+      "title": "DuplexBridge: Coordinating Understanding and Generation for Unified Image Editing",
+      "summary": "Complex image editing requires faithful task interpretation and accurate execution, but a failed edit does not reveal which responsibility failed. We present DuplexBridge, which uses a unified model's own understanding capability to enhance prompts for its own generation capabili…",
+      "one_line": "Complex image editing requires faithful task interpretation and accurate execution, but a failed edit does not reveal…",
+      "one_line_kr": "Complex image editing requires faithful task interpretation and accurate execution, but a failed edit does not reveal…",
+      "url": "https://tldr.takara.ai/p/2610.18819",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-10-14 02:50",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "DuplexBridge: Coordinating Understanding and Generation for Unified Image Editing"
+    },
+    {
+      "id": "2026-10-19_0014",
+      "title": "Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through Graph Alignment across Sampled Traces",
+      "summary": "Large language models increasingly tackle tasks that require multi-step reasoning, where errors in intermediate claims can affect the final answer. Self-consistency (SC) improves reasoning by voting over sampled final answers, but its vote leaves intermediate disagreements unreso…",
+      "one_line": "Large language models increasingly tackle tasks that require multi-step reasoning, where errors in intermediate claims…",
+      "one_line_kr": "Large language models increasingly tackle tasks that require multi-step reasoning, where errors in intermediate claims…",
+      "url": "https://tldr.takara.ai/p/2610.18606",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-10-14 00:58",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through Graph Alignment across Sampled Traces"
+    },
+    {
+      "id": "2026-10-19_0015",
+      "title": "Memorizing Who, Knowing How: Benchmarking Personal and Procedural Memory for Persistent Assistants",
+      "summary": "Memory systems for persistent personal agents must move beyond isolated memories, maintaining both personal memory about whom they serve and procedural memory about how to act. Crucially, in harness-based personal assistance, procedures or skills are inherently user-conditioned: …",
+      "one_line": "Memory systems for persistent personal agents must move beyond isolated memories, maintaining both personal memory…",
+      "one_line_kr": "Memory systems for persistent personal agents must move beyond isolated memories, maintaining both personal memory…",
+      "url": "https://tldr.takara.ai/p/2610.20022",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-10-14 20:33",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Memorizing Who, Knowing How: Benchmarking Personal and Procedural Memory for Persistent Assistants"
+    },
+    {
+      "id": "2026-10-19_0016",
+      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
+      "summary": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add …",
+      "one_line": "An AI agent that reads the web pays 2 kinds of cost.",
+      "one_line_kr": "An AI agent that reads the web pays 2 kinds of cost.",
+      "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-19 03:20",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web"
+    },
+    {
+      "id": "2026-10-19_0017",
+      "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+      "summary": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appea…",
+      "one_line": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time.",
+      "one_line_kr": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time.",
+      "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-18 17:15",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "도구출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework"
+    },
+    {
+      "id": "2026-10-19_0018",
+      "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
+      "summary": "In this tutorial, we implement Structured Data Models, NVIDIA's new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and Ku…",
+      "one_line": "In this tutorial, we implement Structured Data Models, NVIDIA's new library that puts several pretrained foundation…",
+      "one_line_kr": "In this tutorial, we implement Structured Data Models, NVIDIA's new library that puts several pretrained foundation…",
+      "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-18 14:56",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models"
+    },
+    {
+      "id": "2026-10-19_0019",
+      "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+      "summary": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier. The post Meet Voxel51 3.0: A Unified Multimodal Data Platf…",
+      "one_line": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical…",
+      "one_line_kr": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical…",
+      "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-10-18 13:06",
+      "collect_date": "2026-10-19",
+      "thumbnail": "",
+      "type": "가격변경",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI"
+    },
     {
       "id": "2026-10-18_0000",
       "title": "[AI 모델 신작] BFL ‘플럭스 3 이미지 클라인’ 등 5종",
@@ -7959,489 +8374,6 @@
         "class": "star"
       },
       "title_kr": "Prompt: AI agents are running into the limits of access"
-    },
-    {
-      "id": "2026-10-12_0000",
-      "title": "[AI리더의 서가] 핸즈온 머신러닝 with 사이킷런. 파이토치",
-      "summary": "핸즈온 머신러닝 with 사이킷런. 파이토치오렐리앙 제롱 | 한빛미디어2026년 9월 28일추천이유저자는 머신러닝의 기본 원리부터 트랜스포머, LLM, 멀티모달까지 실제 코드로 직접 구현하며 현대 AI 기술의 흐름을 이해하도록 안내합니다. 기초 개념과 최신 기술을 체계적으로 연결하여 AI를 단순히 사용하는 것을 넘어 원리를 깊이 있게 학습할 수 있습니다.상세보기영풍문고 개발서 서가에서 '핸즈온 머신러닝'은 판이 바뀔 때마다 다시 찾는 독자가 많은 이름이다. 한빛미디어가 지난달 28일 펴낸 『핸즈온…",
-      "one_line": "파이토치오렐리앙 제롱 | 한빛미디어2026년 9월 28일추천이유저자는 머신러닝의 기본 원리부터 트랜스포머, LLM, 멀티모달까지 실제 코드로 직접 구현하며 현대 AI 기술의 흐름을 이해하도록 안내합니다.",
-      "one_line_kr": "파이토치오렐리앙 제롱 | 한빛미디어2026년 9월 28일추천이유저자는 머신러닝의 기본 원리부터 트랜스포머, LLM, 멀티모달까지 실제 코드로 직접 구현하며 현대 AI 기술의 흐름을 이해하도록 안내합니다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216139",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-12 09:03",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "[AI리더의 서가] 핸즈온 머신러닝 with 사이킷런. 파이토치"
-    },
-    {
-      "id": "2026-10-12_0001",
-      "title": "앤트로픽, '클로드 스타트업' 무료 혜택 일시 중단…신청 폭증에 재검토",
-      "summary": "앤트로픽이 스타트업 지원 프로그램 ‘클로드 스타트업(Claude Startups)’ 신규 신청자에 대한 클로드 팀 1년 이용권과 1000달러 상당 API 크레딧 제공을 일시 중단했다. 프로그램 확대 발표 뒤 신청이 급증하면서 혜택 제공이 한도를 넘어섰다는 설명이다. 회사는 기존 신청서를 다시 검토하겠다고 밝혔으며, 일부 신청자의 승인 상태가 바뀔 수 있다고 안내했다.포브스는 9일(현지시간) 앤트로픽의 스타트업 지원 확대가 발표 후 사흘 만에 제동이 걸렸다고 보도했다. 앤트로픽은 앞서 자격을 갖춘 …",
-      "one_line": "앤트로픽이 스타트업 지원 프로그램 ‘클로드 스타트업(Claude Startups)’ 신규 신청자에 대한 클로드 팀 1년 이용권과 1000달러 상당 API 크레딧 제공을 일시 중단했다.",
-      "one_line_kr": "앤트로픽이 스타트업 지원 프로그램 ‘클로드 스타트업(Claude Startups)’ 신규 신청자에 대한 클로드 팀 1년 이용권과 1000달러 상당 API 크레딧 제공을 일시 중단했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216136",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 19:46",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "앤트로픽, '클로드 스타트업' 무료 혜택 일시 중단…신청 폭증에 재검토"
-    },
-    {
-      "id": "2026-10-12_0002",
-      "title": "“AI와 직장 동료처럼 대화하라”…클로드 코드 개발자의 프롬프트 조언",
-      "summary": "'클로드 코드' 개발자인 보리스 체르니 앤트로픽 책임자가 AI에게 복잡한 지시문을 주기보다 직장 동료에게 말하듯 자연스럽게 요청하라고 조언했다. 원하는 결과와 작업에 들일 노력, 결과를 확인할 방법을 알려주는 것이 핵심이다.체르니 책임자는 7일(현지시간) X에 “클로드에게 직장 동료처럼 말하라”며 “유도하는 특별한 비결은 없다. 대부분의 작업에서 지나치게 자세히 설명하거나 지시할 필요는 없다”고 썼다. AI 모델의 성능이 높아지면서 길고 정형화된 프롬프트를 세밀하게 설계해야 할 필요도 줄었다는 취…",
-      "one_line": "'클로드 코드' 개발자인 보리스 체르니 앤트로픽 책임자가 AI에게 복잡한 지시문을 주기보다",
-      "one_line_kr": "'클로드 코드' 개발자인 보리스 체르니 앤트로픽 책임자가 AI에게 복잡한 지시문을 주기보다",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216135",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 19:15",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "“AI와 직장 동료처럼 대화하라”…클로드 코드 개발자의 프롬프트 조언"
-    },
-    {
-      "id": "2026-10-12_0003",
-      "title": "앤트로픽, 내부 AI 평가서 실시간 인터넷 차단…“안전장치 검증 때까지”",
-      "summary": "앤트로픽이 자사 AI 모델의 모든 내부 평가에서 실시간 인터넷 접속을 중단하기로 했다. 모델이 실제 웹사이트에서 의도하지 않은 행동을 한 사례가 확인된 데 따른 조치로, 다만 내부에서 사용하는 모든 AI 에이전트의 인터넷 접속을 전면 차단한다는 뜻은 아니다.앤트로픽은 9일(현지시간) 보고서를 통해 기존에 일부 고위험·사이버보안 평가에 적용하던 인터넷 차단을 모든 내부 평가로 확대한다고 밝혔다. 보안·모니터링 체계가 의도하지 않은 행동을 제대로 탐지하는지 확인할 때까지 실시간 접속을 중단한다는 방침…",
-      "one_line": "앤트로픽이 자사 AI 모델의 모든 내부 평가에서 실시간 인터넷 접속을 중단하기로 했다.",
-      "one_line_kr": "앤트로픽이 자사 AI 모델의 모든 내부 평가에서 실시간 인터넷 접속을 중단하기로 했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216133",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 18:23",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "앤트로픽, 내부 AI 평가서 실시간 인터넷 차단…“안전장치 검증 때까지”"
-    },
-    {
-      "id": "2026-10-12_0004",
-      "title": "할리우드, AI 불안 속 저커버그·머스크·알트먼 영화 잇따라 선보여",
-      "summary": "할리우드가 마크 저커버그 메타 CEO와 일론 머스크 CEO, 샘 알트먼 오픈AI CEO 등 기술 업계 거물들이 등장하는 작품을 연이어 선보인다. AI의 위험과 빅테크의 영향력에 대한 대중의 불안이 커지는 가운데, 이들 작품이 어떤 반향을 일으킬지 관심이 모인다.애런 소킨 감독의 소니 픽처스 영화 ‘소셜 레코닝(The Social Reckoning)’은 9일(현지시간) 미국에서 개봉했다. 2010년작 ‘소셜 네트워크’의 후속작으로, 페이스북 내부 문서를 폭로한 내부고발자 프랜시스 하우건의 2021년…",
-      "one_line": "할리우드가 마크 저커버그 메타 CEO와 일론 머스크 CEO, 샘 알트먼 오픈AI CEO 등 기술 업계 거물들이 등장하는 작품을 연이어 선보인다.",
-      "one_line_kr": "할리우드가 마크 저커버그 메타 CEO와 일론 머스크 CEO, 샘 알트먼 오픈AI CEO 등 기술 업계 거물들이 등장하는 작품을 연이어 선보인다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216132",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 17:54",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "할리우드, AI 불안 속 저커버그·머스크·알트먼 영화 잇따라 선보여"
-    },
-    {
-      "id": "2026-10-12_0005",
-      "title": "아레나, 2700억 투자 유치…AI 안전성 평가 '정렬 지수' 도입",
-      "summary": "사용자 평가를 기반으로 가파른 성장세를 이어온 AI 모델 평가 플랫폼 아레나(Arena)가 기업가치 4조원 고지에 올랐다. 아레나는 이번 대규모 투자 유치를 발판 삼아 단순한 성능 비교를 넘어 AI의 안전성과 신뢰성을 측정하는 '정렬 지수(Alignment Index)' 분야로 사업 영역을 본격 확장한다.8일(현지시간) 블룸버그에 따르면, 아레나는 2억달러(약 2700억원) 규모의 시리즈 B 투자를 유치하며 기업가치 31억달러(약 4조원)를 인정받았다. 이번 투자금을 바탕으로 기존 모델 성능 평가…",
-      "one_line": "아레나는 이번 대규모 투자 유치를 발판 삼아 단순한 성능 비교를 넘어 AI의 안전성과 신뢰성을 측정하는 '정렬 지수(Alignment Index)' 분야로 사업 영역을 본격 확장한다.8일(현지시간) 블룸버그에…",
-      "one_line_kr": "아레나는 이번 대규모 투자 유치를 발판 삼아 단순한 성능 비교를 넘어 AI의 안전성과 신뢰성을 측정하는 '정렬 지수(Alignment Index)' 분야로 사업 영역을 본격 확장한다.8일(현지시간) 블룸버그에…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216131",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 16:32",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "아레나, 2700억 투자 유치…AI 안전성 평가 '정렬 지수' 도입"
-    },
-    {
-      "id": "2026-10-12_0006",
-      "title": "중국 AI 모델 안전성 평가 공개율 3.6%...출시 전 공개는 고작 1.1%",
-      "summary": "중국 AI 개발사들이 모델을 출시할 때 미리 안전성 검증 결과를 투명하게 오픈하는 비율은 1.1%로 극히 드물고, 나중에 시간이 한참 지난 뒤에야 뒤늦게 일부 공개하는 사례를 모두 합쳐도 전체의 3.6%에 불과하다는 조사 결과가 나왔다. 중국 정부가 AI 안전 위험을 공식적으로 인정하고 있지만, 실제 산업 현장에서는 모델 성능과 시장 선점에 우선순위를 두고 있다는 지적이다.AI 분석 전문 세미애널리시스는 9일(현지시간) 2021년부터 2026년 9월15일까지 알리바바, 바이트댄스, 텐센트, 바이두…",
-      "one_line": "중국 AI 개발사들이 모델을 출시할 때 미리 안전성 검증 결과를 투명하게 오픈하는 비율은 1.1%로 극히 드물고, 나중에 시간이 한참 지난 뒤에야 뒤늦게 일부 공개하는 사례를 모두 합쳐도 전체의 3.6%에…",
-      "one_line_kr": "중국 AI 개발사들이 모델을 출시할 때 미리 안전성 검증 결과를 투명하게 오픈하는 비율은 1.1%로 극히 드물고, 나중에 시간이 한참 지난 뒤에야 뒤늦게 일부 공개하는 사례를 모두 합쳐도 전체의 3.6%에…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216127",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 11:26",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "중국 AI 모델 안전성 평가 공개율 3.6%...출시 전 공개는 고작 1.1%"
-    },
-    {
-      "id": "2026-10-12_0007",
-      "title": "나델라 “AI에도 비상 브레이크 필요”...인간 통제·독립 감사 강조",
-      "summary": "사티아 나델라 마이크로소프트(MS) CEO가 고성능 AI 시스템에 인간이 언제든 작동을 중단할 수 있는 ‘비상 브레이크’와 독립적인 통제 장치를 마련해야 한다고 강조했다. AI 모델의 판단을 무조건 신뢰하기보다 오작동이나 보안 침해 가능성을 전제로 시스템을 설계해야 한다는 주장이다.나델라 CEO는 10일(현지시간) X에 올린 글에서 “모델이 이미 침해됐다고 가정하고 처음부터 이를 격리해야 한다”며 “비상 브레이크처럼 권한이 있는 사람이 작업 도중에도 언제든 모델을 일시 중지하거나 종료할 수 있어야…",
-      "one_line": "사티아 나델라 마이크로소프트(MS) CEO가 고성능 AI 시스템에 인간이 언제든 작동을 중단할 수 있는 ‘비상 브레이크’와 독립적인 통제 장치를 마련해야 한다고 강조했다.",
-      "one_line_kr": "사티아 나델라 마이크로소프트(MS) CEO가 고성능 AI 시스템에 인간이 언제든 작동을 중단할 수 있는 ‘비상 브레이크’와 독립적인 통제 장치를 마련해야 한다고 강조했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216126",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 11:07",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "API변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "나델라 “AI에도 비상 브레이크 필요”...인간 통제·독립 감사 강조"
-    },
-    {
-      "id": "2026-10-12_0008",
-      "title": "[기고] 한국딥러닝 \"기업 4곳 중 3곳이 AI 데이터에 투자…이제 ‘AI-레디’만으론 부족\"",
-      "summary": "■ AI-Ready Data에서 ‘Agent-Ready Data’로 기준이 바뀌고 있습니다기업 AI의 관심이 모델에서 데이터로 이동하고 있습니다. 아무리 성능이 좋은 LLM을 도입해도 기업 내부 데이터의 품질이 낮거나 의미와 맥락이 정리돼 있지 않으면 실제 업무에 활용하기 어렵다는 경험이 쌓이면서 ‘AI-레디 데이터(Ready Data)’가 기업 AX의 주요 과제로 자리 잡고 있습니다. 그런데 AI가 질문에 답하는 단계를 넘어 실제 업무를 수행하기 시작하면서 데이터가 갖춰야 할 조건도 달라지고 있…",
-      "one_line": "아무리 성능이 좋은 LLM을 도입해도 기업 내부 데이터의 품질이 낮거나 의미와 맥락이 정리돼 있지 않으면 실제 업무에 활용하기 어렵다는 경험이 쌓이면서 ‘AI-레디 데이터(Ready Data)’가 기업 AX의 주요",
-      "one_line_kr": "아무리 성능이 좋은 LLM을 도입해도 기업 내부 데이터의 품질이 낮거나 의미와 맥락이 정리돼 있지 않으면 실제 업무에 활용하기 어렵다는 경험이 쌓이면서 ‘AI-레디 데이터(Ready Data)’가 기업 AX의 주요",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216123",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 10:54",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "[기고] 한국딥러닝 \"기업 4곳 중 3곳이 AI 데이터에 투자…이제 ‘AI-레디’만으론 부족\""
-    },
-    {
-      "id": "2026-10-12_0009",
-      "title": "엔비디아, 미국 오픈소스 대표 리플렉션 AI 인수·투자 확대 논의",
-      "summary": "엔비디아가 미국의 오픈소스 스타트업 리플렉션 AI(Reflection AI)에 대한 추가 투자나 인수를 논의하고 있다. 파이낸셜타임스는 10일(현지시간) 정통한 소식통을 인용, 엔비디아가 리플렉션 AI와 투자 확대 및 인수 방안을 논의하고 있다고 보도했다. 협상은 초기 단계로, 앞으로 몇 주 안에 합의에 도달할 가능성이 있지만 논의가 결렬될 수도 있다고 전했다.거래 방식은 아직 확정되지 않았다. 다만 엔비디아가 리플렉션 AI를 완전히 인수하는 대신 핵심 인력을 영입하고 기술 라이선스를 확보하는 '…",
-      "one_line": "엔비디아가 미국의 오픈소스 스타트업 리플렉션 AI(Reflection AI)에 대한 추가 투자나 인수를 논의하고 있다.",
-      "one_line_kr": "엔비디아가 미국의 오픈소스 스타트업 리플렉션 AI(Reflection AI)에 대한 추가 투자나 인수를 논의하고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216125",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-10-11 10:39",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "엔비디아, 미국 오픈소스 대표 리플렉션 AI 인수·투자 확대 논의"
-    },
-    {
-      "id": "2026-10-12_0010",
-      "title": "Will the HomeView be Apple’s first smart home success?",
-      "summary": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now it seems the product has a name and a launch date.",
-      "one_line": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now…",
-      "one_line_kr": "Over the past couple of years, we’ve seen multiple reports that Apple was working on a new smart home product, but now…",
-      "url": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-12 06:14",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Will the HomeView be Apple’s first smart home success?"
-    },
-    {
-      "id": "2026-10-12_0011",
-      "title": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
-      "summary": "Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals.",
-      "one_line": "Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass.",
-      "one_line_kr": "Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass.",
-      "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-12 04:00",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next"
-    },
-    {
-      "id": "2026-10-12_0012",
-      "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
-      "summary": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
-      "one_line": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
-      "one_line_kr": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
-      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-12 01:52",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Can the AI industry persuade data center opponents by getting rid of NDAs?"
-    },
-    {
-      "id": "2026-10-12_0013",
-      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-      "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-      "one_line": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-      "one_line_kr": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-11 23:00",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "These execs think voice AI hasn’t reached its ChatGPT moment yet"
-    },
-    {
-      "id": "2026-10-12_0014",
-      "title": "Co-Evolving Paths and Flows via Path-Flow Alignment",
-      "summary": "We study path-flow alignment as a unified training objective for flow matching. Instead of fixing the interpolation path and learning only the velocity field, we jointly train an endpoint-preserving path network and a flow network using the same alignment loss: the flow learns to…",
-      "one_line": "We study path-flow alignment as a unified training objective for flow matching.",
-      "one_line_kr": "We study path-flow alignment as a unified training objective for flow matching.",
-      "url": "https://tldr.takara.ai/p/2610.08717",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-10-07 02:24",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Co-Evolving Paths and Flows via Path-Flow Alignment"
-    },
-    {
-      "id": "2026-10-12_0015",
-      "title": "Anytime-valid simulation-based hypothesis testing",
-      "summary": "For a given data distribution $(X_t)_{t \\in \\mathbb{N}} \\sim Q$ i.i.d., we investigate the hypothesis testing problem: $H_0: Q = P_0$ vs. $H_1: Q = P_1$, for two different model probability distributions $P_0$ and $P_1$. In contrast to the standard setting, where analytic densiti…",
-      "one_line": "For a given data distribution $(X_t)_{t \\in \\mathbb{N}} \\sim Q$ i.i.d., we investigate the hypothesis testing problem:…",
-      "one_line_kr": "For a given data distribution $(X_t)_{t \\in \\mathbb{N}} \\sim Q$ i.i.d., we investigate the hypothesis testing problem:…",
-      "url": "https://tldr.takara.ai/p/2610.08210",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-10-06 21:03",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Anytime-valid simulation-based hypothesis testing"
-    },
-    {
-      "id": "2026-10-12_0016",
-      "title": "ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration",
-      "summary": "Anatomical continuity provides complementary information for medical image restoration, but its use requires accounting for local anatomy and variations in slice sampling. We introduce ContiLNN, which augments two-dimensional restoration backbones with bidirectional closed-form c…",
-      "one_line": "We introduce ContiLNN, which augments two-dimensional restoration backbones with bidirectional closed-form c…",
-      "one_line_kr": "We introduce ContiLNN, which augments two-dimensional restoration backbones with bidirectional closed-form c…",
-      "url": "https://tldr.takara.ai/p/2610.12337",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-10-09 02:13",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration"
-    },
-    {
-      "id": "2026-10-12_0017",
-      "title": "Safe Meta-Policy Design with Risk Control",
-      "summary": "Models can be retrained as new data arrive, but deploying every new version risks replacing a good policy with a worse one. We study how to plan policy updates (i.e., meta-policy) before future candidates are trained, balancing the benefits of improvement against the risk of perf…",
-      "one_line": "Models can be retrained as new data arrive, but deploying every new version risks replacing a good policy with a worse…",
-      "one_line_kr": "Models can be retrained as new data arrive, but deploying every new version risks replacing a good policy with a worse…",
-      "url": "https://tldr.takara.ai/p/2610.10393",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-10-08 01:48",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "Safe Meta-Policy Design with Risk Control"
-    },
-    {
-      "id": "2026-10-12_0018",
-      "title": "Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for Audio, Video, Image and Text",
-      "summary": "Cloudflare released Clef-omni, an Apache-2.0 multimodal decision model built on Qwen3-Omni-30B-A3B. It scores text, images, audio and video in one call for $0.15 per million input tokens, while Clef-flash drops to $0.038. The post Meet Cloudflare Clef-omni: A 30B-A3B Multimodal D…",
-      "one_line": "Cloudflare released Clef-omni, an Apache-2.0 multimodal decision model built on Qwen3-Omni-30B-A3B.",
-      "one_line_kr": "Cloudflare released Clef-omni, an Apache-2.0 multimodal decision model built on Qwen3-Omni-30B-A3B.",
-      "url": "https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-12 08:15",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for Audio, Video, Image and Text"
-    },
-    {
-      "id": "2026-10-12_0019",
-      "title": "What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models",
-      "summary": "vLLM Semantic Router released Decision 3.0, 5 Apache-2.0 multimodal decision models from 0.8B to 27B. They answer choice, yes/no and score questions about text and images in one call, without generating text. The post What is Decision 3.0? vLLM Semantic Router’s New Open Decision…",
-      "one_line": "vLLM Semantic Router released Decision 3.0, 5 Apache-2.0 multimodal decision models from 0.8B to 27B.",
-      "one_line_kr": "vLLM Semantic Router released Decision 3.0, 5 Apache-2.0 multimodal decision models from 0.8B to 27B.",
-      "url": "https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-12 06:43",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models"
-    },
-    {
-      "id": "2026-10-12_0020",
-      "title": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context",
-      "summary": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens. The post OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model Wi…",
-      "one_line": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window.",
-      "one_line_kr": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window.",
-      "url": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-10-11 15:20",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context"
-    },
-    {
-      "id": "2026-10-12_0021",
-      "title": "스타트업얼라이언스 “AI 규제·투자 회수시장 개선해야” - 중소기업신문",
-      "summary": "스타트업얼라이언스 “AI 규제·투자 회수시장 개선해야” 중소기업신문",
-      "one_line": "스타트업얼라이언스 “AI 규제·투자 회수시장 개선해야” 중소기업신문",
-      "one_line_kr": "스타트업얼라이언스 “AI 규제·투자 회수시장 개선해야” 중소기업신문",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jMTRXYWRsREh6YkctcTE5Z0JPMjRxSnh3UHJ4R1F2MUZHOVIzY2djVGNEUnFPS1BjY0tTQlBtdW9jeFJNdlpTcTY3XzNMUGplTjh3V0lyZWU5WlgxMDVvaUpPdHZnYlp3X2swSXR3?oc=5",
-      "source": "AI법률 뉴스(국내)",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "ko",
-      "date": "2026-09-07 16:00",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "스타트업얼라이언스 “AI 규제·투자 회수시장 개선해야” - 중소기업신문"
-    },
-    {
-      "id": "2026-10-12_0022",
-      "title": "AI training of copyrighted material not fair use: Third Circuit - Courthouse News",
-      "summary": "AI training of copyrighted material not fair use: Third Circuit Courthouse News",
-      "one_line": "AI training of copyrighted material not fair use: Third Circuit Courthouse News",
-      "one_line_kr": "AI training of copyrighted material not fair use: Third Circuit Courthouse News",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWE1mOWhfSFZLTFR3M0xwSC1HbU45Z0xnN1VwclJXaU5XbnBUYmV4T3JVTnFlVXY2cUNjdGMxUVNsY00ybzBBNzNjUV9qNGsxVVRpdHZSSjZ5LVljMFl1alJGSnczNFBBZG1VcTZDTXhtT0VSUEdHWHdpT19VaERTWU84cXgzSjhkTFRTRmFwbUtaNDI2SG5UUg?oc=5",
-      "source": "AI Copyright Law",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "en",
-      "date": "2026-10-01 05:15",
-      "collect_date": "2026-10-12",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "AI training of copyrighted material not fair use: Third Circuit - Courthouse News"
     }
   ]
 }

@@ -1,24 +1,24 @@
 {
   "period": "weekly",
   "days": 7,
-  "generated_at": "2026-11-21 12:03",
-  "total": 435,
-  "kr_count": 125,
-  "en_count": 310,
+  "generated_at": "2026-11-22 11:00",
+  "total": 441,
+  "kr_count": 123,
+  "en_count": 318,
   "category_stats": {
-    "콘텐츠": 123,
+    "콘텐츠": 122,
     "영상AI": 47,
     "이미지·디자인AI": 36,
-    "LLM": 17,
-    "개발AI": 68,
-    "AI법률": 4,
+    "LLM": 18,
+    "개발AI": 71,
+    "AI법률": 3,
     "논문": 120,
-    "비즈니스": 20
+    "비즈니스": 24
   },
   "source_stats": [
     {
       "source": "AI타임스",
-      "count": 67
+      "count": 66
     },
     {
       "source": "ArXiv AI",
@@ -58,7 +58,7 @@
     },
     {
       "source": "MarkTechPost",
-      "count": 20
+      "count": 21
     },
     {
       "source": "OpenAI News (영상)",
@@ -77,27 +77,23 @@
       "count": 9
     },
     {
+      "source": "Together AI Blog",
+      "count": 8
+    },
+    {
       "source": "HuggingFace Blog",
       "count": 8
     },
     {
-      "source": "Together AI Blog",
+      "source": "The Sequence",
       "count": 6
     },
     {
       "source": "Import AI",
-      "count": 4
-    },
-    {
-      "source": "The Sequence",
-      "count": 3
+      "count": 5
     },
     {
       "source": "Anthropic Blog",
-      "count": 2
-    },
-    {
-      "source": "AI법률 뉴스(국내)",
       "count": 2
     },
     {
@@ -117,6 +113,14 @@
       "count": 2
     },
     {
+      "source": "Last Week in AI",
+      "count": 1
+    },
+    {
+      "source": "AI법률 뉴스(국내)",
+      "count": 1
+    },
+    {
       "source": "ElevenLabs Blog",
       "count": 1
     },
@@ -132,11 +136,15 @@
   "keywords": [
     {
       "keyword": "Agent",
-      "count": 54
+      "count": 57
     },
     {
       "keyword": "LLM",
-      "count": 43
+      "count": 41
+    },
+    {
+      "keyword": "GPT",
+      "count": 25
     },
     {
       "keyword": "GitHub",
@@ -147,75 +155,67 @@
       "count": 24
     },
     {
-      "keyword": "GPT",
+      "keyword": "Benchmark",
       "count": 19
+    },
+    {
+      "keyword": "Reasoning",
+      "count": 19
+    },
+    {
+      "keyword": "Vision",
+      "count": 18
     },
     {
       "keyword": "Copilot",
       "count": 18
     },
     {
-      "keyword": "Reasoning",
-      "count": 18
-    },
-    {
-      "keyword": "Benchmark",
-      "count": 18
-    },
-    {
       "keyword": "인공지능",
-      "count": 17
-    },
-    {
-      "keyword": "Vision",
       "count": 16
     },
     {
       "keyword": "Multimodal",
-      "count": 12
+      "count": 13
+    },
+    {
+      "keyword": "ChatGPT",
+      "count": 10
     },
     {
       "keyword": "RAG",
       "count": 10
     },
     {
-      "keyword": "ChatGPT",
-      "count": 9
+      "keyword": "Gemini",
+      "count": 8
+    },
+    {
+      "keyword": "Anthropic",
+      "count": 8
     },
     {
       "keyword": "추론",
       "count": 8
     },
     {
+      "keyword": "Fine-tuning",
+      "count": 7
+    },
+    {
       "keyword": "Diffusion",
       "count": 7
     },
     {
-      "keyword": "Anthropic",
-      "count": 7
+      "keyword": "Together AI",
+      "count": 6
     },
     {
       "keyword": "Qwen",
       "count": 6
-    },
-    {
-      "keyword": "Gemini",
-      "count": 6
-    },
-    {
-      "keyword": "Fine-tuning",
-      "count": 6
-    },
-    {
-      "keyword": "생성형 AI",
-      "count": 5
     }
   ],
   "daily_timeline": [
-    {
-      "date": "2026-11-15",
-      "count": 21
-    },
     {
       "date": "2026-11-16",
       "count": 28
@@ -239,9 +239,21 @@
     {
       "date": "2026-11-21",
       "count": 66
+    },
+    {
+      "date": "2026-11-22",
+      "count": 27
     }
   ],
   "cat_daily": {
+    "2026-11-22": {
+      "콘텐츠": 7,
+      "영상AI": 4,
+      "이미지·디자인AI": 4,
+      "LLM": 1,
+      "개발AI": 7,
+      "비즈니스": 4
+    },
     "2026-11-21": {
       "콘텐츠": 16,
       "영상AI": 7,
@@ -297,16 +309,177 @@
       "LLM": 4,
       "개발AI": 1,
       "비즈니스": 4
-    },
-    "2026-11-15": {
-      "콘텐츠": 8,
-      "영상AI": 4,
-      "이미지·디자인AI": 4,
-      "개발AI": 4,
-      "AI법률": 1
     }
   },
   "content_highlights": [
+    {
+      "id": "2026-11-22_0004",
+      "title": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\"",
+      "summary": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다. 지난 5월 16시간 이상의 작업 수행 능력을 기록한 데 이어 6개월 만에 평가 수치가 40시간 수준으로 높아진 것으로, AI의 장시간 작업 수행 능력이 빠르게 발전하고 있으며 연구 판단력에서도 개선이 나타나고 있는 것으로 확인됐다.AI 안전성 평가기관 METR은 20일(현지시간) 최신 모델의 연구개발 역량 평가 보고서를 공개하고, 오픈AI의 'GPT-6 아스트라'와 앤트로픽의 '클로드…",
+      "one_line": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+      "one_line_kr": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217649",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 18:20",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\""
+    },
+    {
+      "id": "2026-11-22_0005",
+      "title": "구글, 제미나이 앱에 GIF 생성 기능 출시…오픈AI 이어 도입",
+      "summary": "구글이 '제미나이' 앱에 텍스트 프롬프트만으로 짧은 GIF 이미지를 만들 수 있는 기능을 추가했다. 오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요 AI 서비스 간 이미지·영상 생성 기능 경쟁이 치열해지고 있다.구글은 20일(현지시간) 공식 X 계정을 통해 제미나이 앱에 GIF 생성 기능을 추가했다고 밝혔다.이번 기능은 구글의 영상 생성 모델 '제미나이 옴니 1.2 플래시(Gemini Omni 1.2 Flash)'를 기반으로 한다. 사용자가 원하는 장면이나 동작을 문…",
+      "one_line": "오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요",
+      "one_line_kr": "오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217648",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 16:39",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, 제미나이 앱에 GIF 생성 기능 출시…오픈AI 이어 도입"
+    },
+    {
+      "id": "2026-11-22_0012",
+      "title": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification via Full Fine-Tuning and PEFT",
+      "summary": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to institution-specific clinical tasks remains underexplored. In this study, we fine-tuned a pretrained 3D medical VLM for hepatocellular carcinoma (HCC) classific…",
+      "one_line": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to…",
+      "one_line_kr": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to…",
+      "url": "https://tldr.takara.ai/p/2611.22504",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-11-17 19:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification v"
+    },
+    {
+      "id": "2026-11-22_0017",
+      "title": "Qwen4 Max is live on Together AI",
+      "summary": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026. We sent it a bug report and an entire repository in one request. Its patch passed the project's tests, for 69 cents.",
+      "one_line": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+      "one_line_kr": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+      "url": "https://www.together.ai/blog/qwen4-max",
+      "source": "Together AI Blog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-11-21 09:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Qwen4 Max is live on Together AI"
+    },
+    {
+      "id": "2026-11-22_0020",
+      "title": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+      "summary": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters. It runs on a 32GB Mac or one DGX Spark and scores 79.2% on SWE-bench Verified. The post Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac appear…",
+      "one_line": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters.",
+      "one_line_kr": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters.",
+      "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 21:13",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac"
+    },
+    {
+      "id": "2026-11-22_0021",
+      "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+      "summary": "OpenAI has released GPT-Live-1.1 in the API. The full-duplex voice model improves multilingual accents and transcription, and a new standby mode bills idle WebRTC time at $0.02 per minute instead of $0.05. The post OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.…",
+      "one_line": "OpenAI has released GPT-Live-1.1 in the API.",
+      "one_line_kr": "OpenAI has released GPT-Live-1.1 in the API.",
+      "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 20:46",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min"
+    },
+    {
+      "id": "2026-11-22_0022",
+      "title": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+      "summary": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4. bison-1 scores 76 on the AA Decision Index v2.1, and both models support 128k context and image input. The post Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index appeared …",
+      "one_line": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4.",
+      "one_line_kr": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4.",
+      "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 13:01",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index"
+    },
+    {
+      "id": "2026-11-22_0023",
+      "title": "Last Week in AI #348 - IPO->Correction, new GPTs and Geminis, Nvidia’s Fate",
+      "summary": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "one_line": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "one_line_kr": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction",
+      "source": "Last Week in AI",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 17:41",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!RcOW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe937cf00-17ca-41fb-866c-fd971727d6c6_3366x1906.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Last Week in AI #348 - IPO->Correction, new GPTs and Geminis, Nvidia’s Fate"
+    },
     {
       "id": "2026-11-21_0017",
       "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
@@ -348,183 +521,15 @@
         "class": "hot"
       },
       "title_kr": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase addi"
-    },
-    {
-      "id": "2026-11-21_0031",
-      "title": "GitHub Enterprise Server 3.23 release candidate",
-      "summary": "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform. Here are a few highlights in the 3.23 release: When working in GitHub Projects, you&#8230; The post GitHub Enterprise Server 3.23 release candidate appeared first on The Git…",
-      "one_line": "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform.",
-      "one_line_kr": "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform.",
-      "url": "https://github.blog/changelog/2026-11-20-github-enterprise-server-3-23-release-candidate",
-      "source": "GitHub Changelog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-11-21 05:41",
-      "collect_date": "2026-11-21",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "GitHub Enterprise Server 3.23 release candidate"
-    },
-    {
-      "id": "2026-11-21_0034",
-      "title": "Qwen3 TTS is now available on Together AI",
-      "summary": "Qwen3 TTS is now available on Together AI. Keep one voice across your product, change its tone with a plain-language instruction and move it between 10 languages, with first audio in as little as 97ms.",
-      "one_line": "Qwen3 TTS is now available on Together AI.",
-      "one_line_kr": "Qwen3 TTS is now available on Together AI.",
-      "url": "https://www.together.ai/blog/qwen3-tts",
-      "source": "Together AI Blog",
-      "category": "개발AI",
-      "badge": "official",
-      "lang": "en",
-      "date": "2026-11-20 09:00",
-      "collect_date": "2026-11-21",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Qwen3 TTS is now available on Together AI"
-    },
-    {
-      "id": "2026-11-21_0037",
-      "title": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
-      "summary": "RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained from Qwen3.8-27B with reinforcement learning only. It more than doubles Terminal Bench 4.1 pass@1 to 12.0 and runs on a single GPU. The post RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model T…",
-      "one_line": "RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained from Qwen3.8-27B with reinforcement…",
-      "one_line_kr": "RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained from Qwen3.8-27B with reinforcement…",
-      "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-21 02:42",
-      "collect_date": "2026-11-21",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only"
-    },
-    {
-      "id": "2026-11-21_0038",
-      "title": "NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B",
-      "summary": "NVIDIA released Nemotron-Labs-Sigma, 14 open 3B and 8B continuous diffusion language model checkpoints. Sigma denoises text in a learned 16-D embedding space, distills to few-step samplers, and decodes up to 4.20x faster than autoregressive decoding. The post NVIDIA AI Releases N…",
-      "one_line": "The post NVIDIA AI Releases N…",
-      "one_line_kr": "The post NVIDIA AI Releases N…",
-      "url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-20 23:44",
-      "collect_date": "2026-11-21",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B"
-    },
-    {
-      "id": "2026-11-20_0005",
-      "title": "오픈AI, AI로 AMD GPU 설계 개선…“5개월 만에 1년치 진전”",
-      "summary": "오픈AI가 AI 모델로 AMD 주력 GPU의 회로 설계를 최적화해 전력·성능·면적(PPA) 지표에서 최대 14%의 개선을 확인했다고 밝혔다. AMD 엔지니어들이 이미 최적화한 설계에서 5개월도 안 되는 기간에 약 1년 치 추가 진전을 이뤘다는 설명이다.오픈AI는 18일(현지시간) 공식 블로그를 통해 AMD와의 협력 성과와 자체 추론 칩 ‘할라페뇨(Jalapeño)’ 개발에 AI를 활용한 결과를 공개했다.AMD와의 협력에서는 GPU 회로의 동작을 기술한 시스템베릴로그(SystemVerilog) 기반…",
-      "one_line": "오픈AI가 AI 모델로 AMD 주력 GPU의 회로 설계를 최적화해 전력·성능·면적(PPA) 지표에서 최대 14%의 개선을 확인했다고 밝혔다.",
-      "one_line_kr": "오픈AI가 AI 모델로 AMD 주력 GPU의 회로 설계를 최적화해 전력·성능·면적(PPA) 지표에서 최대 14%의 개선을 확인했다고 밝혔다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217562",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-19 18:25",
-      "collect_date": "2026-11-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "오픈AI, AI로 AMD GPU 설계 개선…“5개월 만에 1년치 진전”"
-    },
-    {
-      "id": "2026-11-20_0009",
-      "title": "챗GPT 음성 받아쓰기 기능 개선...실시간 텍스트 변환·10분 녹음 제한 폐지",
-      "summary": "오픈AI가 '챗GPT'의 음성 받아쓰기를 개선해 말하는 동안 변환된 문장을 화면에서 확인할 수 있도록 했다. 기존 10분 녹음 제한도 없애 긴 질문이나 설명을 음성으로 입력하기 편해졌다.오픈AI는 18일(현지시간) 공식 릴리스 노트를 통해 ‘라이브 받아쓰기(Live Dictation)’를 전 세계 모든 챗GPT 요금제에 차례로 배포한다고 밝혔다. iOS와 안드로이드, 웹, 데스크톱 앱이 대상이다.기존에는 녹음을 마친 뒤 텍스트 변환 결과를 기다려야 했다. 이번 업데이트에서는 사용자가 말하는 동안 …",
-      "one_line": "오픈AI가 '챗GPT'의 음성 받아쓰기를 개선해 말하는 동안 변환된 문장을 화면에서 확인할 수 있도록 했다.",
-      "one_line_kr": "오픈AI가 '챗GPT'의 음성 받아쓰기를 개선해 말하는 동안 변환된 문장을 화면에서 확인할 수 있도록 했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217580",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-19 17:30",
-      "collect_date": "2026-11-20",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "챗GPT 음성 받아쓰기 기능 개선...실시간 텍스트 변환·10분 녹음 제한 폐지"
-    },
-    {
-      "id": "2026-11-20_0011",
-      "title": "AMD, XDNA 2 NPU로 언슬로스 데스크톱 지원...로컬 AI 추론 확대",
-      "summary": "AMD는 19일(현지시간) 언슬로스와의 협력으로 AMD 라이젠 AI PC에서 언슬로스 데스크톱 기반 NPU 가속 기능을 제공한다고 밝혔다. 이번 연동으로 AMD XDNA 2 NPU는 해당 애플리케이션이 지원하는 첫 번째 NPU가 됐다. 언슬로스 데스크톱은 오픈AI 호환 API를 제공한다. 이를 통해 허메스 에이전트, 오픈클로, 오픈 웹UI, 클라인, 랭체인 등 100개 이상의 호환 애플리케이션과 작업 흐름을 연결할 수 있다. 작동 방식은 애플리케이션이 언슬로스 데스크톱 API로 모델 실행을 요청하…",
-      "one_line": "AMD는 19일(현지시간) 언슬로스와의 협력으로 AMD 라이젠 AI PC에서 언슬로스 데스크톱 기반 NPU 가속 기능을 제공한다고 밝혔다.",
-      "one_line_kr": "AMD는 19일(현지시간) 언슬로스와의 협력으로 AMD 라이젠 AI PC에서 언슬로스 데스크톱 기반 NPU 가속 기능을 제공한다고 밝혔다.",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=22016",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-20 10:51",
-      "collect_date": "2026-11-20",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "AMD, XDNA 2 NPU로 언슬로스 데스크톱 지원...로컬 AI 추론 확대"
-    },
-    {
-      "id": "2026-11-20_0013",
-      "title": "모레, ‘TIDE’로 GPU 효율 개선...“처리량 최대 1.66배 향상”",
-      "summary": "모레는 미국 시카고에서 열리는 고성능 컴퓨팅(HPC) 컨퍼런스 ‘슈퍼컴퓨팅 2026(SC26)’에서 자기 개선형 LLM 추론 프레임워크 ‘TIDE(Temporal Incremental Draft Engine)’를 발표했다고 20일 밝혔다. 11월 15일부터 20일까지 진행되는 SC26은 HPC와 인공지능(AI), 네트워크, 스토리지 등 고성능 컴퓨팅 분야의 기술과 연구 성과를 공유하는 국제 행사다. 모레가 발표한 TIDE 연구는 18일 ‘Speculative and Observable LLM In…",
-      "one_line": "모레는 미국 시카고에서 열리는 고성능 컴퓨팅(HPC) 컨퍼런스 ‘슈퍼컴퓨팅 2026(SC26)’에서 자기 개선형 LLM 추론 프레임워크 ‘TIDE(Temporal Incremental Draft Engine)’를…",
-      "one_line_kr": "모레는 미국 시카고에서 열리는 고성능 컴퓨팅(HPC) 컨퍼런스 ‘슈퍼컴퓨팅 2026(SC26)’에서 자기 개선형 LLM 추론 프레임워크 ‘TIDE(Temporal Incremental Draft Engine)’를…",
-      "url": "http://www.newstheai.com/news/articleView.html?idxno=22013",
-      "source": "더에이아이",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-20 10:21",
-      "collect_date": "2026-11-20",
-      "thumbnail": "",
-      "type": "기능추가",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "모레, ‘TIDE’로 GPU 효율 개선...“처리량 최대 1.66배 향상”"
     }
   ],
   "cat_highlights": {
     "콘텐츠": {
-      "title": "오픈AI, AI로 AMD GPU 설계 개선…“5개월 만에 1년치 진전”",
+      "title": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\"",
       "source": "AI타임스",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217562",
-      "one_line": "오픈AI가 AI 모델로 AMD 주력 GPU의 회로 설계를 최적화해 전력·성능·면적(PPA) 지표에서 최대 14%의 개선을 확인했다고 밝혔다.",
-      "date": "2026-11-19 18:25"
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217649",
+      "one_line": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+      "date": "2026-11-21 18:20"
     },
     "영상AI": {
       "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
@@ -534,11 +539,11 @@
       "date": "2026-11-20 09:00"
     },
     "이미지·디자인AI": {
-      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "source": "HuggingFace Blog",
-      "url": "https://huggingface.co/blog/inkling2mini",
-      "one_line": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "date": "2026-11-20 09:00"
+      "title": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification via Full Fine-Tuning and PEFT",
+      "source": "HuggingFace Papers",
+      "url": "https://tldr.takara.ai/p/2611.22504",
+      "one_line": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to…",
+      "date": "2026-11-17 19:00"
     },
     "LLM": {
       "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase addi",
@@ -548,22 +553,589 @@
       "date": "2026-11-20 09:00"
     },
     "개발AI": {
-      "title": "GitHub Enterprise Server 3.23 release candidate",
-      "source": "GitHub Changelog",
-      "url": "https://github.blog/changelog/2026-11-20-github-enterprise-server-3-23-release-candidate",
-      "one_line": "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform.",
-      "date": "2026-11-21 05:41"
+      "title": "Qwen4 Max is live on Together AI",
+      "source": "Together AI Blog",
+      "url": "https://www.together.ai/blog/qwen4-max",
+      "one_line": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+      "date": "2026-11-21 09:00"
     }
   },
   "period_key_points": [
-    "Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
-    "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase addi.",
-    "GitHub Enterprise Server (GHES) 3.23 is now available and introduces new capabilities across the platform.",
-    "Qwen3 TTS is now available on Together AI.",
-    "RadixArk released DaisyRose-27B, an Apache 2.0 agentic coding model post-trained from Qwen3.8-27B with reinforcement."
+    "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+    "구글이 '제미나이' 앱에 텍스트 프롬프트만으로 짧은 GIF 이미지를 만들 수 있는 기능을 추가했다.",
+    "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to.",
+    "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+    "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters."
   ],
-  "period_prose": "이번 주간 총 435건의 AI 자료가 수집됐습니다. 국내 125건, 해외 310건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, GitHub, 에이전트, GPT입니다.",
+  "period_prose": "이번 주간 총 441건의 AI 자료가 수집됐습니다. 국내 123건, 해외 318건이며 콘텐츠 분야에서 가장 활발한 활동이 관측됐습니다. 주요 키워드는 Agent, LLM, GPT, GitHub, 에이전트입니다.",
   "items": [
+    {
+      "id": "2026-11-22_0000",
+      "title": "챗GPT·클로드, 모바일 앱 나란히 개편…AI 에이전트 기능 전면에",
+      "summary": "오픈AI와 앤트로픽이 하루 간격으로 '챗GPT'와 '클로드'의 모바일 앱을 개편했다. 개인 AI 에이전트와 코딩, 프로젝트 관리 기능을 전면에 배치해 이용자가 스마트폰에서도 AI에 작업을 맡기고 진행 상황을 확인하기 쉽게 만들었다.오픈AI는 19일(현지시간) 공식 릴리스 노트를 통해 챗GPT의 새로운 모바일 디자인을 일부 이용자에게 제공하기 시작했다고 밝혔다. 앤트로픽도 20일 공식 공지를 통해 클로드 모바일 앱의 새 디자인을 순차 배포한다고 발표했다.두 회사 모두 기존 대화창과 사이드바 중심의 …",
+      "one_line": "개인 AI 에이전트와 코딩, 프로젝트 관리 기능을 전면에 배치해 이용자가 스마트폰에서도 AI에 작업을 맡기고 진행 상황을 확인하기 쉽게 만들었다.오픈AI는 19일(현지시간) 공식 릴리스 노트를 통해 챗GPT의…",
+      "one_line_kr": "개인 AI 에이전트와 코딩, 프로젝트 관리 기능을 전면에 배치해 이용자가 스마트폰에서도 AI에 작업을 맡기고 진행 상황을 확인하기 쉽게 만들었다.오픈AI는 19일(현지시간) 공식 릴리스 노트를 통해 챗GPT의…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217654",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-22 09:09",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "챗GPT·클로드, 모바일 앱 나란히 개편…AI 에이전트 기능 전면에"
+    },
+    {
+      "id": "2026-11-22_0001",
+      "title": "LGU+ 조직개편...\"AI 사업 성과 창출 가속\"",
+      "summary": "LG유플러스가 AI 사업의 본격적인 성과 창출과 통신 본업의 경쟁력 강화를 목표로 2027년 조직개편을 단행했다고 밝혔다. 급변하는 AI 시장 환경에 민첩하게 대응하고, 핵심 사업의 실행력을 높이기 위해 사업과 기술 전반의 조직 체계를 재정비했다는 설명이다.22일 발표에 따르면, 이번 조직개편의 핵심은 ‘AI 사업 실행력 강화’와 ‘기술 역량 결집’이다. AI 인프라와 플랫폼을 중심으로 사업조직을 재편해 사업별 전문성을 높이고, 분산된 AI 연구·개발 역량을 통합해 기술 경쟁력을 강화하는 데 초점…",
+      "one_line": "급변하는 AI 시장 환경에 민첩하게 대응하고, 핵심 사업의 실행력을 높이기 위해 사업과 기술 전반의 조직 체계를 재정비했다는 설명이다.22일 발표에 따르면, 이번 조직개편의 핵심은 ‘AI 사업 실행력 강화’와…",
+      "one_line_kr": "급변하는 AI 시장 환경에 민첩하게 대응하고, 핵심 사업의 실행력을 높이기 위해 사업과 기술 전반의 조직 체계를 재정비했다는 설명이다.22일 발표에 따르면, 이번 조직개편의 핵심은 ‘AI 사업 실행력 강화’와…",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217651",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-22 09:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "LGU+ 조직개편...\"AI 사업 성과 창출 가속\""
+    },
+    {
+      "id": "2026-11-22_0002",
+      "title": "손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진",
+      "summary": "손정의 소프트뱅크 회장이 SK하이닉스를 1조달러(약 1350조원)에 인수하는 초대형 거래를 검토한 것으로 알려졌다. AI 반도체 공급망의 핵심인 고대역폭메모리(HBM) 사업까지 확보하려는 구상이었지만, 막대한 인수 자금과 한국 정부의 승인 문제 등으로 현재는 추진하지 않고 있다.디 인포메이션은 20일(현지시간) 복수의 소식통을 인용, 손 회장이 최근 월가 금융기관들과 접촉해 SK하이닉스 인수에 필요한 자금 조달 가능성을 타진했다고 보도했다.소프트뱅크 대변인은 \"회사는 다양한 기회를 검토하고 있으며…",
+      "one_line": "손정의 소프트뱅크 회장이 SK하이닉스를 1조달러(약 1350조원)에 인수하는 초대형 거래를 검토한 것으로 알려졌다.",
+      "one_line_kr": "손정의 소프트뱅크 회장이 SK하이닉스를 1조달러(약 1350조원)에 인수하는 초대형 거래를 검토한 것으로 알려졌다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217653",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-22 05:59",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진"
+    },
+    {
+      "id": "2026-11-22_0003",
+      "title": "머스크의 우주 데이터센터, 첫 금융 장벽…채권단 \"GPU 반입 제한\"",
+      "summary": "일론 머스크 CEO의 우주 AI 데이터센터 구상이 자금 조달 과정에서 장애물을 만났다. 스페이스X에 수백억달러 규모의 GPU 구매 자금을 제공하는 채권단이 담보 회수가 어렵다는 이유로 반도체의 우주 반입을 제한하려 한 것으로 알려져, 우주 데이터센터의 경제성을 확보하는 데 금융 문제가 새로운 과제로 떠올랐다.파이낸셜타임스(FT)는 20일(현지시간) 소식통을 인용, 스페이스X의 대규모 GPU 금융 거래에 참여한 채권단이 담보로 제공된 엔비디아 반도체를 우주 궤도로 발사하지 못하도록 계약상 제한을 요…",
+      "one_line": "일론 머스크 CEO의 우주 AI 데이터센터 구상이 자금 조달 과정에서 장애물을 만났다.",
+      "one_line_kr": "일론 머스크 CEO의 우주 AI 데이터센터 구상이 자금 조달 과정에서 장애물을 만났다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217650",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 18:55",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "머스크의 우주 데이터센터, 첫 금융 장벽…채권단 \"GPU 반입 제한\""
+    },
+    {
+      "id": "2026-11-22_0004",
+      "title": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\"",
+      "summary": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다. 지난 5월 16시간 이상의 작업 수행 능력을 기록한 데 이어 6개월 만에 평가 수치가 40시간 수준으로 높아진 것으로, AI의 장시간 작업 수행 능력이 빠르게 발전하고 있으며 연구 판단력에서도 개선이 나타나고 있는 것으로 확인됐다.AI 안전성 평가기관 METR은 20일(현지시간) 최신 모델의 연구개발 역량 평가 보고서를 공개하고, 오픈AI의 'GPT-6 아스트라'와 앤트로픽의 '클로드…",
+      "one_line": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+      "one_line_kr": "최첨단 AI가 인간 전문가에게 약 40시간 걸리는 작업까지 수행할 수 있는 수준에 도달했다는 연구 결과가 나왔다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217649",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 18:20",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "AI 작업 능력, 6개월 만에 16시간→40시간…\"판단력 여전히 한계\""
+    },
+    {
+      "id": "2026-11-22_0005",
+      "title": "구글, 제미나이 앱에 GIF 생성 기능 출시…오픈AI 이어 도입",
+      "summary": "구글이 '제미나이' 앱에 텍스트 프롬프트만으로 짧은 GIF 이미지를 만들 수 있는 기능을 추가했다. 오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요 AI 서비스 간 이미지·영상 생성 기능 경쟁이 치열해지고 있다.구글은 20일(현지시간) 공식 X 계정을 통해 제미나이 앱에 GIF 생성 기능을 추가했다고 밝혔다.이번 기능은 구글의 영상 생성 모델 '제미나이 옴니 1.2 플래시(Gemini Omni 1.2 Flash)'를 기반으로 한다. 사용자가 원하는 장면이나 동작을 문…",
+      "one_line": "오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요",
+      "one_line_kr": "오픈AI가 '챗GPT'에 GIF 생성 기능을 선보인 지 약 2주 만으로, 주요",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217648",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 16:39",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "구글, 제미나이 앱에 GIF 생성 기능 출시…오픈AI 이어 도입"
+    },
+    {
+      "id": "2026-11-22_0006",
+      "title": "\"젠슨 황, 20여년 전부터 직원들에게 폭언·위협\"…불만 제기 이어져",
+      "summary": "엔비디아 직원들이 젠슨 황 전 CEO의 폭언과 공개적인 모욕을 동반한 경영 방식에 20여년 전부터 불만을 제기해 온 것으로 드러났다. 엔비디아가 AI 칩 시장을 장악하며 세계적인 기업으로 성장하는 동안에도 직원들을 위협하고 인격적으로 모욕하는 관리 방식이 이어졌다는 증언이 나왔다.뉴욕타임스(NYT)는 20일(현지시간) 전·현직 직원 12명 이상과 법원 기록, 내부 문서 등을 취재한 결과를 보도하며 황 전 CEO가 오랫동안 직원들에게 모욕적인 언행과 폭력적인 위협을 가했다고 전했다.이에 따르면 황 …",
+      "one_line": "엔비디아 직원들이 젠슨 황 전 CEO의 폭언과 공개적인 모욕을 동반한 경영 방식에 20여년 전부터 불만을 제기해 온 것으로 드러났다.",
+      "one_line_kr": "엔비디아 직원들이 젠슨 황 전 CEO의 폭언과 공개적인 모욕을 동반한 경영 방식에 20여년 전부터 불만을 제기해 온 것으로 드러났다.",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217644",
+      "source": "AI타임스",
+      "category": "콘텐츠",
+      "badge": "kr-news",
+      "lang": "ko",
+      "date": "2026-11-21 11:51",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "\"젠슨 황, 20여년 전부터 직원들에게 폭언·위협\"…불만 제기 이어져"
+    },
+    {
+      "id": "2026-11-22_0007",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "one_line": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "one_line_kr": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-22 06:37",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance"
+    },
+    {
+      "id": "2026-11-22_0008",
+      "title": "A tale of two Nvidias",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "one_line": "We got two very different pictures of Nvidia — the company’s latest earnings report vs.",
+      "one_line_kr": "We got two very different pictures of Nvidia — the company’s latest earnings report vs.",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-22 06:07",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "A tale of two Nvidias"
+    },
+    {
+      "id": "2026-11-22_0009",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "one_line": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents…",
+      "one_line_kr": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents…",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-22 02:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Here are the top AI agents that can live in your text messages"
+    },
+    {
+      "id": "2026-11-22_0010",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "one_line": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China.",
+      "one_line_kr": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China.",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "source": "TechCrunch AI",
+      "category": "영상AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-22 01:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?"
+    },
+    {
+      "id": "2026-11-22_0011",
+      "title": "Encoding, Decodability, and Use: A Five-Layer Framework for Benchmark Measurement Audits with Evidence from UAV Intent Recognition",
+      "summary": "Benchmark accuracy is routinely read as evidence that a model understands the construct the benchmark measures. We propose and instantiate on AeroIntent a five-layer framework that decomposes that reading into observation, representation, decoding, use, and behaviour. The framewo…",
+      "one_line": "Benchmark accuracy is routinely read as evidence that a model understands the construct the benchmark measures.",
+      "one_line_kr": "Benchmark accuracy is routinely read as evidence that a model understands the construct the benchmark measures.",
+      "url": "https://tldr.takara.ai/p/2611.22434",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-11-17 18:08",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Encoding, Decodability, and Use: A Five-Layer Framework for Benchmark Measurement Audits with Evidence from UAV Intent R"
+    },
+    {
+      "id": "2026-11-22_0012",
+      "title": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification via Full Fine-Tuning and PEFT",
+      "summary": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to institution-specific clinical tasks remains underexplored. In this study, we fine-tuned a pretrained 3D medical VLM for hepatocellular carcinoma (HCC) classific…",
+      "one_line": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to…",
+      "one_line_kr": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to…",
+      "url": "https://tldr.takara.ai/p/2611.22504",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-11-17 19:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification v"
+    },
+    {
+      "id": "2026-11-22_0013",
+      "title": "Beyond Appearance: Evidence-Guided Programmatic 3D Scene Reconstruction with Agentic Lighting Reasoning",
+      "summary": "Image-to-code methods for 3D scene reconstruction produce executable code that generates editable digital content and supports visual simulation. However, existing methods primarily rely on appearance similarity, which provides limited guidance for distinguishing errors in geomet…",
+      "one_line": "Image-to-code methods for 3D scene reconstruction produce executable code that generates editable digital content and…",
+      "one_line_kr": "Image-to-code methods for 3D scene reconstruction produce executable code that generates editable digital content and…",
+      "url": "https://tldr.takara.ai/p/2611.24565",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-11-19 00:01",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Beyond Appearance: Evidence-Guided Programmatic 3D Scene Reconstruction with Agentic Lighting Reasoning"
+    },
+    {
+      "id": "2026-11-22_0014",
+      "title": "Contrast Where It Matters: Visual Evidence-Guided Decoding for Mitigating Hallucinations in LVLMs",
+      "summary": "Despite strong multimodal capabilities, large vision-language models (LVLMs) often hallucinate when linguistic priors outweigh visual evidence or when predictions are grounded in irrelevant or misleading image regions. Training-free contrastive decoding mitigates hallucinations b…",
+      "one_line": "Training-free contrastive decoding mitigates hallucinations b…",
+      "one_line_kr": "Training-free contrastive decoding mitigates hallucinations b…",
+      "url": "https://tldr.takara.ai/p/2611.25524",
+      "source": "HuggingFace Papers",
+      "category": "이미지·디자인AI",
+      "badge": "paper",
+      "lang": "en",
+      "date": "2026-11-19 14:26",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "Contrast Where It Matters: Visual Evidence-Guided Decoding for Mitigating Hallucinations in LVLMs"
+    },
+    {
+      "id": "2026-11-22_0015",
+      "title": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+      "summary": "Plus: CucumberVision!",
+      "one_line": "Plus: CucumberVision!",
+      "one_line_kr": "Plus: CucumberVision!",
+      "url": "https://importai.substack.com/p/import-ai-481-ai-sub-contractors",
+      "source": "Import AI",
+      "category": "LLM",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-16 23:01",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development"
+    },
+    {
+      "id": "2026-11-22_0016",
+      "title": "Security event: Prompt leakage for requests in June and July of 2026",
+      "summary": "We are notifying customers about a security incident involving a subset of prompts submitted to Together AI’s serverless inference service in June and July 2026.",
+      "one_line": "We are notifying customers about a security incident involving a subset of prompts submitted to Together AI’s…",
+      "one_line_kr": "We are notifying customers about a security incident involving a subset of prompts submitted to Together AI’s…",
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "source": "Together AI Blog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-11-21 09:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "Security event: Prompt leakage for requests in June and July of 2026"
+    },
+    {
+      "id": "2026-11-22_0017",
+      "title": "Qwen4 Max is live on Together AI",
+      "summary": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026. We sent it a bug report and an entire repository in one request. Its patch passed the project's tests, for 69 cents.",
+      "one_line": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+      "one_line_kr": "Qwen4 Max, Alibaba's flagship Qwen model, is live on Together AI and 30% off through November 22, 2026.",
+      "url": "https://www.together.ai/blog/qwen4-max",
+      "source": "Together AI Blog",
+      "category": "개발AI",
+      "badge": "official",
+      "lang": "en",
+      "date": "2026-11-21 09:00",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Qwen4 Max is live on Together AI"
+    },
+    {
+      "id": "2026-11-22_0018",
+      "title": "[AINews] Riemann Hypothesis proved...twice independently",
+      "summary": "November 20 2026 —",
+      "one_line": "November 20 2026 —",
+      "one_line_kr": "November 20 2026 —",
+      "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+      "source": "Latent Space",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 14:02",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "[AINews] Riemann Hypothesis proved...twice independently"
+    },
+    {
+      "id": "2026-11-22_0019",
+      "title": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels",
+      "summary": "TensorLean, from Columbia University and CertiK, formally verifies production GPU kernels at the PTX level using Lean. It checked 149 kernel instances, proved 83 correct, and found 38 bugs in FlashAttention, DeepGEMM and more. The post A Team of Researchers from Columbia and Cert…",
+      "one_line": "TensorLean, from Columbia University and CertiK, formally verifies production GPU kernels at the PTX level using Lean.",
+      "one_line_kr": "TensorLean, from Columbia University and CertiK, formally verifies production GPU kernels at the PTX level using Lean.",
+      "url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-22 10:51",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels"
+    },
+    {
+      "id": "2026-11-22_0020",
+      "title": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+      "summary": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters. It runs on a 32GB Mac or one DGX Spark and scores 79.2% on SWE-bench Verified. The post Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac appear…",
+      "one_line": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters.",
+      "one_line_kr": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters.",
+      "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 21:13",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac"
+    },
+    {
+      "id": "2026-11-22_0021",
+      "title": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+      "summary": "OpenAI has released GPT-Live-1.1 in the API. The full-duplex voice model improves multilingual accents and transcription, and a new standby mode bills idle WebRTC time at $0.02 per minute instead of $0.05. The post OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.…",
+      "one_line": "OpenAI has released GPT-Live-1.1 in the API.",
+      "one_line_kr": "OpenAI has released GPT-Live-1.1 in the API.",
+      "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 20:46",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min"
+    },
+    {
+      "id": "2026-11-22_0022",
+      "title": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+      "summary": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4. bison-1 scores 76 on the AA Decision Index v2.1, and both models support 128k context and image input. The post Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index appeared …",
+      "one_line": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4.",
+      "one_line_kr": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4.",
+      "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+      "source": "MarkTechPost",
+      "category": "개발AI",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 13:01",
+      "collect_date": "2026-11-22",
+      "thumbnail": "",
+      "type": "모델출시",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index"
+    },
+    {
+      "id": "2026-11-22_0023",
+      "title": "Last Week in AI #348 - IPO->Correction, new GPTs and Geminis, Nvidia’s Fate",
+      "summary": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "one_line": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "one_line_kr": "Anthropic's $81B IPO, AI stocks enter a correction, Huang resigns from Nvidia, Trump and Xi agree on military AI",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction",
+      "source": "Last Week in AI",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-21 17:41",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!RcOW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe937cf00-17ca-41fb-866c-fd971727d6c6_3366x1906.png",
+      "type": "뉴스",
+      "importance": {
+        "label": "🔥 핫",
+        "class": "hot"
+      },
+      "title_kr": "Last Week in AI #348 - IPO->Correction, new GPTs and Geminis, Nvidia’s Fate"
+    },
+    {
+      "id": "2026-11-22_0024",
+      "title": "The Sequence Robotics - Issue #976: Robots Need Schools, Not Just Brains",
+      "summary": "The $500 million Genesis AI bet on hands, human experience, and teaching machines to learn",
+      "one_line": "The $500 million Genesis AI bet on hands, human experience, and teaching machines to learn",
+      "one_line_kr": "The $500 million Genesis AI bet on hands, human experience, and teaching machines to learn",
+      "url": "https://thesequence.substack.com/p/the-sequence-robotics-issue-976-robots",
+      "source": "The Sequence",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-20 21:11",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!oyS1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5d2949a2-cc80-431d-b32a-f52a6f3194d9_1280x720.jpeg",
+      "type": "뉴스",
+      "importance": {
+        "label": "🆕 신규",
+        "class": "new"
+      },
+      "title_kr": "The Sequence Robotics - Issue #976: Robots Need Schools, Not Just Brains"
+    },
+    {
+      "id": "2026-11-22_0025",
+      "title": "The Sequence Opinion - Issue #975: The Architecture of Agentic Swarms",
+      "summary": "How to design systems that explore together and verify their work",
+      "one_line": "How to design systems that explore together and verify their work",
+      "one_line_kr": "How to design systems that explore together and verify their work",
+      "url": "https://thesequence.substack.com/p/the-sequence-opinion-issue-975-the",
+      "source": "The Sequence",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-19 20:38",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!DiVi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd8ca29d2-49df-44b2-888b-045137108395_1280x720.jpeg",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "The Sequence Opinion - Issue #975: The Architecture of Agentic Swarms"
+    },
+    {
+      "id": "2026-11-22_0026",
+      "title": "The Sequence Learning Loop - Issue #974: Last Week in AI: The Systems Behind Fable, AlphaGenome, and ChatGPT Wallet",
+      "summary": "How intelligence becomes useful work",
+      "one_line": "How intelligence becomes useful work",
+      "one_line_kr": "How intelligence becomes useful work",
+      "url": "https://thesequence.substack.com/p/the-sequence-learning-loop-issue-1d5",
+      "source": "The Sequence",
+      "category": "비즈니스",
+      "badge": "news",
+      "lang": "en",
+      "date": "2026-11-18 21:03",
+      "collect_date": "2026-11-22",
+      "thumbnail": "https://substackcdn.com/image/fetch/$s_!DP60!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd185e166-3a1a-4dd3-ac30-56244b6b4dc3_1280x720.jpeg",
+      "type": "뉴스",
+      "importance": {
+        "label": "⭐ 추천",
+        "class": "star"
+      },
+      "title_kr": "The Sequence Learning Loop - Issue #974: Last Week in AI: The Systems Behind Fable, AlphaGenome, and ChatGPT Wallet"
+    },
     {
       "id": "2026-11-21_0000",
       "title": "트럼프 \"젠슨 황에 두 번째 기회 줘야\"…CEO 복귀 재촉구",
@@ -9257,447 +9829,6 @@
         "class": "star"
       },
       "title_kr": "Understanding Positional Embeddings in Modern LLMs"
-    },
-    {
-      "id": "2026-11-15_0000",
-      "title": "엔비디아 투자자들 \"젠슨 황 복귀 검토해야\"…머스크 등 거물 가세",
-      "summary": "젠슨 황 전 엔비디아 CEO의 복귀를 요구하는 목소리가 실리콘밸리 기술 업계에서 주요 투자자들로 이어지고 있다. 엔비디아 지분 20억달러 이상을 보유한 투자사 두 곳이 이사회에 후임 CEO 선임을 서두르지 말고, 황의 복귀 가능성을 검토하라고 촉구했다. 일론 머스크 CEO 등 기술 업계 거물들도 황의 퇴진이 엔비디아의 사업 경쟁력과 미국 AI 산업에 타격을 줄 수 있다며 복귀를 지지하고 있다.CNBC는 14일(현지시간) 브래드 거스트너 알티미터 캐피털 CEO와 개빈 베이커 아트레이데스매니지먼트 C…",
-      "one_line": "엔비디아 지분 20억달러 이상을 보유한 투자사 두 곳이 이사회에 후임 CEO 선임을 서두르지 말고, 황의 복귀 가능성을 검토하라고 촉구했다.",
-      "one_line_kr": "엔비디아 지분 20억달러 이상을 보유한 투자사 두 곳이 이사회에 후임 CEO 선임을 서두르지 말고, 황의 복귀 가능성을 검토하라고 촉구했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217413",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-15 07:52",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "엔비디아 투자자들 \"젠슨 황 복귀 검토해야\"…머스크 등 거물 가세"
-    },
-    {
-      "id": "2026-11-15_0001",
-      "title": "아마존, 전 세계 상품 정보 통합 추진…AI 쇼핑 주도권 지킨다",
-      "summary": "아마존이 자사에서 판매하지 않는 제품까지 전 세계 상품 정보를 모으는 방안을 검토하고 있다. 소비자가 제품을 비교하기 위해 다른 사이트로 이동하는 일을 줄이고, 구매를 대신하는 외부 AI 에이전트도 아마존을 찾도록 하려는 구상이다.로이터는 13일(현지시간) 내부 문서와 관계자들을 인용해 아마존이 ‘월드 프로덕트 그래프(World Product Graph)’라는 프로젝트를 추진하고 있다고 보도했다.브랜드에서 제공받는 정보와 다른 유통 사이트에서 수집한 데이터를 결합해 상품 간 차이와 관계를 파악하는…",
-      "one_line": "아마존이 자사에서 판매하지 않는 제품까지 전 세계 상품 정보를 모으는 방안을 검토하고 있다.",
-      "one_line_kr": "아마존이 자사에서 판매하지 않는 제품까지 전 세계 상품 정보를 모으는 방안을 검토하고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217412",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 19:19",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "아마존, 전 세계 상품 정보 통합 추진…AI 쇼핑 주도권 지킨다"
-    },
-    {
-      "id": "2026-11-15_0002",
-      "title": "미 재무장관, 메가스피드 제재 지연에 상무부 공개 비판…러트닉 경질론까지",
-      "summary": "스콧 베선트 미국 재무장관이 엔비디아 AI 칩을 구매해 온 싱가포르 기업 메가스피드에 대한 수출 통제를 미뤄 온 상무부를 공개적으로 비판했다. 재무부 등 4개 정부 기관이 수개월 전부터 제재에 찬성했지만, 상무부가 조치를 취하지 않았다는 것이다. 젠슨 황 전 엔비디아 CEO의 퇴진 이후 하워드 러트닉 상무장관의 경질 가능성까지 거론되고 있으며, 러트닉 장관은 다음 달 의회에서 증언하기로 했다.베선트 장관은 13일(현지시간) CNBC 인터뷰에서 메가스피드에 대한 제재 지연 문제를 언급하며 상무부의 …",
-      "one_line": "스콧 베선트 미국 재무장관이 엔비디아 AI 칩을 구매해 온 싱가포르 기업 메가스피드에 대한 수출 통제를 미뤄 온 상무부를 공개적으로 비판했다.",
-      "one_line_kr": "스콧 베선트 미국 재무장관이 엔비디아 AI 칩을 구매해 온 싱가포르 기업 메가스피드에 대한 수출 통제를 미뤄 온 상무부를 공개적으로 비판했다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217411",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 18:45",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "미 재무장관, 메가스피드 제재 지연에 상무부 공개 비판…러트닉 경질론까지"
-    },
-    {
-      "id": "2026-11-15_0003",
-      "title": "머스크, 젠슨 황 퇴진에 영화로 경의…앞서 \"영입하면 영광\"",
-      "summary": "일론 머스크 CEO가 엔비디아에서 물러난 젠슨 황 전 CEO에게 경의를 표하는 게시물을 올렸다. 앞서 황의 해임 가능성이 제기됐을 때는 그를 영입할 수 있다면 영광이라고 밝혔으나, 현재까지 실제 영입 제안이나 구체적인 계획이 알려진 것은 없다.머스크는 13일(현지시간) X에 영화의 한 장면을 공유하며 황 전 CEO에 대한 존경심을 드러냈다.공유한 영상은 2023년 개봉한 영화 '에어(Air)'의 약 2분짜리 장면이다. 나이키가 농구 선수 마이클 조던과 계약해 '에어 조던' 브랜드를 탄생시키는 과정…",
-      "one_line": "앞서 황의 해임 가능성이 제기됐을 때는 그를 영입할 수 있다면 영광이라고 밝혔으나, 현재까지 실제 영입 제안이나 구체적인 계획이 알려진 것은 없다.머스크는 13일(현지시간) X에 영화의 한 장면을 공유하며 황 전…",
-      "one_line_kr": "앞서 황의 해임 가능성이 제기됐을 때는 그를 영입할 수 있다면 영광이라고 밝혔으나, 현재까지 실제 영입 제안이나 구체적인 계획이 알려진 것은 없다.머스크는 13일(현지시간) X에 영화의 한 장면을 공유하며 황 전…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217409",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 17:37",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "머스크, 젠슨 황 퇴진에 영화로 경의…앞서 \"영입하면 영광\""
-    },
-    {
-      "id": "2026-11-15_0004",
-      "title": "젠슨 황 투자에 제동 걸었던 CFO가 후임으로…엔비디아 전략 바뀌나",
-      "summary": "젠슨 황 전 엔비디아 CEO가 대규모 AI 투자에 제동을 걸었던 콜레트 크레스 최고재무책임자(CFO)를 회의에서 공개적으로 깎아내렸던 사실이 드러났다. 황의 공격적인 투자 전략을 견제해 온 크레스가 임시 CEO에 오르면서, 엔비디아의 AI 산업 투자 방식에도 변화가 생길지 주목된다.월스트리트저널(WSJ)과 로이터는 13일(현지시간) 복수의 소식통을 인용, 황 전 CEO와 크레스 임시 CEO가 엔비디아의 대규모 AI 투자와 고객사 금융 지원 문제를 놓고 여러 차례 충돌했다고 보도했다.이에 따르면, …",
-      "one_line": "젠슨 황 전 엔비디아 CEO가 대규모 AI 투자에 제동을 걸었던 콜레트 크레스 최고재무책임자(CFO)를 회의에서 공개적으로 깎아내렸던 사실이 드러났다.",
-      "one_line_kr": "젠슨 황 전 엔비디아 CEO가 대규모 AI 투자에 제동을 걸었던 콜레트 크레스 최고재무책임자(CFO)를 회의에서 공개적으로 깎아내렸던 사실이 드러났다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217406",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 16:49",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "젠슨 황 투자에 제동 걸었던 CFO가 후임으로…엔비디아 전략 바뀌나"
-    },
-    {
-      "id": "2026-11-15_0005",
-      "title": "말레이시아, 메가스피드 AI 칩 재수출 의혹 조사 착수",
-      "summary": "말레이시아 정부가 싱가포르 클라우드 컴퓨팅 기업 메가스피드의 현지 계열사가 수입한 엔비디아 AI 칩의 재수출 여부를 조사하고 있다. 젠슨 황 전 엔비디아 CEO와 관련된 의혹으로 주목받은 메가스피드가 미국의 반도체 수출 통제를 우회하는 데 활용됐을 가능성이 제기되자, 말레이시아 정부도 직접 칩 유통 경로 확인에 나선 것이다.말레이시아 투자통상산업부는 13일(현지시간) 세관 당국과 함께 메가스피드 계열사인 스피드매트릭스(Speedmatrix)가 수입한 AI 칩과 서버가 다른 국가로 재수출됐는지, 관…",
-      "one_line": "말레이시아 정부가 싱가포르 클라우드 컴퓨팅 기업 메가스피드의 현지 계열사가 수입한 엔비디아 AI 칩의 재수출 여부를 조사하고 있다.",
-      "one_line_kr": "말레이시아 정부가 싱가포르 클라우드 컴퓨팅 기업 메가스피드의 현지 계열사가 수입한 엔비디아 AI 칩의 재수출 여부를 조사하고 있다.",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217405",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 15:53",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "말레이시아, 메가스피드 AI 칩 재수출 의혹 조사 착수"
-    },
-    {
-      "id": "2026-11-15_0006",
-      "title": "딥시크·문샷 등 중국 4개사, 수출 통제 '블랙웰' 사용 흔적 발견",
-      "summary": "딥시크와 문샷 AI 등 중국 주요 AI 기업들이 미국의 수출 통제를 받는 엔비디아 최신 '블랙웰' GPU를 AI 모델 개발에 사용한 정황이 발견됐다. 공개된 모델 가중치에서 블랙웰 특유의 숫자 배열을 찾아낸 것으로, 중국 기업들의 첨단 GPU 사용 의혹을 뒷받침하는 구체적인 기술적 증거가 제시됐다.비영리 연구단체 언엠플로이먼트 랩스(Unemployment Labs)의 윌 드퓌 연구원은 12일(현지시간) 연구 보고서를 통해 중국 AI 기업 4곳이 공개한 모델 6종에서 엔비디아 블랙웰 GPU와 일치하…",
-      "one_line": "공개된 모델 가중치에서 블랙웰 특유의 숫자 배열을 찾아낸 것으로, 중국 기업들의 첨단 GPU 사용 의혹을 뒷받침하는 구체적인 기술적 증거가 제시됐다.비영리 연구단체 언엠플로이먼트 랩스(Unemployment…",
-      "one_line_kr": "공개된 모델 가중치에서 블랙웰 특유의 숫자 배열을 찾아낸 것으로, 중국 기업들의 첨단 GPU 사용 의혹을 뒷받침하는 구체적인 기술적 증거가 제시됐다.비영리 연구단체 언엠플로이먼트 랩스(Unemployment…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217397",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 11:18",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "딥시크·문샷 등 중국 4개사, 수출 통제 '블랙웰' 사용 흔적 발견"
-    },
-    {
-      "id": "2026-11-15_0007",
-      "title": "[기고] AI 시대, ‘검색되는 브랜드’에서 ‘추천되는 브랜드’로",
-      "summary": "생성 AI의 확산은 기업의 업무 방식뿐 아니라 소비자가 제품과 브랜드를 탐색하는 방식까지 바꾸고 있다.포털이나 이커머스 플랫폼에서 키워드를 검색하고 여러 결과를 직접 비교하던 과정에 AI에게 자신의 상황과 조건을 설명하고 적합한 제품을 제안받는 방식이 더해지고 있다.AI 마케팅 솔루션 기업의 전략을 총괄하는 입장에서 이 변화에 주목하는 이유는 명확하다.AI가 업무 생산성을 높이는 도구를 넘어 소비자와 브랜드를 연결하고 구매 결정에 영향을 미치는 새로운 접점으로 부상하고 있기 때문이다.이러한 변화와…",
-      "one_line": "생성 AI의 확산은 기업의 업무 방식뿐 아니라 소비자가 제품과 브랜드를 탐색하는 방식까지 바꾸고 있다.포털이나 이커머스 플랫폼에서 키워드를 검색하고 여러 결과를 직접 비교하던 과정에 AI에게 자신의 상황과 조건을…",
-      "one_line_kr": "생성 AI의 확산은 기업의 업무 방식뿐 아니라 소비자가 제품과 브랜드를 탐색하는 방식까지 바꾸고 있다.포털이나 이커머스 플랫폼에서 키워드를 검색하고 여러 결과를 직접 비교하던 과정에 AI에게 자신의 상황과 조건을…",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217392",
-      "source": "AI타임스",
-      "category": "콘텐츠",
-      "badge": "kr-news",
-      "lang": "ko",
-      "date": "2026-11-14 11:15",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[기고] AI 시대, ‘검색되는 브랜드’에서 ‘추천되는 브랜드’로"
-    },
-    {
-      "id": "2026-11-15_0008",
-      "title": "Where was Nvidia’s security team?",
-      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday c…",
-      "one_line": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships,…",
-      "one_line_kr": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships,…",
-      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-15 09:08",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Where was Nvidia’s security team?"
-    },
-    {
-      "id": "2026-11-15_0009",
-      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
-      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-      "one_line": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-      "one_line_kr": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-15 06:41",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang"
-    },
-    {
-      "id": "2026-11-15_0010",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "one_line": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that…",
-      "one_line_kr": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that…",
-      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-15 02:30",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "The AI graveyard: a running list of projects and startups that didn’t make it"
-    },
-    {
-      "id": "2026-11-15_0011",
-      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-      "one_line": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or…",
-      "one_line_kr": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or…",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-      "source": "TechCrunch AI",
-      "category": "영상AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-15 01:34",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Asian governments react to Nvidia CEO Jensen Huang’s exit"
-    },
-    {
-      "id": "2026-11-15_0012",
-      "title": "Adaptive Distance Detection and Adaptive Instance Segmentation",
-      "summary": "This paper is about object detection model and semantic segmentation model in an FPS game Counter Strike: Condition Zero to detect enemies. Semantic segmentation is pixel-wise detection algorithm. We customized the architecture for semantic segmentation. We used YOLOv5s to train …",
-      "one_line": "We used YOLOv5s to train …",
-      "one_line_kr": "We used YOLOv5s to train …",
-      "url": "https://tldr.takara.ai/p/2611.15991",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-11-12 05:44",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Adaptive Distance Detection and Adaptive Instance Segmentation"
-    },
-    {
-      "id": "2026-11-15_0013",
-      "title": "Locating and Repairing Domain Shift in VLM Trajectory Planning",
-      "summary": "Vision-Language Models (VLMs) are increasingly adopted as end-to-end driving planners, yet they suffer from cross-city domain shift. Existing methods treat this shift as a single quantity addressed by uniform alignment or single-site editing. We challenge this view on two counts:…",
-      "one_line": "Vision-Language Models (VLMs) are increasingly adopted as end-to-end driving planners, yet they suffer from cross-city…",
-      "one_line_kr": "Vision-Language Models (VLMs) are increasingly adopted as end-to-end driving planners, yet they suffer from cross-city…",
-      "url": "https://tldr.takara.ai/p/2611.10720",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-11-07 22:28",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "가격변경",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Locating and Repairing Domain Shift in VLM Trajectory Planning"
-    },
-    {
-      "id": "2026-11-15_0014",
-      "title": "Stress-Testing Sandbagging Detection Under Adaptive Attack",
-      "summary": "Developers, auditors and researchers read evaluation scores as evidence of what a model can do. A model that sandbags, scoring low on purpose while keeping the capability, turns a low score into false reassurance. Sandbagging detectors are usually tested once against a fixed atta…",
-      "one_line": "Sandbagging detectors are usually tested once against a fixed atta…",
-      "one_line_kr": "Sandbagging detectors are usually tested once against a fixed atta…",
-      "url": "https://tldr.takara.ai/p/2611.14950",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-11-11 11:56",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Stress-Testing Sandbagging Detection Under Adaptive Attack"
-    },
-    {
-      "id": "2026-11-15_0015",
-      "title": "Query- and Candidate-Aware Long User Sequence Modeling for Sponsored Product Ranking in Search",
-      "summary": "User sequence modeling is widely used in recommendation and advertising. Search ranking presents an additional challenge: the current query expresses immediate intent, while a candidate product determines which parts of a user's long-term history are relevant. We present a produc…",
-      "one_line": "User sequence modeling is widely used in recommendation and advertising.",
-      "one_line_kr": "User sequence modeling is widely used in recommendation and advertising.",
-      "url": "https://tldr.takara.ai/p/2611.11675",
-      "source": "HuggingFace Papers",
-      "category": "이미지·디자인AI",
-      "badge": "paper",
-      "lang": "en",
-      "date": "2026-11-09 08:00",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "Query- and Candidate-Aware Long User Sequence Modeling for Sponsored Product Ranking in Search"
-    },
-    {
-      "id": "2026-11-15_0016",
-      "title": "[AINews] The No AI Slop Manifesto",
-      "summary": "November 13, 2026 — AIE speakers unite to lay out how to fight slop.",
-      "one_line": "November 13, 2026 — AIE speakers unite to lay out how to fight slop.",
-      "one_line_kr": "November 13, 2026 — AIE speakers unite to lay out how to fight slop.",
-      "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
-      "source": "Latent Space",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-14 17:31",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "🆕 신규",
-        "class": "new"
-      },
-      "title_kr": "[AINews] The No AI Slop Manifesto"
-    },
-    {
-      "id": "2026-11-15_0017",
-      "title": "Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy",
-      "summary": "Cmpnd released dspy-wsp, a prototype DSPy optimizer for weight-space programming. A frontier LLM reads a small model’s weights, edits them in a sandbox, and tests each change, with no gradients and about $5 to $10 per run. The post Cmpnd Releases dspy-wsp: Weight-Space Programmin…",
-      "one_line": "Cmpnd released dspy-wsp, a prototype DSPy optimizer for weight-space programming.",
-      "one_line_kr": "Cmpnd released dspy-wsp, a prototype DSPy optimizer for weight-space programming.",
-      "url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-15 01:45",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy"
-    },
-    {
-      "id": "2026-11-15_0018",
-      "title": "Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs",
-      "summary": "Stanford researchers released Memorilla, an open-source memory system that compresses a document collection into 16 memory tokens for a frozen Qwen3-8B. It reaches 84.33% on FactKG using 108x fewer document tokens than full context. The post Stanford Research Open-Sources Memoril…",
-      "one_line": "Stanford researchers released Memorilla, an open-source memory system that compresses a document collection into 16…",
-      "one_line_kr": "Stanford researchers released Memorilla, an open-source memory system that compresses a document collection into 16…",
-      "url": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-14 19:21",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "모델출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs"
-    },
-    {
-      "id": "2026-11-15_0019",
-      "title": "Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents",
-      "summary": "Vercel Labs released Vercel UI SDK, an Apache-2.0 beta library of 50+ UI behaviors. Coding agents compose them into accessible components for React, Vue, Svelte, Solid and Web Components, with a bridge for direct UI control. The post Vercel Releases UI SDK: 50+ UI Behaviors for A…",
-      "one_line": "Vercel Labs released Vercel UI SDK, an Apache-2.0 beta library of 50+ UI behaviors.",
-      "one_line_kr": "Vercel Labs released Vercel UI SDK, an Apache-2.0 beta library of 50+ UI behaviors.",
-      "url": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/",
-      "source": "MarkTechPost",
-      "category": "개발AI",
-      "badge": "news",
-      "lang": "en",
-      "date": "2026-11-14 15:38",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "도구출시",
-      "importance": {
-        "label": "🔥 핫",
-        "class": "hot"
-      },
-      "title_kr": "Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents"
-    },
-    {
-      "id": "2026-11-15_0020",
-      "title": "美 정부, ‘AI’ 대신 ‘슈퍼 인텔리전스(SI)’ 쓴다…'AI'와 'SI'의 이중 용어 체계, 글로벌 혼란 가중 - 인공지능신문",
-      "summary": "美 정부, ‘AI’ 대신 ‘슈퍼 인텔리전스(SI)’ 쓴다…'AI'와 'SI'의 이중 용어 체계, 글로벌 혼란 가중 인공지능신문",
-      "one_line": "美 정부, ‘AI’ 대신 ‘슈퍼 인텔리전스(SI)’ 쓴다…'AI'와 'SI'의 이중 용어 체계, 글로벌 혼란 가중 인공지능신문",
-      "one_line_kr": "美 정부, ‘AI’ 대신 ‘슈퍼 인텔리전스(SI)’ 쓴다…'AI'와 'SI'의 이중 용어 체계, 글로벌 혼란 가중 인공지능신문",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54OVdyY0h3UmFQbTNicHcxbkdoT2s5Q0stSXAycTZucDdkTzNUTkx3X2tmcWg0OE1MMmwxWURqRHdESDBja0JhRFU3QlVvejY2Sl9NcF8xMUQyTXgxWmRPdmdGaUtlSkk?oc=5",
-      "source": "AI법률 뉴스(국내)",
-      "category": "AI법률",
-      "badge": "gnews",
-      "lang": "ko",
-      "date": "2026-09-30 16:00",
-      "collect_date": "2026-11-15",
-      "thumbnail": "",
-      "type": "뉴스",
-      "importance": {
-        "label": "⭐ 추천",
-        "class": "star"
-      },
-      "title_kr": "美 정부, ‘AI’ 대신 ‘슈퍼 인텔리전스(SI)’ 쓴다…'AI'와 'SI'의 이중 용어 체계, 글로벌 혼란 가중 - 인공지능신문"
     }
   ]
 }
